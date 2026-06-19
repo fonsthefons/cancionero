@@ -1,16 +1,16 @@
 ---
-
 fname: a_ti_te_alabo_hakuna
-
 title: A ti te alabo
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/6XLPxmYdva9RIwEDYL2YHt?si=ca79a99d6157429d"
 capo: 0
-
 capo_notes: []
 song_tags:
+  alabanza:
+    - segundo_ciclo
   misa: 
     - entrada
+  
 
 ---
 

@@ -1,11 +1,14 @@
 ---
-fname: 10000_razones_popular
+fname: 10000_razones_matt_redman
 title: 10000 razones
-autor: popular
-link: ""
+autor: Matt Redman
+link: "https://open.spotify.com/track/6VvsQVABAW4IQAAMvTVR2g?si=796723fd8a3f4a29"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
+  alabanza:
+    - segundo_ciclo
   misa:
     - comunion
 ---

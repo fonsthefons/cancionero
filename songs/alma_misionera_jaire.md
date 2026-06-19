@@ -2,7 +2,7 @@
 fname: alma_misionera_jaire
 title: Alma Misionera
 autor: Jaire
-link: ""
+link: "https://open.spotify.com/track/76WoWcaAKowjgSEgWCeVaM?si=c98e4521bfd24824"
 capo: 0
 capo_notes: original capo 3 D A G Em7 D
 song_tags:

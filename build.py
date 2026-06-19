@@ -219,25 +219,6 @@ def group_songs(songs):
 
     return grouped
 
-
-# def write_tag_sections(f, grouped, link_fn):
-#     for tag in sorted(grouped.keys(), key=tag_sort_key):
-#         subgroups = grouped[tag]
-#         f.write(f"\n# {format_label(tag)}\n\n")
-
-#         for h in sorted(subgroups.get("_ungrouped", []), key=lambda x: x["number"]):
-#             f.write(link_fn(h))
-
-#         subtags = sorted(
-#             (k for k in subgroups if k != "_ungrouped"),
-#             key=lambda k: subtag_sort_key(tag, k),
-#         )
-#         for subtag in subtags:
-#             f.write(f"- {format_label(subtag)}\n")
-#             for h in sorted(subgroups[subtag], key=lambda x: x["number"]):
-#                 f.write(link_fn(h, indent=1))
-
-#         f.write("\n")
 def write_tag_sections(f, grouped, link_fn):
     for tag in sorted(grouped.keys(), key=tag_sort_key):
         subgroups = grouped[tag]
@@ -284,22 +265,28 @@ def write_song_meta(f, song):
         f.write(f"[Link]({song['link']})\n\n")
 
 
+
 def write_obsidian_book(f, songs, grouped):
     f.write("# Hymn Book\n\n")
 
     def link(song, indent=0):
         prefix = "  " * indent
-        return f"{prefix}- [[#{song['heading']}]]\n"
+        autor = song.get("autor", "") or ""
+        heading_text = f"{song['heading']}{f' - {autor}' if autor else ''}"
+        return f"{prefix}- [{heading_text}](#{song['anchor']})\n"
 
     write_tag_sections(f, grouped, link)
-
     f.write("## All Songs\n\n")
     for h in songs:
-        f.write(f"### {h['heading']}\n\n")
+        # get autor
+        autor = h.get("autor", "") or ""
+        # build heading
+        heading_text = f"{h['heading']} - {autor}"
+
+        # Write as a Header with internal link
+        f.write(f"### [{heading_text}](#{h['anchor']})\n\n")
         write_song_meta(f, h)
         f.write(h["content"] + "\n\n---\n\n")
-
-
 
 
 def write_pdf_book(f, songs, grouped):
@@ -307,13 +294,19 @@ def write_pdf_book(f, songs, grouped):
 
     def link(song, indent=0):
         prefix = "  " * indent
-        return f"{prefix}- [{song['heading']}](#{song['anchor']})\n"
+        autor = song.get("autor", "") or ""
+        heading_text = f"{song['heading']}{f' - {autor}' if autor else ''}"
+        return f"{prefix}- [{heading_text}](#{song['anchor']})\n"
 
     write_tag_sections(f, grouped, link)
-
+    
     f.write("## All Songs\n\n")
     for h in songs:
-        f.write(f"### {h['heading']} {{#{h['anchor']}}}\n\n")
+        # get autor
+        autor = h.get("autor", "") or ""
+        # build heading
+        heading_text = f"{h['heading']} - {autor}"
+        f.write(f"### [{heading_text}](#{h['anchor']})\n\n")
         write_song_meta(f, h)
         f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
 
