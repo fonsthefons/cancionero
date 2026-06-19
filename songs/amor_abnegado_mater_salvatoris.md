@@ -2,10 +2,13 @@
 fname: amor_abnegado_mater_salvatoris
 title: Amor abnegado
 autor: Mater Salvatoris
-link: ""
+link: "https://open.spotify.com/track/63EtpshVyJrUUNFkFhOILn?si=86962b9b30ba48db"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
+  alabanza:
+    - tercer_ciclo
   misa:
     - comunion
 ---

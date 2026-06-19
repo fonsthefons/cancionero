@@ -6,6 +6,7 @@ link: ""
 capo: 0
 song_tags:
   alabanza:
+    - primer_ciclo
     - segundo_ciclo
   misa: 
     - entrada

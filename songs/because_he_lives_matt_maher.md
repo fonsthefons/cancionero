@@ -2,10 +2,13 @@
 fname: because_he_lives_matt_maher
 title: Because He Lives
 autor: Matt Maher
-link: ""
+link: "https://open.spotify.com/track/1kQRahBqpKWMAhsoqfEETp?si=cc7effe715b54e16"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
+  alabanza:
+    - tercer_ciclo
   misa: 
     - comunion
 ---

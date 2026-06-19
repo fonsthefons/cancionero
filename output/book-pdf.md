@@ -40,7 +40,7 @@
 
 ## Ofertorio
 
-  - [9. Amando hasta el extremo - popular](#hymn-9-amando-hasta-el-extremo)
+  - [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
   - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
   - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable)
   - [35. Dona tu Vida - popular](#hymn-35-dona-tu-vida)
@@ -62,11 +62,15 @@
   - [113. Santo - Jaime Olguín](#hymn-113-santo)
   - [114. Santo Manchego - popular](#hymn-114-santo-manchego)
 
+## Cordero
+
+  - [24. Cordero de Dios - popular](#hymn-24-cordero-de-dios)
+
 ## Comunion
 
   - [1. 10000 razones - Matt Redman](#hymn-1-10000-razones)
-  - [8. Alzo la mirada - popular](#hymn-8-alzo-la-mirada)
-  - [9. Amando hasta el extremo - popular](#hymn-9-amando-hasta-el-extremo)
+  - [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada)
+  - [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
   - [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
   - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
   - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
@@ -75,8 +79,7 @@
   - [19. Canción para la comunión - popular](#hymn-19-canción-para-la-comunión)
   - [20. Cirineo - Hakuna](#hymn-20-cirineo)
   - [21. Colombia - Hakuna](#hymn-21-colombia)
-  - [23. Confío en Ti - popular](#hymn-23-confío-en-ti)
-  - [24. Cordero de Dios - popular](#hymn-24-cordero-de-dios)
+  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
   - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
   - [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazón-tuyo)
   - [29. Deseable - Abels Worship](#hymn-29-deseable)
@@ -176,7 +179,7 @@
   - [141. Vuelvo Otra Vez - tuyo](#hymn-141-vuelvo-otra-vez)
   - [142. Yeshua - Generacion 12](#hymn-142-yeshua)
   - [143. Yo Quiero ser tu Servidor - popular](#hymn-143-yo-quiero-ser-tu-servidor)
-  - [144. Ángeles volando - Martín Valverde](#hymn-144-ángeles-volando)
+  - [144. Ángeles volando - popular](#hymn-144-ángeles-volando)
 
 ## Salida
 
@@ -184,7 +187,7 @@
   - [7. Alzar Banderas - Schoenstatt](#hymn-7-alzar-banderas)
   - [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
   - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
-  - [23. Confío en Ti - popular](#hymn-23-confío-en-ti)
+  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
   - [25. Cristo Vive - popular](#hymn-25-cristo-vive)
   - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
   - [34. Dios te salve - popular](#hymn-34-dios-te-salve)
@@ -210,6 +213,7 @@
 ## Primer ciclo
 
   - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
+  - [16. Bendigamos - popular](#hymn-16-bendigamos)
   - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego)
   - [69. Libre - Miel San Marcos](#hymn-69-libre)
   - [81. Muevete en mi - popular](#hymn-81-muevete-en-mi)
@@ -250,9 +254,12 @@
 
 ## Tercer ciclo
 
+  - [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada)
+  - [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
   - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
   - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
   - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
+  - [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives)
   - [25. Cristo Vive - popular](#hymn-25-cristo-vive)
   - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
   - [29. Deseable - Abels Worship](#hymn-29-deseable)
@@ -283,7 +290,7 @@
 
   - [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
   - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
-  - [23. Confío en Ti - popular](#hymn-23-confío-en-ti)
+  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
   - [34. Dios te salve - popular](#hymn-34-dios-te-salve)
   - [56. Himno Misión País - popular](#hymn-56-himno-misión-país)
   - [65. La Bendicion - popular](#hymn-65-la-bendicion)
@@ -301,8 +308,17 @@
 # Adoracion
 
 - [1. 10000 razones - Matt Redman](#hymn-1-10000-razones)
+- [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
+- [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
 - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
 - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
+- [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
+- [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives)
+- [19. Canción para la comunión - popular](#hymn-19-canción-para-la-comunión)
+- [21. Colombia - Hakuna](#hymn-21-colombia)
+- [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
+- [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazón-tuyo)
+- [29. Deseable - Abels Worship](#hymn-29-deseable)
 - [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
 - [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
 - [106. Restaurame Espiritu - Xavier Rudd](#hymn-106-restaurame-espiritu)
@@ -325,6 +341,15 @@
 ## Espiritu
 
   - [106. Restaurame Espiritu - Xavier Rudd](#hymn-106-restaurame-espiritu)
+
+## Santo
+
+  - [13. Arde - Hakuna](#hymn-13-arde)
+
+## Virgen
+
+  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
+  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
 
 ## All Songs
 
@@ -629,11 +654,13 @@ De que Cristo habita en nuestro hogar</pre>
 
 ---
 
-### [8. Alzo la mirada - popular](#hymn-8-alzo-la-mirada)
+### [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada)
 
-*Autor: popular*
+*Autor: VIVAFE*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/03QgYgZ0JZ5usst2UxT3oy?si=fdba726a02244734)
 
 <pre class="lyrics">[Chorus] 
 Alzo la mirada 
@@ -698,11 +725,13 @@ Alzo la mirada...</pre>
 
 ---
 
-### [9. Amando hasta el extremo - popular](#hymn-9-amando-hasta-el-extremo)
+### [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
 
-*Autor: popular*
+*Autor: Maite Lopez*
 
 *Capo: 2*
+
+[Link](https://open.spotify.com/track/06OZGcgtpHtSRanig92kvB?si=0c1bb3c9b529422c)
 
 <pre class="lyrics"><strong>Am</strong> <strong>C</strong> <strong>Am</strong> <strong>C</strong> <strong>Am</strong> (2-2-2-2-2)
 
@@ -760,6 +789,8 @@ Yo también os quiero ver
 *Autor: Mater Salvatoris*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/63EtpshVyJrUUNFkFhOILn?si=86962b9b30ba48db)
 
 <pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>G</strong> <strong>C</strong>
 
@@ -1004,6 +1035,8 @@ Amor sin condición</pre>
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/0VxQq9ZDmkwllwhYZqucwB?si=e98fde2e5a1449f3)
+
 <pre class="lyrics"><strong>F</strong>                         <strong>Bb</strong>
 Arde, con fuerza en este frío
                       <strong>Dm</strong>
@@ -1134,6 +1167,8 @@ X4</pre>
 *Autor: Matt Maher*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1kQRahBqpKWMAhsoqfEETp?si=cc7effe715b54e16)
 
 <pre class="lyrics"><strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>C</strong>
 
@@ -1293,6 +1328,8 @@ Y vives también en mi corazón</pre>
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/2EPDHHtdQS1Iz9owtiXdbH?si=53707ffbb06d451f)
+
 <pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>C</strong>
 
 verse
@@ -1345,96 +1382,56 @@ Ya no falta nada, lo tengo todo, Te tengo a Ti</pre>
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/4ofyi2MTkppGdaHViln62J?si=bf79292de21d4b94)
+
 <pre class="lyrics"><strong>G</strong> <strong>Em</strong> <strong>C</strong> <strong>D</strong>
-
 <strong>G</strong>      <strong>D</strong>      <strong>Em</strong>
-
 ¿Quién ayuda a quién?
-
 <strong>Am</strong>           <strong>C</strong>
-
 ¿Quién me abrió los ojos a la
-
 <strong>D</strong>
-
 eternidad?
-
 <strong>C</strong>                <strong>D</strong>            <strong>G</strong> <strong>D</strong> <strong>Em</strong>
-
 ¿Quién lavó con sangre mi fragilidad?
-
 <strong>Am</strong>            <strong>C</strong>
-
 ¿Quién me ama hasta la muerte de
-
 <strong>D</strong>
-
 verdad?
 
 <strong>G</strong>      <strong>D</strong>      <strong>Em</strong>
-
 ¿Quién abraza a quién?
-
 <strong>Am</strong>            <strong>C</strong>            <strong>D</strong>
-
 Qué ligero el peso si lo llevas Tú.
-
 <strong>C</strong>              <strong>D</strong>            <strong>G</strong> <strong>D</strong>
-
 ¿Cuánto suman dos miradas y una
-
 <strong>Em</strong>
-
 Cruz?
-
 <strong>Am</strong>          <strong>C</strong>        <strong>D</strong>
-
 Quiero ser un Cirineo de Jesús,
-
 <strong>C</strong>          <strong>D</strong>         <strong>G</strong>  <strong>C</strong> <strong>D</strong>
-
 Quiero ser tu Cirineo, mi Jesús.
 
 <strong>G</strong>      <strong>Em</strong>       <strong>Bm</strong>  <strong>D</strong>
-
 Dame tu vida, Señor,
-
 <strong>G</strong>      <strong>Em</strong>       <strong>Bm</strong>  <strong>D</strong>
-
 Dame tus brazos, tu voz.
-
 <strong>C</strong>           <strong>D</strong>
-
 Sobre la Cruz, mi corazón
-
 <strong>G</strong>      <strong>D</strong>    <strong>Em</strong>
-
 se hace grande en tu dolor,
-
 <strong>Am</strong>  <strong>C</strong>      <strong>D</strong>
-
 por amor, por amor
 
 <strong>G</strong>      <strong>Em</strong>       <strong>Bm</strong>  <strong>D</strong>
-
 Toma mi vida, Señor,
-
 <strong>G</strong>      <strong>Em</strong>       <strong>Bm</strong>  <strong>D</strong>
-
 toma mis brazos, mi voz.
-
 <strong>C</strong>           <strong>D</strong>
-
 Sobre la Cruz, mi corazón
-
 <strong>G</strong>      <strong>D</strong>    <strong>Em</strong>
-
 se hace grande en tu dolor,
-
 <strong>Am</strong>  <strong>C</strong>      <strong>D</strong> <strong>D7</strong>
-
 por amor, por amor
-
 <strong>G</strong> <strong>Em</strong> <strong>C</strong> <strong>D</strong></pre>
 
 ---
@@ -1445,7 +1442,10 @@ por amor, por amor
 
 *Capo: 0*
 
-<pre class="lyrics">Todos me dicen que tu estás
+[Link](https://open.spotify.com/track/42Vlagn547PajedetRZIQZ?si=b351d7a2a4fc4ffd)
+
+<pre class="lyrics"><strong>C</strong>         <strong>F</strong>           <strong>C</strong>
+Todos me dicen que tu estás
 
 Nada veo nada siento
 
@@ -1515,27 +1515,26 @@ Un poco más Un poco más</pre>
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/0bl4hRyiEnNE41cYGslzgW?si=172ce8cc7c384bb5)
+
 <pre class="lyrics"><strong>C</strong>       <strong>G</strong>         <strong>Am</strong>
-
 Como el padre me amo
-
 <strong>F</strong>            <strong>G</strong>
-
 yo os he amado
-
 <strong>C</strong>       <strong>G</strong>        <strong>Am</strong>
-
 permaneced en mi amor,
-
-<strong>F</strong>       <strong>G</strong>         <strong>C</strong></pre>
+<strong>F</strong>       <strong>G</strong>         <strong>C</strong>
+permaneced en mi amor</pre>
 
 ---
 
-### [23. Confío en Ti - popular](#hymn-23-confío-en-ti)
+### [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
 
-*Autor: popular*
+*Autor: Felipe Gomez*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6ODiSmpQBjQbGvLrNLwSQj?si=52a2e6e2bf344d1e)
 
 <pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>Dm</strong> <strong>F</strong> <strong>G</strong>
  
@@ -1548,9 +1547,6 @@ Aunque camine a oscuras tu estas a mi lado
         		<strong>F</strong>                           	<strong>G</strong> 
 Y ya no temo a nada, Sé que estas aquí
 
-
-
-
           <strong>C</strong> 
 Confió en Ti.
                                     			<strong>F</strong> 
@@ -1559,8 +1555,6 @@ Ya no me apoyo en mi supuesta fortaleza
 Ni me confunde mi pecado, mi tibieza
       	    <strong>F</strong>                           		<strong>G</strong> 
 Eres amor tan solo amor confío en ti
-
-
           <strong>Em</strong>
 Confío en Ti
                                             			<strong>Dm</strong>
@@ -1570,9 +1564,6 @@ Y de tu dulce  amor, he sido tu testigo
        	    <strong>Dm</strong>                             		<strong>G</strong> 
 Eres mi todo eres la fuerza que hay en mi
 
-
-
-
           <strong>C</strong> 
 Confío en Ti
                                    			<strong>F</strong> 
@@ -1581,8 +1572,6 @@ porque tu sangre ha lavado mi tristeza
 Y no te asusta mi pecado mi tibieza
          		<strong>F</strong>                               		<strong>G</strong> 
 Eres tan grande, Eres tan Dios, Eres tan todo para mi
-
-
           <strong>C</strong> 
 Confío en ti
                                        				<strong>F</strong> 
@@ -1591,13 +1580,8 @@ Porque la vida que me has dado, se renueva
 Y me has sacado de lo oscuro de esta cueva
          		<strong>F</strong>                          			<strong>G</strong> 
 Y mendigando amores falsos vuelvo a ti
-
-
           	<strong>F</strong>            	<strong>Em</strong>            	<strong>F</strong>       
 Confío en Ti, Confío en Ti, Confío en Ti, Confío
-
-
-
 
           <strong>C</strong> 
 Confío en Ti
@@ -1608,9 +1592,6 @@ Me has sostenido soy tu hijo y soy tu hermano
         		<strong>F</strong>                           		<strong>G</strong> 
 Como temer  Si yo te tengo  junto a mí.
 
-
-
-
           <strong>Em</strong>
 Confío en Ti
                                             				<strong>Dm</strong>
@@ -1620,9 +1601,6 @@ Y de tu dulce  amor, he sido tu testigo
        	    <strong>Dm</strong>                             			<strong>G</strong> 
 Eres mi todo eres la fuerza que hay en mi
 
-
-
-
           <strong>C</strong> 
 Confío en Ti
                                    			<strong>F</strong> 
@@ -1631,8 +1609,6 @@ porque tu sangre ha lavado mi tristeza
 Y no te asusta mi pecado mi tibieza
          		<strong>F</strong>                               		<strong>G</strong> 
 Eres tan grande, Eres tan Dios, Eres tan todo para mi
-
-
           
 <strong>C</strong> 
 Confío en ti
@@ -1642,8 +1618,6 @@ Porque la vida que me has dado, se renueva
 Y me has sacado de lo oscuro de esta cueva
          		<strong>F</strong>                          			<strong>G</strong> 
 Y mendigando amores falsos vuelvo a ti
-
-
           	<strong>F</strong>            	<strong>Em</strong>            	<strong>F</strong>       		<strong>C</strong>
 Confío en Ti, Confío en Ti, Confío en Ti, Confío</pre>
 
@@ -1656,35 +1630,20 @@ Confío en Ti, Confío en Ti, Confío en Ti, Confío</pre>
 *Capo: 0*
 
 <pre class="lyrics"><strong>A</strong> <strong>C#m</strong> <strong>D</strong> <strong>E</strong>
-
 Cordero de Dios tú que quitas el pecado
-
 <strong>A</strong> <strong>C#m</strong> <strong>D</strong> <strong>E</strong>
-
 Cordero de Dios tú que quitas el pecado
-
 <strong>D</strong>       <strong>A</strong>         <strong>E</strong>           <strong>A</strong>
-
 Ten piedad de nosotros
-
 <strong>D</strong>       <strong>A</strong>         <strong>E</strong>           <strong>A</strong>
-
 Ten piedad de nosotros
-
 <strong>A</strong> <strong>C#m</strong> <strong>D</strong> <strong>E</strong>
-
 Cordero de Dios tú que quitas el pecado
-
 <strong>A</strong> <strong>C#m</strong> <strong>D</strong> <strong>E</strong>
-
 Cordero de Dios tú que quitas el pecado
-
 <strong>D</strong>       <strong>A</strong>         <strong>E</strong>           <strong>A</strong>
-
 Danos la paz
-
 <strong>D</strong>       <strong>A</strong>         <strong>E</strong>           <strong>A</strong>
-
 Danos la paz</pre>
 
 ---
@@ -1766,6 +1725,8 @@ Ya vive en tu corazón
 *Autor: Besmaya*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3ieBy1I9Kxf5yJsBid2O6s?si=ceb705591acc4ba7)
 
 <pre class="lyrics"><strong>Am</strong>                	    <strong>C</strong>
 Vives en cajas de metal
@@ -1849,211 +1810,129 @@ Sin naufragar</pre>
 
 *Capo: 1*
 
+[Link](https://open.spotify.com/track/48neVZAaX1HlnvF7xcpYTJ?si=dd8c207580954529)
+
 <pre class="lyrics">[Intro]
-
-
 <strong>E</strong> <strong>D</strong> <strong>A</strong> <strong>E</strong>
-
-
 [Verse]
-
-
 <strong>E</strong>                    <strong>D</strong>
 Cada vez que vengo a verte
-
 <strong>A</strong>                    <strong>E</strong>
 Hay un instante de dolor
-
 <strong>E</strong>                         <strong>D</strong>
 Porque siento que estoy lejos
-
 <strong>A</strong>           <strong>E</strong>
 de tu corazón
-
-
 <strong>E</strong>                   <strong>D</strong>
 Aunque me inunde la certeza
-
 <strong>A</strong>               <strong>E</strong>
 De tu infinito amor
-
 <strong>E</strong>           <strong>D</strong>
 Lo sabe mi cabeza
-
 <strong>A</strong>                        <strong>E</strong>
 pero se le olvida al corazón
-
 [Pre-Chorus]
-
-
 <strong>E</strong>              <strong>B</strong>
 Convénceme Señor
-
                          <strong>A</strong>
 De que tu amor no se merece
-
                           <strong>E</strong>
 Y llévame de la cabeza al corazón
-
-
 [Chorus]
-
-
                <strong>A</strong>
 Tu amor es más grande
-
               <strong>E</strong>
 Que mi debilidad
-
               <strong>C#m</strong>
 No hay nada que Tú
-
                   <strong>B</strong>
 No me quieras perdonar
-
                <strong>A</strong>
 Me postro ante Ti
-
                   <strong>E</strong>
 Solo quiero adorarte
-
               <strong>B</strong>
 Y dejarme salvar
-
-
 <strong>A</strong>
 Hazme viajar
-
 <strong>B</strong>                    <strong>E</strong>
 De la cabeza al corazón
-
 [Interlude]
-
-
 <strong>E</strong> <strong>D</strong> <strong>A</strong> <strong>E</strong>
-
 [Verse]
-
-
 <strong>E</strong>                   <strong>D</strong>
 Cada vez que me sonríes
-
 <strong>A</strong>                     <strong>E</strong>
 Se me encoge el corazón
-
 <strong>E</strong>                      <strong>D</strong>
 Porque cuesta que me mires
-
 <strong>A</strong>                    <strong>E</strong>
 Y que veas mi interior
-
-
 <strong>E</strong>                          <strong>D</strong>
 Porque son muchos mis pecados
-
 <strong>A</strong>                      <strong>E</strong>
 Pero más grande es tu amor
-
 <strong>E</strong>                    <strong>D</strong>
 Ahora lo sabe mi cabeza
-
 <strong>A</strong>                       <strong>E</strong>
 Haz que lo sepa el corazón
-
-
 [Pre-Chorus]
-
-
 <strong>E</strong>              <strong>B</strong>
 Convénceme Señor
-
                               <strong>A</strong>
 de que me quieres porque quieres
-
                               <strong>E</strong>
 y llévame de la cabeza al corazón
-
-
 [Chorus]
-
-
                    <strong>A</strong>
 Tu amor es más grande
-
               <strong>E</strong>
 Que mi debilidad
-
               <strong>C#m</strong>
 No hay nada que Tú
-
                    <strong>B</strong>
 No me quieras perdonar
-
                <strong>A</strong>
 Me postro ante Ti
-
                  <strong>E</strong>
 Solo quiero adorarte
-
               <strong>B</strong>
 Y dejarme salvar
-
-
                <strong>A</strong>
 Tu amor es más grande
-
               <strong>E</strong>
 Que mi debilidad
-
               <strong>C#m</strong>
 No hay nada que Tú
-
                   <strong>B</strong>
 No me quieras perdonar
-
                <strong>A</strong>
 Me postro ante Ti
-
                   <strong>E</strong>
 Solo quiero adorarte
-
               <strong>B</strong>
 Y dejarme salvar
-
 <strong>A</strong>
 Hazme viajar
-
 <strong>B</strong>                   <strong>C#m</strong>
 De la cabeza al corazón
-
-
 <strong>A</strong>
 Hazme viajar
-
 <strong>B</strong>                    <strong>E</strong>
 De la cabeza al corazón
-
 [Outro]
-
-
 <strong>A</strong>        <strong>Am</strong>             <strong>E</strong>
 Día tras día aquí de rodillas
-
 <strong>B</strong>          <strong>C#m</strong>
 Pidiendo perdón
-
                   <strong>A</strong>
 Se que a ti te basta
-
                 <strong>Am</strong>
 Se que no te cansas
-
 <strong>E</strong>                             <strong>B</strong>
 Pero se que me has hecho para mucho más
-
      <strong>C#m</strong>
 que esto
-
            <strong>A</strong>          <strong>Am</strong>           <strong>B</strong>  <strong>E</strong>
 Llévame Señor de mi cabeza a tu corazón</pre>
 
@@ -2064,6 +1943,8 @@ Llévame Señor de mi cabeza a tu corazón</pre>
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/61J8kXaxeBvJJUMWcJLprD?si=e90edece2c8f4726)
 
 <pre class="lyrics">No capo (max 2)
 Re 
@@ -2112,7 +1993,9 @@ Se  -  ñor, Tú eres Dios.</pre>
 
 *Capo: Capo 3*
 
-<pre class="lyrics"><strong>Em</strong> Capo 3
+[Link](https://open.spotify.com/track/0l5LZiR5YGUBGpu7eYFhqc?si=e73a4473a9864bae)
+
+<pre class="lyrics"><strong>Em</strong>
 
 <strong>Em</strong>			<strong>C</strong>
 No sé lo que viste en mí
@@ -2745,6 +2628,8 @@ Quiero amarte... Cada dia mas.</pre>
 *Autor: Misión País*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1vq1e3Hs6iRVEzgyf9WbKD?si=ff8b0fd0722e4844)
 
 <pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>C</strong>
 Hace ya tiempo que comprendí
@@ -9743,11 +9628,13 @@ Tú y yo Señor</pre>
 
 ---
 
-### [144. Ángeles volando - Martín Valverde](#hymn-144-ángeles-volando)
+### [144. Ángeles volando - popular](#hymn-144-ángeles-volando)
 
-*Autor: Martín Valverde*
+*Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4UsjdyG5q87Jz7T0JkGKAk?si=36cacfcbc6a34f69)
 
 <pre class="lyrics"><strong>C</strong> <strong>G</strong> <strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
 

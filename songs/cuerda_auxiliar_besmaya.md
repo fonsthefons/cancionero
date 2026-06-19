@@ -2,9 +2,10 @@
 fname: cuerda_auxiliar_besmaya
 title: Cuerda Auxiliar
 autor: Besmaya
-link: ""
+link: "https://open.spotify.com/track/3ieBy1I9Kxf5yJsBid2O6s?si=ceb705591acc4ba7"
 capo: 0
 song_tags:
+  adoracion: []
   alabanza:
     - tercer_ciclo
   misa: 

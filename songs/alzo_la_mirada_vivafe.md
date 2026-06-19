@@ -1,11 +1,13 @@
 ---
-fname: alzo_la_mirada_popular
+fname: alzo_la_mirada_vivafe
 title: Alzo la mirada
-autor: popular
-link: ""
+autor: VIVAFE
+link: "https://open.spotify.com/track/03QgYgZ0JZ5usst2UxT3oy?si=fdba726a02244734"
 capo: 0
 capo_notes: []
 song_tags:
+  alabanza:
+    - tercer_ciclo
   misa:
     - comunion
 ---

@@ -2,10 +2,11 @@
 fname: cancion_para_la_comunion_popular
 title: Canción para la comunión
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/2EPDHHtdQS1Iz9owtiXdbH?si=53707ffbb06d451f"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

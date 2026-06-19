@@ -2,12 +2,14 @@
 fname: arde_hakuna
 title: Arde
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/0VxQq9ZDmkwllwhYZqucwB?si=e98fde2e5a1449f3"
 capo: 0
 capo_notes: []
 song_tags:
   misa: 
     - comunion
+  tema:
+     - santo
 ---
 F                         Bb
 Arde, con fuerza en este frío

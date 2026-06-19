@@ -10,6 +10,8 @@ song_tags:
     - cuarto_ciclo
   misa:
     - salida
+  tema:
+    - virgen
 ---
 D A D
 Buenas noches, buenas noches, María

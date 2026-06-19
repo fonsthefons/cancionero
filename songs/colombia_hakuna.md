@@ -2,14 +2,15 @@
 fname: colombia_hakuna
 title: Colombia
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/42Vlagn547PajedetRZIQZ?si=b351d7a2a4fc4ffd"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---
-
+C         F           C
 Todos me dicen que tu estás
 
 Nada veo nada siento

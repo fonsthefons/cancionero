@@ -10,6 +10,8 @@ song_tags:
     - cuarto_ciclo
   misa:
     - salida
+  tema:
+    - virgen
 ---
 G        Bm
 En tu belleza y humildad
