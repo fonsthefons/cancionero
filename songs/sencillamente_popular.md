@@ -1,9 +1,9 @@
 ---
 
-fname: sencillamente_popular
+fname: sencillamente_hakuna
 
 title: Sencillamente
-autor: popular
+autor: Hakuna
 link: ""
 capo: 0
 
@@ -13,52 +13,113 @@ song_tags:
     - comunion
 ---
 
-Em C G Bm
-Creo, sencillamente
-Quiero disfrutar de la serenidad del creer
-Desligar el creer del sentir
-Creo, mi Dios, y basta
-
+[Verse 1]
+Em           C
+Creo sencillamente
+G                 B7                  Em
+Quiero disfrutar de la serenidad del creer,
+Em              C
+desligar el creer del sentir,
+G              B7
+creo, mi Dios ¡y basta!
+ 
+Em
 Te creo en tus misterios
-Sin entenderlos
-Te creo en mí (te creo en mí) y en el pan blanco
-En el prójimo y en la creación
-Sin verte en ningún lado
-
-Creo, Señor, sencillamente
-Porque creer es confiar
-Y cómo me gusta creerte sintiendo dudas
-Sintiendo dudas
-Sintiendo dudas
-
-Digo que eres amor
-Escucho que soy tu amado
-No siento y qué más da
-Te quiero y eso basta
-
+C
+sin enten derlos.
+G                  B7
+Te creo en mí y en el Pan Blanco,
+      Em           C
+en el prójimo y en la creación
+G                   B7
+sin verte en ningun lado.
+ 
+ 
+[Chorus 1]
+Em                    C
+Creo, Señor, sencilla mente
+G
+porque creer es confiar.
+B7
+¡Y cómo me gusta creerte
+          Em
+sintiendo dudas,
+          C
+sintiendo dudas,
+          G       B7
+sintiendo dudas!
+ 
+ 
+[Instrumental]
+Em  C  G  B7
+ 
+ 
+[Verse 2]
+Em
+Digo que eres amor,
+C
+escucho que soy tu amado,
+G
+no siento y ¡qué más da!
+                 B7
+¡Te quiero y eso basta!
+ 
+ 
+[Chorus 2]
+Em                  C
 Amo, Señor, sencillamente
-Porque amar es entregarse
-Y cómo me gusta amarte estando frío
-Estando frío
-Estando frío
-
-Espero en tu palabra
-Vivo en tu promesa
-Gozo en ti
-Lo que aún me falta
-
-Espero Señor, sencillamente
-Porque esperar es descansar
-Y cómo me gusta esperarte sintiendo miedo
-Sintiendo miedo
-Sintiendo miedo
-Creo (Señor sencillamente)
-Amo (sencillamente)
-Espero
-
-Cómo me gusta seguirte sintiendo dudas
-Estando frío
-Sintiendo miedo
-Cómo me gusta
-Cómo me gusta
-Creerte, amarte y esperarte
+G
+porque amar, es entregarse.
+B7
+¡Cómo me gusta amarte
+         Em
+estando frío,
+         C
+estando frío,
+         G    B7
+estando frío!
+ 
+ 
+[Verse 3]
+Em
+Espero en tu Palabra.
+C
+Vivo en tu Promesa.
+G            B7
+Gozo en ti lo que aún me falta!
+ 
+ 
+[Chorus 3]
+Em                     C
+Espero, Señor, sencillamente
+G
+porque esperar es descansar
+B7
+Y como me gusta, esperarte
+          Em
+sintiendo miedo,
+          C
+sintiendo miedo,
+          G       B7
+sintiendo miedo!
+ 
+ 
+[Chorus 4]
+Em     C   G
+Creo, amo, espero
+B7
+¡Cómo me gusta seguirte
+          C
+sintiendo dudas,
+        G
+estando frío,
+          B7
+sintiendo miedo!
+         Em
+¡Cómo me gusta!
+         C
+¡Cómo me gusta!
+G                  B7
+Quererte, amarte y esperarte.
+Em
+Te sigo sencillamente

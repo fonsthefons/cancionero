@@ -220,11 +220,32 @@ def group_songs(songs):
     return grouped
 
 
+# def write_tag_sections(f, grouped, link_fn):
+#     for tag in sorted(grouped.keys(), key=tag_sort_key):
+#         subgroups = grouped[tag]
+#         f.write(f"\n# {format_label(tag)}\n\n")
+
+#         for h in sorted(subgroups.get("_ungrouped", []), key=lambda x: x["number"]):
+#             f.write(link_fn(h))
+
+#         subtags = sorted(
+#             (k for k in subgroups if k != "_ungrouped"),
+#             key=lambda k: subtag_sort_key(tag, k),
+#         )
+#         for subtag in subtags:
+#             f.write(f"- {format_label(subtag)}\n")
+#             for h in sorted(subgroups[subtag], key=lambda x: x["number"]):
+#                 f.write(link_fn(h, indent=1))
+
+#         f.write("\n")
 def write_tag_sections(f, grouped, link_fn):
     for tag in sorted(grouped.keys(), key=tag_sort_key):
         subgroups = grouped[tag]
+        
+        # Main Section Title (Level 1 Heading)
         f.write(f"\n# {format_label(tag)}\n\n")
 
+        # Flat songs if any
         for h in sorted(subgroups.get("_ungrouped", []), key=lambda x: x["number"]):
             f.write(link_fn(h))
 
@@ -232,12 +253,17 @@ def write_tag_sections(f, grouped, link_fn):
             (k for k in subgroups if k != "_ungrouped"),
             key=lambda k: subtag_sort_key(tag, k),
         )
+        
         for subtag in subtags:
-            f.write(f"- {format_label(subtag)}\n")
-            for h in sorted(subgroups[subtag], key=lambda x: x["number"]):
+            # Change to Heading 2 so it appears in the TOC sidebar as a nested item
+            f.write(f"\n## {format_label(subtag)}\n\n")
+            
+            # Songs under this subsection
+            for h in sorted(grouped[tag][subtag], key=lambda x: x["number"]):
                 f.write(link_fn(h, indent=1))
-
+        # Add a blank line to separate sections cleanly
         f.write("\n")
+
 
 
 def bold_chords(line):
@@ -261,33 +287,35 @@ def write_song_meta(f, song):
 def write_obsidian_book(f, songs, grouped):
     f.write("# Hymn Book\n\n")
 
-    f.write("## All Songs\n\n")
-    for h in songs:
-        f.write(f"### {h['heading']}\n\n")
-        write_song_meta(f, h)
-        f.write(h["content"] + "\n\n---\n\n")
-
     def link(song, indent=0):
         prefix = "  " * indent
         return f"{prefix}- [[#{song['heading']}]]\n"
 
     write_tag_sections(f, grouped, link)
 
+    f.write("## All Songs\n\n")
+    for h in songs:
+        f.write(f"### {h['heading']}\n\n")
+        write_song_meta(f, h)
+        f.write(h["content"] + "\n\n---\n\n")
+
+
+
 
 def write_pdf_book(f, songs, grouped):
     f.write("# Hymn Book\n\n")
-
-    f.write("## All Songs\n\n")
-    for h in songs:
-        f.write(f"### {h['heading']} {{#{h['anchor']}}}\n\n")
-        write_song_meta(f, h)
-        f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
 
     def link(song, indent=0):
         prefix = "  " * indent
         return f"{prefix}- [{song['heading']}](#{song['anchor']})\n"
 
     write_tag_sections(f, grouped, link)
+
+    f.write("## All Songs\n\n")
+    for h in songs:
+        f.write(f"### {h['heading']} {{#{h['anchor']}}}\n\n")
+        write_song_meta(f, h)
+        f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
 
 
 def build_html():

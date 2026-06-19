@@ -1,8 +1,424 @@
 # Hymn Book
 
+
+# Misa
+
+
+## Entrada
+
+  - [2. A ti te alabo](#hymn-2-a-ti-te-alabo)
+  - [3. Abba Padre](#hymn-3-abba-padre)
+  - [7. Alzar Banderas](#hymn-7-alzar-banderas)
+  - [14. Arranca de mi Pecho](#hymn-14-arranca-de-mi-pecho)
+  - [16. Bendigamos](#hymn-16-bendigamos)
+  - [22. Como el padre me amó](#hymn-22-como-el-padre-me-amó)
+  - [25. Cristo Vive](#hymn-25-cristo-vive)
+  - [28. Desde el Fondo del Mar](#hymn-28-desde-el-fondo-del-mar)
+  - [38. El Dios que adoramos](#hymn-38-el-dios-que-adoramos)
+  - [43. Enciende una luz](#hymn-43-enciende-una-luz)
+  - [44. Enciéndeme](#hymn-44-enciéndeme)
+  - [69. Libre](#hymn-69-libre)
+  - [72. Los coros del universo](#hymn-72-los-coros-del-universo)
+  - [76. Mar Adentro (Navegar)](#hymn-76-mar-adentro-navegar)
+  - [81. Muevete en mi](#hymn-81-muevete-en-mi)
+  - [82. Muros](#hymn-82-muros)
+  - [89. No Temas](#hymn-89-no-temas)
+  - [98. Preparad el camino al Señor](#hymn-98-preparad-el-camino-al-señor)
+  - [108. Rey de Reyes](#hymn-108-rey-de-reyes)
+  - [109. RUAH](#hymn-109-ruah)
+  - [128. Ven](#hymn-128-ven)
+  - [129. Ven Ahora](#hymn-129-ven-ahora)
+  - [130. Ven ante Su trono](#hymn-130-ven-ante-su-trono)
+  - [131. Ven Espiritu Ven (Teresa)](#hymn-131-ven-espiritu-ven-teresa)
+  - [132. Ven Espíritu](#hymn-132-ven-espíritu)
+  - [134. Ven Espíritu Ven (Purifícame)](#hymn-134-ven-espíritu-ven-purifícame)
+
+## Aleluya
+
+  - [4. Aleluya](#hymn-4-aleluya)
+  - [5. Aleluya](#hymn-5-aleluya)
+
+## Ofertorio
+
+  - [9. Amando hasta el extremo](#hymn-9-amando-hasta-el-extremo)
+  - [14. Arranca de mi Pecho](#hymn-14-arranca-de-mi-pecho)
+  - [33. Dios Incomparable](#hymn-33-dios-incomparable)
+  - [35. Dona tu Vida](#hymn-35-dona-tu-vida)
+  - [57. Hoy Me Entrego](#hymn-57-hoy-me-entrego)
+  - [68. La Samaritana](#hymn-68-la-samaritana)
+  - [77. Maravillas](#hymn-77-maravillas)
+  - [81. Muevete en mi](#hymn-81-muevete-en-mi)
+  - [83. Nada te turbe](#hymn-83-nada-te-turbe)
+  - [89. No Temas](#hymn-89-no-temas)
+  - [101. Quien pierde su vida por mi](#hymn-101-quien-pierde-su-vida-por-mi)
+  - [105. Renuévame Señor Jesús](#hymn-105-renuévame-señor-jesús)
+  - [122. Toma Señor mi libertad](#hymn-122-toma-señor-mi-libertad)
+  - [123. Tu eres mi respirar](#hymn-123-tu-eres-mi-respirar)
+  - [134. Ven Espíritu Ven (Purifícame)](#hymn-134-ven-espíritu-ven-purifícame)
+  - [143. Yo Quiero ser tu Servidor](#hymn-143-yo-quiero-ser-tu-servidor)
+
+## Santo
+
+  - [113. Santo](#hymn-113-santo)
+  - [114. Santo Manchego](#hymn-114-santo-manchego)
+
+## Comunion
+
+  - [1. 10000 razones](#hymn-1-10000-razones)
+  - [8. Alzo la mirada](#hymn-8-alzo-la-mirada)
+  - [9. Amando hasta el extremo](#hymn-9-amando-hasta-el-extremo)
+  - [10. Amor abnegado](#hymn-10-amor-abnegado)
+  - [11. Amor de los Amores](#hymn-11-amor-de-los-amores)
+  - [12. Amor sin condición](#hymn-12-amor-sin-condición)
+  - [13. Arde](#hymn-13-arde)
+  - [15. Because He Lives](#hymn-15-because-he-lives)
+  - [19. Canción para la comunión](#hymn-19-canción-para-la-comunión)
+  - [20. Cirineo](#hymn-20-cirineo)
+  - [21. Colombia](#hymn-21-colombia)
+  - [23. Confío en Ti](#hymn-23-confío-en-ti)
+  - [24. Cordero de Dios](#hymn-24-cordero-de-dios)
+  - [26. Cuerda Auxiliar](#hymn-26-cuerda-auxiliar)
+  - [27. De la cabeza al corazón tuyo](#hymn-27-de-la-cabeza-al-corazón-tuyo)
+  - [29. Deseable](#hymn-29-deseable)
+  - [30. Dime cómo hacerlo](#hymn-30-dime-cómo-hacerlo)
+  - [31. Dime María](#hymn-31-dime-maría)
+  - [32. Dime Rey](#hymn-32-dime-rey)
+  - [33. Dios Incomparable](#hymn-33-dios-incomparable)
+  - [35. Dona tu Vida](#hymn-35-dona-tu-vida)
+  - [36. Dulce locura](#hymn-36-dulce-locura)
+  - [37. Déjate](#hymn-37-déjate)
+  - [38. El Dios que adoramos](#hymn-38-el-dios-que-adoramos)
+  - [39. El que muere por mí](#hymn-39-el-que-muere-por-mí)
+  - [40. El Rey de mi Vida](#hymn-40-el-rey-de-mi-vida)
+  - [41. El Unico Rey](#hymn-41-el-unico-rey)
+  - [42. En medio del fuego](#hymn-42-en-medio-del-fuego)
+  - [44. Enciéndeme](#hymn-44-enciéndeme)
+  - [45. Entrega](#hymn-45-entrega)
+  - [46. Eres Testigo](#hymn-46-eres-testigo)
+  - [47. Es verdad](#hymn-47-es-verdad)
+  - [48. Espíritu ven](#hymn-48-espíritu-ven)
+  - [49. Estaré Contigo](#hymn-49-estaré-contigo)
+  - [50. Estás dentro de mí](#hymn-50-estás-dentro-de-mí)
+  - [52. Hasta La Locura](#hymn-52-hasta-la-locura)
+  - [54. Here I am Lord](#hymn-54-here-i-am-lord)
+  - [55. Hermoso Nombre](#hymn-55-hermoso-nombre)
+  - [57. Hoy Me Entrego](#hymn-57-hoy-me-entrego)
+  - [58. Huracán](#hymn-58-huracán)
+  - [59. Id y anunciad](#hymn-59-id-y-anunciad)
+  - [60. Inúndame](#hymn-60-inúndame)
+  - [61. Jesucristo basta](#hymn-61-jesucristo-basta)
+  - [62. Jesus](#hymn-62-jesus)
+  - [63. Jesus have it all](#hymn-63-jesus-have-it-all)
+  - [65. La Bendicion](#hymn-65-la-bendicion)
+  - [67. La medida del amor](#hymn-67-la-medida-del-amor)
+  - [68. La Samaritana](#hymn-68-la-samaritana)
+  - [69. Libre](#hymn-69-libre)
+  - [70. Llévame](#hymn-70-llévame)
+  - [71. Lord, I Need You](#hymn-71-lord-i-need-you)
+  - [72. Los coros del universo](#hymn-72-los-coros-del-universo)
+  - [73. Madre](#hymn-73-madre)
+  - [76. Mar Adentro (Navegar)](#hymn-76-mar-adentro-navegar)
+  - [77. Maravillas](#hymn-77-maravillas)
+  - [78. Me Rindo a Ti](#hymn-78-me-rindo-a-ti)
+  - [79. Mi amado](#hymn-79-mi-amado)
+  - [80. Mis heridas te han curado](#hymn-80-mis-heridas-te-han-curado)
+  - [81. Muevete en mi](#hymn-81-muevete-en-mi)
+  - [82. Muros](#hymn-82-muros)
+  - [83. Nada te turbe](#hymn-83-nada-te-turbe)
+  - [84. Nadie te ama como yo](#hymn-84-nadie-te-ama-como-yo)
+  - [85. No hay lugar más alto](#hymn-85-no-hay-lugar-más-alto)
+  - [86. No hay paredes](#hymn-86-no-hay-paredes)
+  - [87. No Longer Slaves](#hymn-87-no-longer-slaves)
+  - [88. No sé qué viste en mí](#hymn-88-no-sé-qué-viste-en-mí)
+  - [89. No Temas](#hymn-89-no-temas)
+  - [90. No tengo miedo](#hymn-90-no-tengo-miedo)
+  - [91. Oceans](#hymn-91-oceans)
+  - [92. Otra Vez](#hymn-92-otra-vez)
+  - [93. Para que entre el rey](#hymn-93-para-que-entre-el-rey)
+  - [94. Pasion de Dios](#hymn-94-pasion-de-dios)
+  - [95. Perdón](#hymn-95-perdón)
+  - [96. Perfume a tus Pies](#hymn-96-perfume-a-tus-pies)
+  - [97. Pescador de hombres](#hymn-97-pescador-de-hombres)
+  - [99. Primero el cielo](#hymn-99-primero-el-cielo)
+  - [100. Que se quiebre mi corazón](#hymn-100-que-se-quiebre-mi-corazón)
+  - [101. Quien pierde su vida por mi](#hymn-101-quien-pierde-su-vida-por-mi)
+  - [103. Quédate Señor](#hymn-103-quédate-señor)
+  - [104. Reckless Love](#hymn-104-reckless-love)
+  - [105. Renuévame Señor Jesús](#hymn-105-renuévame-señor-jesús)
+  - [106. Restaurame Espiritu](#hymn-106-restaurame-espiritu)
+  - [107. Resucitados](#hymn-107-resucitados)
+  - [108. Rey de Reyes](#hymn-108-rey-de-reyes)
+  - [109. RUAH](#hymn-109-ruah)
+  - [110. Saliendo del Pretorio](#hymn-110-saliendo-del-pretorio)
+  - [111. Salmo 23](#hymn-111-salmo-23)
+  - [112. Salve Reina](#hymn-112-salve-reina)
+  - [115. Se Mi Faro](#hymn-115-se-mi-faro)
+  - [116. Sencillamente](#hymn-116-sencillamente)
+  - [117. Si hubiera estado allí](#hymn-117-si-hubiera-estado-allí)
+  - [118. Sopla Señor](#hymn-118-sopla-señor)
+  - [119. Soy Libre](#hymn-119-soy-libre)
+  - [120. Supe que me Amabas](#hymn-120-supe-que-me-amabas)
+  - [121. Surge Valentía](#hymn-121-surge-valentía)
+  - [122. Toma Señor mi libertad](#hymn-122-toma-señor-mi-libertad)
+  - [123. Tu eres mi respirar](#hymn-123-tu-eres-mi-respirar)
+  - [124. Tu Voluntad](#hymn-124-tu-voluntad)
+  - [125. Tus Planes Son Perfectos](#hymn-125-tus-planes-son-perfectos)
+  - [126. Tuyas son](#hymn-126-tuyas-son)
+  - [127. Un Segundo](#hymn-127-un-segundo)
+  - [128. Ven](#hymn-128-ven)
+  - [131. Ven Espiritu Ven (Teresa)](#hymn-131-ven-espiritu-ven-teresa)
+  - [132. Ven Espíritu](#hymn-132-ven-espíritu)
+  - [133. Ven Espíritu Divino](#hymn-133-ven-espíritu-divino)
+  - [134. Ven Espíritu Ven (Purifícame)](#hymn-134-ven-espíritu-ven-purifícame)
+  - [135. Ven Y Lléname](#hymn-135-ven-y-lléname)
+  - [136. Vengo a Adorarte](#hymn-136-vengo-a-adorarte)
+  - [137. Vida en abundancia](#hymn-137-vida-en-abundancia)
+  - [141. Vuelvo Otra Vez](#hymn-141-vuelvo-otra-vez)
+  - [142. Yeshua](#hymn-142-yeshua)
+  - [143. Yo Quiero ser tu Servidor](#hymn-143-yo-quiero-ser-tu-servidor)
+  - [144. Ángeles volando](#hymn-144-ángeles-volando)
+
+## Salida
+
+  - [6. Alma Misionera](#hymn-6-alma-misionera)
+  - [7. Alzar Banderas](#hymn-7-alzar-banderas)
+  - [17. Bendita Tu](#hymn-17-bendita-tu)
+  - [18. Buenas Noches María](#hymn-18-buenas-noches-maría)
+  - [23. Confío en Ti](#hymn-23-confío-en-ti)
+  - [25. Cristo Vive](#hymn-25-cristo-vive)
+  - [26. Cuerda Auxiliar](#hymn-26-cuerda-auxiliar)
+  - [34. Dios te salve](#hymn-34-dios-te-salve)
+  - [51. Hail Mary Prayer](#hymn-51-hail-mary-prayer)
+  - [53. Hasta que el mundo arda por Él](#hymn-53-hasta-que-el-mundo-arda-por-él)
+  - [56. Himno Misión País](#hymn-56-himno-misión-país)
+  - [64. Junto a ti María](#hymn-64-junto-a-ti-maría)
+  - [65. La Bendicion](#hymn-65-la-bendicion)
+  - [66. La Fe de María](#hymn-66-la-fe-de-maría)
+  - [71. Lord, I Need You](#hymn-71-lord-i-need-you)
+  - [74. Madre](#hymn-74-madre)
+  - [75. Madre y Reina](#hymn-75-madre-y-reina)
+  - [90. No tengo miedo](#hymn-90-no-tengo-miedo)
+  - [102. Quiero Caminar Contigo María](#hymn-102-quiero-caminar-contigo-maría)
+  - [138. Virgen Madre de Nuestro Dios](#hymn-138-virgen-madre-de-nuestro-dios)
+  - [139. Viva Cristo Rey](#hymn-139-viva-cristo-rey)
+  - [140. Volverás a María](#hymn-140-volverás-a-maría)
+
+
+# Alabanza
+
+
+## Primer ciclo
+
+  - [14. Arranca de mi Pecho](#hymn-14-arranca-de-mi-pecho)
+  - [57. Hoy Me Entrego](#hymn-57-hoy-me-entrego)
+  - [69. Libre](#hymn-69-libre)
+  - [81. Muevete en mi](#hymn-81-muevete-en-mi)
+  - [82. Muros](#hymn-82-muros)
+  - [99. Primero el cielo](#hymn-99-primero-el-cielo)
+  - [109. RUAH](#hymn-109-ruah)
+  - [123. Tu eres mi respirar](#hymn-123-tu-eres-mi-respirar)
+  - [129. Ven Ahora](#hymn-129-ven-ahora)
+  - [130. Ven ante Su trono](#hymn-130-ven-ante-su-trono)
+  - [131. Ven Espiritu Ven (Teresa)](#hymn-131-ven-espiritu-ven-teresa)
+  - [134. Ven Espíritu Ven (Purifícame)](#hymn-134-ven-espíritu-ven-purifícame)
+  - [135. Ven Y Lléname](#hymn-135-ven-y-lléname)
+  - [142. Yeshua](#hymn-142-yeshua)
+
+## Segundo ciclo
+
+  - [3. Abba Padre](#hymn-3-abba-padre)
+  - [11. Amor de los Amores](#hymn-11-amor-de-los-amores)
+  - [12. Amor sin condición](#hymn-12-amor-sin-condición)
+  - [16. Bendigamos](#hymn-16-bendigamos)
+  - [28. Desde el Fondo del Mar](#hymn-28-desde-el-fondo-del-mar)
+  - [33. Dios Incomparable](#hymn-33-dios-incomparable)
+  - [38. El Dios que adoramos](#hymn-38-el-dios-que-adoramos)
+  - [41. El Unico Rey](#hymn-41-el-unico-rey)
+  - [55. Hermoso Nombre](#hymn-55-hermoso-nombre)
+  - [62. Jesus](#hymn-62-jesus)
+  - [63. Jesus have it all](#hymn-63-jesus-have-it-all)
+  - [69. Libre](#hymn-69-libre)
+  - [82. Muros](#hymn-82-muros)
+  - [87. No Longer Slaves](#hymn-87-no-longer-slaves)
+  - [99. Primero el cielo](#hymn-99-primero-el-cielo)
+  - [104. Reckless Love](#hymn-104-reckless-love)
+  - [114. Santo Manchego](#hymn-114-santo-manchego)
+  - [130. Ven ante Su trono](#hymn-130-ven-ante-su-trono)
+  - [139. Viva Cristo Rey](#hymn-139-viva-cristo-rey)
+
+## Tercer ciclo
+
+  - [11. Amor de los Amores](#hymn-11-amor-de-los-amores)
+  - [12. Amor sin condición](#hymn-12-amor-sin-condición)
+  - [14. Arranca de mi Pecho](#hymn-14-arranca-de-mi-pecho)
+  - [25. Cristo Vive](#hymn-25-cristo-vive)
+  - [26. Cuerda Auxiliar](#hymn-26-cuerda-auxiliar)
+  - [29. Deseable](#hymn-29-deseable)
+  - [41. El Unico Rey](#hymn-41-el-unico-rey)
+  - [55. Hermoso Nombre](#hymn-55-hermoso-nombre)
+  - [57. Hoy Me Entrego](#hymn-57-hoy-me-entrego)
+  - [62. Jesus](#hymn-62-jesus)
+  - [63. Jesus have it all](#hymn-63-jesus-have-it-all)
+  - [71. Lord, I Need You](#hymn-71-lord-i-need-you)
+  - [78. Me Rindo a Ti](#hymn-78-me-rindo-a-ti)
+  - [82. Muros](#hymn-82-muros)
+  - [87. No Longer Slaves](#hymn-87-no-longer-slaves)
+  - [90. No tengo miedo](#hymn-90-no-tengo-miedo)
+  - [92. Otra Vez](#hymn-92-otra-vez)
+  - [99. Primero el cielo](#hymn-99-primero-el-cielo)
+  - [104. Reckless Love](#hymn-104-reckless-love)
+  - [111. Salmo 23](#hymn-111-salmo-23)
+  - [114. Santo Manchego](#hymn-114-santo-manchego)
+  - [119. Soy Libre](#hymn-119-soy-libre)
+  - [123. Tu eres mi respirar](#hymn-123-tu-eres-mi-respirar)
+  - [124. Tu Voluntad](#hymn-124-tu-voluntad)
+  - [134. Ven Espíritu Ven (Purifícame)](#hymn-134-ven-espíritu-ven-purifícame)
+  - [135. Ven Y Lléname](#hymn-135-ven-y-lléname)
+  - [139. Viva Cristo Rey](#hymn-139-viva-cristo-rey)
+  - [142. Yeshua](#hymn-142-yeshua)
+
+## Cuarto ciclo
+
+  - [17. Bendita Tu](#hymn-17-bendita-tu)
+  - [18. Buenas Noches María](#hymn-18-buenas-noches-maría)
+  - [23. Confío en Ti](#hymn-23-confío-en-ti)
+  - [34. Dios te salve](#hymn-34-dios-te-salve)
+  - [56. Himno Misión País](#hymn-56-himno-misión-país)
+  - [65. La Bendicion](#hymn-65-la-bendicion)
+  - [74. Madre](#hymn-74-madre)
+  - [75. Madre y Reina](#hymn-75-madre-y-reina)
+  - [90. No tengo miedo](#hymn-90-no-tengo-miedo)
+  - [92. Otra Vez](#hymn-92-otra-vez)
+  - [102. Quiero Caminar Contigo María](#hymn-102-quiero-caminar-contigo-maría)
+  - [111. Salmo 23](#hymn-111-salmo-23)
+  - [138. Virgen Madre de Nuestro Dios](#hymn-138-virgen-madre-de-nuestro-dios)
+  - [139. Viva Cristo Rey](#hymn-139-viva-cristo-rey)
+  - [140. Volverás a María](#hymn-140-volverás-a-maría)
+
+
+# Adoracion
+
+- [11. Amor de los Amores](#hymn-11-amor-de-los-amores)
+- [12. Amor sin condición](#hymn-12-amor-sin-condición)
+- [99. Primero el cielo](#hymn-99-primero-el-cielo)
+- [104. Reckless Love](#hymn-104-reckless-love)
+- [106. Restaurame Espiritu](#hymn-106-restaurame-espiritu)
+
+
+# Tema
+
+
+## Padre
+
+  - [3. Abba Padre](#hymn-3-abba-padre)
+  - [99. Primero el cielo](#hymn-99-primero-el-cielo)
+
+## Cristo
+
+  - [11. Amor de los Amores](#hymn-11-amor-de-los-amores)
+  - [12. Amor sin condición](#hymn-12-amor-sin-condición)
+  - [104. Reckless Love](#hymn-104-reckless-love)
+
+## Espiritu
+
+  - [106. Restaurame Espiritu](#hymn-106-restaurame-espiritu)
+
 ## All Songs
 
-### 1. Abba Padre {#hymn-1-abba-padre}
+### 1. 10000 razones {#hymn-1-10000-razones}
+
+*Autor: popular*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong> <strong>Am</strong>
+Que todo lo que soy alabe al Señor
+Con todo mi corazón
+De Tu grande amor, cantaré
+Tu nombre alabaré
+
+Sale el Sol, es un nuevo amanecer
+Cantaré a ti otra vez
+Sea lo que venga, confiaré en ti
+Alabaré en el anochecer
+
+Que todo lo que soy alabe al Señor
+Con todo mi corazón
+De Tu grande amor, cantaré
+Tu nombre alabaré
+
+Tu amor no tiene fin
+Y Tú eres para siempre
+Y bondadoso es Tu corazón
+Por todo lo que has hecho, yo sigo cantando
+Diez mil razones para alabar
+
+Que todo lo que soy alabe al Señor
+Con todo mi corazón
+De Tu grande amor, cantaré
+Tu nombre alabaré
+
+Y en ese día, cuando ya no tenga fuerza
+Y se acerque Tu gloria
+Mi alma cantará de tu amor sin final
+Diez mil años y para siempre más</pre>
+
+---
+
+### 2. A ti te alabo {#hymn-2-a-ti-te-alabo}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong>  <strong>Em</strong>  <strong>Am</strong>  <strong>F</strong>
+
+<strong>A</strong> ti te alabo, Señor en tu templo
+<strong>A</strong> ti te alabo con todo el firmamento
+<strong>A</strong> ti te alabo con todo lo que tú has hecho
+<strong>A</strong> ti te alabo, Padre, Hijo, amor eterno
+<strong>A</strong> ti te alabo con trompas y flautas
+<strong>A</strong> ti te alabo con tambores y danzas
+<strong>A</strong> ti te alaban criaturas y animales
+<strong>A</strong> ti te alaban las montañas y los mares
+<strong>A</strong> ti te alaban
+
+<strong>A</strong> ese ser que creó este mundo por amor
+No lo encontraba
+No creía que fuera posible este don
+Un Dios
+Todo lo que veo a mi alrededor
+Grita que aquí estás y esconde mi temor
+Todo ser que aliente a la vida al Señor y grite bien fuerte
+
+<strong>A</strong> ti te alabo, Señor en tu templo
+<strong>A</strong> ti te alabo con todo el firmamento
+<strong>A</strong> ti te alabo con todo lo que tú has hecho
+<strong>A</strong> ti te alabo, Padre, Hijo, Amor eterno
+<strong>A</strong> ti te alabo con trombas y flautas
+<strong>A</strong> ti te alabo con tambores y danzas
+<strong>A</strong> ti te alaban criaturas y animales
+<strong>A</strong> ti te alaban las montañas y los mares
+<strong>A</strong> ti te alaban
+
+<strong>A</strong> ti te alabo aunque te escondas
+Aunque yo no pueda verte a ti te alabo
+Que me salvas de la muerte a ti te alabo
+En el silencio de un amor que ya no siente a ti te alabo
+Eres mi Dios, eres mi vida, eres mi fuerte
+<strong>A</strong> ti te alabo en lo sencillo, cotidiano, indiferente
+<strong>A</strong> ti te alabo con el vivo que te busca ansiadamente
+<strong>A</strong> ti te alabo con el muerto que te espera nuevamente
+<strong>A</strong> ti te alabo eres mi Dios, eres mi vida
+
+<strong>A</strong> ti te alabo
+<strong>A</strong> ti te alabo
+<strong>A</strong> ti te alabo
+<strong>A</strong> ti te alabo</pre>
+
+---
+
+### 3. Abba Padre {#hymn-3-abba-padre}
 
 *Autor: popular*
 
@@ -36,7 +452,7 @@ Abba Padre. Abba Padre</pre>
 
 ---
 
-### 2. Aleluya {#hymn-2-aleluya}
+### 4. Aleluya {#hymn-4-aleluya}
 
 *Autor: Taizé*
 
@@ -47,7 +463,7 @@ Aleluya, alelu, aleluya, aleluya, aleluya</pre>
 
 ---
 
-### 3. Aleluya {#hymn-3-aleluya}
+### 5. Aleluya {#hymn-5-aleluya}
 
 *Autor: popular*
 
@@ -60,7 +476,7 @@ Aleluya Aleluya</pre>
 
 ---
 
-### 4. Alma Misionera {#hymn-4-alma-misionera}
+### 6. Alma Misionera {#hymn-6-alma-misionera}
 
 *Autor: Jaire*
 
@@ -144,7 +560,7 @@ tu fuerza en la oración.
 
 ---
 
-### 5. Alzar Banderas {#hymn-5-alzar-banderas}
+### 7. Alzar Banderas {#hymn-7-alzar-banderas}
 
 *Autor: Schoenstatt*
 
@@ -202,7 +618,76 @@ De que Cristo habita en nuestro hogar</pre>
 
 ---
 
-### 6. Amando hasta el extremo {#hymn-6-amando-hasta-el-extremo}
+### 8. Alzo la mirada {#hymn-8-alzo-la-mirada}
+
+*Autor: popular*
+
+*Capo: 0*
+
+<pre class="lyrics">[Chorus] 
+Alzo la mirada 
+Mis ojos en Jesús 
+Alzo la mirada 
+Clavada en la cruz 
+Cuando miro al cielo todo es nuevo con su luz 
+Alzo la mirada 
+Alzo la mirada 
+Alzo la mirada
+
+[verse] 
+No estoy hecho Para mirar al suelo 
+Al mirarte Sé por qué nací 
+Me creaste Para mirar al cielo 
+Estoy inquieto hasta que no descanse en ti
+
+[Chorus] 
+Alzo la mirada 
+Mis ojos en Jesús 
+Alzo la mirada 
+Clavada en la cruz 
+Cuando miro al cielo todo es nuevo con su luz 
+Alzo la mirada 
+Alzo la mirada 
+Alzo la mirada
+
+[verse] 
+El Señor es mi fuerza 
+Y mi esperanza No vacilaré (Alzo la mirada) 
+Él es la roca De la salvación 
+En Él confío Y no tiemblo 
+En Él confío Y no tiemblo
+
+[Chorus] 
+Alzo la mirada 
+Mis ojos en Jesús 
+Alzo la mirada 
+Clavada en la cruz 
+Cuando miro al cielo todo es nuevo con su luz 
+Alzo la mirada 
+Alzo la mirada 
+Alzo la mirada
+
+[Bridge] 
+Por los que buscan la paz 
+Y la libertad Para que encuentren en tus ojos 
+Dónde descansar 
+Por los que cruzan el mar
+Buscando un hogar 
+Para que vean más allá De la tempestad
+
+Por los que buscan la paz 
+Y la libertad 
+Para que encuentren en tus ojos 
+Dónde descansar
+
+[Outro] 
+Alzo la mirada... 
+Alzo la mirada... 
+Alzo la mirada...</pre>
+
+---
+
+### 9. Amando hasta el extremo {#hymn-9-amando-hasta-el-extremo}
 
 *Autor: popular*
 
@@ -259,7 +744,62 @@ Yo también os quiero ver
 
 ---
 
-### 7. Amor de los Amores {#hymn-7-amor-de-los-amores}
+### 10. Amor abnegado {#hymn-10-amor-abnegado}
+
+*Autor: Mater Salvatoris*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>G</strong> <strong>C</strong>
+
+Tú, hombre herido
+Esclavo de tu propia libertad
+Sobrevives porque no vives en mí
+
+Tú, hijo perdido
+¿Dónde estás buscando la verdad?
+No desistas, estoy frente a ti
+
+Tienes lágrimas que no te dejan ver
+En medio del ruido no se puede pensar
+
+Estoy dentro de ti
+<strong>A</strong> pesar de tu rechazo
+ mi amor hacia ti es abnegado
+Estoy enamorado de tu debilidad
+Solo te pido que me dejes entrar
+
+Estoy dentro de ti
+<strong>A</strong> pesar de tu rechazo
+mi amor hacia ti es abnegado
+Estoy enamorado de tu debilidad
+Solo te pido que te dejes amar
+
+Tú, Dios escondido
+Quiero amarte como me amas tú
+Que tu voz no solo arda en mí
+Tú, mi Cristo vivo
+
+Enséñame a vivir en plenitud
+Que el miedo no impida a darte un sí
+Cuanto más profundo entierro yo mi cruz
+Más lejos me encuentro de donde estás clavado tú
+
+Estoy dentro de ti
+<strong>A</strong> pesar de tu rechazo
+ mi amor hacia ti es abnegado
+Estoy enamorado de tu debilidad
+Solo te pido que me dejes entrar
+
+Estoy dentro de ti
+<strong>A</strong> pesar de tu rechazo
+mi amor hacia ti es abnegado
+Estoy enamorado de tu debilidad
+Solo te pido que te dejes amar</pre>
+
+---
+
+### 11. Amor de los Amores {#hymn-11-amor-de-los-amores}
 
 *Autor: Sarai*
 
@@ -358,7 +898,7 @@ para amarnos Tú y yo</pre>
 
 ---
 
-### 8. Amor sin condición {#hymn-8-amor-sin-condición}
+### 12. Amor sin condición {#hymn-12-amor-sin-condición}
 
 *Autor: Abels Worship*
 
@@ -447,175 +987,107 @@ Amor sin condición</pre>
 
 ---
 
-### 9. Arde {#hymn-9-arde}
+### 13. Arde {#hymn-13-arde}
 
 *Autor: Hakuna*
 
 *Capo: 0*
 
 <pre class="lyrics"><strong>F</strong>                         <strong>Bb</strong>
-
 Arde, con fuerza en este frío
-
                       <strong>Dm</strong>
-
 Con todo el alma en vilo
-
                 <strong>C</strong>
-
 Buscando una razón
 
 <strong>F</strong>                            <strong>Bb</strong>
-
 Tiemblan los muros de esta celda
-
                        <strong>Dm</strong>
-
 Que no pueden ni intentan
-
                  <strong>C</strong>
-
 Contener su corazón
 
 <strong>F</strong>                          <strong>Bb</strong>
-
 Brazos, cerrándose en abrazos
-
                        <strong>Dm</strong>
-
 De un Padre que dio tanto
-
                    <strong>C</strong>
-
 De un Hijo que murió
 
 <strong>F</strong>                          <strong>Bb</strong>
-
 Lloran, Reyes y tronos lloran
-
                         <strong>Dm</strong>
-
 Ante un hombre en la sombra
-
                  <strong>C</strong>
-
 Rezándole a su Dios
 
 <strong>F</strong>                              <strong>Bb</strong>
-
 La mira, y al verla el mundo gira
-
                  <strong>Dm</strong>
-
 Y en un sólo segundo
-
                   <strong>C</strong>
-
 Al cielo estremeció
 
 <strong>F</strong>                         <strong>Bb</strong>
-
 Besa, donde ella pisa él besa
-
                  <strong>Dm</strong>
-
 Secándose las lágrimas
-
                <strong>C</strong>
-
 Al pedirle perdón
 
 <strong>F</strong>                          <strong>Bb</strong>
-
 Alza, un paso al firme al alba
-
                  <strong>Dm</strong>
-
 Ejércitos se apartan
-
                 <strong>C</strong>
-
 Ante su convicción
 
 <strong>F</strong>                        <strong>Bb</strong>
-
 Siente, el peso que le viene
-
               <strong>Dm</strong>
-
 Pero nada detiene
-
                   <strong>C</strong>
-
 Su sencilla decisión
 
 <strong>F</strong>                           <strong>Bb</strong>
-
 Duerme, tranquilo el niño duerme
-
                   <strong>Dm</strong>
-
 Sufre porque no puede
-
              <strong>C</strong>
-
 Darle algo mejor
 
 <strong>F</strong>                        <strong>Bb</strong>
-
 Calla, y en el silencio grita
-
                   <strong>Dm</strong>
-
 Se le traspasa el alma
-
                 <strong>C</strong>
-
 Sufre su condición
 
 <strong>F</strong>            <strong>Bb</strong>           <strong>Dm</strong>        <strong>G</strong>   <strong>C</strong>
-
 Un te quiero mudo en un silencio acogedor
-
      <strong>F</strong>           <strong>Bb</strong>              <strong>Dm</strong>          <strong>C</strong>
-
 Un humilde carpintero duerme en brazos a su Dios
-
 <strong>F</strong>            <strong>Bb</strong>           <strong>Dm</strong>        <strong>G</strong>   <strong>C</strong>
-
 Un te quiero mudo en un silencio acogedor
-
      <strong>F</strong>           <strong>Bb</strong>              <strong>Dm</strong>       <strong>C</strong>
-
 Un humilde carpintero mira a los ojos a Dios
 
 <strong>F</strong>                           <strong>Bb</strong>
-
 Sonríe, tranquilo al fin sonríe
-
                  <strong>Dm</strong>                    <strong>C</strong>
-
 Y en un último aliento hizo llorar a Dios
-
 <strong>F</strong>            <strong>Bb</strong>           <strong>Dm</strong>        <strong>G</strong>   <strong>C</strong>
-
 Un te quiero mudo en un silencio acogedor
-
      <strong>F</strong>           <strong>Bb</strong>              <strong>Dm</strong>          <strong>C</strong>
-
 Un humilde carpintero duerme en brazos a su Dios
-
 <strong>F</strong>            <strong>Bb</strong>           <strong>Dm</strong>        <strong>G</strong>   <strong>C</strong>
-
 Un te quiero mudo en un silencio acogedor
-
      <strong>F</strong>           <strong>Bb</strong>              <strong>Dm</strong>       <strong>C</strong>
-
 Un humilde carpintero mira a los ojos a Dios</pre>
 
 ---
 
-### 10. Arranca de mi Pecho {#hymn-10-arranca-de-mi-pecho}
+### 14. Arranca de mi Pecho {#hymn-14-arranca-de-mi-pecho}
 
 *Autor: popular*
 
@@ -646,7 +1118,7 @@ X4</pre>
 
 ---
 
-### 11. Because He Lives {#hymn-11-because-he-lives}
+### 15. Because He Lives {#hymn-15-because-he-lives}
 
 *Autor: Matt Maher*
 
@@ -722,7 +1194,7 @@ Because he lives
 
 ---
 
-### 12. Bendigamos {#hymn-12-bendigamos}
+### 16. Bendigamos {#hymn-16-bendigamos}
 
 *Autor: popular*
 
@@ -750,7 +1222,7 @@ LA GRACIA DE SU SALVACIÓN.</pre>
 
 ---
 
-### 13. Bendita Tu {#hymn-13-bendita-tu}
+### 17. Bendita Tu {#hymn-17-bendita-tu}
 
 *Autor: HAM*
 
@@ -782,7 +1254,7 @@ X2</pre>
 
 ---
 
-### 14. Buenas Noches María {#hymn-14-buenas-noches-maría}
+### 18. Buenas Noches María {#hymn-18-buenas-noches-maría}
 
 *Autor: popular*
 
@@ -804,7 +1276,59 @@ Y vives también en mi corazón</pre>
 
 ---
 
-### 15. Cirineo {#hymn-15-cirineo}
+### 19. Canción para la comunión {#hymn-19-canción-para-la-comunión}
+
+*Autor: popular*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>C</strong>
+
+verse
+Ya no eres pan y vino
+Ahora que eres Cuerpo y Sangre, vives en mí
+De rodillas yo caigo al contemplar Tu bondad
+¿Cómo no Te voy a adorar?
+
+Mientras Te pierdes en mis labios
+Tu gracia va inundando todo mi corazón
+Por esa paz que llena de alegría mi ser
+¿Cómo no Te voy a adorar?
+
+chorus
+
+Señor Jesús, mi Salvador
+Amor Eterno, Amor Divino
+Ya no falta nada, lo tengo todo, Te tengo a Ti
+Ya no falta nada, lo tengo todo, Te tengo a Ti
+
+verse
+
+Dueño y Rey del universo
+¿Cómo puede ser posible que busques mi amor?
+Tú tan grande, yo pequeño y Te fijas en mí
+¿Cómo no Te voy a adorar?
+
+De rodillas, yo Te pido
+Que el día cuando Tú me llames, sea como hoy
+Para mirarte a los ojos y poderte decir
+Que, ¿cómo no Te voy a adorar?
+
+chorus
+
+Señor Jesús, mi Salvador
+Amor Eterno, Amor Divino
+Ya no falta nada, lo tengo todo, Te tengo a Ti
+Ya no falta nada, lo tengo todo, Te tengo a Ti
+
+Señor Jesús, mi Salvador
+Amor Eterno, Amor Divino
+Ya no falta nada, lo tengo todo, Te tengo a Ti
+Ya no falta nada, lo tengo todo, Te tengo a Ti</pre>
+
+---
+
+### 20. Cirineo {#hymn-20-cirineo}
 
 *Autor: Hakuna*
 
@@ -904,7 +1428,7 @@ por amor, por amor
 
 ---
 
-### 16. Colombia {#hymn-16-colombia}
+### 21. Colombia {#hymn-21-colombia}
 
 *Autor: Hakuna*
 
@@ -974,7 +1498,7 @@ Un poco más Un poco más</pre>
 
 ---
 
-### 17. Como el padre me amó {#hymn-17-como-el-padre-me-amó}
+### 22. Como el padre me amó {#hymn-22-como-el-padre-me-amó}
 
 *Autor: popular*
 
@@ -996,7 +1520,7 @@ permaneced en mi amor,
 
 ---
 
-### 18. Confío en Ti {#hymn-18-confío-en-ti}
+### 23. Confío en Ti {#hymn-23-confío-en-ti}
 
 *Autor: popular*
 
@@ -1114,7 +1638,7 @@ Confío en Ti, Confío en Ti, Confío en Ti, Confío</pre>
 
 ---
 
-### 19. Cordero de Dios {#hymn-19-cordero-de-dios}
+### 24. Cordero de Dios {#hymn-24-cordero-de-dios}
 
 *Autor: popular*
 
@@ -1154,7 +1678,7 @@ Danos la paz</pre>
 
 ---
 
-### 20. Cristo Vive {#hymn-20-cristo-vive}
+### 25. Cristo Vive {#hymn-25-cristo-vive}
 
 *Autor: popular*
 
@@ -1226,7 +1750,7 @@ Ya vive en tu corazón
 
 ---
 
-### 21. Cuerda Auxiliar {#hymn-21-cuerda-auxiliar}
+### 26. Cuerda Auxiliar {#hymn-26-cuerda-auxiliar}
 
 *Autor: Besmaya*
 
@@ -1308,7 +1832,223 @@ Sin naufragar</pre>
 
 ---
 
-### 22. Desde el Fondo del Mar {#hymn-22-desde-el-fondo-del-mar}
+### 27. De la cabeza al corazón tuyo {#hymn-27-de-la-cabeza-al-corazón-tuyo}
+
+*Autor: popular*
+
+*Capo: 1*
+
+<pre class="lyrics">[Intro]
+
+
+<strong>E</strong> <strong>D</strong> <strong>A</strong> <strong>E</strong>
+
+
+[Verse]
+
+
+<strong>E</strong>                    <strong>D</strong>
+Cada vez que vengo a verte
+
+<strong>A</strong>                    <strong>E</strong>
+Hay un instante de dolor
+
+<strong>E</strong>                         <strong>D</strong>
+Porque siento que estoy lejos
+
+<strong>A</strong>           <strong>E</strong>
+de tu corazón
+
+
+<strong>E</strong>                   <strong>D</strong>
+Aunque me inunde la certeza
+
+<strong>A</strong>               <strong>E</strong>
+De tu infinito amor
+
+<strong>E</strong>           <strong>D</strong>
+Lo sabe mi cabeza
+
+<strong>A</strong>                        <strong>E</strong>
+pero se le olvida al corazón
+
+[Pre-Chorus]
+
+
+<strong>E</strong>              <strong>B</strong>
+Convénceme Señor
+
+                         <strong>A</strong>
+De que tu amor no se merece
+
+                          <strong>E</strong>
+Y llévame de la cabeza al corazón
+
+
+[Chorus]
+
+
+               <strong>A</strong>
+Tu amor es más grande
+
+              <strong>E</strong>
+Que mi debilidad
+
+              <strong>C#m</strong>
+No hay nada que Tú
+
+                  <strong>B</strong>
+No me quieras perdonar
+
+               <strong>A</strong>
+Me postro ante Ti
+
+                  <strong>E</strong>
+Solo quiero adorarte
+
+              <strong>B</strong>
+Y dejarme salvar
+
+
+<strong>A</strong>
+Hazme viajar
+
+<strong>B</strong>                    <strong>E</strong>
+De la cabeza al corazón
+
+[Interlude]
+
+
+<strong>E</strong> <strong>D</strong> <strong>A</strong> <strong>E</strong>
+
+[Verse]
+
+
+<strong>E</strong>                   <strong>D</strong>
+Cada vez que me sonríes
+
+<strong>A</strong>                     <strong>E</strong>
+Se me encoge el corazón
+
+<strong>E</strong>                      <strong>D</strong>
+Porque cuesta que me mires
+
+<strong>A</strong>                    <strong>E</strong>
+Y que veas mi interior
+
+
+<strong>E</strong>                          <strong>D</strong>
+Porque son muchos mis pecados
+
+<strong>A</strong>                      <strong>E</strong>
+Pero más grande es tu amor
+
+<strong>E</strong>                    <strong>D</strong>
+Ahora lo sabe mi cabeza
+
+<strong>A</strong>                       <strong>E</strong>
+Haz que lo sepa el corazón
+
+
+[Pre-Chorus]
+
+
+<strong>E</strong>              <strong>B</strong>
+Convénceme Señor
+
+                              <strong>A</strong>
+de que me quieres porque quieres
+
+                              <strong>E</strong>
+y llévame de la cabeza al corazón
+
+
+[Chorus]
+
+
+                   <strong>A</strong>
+Tu amor es más grande
+
+              <strong>E</strong>
+Que mi debilidad
+
+              <strong>C#m</strong>
+No hay nada que Tú
+
+                   <strong>B</strong>
+No me quieras perdonar
+
+               <strong>A</strong>
+Me postro ante Ti
+
+                 <strong>E</strong>
+Solo quiero adorarte
+
+              <strong>B</strong>
+Y dejarme salvar
+
+
+               <strong>A</strong>
+Tu amor es más grande
+
+              <strong>E</strong>
+Que mi debilidad
+
+              <strong>C#m</strong>
+No hay nada que Tú
+
+                  <strong>B</strong>
+No me quieras perdonar
+
+               <strong>A</strong>
+Me postro ante Ti
+
+                  <strong>E</strong>
+Solo quiero adorarte
+
+              <strong>B</strong>
+Y dejarme salvar
+
+<strong>A</strong>
+Hazme viajar
+
+<strong>B</strong>                   <strong>C#m</strong>
+De la cabeza al corazón
+
+
+<strong>A</strong>
+Hazme viajar
+
+<strong>B</strong>                    <strong>E</strong>
+De la cabeza al corazón
+
+[Outro]
+
+
+<strong>A</strong>        <strong>Am</strong>             <strong>E</strong>
+Día tras día aquí de rodillas
+
+<strong>B</strong>          <strong>C#m</strong>
+Pidiendo perdón
+
+                  <strong>A</strong>
+Se que a ti te basta
+
+                <strong>Am</strong>
+Se que no te cansas
+
+<strong>E</strong>                             <strong>B</strong>
+Pero se que me has hecho para mucho más
+
+     <strong>C#m</strong>
+que esto
+
+           <strong>A</strong>          <strong>Am</strong>           <strong>B</strong>  <strong>E</strong>
+Llévame Señor de mi cabeza a tu corazón</pre>
+
+---
+
+### 28. Desde el Fondo del Mar {#hymn-28-desde-el-fondo-del-mar}
 
 *Autor: popular*
 
@@ -1355,7 +2095,7 @@ Se  -  ñor, Tú eres Dios.</pre>
 
 ---
 
-### 23. Deseable {#hymn-23-deseable}
+### 29. Deseable {#hymn-29-deseable}
 
 *Autor: Abels Worship*
 
@@ -1449,7 +2189,124 @@ Yo encuentro mi lugar, en ti</pre>
 
 ---
 
-### 24. Dime Rey {#hymn-24-dime-rey}
+### 30. Dime cómo hacerlo {#hymn-30-dime-cómo-hacerlo}
+
+*Autor: Laraland*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
+Si puedo ayudarte en cualquier cosa
+Si puedo poner paz donde hay mil guerras sin ti
+Si puedo iluminar cuando haya sombras
+Dime cómo hacerlo, Señor
+Dime cómo hacerlo, Señor
+
+Si necesitas que sea paciente
+cuando la incertidumbre vuelve y me hace temblar.
+Si quieres que confíe plenamente
+Dime cómo hacerlo, Señor
+Dime cómo hacerlo, Señor
+
+Y es que yo confío en ti
+porque me das la vida
+Tú me diste la tuya
+para vivir la mía
+Y es que yo confío en ti
+porque me das la mano
+aun cuando no te he dado yo la mía.
+Por eso dime cómo hacerlo, Señor
+dime cómo hacerlo, Señor
+
+Si el mundo ríe con indiferencia
+cubriéndose con capas que le impiden llorar.
+Si en la verdad se esconde la belleza
+Dime cómo hacerlo, Señor
+Dime cómo hacerlo, Señor
+
+Cuando hago grandes todos mis defectos
+y no consigo ver como me ven los demás
+Si no puedo vencer todos mis miedos.
+Dime cómo hacerlo, Señor
+Dime cómo hacerlo, Señor
+
+Y es que yo confío en ti
+porque me das la vida
+Tú me diste la tuya
+para vivir la mía
+Y es que yo confío en ti
+porque me das la mano
+aun cuando no te he dado yo la mía.
+
+Y es que yo confío en ti
+porque me das la vida
+Tú me diste la tuya
+para vivir la mía
+Y es que yo confío en ti
+porque me das la mano
+aun cuando no te he dado yo la mía.
+Por eso dime cómo hacerlo, Señor
+dime cómo hacerlo, Señor</pre>
+
+---
+
+### 31. Dime María {#hymn-31-dime-maría}
+
+*Autor: Batah*
+
+*Capo: 5*
+
+<pre class="lyrics"><strong>C</strong>           (<strong>G/B</strong>)               <strong>Am</strong>
+¿Qué le dices a José cuando se esfuerza,
+    <strong>Dm</strong>            <strong>G</strong>             <strong>C</strong> (<strong>G/B</strong>)
+por buscar refugio porque el niño llega?
+     <strong>Am</strong>            <strong>G</strong>               <strong>F</strong>        <strong>C</strong>
+¿Cómo miras hacia al cielo dando las gracias a Dios,
+     <strong>Dm</strong>                               <strong>G</strong>
+por poder llevar tan dentro al Redentor?
+
+<strong>C</strong>           (<strong>G/B</strong>)               <strong>Am</strong>
+¿Cómo miras esos ojos que son los ojos de Dios,
+    <strong>Dm</strong>            <strong>G</strong>             <strong>C</strong> (<strong>G/B</strong>)
+cómo escuchas sus latidos y su voz?
+     <strong>Am</strong>            <strong>G</strong>               <strong>F</strong>        <strong>C</strong>
+¿Cómo tratas a tu hijo sabiendo que es el Señor,
+     <strong>Dm</strong>                         <strong>G</strong> (<strong>G</strong> 7)
+ que viene a salvar al mundo por Amor?
+
+CORO:
+
+ <strong>F</strong> <strong>C</strong> <strong>G</strong>       <strong>Am</strong>   <strong>Dm</strong>       <strong>G</strong> <strong>C</strong> (7)
+María llena de gracia Madre que ama,
+<strong>F</strong> <strong>C</strong> <strong>G</strong>   <strong>Am</strong>  <strong>Dm</strong>  <strong>G</strong>       <strong>C</strong>
+María Inmaculada       Mujer amada
+
+<strong>C</strong>           (<strong>G/B</strong>)               <strong>Am</strong>
+¿Qué le cantas a tu Hijo cuando duerme,
+    <strong>Dm</strong>            <strong>G</strong>             <strong>C</strong> (<strong>G/B</strong>)
+cuando se despierta y llora de repente?
+     <strong>Am</strong>            <strong>G</strong>               <strong>F</strong>        <strong>C</strong>
+¿Cómo calmas con tu abrazo, y secas lagrimas divinas,
+     <strong>Dm</strong>                          <strong>G</strong> (<strong>G</strong> 7)
+cuando resbalan y caen por sus mejillas?
+
+<strong>C</strong>           (<strong>G/B</strong>)               <strong>Am</strong>
+¿Cómo limpias las heridas cuando de tanto jugar,
+    <strong>Dm</strong>            <strong>G</strong>             <strong>C</strong> (<strong>G/B</strong>)
+ se lastima las rodillas el que calmará la mar?
+     <strong>Am</strong>            <strong>G</strong>               <strong>F</strong>        <strong>C</strong>
+ Y dime, ¿sientes que este tiempo se te escapa entre los dedos,
+     <strong>Dm</strong>                          <strong>G</strong> (<strong>G</strong> 7)
+y disfrutas cada risa, cada gesto?
+
+ <strong>F</strong> <strong>C</strong> <strong>G</strong>       <strong>Am</strong>   <strong>Dm</strong>       <strong>G</strong> <strong>C</strong> (7)
+María llena de gracia Madre que ama,
+<strong>F</strong> <strong>C</strong> <strong>G</strong>   <strong>Am</strong>  <strong>Dm</strong>  <strong>G</strong>       <strong>C</strong>
+María Inmaculada       Mujer amada</pre>
+
+---
+
+### 32. Dime Rey {#hymn-32-dime-rey}
 
 *Autor: Helena*
 
@@ -1617,7 +2474,7 @@ Corazones sedientos de paz.</pre>
 
 ---
 
-### 25. Dios Incomparable {#hymn-25-dios-incomparable}
+### 33. Dios Incomparable {#hymn-33-dios-incomparable}
 
 *Autor: Marcos Barrientos*
 
@@ -1670,7 +2527,7 @@ Eres mi Señor, mi salvador</pre>
 
 ---
 
-### 26. Dios te salve {#hymn-26-dios-te-salve}
+### 34. Dios te salve {#hymn-34-dios-te-salve}
 
 *Autor: popular*
 
@@ -1747,7 +2604,7 @@ Que regalas la vida sin fin</pre>
 
 ---
 
-### 27. Dona tu Vida {#hymn-27-dona-tu-vida}
+### 35. Dona tu Vida {#hymn-35-dona-tu-vida}
 
 *Autor: popular*
 
@@ -1799,7 +2656,141 @@ Y madurado bajo el sol, sólo queda recogerlo.</pre>
 
 ---
 
-### 28. El Dios que adoramos {#hymn-28-el-dios-que-adoramos}
+### 36. Dulce locura {#hymn-36-dulce-locura}
+
+*Autor: Batah*
+
+*Capo: 0*
+
+<pre class="lyrics">[Verse]
+  <strong>G</strong>                          <strong>Am</strong>
+Creo que no encuentro las palabras
+ <strong>D</strong>                  <strong>G</strong>
+Se hace dificil expresar
+ <strong>Em</strong>                      <strong>Am</strong>
+El alma y gira y da mil vueltas
+ <strong>D</strong>                     <strong>G</strong>
+Estas presente en el Altar
+ 
+  <strong>G</strong>                        <strong>Am</strong>
+Te veo escondido en la custodia
+ <strong>D</strong>                  <strong>G</strong>
+Y siempre intento recordar
+ <strong>Em</strong>                      <strong>Am</strong>
+Que tu me miras, y yo te miro
+ <strong>D</strong>                     <strong>G</strong>
+Y no hace falta mucho mas.
+ 
+[Chorus]
+ <strong>G</strong>                    <strong>C</strong>
+Dulce locura, te escondes en el pan.
+<strong>D</strong>                 <strong>G</strong>
+Que mas podrias dar?
+<strong>Em</strong>                        <strong>Am</strong>
+Sencillo y fragil, Dios eterno
+<strong>D</strong>                        <strong>G</strong>
+Nos traes la vida, traes la paz.
+ 
+  <strong>G</strong>                  <strong>Am</strong>
+Me fascina este misterio,
+ <strong>D</strong>                           <strong>G</strong>
+Como es que Tu has querido entrar
+ <strong>Em</strong>                      <strong>Am</strong>
+Dentro de este pobre corazon
+ <strong>D</strong>                     <strong>G</strong>
+Que en ti se funde al comulgar
+ 
+  <strong>G</strong>               <strong>Am</strong>
+En el mundo no hay amor asi
+ <strong>D</strong>                  <strong>G</strong>
+Amor que llego a morir
+ <strong>Em</strong>                      <strong>Am</strong>
+Resucistaste y ahora estas aqui
+ <strong>D</strong>                     <strong>G</strong>
+En el sagrario, junto a mi.
+ 
+  <strong>G</strong>                             <strong>C</strong>
+Dulce locura, te escondes en el pan.
+ <strong>D</strong>                 <strong>G</strong>
+Que mas podrias dar?
+ <strong>Em</strong>                        <strong>Am</strong>
+Sencillo y fragil, Dios eterno
+ <strong>D</strong>                        <strong>G</strong>
+Nos traes la vida, traes la paz.
+ 
+ <strong>D</strong>                <strong>G</strong>
+Ante ti rindo mi vida
+ <strong>Am</strong>          <strong>D</strong>        <strong>G</strong>
+Quiero estar cerca de ti
+ <strong>Am</strong>          <strong>D</strong>           <strong>Em</strong>
+Compartir mis suenos y alegrias.
+ <strong>Am</strong>          <strong>D</strong>        <strong>G</strong>
+Quiero amarte... Cada dia mas.</pre>
+
+---
+
+### 37. Déjate {#hymn-37-déjate}
+
+*Autor: Misión País*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>C</strong>
+Hace ya tiempo que comprendí
+Tú me buscaste en todas partes
+La mecha que en mi un día empezó a fallar
+Tú no dejaste se apagase
+
+Yo lo contemplo y digo ¿qué será?
+Será que estaba equivocado
+Y he descubierto que este loco está
+De amor muriendo porque le ame
+
+Yo no he querido saber más
+De la locura que me late
+Pero la fiebre quiere regresar
+Y Él no dejó de predicarme
+Y Tú me dices
+
+Déjate, que te consuma este fuego
+No apagues ya más esta hoguera
+Que si no hay fuego no habrá luz
+Créeme que estoy clavado
+Porque te amo
+
+No encontrarás en otro lado
+Quien quiera ya morir por ti
+No tengas miedo no te dejaré
+Las veces que tú me reclames
+
+Yo gozo al ver que quieres regresar
+Déjame que Yo te levante
+Señor no ves que quiero regresar
+Pero me pesa mi pasado
+
+Acaso pides lo que no sé dar
+El tiempo me ha secado el alma
+Tanto he besado el suelo ¿no lo ves?
+Mis manos se han cerrado tanto
+No te preocupes te rescatare
+Mi vida cambio por la tuya
+Y tu me dices
+
+Déjate, que te consuma este fuego
+No apagues ya más esta hoguera
+Que si no hay fuego no habrá luz
+Créeme que estoy clavado
+Porque te amo
+No encontrarás en otro lado
+Quien quiera ya morir por ti
+
+Déjate, que te consuma este fuego
+No apagues ya más esta hoguera
+Que Yo encendí en tu corazón</pre>
+
+---
+
+### 38. El Dios que adoramos {#hymn-38-el-dios-que-adoramos}
 
 *Autor: popular*
 
@@ -1877,7 +2868,7 @@ Glorioso redentor y rey, te adoramos</pre>
 
 ---
 
-### 29. El que muere por mí {#hymn-29-el-que-muere-por-mí}
+### 39. El que muere por mí {#hymn-39-el-que-muere-por-mí}
 
 *Autor: Schoenstatt*
 
@@ -2009,7 +3000,7 @@ Que se acerca a su hijo y me abraza feliz</pre>
 
 ---
 
-### 30. El Rey de mi Vida {#hymn-30-el-rey-de-mi-vida}
+### 40. El Rey de mi Vida {#hymn-40-el-rey-de-mi-vida}
 
 *Autor: popular*
 
@@ -2077,7 +3068,7 @@ a Ti yo te rindo todo lo que soy
 
 ---
 
-### 31. El Unico Rey {#hymn-31-el-unico-rey}
+### 41. El Unico Rey {#hymn-41-el-unico-rey}
 
 *Autor: Tuyo*
 
@@ -2132,7 +3123,140 @@ Simplemente porque Tú eres Dios</pre>
 
 ---
 
-### 32. Enciende una luz {#hymn-32-enciende-una-luz}
+### 42. En medio del fuego {#hymn-42-en-medio-del-fuego}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>G#m</strong>
+Alzo la voz
+<strong>G#m</strong>
+Alzo la voz
+              <strong>E</strong>
+En medio del fuego
+               <strong>B</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero
+
+<strong>G#m</strong>
+Alzo la voz
+              <strong>E</strong>
+En medio del fuego
+               <strong>B</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero
+
+<strong>G#m</strong>              <strong>B</strong>           <strong>E</strong>
+Ahora que no hay tierra que pisar
+<strong>G#m</strong>              <strong>B</strong>           <strong>E</strong>
+Aunque todo en mí me pida abandonar
+
+<strong>B</strong>
+Alzo la voz
+              <strong>E</strong>
+En medio del fuego
+               <strong>G#m</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero
+
+<strong>B</strong>
+Alzo la voz
+              <strong>E</strong>
+En medio del fuego
+               <strong>G#m</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero
+
+<strong>G#m</strong>
+Cielos, ejércitos
+
+Luz y tinieblas
+    <strong>E</strong>
+La noche y el día
+                           <strong>B</strong>
+El Sol, las estrellas, cantad
+              <strong>F#</strong>
+Bendecid al Señor
+
+<strong>G#m</strong>
+Que rompan los mares
+
+Los ríos que corran
+      <strong>E</strong>
+Que naden los peces
+                     <strong>B</strong>
+Retumben las olas, cantad
+             <strong>F#</strong>
+Bendecid al Señor
+
+<strong>G#m</strong>
+Los montes y cumbres
+
+Los fríos y heladas
+     <strong>E</strong>
+Ganados y fieras
+                       <strong>B</strong>
+Las aves y plantas, cantad
+             <strong>F#</strong>
+Bendecid al Señor
+
+<strong>G#m</strong>
+Hijos de hombres
+
+Que rían y lloren
+     <strong>E</strong>
+Que abracen
+
+Que corran
+                        <strong>B</strong>
+Que griten y adoren, cantad
+              <strong>F#</strong>
+Bendecid al Señor
+
+<strong>G#m</strong>
+Alzo la voz
+              <strong>E</strong>
+En medio del fuego
+               <strong>B</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero
+
+<strong>B</strong>
+Alzo la voz
+              <strong>E</strong>
+En medio del fuego
+               <strong>G#m</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero
+
+<strong>B</strong>
+Alzo la voz (alzo la voz)
+              <strong>E</strong>
+En medio del fuego (en medio del fuego)
+               <strong>G#m</strong>
+De pie en el dolor (de pie en el dolor)
+               <strong>F#</strong>
+Sin miedo te espero (sin miedo te espero)
+
+<strong>B</strong>
+Alzo la voz (alzo la voz)
+              <strong>E</strong>
+En medio del fuego (en medio del fuego)
+               <strong>G#m</strong>
+De pie en el dolor
+               <strong>F#</strong>
+Sin miedo te espero</pre>
+
+---
+
+### 43. Enciende una luz {#hymn-43-enciende-una-luz}
 
 *Autor: popular*
 
@@ -2160,7 +3284,7 @@ en la oscuridad.</pre>
 
 ---
 
-### 33. Enciéndeme {#hymn-33-enciéndeme}
+### 44. Enciéndeme {#hymn-44-enciéndeme}
 
 *Autor: Hakuna*
 
@@ -2206,7 +3330,66 @@ Para en todo amarle y servir</pre>
 
 ---
 
-### 34. Eres Testigo {#hymn-34-eres-testigo}
+### 45. Entrega {#hymn-45-entrega}
+
+*Autor: Schoenstatt*
+
+*Capo: 0*
+
+<pre class="lyrics">Cuando siento tu amor tocar mi corazón 
+Cuando veo en tu luz, la fuerza de tu calor
+ LAm                   RE
+No hay más respuesta posible
+
+         SOL      LAm           SI7
+Que entregar todo lo que hay en mí
+
+Mimm RE-DO       LAm
+Tómame Señor y seré como un niño ante ti
+
+       RE       SI7
+Seré tuyo como acto de amor
+
+Aqui empiesa el rasgeo
+
+
+    MIm       SIm             MIm
+Déjame que te ame con todo mi ser
+
+       SIm                RE
+Y en silencio puedas entender
+
+         Llam                 FA     DO     LAm       RE
+lo que entrega mi amor cuando veo en ti esa cruz de dolor
+
+    MIm         SIm                 MIm
+Y sabrás que quiero desangrarme por ti
+
+      SIm                DO               FA
+Si me tomas la mano y me usas hoy para vencer
+
+     DO        LAm       RE        LAm-SOL/SI-DO
+Y clavar tu bandera y tu voz sin dudar ni temer
+
+SI7           MIm - RE/FA#
+Sin dudar ni temer
+
+
+Y Aqui se repite desde el principio pero sin la intro
+
+Aunque no sea mi amor igual al que tu me das
+Toma mi corazón si en algo sirve a tu plan
+
+Y si me necesitaras por pequeña que sea mi voz
+Pídeme Señor
+Que mi vida se entregue a tu amor
+Y valiente moriré para ti
+
+Coro</pre>
+
+---
+
+### 46. Eres Testigo {#hymn-46-eres-testigo}
 
 *Autor: anonimo*
 
@@ -2318,7 +3501,82 @@ Tienes a Cristo, lo tienes todo</pre>
 
 ---
 
-### 35. Estaré Contigo {#hymn-35-estaré-contigo}
+### 47. Es verdad {#hymn-47-es-verdad}
+
+*Autor: Vali Olguin*
+
+*Capo: 0*
+
+<pre class="lyrics">[Verse]
+<strong>C</strong>      <strong>F</strong>
+Es verdad
+         <strong>C</strong>           <strong>G</strong>
+que Tú estás conmigo siempre,
+          <strong>Am</strong>        <strong>F</strong>
+que tu abrazo es mi hogar,
+        <strong>C</strong>           <strong>G</strong>
+que tus manos me sostienen.
+ 
+[Chorus]
+   <strong>C</strong>
+Es verdad
+       <strong>F</strong>            <strong>C</strong>             <strong>G</strong>
+que me quieres y me buscas sin descansar,
+         <strong>Am</strong>               <strong>F</strong>
+que me escoges, que me prefieres
+        <strong>C</strong>               <strong>G</strong>
+y te conmueve mi fragilidad.
+ 
+[Verse 2]
+      <strong>F</strong>
+Es verdad
+          <strong>C</strong>            <strong>G</strong>
+que nunca me has abandonado
+      <strong>Am</strong>       <strong>F</strong>
+y que puedo descansar
+     <strong>C</strong>            <strong>G</strong>
+abrazado a tu costado.
+ 
+[Chorus]
+   <strong>C</strong>
+Es verdad
+       <strong>F</strong>            <strong>C</strong>             <strong>G</strong>
+que me quieres y me buscas sin descansar,
+         <strong>Am</strong>               <strong>F</strong>
+que me escoges, que me prefieres
+        <strong>C</strong>               <strong>G</strong>
+y te conmueve mi fragilidad.</pre>
+
+---
+
+### 48. Espíritu ven {#hymn-48-espíritu-ven}
+
+*Autor: Batah*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>G</strong> <strong>Em</strong> <strong>C</strong> <strong>D</strong>
+
+Espíritu ven, ven y lléname de vida
+Dame de tu paz, Tú que amas sin medida (x2)
+Toma lo que soy, toma todo lo que tengo
+Mi corazón te doy,
+Ven y enciéndelo en tu fuego
+
+Espíritu ven, ven ven ven
+Espíritu ven, ven, ven, ven
+Espíritu ven, ven y lléname de vida
+Dame de tu paz, Tú que amas sin medida (x2)
+
+Toma lo que soy, toma todo lo que tengo
+Mi corazón te doy,
+Ven y enciéndelo en tu fuego
+Espíritu ven, ven ven ven
+Espíritu ven, ven, ven, ven</pre>
+
+---
+
+### 49. Estaré Contigo {#hymn-49-estaré-contigo}
 
 *Autor: Jon Carlo*
 
@@ -2375,7 +3633,32 @@ no te abandonaré,   puedes contar conmigo.</pre>
 
 ---
 
-### 36. Hail Mary Prayer {#hymn-36-hail-mary-prayer}
+### 50. Estás dentro de mí {#hymn-50-estás-dentro-de-mí}
+
+*Autor: Schoenstatt*
+
+*Capo: 0*
+
+<pre class="lyrics">No necesito alas, para volar hasta Ti
+No necesito fuego, para sentir tu calor
+No necesito dormir, para poderte soñar
+No necesito hablar, para que escuches mi voz
+Estás dentro de mí
+Tú eres ese gozo del alma
+El agua de mi jardín
+Que limpia todas mis fuentes
+Estás dentro de mí
+Tú eres ese gozo del alma
+El agua de mi jardín
+Que limpia todas mis fuentes
+Todos mis nombres
+Porque soy hombre
+Porque soy pobre
+Porque eres Padre</pre>
+
+---
+
+### 51. Hail Mary Prayer {#hymn-51-hail-mary-prayer}
 
 *Autor: David Burke*
 
@@ -2417,7 +3700,7 @@ Amen.</pre>
 
 ---
 
-### 37. Hasta La Locura {#hymn-37-hasta-la-locura}
+### 52. Hasta La Locura {#hymn-52-hasta-la-locura}
 
 *Autor: popular*
 
@@ -2453,7 +3736,7 @@ Yo te canto mi amado hasta el final...</pre>
 
 ---
 
-### 38. Hasta que el mundo arda por Él {#hymn-38-hasta-que-el-mundo-arda-por-él}
+### 53. Hasta que el mundo arda por Él {#hymn-53-hasta-que-el-mundo-arda-por-él}
 
 *Autor: Francisco Alvarado*
 
@@ -2491,7 +3774,7 @@ hasta que el mundo arda por Él.</pre>
 
 ---
 
-### 39. Here I am Lord {#hymn-39-here-i-am-lord}
+### 54. Here I am Lord {#hymn-54-here-i-am-lord}
 
 *Autor: popular*
 
@@ -2602,7 +3885,7 @@ I will go, Lord,         if you lead me.
 
 ---
 
-### 40. Hermoso Nombre {#hymn-40-hermoso-nombre}
+### 55. Hermoso Nombre {#hymn-55-hermoso-nombre}
 
 *Autor: Hillsong*
 
@@ -2690,7 +3973,7 @@ Poderoso su nombre es
 
 ---
 
-### 41. Himno Misión País {#hymn-41-himno-misión-país}
+### 56. Himno Misión País {#hymn-56-himno-misión-país}
 
 *Autor: popular*
 
@@ -2734,7 +4017,7 @@ Para la misión</pre>
 
 ---
 
-### 42. Hoy Me Entrego {#hymn-42-hoy-me-entrego}
+### 57. Hoy Me Entrego {#hymn-57-hoy-me-entrego}
 
 *Autor: Factor de Cambio*
 
@@ -2839,7 +4122,249 @@ Haz todo de nuevo</pre>
 
 ---
 
-### 43. Jesus {#hymn-43-jesus}
+### 58. Huracán {#hymn-58-huracán}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics">[Intro]
+<strong>G</strong> <strong>D</strong> <strong>Em</strong> <strong>C</strong>
+<strong>G</strong> <strong>D</strong> <strong>Em</strong> <strong>C</strong>
+ 
+ 
+[Verse]
+<strong>G</strong>                      <strong>D</strong>
+Me he hecho tantas preguntas
+<strong>Em</strong>             <strong>C</strong>
+intentando entender
+<strong>G</strong>                      <strong>D</strong>
+Me he lanzado a buscarte
+<strong>Em</strong>             <strong>C</strong>
+sin saberte ver 
+<strong>G</strong>                      <strong>D</strong>
+Me he asomado al abismo
+<strong>Em</strong>             <strong>C</strong>
+me he atrevido a saltar
+    <strong>G</strong>     <strong>D</strong>    <strong>Em</strong>
+y caer 
+ 
+ESTRIBILLO
+<strong>G</strong>
+Un huracán
+<strong>D</strong>
+romperá
+     <strong>Em</strong>              <strong>C</strong>
+el cielo desde mi garganta
+     <strong>G</strong>
+gritándote
+         <strong>D</strong>                    <strong>C</strong>
+¿dónde estás cuando me haces falta?
+ 
+<strong>G</strong>               <strong>D</strong>
+Me han dado respuestas
+<strong>Em</strong>              <strong>C</strong>
+pero no se que hacer
+<strong>G</strong>               <strong>D</strong>
+He prometido seguirte
+<strong>Em</strong>           <strong>C</strong>
+Yo sin entender
+<strong>G</strong>                    <strong>D</strong>
+Y hay un eco en lo hondo
+<strong>Em</strong>                  <strong>C</strong>
+que me empuja hacia ti
+<strong>G</strong>                  <strong>D</strong>
+y aunque sea sin sentirte
+<strong>Em</strong>       <strong>C</strong>
+te buscaré
+ 
+ESTRIBILLO
+<strong>G</strong>
+Un huracán
+<strong>D</strong>
+romperá
+     <strong>Em</strong>              <strong>C</strong>
+el cielo desde mi garganta
+     <strong>G</strong>
+gritándote
+         <strong>D</strong>                    <strong>C</strong>
+¿dónde estás cuando me haces falta?
+ 
+<strong>G</strong>                   <strong>D</strong>
+Estoy aqui, soy el silencio
+<strong>Em</strong>                 <strong>C</strong>
+Estoy aquí, soy este viento
+<strong>G</strong>                       <strong>D</strong>       <strong>C</strong>
+Estoy aquí, soy este trozo de pan
+<strong>G</strong>                   <strong>D</strong>
+Estoy aqui, soy tu lamento
+<strong>Em</strong>                <strong>C</strong>
+Estoy aquí, soy este eco
+<strong>G</strong>                     <strong>D</strong>       <strong>C</strong>
+Estoy aquí, soy este trozo de pan</pre>
+
+---
+
+### 59. Id y anunciad {#hymn-59-id-y-anunciad}
+
+*Autor: Batah*
+
+*Capo: 2*
+
+<pre class="lyrics"><strong>G</strong> <strong>C</strong>
+Llévame a donde quieras,
+
+<strong>Am</strong> <strong>D</strong>
+quiero ser sal quiero ser luz en las tinieblas.
+
+<strong>G</strong> <strong>C</strong>
+Mándame a donde vayas,
+
+<strong>Am</strong> <strong>D</strong>
+donde mis manos y mi voz te hagan falta
+
+
+<strong>Em</strong> <strong>C</strong> (<strong>G/B</strong>) <strong>Am</strong> <strong>D</strong>
+Id y anunciad, que es Cristo el que al mundo trae la Paz.
+
+<strong>Em</strong> <strong>C</strong> (<strong>G/B</strong>) <strong>Am</strong> <strong>D</strong>
+Id a anunciar, al Dios Vivo que nos ama sin igual.
+
+
+<strong>C</strong> <strong>D</strong> <strong>G</strong> <strong>Em</strong>
+Y es verdad que nos amas Jesús,
+
+<strong>C</strong> <strong>D</strong> <strong>G</strong> (<strong>G7</strong>)
+está escrito en la Cruz.
+
+<strong>C</strong> <strong>D</strong> <strong>G</strong> <strong>Em</strong>
+Enséñame a recordar este amor
+
+<strong>C</strong> <strong>D</strong> <strong>G</strong>
+cada día cuando salga el sol. [Cuando salga el sol (ult)]
+
+
+<strong>G</strong> <strong>C</strong>
+Regálame la confianza,
+
+<strong>Am</strong> <strong>D</strong>
+para que seas Tu quien libre mis batallas.
+
+<strong>G</strong> <strong>C</strong>
+Enséñame como se ama,
+
+<strong>Am</strong> <strong>D</strong>
+para poder llevar tu amor a toda alma.
+(BIS)</pre>
+
+---
+
+### 60. Inúndame {#hymn-60-inúndame}
+
+*Autor: Athenas*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>Em</strong> <strong>G</strong>
+
+Entra, te abro mi corazón
+Lléname con tu amor
+Inúndame, satúrame
+
+Ven, Espíritu Santo, ven
+Ven, Espíritu Santo, ven
+
+Entra, te abro mi corazón
+Lléname con tu amor
+Inúndame, satúrame
+
+Ven, Espíritu Santo, ven
+Ven, Espíritu Santo, ven
+Inúndame, satúrame
+Ven, Espíritu Santo, ven
+Inúndame, satúrame
+Ven, Espíritu Santo, ven
+Ven, Espíritu Santo, ven
+Ven, Espíritu Santo, ven
+Ven, Espíritu Santo
+Ven, Espíritu Santo
+Inúndame, ven, Espíritu
+Oh, oh
+Lléname
+Oh, oh
+Ven</pre>
+
+---
+
+### 61. Jesucristo basta {#hymn-61-jesucristo-basta}
+
+*Autor: Un Corazon*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>F</strong> <strong>C</strong> <strong>Am</strong> <strong>C</strong>
+Nuestros corazones
+Insaciables son
+Hasta que conocen
+<strong>A</strong> su salvador
+
+Tal y como somos, nos amó
+Hoy, nos acercamos sin temor
+Él es el agua que al beber
+Nunca más tendremos sed
+Jesucristo basta
+Jesucristo basta
+
+Mi castigo recibió
+Y Su herencia me entregó
+Jesucristo basta
+Jesucristo basta
+
+Fuimos alcanzados
+Por Su gran amor
+Con brazos abiertos
+Nos recibe hoy
+
+Tal y como somos, nos amó
+Hoy, nos acercamos sin temor
+Él es el agua que al beber
+Nunca más tendremos sed
+Jesucristo basta
+Jesucristo basta
+
+Mi castigo recibió
+Y Su herencia me entregó
+Jesucristo basta
+Jesucristo basta
+
+Yeh, uoh
+Jesucristo basta
+Uoh, uoh
+
+Tal y como somos, nos amó
+Hoy, nos acercamos sin temor, sin temor
+Tal y como somos, nos amó, ooh
+Hoy, nos acercamos sin temor
+Y él es el agua que al beber
+Nunca más tendremos sed
+Jesucristo basta
+Jesucristo basta
+
+Mi castigo recibió
+Y Su herencia me entregó
+Jesucristo basta
+Jesucristo basta
+Yeh, uoh
+Jesucristo basta
+Yeh (uoh)
+Ahora hay un futuro
+Y esperanza fiel
+En Su amor, confiamos
+Hay descanso en Él</pre>
+
+---
+
+### 62. Jesus {#hymn-62-jesus}
 
 *Autor: Sarai Rivera*
 
@@ -2902,7 +4427,7 @@ Jesús</pre>
 
 ---
 
-### 44. Jesus have it all {#hymn-44-jesus-have-it-all}
+### 63. Jesus have it all {#hymn-63-jesus-have-it-all}
 
 *Autor: Jeremy Riddle*
 
@@ -3029,7 +4554,7 @@ King Jesus, have it all</pre>
 
 ---
 
-### 45. Junto a ti María {#hymn-45-junto-a-ti-maría}
+### 64. Junto a ti María {#hymn-64-junto-a-ti-maría}
 
 *Autor: popular*
 
@@ -3109,7 +4634,7 @@ MADRE, MAAADRE</pre>
 
 ---
 
-### 46. La Bendicion {#hymn-46-la-bendicion}
+### 65. La Bendicion {#hymn-65-la-bendicion}
 
 *Autor: popular*
 
@@ -3184,7 +4709,7 @@ En tu llanto, Y alegría
 
 ---
 
-### 47. La Fe de María {#hymn-47-la-fe-de-maría}
+### 66. La Fe de María {#hymn-66-la-fe-de-maría}
 
 *Autor: popular*
 
@@ -3270,7 +4795,79 @@ y entregarte mi vida mi vida.</pre>
 
 ---
 
-### 48. La Samaritana {#hymn-48-la-samaritana}
+### 67. La medida del amor {#hymn-67-la-medida-del-amor}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics">[Intro]
+<strong>Gm</strong>     <strong>Dm</strong>     <strong>A</strong>
+ 
+[Verse 1]
+<strong>Gm</strong>                       <strong>Dm</strong>
+¿Cuál es la medida del amor?
+             <strong>A</strong>                     <strong>Dm</strong>  <strong>D7</strong>
+¿Cuánto alcanzan los latidos del dolor?
+<strong>Gm</strong>                      <strong>Dm</strong>
+&quot;Padre mío, dales tu perdón.
+        <strong>A</strong>                            <strong>A</strong>
+Aún no saben que esas manos son de Dios.
+ 
+[Pre-chorus]
+       <strong>D5</strong>                          <strong>Bm7</strong>
+Se conmueve el universo en cada golpe
+        <strong>A</strong>                        <strong>D5</strong>
+y el silencio deja hablar al corazón.
+       <strong>Bm7</strong>                   <strong>Em</strong>
+Un madero y unos clavos empapados
+        <strong>A</strong>                     <strong>D5</strong>
+de la sangre del más bello Redentor.
+ 
+[Chorus]
+      <strong>G6</strong>
+Tu dolor me vuelve loco,
+      <strong>Gm6</strong>                             <strong>D5</strong>
+me da vida, y sin hablar me enseña todo
+           <strong>Bm7</strong>       <strong>Em</strong>
+lo que puede un corazón,
+     <strong>Em</strong>         <strong>G</strong>         <strong>A</strong>
+la medida sin medida del Amor.
+ 
+[Verse 2]
+<strong>Gm</strong>                       <strong>Dm</strong>
+En la Cruz clavaron el amor,
+         <strong>A</strong>                          <strong>Dm</strong> <strong>D7</strong>
+y un abrazo se hizo eterno en mi dolor.
+<strong>Gm</strong>                      <strong>Dm</strong>         <strong>A</strong>
+Clávame contigo, mi Jesús, quiero darme y darlo todo como Tú.
+ 
+[Pre-chorus]
+       <strong>D5</strong>                          <strong>Bm7</strong>
+Se conmueve el universo en cada golpe
+        <strong>A</strong>                        <strong>D5</strong>
+y el silencio deja hablar al corazón.
+       <strong>Bm7</strong>                   <strong>Em</strong>
+Un madero y unos clavos empapados
+        <strong>A</strong>                     <strong>D5</strong>
+de la sangre del más bello Redentor.
+ 
+[Chorus]
+      <strong>G6</strong>
+Tu dolor me vuelve loco,
+      <strong>Gm6</strong>                             <strong>D5</strong>
+me da vida, y sin hablar me enseña todo
+           <strong>Bm7</strong>       <strong>Em</strong>
+lo que puede un corazón,
+     <strong>Em</strong>         <strong>G</strong>         <strong>A</strong>
+la medida sin medida del Amor.
+ 
+[Outro]
+<strong>G</strong>   <strong>Gm</strong>   <strong>D</strong>  <strong>Bm</strong>  <strong>Em</strong>   <strong>A</strong>   <strong>D</strong></pre>
+
+---
+
+### 68. La Samaritana {#hymn-68-la-samaritana}
 
 *Autor: popular*
 
@@ -3357,7 +4954,7 @@ limpiará sus heridas, no tendrá sed&quot;.</pre>
 
 ---
 
-### 49. Libre {#hymn-49-libre}
+### 69. Libre {#hymn-69-libre}
 
 *Autor: Miel San Marcos*
 
@@ -3456,7 +5053,52 @@ X2</pre>
 
 ---
 
-### 50. Lord, I Need You {#hymn-50-lord-i-need-you}
+### 70. Llévame {#hymn-70-llévame}
+
+*Autor: Ignis*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>Em</strong>
+Estate Señor conmigo
+Siempre sin jamás partirte
+Y cuando decidas irte
+Llévame Señor contigo
+Porque el pensar que te irás
+Me causa un terrible miedo
+De si yo sin ti me quedo
+De si tú sin mí te vas
+
+Llévame en tu compañía
+Donde tú vayas Jesús
+Porque bien sé que eres tú
+La vida del alma mía
+Si tú vida no me das
+Yo sé que vivir no puedo
+Ni si yo sin ti me quedo
+Ni si tú sin mí te vas
+
+Por eso más que a la muerte
+Temo Señor tu partida
+Y quiero perder la vida
+Mil veces más que perderte
+Pues la inmortal que tú das
+Sé que alcanzarla no puedo
+Cuando yo sin ti me quedo
+Cuando tú sin mí te vas
+
+Llévame en tu compañía
+Donde tú vayas Jesús
+Porque bien sé que eres tú
+La vida del alma mía
+Si tú vida no me das
+Yo sé que vivir no puedo
+Ni si yo sin ti me quedo
+Ni si tú sin mí te vas</pre>
+
+---
+
+### 71. Lord, I Need You {#hymn-71-lord-i-need-you}
 
 *Autor: Matt Maher*
 
@@ -3525,7 +5167,136 @@ Oh God, how I need you</pre>
 
 ---
 
-### 51. Madre {#hymn-51-madre}
+### 72. Los coros del universo {#hymn-72-los-coros-del-universo}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
+
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+
+Con la palabra y con tu aliento
+Creaste el mundo para mí
+Estableciste espacio y tiempo
+Sostienes cada momento
+Hoy te encuentro
+Vengo a ti
+Reconocemos tu grandeza
+Eres silencio de tu sí
+Nos estremece tu belleza
+Ahora estando en tu presencia
+Nos postramos ante ti
+Solo ante ti
+Grandes y maravillosas
+Son todas tus obras
+
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+
+Con la palabra y con tu aliento
+Hiciste el hombre para ti
+Nos haces hijos en tu hijo
+Todo fue creado por Él
+Y para Él
+
+Grandes y maravillosas
+Son todas tus obras
+
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+
+Gloria, gloria a ti
+Gloria a ti, a ti para siempre
+Gloria, gloria a ti
+Gloria a ti, a ti para siempre
+Gloria, gloria a ti
+Gloria a ti, a ti para siempre
+Gloria, gloria a ti
+Gloria a ti, a ti para siempre
+
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre
+Los coros del universo
+Te aclaman a ti
+<strong>A</strong> ti para siempre</pre>
+
+---
+
+### 73. Madre {#hymn-73-madre}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics">[Verse]
+<strong>E</strong>                         <strong>F#m</strong>
+Llévame contigo a todos lados,
+       <strong>B7</strong>                        <strong>E</strong>
+que pueda dormir tranquilo bajo tu precioso manto
+<strong>E</strong>                       <strong>F#m</strong>
+Llévame contigo, no me sueltes de la mano,
+       <strong>B7</strong>                      <strong>E</strong>
+Y que cuando sienta frío, note tu cálido abrazo.
+ 
+                          <strong>F#m</strong>
+Llévame contigo, a donde quieras,
+             <strong>B7</strong>
+Y es que no hay mayor consuelo que
+     <strong>E</strong>
+una madre que te quiera y que algún
+       <strong>F#m</strong>  <strong>B7</strong>                         <strong>E</strong>
+día pudiera,   al Cielo ir por tu escalera
+                 <strong>F#m</strong>
+Y entender que contigo Madre
+   <strong>B7</strong>              <strong>E</strong>
+querida, valió la pena
+ 
+ 
+[Verse]
+<strong>A</strong>               <strong>B</strong>          <strong>E</strong>
+Que no me canse nunca de mirarte
+<strong>A</strong>               <strong>B</strong>          <strong>E</strong>
+Y repetir con humilde devoción:
+<strong>A</strong>               <strong>B</strong>             <strong>E</strong>
+Te quiero con locura preciosa Madre
+<strong>A</strong>             <strong>B</strong>           <strong>E</strong>
+Tú el mejor regalo de mi Dios
+ 
+<strong>A</strong>               <strong>B</strong>          <strong>E</strong>
+Que no me canse nunca de mirarte
+<strong>A</strong>               <strong>B</strong>          <strong>E</strong>
+Y repetir con humilde devoción:
+<strong>A</strong>               <strong>B</strong>             <strong>E</strong>
+Te quiero con locura preciosa Madre
+<strong>A</strong>             <strong>B</strong>              <strong>E</strong>
+Tú Madre de Hakuna y mi corazón.</pre>
+
+---
+
+### 74. Madre {#hymn-74-madre}
 
 *Autor: Hakuna*
 
@@ -3614,7 +5385,7 @@ De sus labios que aún me dicen &quot;Tengo sed&quot;.</pre>
 
 ---
 
-### 52. Madre y Reina {#hymn-52-madre-y-reina}
+### 75. Madre y Reina {#hymn-75-madre-y-reina}
 
 *Autor: Siquem*
 
@@ -3712,7 +5483,7 @@ x3</pre>
 
 ---
 
-### 53. Mar Adentro (Navegar) {#hymn-53-mar-adentro-navegar}
+### 76. Mar Adentro (Navegar) {#hymn-76-mar-adentro-navegar}
 
 *Autor: Schoenstatt*
 
@@ -3741,7 +5512,7 @@ Si Tú lo dices Señor, ellas se van a llenar</pre>
 
 ---
 
-### 54. Maravillas {#hymn-54-maravillas}
+### 77. Maravillas {#hymn-77-maravillas}
 
 *Autor: schoenstatt*
 
@@ -3790,7 +5561,7 @@ Maravillas hizo en mí</pre>
 
 ---
 
-### 55. Me Rindo a Ti {#hymn-55-me-rindo-a-ti}
+### 78. Me Rindo a Ti {#hymn-78-me-rindo-a-ti}
 
 *Autor: Majo y Dan*
 
@@ -3872,7 +5643,92 @@ Cristo jesús quiero responder
 
 ---
 
-### 56. Muevete en mi {#hymn-56-muevete-en-mi}
+### 79. Mi amado {#hymn-79-mi-amado}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>E</strong> <strong>Am</strong> <strong>F</strong> 
+
+Ya toda me entregué y di
+Y de tal suerte he trocado
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado
+
+Cuando el dulce cazador
+Me tiró y dejó herida
+En los brazos del amor
+Mi alma quedó rendida
+Y cobrando nueva vida
+De tal manera he trocado
+
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado
+
+Me hirió con una flecha
+Enherbolada de amor
+Y mi alma quedó hecha
+Una con Su Criador
+
+Ya no quiero otro amor
+Pues a Mi Dios me he entregado
+
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado
+
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado
+
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado
+
+Que Mi Amado es para mí
+Y Yo soy para Mi Amado</pre>
+
+---
+
+### 80. Mis heridas te han curado {#hymn-80-mis-heridas-te-han-curado}
+
+*Autor: Batah*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>G</strong> <strong>Am</strong> <strong>D</strong> <strong>G</strong> <strong>D/F#</strong> 
+Mírame en la Cruz, crees que mi amor no va a alcanzarte 
+<strong>Em</strong> <strong>Am</strong> <strong>D</strong> <strong>G</strong> 
+Ven y/aquí podrás saciar tu sed, en esta fuente inagotable 
+<strong>G</strong> <strong>Am</strong> <strong>D</strong> <strong>G</strong> RE/Fa#m 
+Dime, que te turba el corazón, en qué tienes esperanza, 
+<strong>Em</strong> <strong>Am</strong> <strong>D</strong> <strong>G</strong> 
+Ábrete y confía yo soy el Señor, que te protege noche y día 
+
+<strong>C</strong> <strong>D</strong> <strong>G</strong> 
+Mírame, mira este corazón ardiente que quiero ofrecer 
+<strong>Em</strong> <strong>Am</strong> 
+Toma este amor que es tuyo y es más grande que el ayer 
+<strong>D</strong> <strong>G</strong> <strong>G7</strong> 
+Quiero amarte quiero darte solo la Verdad, felicidad y Paz 
+
+<strong>C</strong> <strong>D</strong> <strong>G</strong> 
+Ámame, no es necesario ser perfecto tan solo ámame, 
+<strong>Em</strong> <strong>Am</strong> 
+Vivamos juntos compartamos cada atardecer 
+<strong>D</strong> <strong>G</strong> <strong>G7</strong> 
+No será fácil el camino, pero sí estará repleto de felicidad 
+Déjate querer, mis heridas te han curado
+<strong>Am</strong> <strong>D</strong> <strong>G</strong> 
+En mi corazón está escrito tu nombre 
+<strong>C</strong> <strong>D</strong> <strong>G</strong> 
+Ven a mí, si estas cansado o agobiado 
+<strong>Am</strong> <strong>D</strong> <strong>G</strong> 
+Mira a la Cruz y encontrarás a tu Jesús</pre>
+
+---
+
+### 81. Muevete en mi {#hymn-81-muevete-en-mi}
 
 *Autor: popular*
 
@@ -3893,7 +5749,7 @@ Muévete en mí</pre>
 
 ---
 
-### 57. Muros {#hymn-57-muros}
+### 82. Muros {#hymn-82-muros}
 
 *Autor: Generación 12*
 
@@ -3938,7 +5794,7 @@ El cielo vendrá</pre>
 
 ---
 
-### 58. Nada te turbe {#hymn-58-nada-te-turbe}
+### 83. Nada te turbe {#hymn-83-nada-te-turbe}
 
 *Autor: Santa Teresa*
 
@@ -3962,7 +5818,7 @@ Solo Dios basta</pre>
 
 ---
 
-### 59. Nadie te ama como yo {#hymn-59-nadie-te-ama-como-yo}
+### 84. Nadie te ama como yo {#hymn-84-nadie-te-ama-como-yo}
 
 *Autor: popular*
 
@@ -4009,7 +5865,7 @@ CORO:
 
 ---
 
-### 60. No hay lugar más alto {#hymn-60-no-hay-lugar-más-alto}
+### 85. No hay lugar más alto {#hymn-85-no-hay-lugar-más-alto}
 
 *Autor: Miel San Marcos*
 
@@ -4069,7 +5925,7 @@ Que estar a tus pies, que estar a tus pies</pre>
 
 ---
 
-### 61. No hay paredes {#hymn-61-no-hay-paredes}
+### 86. No hay paredes {#hymn-86-no-hay-paredes}
 
 *Autor: Jesús Adrián Romero*
 
@@ -4156,7 +6012,7 @@ Conmigo yo te llevare
 
 ---
 
-### 62. No Longer Slaves {#hymn-62-no-longer-slaves}
+### 87. No Longer Slaves {#hymn-87-no-longer-slaves}
 
 *Autor: Bethel*
 
@@ -4264,7 +6120,79 @@ I am a child of God</pre>
 
 ---
 
-### 63. No Temas {#hymn-63-no-temas}
+### 88. No sé qué viste en mí {#hymn-88-no-sé-qué-viste-en-mí}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics">[Verse 1]
+          <strong>F</strong>        <strong>F</strong>                       <strong>Dm</strong>
+Ahí estás Tú, esperando la sentencia en silencio
+            <strong>Am</strong>                           <strong>A#</strong>
+Se alza un grito entre la gente, que prefiere
+<strong>A#</strong>                         <strong>C</strong>
+   a un criminal antes que a ti.
+ 
+[Verse 2]
+            <strong>F</strong>            <strong>F</strong>                     <strong>Dm</strong>
+Y allí estás Tú, tan llagado que cuesta reconocerte,
+       <strong>Am</strong>                      <strong>A#</strong>
+entre burlas e insultos, sin amor sin amigos,
+        <strong>A#</strong>                <strong>C</strong>
+hemos huido todos de la cruz.
+ 
+[Chorus 1]
+     <strong>A#</strong>                         <strong>C</strong>
+Pues yo también he sido uno de ellos
+,
+         <strong>F</strong>             <strong>C</strong>                <strong>Dm</strong>
+he preferido cualquier cosa antes que a ti,
+                  <strong>A#</strong>                 <strong>C</strong>
+
+te he dado la espalda un sinfín de veces,
+        <strong>F</strong>            <strong>C</strong>         <strong>Dm</strong>
+no he dejado que te muevas en mí
+,
+       <strong>A#</strong>                <strong>C</strong>                      <strong>F</strong>
+y aun así dices que me amas, no sé qué viste en mí.
+ 
+[Verse 3]
+             <strong>F</strong>           <strong>F</strong>                 <strong>Dm</strong>
+¿Qué viste en mí? Sabes que yo no merezco tanto,
+     <strong>Am</strong>                <strong>A#</strong>
+pero yo necesito, tu amor infinito
+.
+       <strong>A#</strong>                   <strong>C</strong>
+Por favor, no me dejes sin ti.
+ 
+[Chorus 2]
+  <strong>A#</strong>                    <strong>C</strong>
+Ayúdame a que valga la pena
+,
+             <strong>F</strong>            <strong>C</strong>               <strong>Dm</strong>
+me he dado cuenta que no puedo estar sin ti
+.
+             <strong>A#</strong>                     <strong>C</strong>
+Que valga la pena: que viva tu condena,
+          <strong>F</strong>         <strong>C</strong>           <strong>Dm</strong>
+
+junto a María de rodillas ante ti.
+       <strong>A#</strong>                    <strong>C</strong>                      <strong>F</strong>
+
+Perdóname, ahora aquí me tienes, derramado a tus pies.
+ 
+[Bridge]
+        <strong>A#</strong>            <strong>C</strong>          <strong>F</strong>         <strong>C</strong>            <strong>Dm</strong>
+Sé que cometí el error de anteponer a tus caminos la razón.
+        <strong>A#</strong>          <strong>C</strong>               <strong>F</strong>         <strong>C</strong>            <strong>Dm</strong>
+Sé que volveré a caer, más de mil veces fallaré a tu perdón,
+       <strong>A#</strong>                 <strong>C</strong>                      <strong>F</strong>
+y aun así dices que me amas, no sé que viste en mí.</pre>
+
+---
+
+### 89. No Temas {#hymn-89-no-temas}
 
 *Autor: Jaime Olguín*
 
@@ -4315,7 +6243,7 @@ puedes ser feliz.</pre>
 
 ---
 
-### 64. No tengo miedo {#hymn-64-no-tengo-miedo}
+### 90. No tengo miedo {#hymn-90-no-tengo-miedo}
 
 *Autor: popular*
 
@@ -4379,7 +6307,7 @@ Hombres valientes que quieran seguir tu caminar</pre>
 
 ---
 
-### 65. Oceans {#hymn-65-oceans}
+### 91. Oceans {#hymn-91-oceans}
 
 *Autor: Hillsong*
 
@@ -4481,7 +6409,7 @@ I am Yours and You are mine</pre>
 
 ---
 
-### 66. Otra Vez {#hymn-66-otra-vez}
+### 92. Otra Vez {#hymn-92-otra-vez}
 
 *Autor: Un Corazón*
 
@@ -4562,7 +6490,53 @@ Otra vez</pre>
 
 ---
 
-### 67. Pasion de Dios {#hymn-67-pasion-de-dios}
+### 93. Para que entre el rey {#hymn-93-para-que-entre-el-rey}
+
+*Autor: popular*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong> <strong>Am</strong>
+
+Para que entre el rey
+Jesus rey de gloria
+Yo abro mi corazón, abro mi corazón
+x4
+
+¿Quién es el Rey de gloria?
+¿Quién es el Rey de gloria?
+Es Jesús, Jesús
+Él es el rey, Él es el rey
+x4
+Para que entre el rey
+Jesus rey de gloria
+Yo abro mi corazón, abro mi corazón
+x4
+
+
+Yo abro mi corazón
+yo abro mi corazón
+Yo abro mi corazón
+abro mi corazón
+
+Y entra el rey de gloria
+Y entra el rey de gloria
+Y entra el rey de gloria
+Tú eres el rey de gloria
+Tú eres el rey de gloria
+Jesús, Jesús
+
+Reina en majestad entre nosotros
+Tú eres el rey de gloria
+tú eres el rey de gloria
+Jesús, Jesús
+x4
+
+Reina en majestad</pre>
+
+---
+
+### 94. Pasion de Dios {#hymn-94-pasion-de-dios}
 
 *Autor: Hakuna*
 
@@ -4652,7 +6626,82 @@ Tú eres mío, tú eres mío.</pre>
 
 ---
 
-### 68. Perfume a tus Pies {#hymn-68-perfume-a-tus-pies}
+### 95. Perdón {#hymn-95-perdón}
+
+*Autor: Helena*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong>                  <strong>G</strong>
+Señor que perdido estoy 
+                   <strong>Am</strong>                   <strong>F</strong>
+No encuentro el camino, ya se ha ido el sol. 
+                <strong>C</strong>                <strong>G</strong>
+Las nubes me cubren, ya no siento nada. 
+                 <strong>Am</strong>                     <strong>F</strong>
+Mis culpas me atrapan, mis fuerzas me fallan. 
+
+<strong>C</strong>          <strong>G</strong>
+Si solo tal vez, 
+           <strong>Am</strong>                <strong>F</strong>             
+me dices por qué yo vuelvo a caer de nuevo, Señor 
+             <strong>G</strong>              <strong>Am</strong>
+No puedo esta vez, ya me derrumbe. 
+               <strong>F</strong>                  FAm
+Y caigo a tus pies perforados, yo puse esos clavos. 
+
+
+
+   <strong>C</strong>          <strong>G</strong>             <strong>Am</strong>
+Hoy vuelvo a gritar tu nombre Señor 
+               <strong>F</strong>            <strong>C</strong>
+se mueve esta culpa en mi corazón. 
+             <strong>G</strong>           <strong>Am</strong>
+Me siento querido y arrepentido, 
+           <strong>F</strong>               <strong>C</strong>
+no puedo mirarte te pido perdón. 
+               <strong>G</strong>                <strong>Am</strong>
+Confieso mis faltas, con eso no alcanza. 
+              <strong>F</strong>               <strong>C</strong>
+Luego tu me abrazas y siento calor 
+               <strong>G</strong>                  <strong>Am</strong>
+Encuentro tus ojos, tan puros tan claros, 
+               <strong>F</strong>                   FAm
+Los mios con llanto tan tristes e insanos 
+           <strong>C</strong>              <strong>G</strong>
+te dicen perdón, te ruego perdón 
+            <strong>Am</strong>              <strong>F</strong>    FAm
+te claman Señor, me quedo con vos. 
+
+
+             <strong>C</strong>                 <strong>G</strong>
+Ya calma mi niño, ven no llores más 
+               <strong>Am</strong>                       <strong>F</strong>
+Tu mancha he borrado, bien limpio has quedado 
+            <strong>C</strong>                <strong>G</strong>
+Vive en el amor, como lo hice yo 
+             <strong>Am</strong>                 <strong>F</strong>
+Camina a mi lado, tu fe te ha salvado 
+             <strong>C</strong>  <strong>G</strong>  <strong>Am</strong>  <strong>F</strong>
+Ya no llores más.
+
+
+(Estribillo)
+
+             <strong>C</strong>                 <strong>G</strong>
+Ya calma mi niño, ven no llores más 
+               <strong>Am</strong>                       <strong>F</strong>
+Tu mancha he borrado, bien limpio has quedado 
+            <strong>C</strong>                <strong>G</strong>
+Vive en el amor, como lo hice yo 
+            <strong>Am</strong>                 <strong>F</strong>
+Camina a mi lado, tu fe te ha salvado 
+             <strong>C</strong> <strong>G</strong>             <strong>C</strong>
+Ya no llores más, y quédate en paz.</pre>
+
+---
+
+### 96. Perfume a tus Pies {#hymn-96-perfume-a-tus-pies}
 
 *Autor: popular*
 
@@ -4723,7 +6772,52 @@ como un perfume a tus pies</pre>
 
 ---
 
-### 69. Preparad el camino al Señor {#hymn-69-preparad-el-camino-al-señor}
+### 97. Pescador de hombres {#hymn-97-pescador-de-hombres}
+
+*Autor: popular*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>G</strong> <strong>Am</strong> <strong>F</strong> <strong>G</strong>
+Tú has venido a la orilla
+No has buscado ni a sabios ni a ricos
+Tan sólo quieres que yo te siga
+
+Señor me has mirado a los ojos
+Sonriendo has dicho mi nombre
+En la arena he dejado mi barca
+Junto a ti buscaré otro mar
+
+Tú sabes bien lo que tengo
+En mi barca no hay oro ni espadas
+Tan sólo redes y mi trabajo
+
+Señor me has mirado a los ojos
+Sonriendo has dicho mi nombre
+En la arena he dejado mi barca
+Junto a ti buscaré otro mar
+
+Tú necesitas mis manos
+Mi cansancio que a otros descanse
+Amor que quiera seguir amando
+
+Señor me has mirado a los ojos
+Sonriendo has dicho mi nombre
+En la arena he dejado mi barca
+Junto a ti buscaré otro mar
+
+Tú pescador de otros lagos
+Ansia eterna de almas que esperan
+Amigo bueno que así me llamas
+
+Señor me has mirado a los ojos
+Sonriendo has dicho mi nombre
+En la arena he dejado mi barca
+Junto a ti buscaré otro mar</pre>
+
+---
+
+### 98. Preparad el camino al Señor {#hymn-98-preparad-el-camino-al-señor}
 
 *Autor: popular*
 
@@ -4779,7 +6873,7 @@ y escuchad la palabra de Dios.</pre>
 
 ---
 
-### 70. Primero el cielo {#hymn-70-primero-el-cielo}
+### 99. Primero el cielo {#hymn-99-primero-el-cielo}
 
 *Autor: Tuyo*
 
@@ -4870,7 +6964,23 @@ Es mi padre
 
 ---
 
-### 71. Quien pierde su vida por mi {#hymn-71-quien-pierde-su-vida-por-mi}
+### 100. Que se quiebre mi corazón {#hymn-100-que-se-quiebre-mi-corazón}
+
+*Autor: María Olguín*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>A</strong> <strong>E</strong> <strong>D</strong> <strong>A</strong> <strong>E</strong>
+Que se quiebre mi corazón,
+en mil pedazos de amor,
+que se quiebre por los demás,
+mi vida quiero entregar
+que se quiebre, no temo al dolor,
+Jesús Yo ya tengo tu amor.</pre>
+
+---
+
+### 101. Quien pierde su vida por mi {#hymn-101-quien-pierde-su-vida-por-mi}
 
 *Autor: popular*
 
@@ -4916,7 +7026,7 @@ La encontrará, la encontrará.</pre>
 
 ---
 
-### 72. Quiero Caminar Contigo María {#hymn-72-quiero-caminar-contigo-maría}
+### 102. Quiero Caminar Contigo María {#hymn-102-quiero-caminar-contigo-maría}
 
 *Autor: popular*
 
@@ -4981,7 +7091,7 @@ vida y corazón</pre>
 
 ---
 
-### 73. Quédate Señor {#hymn-73-quédate-señor}
+### 103. Quédate Señor {#hymn-103-quédate-señor}
 
 *Autor: Fray Nacho*
 
@@ -5244,7 +7354,7 @@ Quédate Señor
 
 ---
 
-### 74. Reckless Love {#hymn-74-reckless-love}
+### 104. Reckless Love {#hymn-104-reckless-love}
 
 *Autor: Bethel Music*
 
@@ -5305,7 +7415,7 @@ No lie You won&#x27;t tear down, coming after me</pre>
 
 ---
 
-### 75. Renuévame Señor Jesús {#hymn-75-renuévame-señor-jesús}
+### 105. Renuévame Señor Jesús {#hymn-105-renuévame-señor-jesús}
 
 *Autor: popular*
 
@@ -5329,7 +7439,7 @@ dentro de mí corazón, necesita más de ti.</pre>
 
 ---
 
-### 76. Restaurame Espiritu {#hymn-76-restaurame-espiritu}
+### 106. Restaurame Espiritu {#hymn-106-restaurame-espiritu}
 
 *Autor: Xavier Rudd*
 
@@ -5376,7 +7486,76 @@ x2 (x4)</pre>
 
 ---
 
-### 77. Rey de Reyes {#hymn-77-rey-de-reyes}
+### 107. Resucitados {#hymn-107-resucitados}
+
+*Autor: Kenosis*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>Em</strong> <strong>C</strong> <strong>G</strong> <strong>D</strong>
+
+Enséñame a abrazar
+Mi cruz, Señor
+<strong>A</strong> no escandalizarme
+De todas mis heridas
+Así me has hecho Tú
+Así me amas, mi Dios
+
+Enséñame a abrazar
+Tu voluntad, Señor
+Si no puedo apartar
+El cáliz de mi realidad
+Renuncio a mi plan
+Acojo Tu verdad
+
+Quiero ser, ser lavado
+Ser curado, y quiero
+Morir a mí mismo
+
+Enséñame a abrazar
+Mi condición, Señor
+No puedo dar la talla
+No soy suficiente
+Quiero dejar de hacer
+Para dejarme amar por Ti
+
+Quiero ser, ser lavado
+Ser curado, y quiero
+Morir a mí mismo
+Y quiero estar arrodillado
+Quiero vaciarme
+Y, en el fondo, siento
+
+Que no soy valorado
+Estoy herido
+Soy rechazado
+Soy pecado
+Pero, soy amado
+Soy aceptado
+Soy rescatado
+No soy esclavo
+
+Quiero ser, ser lavado
+Ser curado, y quiero
+Morir a mí mismo
+Y quiero estar arrodillado
+Quiero vaciarme
+Quiero vivir como
+
+Resucitado, resucitado
+Resucitado, resucitado
+
+Quiero ser, ser lavado
+Ser curado, y quiero
+Morir a mí mismo
+Y quiero estar arrodillado
+Quiero vaciarme
+Quiero vivir como
+Resucitado</pre>
+
+---
+
+### 108. Rey de Reyes {#hymn-108-rey-de-reyes}
 
 *Autor: Marcos Barrientos*
 
@@ -5417,7 +7596,7 @@ Y para siempre Tú reinas.</pre>
 
 ---
 
-### 78. RUAH {#hymn-78-ruah}
+### 109. RUAH {#hymn-109-ruah}
 
 *Autor: popular*
 
@@ -5440,7 +7619,7 @@ Ruah Ruah Ruah</pre>
 
 ---
 
-### 79. Saliendo del Pretorio {#hymn-79-saliendo-del-pretorio}
+### 110. Saliendo del Pretorio {#hymn-110-saliendo-del-pretorio}
 
 *Autor: Jaire*
 
@@ -5508,7 +7687,7 @@ de ellos ten compasión.</pre>
 
 ---
 
-### 80. Salmo 23 {#hymn-80-salmo-23}
+### 111. Salmo 23 {#hymn-111-salmo-23}
 
 *Autor: Un Corazón*
 
@@ -5573,7 +7752,50 @@ Me recibes en casa para siempre</pre>
 
 ---
 
-### 81. Santo {#hymn-81-santo}
+### 112. Salve Reina {#hymn-112-salve-reina}
+
+*Autor: Servus Mariae*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>G</strong> <strong>C</strong> <strong>G</strong> <strong>Em</strong>
+
+Encontré en un Padre que acoge
+El misterio de mi misión
+Una cruz atraviesa mi alma,
+Esa cruz que cargó con amor
+
+Sí, Padre, hoy vengo a decirte sí
+Es Jesús el que me llama por mi nombre,
+Es Jesús el que me ama y conoce
+
+Sígueme, te invito a cambiar
+Este mundo en familia
+Abriremos camino
+
+Madre, yo soy de Cristo,
+Congregante hasta el fin
+Madre, por Ti y por ellos,
+Vale la pena vivir
+
+Voy a entregarte mis fuerzas,
+Para que te amen a Ti,
+Una cruz negra enterrada
+Salve Reina, los que van a morir
+
+Madre, yo soy de Cristo,
+Congregante hasta el fin
+Madre, por Ti y por ellos,
+Vale la pena vivir
+
+Voy a entregarte mis fuerzas,
+Para que te amen a Ti,
+Una cruz negra enterrada
+Salve Reina, los que van a morir</pre>
+
+---
+
+### 113. Santo {#hymn-113-santo}
 
 *Autor: Jaime Olguín*
 
@@ -5604,7 +7826,7 @@ Hosanna en el cielo</pre>
 
 ---
 
-### 82. Santo Manchego {#hymn-82-santo-manchego}
+### 114. Santo Manchego {#hymn-114-santo-manchego}
 
 *Autor: popular*
 
@@ -5633,65 +7855,264 @@ Todos: Hosanna Hosanna Hosanna en las alturas</pre>
 
 ---
 
-### 83. Sencillamente {#hymn-83-sencillamente}
+### 115. Se Mi Faro {#hymn-115-se-mi-faro}
 
-*Autor: popular*
+*Autor: Batah*
 
 *Capo: 0*
 
-<pre class="lyrics"><strong>Em</strong> <strong>C</strong> <strong>G</strong> <strong>Bm</strong>
-Creo, sencillamente
-Quiero disfrutar de la serenidad del creer
-Desligar el creer del sentir
-Creo, mi Dios, y basta
+<pre class="lyrics">Original <strong>C0</strong>: <strong>G</strong> <strong>D</strong> <strong>Em</strong> <strong>C</strong> <strong>Am</strong> <strong>D</strong>
+<strong>G</strong>	   <strong>D</strong>		<strong>Em</strong>
+Cuando llegue la tormenta
+<strong>C</strong>	<strong>Am</strong>	       <strong>D</strong>
+Y no pueda ver la luz
+<strong>G</strong>	   <strong>D</strong>		<strong>Em</strong>
+Cuando vea en la inmensidad del mar
+        <strong>C</strong>	        <strong>Am</strong>	 <strong>D</strong>
+El reflejo de mi fragilidad
 
-Te creo en tus misterios
-Sin entenderlos
-Te creo en mí (te creo en mí) y en el pan blanco
-En el prójimo y en la creación
-Sin verte en ningún lado
+<strong>C</strong>	        <strong>D</strong> <strong>G</strong>		<strong>Em</strong>
+Recuérdame que te mire a Ti
+<strong>C</strong>	<strong>D</strong>	   <strong>G</strong>	<strong>G7</strong>
+Solo así seré feliz
+<strong>C</strong>	<strong>D</strong> 	<strong>G</strong>		<strong>Em</strong>
+Sé mi faro y sé también mi luz
+	      <strong>C</strong>			<strong>D</strong>		<strong>G</strong>
+No hay amor como el que Tu nos das Jesús
 
-Creo, Señor, sencillamente
-Porque creer es confiar
-Y cómo me gusta creerte sintiendo dudas
-Sintiendo dudas
-Sintiendo dudas
+<strong>G</strong>	   <strong>D</strong>		<strong>Em</strong>
+Sé que me tiendes la mano
+<strong>C</strong>	<strong>Am</strong>	       <strong>D</strong>
+Y quieres mi felicidad
+<strong>G</strong>	   <strong>D</strong>		<strong>Em</strong>
+Que ahora pase lo que tenga que pasar
+        <strong>C</strong>	        <strong>Am</strong>	 	<strong>D</strong>
+Que de todo algo bueno sacarás
 
-Digo que eres amor
-Escucho que soy tu amado
-No siento y qué más da
-Te quiero y eso basta
+<strong>C</strong>	        <strong>D</strong> <strong>G</strong>		<strong>Em</strong>
+Recuérdame que te mire a Ti
+<strong>C</strong>	<strong>D</strong>	   <strong>G</strong>	<strong>G7</strong>
+Solo así seré feliz
+<strong>C</strong>	<strong>D</strong> 	<strong>G</strong>		<strong>Em</strong>
+Sé mi faro y sé también mi luz
+	      <strong>C</strong>			<strong>D</strong>		<strong>G</strong>
+No hay amor como el que Tu nos das Jesús
 
-Amo, Señor, sencillamente
-Porque amar es entregarse
-Y cómo me gusta amarte estando frío
-Estando frío
-Estando frío
+<strong>Am</strong>
+Cuéntame 
+<strong>B7</strong>		          <strong>Em</strong>
+Que Tú calmaste tempestades
 
-Espero en tu palabra
-Vivo en tu promesa
-Gozo en ti
-Lo que aún me falta
+	     <strong>C</strong>	  	     <strong>D</strong>
+Que anduviste en estos mares
+    <strong>G</strong>	          <strong>B7</strong>
+y ahora vienes a salvarme
 
-Espero Señor, sencillamente
-Porque esperar es descansar
-Y cómo me gusta esperarte sintiendo miedo
-Sintiendo miedo
-Sintiendo miedo
-Creo (Señor sencillamente)
-Amo (sencillamente)
-Espero
+<strong>C</strong>		        	   <strong>D</strong>
+Que el mar se hizo gota a gota
+<strong>G</strong>			<strong>Em</strong>	
+Y contigo no hay derrotas
+<strong>C</strong>				<strong>D</strong>
+Que en Ti se encuentra el consuelo
+			<strong>G</strong>    <strong>G7</strong>
+Tú das Paz y das aliento
 
-Cómo me gusta seguirte sintiendo dudas
-Estando frío
-Sintiendo miedo
-Cómo me gusta
-Cómo me gusta
-Creerte, amarte y esperarte</pre>
+<strong>C</strong>	        <strong>D</strong> <strong>G</strong>		<strong>Em</strong>
+Recuérdame que te mire a Ti
+<strong>C</strong>	<strong>D</strong>	   <strong>G</strong>	<strong>G7</strong>
+Solo así seré feliz
+<strong>C</strong>	<strong>D</strong> 	<strong>G</strong>		<strong>Em</strong>
+Sé mi faro y sé también mi luz
+	      <strong>C</strong>			<strong>D</strong>		<strong>G</strong>
+No hay amor como el que Tu nos das Jesús
+	      <strong>C</strong>		    <strong>D</strong>		  <strong>G</strong>
+Y que el mástil de mi barco sea tu Cruz</pre>
 
 ---
 
-### 84. Sopla Señor {#hymn-84-sopla-señor}
+### 116. Sencillamente {#hymn-116-sencillamente}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics">[Verse 1]
+<strong>Em</strong>           <strong>C</strong>
+Creo sencillamente
+<strong>G</strong>                 <strong>B7</strong>                  <strong>Em</strong>
+Quiero disfrutar de la serenidad del creer,
+<strong>Em</strong>              <strong>C</strong>
+desligar el creer del sentir,
+<strong>G</strong>              <strong>B7</strong>
+creo, mi Dios ¡y basta!
+ 
+<strong>Em</strong>
+Te creo en tus misterios
+<strong>C</strong>
+sin enten derlos.
+<strong>G</strong>                  <strong>B7</strong>
+Te creo en mí y en el Pan Blanco,
+      <strong>Em</strong>           <strong>C</strong>
+en el prójimo y en la creación
+<strong>G</strong>                   <strong>B7</strong>
+sin verte en ningun lado.
+ 
+ 
+[Chorus 1]
+<strong>Em</strong>                    <strong>C</strong>
+Creo, Señor, sencilla mente
+<strong>G</strong>
+porque creer es confiar.
+<strong>B7</strong>
+¡Y cómo me gusta creerte
+          <strong>Em</strong>
+sintiendo dudas,
+          <strong>C</strong>
+sintiendo dudas,
+          <strong>G</strong>       <strong>B7</strong>
+sintiendo dudas!
+ 
+ 
+[Instrumental]
+<strong>Em</strong>  <strong>C</strong>  <strong>G</strong>  <strong>B7</strong>
+ 
+ 
+[Verse 2]
+<strong>Em</strong>
+Digo que eres amor,
+<strong>C</strong>
+escucho que soy tu amado,
+<strong>G</strong>
+no siento y ¡qué más da!
+                 <strong>B7</strong>
+¡Te quiero y eso basta!
+ 
+ 
+[Chorus 2]
+<strong>Em</strong>                  <strong>C</strong>
+Amo, Señor, sencillamente
+<strong>G</strong>
+porque amar, es entregarse.
+<strong>B7</strong>
+¡Cómo me gusta amarte
+         <strong>Em</strong>
+estando frío,
+         <strong>C</strong>
+estando frío,
+         <strong>G</strong>    <strong>B7</strong>
+estando frío!
+ 
+ 
+[Verse 3]
+<strong>Em</strong>
+Espero en tu Palabra.
+<strong>C</strong>
+Vivo en tu Promesa.
+<strong>G</strong>            <strong>B7</strong>
+Gozo en ti lo que aún me falta!
+ 
+ 
+[Chorus 3]
+<strong>Em</strong>                     <strong>C</strong>
+Espero, Señor, sencillamente
+<strong>G</strong>
+porque esperar es descansar
+<strong>B7</strong>
+Y como me gusta, esperarte
+          <strong>Em</strong>
+sintiendo miedo,
+          <strong>C</strong>
+sintiendo miedo,
+          <strong>G</strong>       <strong>B7</strong>
+sintiendo miedo!
+ 
+ 
+[Chorus 4]
+<strong>Em</strong>     <strong>C</strong>   <strong>G</strong>
+Creo, amo, espero
+<strong>B7</strong>
+¡Cómo me gusta seguirte
+          <strong>C</strong>
+sintiendo dudas,
+        <strong>G</strong>
+estando frío,
+          <strong>B7</strong>
+sintiendo miedo!
+         <strong>Em</strong>
+¡Cómo me gusta!
+         <strong>C</strong>
+¡Cómo me gusta!
+<strong>G</strong>                  <strong>B7</strong>
+Quererte, amarte y esperarte.
+<strong>Em</strong>
+Te sigo sencillamente</pre>
+
+---
+
+### 117. Si hubiera estado allí {#hymn-117-si-hubiera-estado-allí}
+
+*Autor: Adrián*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>C</strong> <strong>F</strong> <strong>G</strong>
+Si hubiera estado allí
+entre la multitud
+Que tu muerte pidió
+que te crucificó
+
+Lo tengo que admitir
+hubiera yo también
+Clavado en esa cruz
+tus manos mi Jesús
+si hubiera estado allí
+
+Pensándolo más bien
+también yo estaba allí
+Yo fui el que te escupió
+y tu costado hirió
+
+Pensándolo más bien
+yo fui el que coronó 
+De espinas y dolor
+tu frente buen señor
+también yo estaba allí
+
+Si hubiera estado allí 
+al pie de aquella cruz
+Oyéndote clamar
+al padre en soledad
+
+Lo tengo que admitir
+te hubiera yo también
+Dejado así morir
+mirándote sufrir
+
+Pensándolo más bien
+también yo estaba allí
+Yo fui el que te escupió
+y tu costado hirió
+
+Pensándolo más bien
+yo fui el que coronó 
+De espinas y dolor
+tu frente buen señor
+
+Pensándolo más bien
+también yo estaba allí
+Yo fui el que te golpeó
+y de ti se burló
+
+Pensándolo más bien
+yo fui el que te azotó
+Yo fui quien laceró tu espalda mi señor
+También yo estaba allí
+También yo estaba allí
+También yo estaba allí</pre>
+
+---
+
+### 118. Sopla Señor {#hymn-118-sopla-señor}
 
 *Autor: popular*
 
@@ -5764,7 +8185,7 @@ Sopla, sopla, sopla Señor, sopla</pre>
 
 ---
 
-### 85. Soy Libre {#hymn-85-soy-libre}
+### 119. Soy Libre {#hymn-119-soy-libre}
 
 *Autor: Hakuna*
 
@@ -5851,7 +8272,7 @@ en el fuego de tu amor.</pre>
 
 ---
 
-### 86. Supe que me Amabas {#hymn-86-supe-que-me-amabas}
+### 120. Supe que me Amabas {#hymn-120-supe-que-me-amabas}
 
 *Autor: Marcela Gándara*
 
@@ -5898,7 +8319,7 @@ Cada dia me atraías hacia ti.</pre>
 
 ---
 
-### 87. Surge Valentía {#hymn-87-surge-valentía}
+### 121. Surge Valentía {#hymn-121-surge-valentía}
 
 *Autor: popular*
 
@@ -5989,7 +8410,42 @@ Surge Valentía
 
 ---
 
-### 88. Tu eres mi respirar {#hymn-88-tu-eres-mi-respirar}
+### 122. Toma Señor mi libertad {#hymn-122-toma-señor-mi-libertad}
+
+*Autor: popular*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong>  <strong>G</strong>  <strong>Am</strong>
+<strong>F</strong>  <strong>G</strong>  <strong>C</strong>
+
+verse
+<strong>C</strong> <strong>G</strong> <strong>Am</strong>
+<strong>F</strong> <strong>G</strong> <strong>C</strong>
+verse
+Toma Señor mi libertad
+Mi memoria entendimiento, y mi voluntad
+Todo mi haber y poseer Tú me lo diste
+<strong>A</strong> ti Señor, lo torno
+chorus
+Todo es tuyo dispon de mi
+Segun tu voluntad
+Dame tu amor y gracia
+Que esto me basta
+verse
+Toma Señor mi libertad
+Mi memoria entendimiento, y mi voluntad
+Todo mi haber y poseer Tú me lo diste
+<strong>A</strong> ti Señor, lo torno
+chorus
+Todo es tuyo dispon de mi
+Segun tu voluntad
+Dame tu amor y gracia
+Que esto me basta</pre>
+
+---
+
+### 123. Tu eres mi respirar {#hymn-123-tu-eres-mi-respirar}
 
 *Autor: popular*
 
@@ -6020,7 +8476,7 @@ Perdido sin ti</pre>
 
 ---
 
-### 89. Tu Voluntad {#hymn-89-tu-voluntad}
+### 124. Tu Voluntad {#hymn-124-tu-voluntad}
 
 *Autor: Servus Mariae*
 
@@ -6068,7 +8524,245 @@ Yo te responderé</pre>
 
 ---
 
-### 90. Ven {#hymn-90-ven}
+### 125. Tus Planes Son Perfectos {#hymn-125-tus-planes-son-perfectos}
+
+*Autor: Batah*
+
+*Capo: 0*
+
+<pre class="lyrics">Original: <strong>A</strong> <strong>E</strong> <strong>F#m</strong> <strong>D</strong>
+
+<strong>A</strong>
+	    <strong>E</strong>  <strong>F#m</strong>           <strong>D</strong>	          <strong>A</strong>
+Tu Misericordia eternamente cantaré
+	    <strong>E</strong>  <strong>F#m</strong>           <strong>D</strong>	          <strong>F#m</strong>
+Tu Misericordia eternamente cantaré
+	<strong>E</strong>   <strong>A</strong>	    <strong>E</strong>		  <strong>F#m</strong>    - <strong>D</strong>
+Tú Señor sabes, puedes y me amas
+          <strong>E</strong>	      <strong>A</strong>	<strong>A</strong>	- <strong>D</strong>
+Tu amor colma mi alma
+	  <strong>E</strong>	 		<strong>A</strong>
+Gracias por la vida
+	  <strong>E</strong>		<strong>F#m</strong>
+Por cada uno de los días
+	         <strong>D</strong>
+Gracias, Señor
+		           <strong>E</strong>
+Pues siempre has estado Tú
+
+<strong>A</strong>	       <strong>E</strong>		       <strong>F#m</strong>
+Tus planes son perfectos
+		   <strong>D</strong>				<strong>A</strong>
+Todo está en tus manos, ya no hay más temor
+		<strong>E</strong>		  <strong>F#m</strong>
+De alegría y paz llenas el corazón
+	  <strong>E</strong>	      <strong>A</strong>
+En ti Jesús confío
+X2
+
+<strong>A</strong> <strong>E</strong> <strong>F#m</strong> <strong>D</strong>
+
+<strong>A</strong>
+	    <strong>E</strong>  <strong>F#m</strong>           <strong>D</strong>	          <strong>A</strong>
+Tu Misericordia eternamente cantaré
+	    <strong>E</strong>  <strong>F#m</strong>           <strong>D</strong>	          <strong>F#m</strong>
+Tu Misericordia eternamente cantaré
+	<strong>E</strong>   <strong>A</strong>	    <strong>E</strong>		  <strong>F#m</strong>    - <strong>D</strong>
+Tú Señor sabes, puedes y me amas
+          <strong>E</strong>	      <strong>A</strong>       <strong>A</strong>	- <strong>D</strong>
+Tu amor colma mi alma
+	  <strong>E</strong>	 		<strong>A</strong>
+Gracias por la vida
+	  <strong>E</strong>		<strong>F#m</strong>
+Por cada uno de los días
+	         <strong>D</strong>
+Gracias, Señor
+		           <strong>E</strong>
+Pues siempre has estado Tú
+
+<strong>A</strong>	       <strong>E</strong>		       <strong>F#m</strong>
+Tus planes son perfectos
+		   <strong>D</strong>				<strong>A</strong>
+Todo está en tus manos, ya no hay más temor
+		<strong>E</strong>		  <strong>F#m</strong>
+De alegría y paz llenas el corazón
+	  <strong>D</strong>	      <strong>A</strong>
+En ti Jesús confío
+X4
+	  <strong>E</strong>	     <strong>F#m</strong>
+En ti Jesús confío
+	  <strong>D</strong>	      <strong>A</strong>
+En ti Jesús confío
+	  <strong>E</strong>	      <strong>F#m</strong>
+En ti Jesús confío
+
+
+
+	  <strong>D</strong>	
+En ti Jesús
+        <strong>E</strong>	  <strong>A</strong>	      <strong>E</strong>		  <strong>F#m</strong>  <strong>D</strong>
+Pues tú Señor, sabes, puedes y me amas
+          <strong>E</strong>	      <strong>A</strong>    <strong>A</strong>	<strong>D</strong>
+Tu amor colma mi alma
+	  <strong>E</strong>	 	<strong>A</strong>
+Gracias por la vida
+	  <strong>E</strong>		<strong>F#m</strong>
+Por cada uno de los días
+	         <strong>D</strong>
+Gracias, Señor
+			<strong>E</strong>
+Pues siempre has estado Tú
+	         <strong>A</strong>
+Has estado Tú</pre>
+
+---
+
+### 126. Tuyas son {#hymn-126-tuyas-son}
+
+*Autor: Luispo*
+
+*Capo: 1*
+
+<pre class="lyrics"><strong>G</strong>                      <strong>Bm</strong>
+La bendición y la gloria, la sabiduría,
+       <strong>Em</strong>          <strong>D</strong>           <strong>C</strong>
+la acción de gracias y el poder,
+     <strong>D</strong>       <strong>B</strong>        <strong>Em</strong>
+la honra y toda fortaleza
+        <strong>C</strong>              <strong>D</strong>
+¡tuyas son, bendito Dios!,
+       <strong>G</strong>             <strong>Em</strong>
+¡tuyas son, bendito Dios,
+       <strong>C</strong>      <strong>D</strong> <strong>D7</strong>  <strong>G</strong>
+para siempre! Amén. Amén.
+ 
+         <strong>G</strong>                      <strong>Bm</strong>
+La bendición y la gloria, la sabiduría,
+       <strong>Em</strong>          <strong>D</strong>           <strong>C</strong>
+la acción de gracias y el poder,
+     <strong>D</strong>       <strong>B</strong>        <strong>Em</strong>
+la honra y toda fortaleza
+        <strong>C</strong>              <strong>D</strong>
+¡tuyas son, bendito Dios!,
+       <strong>G</strong>             <strong>Em</strong>
+¡tuyas son, bendito Dios,
+       <strong>C</strong>      <strong>D</strong> <strong>D7</strong>  <strong>G</strong>
+para siempre! Amén. Amén.
+ 
+ 
+        <strong>C</strong>              <strong>D</strong>
+¡Tuyas son, bendito Dios!,
+       <strong>G</strong>             <strong>Em</strong>
+¡tuyas son, bendito Dios,
+        <strong>C</strong>      <strong>D</strong>  <strong>D7</strong>   <strong>G</strong>
+para siempre! Amén. Amén.</pre>
+
+---
+
+### 127. Un Segundo {#hymn-127-un-segundo}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+<pre class="lyrics">[Intro]
+<strong>G</strong>
+ 
+[Estrofa]
+       <strong>G</strong>                          <strong>C</strong>
+Si por un segundo vieras cómo te miro
+        <strong>Cm</strong>                                <strong>G</strong>
+cuando duermes, cierras los ojos, yo ahí sigo
+<strong>D</strong>                       <strong>G</strong>          <strong>Em</strong>
+se me cae la baba, imposible no mirar
+     <strong>C</strong>                               <strong>D</strong>
+no quiero dejar de hacerlo, no lo intentes imaginar
+ 
+[Estrofa]
+       <strong>G</strong>                            <strong>C</strong>
+si por un segundo vieras cómo te escucho
+      <strong>Cm</strong>                                      <strong>G</strong>
+cada ruido, cada palabra, y cuando no hablas mucho
+   <strong>D</strong>                           <strong>G</strong>                <strong>Em</strong>
+y hables o estés callado, sólo me importa si estás
+        <strong>C</strong>                             <strong>D</strong>           <strong>D7</strong>
+en mi amor cabe el silencio, cabe hablar y mucho más
+ 
+[Estribillo]
+   <strong>G</strong>                         <strong>C</strong>
+reviento de amor, estoy temblando de gozo
+    <strong>D</strong>                           <strong>B7</strong>          <strong>Em</strong>
+te como con la mirada, estás aquí y no estás solo
+     <strong>G</strong>                            <strong>C</strong>
+cada lágrima, cada risa, en mi memoria se han grabado
+       <strong>D</strong>                         <strong>B7</strong>              <strong>Em</strong>
+cada detalle de tu cuerpo y de tu alma fueron pensados
+   <strong>G</strong>                          <strong>C</strong>             <strong>D</strong>
+no creo que aguante más contenerme aquí detrás
+           <strong>D</strong>                            <strong>B7</strong>           <strong>Em</strong>
+quiero entrar, hacerte mío, curar tu herida si me la das
+       <strong>C</strong>                          <strong>D</strong>
+si por un segundo vieras cómo te miro
+                      <strong>G</strong>
+no querrías ver nada más
+ 
+[Estrofa]
+       <strong>G</strong>                           <strong>C</strong>
+si por un segundo vieras cuánto te amo
+   <strong>Cm</strong>                  <strong>G</strong>             <strong>Em</strong>
+yo solo sé entregarme, aunque sea en vano
+    <strong>D</strong>                          <strong>G</strong>        <strong>Em</strong>
+y tiemblo al imaginar cuando llegues al cielo
+      <strong>C</strong>                   <strong>D</strong>
+costará respirar en el abrazo que nos daremos
+ 
+[Estrofa]
+       <strong>G</strong>                         <strong>C</strong>
+si por un segundo vieras lo que hay por llegar
+         <strong>Cm</strong>                       <strong>G</strong>         <strong>Em</strong>
+lo que aguarda escondido, casualidades sin azar
+    <strong>D</strong>                           <strong>G</strong>                <strong>Em</strong>
+lo sueño tantas veces, en cada don, ¿qué puedo hacer?
+      <strong>C</strong>                         <strong>D</strong>           <strong>D7</strong>
+tú recibes mi regalo, al cielo miras, agradece
+ 
+[Estribillo]
+   <strong>G</strong>                         <strong>C</strong>
+reviento de amor, estoy temblando de gozo
+    <strong>D</strong>                           <strong>B7</strong>          <strong>Em</strong>
+te como con la mirada, estás aquí y no estás solo
+     <strong>G</strong>                            <strong>C</strong>
+cada lágrima, cada risa, en mi memoria se han grabado
+       <strong>D</strong>                         <strong>B7</strong>              <strong>Em</strong>
+cada detalle de tu cuerpo y de tu alma fueron pensados
+   <strong>G</strong>                          <strong>C</strong>             <strong>D</strong>
+no creo que aguante más contenerme aquí detrás
+           <strong>D</strong>                            <strong>B7</strong>           <strong>Em</strong>
+quiero entrar, hacerte mío, curar tu herida si me la das
+       <strong>C</strong>                          <strong>D</strong>
+si por un segundo vieras cómo te miro
+                      <strong>G</strong>
+no querrías ver nada más
+ 
+<strong>G</strong> <strong>C</strong> <strong>D7</strong>
+ 
+[Estribillo]
+   <strong>G</strong>                         <strong>C</strong>
+reviento de amor, estoy temblando de gozo
+ <strong>D</strong>                        <strong>B7</strong>             <strong>Em</strong>
+hay tanta locura en este amor que no controlo
+ <strong>G</strong>                     <strong>C</strong>
+pierde tu vida, recibirás la eternidad
+       <strong>D</strong>                           <strong>B7</strong>          <strong>Em</strong>
+la alegría de ser esclavo, esclavo de mi libertad
+       <strong>C</strong>                          <strong>D</strong>
+si por un segundo vieras cómo te miro
+                      <strong>G</strong>
+no querrías ver nada más</pre>
+
+---
+
+### 128. Ven {#hymn-128-ven}
 
 *Autor: popular*
 
@@ -6143,7 +8837,7 @@ Mi alma tiene sed de ti</pre>
 
 ---
 
-### 91. Ven Ahora {#hymn-91-ven-ahora}
+### 129. Ven Ahora {#hymn-129-ven-ahora}
 
 *Autor: popular*
 
@@ -6190,7 +8884,7 @@ Tu solo alábale</pre>
 
 ---
 
-### 92. Ven ante Su trono {#hymn-92-ven-ante-su-trono}
+### 130. Ven ante Su trono {#hymn-130-ven-ante-su-trono}
 
 *Autor: Elevation Worship*
 
@@ -6253,7 +8947,7 @@ X4</pre>
 
 ---
 
-### 93. Ven Espiritu Ven (Teresa) {#hymn-93-ven-espiritu-ven-teresa}
+### 131. Ven Espiritu Ven (Teresa) {#hymn-131-ven-espiritu-ven-teresa}
 
 *Autor: popular*
 
@@ -6281,7 +8975,7 @@ Y refresca mi corazón</pre>
 
 ---
 
-### 94. Ven Espíritu {#hymn-94-ven-espíritu}
+### 132. Ven Espíritu {#hymn-132-ven-espíritu}
 
 *Autor: popular*
 
@@ -6378,7 +9072,7 @@ x4</pre>
 
 ---
 
-### 95. Ven Espíritu Divino {#hymn-95-ven-espíritu-divino}
+### 133. Ven Espíritu Divino {#hymn-133-ven-espíritu-divino}
 
 *Autor: Schoenstatt*
 
@@ -6435,7 +9129,7 @@ alegría.               Amén</pre>
 
 ---
 
-### 96. Ven Espíritu Ven (Purifícame) {#hymn-96-ven-espíritu-ven-purifícame}
+### 134. Ven Espíritu Ven (Purifícame) {#hymn-134-ven-espíritu-ven-purifícame}
 
 *Autor: popular*
 
@@ -6469,7 +9163,7 @@ Te quiero conocer</pre>
 
 ---
 
-### 97. Ven Y Lléname {#hymn-97-ven-y-lléname}
+### 135. Ven Y Lléname {#hymn-135-ven-y-lléname}
 
 *Autor: Generación 12*
 
@@ -6546,7 +9240,7 @@ X Infinito</pre>
 
 ---
 
-### 98. Vengo a Adorarte {#hymn-98-vengo-a-adorarte}
+### 136. Vengo a Adorarte {#hymn-136-vengo-a-adorarte}
 
 *Autor: popular*
 
@@ -6627,7 +9321,55 @@ eres asombroso para mi//
 
 ---
 
-### 99. Virgen Madre de Nuestro Dios {#hymn-99-virgen-madre-de-nuestro-dios}
+### 137. Vida en abundancia {#hymn-137-vida-en-abundancia}
+
+*Autor: schoenstatt*
+
+*Capo: 0*
+
+<pre class="lyrics"><strong>C</strong> <strong>F</strong> <strong>G</strong>
+
+<strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
+<strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
+<strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
+
+Los lirios del campo
+Y las aves del cielo
+No se preocupan
+Porque están en mis manos
+Tené confianza en mí
+Acá estoy junto a vos
+
+Amá lo que sos y tus circunstancias
+Estoy con vos, con tu cruz en mi espalda
+Todo terminará bien
+Yo hago nuevas todas las cosas
+
+Yo vengo a traerte vida
+Vida en abundancia, en abundancia
+Yo soy el camino, la verdad y la vida
+Vida en abundancia, en abundancia
+
+No hice al hombre para que esté solo
+Caminen juntos, como hermanos
+Sopórtense mutuamente
+Ámense unos a otros
+
+La felicidad de la vida eterna
+Empieza conmigo en la tierra
+Sentite vivo
+La fiesta del reino comienza acá
+
+Yo vengo a traerte vida
+Vida en abundancia, en abundancia
+Yo soy el camino, la verdad y la vida
+Vida en abundancia, en abundancia
+Yo vengo a traerte vida
+Vida en abundancia, en abundancia</pre>
+
+---
+
+### 138. Virgen Madre de Nuestro Dios {#hymn-138-virgen-madre-de-nuestro-dios}
 
 *Autor: popular*
 
@@ -6653,7 +9395,7 @@ Nada temo pues tuyo soy</pre>
 
 ---
 
-### 100. Viva Cristo Rey {#hymn-100-viva-cristo-rey}
+### 139. Viva Cristo Rey {#hymn-139-viva-cristo-rey}
 
 *Autor: Jaire*
 
@@ -6699,7 +9441,7 @@ pelear por el, es todo un honor</pre>
 
 ---
 
-### 101. Volverás a María {#hymn-101-volverás-a-maría}
+### 140. Volverás a María {#hymn-140-volverás-a-maría}
 
 *Autor: popular*
 
@@ -6747,7 +9489,153 @@ El camino de la salvación, tu entrega de corazón</pre>
 
 ---
 
-### 102. Yeshua {#hymn-102-yeshua}
+### 141. Vuelvo Otra Vez {#hymn-141-vuelvo-otra-vez}
+
+*Autor: tuyo*
+
+*Capo: 0*
+
+<pre class="lyrics">[Intro]
+ 
+<strong>F</strong> <strong>C</strong>
+<strong>F</strong> <strong>C</strong>
+<strong>F</strong> <strong>C</strong> <strong>G</strong>
+ 
+[Chorus]
+ 
+<strong>F</strong>            <strong>G</strong>
+Vuelvo otra vez
+<strong>C</strong>
+<strong>A</strong> postrarme a tus pies
+          <strong>Am</strong>
+Para reconocer
+                     <strong>F</strong>
+Que lo he vuelto a hacer
+                   <strong>G</strong>
+Te he fallado otra vez
+              <strong>Em</strong>
+Y hoy corro a tu
+<strong>Am</strong>     <strong>G</strong>   <strong>F</strong>
+misericordia
+ 
+[Verso 1]
+                <strong>C</strong>
+He empezado a caminar con la certeza
+                <strong>Em</strong>
+De que todo lo que dices es verdad
+                <strong>F</strong>
+Y aunque todavía no lo vea
+                <strong>C</strong>                  <strong>G</strong>
+Voy a esperar porque sé que lo harás
+ 
+[Verso 2]
+                <strong>C</strong>
+Ahora que lo pienso me doy cuenta
+                <strong>Em</strong>
+Algo esta empezando a cambiar
+                <strong>F</strong>
+Y sin dudarlo ni un segundo doy la vuelta
+                 <strong>G</strong>
+Y te vengo a buscar
+ 
+[Chorus]
+ 
+<strong>F</strong>          <strong>G</strong>
+Vuelvo otra vez
+                  <strong>C</strong>
+<strong>A</strong> postrarme a tus pies
+      <strong>Am</strong>
+Para reconocer
+                  <strong>F</strong>
+Que lo has vuelto a hacer
+                   <strong>G</strong>
+Me has curado otra vez
+            <strong>Em</strong>
+Y hoy vuelvo a
+<strong>Am</strong>       <strong>G</strong> <strong>F</strong>
+Darte gloria
+ 
+[Puente]
+             <strong>F</strong>
+Mientras espero
+                   <strong>G</strong>
+Levantaré mi corazón
+            <strong>F</strong>
+Y en el camino
+               <strong>G</strong>
+Esta será mi oración
+ 
+                <strong>F</strong>
+Que tuyo es el reino
+                <strong>G</strong>
+Tuyo el poder
+                <strong>F</strong>
+Tuya es la gloria
+                <strong>G</strong>
+Por siempre mi rey
+ 
+             <strong>F</strong>
+Mientras espero
+                <strong>G</strong>
+Levantaré mi corazón
+            <strong>F</strong>
+Y en el camino
+                <strong>G</strong>
+Esta será mi oración
+ 
+                <strong>F</strong>
+Que tuyo es el reino
+           <strong>G</strong>
+Tuyo el poder
+                <strong>F</strong>
+Tuya es la gloria
+                <strong>G</strong>
+Por siempre mi rey
+ 
+                <strong>Dm</strong>
+Que tuyo es el reino
+          <strong>Em</strong>
+Tuyo el poder
+                <strong>F</strong>
+Tuya es la gloria
+                <strong>G</strong>
+Por siempre mi rey
+ 
+[Chorus]
+ 
+<strong>F</strong>          <strong>G</strong>
+Vuelvo otra vez
+                  <strong>C</strong>
+<strong>A</strong> postrarme a tus pies
+      <strong>Am</strong>
+Para reconocer
+                  <strong>F</strong>
+Que lo has vuelto a hacer
+                   <strong>G</strong>
+Me has curado otra vez
+            <strong>Em</strong>
+Y hoy vuelvo a
+<strong>Am</strong>              <strong>G</strong> <strong>F</strong>
+Darte toda la gloria
+ 
+<strong>F</strong>          <strong>G</strong>
+Vuelvo otra vez
+                  <strong>C</strong>
+<strong>A</strong> postrarme a tus pies
+      <strong>Am</strong>
+Para reconocer
+                  <strong>F</strong>
+Que lo has vuelto a hacer
+                   <strong>G</strong>
+Me has curado otra vez
+            <strong>Em</strong>
+Y hoy vuelvo a
+<strong>Am</strong>       <strong>G</strong> <strong>F</strong>
+Darte gloria</pre>
+
+---
+
+### 142. Yeshua {#hymn-142-yeshua}
 
 *Autor: Generacion 12*
 
@@ -6809,7 +9697,7 @@ x6</pre>
 
 ---
 
-### 103. Yo Quiero ser tu Servidor {#hymn-103-yo-quiero-ser-tu-servidor}
+### 143. Yo Quiero ser tu Servidor {#hymn-143-yo-quiero-ser-tu-servidor}
 
 *Autor: popular*
 
@@ -6844,257 +9732,50 @@ Tú y yo Señor</pre>
 
 ---
 
+### 144. Ángeles volando {#hymn-144-ángeles-volando}
 
-# Misa
+*Autor: Martín Valverde*
 
-- Entrada
-  - [1. Abba Padre](#hymn-1-abba-padre)
-  - [5. Alzar Banderas](#hymn-5-alzar-banderas)
-  - [10. Arranca de mi Pecho](#hymn-10-arranca-de-mi-pecho)
-  - [12. Bendigamos](#hymn-12-bendigamos)
-  - [17. Como el padre me amó](#hymn-17-como-el-padre-me-amó)
-  - [20. Cristo Vive](#hymn-20-cristo-vive)
-  - [22. Desde el Fondo del Mar](#hymn-22-desde-el-fondo-del-mar)
-  - [28. El Dios que adoramos](#hymn-28-el-dios-que-adoramos)
-  - [32. Enciende una luz](#hymn-32-enciende-una-luz)
-  - [33. Enciéndeme](#hymn-33-enciéndeme)
-  - [49. Libre](#hymn-49-libre)
-  - [53. Mar Adentro (Navegar)](#hymn-53-mar-adentro-navegar)
-  - [56. Muevete en mi](#hymn-56-muevete-en-mi)
-  - [57. Muros](#hymn-57-muros)
-  - [63. No Temas](#hymn-63-no-temas)
-  - [69. Preparad el camino al Señor](#hymn-69-preparad-el-camino-al-señor)
-  - [77. Rey de Reyes](#hymn-77-rey-de-reyes)
-  - [78. RUAH](#hymn-78-ruah)
-  - [90. Ven](#hymn-90-ven)
-  - [91. Ven Ahora](#hymn-91-ven-ahora)
-  - [92. Ven ante Su trono](#hymn-92-ven-ante-su-trono)
-  - [93. Ven Espiritu Ven (Teresa)](#hymn-93-ven-espiritu-ven-teresa)
-  - [94. Ven Espíritu](#hymn-94-ven-espíritu)
-  - [96. Ven Espíritu Ven (Purifícame)](#hymn-96-ven-espíritu-ven-purifícame)
-- Aleluya
-  - [2. Aleluya](#hymn-2-aleluya)
-  - [3. Aleluya](#hymn-3-aleluya)
-- Ofertorio
-  - [6. Amando hasta el extremo](#hymn-6-amando-hasta-el-extremo)
-  - [10. Arranca de mi Pecho](#hymn-10-arranca-de-mi-pecho)
-  - [25. Dios Incomparable](#hymn-25-dios-incomparable)
-  - [27. Dona tu Vida](#hymn-27-dona-tu-vida)
-  - [42. Hoy Me Entrego](#hymn-42-hoy-me-entrego)
-  - [48. La Samaritana](#hymn-48-la-samaritana)
-  - [54. Maravillas](#hymn-54-maravillas)
-  - [56. Muevete en mi](#hymn-56-muevete-en-mi)
-  - [58. Nada te turbe](#hymn-58-nada-te-turbe)
-  - [63. No Temas](#hymn-63-no-temas)
-  - [71. Quien pierde su vida por mi](#hymn-71-quien-pierde-su-vida-por-mi)
-  - [75. Renuévame Señor Jesús](#hymn-75-renuévame-señor-jesús)
-  - [88. Tu eres mi respirar](#hymn-88-tu-eres-mi-respirar)
-  - [96. Ven Espíritu Ven (Purifícame)](#hymn-96-ven-espíritu-ven-purifícame)
-  - [103. Yo Quiero ser tu Servidor](#hymn-103-yo-quiero-ser-tu-servidor)
-- Santo
-  - [81. Santo](#hymn-81-santo)
-  - [82. Santo Manchego](#hymn-82-santo-manchego)
-- Comunion
-  - [6. Amando hasta el extremo](#hymn-6-amando-hasta-el-extremo)
-  - [7. Amor de los Amores](#hymn-7-amor-de-los-amores)
-  - [8. Amor sin condición](#hymn-8-amor-sin-condición)
-  - [9. Arde](#hymn-9-arde)
-  - [11. Because He Lives](#hymn-11-because-he-lives)
-  - [15. Cirineo](#hymn-15-cirineo)
-  - [16. Colombia](#hymn-16-colombia)
-  - [18. Confío en Ti](#hymn-18-confío-en-ti)
-  - [19. Cordero de Dios](#hymn-19-cordero-de-dios)
-  - [21. Cuerda Auxiliar](#hymn-21-cuerda-auxiliar)
-  - [23. Deseable](#hymn-23-deseable)
-  - [24. Dime Rey](#hymn-24-dime-rey)
-  - [25. Dios Incomparable](#hymn-25-dios-incomparable)
-  - [27. Dona tu Vida](#hymn-27-dona-tu-vida)
-  - [28. El Dios que adoramos](#hymn-28-el-dios-que-adoramos)
-  - [29. El que muere por mí](#hymn-29-el-que-muere-por-mí)
-  - [30. El Rey de mi Vida](#hymn-30-el-rey-de-mi-vida)
-  - [31. El Unico Rey](#hymn-31-el-unico-rey)
-  - [33. Enciéndeme](#hymn-33-enciéndeme)
-  - [34. Eres Testigo](#hymn-34-eres-testigo)
-  - [35. Estaré Contigo](#hymn-35-estaré-contigo)
-  - [37. Hasta La Locura](#hymn-37-hasta-la-locura)
-  - [39. Here I am Lord](#hymn-39-here-i-am-lord)
-  - [40. Hermoso Nombre](#hymn-40-hermoso-nombre)
-  - [42. Hoy Me Entrego](#hymn-42-hoy-me-entrego)
-  - [43. Jesus](#hymn-43-jesus)
-  - [44. Jesus have it all](#hymn-44-jesus-have-it-all)
-  - [46. La Bendicion](#hymn-46-la-bendicion)
-  - [48. La Samaritana](#hymn-48-la-samaritana)
-  - [49. Libre](#hymn-49-libre)
-  - [50. Lord, I Need You](#hymn-50-lord-i-need-you)
-  - [53. Mar Adentro (Navegar)](#hymn-53-mar-adentro-navegar)
-  - [54. Maravillas](#hymn-54-maravillas)
-  - [55. Me Rindo a Ti](#hymn-55-me-rindo-a-ti)
-  - [56. Muevete en mi](#hymn-56-muevete-en-mi)
-  - [57. Muros](#hymn-57-muros)
-  - [58. Nada te turbe](#hymn-58-nada-te-turbe)
-  - [59. Nadie te ama como yo](#hymn-59-nadie-te-ama-como-yo)
-  - [60. No hay lugar más alto](#hymn-60-no-hay-lugar-más-alto)
-  - [61. No hay paredes](#hymn-61-no-hay-paredes)
-  - [62. No Longer Slaves](#hymn-62-no-longer-slaves)
-  - [63. No Temas](#hymn-63-no-temas)
-  - [64. No tengo miedo](#hymn-64-no-tengo-miedo)
-  - [65. Oceans](#hymn-65-oceans)
-  - [66. Otra Vez](#hymn-66-otra-vez)
-  - [67. Pasion de Dios](#hymn-67-pasion-de-dios)
-  - [68. Perfume a tus Pies](#hymn-68-perfume-a-tus-pies)
-  - [70. Primero el cielo](#hymn-70-primero-el-cielo)
-  - [71. Quien pierde su vida por mi](#hymn-71-quien-pierde-su-vida-por-mi)
-  - [73. Quédate Señor](#hymn-73-quédate-señor)
-  - [74. Reckless Love](#hymn-74-reckless-love)
-  - [75. Renuévame Señor Jesús](#hymn-75-renuévame-señor-jesús)
-  - [76. Restaurame Espiritu](#hymn-76-restaurame-espiritu)
-  - [77. Rey de Reyes](#hymn-77-rey-de-reyes)
-  - [78. RUAH](#hymn-78-ruah)
-  - [79. Saliendo del Pretorio](#hymn-79-saliendo-del-pretorio)
-  - [80. Salmo 23](#hymn-80-salmo-23)
-  - [83. Sencillamente](#hymn-83-sencillamente)
-  - [84. Sopla Señor](#hymn-84-sopla-señor)
-  - [85. Soy Libre](#hymn-85-soy-libre)
-  - [86. Supe que me Amabas](#hymn-86-supe-que-me-amabas)
-  - [87. Surge Valentía](#hymn-87-surge-valentía)
-  - [88. Tu eres mi respirar](#hymn-88-tu-eres-mi-respirar)
-  - [89. Tu Voluntad](#hymn-89-tu-voluntad)
-  - [90. Ven](#hymn-90-ven)
-  - [93. Ven Espiritu Ven (Teresa)](#hymn-93-ven-espiritu-ven-teresa)
-  - [94. Ven Espíritu](#hymn-94-ven-espíritu)
-  - [95. Ven Espíritu Divino](#hymn-95-ven-espíritu-divino)
-  - [96. Ven Espíritu Ven (Purifícame)](#hymn-96-ven-espíritu-ven-purifícame)
-  - [97. Ven Y Lléname](#hymn-97-ven-y-lléname)
-  - [98. Vengo a Adorarte](#hymn-98-vengo-a-adorarte)
-  - [102. Yeshua](#hymn-102-yeshua)
-  - [103. Yo Quiero ser tu Servidor](#hymn-103-yo-quiero-ser-tu-servidor)
-- Salida
-  - [4. Alma Misionera](#hymn-4-alma-misionera)
-  - [5. Alzar Banderas](#hymn-5-alzar-banderas)
-  - [13. Bendita Tu](#hymn-13-bendita-tu)
-  - [14. Buenas Noches María](#hymn-14-buenas-noches-maría)
-  - [18. Confío en Ti](#hymn-18-confío-en-ti)
-  - [20. Cristo Vive](#hymn-20-cristo-vive)
-  - [21. Cuerda Auxiliar](#hymn-21-cuerda-auxiliar)
-  - [26. Dios te salve](#hymn-26-dios-te-salve)
-  - [36. Hail Mary Prayer](#hymn-36-hail-mary-prayer)
-  - [38. Hasta que el mundo arda por Él](#hymn-38-hasta-que-el-mundo-arda-por-él)
-  - [41. Himno Misión País](#hymn-41-himno-misión-país)
-  - [45. Junto a ti María](#hymn-45-junto-a-ti-maría)
-  - [46. La Bendicion](#hymn-46-la-bendicion)
-  - [47. La Fe de María](#hymn-47-la-fe-de-maría)
-  - [50. Lord, I Need You](#hymn-50-lord-i-need-you)
-  - [51. Madre](#hymn-51-madre)
-  - [52. Madre y Reina](#hymn-52-madre-y-reina)
-  - [64. No tengo miedo](#hymn-64-no-tengo-miedo)
-  - [72. Quiero Caminar Contigo María](#hymn-72-quiero-caminar-contigo-maría)
-  - [99. Virgen Madre de Nuestro Dios](#hymn-99-virgen-madre-de-nuestro-dios)
-  - [100. Viva Cristo Rey](#hymn-100-viva-cristo-rey)
-  - [101. Volverás a María](#hymn-101-volverás-a-maría)
+*Capo: 0*
 
+<pre class="lyrics"><strong>C</strong> <strong>G</strong> <strong>Am</strong> <strong>F</strong> <strong>C</strong> <strong>G</strong>
 
-# Alabanza
+Si sientes un murmullo muy cerca de ti
+Hay un ángel llegando para recibir
+Todas tus oraciones y llevarlas al cielo
 
-- Primer ciclo
-  - [10. Arranca de mi Pecho](#hymn-10-arranca-de-mi-pecho)
-  - [42. Hoy Me Entrego](#hymn-42-hoy-me-entrego)
-  - [49. Libre](#hymn-49-libre)
-  - [56. Muevete en mi](#hymn-56-muevete-en-mi)
-  - [57. Muros](#hymn-57-muros)
-  - [70. Primero el cielo](#hymn-70-primero-el-cielo)
-  - [78. RUAH](#hymn-78-ruah)
-  - [88. Tu eres mi respirar](#hymn-88-tu-eres-mi-respirar)
-  - [91. Ven Ahora](#hymn-91-ven-ahora)
-  - [92. Ven ante Su trono](#hymn-92-ven-ante-su-trono)
-  - [93. Ven Espiritu Ven (Teresa)](#hymn-93-ven-espiritu-ven-teresa)
-  - [96. Ven Espíritu Ven (Purifícame)](#hymn-96-ven-espíritu-ven-purifícame)
-  - [97. Ven Y Lléname](#hymn-97-ven-y-lléname)
-  - [102. Yeshua](#hymn-102-yeshua)
-- Segundo ciclo
-  - [1. Abba Padre](#hymn-1-abba-padre)
-  - [7. Amor de los Amores](#hymn-7-amor-de-los-amores)
-  - [8. Amor sin condición](#hymn-8-amor-sin-condición)
-  - [12. Bendigamos](#hymn-12-bendigamos)
-  - [22. Desde el Fondo del Mar](#hymn-22-desde-el-fondo-del-mar)
-  - [25. Dios Incomparable](#hymn-25-dios-incomparable)
-  - [28. El Dios que adoramos](#hymn-28-el-dios-que-adoramos)
-  - [31. El Unico Rey](#hymn-31-el-unico-rey)
-  - [40. Hermoso Nombre](#hymn-40-hermoso-nombre)
-  - [43. Jesus](#hymn-43-jesus)
-  - [44. Jesus have it all](#hymn-44-jesus-have-it-all)
-  - [49. Libre](#hymn-49-libre)
-  - [57. Muros](#hymn-57-muros)
-  - [62. No Longer Slaves](#hymn-62-no-longer-slaves)
-  - [70. Primero el cielo](#hymn-70-primero-el-cielo)
-  - [74. Reckless Love](#hymn-74-reckless-love)
-  - [82. Santo Manchego](#hymn-82-santo-manchego)
-  - [92. Ven ante Su trono](#hymn-92-ven-ante-su-trono)
-  - [100. Viva Cristo Rey](#hymn-100-viva-cristo-rey)
-- Tercer ciclo
-  - [7. Amor de los Amores](#hymn-7-amor-de-los-amores)
-  - [8. Amor sin condición](#hymn-8-amor-sin-condición)
-  - [10. Arranca de mi Pecho](#hymn-10-arranca-de-mi-pecho)
-  - [20. Cristo Vive](#hymn-20-cristo-vive)
-  - [21. Cuerda Auxiliar](#hymn-21-cuerda-auxiliar)
-  - [23. Deseable](#hymn-23-deseable)
-  - [31. El Unico Rey](#hymn-31-el-unico-rey)
-  - [40. Hermoso Nombre](#hymn-40-hermoso-nombre)
-  - [42. Hoy Me Entrego](#hymn-42-hoy-me-entrego)
-  - [43. Jesus](#hymn-43-jesus)
-  - [44. Jesus have it all](#hymn-44-jesus-have-it-all)
-  - [50. Lord, I Need You](#hymn-50-lord-i-need-you)
-  - [55. Me Rindo a Ti](#hymn-55-me-rindo-a-ti)
-  - [57. Muros](#hymn-57-muros)
-  - [62. No Longer Slaves](#hymn-62-no-longer-slaves)
-  - [64. No tengo miedo](#hymn-64-no-tengo-miedo)
-  - [66. Otra Vez](#hymn-66-otra-vez)
-  - [70. Primero el cielo](#hymn-70-primero-el-cielo)
-  - [74. Reckless Love](#hymn-74-reckless-love)
-  - [80. Salmo 23](#hymn-80-salmo-23)
-  - [82. Santo Manchego](#hymn-82-santo-manchego)
-  - [85. Soy Libre](#hymn-85-soy-libre)
-  - [88. Tu eres mi respirar](#hymn-88-tu-eres-mi-respirar)
-  - [89. Tu Voluntad](#hymn-89-tu-voluntad)
-  - [96. Ven Espíritu Ven (Purifícame)](#hymn-96-ven-espíritu-ven-purifícame)
-  - [97. Ven Y Lléname](#hymn-97-ven-y-lléname)
-  - [100. Viva Cristo Rey](#hymn-100-viva-cristo-rey)
-  - [102. Yeshua](#hymn-102-yeshua)
-- Cuarto ciclo
-  - [13. Bendita Tu](#hymn-13-bendita-tu)
-  - [14. Buenas Noches María](#hymn-14-buenas-noches-maría)
-  - [18. Confío en Ti](#hymn-18-confío-en-ti)
-  - [26. Dios te salve](#hymn-26-dios-te-salve)
-  - [41. Himno Misión País](#hymn-41-himno-misión-país)
-  - [46. La Bendicion](#hymn-46-la-bendicion)
-  - [51. Madre](#hymn-51-madre)
-  - [52. Madre y Reina](#hymn-52-madre-y-reina)
-  - [64. No tengo miedo](#hymn-64-no-tengo-miedo)
-  - [66. Otra Vez](#hymn-66-otra-vez)
-  - [72. Quiero Caminar Contigo María](#hymn-72-quiero-caminar-contigo-maría)
-  - [80. Salmo 23](#hymn-80-salmo-23)
-  - [99. Virgen Madre de Nuestro Dios](#hymn-99-virgen-madre-de-nuestro-dios)
-  - [100. Viva Cristo Rey](#hymn-100-viva-cristo-rey)
-  - [101. Volverás a María](#hymn-101-volverás-a-maría)
+Así abre el corazón y comienza alabar
+El gozo del cielo está sobre el altar
+Hay un ángel llegando y bendición en sus manos
 
+Hay Ángeles volando en este lugar
+En medio del pueblo y junto al altar
+Subiendo y bajando en todas las direcciones
+No sé si la iglesia subió o si el cielo bajó
+Sí sé que está lleno de Ángeles de Dios
+Porque el mismo Dios está aquí
 
-# Adoracion
+Cuando los Ángeles pasan la iglesia se alegra
+Ella canta, ella llora, ella ríe y congrega
+Enfrenta el infierno, disipa el mal
+Siente la brisa del vuelo de tu ángel ahora
+Confía hermano pues esta es tu hora
+La bendición llegó y te la vas a llevar
 
-- [7. Amor de los Amores](#hymn-7-amor-de-los-amores)
-- [8. Amor sin condición](#hymn-8-amor-sin-condición)
-- [70. Primero el cielo](#hymn-70-primero-el-cielo)
-- [74. Reckless Love](#hymn-74-reckless-love)
-- [76. Restaurame Espiritu](#hymn-76-restaurame-espiritu)
+Hay Ángeles volando en este lugar
+En medio del pueblo y junto al altar
+Subiendo y bajando en todas las direcciones
+No sé si la iglesia subió o si el cielo bajó
+Sí sé que está lleno de Ángeles de Dios
+Porque el mismo Dios está aquí
 
+Hay Ángeles volando en este lugar
+En medio del pueblo y junto al altar
+Subiendo y bajando en todas las direcciones
+No sé si la iglesia subió o si el cielo bajó
+Sí sé que está lleno de Ángeles de Dios
+Porque el mismo Dios está aquí
+Está aquí</pre>
 
-# Tema
-
-- Padre
-  - [1. Abba Padre](#hymn-1-abba-padre)
-  - [70. Primero el cielo](#hymn-70-primero-el-cielo)
-- Cristo
-  - [7. Amor de los Amores](#hymn-7-amor-de-los-amores)
-  - [8. Amor sin condición](#hymn-8-amor-sin-condición)
-  - [74. Reckless Love](#hymn-74-reckless-love)
-- Espiritu
-  - [76. Restaurame Espiritu](#hymn-76-restaurame-espiritu)
+---
 
