@@ -2,9 +2,10 @@
 fname: salmo_23_un_corazon
 title: Salmo 23
 autor: Un Corazón
-link: ""
+link: "https://open.spotify.com/track/1OSmBtcsjiGcUnhn2MlE4c?si=147455b0808745db"
 capo: 0 up to 4
 song_tags:
+  adoracion: []
   alabanza:
     - tercer_ciclo
     - cuarto_ciclo

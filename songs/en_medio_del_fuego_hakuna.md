@@ -2,10 +2,11 @@
 fname: en_medio_del_fuego_hakuna
 title: En medio del fuego
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/5Q5O60DtrxV1BRRXHSNhCq?si=2bae8bf8246a46d4"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

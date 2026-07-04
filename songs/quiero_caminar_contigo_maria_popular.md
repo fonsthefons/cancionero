@@ -1,15 +1,16 @@
 ---
-
 fname: quiero_caminar_contigo_maria_popular
 title: Quiero Caminar Contigo María
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/1isN9cnGC34Cq699RN9PjN?si=04d5d00549784b27"
 capo: 0
 song_tags:
   alabanza:
     - cuarto_ciclo
   misa: 
     - salida
+  tema:
+    - virgen
 ---
 Re Sol Re Sol
 

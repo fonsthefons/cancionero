@@ -13,6 +13,8 @@ song_tags:
     - entrada
     - ofertorio
     - comunion
+  tema:
+    - espiritu
 ---
 C   	      G/B       Am
 Ven, Espíritu, Ven,

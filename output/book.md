@@ -6,205 +6,215 @@
 
 ## Entrada
 
-  - [2. A ti te alabo - Hakuna](#hymn-2-a-ti-te-alabo)
-  - [3. Abba Padre - popular](#hymn-3-abba-padre)
-  - [7. Alzar Banderas - Schoenstatt](#hymn-7-alzar-banderas)
-  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
-  - [16. Bendigamos - popular](#hymn-16-bendigamos)
-  - [22. Como el padre me amó - popular](#hymn-22-como-el-padre-me-amó)
-  - [25. Cristo Vive - popular](#hymn-25-cristo-vive)
-  - [28. Desde el Fondo del Mar - popular](#hymn-28-desde-el-fondo-del-mar)
-  - [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos)
-  - [43. Enciende una luz - popular](#hymn-43-enciende-una-luz)
-  - [44. Enciéndeme - Hakuna](#hymn-44-enciéndeme)
-  - [69. Libre - Miel San Marcos](#hymn-69-libre)
-  - [72. Los coros del universo - Hakuna](#hymn-72-los-coros-del-universo)
-  - [76. Mar Adentro (Navegar) - Schoenstatt](#hymn-76-mar-adentro-navegar)
-  - [81. Muevete en mi - popular](#hymn-81-muevete-en-mi)
-  - [82. Muros - Generación 12](#hymn-82-muros)
-  - [89. No Temas - Jaime Olguín](#hymn-89-no-temas)
-  - [98. Preparad el camino al Señor - popular](#hymn-98-preparad-el-camino-al-señor)
-  - [108. Rey de Reyes - Marcos Barrientos](#hymn-108-rey-de-reyes)
-  - [109. RUAH - popular](#hymn-109-ruah)
-  - [128. Ven - popular](#hymn-128-ven)
-  - [129. Ven Ahora - popular](#hymn-129-ven-ahora)
-  - [130. Ven ante Su trono - Elevation Worship](#hymn-130-ven-ante-su-trono)
-  - [131. Ven Espiritu Ven (Teresa) - popular](#hymn-131-ven-espiritu-ven-teresa)
-  - [132. Ven Espíritu - popular](#hymn-132-ven-espíritu)
-  - [134. Ven Espíritu Ven (Purifícame) - popular](#hymn-134-ven-espíritu-ven-purifícame)
+  - [2. A ti te alabo - Hakuna](#hymn-2-a-ti-te-alabo-hakuna)
+  - [3. Abba Padre - popular](#hymn-3-abba-padre-popularmd)
+  - [7. Alzar Banderas - Schoenstatt](#hymn-7-alzar-banderas-schoenstatt)
+  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condicion-abels-worshipmd)
+  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho-popularmd)
+  - [16. Bendigamos - popular](#hymn-16-bendigamos-popular)
+  - [22. Como el padre me amó - popular](#hymn-22-como-el-padre-me-amo-popular)
+  - [25. Cristo Vive - Verbum Dei](#hymn-25-cristo-vive-verbum-dei)
+  - [28. Desde el Fondo del Mar - popular](#hymn-28-desde-el-fondo-del-mar-popular)
+  - [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos-popular)
+  - [43. Enciende una luz - popular](#hymn-43-enciende-una-luz-popular)
+  - [44. Enciéndeme - Hakuna](#hymn-44-enciendeme-hakuna)
+  - [48. Espíritu ven - Batah](#hymn-48-espiritu-ven-batah)
+  - [69. Libre - Miel San Marcos](#hymn-69-libre-miel-san-marcos)
+  - [72. Los coros del universo - Hakuna](#hymn-72-los-coros-del-universo-hakuna)
+  - [75. Mar Adentro (Navegar) - Schoenstatt](#hymn-75-mar-adentro-navegar-schoenstatt)
+  - [80. Muevete en mi - popular](#hymn-80-muevete-en-mi-popular)
+  - [81. Muros - Generación 12](#hymn-81-muros-generacion-12)
+  - [88. No Temas - Jaime Olguín](#hymn-88-no-temas-jaime-olguin)
+  - [89. No tengo miedo - popular](#hymn-89-no-tengo-miedo-popular)
+  - [96. Preparad el camino al Señor - popular](#hymn-96-preparad-el-camino-al-senor-popular)
+  - [107. Rey de Reyes - Marcos Barrientos](#hymn-107-rey-de-reyes-marcos-barrientos)
+  - [108. RUAH - popular](#hymn-108-ruah-popular)
+  - [127. Ven - mision_pais](#hymn-127-ven-mision-pais)
+  - [128. Ven Ahora - popular](#hymn-128-ven-ahora-popular)
+  - [129. Ven ante Su trono - Elevation Worship](#hymn-129-ven-ante-su-trono-elevation-worship)
+  - [130. Ven Espiritu Ven - Teresa](#hymn-130-ven-espiritu-ven-teresa)
+  - [131. Ven Espíritu - popular](#hymn-131-ven-espiritu-secuencia)
+  - [133. Ven Espíritu Ven (Purifícame) - popular](#hymn-133-ven-espiritu-ven-purificame-popular)
+  - [138. Viva Cristo Rey - Jaire](#hymn-138-viva-cristo-rey-jaire)
+  - [143. Ángeles volando - popular](#hymn-143-angeles-volando-popular)
 
 ## Aleluya
 
-  - [4. Aleluya - Taizé](#hymn-4-aleluya)
-  - [5. Aleluya - popular](#hymn-5-aleluya)
+  - [4. Aleluya - Taizé](#hymn-4-aleluya-taize)
+  - [5. Aleluya - popular](#hymn-5-aleluya-popular)
 
 ## Ofertorio
 
-  - [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
-  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
-  - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable)
-  - [35. Dona tu Vida - popular](#hymn-35-dona-tu-vida)
-  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego)
-  - [68. La Samaritana - popular](#hymn-68-la-samaritana)
-  - [77. Maravillas - schoenstatt](#hymn-77-maravillas)
-  - [81. Muevete en mi - popular](#hymn-81-muevete-en-mi)
-  - [83. Nada te turbe - Santa Teresa](#hymn-83-nada-te-turbe)
-  - [89. No Temas - Jaime Olguín](#hymn-89-no-temas)
-  - [101. Quien pierde su vida por mi - popular](#hymn-101-quien-pierde-su-vida-por-mi)
-  - [105. Renuévame Señor Jesús - popular](#hymn-105-renuévame-señor-jesús)
-  - [122. Toma Señor mi libertad - popular](#hymn-122-toma-señor-mi-libertad)
-  - [123. Tu eres mi respirar - popular](#hymn-123-tu-eres-mi-respirar)
-  - [134. Ven Espíritu Ven (Purifícame) - popular](#hymn-134-ven-espíritu-ven-purifícame)
-  - [143. Yo Quiero ser tu Servidor - popular](#hymn-143-yo-quiero-ser-tu-servidor)
+  - [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo-maite-lopez)
+  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho-popularmd)
+  - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable-marcos-barrientos)
+  - [35. Dona tu Vida - popular](#hymn-35-dona-tu-vida-popular)
+  - [48. Espíritu ven - Batah](#hymn-48-espiritu-ven-batah)
+  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego-factor-de-cambio)
+  - [68. La Samaritana - popular](#hymn-68-la-samaritana-popular)
+  - [76. Maravillas - schoenstatt](#hymn-76-maravillas-schoenstatt)
+  - [80. Muevete en mi - popular](#hymn-80-muevete-en-mi-popular)
+  - [82. Nada te turbe - Santa Teresa](#hymn-82-nada-te-turbe-santa-teresa)
+  - [88. No Temas - Jaime Olguín](#hymn-88-no-temas-jaime-olguin)
+  - [98. Que se quiebre mi corazón - María Olguín](#hymn-98-que-se-quiebre-mi-corazon-maria-olguin)
+  - [99. Quien pierde su vida por mi - Hermana Glenda](#hymn-99-quien-pierde-su-vida-por-mi-hermana-glenda)
+  - [104. Renuévame Señor Jesús - popular](#hymn-104-renuévame-senor-jesus-popular)
+  - [121. Toma Señor mi libertad - popular](#hymn-121-toma-senor-mi-libertad-popular)
+  - [122. Tu eres mi respirar - popular](#hymn-122-tu-eres-mi-respirar-popular)
+  - [125. Tuyas son - Luispo](#hymn-125-tuyas-son-luispo)
+  - [133. Ven Espíritu Ven (Purifícame) - popular](#hymn-133-ven-espiritu-ven-purificame-popular)
+  - [134. Ven Y Lléname - Generación 12](#hymn-134-ven-y-llename-generacion-12)
+  - [142. Yo Quiero ser tu Servidor - popular](#hymn-142-yo-quiero-ser-tu-servidor-popular)
 
 ## Santo
 
-  - [113. Santo - Jaime Olguín](#hymn-113-santo)
-  - [114. Santo Manchego - popular](#hymn-114-santo-manchego)
+  - [112. Santo - Jaime Olguín](#hymn-112-santo-jaime-olguin)
+  - [113. Santo Manchego - popular](#hymn-113-santo-manchego-popular)
 
 ## Cordero
 
-  - [24. Cordero de Dios - popular](#hymn-24-cordero-de-dios)
+  - [24. Cordero de Dios - popular](#hymn-24-cordero-de-dios-popular)
 
 ## Comunion
 
-  - [1. 10000 razones - Matt Redman](#hymn-1-10000-razones)
-  - [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada)
-  - [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
-  - [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
-  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
-  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
-  - [13. Arde - Hakuna](#hymn-13-arde)
-  - [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives)
-  - [19. Canción para la comunión - popular](#hymn-19-canción-para-la-comunión)
-  - [20. Cirineo - Hakuna](#hymn-20-cirineo)
-  - [21. Colombia - Hakuna](#hymn-21-colombia)
-  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
-  - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
-  - [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazón-tuyo)
-  - [29. Deseable - Abels Worship](#hymn-29-deseable)
-  - [30. Dime cómo hacerlo - Laraland](#hymn-30-dime-cómo-hacerlo)
-  - [31. Dime María - Batah](#hymn-31-dime-maría)
-  - [32. Dime Rey - Helena](#hymn-32-dime-rey)
-  - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable)
-  - [35. Dona tu Vida - popular](#hymn-35-dona-tu-vida)
-  - [36. Dulce locura - Batah](#hymn-36-dulce-locura)
-  - [37. Déjate - Misión País](#hymn-37-déjate)
-  - [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos)
-  - [39. El que muere por mí - Schoenstatt](#hymn-39-el-que-muere-por-mí)
-  - [40. El Rey de mi Vida - popular](#hymn-40-el-rey-de-mi-vida)
-  - [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey)
-  - [42. En medio del fuego - Hakuna](#hymn-42-en-medio-del-fuego)
-  - [44. Enciéndeme - Hakuna](#hymn-44-enciéndeme)
-  - [45. Entrega - Schoenstatt](#hymn-45-entrega)
-  - [46. Eres Testigo - anonimo](#hymn-46-eres-testigo)
-  - [47. Es verdad - Vali Olguin](#hymn-47-es-verdad)
-  - [48. Espíritu ven - Batah](#hymn-48-espíritu-ven)
-  - [49. Estaré Contigo - Jon Carlo](#hymn-49-estaré-contigo)
-  - [50. Estás dentro de mí - Schoenstatt](#hymn-50-estás-dentro-de-mí)
-  - [52. Hasta La Locura - popular](#hymn-52-hasta-la-locura)
-  - [54. Here I am Lord - popular](#hymn-54-here-i-am-lord)
-  - [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre)
-  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego)
-  - [58. Huracán - Hakuna](#hymn-58-huracán)
-  - [59. Id y anunciad - Batah](#hymn-59-id-y-anunciad)
-  - [60. Inúndame - Athenas](#hymn-60-inúndame)
-  - [61. Jesucristo basta - Un Corazon](#hymn-61-jesucristo-basta)
-  - [62. Jesus - Sarai Rivera](#hymn-62-jesus)
-  - [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all)
-  - [65. La Bendicion - popular](#hymn-65-la-bendicion)
-  - [67. La medida del amor - Hakuna](#hymn-67-la-medida-del-amor)
-  - [68. La Samaritana - popular](#hymn-68-la-samaritana)
-  - [69. Libre - Miel San Marcos](#hymn-69-libre)
-  - [70. Llévame - Ignis](#hymn-70-llévame)
-  - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you)
-  - [72. Los coros del universo - Hakuna](#hymn-72-los-coros-del-universo)
-  - [73. Madre - Hakuna](#hymn-73-madre)
-  - [76. Mar Adentro (Navegar) - Schoenstatt](#hymn-76-mar-adentro-navegar)
-  - [77. Maravillas - schoenstatt](#hymn-77-maravillas)
-  - [78. Me Rindo a Ti - Majo y Dan](#hymn-78-me-rindo-a-ti)
-  - [79. Mi amado - Hakuna](#hymn-79-mi-amado)
-  - [80. Mis heridas te han curado - Batah](#hymn-80-mis-heridas-te-han-curado)
-  - [81. Muevete en mi - popular](#hymn-81-muevete-en-mi)
-  - [82. Muros - Generación 12](#hymn-82-muros)
-  - [83. Nada te turbe - Santa Teresa](#hymn-83-nada-te-turbe)
-  - [84. Nadie te ama como yo - popular](#hymn-84-nadie-te-ama-como-yo)
-  - [85. No hay lugar más alto - Miel San Marcos](#hymn-85-no-hay-lugar-más-alto)
-  - [86. No hay paredes - Jesús Adrián Romero](#hymn-86-no-hay-paredes)
-  - [87. No Longer Slaves - Bethel](#hymn-87-no-longer-slaves)
-  - [88. No sé qué viste en mí - Hakuna](#hymn-88-no-sé-qué-viste-en-mí)
-  - [89. No Temas - Jaime Olguín](#hymn-89-no-temas)
-  - [90. No tengo miedo - popular](#hymn-90-no-tengo-miedo)
-  - [91. Oceans - Hillsong](#hymn-91-oceans)
-  - [92. Otra Vez - Un Corazón](#hymn-92-otra-vez)
-  - [93. Para que entre el rey - popular](#hymn-93-para-que-entre-el-rey)
-  - [94. Pasion de Dios - Hakuna](#hymn-94-pasion-de-dios)
-  - [95. Perdón - Helena](#hymn-95-perdón)
-  - [96. Perfume a tus Pies - popular](#hymn-96-perfume-a-tus-pies)
-  - [97. Pescador de hombres - popular](#hymn-97-pescador-de-hombres)
-  - [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
-  - [100. Que se quiebre mi corazón - María Olguín](#hymn-100-que-se-quiebre-mi-corazón)
-  - [101. Quien pierde su vida por mi - popular](#hymn-101-quien-pierde-su-vida-por-mi)
-  - [103. Quédate Señor - Fray Nacho](#hymn-103-quédate-señor)
-  - [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
-  - [105. Renuévame Señor Jesús - popular](#hymn-105-renuévame-señor-jesús)
-  - [106. Restaurame Espiritu - Xavier Rudd](#hymn-106-restaurame-espiritu)
-  - [107. Resucitados - Kenosis](#hymn-107-resucitados)
-  - [108. Rey de Reyes - Marcos Barrientos](#hymn-108-rey-de-reyes)
-  - [109. RUAH - popular](#hymn-109-ruah)
-  - [110. Saliendo del Pretorio - Jaire](#hymn-110-saliendo-del-pretorio)
-  - [111. Salmo 23 - Un Corazón](#hymn-111-salmo-23)
-  - [112. Salve Reina - Servus Mariae](#hymn-112-salve-reina)
-  - [115. Se Mi Faro - Batah](#hymn-115-se-mi-faro)
-  - [116. Sencillamente - Hakuna](#hymn-116-sencillamente)
-  - [117. Si hubiera estado allí - Adrián](#hymn-117-si-hubiera-estado-allí)
-  - [118. Sopla Señor - popular](#hymn-118-sopla-señor)
-  - [119. Soy Libre - Hakuna](#hymn-119-soy-libre)
-  - [120. Supe que me Amabas - Marcela Gándara](#hymn-120-supe-que-me-amabas)
-  - [121. Surge Valentía - popular](#hymn-121-surge-valentía)
-  - [122. Toma Señor mi libertad - popular](#hymn-122-toma-señor-mi-libertad)
-  - [123. Tu eres mi respirar - popular](#hymn-123-tu-eres-mi-respirar)
-  - [124. Tu Voluntad - Servus Mariae](#hymn-124-tu-voluntad)
-  - [125. Tus Planes Son Perfectos - Batah](#hymn-125-tus-planes-son-perfectos)
-  - [126. Tuyas son - Luispo](#hymn-126-tuyas-son)
-  - [127. Un Segundo - Hakuna](#hymn-127-un-segundo)
-  - [128. Ven - popular](#hymn-128-ven)
-  - [131. Ven Espiritu Ven (Teresa) - popular](#hymn-131-ven-espiritu-ven-teresa)
-  - [132. Ven Espíritu - popular](#hymn-132-ven-espíritu)
-  - [133. Ven Espíritu Divino - Schoenstatt](#hymn-133-ven-espíritu-divino)
-  - [134. Ven Espíritu Ven (Purifícame) - popular](#hymn-134-ven-espíritu-ven-purifícame)
-  - [135. Ven Y Lléname - Generación 12](#hymn-135-ven-y-lléname)
-  - [136. Vengo a Adorarte - popular](#hymn-136-vengo-a-adorarte)
-  - [137. Vida en abundancia - schoenstatt](#hymn-137-vida-en-abundancia)
-  - [141. Vuelvo Otra Vez - tuyo](#hymn-141-vuelvo-otra-vez)
-  - [142. Yeshua - Generacion 12](#hymn-142-yeshua)
-  - [143. Yo Quiero ser tu Servidor - popular](#hymn-143-yo-quiero-ser-tu-servidor)
-  - [144. Ángeles volando - popular](#hymn-144-ángeles-volando)
+  - [1. 10000 razones - Matt Redman](#hymn-1-10000-razones-matt-redman)
+  - [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada-vivafe)
+  - [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo-maite-lopez)
+  - [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado-mater-salvatoris)
+  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores-saraimd)
+  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condicion-abels-worshipmd)
+  - [13. Arde - Hakuna](#hymn-13-arde-hakuna)
+  - [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives-matt-maher)
+  - [19. Canción para la comunión - popular](#hymn-19-cancion-para-la-comunion-popular)
+  - [20. Cirineo - Hakuna](#hymn-20-cirineo-hakuna)
+  - [21. Colombia - Hakuna](#hymn-21-colombia-hakuna)
+  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confio-en-ti-felipe-gomez)
+  - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar-besmaya)
+  - [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazon-tuyo)
+  - [29. Deseable - Abels Worship](#hymn-29-deseable-abels-worship)
+  - [30. Dime cómo hacerlo - Laraland](#hymn-30-dime-como-hacerlo-laraland)
+  - [31. Dime María - Batah](#hymn-31-dime-maria-batah)
+  - [32. Dime Rey - Helena](#hymn-32-dime-rey-helena)
+  - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable-marcos-barrientos)
+  - [35. Dona tu Vida - popular](#hymn-35-dona-tu-vida-popular)
+  - [36. Dulce locura - Batah](#hymn-36-dulce-locura-batah)
+  - [37. Déjate - Misión País](#hymn-37-dejate-mision-pais)
+  - [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos-popular)
+  - [39. El que muere por mí - Schoenstatt](#hymn-39-el-que-muere-por-mi-schoenstatt)
+  - [40. El Rey de mi Vida - popular](#hymn-40-el-rey-de-mi-vida-popular)
+  - [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey-tuyo)
+  - [42. En medio del fuego - Hakuna](#hymn-42-en-medio-del-fuego-hakuna)
+  - [44. Enciéndeme - Hakuna](#hymn-44-enciendeme-hakuna)
+  - [45. Entrega - Schoenstatt](#hymn-45-entrega-schoenstatt)
+  - [46. Eres Testigo - anonimo](#hymn-46-eres-testigo-anonimo)
+  - [47. Es verdad - Vali Olguin](#hymn-47-es-verdad-vali-olguin)
+  - [48. Espíritu ven - Batah](#hymn-48-espiritu-ven-batah)
+  - [49. Estaré Contigo - Jon Carlo](#hymn-49-estaré-contigo-jon-carlo)
+  - [50. Estás dentro de mí - Schoenstatt](#hymn-50-estas-dentro-de-mi-schoenstatt)
+  - [52. Hasta La Locura - Pablo Martinez](#hymn-52-hasta-la-locura-pablo-martinez)
+  - [54. Here I am Lord - popular](#hymn-54-here-i-am-lord-popular)
+  - [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre-hillsong)
+  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego-factor-de-cambio)
+  - [58. Huracán - Hakuna](#hymn-58-huracan-hakuna)
+  - [59. Id y anunciad - Batah](#hymn-59-id-y-anunciad-batah)
+  - [60. Inúndame - Athenas](#hymn-60-inundame-athenas)
+  - [61. Jesucristo basta - Un Corazon](#hymn-61-jesucristo-basta-un-corazon-un-corazon)
+  - [62. Jesus - Sarai Rivera](#hymn-62-jesus-sarai-rivera)
+  - [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all-jeremy-riddle)
+  - [65. La Bendicion - Elevation Worship](#hymn-65-la-bendicion-elevation-worship)
+  - [67. La medida del amor - Hakuna](#hymn-67-la-medida-del-amor-hakuna)
+  - [68. La Samaritana - popular](#hymn-68-la-samaritana-popular)
+  - [69. Libre - Miel San Marcos](#hymn-69-libre-miel-san-marcos)
+  - [70. Llévame - Ignis](#hymn-70-llevame-ignis)
+  - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you-matt-maher)
+  - [72. Los coros del universo - Hakuna](#hymn-72-los-coros-del-universo-hakuna)
+  - [75. Mar Adentro (Navegar) - Schoenstatt](#hymn-75-mar-adentro-navegar-schoenstatt)
+  - [76. Maravillas - schoenstatt](#hymn-76-maravillas-schoenstatt)
+  - [77. Me Rindo a Ti - Majo y Dan](#hymn-77-me-rindo-a-ti-majo-y-dan)
+  - [78. Mi amado - Hakuna](#hymn-78-mi-amado-hakuna)
+  - [79. Mis heridas te han curado - Batah](#hymn-79-mis-heridas-te-han-curado-batah)
+  - [80. Muevete en mi - popular](#hymn-80-muevete-en-mi-popular)
+  - [81. Muros - Generación 12](#hymn-81-muros-generacion-12)
+  - [82. Nada te turbe - Santa Teresa](#hymn-82-nada-te-turbe-santa-teresa)
+  - [83. Nadie te ama como yo - popular](#hymn-83-nadie-te-ama-como-yo-popular)
+  - [84. No hay lugar más alto - Miel San Marcos](#hymn-84-no-hay-lugar-mas-alto-miel-san-marcos)
+  - [85. No hay paredes - Jesús Adrián Romero](#hymn-85-no-hay-paredes-jesus-adrian-romero)
+  - [86. No Longer Slaves - Bethel](#hymn-86-no-longer-slaves-bethel)
+  - [87. No sé qué viste en mí - Hakuna](#hymn-87-no-se-que-viste-en-mi-hakuna)
+  - [88. No Temas - Jaime Olguín](#hymn-88-no-temas-jaime-olguin)
+  - [90. Oceans - Hillsong](#hymn-90-oceans-hillsong)
+  - [91. Otra Vez - Un Corazón](#hymn-91-otra-vez-un-corazon)
+  - [92. Para que entre el rey - popular](#hymn-92-para-que-entre-el-rey-popular)
+  - [93. Perdón - Helena](#hymn-93-perdon-helena)
+  - [94. Perfume a tus Pies - popular](#hymn-94-perfume-a-tus-pies-popular)
+  - [95. Pescador de hombres - popular](#hymn-95-pescador-de-hombres-popular)
+  - [97. Primero el cielo - Tuyo](#hymn-97-primero-el-cielo-tuyomd)
+  - [98. Que se quiebre mi corazón - María Olguín](#hymn-98-que-se-quiebre-mi-corazon-maria-olguin)
+  - [99. Quien pierde su vida por mi - Hermana Glenda](#hymn-99-quien-pierde-su-vida-por-mi-hermana-glenda)
+  - [101. Quédate Señor - Fray Nacho](#hymn-101-quedate-senor-fray-nacho)
+  - [102. Reckless Love - Bethel Music](#hymn-102-reckless-love-bethel-musicmd)
+  - [104. Renuévame Señor Jesús - popular](#hymn-104-renuévame-senor-jesus-popular)
+  - [105. Restaurame Espiritu - Xavier Rudd](#hymn-105-restaurame-espritu-xavier-ruddmd)
+  - [106. Resucitados - Kenosis](#hymn-106-resucitados-kenosis)
+  - [107. Rey de Reyes - Marcos Barrientos](#hymn-107-rey-de-reyes-marcos-barrientos)
+  - [108. RUAH - popular](#hymn-108-ruah-popular)
+  - [109. Saliendo del Pretorio - Jaire](#hymn-109-saliendo-del-pretorio-jaire)
+  - [110. Salmo 23 - Un Corazón](#hymn-110-salmo-23-un-corazon)
+  - [111. Salve Reina - Servus Mariae](#hymn-111-salve-reina-servus-mariae)
+  - [114. Se Mi Faro - Batah](#hymn-114-se-mi-faro-batah)
+  - [115. Sencillamente - Hakuna](#hymn-115-sencillamente-hakuna)
+  - [116. Si hubiera estado allí - Adrián](#hymn-116-si-hubiera-estado-alli-adrian)
+  - [117. Sopla Señor - popular](#hymn-117-sopla-senor-popular)
+  - [118. Soy Libre - Hakuna](#hymn-118-soy-libre-hakuna)
+  - [119. Supe que me Amabas - Marcela Gándara](#hymn-119-supe-que-me-amabas-marcela-gandara)
+  - [120. Surge Valentía - Schoenstatt](#hymn-120-surge-valentia-schoenstatt)
+  - [121. Toma Señor mi libertad - popular](#hymn-121-toma-senor-mi-libertad-popular)
+  - [122. Tu eres mi respirar - popular](#hymn-122-tu-eres-mi-respirar-popular)
+  - [123. Tu Voluntad - Servus Mariae](#hymn-123-tu-voluntad-servus-mariae)
+  - [124. Tus Planes Son Perfectos - Batah](#hymn-124-tus-planes-son-perfetos-batah)
+  - [125. Tuyas son - Luispo](#hymn-125-tuyas-son-luispo)
+  - [126. Un Segundo - Hakuna](#hymn-126-un-segundo-hakuna)
+  - [127. Ven - mision_pais](#hymn-127-ven-mision-pais)
+  - [130. Ven Espiritu Ven - Teresa](#hymn-130-ven-espiritu-ven-teresa)
+  - [131. Ven Espíritu - popular](#hymn-131-ven-espiritu-secuencia)
+  - [132. Ven Espíritu Divino - Schoenstatt](#hymn-132-ven-espiritu-divino-schoenstatt)
+  - [133. Ven Espíritu Ven (Purifícame) - popular](#hymn-133-ven-espiritu-ven-purificame-popular)
+  - [134. Ven Y Lléname - Generación 12](#hymn-134-ven-y-llename-generacion-12)
+  - [135. Vengo a Adorarte - popular](#hymn-135-vengo-a-adorarte-popular)
+  - [136. Vida en abundancia - schoenstatt](#hymn-136-vida-en-abundancia-schoenstatt)
+  - [140. Vuelvo Otra Vez - tuyo](#hymn-140-vuelvo-otra-vez-tuyo)
+  - [141. Yeshua - Generacion 12](#hymn-141-yeshua-generacion-12)
+  - [142. Yo Quiero ser tu Servidor - popular](#hymn-142-yo-quiero-ser-tu-servidor-popular)
 
 ## Salida
 
-  - [6. Alma Misionera - Jaire](#hymn-6-alma-misionera)
-  - [7. Alzar Banderas - Schoenstatt](#hymn-7-alzar-banderas)
-  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
-  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
-  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
-  - [25. Cristo Vive - popular](#hymn-25-cristo-vive)
-  - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
-  - [34. Dios te salve - popular](#hymn-34-dios-te-salve)
-  - [51. Hail Mary Prayer - David Burke](#hymn-51-hail-mary-prayer)
-  - [53. Hasta que el mundo arda por Él - Francisco Alvarado](#hymn-53-hasta-que-el-mundo-arda-por-él)
-  - [56. Himno Misión País - popular](#hymn-56-himno-misión-país)
-  - [64. Junto a ti María - popular](#hymn-64-junto-a-ti-maría)
-  - [65. La Bendicion - popular](#hymn-65-la-bendicion)
-  - [66. La Fe de María - popular](#hymn-66-la-fe-de-maría)
-  - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you)
-  - [74. Madre - Hakuna](#hymn-74-madre)
-  - [75. Madre y Reina - Siquem](#hymn-75-madre-y-reina)
-  - [90. No tengo miedo - popular](#hymn-90-no-tengo-miedo)
-  - [102. Quiero Caminar Contigo María - popular](#hymn-102-quiero-caminar-contigo-maría)
-  - [138. Virgen Madre de Nuestro Dios - popular](#hymn-138-virgen-madre-de-nuestro-dios)
-  - [139. Viva Cristo Rey - Jaire](#hymn-139-viva-cristo-rey)
-  - [140. Volverás a María - popular](#hymn-140-volverás-a-maría)
+  - [6. Alma Misionera - Jaire](#hymn-6-alma-misionera-jaire)
+  - [7. Alzar Banderas - Schoenstatt](#hymn-7-alzar-banderas-schoenstatt)
+  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu-ham)
+  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maria-popular)
+  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confio-en-ti-felipe-gomez)
+  - [25. Cristo Vive - Verbum Dei](#hymn-25-cristo-vive-verbum-dei)
+  - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar-besmaya)
+  - [31. Dime María - Batah](#hymn-31-dime-maria-batah)
+  - [34. Dios te salve - popular](#hymn-34-dios-te-salve-popular)
+  - [51. Hail Mary Prayer - David Burke](#hymn-51-hail-mary-prayer-david-burke)
+  - [53. Hasta que el mundo arda por Él - Francisco Alvarado](#hymn-53-hasta-que-el-mundo-arda-por-el-francisco-alvarado)
+  - [56. Himno Misión País - Schoenstatt](#hymn-56-himno-mision-pais-schoenstatt)
+  - [59. Id y anunciad - Batah](#hymn-59-id-y-anunciad-batah)
+  - [64. Junto a ti María - popular](#hymn-64-junto-a-ti-maria-popular)
+  - [65. La Bendicion - Elevation Worship](#hymn-65-la-bendicion-elevation-worship)
+  - [66. La Fe de María - popular](#hymn-66-la-fe-de-maria-popular)
+  - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you-matt-maher)
+  - [73. Madre - Hakuna](#hymn-73-madre-de-hakuna-hakuna)
+  - [74. Madre - Hakuna](#hymn-74-madre-hakuna)
+  - [89. No tengo miedo - popular](#hymn-89-no-tengo-miedo-popular)
+  - [100. Quiero Caminar Contigo María - popular](#hymn-100-quiero-caminar-contigo-maria-popular)
+  - [103. Reina y Madre - Siquem](#hymn-103-reina-y-madre-siquem)
+  - [111. Salve Reina - Servus Mariae](#hymn-111-salve-reina-servus-mariae)
+  - [137. Virgen Madre de Nuestro Dios - popular](#hymn-137-virgen-madre-de-nuestro-dios-popular)
+  - [138. Viva Cristo Rey - Jaire](#hymn-138-viva-cristo-rey-jaire)
+  - [139. Volverás a María - popular](#hymn-139-volveras-a-maria-popular)
+  - [143. Ángeles volando - popular](#hymn-143-angeles-volando-popular)
 
 
 # Alabanza
@@ -212,116 +222,182 @@
 
 ## Primer ciclo
 
-  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
-  - [16. Bendigamos - popular](#hymn-16-bendigamos)
-  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego)
-  - [69. Libre - Miel San Marcos](#hymn-69-libre)
-  - [81. Muevete en mi - popular](#hymn-81-muevete-en-mi)
-  - [82. Muros - Generación 12](#hymn-82-muros)
-  - [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
-  - [109. RUAH - popular](#hymn-109-ruah)
-  - [123. Tu eres mi respirar - popular](#hymn-123-tu-eres-mi-respirar)
-  - [129. Ven Ahora - popular](#hymn-129-ven-ahora)
-  - [130. Ven ante Su trono - Elevation Worship](#hymn-130-ven-ante-su-trono)
-  - [131. Ven Espiritu Ven (Teresa) - popular](#hymn-131-ven-espiritu-ven-teresa)
-  - [134. Ven Espíritu Ven (Purifícame) - popular](#hymn-134-ven-espíritu-ven-purifícame)
-  - [135. Ven Y Lléname - Generación 12](#hymn-135-ven-y-lléname)
-  - [142. Yeshua - Generacion 12](#hymn-142-yeshua)
+  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho-popularmd)
+  - [16. Bendigamos - popular](#hymn-16-bendigamos-popular)
+  - [48. Espíritu ven - Batah](#hymn-48-espiritu-ven-batah)
+  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego-factor-de-cambio)
+  - [60. Inúndame - Athenas](#hymn-60-inundame-athenas)
+  - [61. Jesucristo basta - Un Corazon](#hymn-61-jesucristo-basta-un-corazon-un-corazon)
+  - [69. Libre - Miel San Marcos](#hymn-69-libre-miel-san-marcos)
+  - [80. Muevete en mi - popular](#hymn-80-muevete-en-mi-popular)
+  - [81. Muros - Generación 12](#hymn-81-muros-generacion-12)
+  - [105. Restaurame Espiritu - Xavier Rudd](#hymn-105-restaurame-espritu-xavier-ruddmd)
+  - [108. RUAH - popular](#hymn-108-ruah-popular)
+  - [122. Tu eres mi respirar - popular](#hymn-122-tu-eres-mi-respirar-popular)
+  - [128. Ven Ahora - popular](#hymn-128-ven-ahora-popular)
+  - [129. Ven ante Su trono - Elevation Worship](#hymn-129-ven-ante-su-trono-elevation-worship)
+  - [130. Ven Espiritu Ven - Teresa](#hymn-130-ven-espiritu-ven-teresa)
+  - [131. Ven Espíritu - popular](#hymn-131-ven-espiritu-secuencia)
+  - [133. Ven Espíritu Ven (Purifícame) - popular](#hymn-133-ven-espiritu-ven-purificame-popular)
+  - [134. Ven Y Lléname - Generación 12](#hymn-134-ven-y-llename-generacion-12)
+  - [141. Yeshua - Generacion 12](#hymn-141-yeshua-generacion-12)
 
 ## Segundo ciclo
 
-  - [1. 10000 razones - Matt Redman](#hymn-1-10000-razones)
-  - [2. A ti te alabo - Hakuna](#hymn-2-a-ti-te-alabo)
-  - [3. Abba Padre - popular](#hymn-3-abba-padre)
-  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
-  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
-  - [16. Bendigamos - popular](#hymn-16-bendigamos)
-  - [28. Desde el Fondo del Mar - popular](#hymn-28-desde-el-fondo-del-mar)
-  - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable)
-  - [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos)
-  - [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey)
-  - [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre)
-  - [62. Jesus - Sarai Rivera](#hymn-62-jesus)
-  - [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all)
-  - [69. Libre - Miel San Marcos](#hymn-69-libre)
-  - [82. Muros - Generación 12](#hymn-82-muros)
-  - [87. No Longer Slaves - Bethel](#hymn-87-no-longer-slaves)
-  - [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
-  - [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
-  - [114. Santo Manchego - popular](#hymn-114-santo-manchego)
-  - [130. Ven ante Su trono - Elevation Worship](#hymn-130-ven-ante-su-trono)
-  - [139. Viva Cristo Rey - Jaire](#hymn-139-viva-cristo-rey)
+  - [1. 10000 razones - Matt Redman](#hymn-1-10000-razones-matt-redman)
+  - [2. A ti te alabo - Hakuna](#hymn-2-a-ti-te-alabo-hakuna)
+  - [3. Abba Padre - popular](#hymn-3-abba-padre-popularmd)
+  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores-saraimd)
+  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condicion-abels-worshipmd)
+  - [16. Bendigamos - popular](#hymn-16-bendigamos-popular)
+  - [28. Desde el Fondo del Mar - popular](#hymn-28-desde-el-fondo-del-mar-popular)
+  - [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable-marcos-barrientos)
+  - [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos-popular)
+  - [40. El Rey de mi Vida - popular](#hymn-40-el-rey-de-mi-vida-popular)
+  - [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey-tuyo)
+  - [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre-hillsong)
+  - [62. Jesus - Sarai Rivera](#hymn-62-jesus-sarai-rivera)
+  - [69. Libre - Miel San Marcos](#hymn-69-libre-miel-san-marcos)
+  - [72. Los coros del universo - Hakuna](#hymn-72-los-coros-del-universo-hakuna)
+  - [81. Muros - Generación 12](#hymn-81-muros-generacion-12)
+  - [86. No Longer Slaves - Bethel](#hymn-86-no-longer-slaves-bethel)
+  - [92. Para que entre el rey - popular](#hymn-92-para-que-entre-el-rey-popular)
+  - [97. Primero el cielo - Tuyo](#hymn-97-primero-el-cielo-tuyomd)
+  - [102. Reckless Love - Bethel Music](#hymn-102-reckless-love-bethel-musicmd)
+  - [107. Rey de Reyes - Marcos Barrientos](#hymn-107-rey-de-reyes-marcos-barrientos)
+  - [113. Santo Manchego - popular](#hymn-113-santo-manchego-popular)
+  - [129. Ven ante Su trono - Elevation Worship](#hymn-129-ven-ante-su-trono-elevation-worship)
+  - [138. Viva Cristo Rey - Jaire](#hymn-138-viva-cristo-rey-jaire)
 
 ## Tercer ciclo
 
-  - [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada)
-  - [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
-  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
-  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
-  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
-  - [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives)
-  - [25. Cristo Vive - popular](#hymn-25-cristo-vive)
-  - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
-  - [29. Deseable - Abels Worship](#hymn-29-deseable)
-  - [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey)
-  - [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre)
-  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego)
-  - [62. Jesus - Sarai Rivera](#hymn-62-jesus)
-  - [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all)
-  - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you)
-  - [78. Me Rindo a Ti - Majo y Dan](#hymn-78-me-rindo-a-ti)
-  - [82. Muros - Generación 12](#hymn-82-muros)
-  - [87. No Longer Slaves - Bethel](#hymn-87-no-longer-slaves)
-  - [90. No tengo miedo - popular](#hymn-90-no-tengo-miedo)
-  - [92. Otra Vez - Un Corazón](#hymn-92-otra-vez)
-  - [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
-  - [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
-  - [111. Salmo 23 - Un Corazón](#hymn-111-salmo-23)
-  - [114. Santo Manchego - popular](#hymn-114-santo-manchego)
-  - [119. Soy Libre - Hakuna](#hymn-119-soy-libre)
-  - [123. Tu eres mi respirar - popular](#hymn-123-tu-eres-mi-respirar)
-  - [124. Tu Voluntad - Servus Mariae](#hymn-124-tu-voluntad)
-  - [134. Ven Espíritu Ven (Purifícame) - popular](#hymn-134-ven-espíritu-ven-purifícame)
-  - [135. Ven Y Lléname - Generación 12](#hymn-135-ven-y-lléname)
-  - [139. Viva Cristo Rey - Jaire](#hymn-139-viva-cristo-rey)
-  - [142. Yeshua - Generacion 12](#hymn-142-yeshua)
+  - [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada-vivafe)
+  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores-saraimd)
+  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condicion-abels-worshipmd)
+  - [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho-popularmd)
+  - [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives-matt-maher)
+  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confio-en-ti-felipe-gomez)
+  - [25. Cristo Vive - Verbum Dei](#hymn-25-cristo-vive-verbum-dei)
+  - [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar-besmaya)
+  - [29. Deseable - Abels Worship](#hymn-29-deseable-abels-worship)
+  - [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey-tuyo)
+  - [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre-hillsong)
+  - [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego-factor-de-cambio)
+  - [62. Jesus - Sarai Rivera](#hymn-62-jesus-sarai-rivera)
+  - [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all-jeremy-riddle)
+  - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you-matt-maher)
+  - [77. Me Rindo a Ti - Majo y Dan](#hymn-77-me-rindo-a-ti-majo-y-dan)
+  - [81. Muros - Generación 12](#hymn-81-muros-generacion-12)
+  - [86. No Longer Slaves - Bethel](#hymn-86-no-longer-slaves-bethel)
+  - [89. No tengo miedo - popular](#hymn-89-no-tengo-miedo-popular)
+  - [91. Otra Vez - Un Corazón](#hymn-91-otra-vez-un-corazon)
+  - [92. Para que entre el rey - popular](#hymn-92-para-que-entre-el-rey-popular)
+  - [97. Primero el cielo - Tuyo](#hymn-97-primero-el-cielo-tuyomd)
+  - [102. Reckless Love - Bethel Music](#hymn-102-reckless-love-bethel-musicmd)
+  - [110. Salmo 23 - Un Corazón](#hymn-110-salmo-23-un-corazon)
+  - [113. Santo Manchego - popular](#hymn-113-santo-manchego-popular)
+  - [118. Soy Libre - Hakuna](#hymn-118-soy-libre-hakuna)
+  - [122. Tu eres mi respirar - popular](#hymn-122-tu-eres-mi-respirar-popular)
+  - [123. Tu Voluntad - Servus Mariae](#hymn-123-tu-voluntad-servus-mariae)
+  - [133. Ven Espíritu Ven (Purifícame) - popular](#hymn-133-ven-espiritu-ven-purificame-popular)
+  - [134. Ven Y Lléname - Generación 12](#hymn-134-ven-y-llename-generacion-12)
+  - [138. Viva Cristo Rey - Jaire](#hymn-138-viva-cristo-rey-jaire)
+  - [141. Yeshua - Generacion 12](#hymn-141-yeshua-generacion-12)
 
 ## Cuarto ciclo
 
-  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
-  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
-  - [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
-  - [34. Dios te salve - popular](#hymn-34-dios-te-salve)
-  - [56. Himno Misión País - popular](#hymn-56-himno-misión-país)
-  - [65. La Bendicion - popular](#hymn-65-la-bendicion)
-  - [74. Madre - Hakuna](#hymn-74-madre)
-  - [75. Madre y Reina - Siquem](#hymn-75-madre-y-reina)
-  - [90. No tengo miedo - popular](#hymn-90-no-tengo-miedo)
-  - [92. Otra Vez - Un Corazón](#hymn-92-otra-vez)
-  - [102. Quiero Caminar Contigo María - popular](#hymn-102-quiero-caminar-contigo-maría)
-  - [111. Salmo 23 - Un Corazón](#hymn-111-salmo-23)
-  - [138. Virgen Madre de Nuestro Dios - popular](#hymn-138-virgen-madre-de-nuestro-dios)
-  - [139. Viva Cristo Rey - Jaire](#hymn-139-viva-cristo-rey)
-  - [140. Volverás a María - popular](#hymn-140-volverás-a-maría)
+  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu-ham)
+  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maria-popular)
+  - [34. Dios te salve - popular](#hymn-34-dios-te-salve-popular)
+  - [56. Himno Misión País - Schoenstatt](#hymn-56-himno-mision-pais-schoenstatt)
+  - [65. La Bendicion - Elevation Worship](#hymn-65-la-bendicion-elevation-worship)
+  - [66. La Fe de María - popular](#hymn-66-la-fe-de-maria-popular)
+  - [73. Madre - Hakuna](#hymn-73-madre-de-hakuna-hakuna)
+  - [74. Madre - Hakuna](#hymn-74-madre-hakuna)
+  - [89. No tengo miedo - popular](#hymn-89-no-tengo-miedo-popular)
+  - [100. Quiero Caminar Contigo María - popular](#hymn-100-quiero-caminar-contigo-maria-popular)
+  - [103. Reina y Madre - Siquem](#hymn-103-reina-y-madre-siquem)
+  - [110. Salmo 23 - Un Corazón](#hymn-110-salmo-23-un-corazon)
+  - [137. Virgen Madre de Nuestro Dios - popular](#hymn-137-virgen-madre-de-nuestro-dios-popular)
+  - [138. Viva Cristo Rey - Jaire](#hymn-138-viva-cristo-rey-jaire)
+  - [139. Volverás a María - popular](#hymn-139-volveras-a-maria-popular)
 
 
 # Adoracion
 
-- [1. 10000 razones - Matt Redman](#hymn-1-10000-razones)
-- [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
-- [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
-- [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
-- [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
-- [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
-- [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives)
-- [19. Canción para la comunión - popular](#hymn-19-canción-para-la-comunión)
-- [21. Colombia - Hakuna](#hymn-21-colombia)
-- [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
-- [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazón-tuyo)
-- [29. Deseable - Abels Worship](#hymn-29-deseable)
-- [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
-- [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
-- [106. Restaurame Espiritu - Xavier Rudd](#hymn-106-restaurame-espiritu)
+- [1. 10000 razones - Matt Redman](#hymn-1-10000-razones-matt-redman)
+- [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo-maite-lopez)
+- [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado-mater-salvatoris)
+- [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores-saraimd)
+- [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condicion-abels-worshipmd)
+- [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho-popularmd)
+- [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives-matt-maher)
+- [19. Canción para la comunión - popular](#hymn-19-cancion-para-la-comunion-popular)
+- [21. Colombia - Hakuna](#hymn-21-colombia-hakuna)
+- [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar-besmaya)
+- [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazon-tuyo)
+- [29. Deseable - Abels Worship](#hymn-29-deseable-abels-worship)
+- [30. Dime cómo hacerlo - Laraland](#hymn-30-dime-como-hacerlo-laraland)
+- [32. Dime Rey - Helena](#hymn-32-dime-rey-helena)
+- [36. Dulce locura - Batah](#hymn-36-dulce-locura-batah)
+- [39. El que muere por mí - Schoenstatt](#hymn-39-el-que-muere-por-mi-schoenstatt)
+- [40. El Rey de mi Vida - popular](#hymn-40-el-rey-de-mi-vida-popular)
+- [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey-tuyo)
+- [42. En medio del fuego - Hakuna](#hymn-42-en-medio-del-fuego-hakuna)
+- [45. Entrega - Schoenstatt](#hymn-45-entrega-schoenstatt)
+- [47. Es verdad - Vali Olguin](#hymn-47-es-verdad-vali-olguin)
+- [48. Espíritu ven - Batah](#hymn-48-espiritu-ven-batah)
+- [49. Estaré Contigo - Jon Carlo](#hymn-49-estaré-contigo-jon-carlo)
+- [52. Hasta La Locura - Pablo Martinez](#hymn-52-hasta-la-locura-pablo-martinez)
+- [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre-hillsong)
+- [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego-factor-de-cambio)
+- [58. Huracán - Hakuna](#hymn-58-huracan-hakuna)
+- [59. Id y anunciad - Batah](#hymn-59-id-y-anunciad-batah)
+- [61. Jesucristo basta - Un Corazon](#hymn-61-jesucristo-basta-un-corazon-un-corazon)
+- [62. Jesus - Sarai Rivera](#hymn-62-jesus-sarai-rivera)
+- [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all-jeremy-riddle)
+- [65. La Bendicion - Elevation Worship](#hymn-65-la-bendicion-elevation-worship)
+- [67. La medida del amor - Hakuna](#hymn-67-la-medida-del-amor-hakuna)
+- [68. La Samaritana - popular](#hymn-68-la-samaritana-popular)
+- [70. Llévame - Ignis](#hymn-70-llevame-ignis)
+- [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you-matt-maher)
+- [76. Maravillas - schoenstatt](#hymn-76-maravillas-schoenstatt)
+- [78. Mi amado - Hakuna](#hymn-78-mi-amado-hakuna)
+- [79. Mis heridas te han curado - Batah](#hymn-79-mis-heridas-te-han-curado-batah)
+- [81. Muros - Generación 12](#hymn-81-muros-generacion-12)
+- [82. Nada te turbe - Santa Teresa](#hymn-82-nada-te-turbe-santa-teresa)
+- [83. Nadie te ama como yo - popular](#hymn-83-nadie-te-ama-como-yo-popular)
+- [84. No hay lugar más alto - Miel San Marcos](#hymn-84-no-hay-lugar-mas-alto-miel-san-marcos)
+- [85. No hay paredes - Jesús Adrián Romero](#hymn-85-no-hay-paredes-jesus-adrian-romero)
+- [86. No Longer Slaves - Bethel](#hymn-86-no-longer-slaves-bethel)
+- [87. No sé qué viste en mí - Hakuna](#hymn-87-no-se-que-viste-en-mi-hakuna)
+- [90. Oceans - Hillsong](#hymn-90-oceans-hillsong)
+- [91. Otra Vez - Un Corazón](#hymn-91-otra-vez-un-corazon)
+- [93. Perdón - Helena](#hymn-93-perdon-helena)
+- [94. Perfume a tus Pies - popular](#hymn-94-perfume-a-tus-pies-popular)
+- [97. Primero el cielo - Tuyo](#hymn-97-primero-el-cielo-tuyomd)
+- [98. Que se quiebre mi corazón - María Olguín](#hymn-98-que-se-quiebre-mi-corazon-maria-olguin)
+- [102. Reckless Love - Bethel Music](#hymn-102-reckless-love-bethel-musicmd)
+- [105. Restaurame Espiritu - Xavier Rudd](#hymn-105-restaurame-espritu-xavier-ruddmd)
+- [106. Resucitados - Kenosis](#hymn-106-resucitados-kenosis)
+- [109. Saliendo del Pretorio - Jaire](#hymn-109-saliendo-del-pretorio-jaire)
+- [110. Salmo 23 - Un Corazón](#hymn-110-salmo-23-un-corazon)
+- [114. Se Mi Faro - Batah](#hymn-114-se-mi-faro-batah)
+- [115. Sencillamente - Hakuna](#hymn-115-sencillamente-hakuna)
+- [116. Si hubiera estado allí - Adrián](#hymn-116-si-hubiera-estado-alli-adrian)
+- [117. Sopla Señor - popular](#hymn-117-sopla-senor-popular)
+- [118. Soy Libre - Hakuna](#hymn-118-soy-libre-hakuna)
+- [119. Supe que me Amabas - Marcela Gándara](#hymn-119-supe-que-me-amabas-marcela-gandara)
+- [120. Surge Valentía - Schoenstatt](#hymn-120-surge-valentia-schoenstatt)
+- [122. Tu eres mi respirar - popular](#hymn-122-tu-eres-mi-respirar-popular)
+- [124. Tus Planes Son Perfectos - Batah](#hymn-124-tus-planes-son-perfetos-batah)
+- [125. Tuyas son - Luispo](#hymn-125-tuyas-son-luispo)
+- [126. Un Segundo - Hakuna](#hymn-126-un-segundo-hakuna)
+- [132. Ven Espíritu Divino - Schoenstatt](#hymn-132-ven-espiritu-divino-schoenstatt)
+- [134. Ven Y Lléname - Generación 12](#hymn-134-ven-y-llename-generacion-12)
+- [135. Vengo a Adorarte - popular](#hymn-135-vengo-a-adorarte-popular)
+- [136. Vida en abundancia - schoenstatt](#hymn-136-vida-en-abundancia-schoenstatt)
+- [140. Vuelvo Otra Vez - tuyo](#hymn-140-vuelvo-otra-vez-tuyo)
 
 
 # Tema
@@ -329,31 +405,76 @@
 
 ## Padre
 
-  - [3. Abba Padre - popular](#hymn-3-abba-padre)
-  - [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
+  - [3. Abba Padre - popular](#hymn-3-abba-padre-popularmd)
+  - [97. Primero el cielo - Tuyo](#hymn-97-primero-el-cielo-tuyomd)
+  - [126. Un Segundo - Hakuna](#hymn-126-un-segundo-hakuna)
 
 ## Cristo
 
-  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
-  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
-  - [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
+  - [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado-mater-salvatoris)
+  - [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores-saraimd)
+  - [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condicion-abels-worshipmd)
+  - [32. Dime Rey - Helena](#hymn-32-dime-rey-helena)
+  - [36. Dulce locura - Batah](#hymn-36-dulce-locura-batah)
+  - [61. Jesucristo basta - Un Corazon](#hymn-61-jesucristo-basta-un-corazon-un-corazon)
+  - [62. Jesus - Sarai Rivera](#hymn-62-jesus-sarai-rivera)
+  - [77. Me Rindo a Ti - Majo y Dan](#hymn-77-me-rindo-a-ti-majo-y-dan)
+  - [79. Mis heridas te han curado - Batah](#hymn-79-mis-heridas-te-han-curado-batah)
+  - [87. No sé qué viste en mí - Hakuna](#hymn-87-no-se-que-viste-en-mi-hakuna)
+  - [91. Otra Vez - Un Corazón](#hymn-91-otra-vez-un-corazon)
+  - [92. Para que entre el rey - popular](#hymn-92-para-que-entre-el-rey-popular)
+  - [101. Quédate Señor - Fray Nacho](#hymn-101-quedate-senor-fray-nacho)
+  - [102. Reckless Love - Bethel Music](#hymn-102-reckless-love-bethel-musicmd)
+  - [109. Saliendo del Pretorio - Jaire](#hymn-109-saliendo-del-pretorio-jaire)
+  - [111. Salve Reina - Servus Mariae](#hymn-111-salve-reina-servus-mariae)
+  - [116. Si hubiera estado allí - Adrián](#hymn-116-si-hubiera-estado-alli-adrian)
+  - [138. Viva Cristo Rey - Jaire](#hymn-138-viva-cristo-rey-jaire)
 
 ## Espiritu
 
-  - [106. Restaurame Espiritu - Xavier Rudd](#hymn-106-restaurame-espiritu)
+  - [16. Bendigamos - popular](#hymn-16-bendigamos-popular)
+  - [60. Inúndame - Athenas](#hymn-60-inundame-athenas)
+  - [80. Muevete en mi - popular](#hymn-80-muevete-en-mi-popular)
+  - [105. Restaurame Espiritu - Xavier Rudd](#hymn-105-restaurame-espritu-xavier-ruddmd)
+  - [108. RUAH - popular](#hymn-108-ruah-popular)
+  - [117. Sopla Señor - popular](#hymn-117-sopla-senor-popular)
+  - [127. Ven - mision_pais](#hymn-127-ven-mision-pais)
+  - [128. Ven Ahora - popular](#hymn-128-ven-ahora-popular)
+  - [130. Ven Espiritu Ven - Teresa](#hymn-130-ven-espiritu-ven-teresa)
+  - [132. Ven Espíritu Divino - Schoenstatt](#hymn-132-ven-espiritu-divino-schoenstatt)
+  - [133. Ven Espíritu Ven (Purifícame) - popular](#hymn-133-ven-espiritu-ven-purificame-popular)
+  - [134. Ven Y Lléname - Generación 12](#hymn-134-ven-y-llename-generacion-12)
 
 ## Santo
 
-  - [13. Arde - Hakuna](#hymn-13-arde)
+  - [13. Arde - Hakuna](#hymn-13-arde-hakuna)
+
+## Martir
+
+  - [46. Eres Testigo - anonimo](#hymn-46-eres-testigo-anonimo)
 
 ## Virgen
 
-  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
-  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
+  - [17. Bendita Tu - HAM](#hymn-17-bendita-tu-ham)
+  - [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maria-popular)
+  - [31. Dime María - Batah](#hymn-31-dime-maria-batah)
+  - [34. Dios te salve - popular](#hymn-34-dios-te-salve-popular)
+  - [51. Hail Mary Prayer - David Burke](#hymn-51-hail-mary-prayer-david-burke)
+  - [53. Hasta que el mundo arda por Él - Francisco Alvarado](#hymn-53-hasta-que-el-mundo-arda-por-el-francisco-alvarado)
+  - [56. Himno Misión País - Schoenstatt](#hymn-56-himno-mision-pais-schoenstatt)
+  - [64. Junto a ti María - popular](#hymn-64-junto-a-ti-maria-popular)
+  - [66. La Fe de María - popular](#hymn-66-la-fe-de-maria-popular)
+  - [73. Madre - Hakuna](#hymn-73-madre-de-hakuna-hakuna)
+  - [74. Madre - Hakuna](#hymn-74-madre-hakuna)
+  - [100. Quiero Caminar Contigo María - popular](#hymn-100-quiero-caminar-contigo-maria-popular)
+  - [103. Reina y Madre - Siquem](#hymn-103-reina-y-madre-siquem)
+  - [111. Salve Reina - Servus Mariae](#hymn-111-salve-reina-servus-mariae)
+  - [139. Volverás a María - popular](#hymn-139-volveras-a-maria-popular)
 
-## All Songs
 
-### [1. 10000 razones - Matt Redman](#hymn-1-10000-razones)
+# All Songs
+
+### 1. 10000 razones - Matt Redman {#hymn-1-10000-razones-matt-redman}
 
 *Autor: Matt Redman*
 
@@ -395,7 +516,7 @@ Diez mil años y para siempre más
 
 ---
 
-### [2. A ti te alabo - Hakuna](#hymn-2-a-ti-te-alabo)
+### 2. A ti te alabo - Hakuna {#hymn-2-a-ti-te-alabo-hakuna}
 
 *Autor: Hakuna*
 
@@ -450,7 +571,7 @@ A ti te alabo
 
 ---
 
-### [3. Abba Padre - popular](#hymn-3-abba-padre)
+### 3. Abba Padre - popular {#hymn-3-abba-padre-popularmd}
 
 *Autor: popular*
 
@@ -484,7 +605,7 @@ Abba Padre. Abba Padre
 
 ---
 
-### [4. Aleluya - Taizé](#hymn-4-aleluya)
+### 4. Aleluya - Taizé {#hymn-4-aleluya-taize}
 
 *Autor: Taizé*
 
@@ -495,7 +616,7 @@ Aleluya, alelu, aleluya, aleluya, aleluya
 
 ---
 
-### [5. Aleluya - popular](#hymn-5-aleluya)
+### 5. Aleluya - popular {#hymn-5-aleluya-popular}
 
 *Autor: popular*
 
@@ -508,7 +629,7 @@ Aleluya Aleluya
 
 ---
 
-### [6. Alma Misionera - Jaire](#hymn-6-alma-misionera)
+### 6. Alma Misionera - Jaire {#hymn-6-alma-misionera-jaire}
 
 *Autor: Jaire*
 
@@ -594,7 +715,7 @@ tu fuerza en la oración.
 
 ---
 
-### [7. Alzar Banderas - Schoenstatt](#hymn-7-alzar-banderas)
+### 7. Alzar Banderas - Schoenstatt {#hymn-7-alzar-banderas-schoenstatt}
 
 *Autor: Schoenstatt*
 
@@ -654,7 +775,7 @@ De que Cristo habita en nuestro hogar
 
 ---
 
-### [8. Alzo la mirada - VIVAFE](#hymn-8-alzo-la-mirada)
+### 8. Alzo la mirada - VIVAFE {#hymn-8-alzo-la-mirada-vivafe}
 
 *Autor: VIVAFE*
 
@@ -725,7 +846,7 @@ Alzo la mirada...
 
 ---
 
-### [9. Amando hasta el extremo - Maite Lopez](#hymn-9-amando-hasta-el-extremo)
+### 9. Amando hasta el extremo - Maite Lopez {#hymn-9-amando-hasta-el-extremo-maite-lopez}
 
 *Autor: Maite Lopez*
 
@@ -784,7 +905,7 @@ Yo también os quiero ver
 
 ---
 
-### [10. Amor abnegado - Mater Salvatoris](#hymn-10-amor-abnegado)
+### 10. Amor abnegado - Mater Salvatoris {#hymn-10-amor-abnegado-mater-salvatoris}
 
 *Autor: Mater Salvatoris*
 
@@ -841,7 +962,7 @@ Solo te pido que te dejes amar
 
 ---
 
-### [11. Amor de los Amores - Sarai](#hymn-11-amor-de-los-amores)
+### 11. Amor de los Amores - Sarai {#hymn-11-amor-de-los-amores-saraimd}
 
 *Autor: Sarai*
 
@@ -940,7 +1061,7 @@ para amarnos Tú y yo
 
 ---
 
-### [12. Amor sin condición - Abels Worship](#hymn-12-amor-sin-condición)
+### 12. Amor sin condición - Abels Worship {#hymn-12-amor-sin-condicion-abels-worshipmd}
 
 *Autor: Abels Worship*
 
@@ -1029,7 +1150,7 @@ Amor sin condición
 
 ---
 
-### [13. Arde - Hakuna](#hymn-13-arde)
+### 13. Arde - Hakuna {#hymn-13-arde-hakuna}
 
 *Autor: Hakuna*
 
@@ -1131,7 +1252,7 @@ Un humilde carpintero mira a los ojos a Dios
 
 ---
 
-### [14. Arranca de mi Pecho - popular](#hymn-14-arranca-de-mi-pecho)
+### 14. Arranca de mi Pecho - popular {#hymn-14-arranca-de-mi-pecho-popularmd}
 
 *Autor: popular*
 
@@ -1162,7 +1283,7 @@ X4
 
 ---
 
-### [15. Because He Lives - Matt Maher](#hymn-15-because-he-lives)
+### 15. Because He Lives - Matt Maher {#hymn-15-because-he-lives-matt-maher}
 
 *Autor: Matt Maher*
 
@@ -1240,7 +1361,7 @@ A-men, a-men, let my song join the one that never ends
 
 ---
 
-### [16. Bendigamos - popular](#hymn-16-bendigamos)
+### 16. Bendigamos - popular {#hymn-16-bendigamos-popular}
 
 *Autor: popular*
 
@@ -1268,7 +1389,7 @@ LA GRACIA DE SU SALVACIÓN.
 
 ---
 
-### [17. Bendita Tu - HAM](#hymn-17-bendita-tu)
+### 17. Bendita Tu - HAM {#hymn-17-bendita-tu-ham}
 
 *Autor: HAM*
 
@@ -1300,11 +1421,13 @@ X2
 
 ---
 
-### [18. Buenas Noches María - popular](#hymn-18-buenas-noches-maría)
+### 18. Buenas Noches María - popular {#hymn-18-buenas-noches-maria-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://www.youtube.com/watch?v=B0Di5EztMvE&list=RDB0Di5EztMvE&start_radio=1)
 
 D A D
 Buenas noches, buenas noches, María
@@ -1322,7 +1445,7 @@ Y vives también en mi corazón
 
 ---
 
-### [19. Canción para la comunión - popular](#hymn-19-canción-para-la-comunión)
+### 19. Canción para la comunión - popular {#hymn-19-cancion-para-la-comunion-popular}
 
 *Autor: popular*
 
@@ -1376,7 +1499,7 @@ Ya no falta nada, lo tengo todo, Te tengo a Ti
 
 ---
 
-### [20. Cirineo - Hakuna](#hymn-20-cirineo)
+### 20. Cirineo - Hakuna {#hymn-20-cirineo-hakuna}
 
 *Autor: Hakuna*
 
@@ -1436,7 +1559,7 @@ G Em C D
 
 ---
 
-### [21. Colombia - Hakuna](#hymn-21-colombia)
+### 21. Colombia - Hakuna {#hymn-21-colombia-hakuna}
 
 *Autor: Hakuna*
 
@@ -1509,7 +1632,7 @@ Un poco más Un poco más
 
 ---
 
-### [22. Como el padre me amó - popular](#hymn-22-como-el-padre-me-amó)
+### 22. Como el padre me amó - popular {#hymn-22-como-el-padre-me-amo-popular}
 
 *Autor: popular*
 
@@ -1528,7 +1651,7 @@ permaneced en mi amor
 
 ---
 
-### [23. Confío en Ti - Felipe Gomez](#hymn-23-confío-en-ti)
+### 23. Confío en Ti - Felipe Gomez {#hymn-23-confio-en-ti-felipe-gomez}
 
 *Autor: Felipe Gomez*
 
@@ -1623,7 +1746,7 @@ Confío en Ti, Confío en Ti, Confío en Ti, Confío
 
 ---
 
-### [24. Cordero de Dios - popular](#hymn-24-cordero-de-dios)
+### 24. Cordero de Dios - popular {#hymn-24-cordero-de-dios-popular}
 
 *Autor: popular*
 
@@ -1648,11 +1771,13 @@ Danos la paz
 
 ---
 
-### [25. Cristo Vive - popular](#hymn-25-cristo-vive)
+### 25. Cristo Vive - Verbum Dei {#hymn-25-cristo-vive-verbum-dei}
 
-*Autor: popular*
+*Autor: Verbum Dei*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/2YMqbYD2G59IhYXMNLpYaP?si=a87453e85f144535)
 
 NO capo (MAX capo 2)
 	A	          E
@@ -1720,7 +1845,7 @@ A D A-E-A
 
 ---
 
-### [26. Cuerda Auxiliar - Besmaya](#hymn-26-cuerda-auxiliar)
+### 26. Cuerda Auxiliar - Besmaya {#hymn-26-cuerda-auxiliar-besmaya}
 
 *Autor: Besmaya*
 
@@ -1804,7 +1929,7 @@ Sin naufragar
 
 ---
 
-### [27. De la cabeza al corazón tuyo - popular](#hymn-27-de-la-cabeza-al-corazón-tuyo)
+### 27. De la cabeza al corazón tuyo - popular {#hymn-27-de-la-cabeza-al-corazon-tuyo}
 
 *Autor: popular*
 
@@ -1938,7 +2063,7 @@ Llévame Señor de mi cabeza a tu corazón
 
 ---
 
-### [28. Desde el Fondo del Mar - popular](#hymn-28-desde-el-fondo-del-mar)
+### 28. Desde el Fondo del Mar - popular {#hymn-28-desde-el-fondo-del-mar-popular}
 
 *Autor: popular*
 
@@ -1987,7 +2112,7 @@ Se  -  ñor, Tú eres Dios.
 
 ---
 
-### [29. Deseable - Abels Worship](#hymn-29-deseable)
+### 29. Deseable - Abels Worship {#hymn-29-deseable-abels-worship}
 
 *Autor: Abels Worship*
 
@@ -2083,11 +2208,13 @@ Yo encuentro mi lugar, en ti
 
 ---
 
-### [30. Dime cómo hacerlo - Laraland](#hymn-30-dime-cómo-hacerlo)
+### 30. Dime cómo hacerlo - Laraland {#hymn-30-dime-como-hacerlo-laraland}
 
 *Autor: Laraland*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0hqipi7wOGMkkS2xzB1imb?si=d238ef611b91453d)
 
 Am F C G
 Si puedo ayudarte en cualquier cosa
@@ -2144,11 +2271,13 @@ dime cómo hacerlo, Señor
 
 ---
 
-### [31. Dime María - Batah](#hymn-31-dime-maría)
+### 31. Dime María - Batah {#hymn-31-dime-maria-batah}
 
 *Autor: Batah*
 
 *Capo: 5*
+
+[Link](https://open.spotify.com/track/3XquETxUYUBj3w3uvAEzQH?si=da7f801ba0b84103)
 
 C           (G/B)               Am
 ¿Qué le dices a José cuando se esfuerza,
@@ -2200,179 +2329,109 @@ María Inmaculada       Mujer amada
 
 ---
 
-### [32. Dime Rey - Helena](#hymn-32-dime-rey)
+### 32. Dime Rey - Helena {#hymn-32-dime-rey-helena}
 
 *Autor: Helena*
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/6pu8hHaPnU9h86EXcehDxz?si=84c985e49cfd42a2)
+
 G              D
-
 Hoy miraba señor tus heridas
-
 Em                 C
-
 y el dolor que abarcaba esa cruz.
-
 G               D
-
 Con tus manos muy bien extendidas,
-
 Em                 C
-
 abrazabas toda multitud.
 
 G              D
-
 Hoy miraba señor al soldado
-
 Em                 C
-
 perforando con lanzas tus pies.
-
 G               D
-
 Y esos clavos muy bien sujetados
-
 Em                 C
-
 sostenían con odio tus pies.
 
 G                 D
-
 Dime rey porque estás tan callado
-
 Em                 C
-
 te latigaron con tanto furor.
-
 G                 D
-
 Dime rey porque escondes el llanto
-
 Em                 C
-
 y perdonas aquel quien te mato.
-
 G                 D
-
 Dime rey porque es tan necesario
-
 Em                 C
-
 morir así de esta forma tan cruel
-
 G                 D
-
 Dime rey como puedo ayudarte
-
 Em                 C
-
-a soportar el dolor que tenes.
+a soportar el dolor a tus pies.
 
 G              D
-
 Hijo mío esa cruz tenebrosa,
-
 Em                 C
-
 me dolió y hasta sangre sudé.
-
 G              D
-
 Por amor a esas vidas perdidas,
-
 Em                 C
-
 toda aquella maldad soporté.
-
 G              D
-
 Mi mensaje de amor y justicia
-
 Em                 C
-
 salvaría toda humanidad,
-
 G              D
-
 pero más me dolió todavía
-
 Em                 C
-
 que no a todos les pudo llegar.
 
 G              D
-
 Hoy miraba hijo mío esos niños
-
 Em                 C
-
 morir así, de esa forma tan cruel
-
 G              D
-
 Hoy miraba toda la pobreza
-
 Em                 C
-
 sufriendo frío con hambre y con sed.
-
 G              D
-
 Y esos jóvenes tan lastimados
-
 Em                 C
-
 Equivocados pecando otra vez,
-
 G              D
-
 Me recuerdan aquel Viernes Santo
-
 Em                 C
-
 y ese dolor se repite otra vez.
 
 Em                 C
-
 Animate que tú estás conmigo
-
 G              D
-
 a expandir ese amor de tu fe,
-
 Em                 C
-
 Hijo mío ese fuego perdido,
-
 G              D
-
 tú lo puedes volver a encender
-
 Em              C
-
 Misiona, transforma
-
 G              D
-
 esas almas que no pude entrar
-
 Em              C
-
 Misiona, transforma
-
 G              D
-
 Corazones sedientos de paz.
 
 ---
 
-### [33. Dios Incomparable - Marcos Barrientos](#hymn-33-dios-incomparable)
+### 33. Dios Incomparable - Marcos Barrientos {#hymn-33-dios-incomparable-marcos-barrientos}
 
 *Autor: Marcos Barrientos*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4i6pgmkSpkhFuGnNgDcDIF?si=3588657bb5df4525)
 
 C G Am F
 C		       G
@@ -2421,11 +2480,13 @@ Eres mi Señor, mi salvador
 
 ---
 
-### [34. Dios te salve - popular](#hymn-34-dios-te-salve)
+### 34. Dios te salve - popular {#hymn-34-dios-te-salve-popular}
 
 *Autor: popular*
 
 *Capo: 3*
+
+[Link](https://open.spotify.com/track/3Lb6AOekXpgGtbBc0YptAC?si=708e67cba83a4fee)
 
 Dios te salve María
 Sagrada María
@@ -2498,63 +2559,55 @@ Que regalas la vida sin fin
 
 ---
 
-### [35. Dona tu Vida - popular](#hymn-35-dona-tu-vida)
+### 35. Dona tu Vida - popular {#hymn-35-dona-tu-vida-popular}
 
 *Autor: popular*
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/3I1i06q4ut8Bs4faYaqGxQ?si=98aad8ba075e45f0)
+
 Lam                  Do
-
 Una noche de sudores con la barca en el mar,
-
             Sol                        Fa              Lam
-
 Mientras el cielo aclara ya, mirabas tus redes vacías.
-
             Do                         Sol        Do
-
 Pero hay alguien que te llama y otros mares te enseñará,
-
       Fa        Do           Fa   Sol   Lam
-
 En el corazón del hombre sus redes echará.
 
 Lam              Do             Sol             Fa
-
 Dona toda tu vida como María al pie de la Cruz
-
 Do             Sol                 Fa
-
 Y serás siervo de cada hombre, siervo por amor,
-
 Do        Fa    Sol   Lam
-
 Sacerdote de la humanidad
 
 Lam                        Do
-
 caminabas en el silencio, entre lágrimas esperando
-
             Sol                          Fa            Lam
-
 Que la semilla echada ya cayera en la tierra buena.
-
             Do                         Sol        Do
-
 Hoy tu corazón se alegra porque el grano ha dorado ya
-
             Fa          Do         Fa   Sol   Lam
-
 Y madurado bajo el sol, sólo queda recogerlo.
+
+Lam              Do             Sol             Fa
+Dona toda tu vida como María al pie de la Cruz
+Do             Sol                 Fa
+Y serás siervo de cada hombre, siervo por amor,
+Do        Fa    Sol   Lam
+Sacerdote de la humanidad
 
 ---
 
-### [36. Dulce locura - Batah](#hymn-36-dulce-locura)
+### 36. Dulce locura - Batah {#hymn-36-dulce-locura-batah}
 
 *Autor: Batah*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7EyQamuzh9Xey9mZlDotkz?si=ebea17aa442641eb)
 
 [Verse]
   G                          Am
@@ -2623,7 +2676,7 @@ Quiero amarte... Cada dia mas.
 
 ---
 
-### [37. Déjate - Misión País](#hymn-37-déjate)
+### 37. Déjate - Misión País {#hymn-37-dejate-mision-pais}
 
 *Autor: Misión País*
 
@@ -2686,11 +2739,13 @@ Que Yo encendí en tu corazón
 
 ---
 
-### [38. El Dios que adoramos - popular](#hymn-38-el-dios-que-adoramos)
+### 38. El Dios que adoramos - popular {#hymn-38-el-dios-que-adoramos-popular}
 
 *Autor: popular*
 
 *Capo: (original capo 4 D A Bm D A)*
+
+[Link](https://open.spotify.com/track/5hD2l9T4gX5N1c7G0ABZV8?si=c2c59de24fc9460a)
 
 (original capo 4 D A Bm D A)
 Preferred: Capo 2: A E F#m A E
@@ -2764,143 +2819,92 @@ Glorioso redentor y rey, te adoramos
 
 ---
 
-### [39. El que muere por mí - Schoenstatt](#hymn-39-el-que-muere-por-mí)
+### 39. El que muere por mí - Schoenstatt {#hymn-39-el-que-muere-por-mi-schoenstatt}
 
 *Autor: Schoenstatt*
 
 *Capo: 3*
 
-C - F - Am - G
+[Link](https://open.spotify.com/track/5pCZXKutN09BqvqudMqxlT?si=b1d397eb1ffc4395)
 
 C - F - Am - G
-
+C - F - Am - G
 C                 F
-
 Todo empezó en una cruz
-
 Am                G
-
 Donde un hombre murió y un Dios se entregó
 
 C               F
-
 Silenciosa la muerte llegó
-
 Am                G
-
 Extinguiendo la luz que en un grito se ahogó
-
 C                 F
-
 Viendo su faz de dolor
-
 Am             G
-
 Una madre lloró y su amigo calló
-
 C                 F
-
 Pero siendo una entrega de amor
-
 Am       G       F
-
 Su camino siguió y en algún otro lado
-
 G     C     G
-
 Una luz se encendió
 
 F        G          Am
-
 Siendo hombre, amigo, esclavo y maestro
-
 G            F
-
 Siendo carga pesada, profesor y aprendiz
-
 G                 C   G
-
 Entregó hasta su cuerpo en el pan y la vid
 
 Am  F   C   G   Am
-
 Desde entonces lo he visto caminar a mi lado
-
 F      C   G   Am
-
 A ese Dios que se humilla y muere por mi
-
 F      C   G   Am
-
 Es la barca en mi playa, el ruido del silencio
-
 F      C   G   Dm
-
 Que se acerca a su hijo y me abraza feliz
-
 F      G
-
 Que se acerca a su hijo y me abraza feliz
 
 C                 F
-
 Viendo un humilde calvario
-
 Am                G
-
 Con rostro cansado soporta la cruz
-
 C                 F
-
 Y al verme rezando a sus pies
-
 Am       G        F
-
 Se olvida de Él, me toma en sus brazos
-
 G     C     G
-
 Y me acoge otra vez
 
 F        G          Am
-
 Siendo fuego, paloma, el agua y el viento
-
 G            F
-
 Siendo niño inocente, un Padre y pastor
-
 G                C   G
-
 Hoy acepta mi ofrenda, es mi vida Señor
 
 Am  F   C   G   Am
-
 Desde entonces lo he visto caminar a mi lado
-
 F      C   G   Am
-
 A ese Dios que se humilla y muere por mi
-
 F      C   G   Am
-
 Es la barca en mi playa, el ruido del silencio
-
 F      C   G   Dm
-
 Que se acerca a su hijo y me abraza feliz
-
 F      G
-
 Que se acerca a su hijo y me abraza feliz
 
 ---
 
-### [40. El Rey de mi Vida - popular](#hymn-40-el-rey-de-mi-vida)
+### 40. El Rey de mi Vida - popular {#hymn-40-el-rey-de-mi-vida-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6wW6BtRHIvhGorNwE5TTI0?si=74664460ba5347cf)
 
 GSus    Cadd9  Em7/G  Cadd9
 
@@ -2964,11 +2968,13 @@ a Ti yo te rindo todo lo que soy
 
 ---
 
-### [41. El Unico Rey - Tuyo](#hymn-41-el-unico-rey)
+### 41. El Unico Rey - Tuyo {#hymn-41-el-unico-rey-tuyo}
 
 *Autor: Tuyo*
 
 *Capo: Really in A# no capo but better C capo 4*
+
+[Link](https://open.spotify.com/track/1KKzqz1pmM516c1xAK84pd?si=537e9e87b6964b43)
 
 Really in A# no capo but better C capo 4
 
@@ -3019,11 +3025,13 @@ Simplemente porque Tú eres Dios
 
 ---
 
-### [42. En medio del fuego - Hakuna](#hymn-42-en-medio-del-fuego)
+### 42. En medio del fuego - Hakuna {#hymn-42-en-medio-del-fuego-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5Q5O60DtrxV1BRRXHSNhCq?si=2bae8bf8246a46d4)
 
 G#m
 Alzo la voz
@@ -3152,70 +3160,53 @@ Sin miedo te espero
 
 ---
 
-### [43. Enciende una luz - popular](#hymn-43-enciende-una-luz)
+### 43. Enciende una luz - popular {#hymn-43-enciende-una-luz-popular}
 
 *Autor: popular*
 
 *Capo: 0*
 
-G                Am
+[Link](https://open.spotify.com/track/5tNq5UDjzEbRfwsE5c6P5I?si=72eaf6757d56495d)
 
+G                Am
 Enciende una luz, y dejala brillar
-
 C                D
-
 la luz de Jesus, que brille en todo lugar
-
 G                Am
-
 No la puedes esconder, no te puedes callar
-
 F                D
-
 ante tal necesidad enciende una luz
-
 G
-
 en la oscuridad.
 
 ---
 
-### [44. Enciéndeme - Hakuna](#hymn-44-enciéndeme)
+### 44. Enciéndeme - Hakuna {#hymn-44-enciendeme-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
 
-E E A
+[Link](https://open.spotify.com/track/14dKlVmsq73wjMrDtJhuoc?si=a18eaa98a969432d)
 
+E E A
 Hoy quiero, Señor, ponerlo todo en tu presencia
 
 C#m B
-
 Darme hasta gastarme contigo y por Ti, hoy
-
 Hoy quiero, Señor, ponerlo todo ante tu puerta
-
 Para en todo amarte y servir.
 
 E
-
 Enciéndeme y déjame arder donde haga falta,
-
 A
-
 Enciéndeme y déjame ser tu luz,
-
 E
-
 Y así poder llevarte hasta todas las almas,
-
 B
-
 Saciar la sed que tienes Tú desde la cruz.
 
 E
-
 Hoy quisiera madre, poner todo en tu presencia,
 
 Darme hasta gastarme, decirle que sí,
@@ -3226,11 +3217,13 @@ Para en todo amarle y servir
 
 ---
 
-### [45. Entrega - Schoenstatt](#hymn-45-entrega)
+### 45. Entrega - Schoenstatt {#hymn-45-entrega-schoenstatt}
 
 *Autor: Schoenstatt*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5xqq57nrKEOdV2zU4mwjXr?si=4fb825aca6f24b21)
 
 Cuando siento tu amor tocar mi corazón 
 Cuando veo en tu luz, la fuerza de tu calor
@@ -3285,123 +3278,79 @@ Coro
 
 ---
 
-### [46. Eres Testigo - anonimo](#hymn-46-eres-testigo)
+### 46. Eres Testigo - anonimo {#hymn-46-eres-testigo-anonimo}
 
 *Autor: anonimo*
 
 *Capo: 0*
 
 Dm        Gm
-
 Terminó, ya no queda nada
-
 C        F
-
 Ya no hay nadie a quién buscar
-
 Gm       Dm
-
 Por ser fieles, se los llevaron
-
 Bbm A7 Dm
-
 Ya no volverán
 
 Dm        Gm
-
 Despojado, como del amado
-
 C        F
-
 Sin alforja, has de caminar
-
 Gm       Dm
-
 Si te acusan, ya no tienes miedo
-
 Bbm A7 Dm
-
 No le negarás
 
 Gm C F
-
 Coje tu cruz, y eres testigo
-
 Gm A7 Dm
-
 De lo más grande que han conocido
-
 Gm
-
 Y aunque hoy te maten
-
 C F Dm
-
 Te quedes solo
-
 Gm A7 Dm
-
 Tienes a Cristo, lo tienes todo
 
 Dm        Gm
-
 Esperar a que te señalen
-
 C        F
-
 Por ser solo un Cristiano más
-
 Gm       Dm
-
 Que ya no vive sin su Maestro
-
 Bbm A7 Dm
-
 No hace falta más
 
 Dm        Gm
-
 Y aunque quieran callar tus labios
-
 C        F
-
 Y te quiten la libertad
-
 Gm       Dm
-
 No tienes miedo, eres de Cristo
-
 Bbm A7 Dm
-
 No te dejará
 
 Gm C F
-
 Coje tu cruz, y eres testigo
-
 Gm A7 Dm
-
 De lo más grande que han conocido
-
 Gm
-
 Y aunque hoy te maten
-
 C F Dm
-
 Te quedes solo
-
 Gm A7 Dm
-
 Tienes a Cristo, lo tienes todo
 
 ---
 
-### [47. Es verdad - Vali Olguin](#hymn-47-es-verdad)
+### 47. Es verdad - Vali Olguin {#hymn-47-es-verdad-vali-olguin}
 
 *Autor: Vali Olguin*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/45RY9mzY1SELeeVp9YoPQ1?si=71271937cc4f470d)
 
 [Verse]
 C      F
@@ -3445,11 +3394,13 @@ y te conmueve mi fragilidad.
 
 ---
 
-### [48. Espíritu ven - Batah](#hymn-48-espíritu-ven)
+### 48. Espíritu ven - Batah {#hymn-48-espiritu-ven-batah}
 
 *Autor: Batah*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5JEwE6o4TwtzroRg7qT84R?si=69d4642c14f74593)
 
 G Em C D
 
@@ -3472,11 +3423,13 @@ Espíritu ven, ven, ven, ven
 
 ---
 
-### [49. Estaré Contigo - Jon Carlo](#hymn-49-estaré-contigo)
+### 49. Estaré Contigo - Jon Carlo {#hymn-49-estaré-contigo-jon-carlo}
 
 *Autor: Jon Carlo*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6faN0qQaOXisMtlrtyknJ3?si=e0e3d940b7944a4c)
 
 Intro: G Cadd9 G Cadd9
 
@@ -3529,11 +3482,13 @@ no te abandonaré,   puedes contar conmigo.
 
 ---
 
-### [50. Estás dentro de mí - Schoenstatt](#hymn-50-estás-dentro-de-mí)
+### 50. Estás dentro de mí - Schoenstatt {#hymn-50-estas-dentro-de-mi-schoenstatt}
 
 *Autor: Schoenstatt*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7tdOaTyij6dIxnVr9CdJCN?si=7f0a7eb70ab3430f)
 
 No necesito alas, para volar hasta Ti
 No necesito fuego, para sentir tu calor
@@ -3554,11 +3509,13 @@ Porque eres Padre
 
 ---
 
-### [51. Hail Mary Prayer - David Burke](#hymn-51-hail-mary-prayer)
+### 51. Hail Mary Prayer - David Burke {#hymn-51-hail-mary-prayer-david-burke}
 
 *Autor: David Burke*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3VOvSGFO2KTKspnMWWcG9s?si=b87302ca65984157)
 
 F G Am C F/A G F Csus4 C
 
@@ -3596,11 +3553,13 @@ Amen.
 
 ---
 
-### [52. Hasta La Locura - popular](#hymn-52-hasta-la-locura)
+### 52. Hasta La Locura - Pablo Martinez {#hymn-52-hasta-la-locura-pablo-martinez}
 
-*Autor: popular*
+*Autor: Pablo Martinez*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4Q2DcuvLzZrw67zpmaaxR0?si=b558b8c71a5c4622)
 
 D G D G
 
@@ -3632,11 +3591,13 @@ Yo te canto mi amado hasta el final...
 
 ---
 
-### [53. Hasta que el mundo arda por Él - Francisco Alvarado](#hymn-53-hasta-que-el-mundo-arda-por-él)
+### 53. Hasta que el mundo arda por Él - Francisco Alvarado {#hymn-53-hasta-que-el-mundo-arda-por-el-francisco-alvarado}
 
 *Autor: Francisco Alvarado*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0G4Jcuu0mOmfUfLj2DZRCL?si=96b0fe026ee24fcf)
 
 Em  F C
 María, toma todo
@@ -3668,13 +3629,35 @@ hasta que el mundo arda por Él,
 Dm     C         F
 hasta que el mundo arda por Él.
 
+Ab/C           A#/D
+Maria, quiero soñar
+Gm       Cm     A#     Ab
+nuevos caminos  comenzar
+            G7         Cm A#     F
+Quiero ser santo y si debo morir,
+Cm        A#          F
+mi vida quiero entregar
+
+Am     F     G  C-G
+Hazme una antorcha que arda por Cristo,
+Am       F       C     G
+Incendiar el corazón, ser hogar
+E7          Am-G     D
+como el sol que esparce tu luz
+Dm     C     A# A#-C
+hasta que el mundo arda por Él,
+Dm     C         F
+hasta que el mundo arda por Él.
+
 ---
 
-### [54. Here I am Lord - popular](#hymn-54-here-i-am-lord)
+### 54. Here I am Lord - popular {#hymn-54-here-i-am-lord-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4DD6ZtAFlF1XYo7WTML8tR?si=0f1e1b4af8ca4f88)
 
 G Em Am D
 
@@ -3781,11 +3764,13 @@ D7       G     Em    Am     D7         G  Em  Am  D7
 
 ---
 
-### [55. Hermoso Nombre - Hillsong](#hymn-55-hermoso-nombre)
+### 55. Hermoso Nombre - Hillsong {#hymn-55-hermoso-nombre-hillsong}
 
 *Autor: Hillsong*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7HAxoYUvYynHfn4vQFJr6d?si=fdb6b971cfa748fe)
 
 C
 F     Am      G
@@ -3869,11 +3854,13 @@ Poderoso su nombre es
 
 ---
 
-### [56. Himno Misión País - popular](#hymn-56-himno-misión-país)
+### 56. Himno Misión País - Schoenstatt {#hymn-56-himno-mision-pais-schoenstatt}
 
-*Autor: popular*
+*Autor: Schoenstatt*
 
 *Capo: 3*
+
+[Link](https://www.youtube.com/watch?v=lBGOx4BbHg8&list=RDlBGOx4BbHg8&start_radio=1)
 
 A9 E
 
@@ -3913,11 +3900,13 @@ Para la misión
 
 ---
 
-### [57. Hoy Me Entrego - Factor de Cambio](#hymn-57-hoy-me-entrego)
+### 57. Hoy Me Entrego - Factor de Cambio {#hymn-57-hoy-me-entrego-factor-de-cambio}
 
 *Autor: Factor de Cambio*
 
 *Capo: Capo 4*
+
+[Link](https://open.spotify.com/track/75rJiou4bno0EKb3BIo0R7?si=e955e2385acc4a0b)
 
 F Capo 4
 Hoy me postro en tu presencia
@@ -4018,11 +4007,13 @@ Haz todo de nuevo
 
 ---
 
-### [58. Huracán - Hakuna](#hymn-58-huracán)
+### 58. Huracán - Hakuna {#hymn-58-huracan-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1Gd6Hz1MSEiY8205ToJjsh?si=3df71dbc210747df)
 
 [Intro]
 G D Em C
@@ -4101,65 +4092,55 @@ Estoy aquí, soy este trozo de pan
 
 ---
 
-### [59. Id y anunciad - Batah](#hymn-59-id-y-anunciad)
+### 59. Id y anunciad - Batah {#hymn-59-id-y-anunciad-batah}
 
 *Autor: Batah*
 
 *Capo: 2*
 
+[Link](https://open.spotify.com/track/6gWeJfTauQUT1oqbQcMXf8?si=9d25c06579cd4549)
+
 G C
 Llévame a donde quieras,
-
 Am D
 quiero ser sal quiero ser luz en las tinieblas.
-
 G C
 Mándame a donde vayas,
-
 Am D
 donde mis manos y mi voz te hagan falta
 
-
 Em C (G/B) Am D
 Id y anunciad, que es Cristo el que al mundo trae la Paz.
-
 Em C (G/B) Am D
 Id a anunciar, al Dios Vivo que nos ama sin igual.
-
-
 C D G Em
 Y es verdad que nos amas Jesús,
-
 C D G (G7)
 está escrito en la Cruz.
-
 C D G Em
 Enséñame a recordar este amor
-
 C D G
 cada día cuando salga el sol. [Cuando salga el sol (ult)]
 
-
 G C
 Regálame la confianza,
-
 Am D
 para que seas Tu quien libre mis batallas.
-
 G C
 Enséñame como se ama,
-
 Am D
 para poder llevar tu amor a toda alma.
 (BIS)
 
 ---
 
-### [60. Inúndame - Athenas](#hymn-60-inúndame)
+### 60. Inúndame - Athenas {#hymn-60-inundame-athenas}
 
 *Autor: Athenas*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6OLWTt7jiGW8EKkcIqFiiH?si=69b00fb4f85f497d)
 
 Em G
 
@@ -4192,11 +4173,13 @@ Ven
 
 ---
 
-### [61. Jesucristo basta - Un Corazon](#hymn-61-jesucristo-basta)
+### 61. Jesucristo basta - Un Corazon {#hymn-61-jesucristo-basta-un-corazon-un-corazon}
 
 *Autor: Un Corazon*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6XgnLNskskRPjdfa3CyKGA?si=034d9b81f67a4ef8)
 
 F C Am C
 Nuestros corazones
@@ -4260,11 +4243,13 @@ Hay descanso en Él
 
 ---
 
-### [62. Jesus - Sarai Rivera](#hymn-62-jesus)
+### 62. Jesus - Sarai Rivera {#hymn-62-jesus-sarai-rivera}
 
 *Autor: Sarai Rivera*
 
 *Capo: (original capo 5 C-G-Am-F)*
+
+[Link](https://open.spotify.com/track/5blgde2k3YONRA1yBNohPs?si=e4143011219e4888)
 
 No Capo (max capo 0)
 (original capo 5 C-G-Am-F)
@@ -4323,11 +4308,13 @@ Jesús
 
 ---
 
-### [63. Jesus have it all - Jeremy Riddle](#hymn-63-jesus-have-it-all)
+### 63. Jesus have it all - Jeremy Riddle {#hymn-63-jesus-have-it-all-jeremy-riddle}
 
 *Autor: Jeremy Riddle*
 
 *Capo: (original capo 3 D A G Em7 D)*
+
+[Link](https://open.spotify.com/track/0wiYqRXy97hVdhy8xDVH9V?si=d0aa9e33a0014fef)
 
 (original capo 3 D A G Em7 D)
 
@@ -4450,91 +4437,76 @@ King Jesus, have it all
 
 ---
 
-### [64. Junto a ti María - popular](#hymn-64-junto-a-ti-maría)
+### 64. Junto a ti María - popular {#hymn-64-junto-a-ti-maria-popular}
 
 *Autor: popular*
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/2TmU2GR46pCN6WJ7VOKmHG?si=76bb7a5efbc444ad)
+
 C              G
 Junto a ti María,
-
     Am             Em
 Como niño quiero estar,
-
 F              C
 Tómame en tus manos,
-
    D             G
 Guíame en mi caminar.
-
 C              G
 Quiero que me eduques,
-
         Am       Em
 Que me enseñes a rezar,
-
 F              C
 Hazme transparente,
-
     G      C   G7
 Lléname de paz.
 
 C  G   Am Em
 MADRE, MADRE,
-
 F  C   D   G   G7
 MADRE, MADRE.
-
 C  G   Am Em
 MADRE, MADRE,
-
 F  C   D   G   C   G7
 MADRE, MAAADRE.
 
 C              G
 Gracias Madre mía,
-
 Am             Em
 Por llevarnos a Jesús,
-
 F              C
 Haznos más humildes,
-
       D           G
 Tan sencillos como tú.
 
 C              G
 Gracias Madre mía,
-
 Am             Em
 Por abrir tu corazón,
-
 F              C
 Porque nos congregas
-
       G       C   G7
 Y nos das tu amor.
 
 C  G   Am Em
 MADRE, MADRE,
-
 F  C   D   G   G7
 MADRE, MADRE.
-
 C  G   Am Em
 MADRE, MADRE,
-
 F  C   D   G   C
 MADRE, MAAADRE
 
 ---
 
-### [65. La Bendicion - popular](#hymn-65-la-bendicion)
+### 65. La Bendicion - Elevation Worship {#hymn-65-la-bendicion-elevation-worship}
 
-*Autor: popular*
+*Autor: Elevation Worship*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5KNP7zONOFZqOL3ixeWMOQ?si=e55e53667f67439e)
 
 No capo C F Am G
 
@@ -4605,11 +4577,13 @@ En tu llanto, Y alegría
 
 ---
 
-### [66. La Fe de María - popular](#hymn-66-la-fe-de-maría)
+### 66. La Fe de María - popular {#hymn-66-la-fe-de-maria-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1pFIBmLqu8VFPaPlvKs2rs?si=e38f234e604d4696)
 
 Bm  A  G  Bm  A  G
 
@@ -4691,11 +4665,13 @@ y entregarte mi vida mi vida.
 
 ---
 
-### [67. La medida del amor - Hakuna](#hymn-67-la-medida-del-amor)
+### 67. La medida del amor - Hakuna {#hymn-67-la-medida-del-amor-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5hR5b7bf4mB41KnEpz8UXj?si=802fdd035cae4484)
 
 [Intro]
 Gm     Dm     A
@@ -4763,11 +4739,13 @@ G   Gm   D  Bm  Em   A   D
 
 ---
 
-### [68. La Samaritana - popular](#hymn-68-la-samaritana)
+### 68. La Samaritana - popular {#hymn-68-la-samaritana-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7D9WJZgYgMUCpoGtGXSWeW?si=432759b781664caf)
 
 Am  Dm
 
@@ -4850,11 +4828,13 @@ limpiará sus heridas, no tendrá sed".
 
 ---
 
-### [69. Libre - Miel San Marcos](#hymn-69-libre)
+### 69. Libre - Miel San Marcos {#hymn-69-libre-miel-san-marcos}
 
 *Autor: Miel San Marcos*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6c3QDOm29A9xC8VFiFJMB1?si=f16a1d736d884444)
 
 Am  F  C
 
@@ -4949,11 +4929,13 @@ X2
 
 ---
 
-### [70. Llévame - Ignis](#hymn-70-llévame)
+### 70. Llévame - Ignis {#hymn-70-llevame-ignis}
 
 *Autor: Ignis*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3MrYIWphpurxRYtBZTYQ6I?si=863e060e306b408a)
 
 C Em
 Estate Señor conmigo
@@ -4994,11 +4976,13 @@ Ni si tú sin mí te vas
 
 ---
 
-### [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you)
+### 71. Lord, I Need You - Matt Maher {#hymn-71-lord-i-need-you-matt-maher}
 
 *Autor: Matt Maher*
 
 *Capo: Capo 3*
+
+[Link](https://open.spotify.com/track/4EHWldZTas5KUyFtT0rQlY?si=694a47cb3f19451c)
 
 G     C    G      
 Lord, I come, I confess,
@@ -5063,11 +5047,13 @@ Oh God, how I need you
 
 ---
 
-### [72. Los coros del universo - Hakuna](#hymn-72-los-coros-del-universo)
+### 72. Los coros del universo - Hakuna {#hymn-72-los-coros-del-universo-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4Kd1BPlAVPxN1J5mIS696N?si=3f753f5c4ebc43b5)
 
 Am F C G
 
@@ -5141,11 +5127,13 @@ A ti para siempre
 
 ---
 
-### [73. Madre - Hakuna](#hymn-73-madre)
+### 73. Madre - Hakuna {#hymn-73-madre-de-hakuna-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/2JaPSQUUlyRUjEJmZolqMz?si=c2314d3086f34d36)
 
 [Verse]
 E                         F#m
@@ -5192,11 +5180,13 @@ Tú Madre de Hakuna y mi corazón.
 
 ---
 
-### [74. Madre - Hakuna](#hymn-74-madre)
+### 74. Madre - Hakuna {#hymn-74-madre-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 4*
+
+[Link](https://open.spotify.com/track/4LFnaNrPChE1u6CpwD0TLA?si=e4d84cb3fb2d452c)
 
 C-G-Am-G6-F-G-C-G
 
@@ -5281,109 +5271,13 @@ De sus labios que aún me dicen "Tengo sed".
 
 ---
 
-### [75. Madre y Reina - Siquem](#hymn-75-madre-y-reina)
-
-*Autor: Siquem*
-
-*Capo: 0*
-
-Dm Bb Gm A
-
-Dm
-Ave María, gratia plena
-Dm
-Ave María, gratia plena
-Gm
-Ave María, Madre y Reina
-Bb        Dm
-Ave María, del mar estrella
-
-Dm
-Vestida de sol
-Bb - Gm
-La luna como pedestal
-Bb
-Bendita sea tu pureza
-A
-Reina sin igual
-
-Dm
-Madre del cordero
-Reina del cielo
-Bb
-Estrella en la mañana
-Flor de flores
-Gm        Bb
-Escucha los ruegos de tus hijos
-A
-Nuestra plegaria
-
-Gm        A
-Reina y Madre de luz y esperanza
-Bb
-Por ti viene el Salvador
-A        Dm
-El rey de la mañana
-
-Dm
-Ave María, gratia plena
-Dm
-Ave María, Madre y Reina
-Gm
-Ave María, del mar estrella
-Bb        Dm
-X2
-
-Dm
-Puerta del cielo
-Madre de Cristo
-Gm   Bb
-Bajo tu manto
-A
-No tengo miedo
-
-Dm
-Llega tu esposo
-Sal a su encuentro
-Gm   Bb
-Estoy a tus pies
-A
-Soy tu siervo
-
-Dm
-Siete espadas en el corazón
-Gm - Bb
-Virgen inmaculada
-A
-Siete mis pecados
-Bb
-Reina amada
-A
-Más que tú, solo Dios
-
-Gm        A
-Siempre envidia del ángel más bello
-Bb
-Hija del Padre a ti te ruego
-A        Dm
-Llévame al cielo
-
-Dm
-Ave María, gratia plena
-Dm
-Ave María, Madre y Reina
-Gm
-Ave María, del mar estrella
-Bb        Dm
-x3
-
----
-
-### [76. Mar Adentro (Navegar) - Schoenstatt](#hymn-76-mar-adentro-navegar)
+### 75. Mar Adentro (Navegar) - Schoenstatt {#hymn-75-mar-adentro-navegar-schoenstatt}
 
 *Autor: Schoenstatt*
 
 *Capo: 4*
+
+[Link](https://open.spotify.com/track/1YQRbjTdrdjXWP05Wpj6jD?si=b8738be47cb34503)
 
 F G Am Am/G
 
@@ -5406,13 +5300,35 @@ Y así echar redes a la profundidad
      Am/G     F      Dm        C
 Si Tú lo dices Señor, ellas se van a llenar
 
+     F                      G
+Pero no, es tanta la oscuridad
+          C              C/B         Am   Am/G
+Y aquí en tierra tendría tantos que dejar
+      F                     G
+Tu llamado grita en mi corazón
+          F             Dm          G   G7
+Que a los hombres les regale yo tu amor
+
+      C          C/B        Am
+Y navegar, sin mirar atrás jamás
+        Am/G      F
+Tú me invitas a remar
+      G             G7
+Mar adentro sin temor
+        C           C/B       Am
+Y así echar redes a la profundidad
+      Am/G       F          G           C
+Si tú lo dices Señor, ellas se van a llenar
+
 ---
 
-### [77. Maravillas - schoenstatt](#hymn-77-maravillas)
+### 76. Maravillas - schoenstatt {#hymn-76-maravillas-schoenstatt}
 
 *Autor: schoenstatt*
 
 *Capo: 4*
+
+[Link](https://open.spotify.com/track/7FE6hZmegD9prtjy0vhb1e?si=a96e92b00b374154)
 
 A        C#m
 Maravillas hizo en mí
@@ -5457,11 +5373,13 @@ Maravillas hizo en mí
 
 ---
 
-### [78. Me Rindo a Ti - Majo y Dan](#hymn-78-me-rindo-a-ti)
+### 77. Me Rindo a Ti - Majo y Dan {#hymn-77-me-rindo-a-ti-majo-y-dan}
 
 *Autor: Majo y Dan*
 
 *Capo: 0 up to 4*
+
+[Link](https://open.spotify.com/track/1elgJB7cf8pf66fyIeQWzM?si=77ccca2141c94ff1)
 
 Capo 0 But can be played capo up to 4
 C
@@ -5539,11 +5457,13 @@ A tu grande amor entrego mi ser
 
 ---
 
-### [79. Mi amado - Hakuna](#hymn-79-mi-amado)
+### 78. Mi amado - Hakuna {#hymn-78-mi-amado-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1nfTVyVDsqJwL0WzP0eWix?si=8d890dd879cb46cc)
 
 E Am F 
 
@@ -5586,11 +5506,13 @@ Y Yo soy para Mi Amado
 
 ---
 
-### [80. Mis heridas te han curado - Batah](#hymn-80-mis-heridas-te-han-curado)
+### 79. Mis heridas te han curado - Batah {#hymn-79-mis-heridas-te-han-curado-batah}
 
 *Autor: Batah*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4bFO60QUr4hI5NcDVwChBI?si=57582e5f71cf40e5)
 
 G Am D G D/F# 
 Mírame en la Cruz, crees que mi amor no va a alcanzarte 
@@ -5624,11 +5546,13 @@ Mira a la Cruz y encontrarás a tu Jesús
 
 ---
 
-### [81. Muevete en mi - popular](#hymn-81-muevete-en-mi)
+### 80. Muevete en mi - popular {#hymn-80-muevete-en-mi-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0Xz0GaUJixnfQTk8Knuw8v?si=7480ac8750fa48db)
 
 El espíritu de Dios está en este lugar
 El espíritu de Dios se mueve en este lugar
@@ -5645,11 +5569,13 @@ Muévete en mí
 
 ---
 
-### [82. Muros - Generación 12](#hymn-82-muros)
+### 81. Muros - Generación 12 {#hymn-81-muros-generacion-12}
 
 *Autor: Generación 12*
 
 *Capo: Capo 3*
+
+[Link](https://open.spotify.com/track/1X20WCNMKKSh81MuqrcxGb?si=01b170aa51fa4255)
 
 Capo 3 G D Em C
 
@@ -5690,11 +5616,13 @@ El cielo vendrá
 
 ---
 
-### [83. Nada te turbe - Santa Teresa](#hymn-83-nada-te-turbe)
+### 82. Nada te turbe - Santa Teresa {#hymn-82-nada-te-turbe-santa-teresa}
 
 *Autor: Santa Teresa*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/281RJANb5cPMJe7fH0Vku3?si=2eddfa7a980f4273)
 
 Am     Dm
 Nada te turbe,
@@ -5714,11 +5642,13 @@ Solo Dios basta
 
 ---
 
-### [84. Nadie te ama como yo - popular](#hymn-84-nadie-te-ama-como-yo)
+### 83. Nadie te ama como yo - popular {#hymn-83-nadie-te-ama-como-yo-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1vlMuCv1QKQrXc6AFqF6Hs?si=c5c2e4131f4d4f5d)
 
 INTRO: C,G,Am,F,Dm,G
 
@@ -5761,11 +5691,13 @@ CORO:
 
 ---
 
-### [85. No hay lugar más alto - Miel San Marcos](#hymn-85-no-hay-lugar-más-alto)
+### 84. No hay lugar más alto - Miel San Marcos {#hymn-84-no-hay-lugar-mas-alto-miel-san-marcos}
 
 *Autor: Miel San Marcos*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0yzKJqFTXsbzWjUHaiOxD9?si=b915f0eff6ea429a)
 
 A   D   A   D
 
@@ -5821,11 +5753,13 @@ Que estar a tus pies, que estar a tus pies
 
 ---
 
-### [86. No hay paredes - Jesús Adrián Romero](#hymn-86-no-hay-paredes)
+### 85. No hay paredes - Jesús Adrián Romero {#hymn-85-no-hay-paredes-jesus-adrian-romero}
 
 *Autor: Jesús Adrián Romero*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4h0JpAep84WY6pZNonjCET?si=2e7cc6b240994119)
 
 INTRO: G C Em C    x2
 G                              C 
@@ -5908,11 +5842,13 @@ A cualquier lugar
 
 ---
 
-### [87. No Longer Slaves - Bethel](#hymn-87-no-longer-slaves)
+### 86. No Longer Slaves - Bethel {#hymn-86-no-longer-slaves-bethel}
 
 *Autor: Bethel*
 
 *Capo: Capo 5*
+
+[Link](https://open.spotify.com/track/0C3YJ5aL7RpV4p49ynQWNt?si=55d9b43ea7894b8c)
 
 F#m E A D
 
@@ -6016,11 +5952,13 @@ I am a child of God
 
 ---
 
-### [88. No sé qué viste en mí - Hakuna](#hymn-88-no-sé-qué-viste-en-mí)
+### 87. No sé qué viste en mí - Hakuna {#hymn-87-no-se-que-viste-en-mi-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3RXhBTRteM9nS1Engqaude?si=36464a3ad5074a1e)
 
 [Verse 1]
           F        F                       Dm
@@ -6088,11 +6026,13 @@ y aun así dices que me amas, no sé que viste en mí.
 
 ---
 
-### [89. No Temas - Jaime Olguín](#hymn-89-no-temas)
+### 88. No Temas - Jaime Olguín {#hymn-88-no-temas-jaime-olguin}
 
 *Autor: Jaime Olguín*
 
 *Capo: 2*
+
+[Link](https://open.spotify.com/track/3GhRKiLRLQ9RnjZ5y6oAjg?si=b54ae5a5291e4dcb)
 
 G		C G		D
 Si aún no lo ves, pronto lo verás,
@@ -6139,11 +6079,13 @@ puedes ser feliz.
 
 ---
 
-### [90. No tengo miedo - popular](#hymn-90-no-tengo-miedo)
+### 89. No tengo miedo - popular {#hymn-89-no-tengo-miedo-popular}
 
 *Autor: popular*
 
 *Capo: Capo 2*
+
+[Link](https://open.spotify.com/track/03TmLp5BaIumxM3I6SR0kt?si=0372952e6c7b4854)
 
 Capo 2 F C Dm A#
 
@@ -6203,11 +6145,13 @@ Hombres valientes que quieran seguir tu caminar
 
 ---
 
-### [91. Oceans - Hillsong](#hymn-91-oceans)
+### 90. Oceans - Hillsong {#hymn-90-oceans-hillsong}
 
 *Autor: Hillsong*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5SDcksP8En1l6RtTY1wzHc?si=5e21531e62154066)
 
 Bm   A/C#    D      A      G
  
@@ -6305,11 +6249,13 @@ I am Yours and You are mine
 
 ---
 
-### [92. Otra Vez - Un Corazón](#hymn-92-otra-vez)
+### 91. Otra Vez - Un Corazón {#hymn-91-otra-vez-un-corazon}
 
 *Autor: Un Corazón*
 
 *Capo: Original (capo 2 F#m D, D A E)*
+
+[Link](https://open.spotify.com/track/1Z2LOOXfH3lFEAGDX7haCA?si=afcfb5bee9f0444f)
 
 Original (capo 2 F#m D, D A E)
 Capo 0 Em G - Em C G D
@@ -6350,9 +6296,6 @@ Otra vez
 Otra vez
 
 
-
-
-
 [Bridge]
 
 G			Em
@@ -6386,11 +6329,13 @@ Otra vez
 
 ---
 
-### [93. Para que entre el rey - popular](#hymn-93-para-que-entre-el-rey)
+### 92. Para que entre el rey - popular {#hymn-92-para-que-entre-el-rey-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6dAlF4oYH5dzfhTmzbHPtm?si=4def8e551b134cea)
 
 Am F C G Am
 
@@ -6432,101 +6377,13 @@ Reina en majestad
 
 ---
 
-### [94. Pasion de Dios - Hakuna](#hymn-94-pasion-de-dios)
-
-*Autor: Hakuna*
-
-*Capo: 0*
-
-Intro: G D* G 
-
-G 		D*		Em
-Porque tengo miedo de mi mismo, 
-C 		Am 	    C		D
-Porque no disfruto hoy de cada minuto,
-G 		D*		Em
-Porque quería ser de un modo distinto,
-C 		Am 	   	D
-Porque vivo siempre lo que haré. 
-
-G                D*		Em
-Tanta cosa para motivarme,
-C                  Am 	   D
-Basta ya de maltratarme.
-G                  D*		Em
-Dime Padre porque no me quiero, 
-C                      Am 	  	 D
-Solo tu aprecio mata mi desprecio. 
-
-	C		D 
-Hazme oír lo que te gusto, 
-	      G         D*           Em 
-Que vea que me miras con pasión, 
-C				        D
-Que a nadie quieres tanto como a mí, 
-	    G   D     G 
-Soy Pasión de Dios. 
-
-G D* Em C Am D
-
-G 	            D*		Em
-Me dicen que huya de mi debilidad
-C 		      Am		     D
-Tú me dices que permanezca en ella
-G 	             D*	    Em
-Me valoran por éxitos y perfección,
-C                      Am                      D
-Tú disfrutas conmigo tal y como soy. 
-
-G           D*		Em
-Débil, enfermo y en pecado,
-C 	        Am	     D
-Impuro, impotente y quebradizo.
-G 	            D*		Em 
-Solo así descubro cómo me amas,
-C 	        Am	    	 D
-Solo así descubro cómo me quieres. 
-
-	C		D
-Hazme oír lo que te gusto, 
-	      G         D*           Em 
-Que vea que me miras con pasión, 
-	C		D 
-Que te recreas en mi belleza,
-	         G     D*    Em 
-Que soy la niña de tus ojos,
-C					D
-Que a nadie quieres tanto como a mí, 
-	  G 	     D*      Em
-Eres mi Padre, y ¡enloqueces!
-C				          D
-Que a nadie quieres tanto como a mí, 
-	    G   D    G 
-Soy Pasión de Dios.
- 
-G D* Em C Am D 
-
-(puente)
-C			      G
-Con la furia del mar, y la solidez de la roca
-	Am
-Con el ímpetu de la tormenta,
-        D
-la fuerza del vendaval
-C	      D		      G
-Con esa misma contundencia
-	C-Em-Am
-tú me dices:
-			D
-Tú eres mío, tú eres mío.
-
----
-
-### [95. Perdón - Helena](#hymn-95-perdón)
+### 93. Perdón - Helena {#hymn-93-perdon-helena}
 
 *Autor: Helena*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1qw4AwLR6pAlXiE1pK44IS?si=5cb85c0fb63042fe)
 
 C                  G
 Señor que perdido estoy 
@@ -6597,11 +6454,13 @@ Ya no llores más, y quédate en paz.
 
 ---
 
-### [96. Perfume a tus Pies - popular](#hymn-96-perfume-a-tus-pies)
+### 94. Perfume a tus Pies - popular {#hymn-94-perfume-a-tus-pies-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5cS1TaKqN5z5brcTnG2Ory?si=1148070897a64923)
 
 C                    		G                         F
 
@@ -6668,11 +6527,13 @@ como un perfume a tus pies
 
 ---
 
-### [97. Pescador de hombres - popular](#hymn-97-pescador-de-hombres)
+### 95. Pescador de hombres - popular {#hymn-95-pescador-de-hombres-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/2SoN9wak6Plqwb0DcQIKMh?si=0b45227126754178)
 
 C G Am F G
 Tú has venido a la orilla
@@ -6713,11 +6574,13 @@ Junto a ti buscaré otro mar
 
 ---
 
-### [98. Preparad el camino al Señor - popular](#hymn-98-preparad-el-camino-al-señor)
+### 96. Preparad el camino al Señor - popular {#hymn-96-preparad-el-camino-al-senor-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5fsIs9aChU6Htidl3fP7Ah?si=d0243cdc0f57461f)
 
 Acapella x1
 
@@ -6726,50 +6589,32 @@ Solo + organo x1
 Todos 2 voces x1
 
 Todos 4 voces x1
-
 E	  F#m        Gm#         B7
-
 Pre-eparad el camino al Señor 
-
 E	F#m       Gm#         E
-
 y escuchad la palabra de Dios. 
 
 
-
 Solo
-
 E	 		A
-
 Voz que clama en el desierto:
-
            E		     B7
-
 "preparad el camino al Señor, 
-
 E	 		A
-
 haced rectas todas las  se-endas, 
-
 E		B7	   E
-
 preparad el camino al Señor."
 
 
-
 Todos 4 voces x2
-
 E	  F#m        Gm#         B7
-
 Pre-eparad el camino al Señor 
-
 E	F#m       Gm#         E
-
 y escuchad la palabra de Dios.
 
 ---
 
-### [99. Primero el cielo - Tuyo](#hymn-99-primero-el-cielo)
+### 97. Primero el cielo - Tuyo {#hymn-97-primero-el-cielo-tuyomd}
 
 *Autor: Tuyo*
 
@@ -6860,11 +6705,13 @@ Es mi padre
 
 ---
 
-### [100. Que se quiebre mi corazón - María Olguín](#hymn-100-que-se-quiebre-mi-corazón)
+### 98. Que se quiebre mi corazón - María Olguín {#hymn-98-que-se-quiebre-mi-corazon-maria-olguin}
 
 *Autor: María Olguín*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0nJeFSspNSBI8NYlCQjtwL?si=cf7bc19f78d640cb)
 
 A E D A E
 Que se quiebre mi corazón,
@@ -6876,11 +6723,13 @@ Jesús Yo ya tengo tu amor.
 
 ---
 
-### [101. Quien pierde su vida por mi - popular](#hymn-101-quien-pierde-su-vida-por-mi)
+### 99. Quien pierde su vida por mi - Hermana Glenda {#hymn-99-quien-pierde-su-vida-por-mi-hermana-glenda}
 
-*Autor: popular*
+*Autor: Hermana Glenda*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1OS38h2656yRP9EvZBJvvi?si=4426f6f8705948be)
 
 D           A     Bm
 Quien pierde su vida por mí,
@@ -6922,11 +6771,13 @@ La encontrará, la encontrará.
 
 ---
 
-### [102. Quiero Caminar Contigo María - popular](#hymn-102-quiero-caminar-contigo-maría)
+### 100. Quiero Caminar Contigo María - popular {#hymn-100-quiero-caminar-contigo-maria-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1isN9cnGC34Cq699RN9PjN?si=04d5d00549784b27)
 
 Re Sol Re Sol
 
@@ -6987,270 +6838,136 @@ vida y corazón
 
 ---
 
-### [103. Quédate Señor - Fray Nacho](#hymn-103-quédate-señor)
+### 101. Quédate Señor - Fray Nacho {#hymn-101-quedate-senor-fray-nacho}
 
 *Autor: Fray Nacho*
 
 *Capo: 0*
 
+[Link](https://open.spotify.com/track/6GrCddLDUnSz87QLLpyyb9?si=2edd9f70328044df)
+
 INTRO: Bm A  G  X2
-
 Bm
-
 Quien si no tú
-
                          		G 
-
 que calmaste hasta los mares
-
                      		       Em                F#
-
 podrá calmar de mi alma la tempestad
 
-
-
-
 Bm
-
 Quien si no tú
-
                       	G 
-
 que llenaste soledades
-
                         	Em
-
 podrá dar a mi esperanza
-
         F#
-
 un nuevo hogar
-
-
-
                      G 
-
 Quien si no tú
-
                          	A 
-
 que después de tantos años
-
                           	        F#
-
 que a pesar de mis rechazos
-
                      		    Bm
-
  sigues dándome tu luz
-
-
-
             A	G 
-
 Quien si no tú
-
                       	        A 
-
 que a pesar de mis pecados
-
                       	F#
-
 no te cruzaste de brazos
-
                       	     Bm
-
 y en tu abrazo descubrí
 
-
-
 PRECORO:
-
                   A     		G   	F#
-
 que me amaste desde siempre
-
    Bm       A          G 
-
 y para siempre
 
-
-
-
 CORO:
-
           	   	Bm        A         		    G 
-
 Quédate Señor y habita de nuevo en mi alma
-
          Em			       G
-
 que sola quedó tras mi marcha
-
       Bm               	     A 
-
 herida por falta de amor
-
-
-
             	Bm
-
 Quédate Señor
-
     A                            G 
-
 inúndame con tu palabra
-
      Em			         G
-
 seréname, ven, tráeme calma
-
    	 Bm                         		A 
-
 que quiero entregarme a tu Amor
-
 Bm  A   G 
-
 Quédate Señor
 
-
-
-
 Bm  A   G 
-
-
-
 ESTROFA II
-
 Bm
-
 Quién si no tú
-
                          	   G 
-
 que saciaste a multitudes
-
                      		     Em          			F#
-
 podrá alimentar mi alma que hambrienta está
 
-
-
-
 Bm
-
 Quién si no tú
-
                       
-
         G 
-
 que curaste uno y mil mares
-
                         	Em
-
 podrá sanar mis heridas
-
              	F#
-
 quién si no tú
 
-
-
-
               	G 
-
 Quien si no tu
-
                          		   A 
-
 que a pesar de estar tan lejos
-
                           	         F#
-
 caminaste hasta mi encuentro
-
                      		    Bm
-
 para hacerme descubrir
-
  
-
             G 
-
 que solo tú
-
         A
-
 eras lo que yo anhelaba
-
                       	   F# 
-
 y de nuevo intensamente 
-
         Bm
-
 en tu abrazo descubrí
-
-
-
 PRECORO:
-
                   A     		G   	F#
-
 que me amaste desde siempre
-
    Bm       A          G 
-
 y para siempre
 
-
-
-
 CORO:
-
           	   	Bm        A         		    G 
-
 Quédate Señor y habita de nuevo en mi alma
-
          Em			       G
-
 que sola quedó tras mi marcha
-
       Bm               	     A 
-
 herida por falta de amor
-
-
-
             	Bm
-
 Quédate Señor
-
     A                            G 
-
 inúndame con tu palabra
-
      Em			         G
-
 seréname, ven, tráeme calma
-
    	 Bm                         		A 
-
 que quiero entregarme a tu Amor
-
 Bm  A   G 
-
 Quédate Señor
-
-
-
 
 Bm  A   G
 
 ---
 
-### [104. Reckless Love - Bethel Music](#hymn-104-reckless-love)
+### 102. Reckless Love - Bethel Music {#hymn-102-reckless-love-bethel-musicmd}
 
 *Autor: Bethel Music*
 
@@ -7311,11 +7028,113 @@ No lie You won't tear down, coming after me
 
 ---
 
-### [105. Renuévame Señor Jesús - popular](#hymn-105-renuévame-señor-jesús)
+### 103. Reina y Madre - Siquem {#hymn-103-reina-y-madre-siquem}
+
+*Autor: Siquem*
+
+*Capo: 0*
+
+[Link](https://open.spotify.com/track/7cNdAOMqjrSA7AEPR1M7hz?si=7b1e652a9db84d2d)
+
+Dm Bb Gm A
+
+Dm
+Ave María, gratia plena
+Dm
+Ave María, gratia plena
+Gm
+Ave María, Madre y Reina
+Bb        Dm
+Ave María, del mar estrella
+
+Dm
+Vestida de sol
+Bb - Gm
+La luna como pedestal
+Bb
+Bendita sea tu pureza
+A
+Reina sin igual
+
+Dm
+Madre del cordero
+Reina del cielo
+Bb
+Estrella en la mañana
+Flor de flores
+Gm        Bb
+Escucha los ruegos de tus hijos
+A
+Nuestra plegaria
+
+Gm        A
+Reina y Madre de luz y esperanza
+Bb
+Por ti viene el Salvador
+A        Dm
+El rey de la mañana
+
+Dm
+Ave María, gratia plena
+Dm
+Ave María, Madre y Reina
+Gm
+Ave María, del mar estrella
+Bb        Dm
+X2
+
+Dm
+Puerta del cielo
+Madre de Cristo
+Gm   Bb
+Bajo tu manto
+A
+No tengo miedo
+
+Dm
+Llega tu esposo
+Sal a su encuentro
+Gm   Bb
+Estoy a tus pies
+A
+Soy tu siervo
+
+Dm
+Siete espadas en el corazón
+Gm - Bb
+Virgen inmaculada
+A
+Siete mis pecados
+Bb
+Reina amada
+A
+Más que tú, solo Dios
+
+Gm        A
+Siempre envidia del ángel más bello
+Bb
+Hija del Padre a ti te ruego
+A        Dm
+Llévame al cielo
+
+Dm
+Ave María, gratia plena
+Dm
+Ave María, Madre y Reina
+Gm
+Ave María, del mar estrella
+Bb        Dm
+x3
+
+---
+
+### 104. Renuévame Señor Jesús - popular {#hymn-104-renuévame-senor-jesus-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0aTyTQYoly6pTflkIKMs48?si=bb2a9f1757334ef8)
 
 C   F G        C F     Dm     G7
 Renuévame, Señor Jesús. Ya no quiero ser igual.
@@ -7335,7 +7154,7 @@ dentro de mí corazón, necesita más de ti.
 
 ---
 
-### [106. Restaurame Espiritu - Xavier Rudd](#hymn-106-restaurame-espiritu)
+### 105. Restaurame Espiritu - Xavier Rudd {#hymn-105-restaurame-espritu-xavier-ruddmd}
 
 *Autor: Xavier Rudd*
 
@@ -7382,11 +7201,13 @@ x2 (x4)
 
 ---
 
-### [107. Resucitados - Kenosis](#hymn-107-resucitados)
+### 106. Resucitados - Kenosis {#hymn-106-resucitados-kenosis}
 
 *Autor: Kenosis*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5Jj3dmNCGDJ6BvTReVcAuv?si=0fa31aad56bc43e3)
 
 Em C G D
 
@@ -7451,11 +7272,13 @@ Resucitado
 
 ---
 
-### [108. Rey de Reyes - Marcos Barrientos](#hymn-108-rey-de-reyes)
+### 107. Rey de Reyes - Marcos Barrientos {#hymn-107-rey-de-reyes-marcos-barrientos}
 
 *Autor: Marcos Barrientos*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/41L7qAYXn62qmbZhkFXabi?si=a67c20679ab6479f)
 
 C              G
 Rey de reyes, te adoramos
@@ -7492,7 +7315,7 @@ Y para siempre Tú reinas.
 
 ---
 
-### [109. RUAH - popular](#hymn-109-ruah)
+### 108. RUAH - popular {#hymn-108-ruah-popular}
 
 *Autor: popular*
 
@@ -7515,11 +7338,13 @@ Ruah Ruah Ruah
 
 ---
 
-### [110. Saliendo del Pretorio - Jaire](#hymn-110-saliendo-del-pretorio)
+### 109. Saliendo del Pretorio - Jaire {#hymn-109-saliendo-del-pretorio-jaire}
 
 *Autor: Jaire*
 
 *Capo: 4*
+
+[Link](https://open.spotify.com/track/7MvefvPSvGHDCVjg8ZQ0k6?si=a2c79c7553ee4b49)
 
 Capo on 4
 Am           		Dm                   		G
@@ -7583,11 +7408,13 @@ de ellos ten compasión.
 
 ---
 
-### [111. Salmo 23 - Un Corazón](#hymn-111-salmo-23)
+### 110. Salmo 23 - Un Corazón {#hymn-110-salmo-23-un-corazon}
 
 *Autor: Un Corazón*
 
 *Capo: 0 up to 4*
+
+[Link](https://open.spotify.com/track/1OSmBtcsjiGcUnhn2MlE4c?si=147455b0808745db)
 
 C No capo but can be played up to capo 4
 
@@ -7648,11 +7475,13 @@ Me recibes en casa para siempre
 
 ---
 
-### [112. Salve Reina - Servus Mariae](#hymn-112-salve-reina)
+### 111. Salve Reina - Servus Mariae {#hymn-111-salve-reina-servus-mariae}
 
 *Autor: Servus Mariae*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4JR0yLJatU0v5e0RU2MVPh?si=1a37a8cfbc5a4a4b)
 
 C F G C G Em
 
@@ -7691,7 +7520,7 @@ Salve Reina, los que van a morir
 
 ---
 
-### [113. Santo - Jaime Olguín](#hymn-113-santo)
+### 112. Santo - Jaime Olguín {#hymn-112-santo-jaime-olguin}
 
 *Autor: Jaime Olguín*
 
@@ -7722,7 +7551,7 @@ Hosanna en el cielo
 
 ---
 
-### [114. Santo Manchego - popular](#hymn-114-santo-manchego)
+### 113. Santo Manchego - popular {#hymn-113-santo-manchego-popular}
 
 *Autor: popular*
 
@@ -7751,11 +7580,13 @@ Todos: Hosanna Hosanna Hosanna en las alturas
 
 ---
 
-### [115. Se Mi Faro - Batah](#hymn-115-se-mi-faro)
+### 114. Se Mi Faro - Batah {#hymn-114-se-mi-faro-batah}
 
 *Autor: Batah*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3vzJgxhjKr0a45Rh2gzEqy?si=d3a60514098942ad)
 
 Original C0: G D Em C Am D
 G	   D		Em
@@ -7826,11 +7657,13 @@ Y que el mástil de mi barco sea tu Cruz
 
 ---
 
-### [116. Sencillamente - Hakuna](#hymn-116-sencillamente)
+### 115. Sencillamente - Hakuna {#hymn-115-sencillamente-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1t7i3ZQgjhU341Il43ijW8?si=6a56c83749c1484d)
 
 [Verse 1]
 Em           C
@@ -7945,11 +7778,13 @@ Te sigo sencillamente
 
 ---
 
-### [117. Si hubiera estado allí - Adrián](#hymn-117-si-hubiera-estado-allí)
+### 116. Si hubiera estado allí - Adrián {#hymn-116-si-hubiera-estado-alli-adrian}
 
 *Autor: Adrián*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3MaPyYoUyB2qibqEkHTWW1?si=aa16dfe3eb074ce2)
 
 C C F G
 Si hubiera estado allí
@@ -8008,11 +7843,13 @@ También yo estaba allí
 
 ---
 
-### [118. Sopla Señor - popular](#hymn-118-sopla-señor)
+### 117. Sopla Señor - popular {#hymn-117-sopla-senor-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7DXwh3ogyKUbQ62vEseObR?si=2e9b9c5bdf624780)
 
 Intro: E E7 A B7 C#m A B7 (x2)
 E                   E7    	   A         	   B7
@@ -8081,11 +7918,13 @@ Sopla, sopla, sopla Señor, sopla
 
 ---
 
-### [119. Soy Libre - Hakuna](#hymn-119-soy-libre)
+### 118. Soy Libre - Hakuna {#hymn-118-soy-libre-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/35sx4rk6TGum93jIZettPj?si=1ae6ff5e36834faa)
 
 No Capo
 
@@ -8168,11 +8007,13 @@ en el fuego de tu amor.
 
 ---
 
-### [120. Supe que me Amabas - Marcela Gándara](#hymn-120-supe-que-me-amabas)
+### 119. Supe que me Amabas - Marcela Gándara {#hymn-119-supe-que-me-amabas-marcela-gandara}
 
 *Autor: Marcela Gándara*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/36e4Sr0dXiyzjVeBWv8cON?si=18b9fd4449cc48a9)
 
 G             C                    G
 Desde el principio cuando te necesite.
@@ -8215,11 +8056,13 @@ Cada dia me atraías hacia ti.
 
 ---
 
-### [121. Surge Valentía - popular](#hymn-121-surge-valentía)
+### 120. Surge Valentía - Schoenstatt {#hymn-120-surge-valentia-schoenstatt}
 
-*Autor: popular*
+*Autor: Schoenstatt*
 
 *Capo: 1*
+
+[Link](https://open.spotify.com/track/2HvAaldhVw9qcJD9Z0maad?si=79a575704fcd448a)
 
 Em C G D x2
 
@@ -8306,11 +8149,13 @@ Em C G D x2
 
 ---
 
-### [122. Toma Señor mi libertad - popular](#hymn-122-toma-señor-mi-libertad)
+### 121. Toma Señor mi libertad - popular {#hymn-121-toma-senor-mi-libertad-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7veeY1drohTipgIFdAPrS0?si=b7844c191771466d)
 
 C  G  Am
 F  G  C
@@ -8341,11 +8186,13 @@ Que esto me basta
 
 ---
 
-### [123. Tu eres mi respirar - popular](#hymn-123-tu-eres-mi-respirar)
+### 122. Tu eres mi respirar - popular {#hymn-122-tu-eres-mi-respirar-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7oQZ8IF4QF9vjrPD9u0p34?si=c0ea2df122f34523)
 
 G	       C
 Tu eres mi respirar
@@ -8372,11 +8219,13 @@ Perdido sin ti
 
 ---
 
-### [124. Tu Voluntad - Servus Mariae](#hymn-124-tu-voluntad)
+### 123. Tu Voluntad - Servus Mariae {#hymn-123-tu-voluntad-servus-mariae}
 
 *Autor: Servus Mariae*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/1F98JW7eGb4EEBE9mZeQju?si=d7bb13e6668f4987)
 
 Libre soy pues libre me hiciste,
 Y libre te he escogido hoy
@@ -8420,11 +8269,13 @@ Yo te responderé
 
 ---
 
-### [125. Tus Planes Son Perfectos - Batah](#hymn-125-tus-planes-son-perfectos)
+### 124. Tus Planes Son Perfectos - Batah {#hymn-124-tus-planes-son-perfetos-batah}
 
 *Autor: Batah*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3dg38AoQd9jPellNzklq2Y?si=b47b122d453d4fdd)
 
 Original: A E F#m D
 
@@ -8513,11 +8364,13 @@ Has estado Tú
 
 ---
 
-### [126. Tuyas son - Luispo](#hymn-126-tuyas-son)
+### 125. Tuyas son - Luispo {#hymn-125-tuyas-son-luispo}
 
 *Autor: Luispo*
 
 *Capo: 1*
+
+[Link](https://open.spotify.com/track/37JnxRgESJqLXqpFsvTp6p?si=b30ea803aaf34e3e)
 
 G                      Bm
 La bendición y la gloria, la sabiduría,
@@ -8555,11 +8408,13 @@ para siempre! Amén. Amén.
 
 ---
 
-### [127. Un Segundo - Hakuna](#hymn-127-un-segundo)
+### 126. Un Segundo - Hakuna {#hymn-126-un-segundo-hakuna}
 
 *Autor: Hakuna*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/6WTdsYUlvy5HX6r8pj2f0r?si=ce68e22403f04743)
 
 [Intro]
 G
@@ -8658,11 +8513,13 @@ no querrías ver nada más
 
 ---
 
-### [128. Ven - popular](#hymn-128-ven)
+### 127. Ven - mision_pais {#hymn-127-ven-mision-pais}
 
-*Autor: popular*
+*Autor: mision_pais*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/2xFpNxFnp9LhOJ4Pc1LRK5?si=21ec0fc3cbf64c26)
 
 Am G Am G
 Am		G	 C
@@ -8733,11 +8590,13 @@ Mi alma tiene sed de ti
 
 ---
 
-### [129. Ven Ahora - popular](#hymn-129-ven-ahora)
+### 128. Ven Ahora - popular {#hymn-128-ven-ahora-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/0XJksh3xea4iKJ6fdNo2Na?si=a6fe6f0ac18346c9)
 
 Am C G E
 
@@ -8745,17 +8604,14 @@ Ven ahora, Santo Espíritu,
 ven y toma tu lugar.
 X2
 
-
 Somos Sión, Tú eres Rey,
 ven y úngenos Señor,
 ven ahora, ven a mí.
 X2
 
-
 Ven ahora, Santo Espíritu,
 ven y toma tu lugar.
 X2
-
 
 Somos Sión, Tú eres Rey,
 ven y úngenos Señor,
@@ -8780,11 +8636,13 @@ Tu solo alábale
 
 ---
 
-### [130. Ven ante Su trono - Elevation Worship](#hymn-130-ven-ante-su-trono)
+### 129. Ven ante Su trono - Elevation Worship {#hymn-129-ven-ante-su-trono-elevation-worship}
 
 *Autor: Elevation Worship*
 
 *Capo: Really Capo 3 C F*
+
+[Link](https://open.spotify.com/track/00N19SVEo6XJFaerouyckn?si=8ba464502061439d)
 
 Really Capo 3 C F
 But no Capo G C (up to capo 2)
@@ -8843,9 +8701,9 @@ X4
 
 ---
 
-### [131. Ven Espiritu Ven (Teresa) - popular](#hymn-131-ven-espiritu-ven-teresa)
+### 130. Ven Espiritu Ven - Teresa {#hymn-130-ven-espiritu-ven-teresa}
 
-*Autor: popular*
+*Autor: Teresa*
 
 *Capo: 1*
 
@@ -8871,7 +8729,7 @@ Y refresca mi corazón
 
 ---
 
-### [132. Ven Espíritu - popular](#hymn-132-ven-espíritu)
+### 131. Ven Espíritu - popular {#hymn-131-ven-espiritu-secuencia}
 
 *Autor: popular*
 
@@ -8968,11 +8826,13 @@ x4
 
 ---
 
-### [133. Ven Espíritu Divino - Schoenstatt](#hymn-133-ven-espíritu-divino)
+### 132. Ven Espíritu Divino - Schoenstatt {#hymn-132-ven-espiritu-divino-schoenstatt}
 
 *Autor: Schoenstatt*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5EOuojJVIrVyHcMoMVjQQB?si=a76b2cec4b4d416e)
 
 C	   F	     C
 Ven Espíritu Divino
@@ -9025,7 +8885,7 @@ alegría.               Amén
 
 ---
 
-### [134. Ven Espíritu Ven (Purifícame) - popular](#hymn-134-ven-espíritu-ven-purifícame)
+### 133. Ven Espíritu Ven (Purifícame) - popular {#hymn-133-ven-espiritu-ven-purificame-popular}
 
 *Autor: popular*
 
@@ -9059,11 +8919,13 @@ Te quiero conocer
 
 ---
 
-### [135. Ven Y Lléname - Generación 12](#hymn-135-ven-y-lléname)
+### 134. Ven Y Lléname - Generación 12 {#hymn-134-ven-y-llename-generacion-12}
 
 *Autor: Generación 12*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4Lp4it382mVKgfUDHsh04t?si=e324ea64b1c046c2)
 
 Am G C
 Am G Cmaj7
@@ -9136,11 +8998,13 @@ X Infinito
 
 ---
 
-### [136. Vengo a Adorarte - popular](#hymn-136-vengo-a-adorarte)
+### 135. Vengo a Adorarte - popular {#hymn-135-vengo-a-adorarte-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5O3twBxBiRZdA4ydrVEapK?si=500409aa0ea049d7)
 
 D                 A
 Tú  eres  la  luz
@@ -9217,11 +9081,13 @@ G D A Bm G D A Bm G
 
 ---
 
-### [137. Vida en abundancia - schoenstatt](#hymn-137-vida-en-abundancia)
+### 136. Vida en abundancia - schoenstatt {#hymn-136-vida-en-abundancia-schoenstatt}
 
 *Autor: schoenstatt*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/7oMgpX0X6TnxXdADuAz7Sc?si=337568872ea5469a)
 
 C F G
 
@@ -9265,11 +9131,13 @@ Vida en abundancia, en abundancia
 
 ---
 
-### [138. Virgen Madre de Nuestro Dios - popular](#hymn-138-virgen-madre-de-nuestro-dios)
+### 137. Virgen Madre de Nuestro Dios - popular {#hymn-137-virgen-madre-de-nuestro-dios-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/3T7V0jQP7MMJ7SxlZWwHNI?si=2ab08c2a99394ea1)
 
 Virgen Madre de nuestro Dios
 Tú iluminas mi corazón
@@ -9291,11 +9159,13 @@ Nada temo pues tuyo soy
 
 ---
 
-### [139. Viva Cristo Rey - Jaire](#hymn-139-viva-cristo-rey)
+### 138. Viva Cristo Rey - Jaire {#hymn-138-viva-cristo-rey-jaire}
 
 *Autor: Jaire*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/4p4FTS0SfIIca9nuixNEjv?si=8e3785ceec274316)
 
 G D C D (x2)
 
@@ -9337,11 +9207,13 @@ pelear por el, es todo un honor
 
 ---
 
-### [140. Volverás a María - popular](#hymn-140-volverás-a-maría)
+### 139. Volverás a María - popular {#hymn-139-volveras-a-maria-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://www.youtube.com/watch?v=EM0pwqQOXSk&list=RDEM0pwqQOXSk&start_radio=1)
 
 G        D
 Hace ya mucho tiempo que en tu corazón
@@ -9385,11 +9257,13 @@ El camino de la salvación, tu entrega de corazón
 
 ---
 
-### [141. Vuelvo Otra Vez - tuyo](#hymn-141-vuelvo-otra-vez)
+### 140. Vuelvo Otra Vez - tuyo {#hymn-140-vuelvo-otra-vez-tuyo}
 
 *Autor: tuyo*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/5QG7pw4RFN6CpL5915xUkP?si=1d4f8a3f097f4d5b)
 
 [Intro]
  
@@ -9531,11 +9405,13 @@ Darte gloria
 
 ---
 
-### [142. Yeshua - Generacion 12](#hymn-142-yeshua)
+### 141. Yeshua - Generacion 12 {#hymn-141-yeshua-generacion-12}
 
 *Autor: Generacion 12*
 
 *Capo: 0 up to 3 (max 5)*
+
+[Link](https://open.spotify.com/track/2txTXCdetbJcy8REtnZdRq?si=b36e14df2c0449fa)
 
 C  D  Em  Bm6-
 
@@ -9593,11 +9469,13 @@ x6
 
 ---
 
-### [143. Yo Quiero ser tu Servidor - popular](#hymn-143-yo-quiero-ser-tu-servidor)
+### 142. Yo Quiero ser tu Servidor - popular {#hymn-142-yo-quiero-ser-tu-servidor-popular}
 
 *Autor: popular*
 
 *Capo: 0*
+
+[Link](https://open.spotify.com/track/17ciTNtUcQxJ5gRJuLtbNX?si=a0c8c30edc634d0d)
 
 G		D
 Con lo que soy
@@ -9628,7 +9506,7 @@ Tú y yo Señor
 
 ---
 
-### [144. Ángeles volando - popular](#hymn-144-ángeles-volando)
+### 143. Ángeles volando - popular {#hymn-143-angeles-volando-popular}
 
 *Autor: popular*
 

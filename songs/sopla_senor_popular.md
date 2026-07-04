@@ -1,16 +1,16 @@
 ---
-
 fname: sopla_senor_popular
-
 title: Sopla Señor
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/7DXwh3ogyKUbQ62vEseObR?si=2e9b9c5bdf624780"
 capo: 0
-
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
+  tema:
+    - espiritu
 ---
 
 Intro: E E7 A B7 C#m A B7 (x2)

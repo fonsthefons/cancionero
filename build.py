@@ -11,7 +11,7 @@ OUTPUT_DIR = "output"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "book.md")
 OUTPUT_PDF_MD = os.path.join(OUTPUT_DIR, "book-pdf.md")
 OUTPUT_PDF = os.path.join(OUTPUT_DIR, "book.pdf")
-OUTPUT_HTML = os.path.join(OUTPUT_DIR, "book.html")
+OUTPUT_HTML = os.path.join(OUTPUT_DIR, "index.html")
 PANDOC_HEADER = os.path.join(OUTPUT_DIR, "pandoc-header.html")
 
 # Tags with a fixed list of subtags (in display order)
@@ -83,8 +83,8 @@ CHORD_RE = re.compile(
 )
 
 
-def hymn_anchor(number, title):
-    slug = re.sub(r"[^\w\s-]", "", title.lower())
+def hymn_anchor(number, uniqueId):
+    slug = re.sub(r"[^\w\s-]", "", uniqueId.lower())
     slug = re.sub(r"[\s_]+", "-", slug).strip("-")
     return f"hymn-{number}-{slug}"
 
@@ -171,6 +171,7 @@ def get_all_songs():
         if file.endswith(".md"):
             meta, body = read_hymn(os.path.join(HYMNS_DIR, file))
             title = meta.get("title", file)
+            fname = meta.get("fname", file)
             categories = parse_song_tags(meta)
             capo = meta.get("capo")
             if capo is not None:
@@ -179,6 +180,7 @@ def get_all_songs():
             all_errors.extend(validate_categories(title, categories))
 
             songs.append({
+                "fname": fname,
                 "title": title,
                 "autor": meta.get("autor") or None,
                 "link": meta.get("link") or None,
@@ -198,7 +200,7 @@ def get_all_songs():
     for number, song in enumerate(songs, start=1):
         song["number"] = number
         song["heading"] = f"{number}. {song['title']}"
-        song["anchor"] = hymn_anchor(number, song["title"])
+        song["anchor"] = hymn_anchor(number, song["fname"])
 
     return songs
 
@@ -276,7 +278,7 @@ def write_obsidian_book(f, songs, grouped):
         return f"{prefix}- [{heading_text}](#{song['anchor']})\n"
 
     write_tag_sections(f, grouped, link)
-    f.write("## All Songs\n\n")
+    f.write("\n# All Songs\n\n")
     for h in songs:
         # get autor
         autor = h.get("autor", "") or ""
@@ -284,7 +286,7 @@ def write_obsidian_book(f, songs, grouped):
         heading_text = f"{h['heading']} - {autor}"
 
         # Write as a Header with internal link
-        f.write(f"### [{heading_text}](#{h['anchor']})\n\n")
+        f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
         write_song_meta(f, h)
         f.write(h["content"] + "\n\n---\n\n")
 
@@ -300,13 +302,13 @@ def write_pdf_book(f, songs, grouped):
 
     write_tag_sections(f, grouped, link)
     
-    f.write("## All Songs\n\n")
+    f.write("\n# All Songs\n\n")
     for h in songs:
         # get autor
         autor = h.get("autor", "") or ""
         # build heading
         heading_text = f"{h['heading']} - {autor}"
-        f.write(f"### [{heading_text}](#{h['anchor']})\n\n")
+        f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
         write_song_meta(f, h)
         f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
 
@@ -373,7 +375,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--html",
         action="store_true",
-        help="Also generate output/book.html via pandoc",
+        help="Also generate output/index.html via pandoc",
     )
     parser.add_argument(
         "--pdf",

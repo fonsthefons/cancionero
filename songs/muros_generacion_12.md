@@ -2,9 +2,10 @@
 fname: muros_generacion_12
 title: Muros
 autor: Generación 12
-link: ""
+link: "https://open.spotify.com/track/1X20WCNMKKSh81MuqrcxGb?si=01b170aa51fa4255"
 capo: Capo 3
 song_tags:
+  adoracion: []
   alabanza:
     - primer_ciclo
     - segundo_ciclo

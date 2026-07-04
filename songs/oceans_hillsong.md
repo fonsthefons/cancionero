@@ -2,11 +2,12 @@
 fname: oceans_hillsong
 title: Oceans
 autor: Hillsong
-link: ""
+link: "https://open.spotify.com/track/5SDcksP8En1l6RtTY1wzHc?si=5e21531e62154066"
 capo: 0
 
 capo_notes: ["to be fixed/checked"]
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---

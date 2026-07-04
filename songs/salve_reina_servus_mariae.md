@@ -2,12 +2,16 @@
 fname: salve_reina_servus_mariae
 title: Salve Reina
 autor: Servus Mariae
-link: ""
+link: "https://open.spotify.com/track/4JR0yLJatU0v5e0RU2MVPh?si=1a37a8cfbc5a4a4b"
 capo: 0
 capo_notes: []
 song_tags:
   misa:
     - comunion
+    - salida
+  tema:
+    - cristo
+    - virgen
 ---
 C F G C G Em
 

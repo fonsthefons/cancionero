@@ -2,12 +2,14 @@
 fname: hail_mary_prayer_david_burke
 title: Hail Mary Prayer
 autor: David Burke
-link: ""
+link: "https://open.spotify.com/track/3VOvSGFO2KTKspnMWWcG9s?si=b87302ca65984157"
 capo: 0
 capo_notes: []
 song_tags:
   misa: 
     - salida
+  tema:
+    - virgen
 ---
 
 F G Am C F/A G F Csus4 C

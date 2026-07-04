@@ -2,12 +2,15 @@
 fname: si_hubiera_estado_alli_adrian
 title: Si hubiera estado allí
 autor: Adrián
-link: ""
+link: "https://open.spotify.com/track/3MaPyYoUyB2qibqEkHTWW1?si=aa16dfe3eb074ce2"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
+  tema:
+   - cristo
 ---
 C C F G
 Si hubiera estado allí

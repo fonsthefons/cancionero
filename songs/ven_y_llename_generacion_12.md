@@ -1,16 +1,19 @@
 ---
-
 fname: ven_y_llename_generacion_12
 title: Ven Y Lléname
 autor: Generación 12
-link: ""
+link: "https://open.spotify.com/track/4Lp4it382mVKgfUDHsh04t?si=e324ea64b1c046c2"
 capo: 0
 song_tags:
+  adoracion: []
   alabanza:
     - primer_ciclo
     - tercer_ciclo
   misa: 
+    - ofertorio
     - comunion
+  tema:
+    - espiritu
 ---
 Am G C
 Am G Cmaj7

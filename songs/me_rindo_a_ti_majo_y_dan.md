@@ -2,13 +2,15 @@
 fname: me_rindo_a_ti_majo_y_dan
 title: Me Rindo a Ti
 autor: Majo y Dan
-link: ""
+link: "https://open.spotify.com/track/1elgJB7cf8pf66fyIeQWzM?si=77ccca2141c94ff1"
 capo: 0 up to 4
 song_tags:
   alabanza:
     - tercer_ciclo
   misa: 
     - comunion
+  tema:
+    - cristo
 ---
 Capo 0 But can be played capo up to 4
 C

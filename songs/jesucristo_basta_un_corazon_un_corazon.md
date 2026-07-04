@@ -2,12 +2,17 @@
 fname: jesucristo_basta_un_corazon_un_corazon
 title: Jesucristo basta
 autor: Un Corazon
-link: ""
+link: "https://open.spotify.com/track/6XgnLNskskRPjdfa3CyKGA?si=034d9b81f67a4ef8"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
+  alabanza:
+    - primer_ciclo
   misa:
     - comunion
+  tema:
+    - cristo
 ---
 
 F C Am C

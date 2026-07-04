@@ -67,7 +67,7 @@ song_tags:
 
 ```bash
 python3 build.py          # generates output/book.md and output/book-pdf.md
-python3 build.py --html   # also generates output/book.html
+python3 build.py --html   # also generates output/index.html
 python3 build.py --pdf    # also generates output/book.pdf (requires LaTeX)
 ```
 
@@ -77,13 +77,13 @@ python3 build.py --pdf    # also generates output/book.pdf (requires LaTeX)
 |------|---------|
 | `output/book.md` | For browsing in Obsidian (wikilink table of contents) |
 | `output/book-pdf.md` | Source for Pandoc HTML/PDF export |
-| `output/book.html` | Standalone HTML with clickable links and preserved lyrics |
+| `output/index.html` | Standalone HTML with clickable links and preserved lyrics |
 | `output/book.pdf` | PDF (via Pandoc + LaTeX) |
 
 To generate HTML manually:
 
 ```bash
-pandoc output/book-pdf.md -o output/book.html --toc --standalone -H output/pandoc-header.html
+pandoc output/book-pdf.md -o output/index.html --toc --standalone -H output/pandoc-header.html
 ```
 
 ## Browsing in Obsidian

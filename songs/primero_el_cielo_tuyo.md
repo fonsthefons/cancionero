@@ -5,7 +5,6 @@ capo: "0"
 link: "https://open.spotify.com/track/0pNdZHNZHvNpZ8uPTHeYVr?si=73135e1ad34844fc"
 song_tags:
   alabanza:
-    - primer_ciclo
     - segundo_ciclo
     - tercer_ciclo
   adoracion: []

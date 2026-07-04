@@ -1,17 +1,16 @@
 ---
-
-fname: ven_popular
-
+fname: ven_mision_pais
 title: Ven
-autor: popular
-link: ""
+autor: mision_pais
+link: "https://open.spotify.com/track/2xFpNxFnp9LhOJ4Pc1LRK5?si=21ec0fc3cbf64c26"
 capo: 0
-
 capo_notes: []
 song_tags:
   misa: 
     - entrada
     - comunion
+  tema:
+    - espiritu
 ---
 
 Am G Am G

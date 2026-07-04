@@ -2,7 +2,7 @@
 fname: tu_voluntad_servus_mariae
 title: Tu Voluntad
 autor: Servus Mariae
-link: ""
+link: "https://open.spotify.com/track/1F98JW7eGb4EEBE9mZeQju?si=d7bb13e6668f4987"
 capo: 0
 song_tags:
   alabanza:

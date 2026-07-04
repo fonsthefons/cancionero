@@ -1,14 +1,13 @@
 ---
-
 fname: rey_de_reyes_marcos_barrientos
-
 title: Rey de Reyes
 autor: Marcos Barrientos
-link: ""
+link: "https://open.spotify.com/track/41L7qAYXn62qmbZhkFXabi?si=a67c20679ab6479f"
 capo: 0
-
 capo_notes: []
 song_tags:
+  alabanza:
+    - segundo_ciclo
   misa: 
     - entrada
     - comunion

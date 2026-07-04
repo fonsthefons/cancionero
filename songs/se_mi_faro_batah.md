@@ -1,15 +1,14 @@
 ---
-
 fname: se_mi_faro_batah
-
 title: Se Mi Faro
 autor: Batah
-link: ""
+link: "https://open.spotify.com/track/3vzJgxhjKr0a45Rh2gzEqy?si=d3a60514098942ad"
 capo: 0
+capo_notes: ["original: capo 0"]
 song_tags:
+  adoracion: []
   misa:
     - comunion
-
 ---
 
 Original C0: G D Em C Am D

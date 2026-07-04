@@ -7,10 +7,10 @@ capo: 0
 capo_notes: []
 song_tags:
   adoracion: []
-  alabanza:
-    - tercer_ciclo
   misa:
     - comunion
+  tema:
+    - cristo
 ---
 C F G C
 

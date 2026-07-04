@@ -2,10 +2,11 @@
 fname: resucitados_kenosis
 title: Resucitados
 autor: Kenosis
-link: ""
+link: "https://open.spotify.com/track/5Jj3dmNCGDJ6BvTReVcAuv?si=0fa31aad56bc43e3"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

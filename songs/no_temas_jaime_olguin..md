@@ -2,7 +2,7 @@
 fname: no_temas_jaime_olguin
 title: No Temas
 autor: Jaime Olguín
-link: ""
+link: "https://open.spotify.com/track/3GhRKiLRLQ9RnjZ5y6oAjg?si=b54ae5a5291e4dcb"
 capo: 2
 
 capo_notes: []

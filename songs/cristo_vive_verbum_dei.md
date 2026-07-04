@@ -1,8 +1,8 @@
 ---
-fname: cristo_vive_popular
+fname: cristo_vive_verbum_dei
 title: Cristo Vive
-autor: popular
-link: ""
+autor: Verbum Dei
+link: "https://open.spotify.com/track/2YMqbYD2G59IhYXMNLpYaP?si=a87453e85f144535"
 capo: 0
 song_tags:
   alabanza:

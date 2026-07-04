@@ -1,15 +1,17 @@
 ---
 
-fname: himno_mision_pais_popular
+fname: himno_mision_pais_schoenstatt
 title: Himno Misión País
-autor: popular
-link: ""
+autor: Schoenstatt
+link: "https://www.youtube.com/watch?v=lBGOx4BbHg8&list=RDlBGOx4BbHg8&start_radio=1"
 capo: 3
 song_tags:
   alabanza:
     - cuarto_ciclo
   misa: 
     - salida
+  tema:
+    - virgen
 ---
 A9 E
 

@@ -2,11 +2,12 @@
 fname: nada_te_turbe_santa_teresa
 title: Nada te turbe
 autor: Santa Teresa
-link: ""
+link: "https://open.spotify.com/track/281RJANb5cPMJe7fH0Vku3?si=2eddfa7a980f4273"
 capo: 0
 
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - ofertorio
     - comunion

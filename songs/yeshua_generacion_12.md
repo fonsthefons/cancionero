@@ -1,9 +1,8 @@
 ---
-
 fname: yeshua_generacion_12
 title: Yeshua
 autor: Generacion 12
-link: ""
+link: "https://open.spotify.com/track/2txTXCdetbJcy8REtnZdRq?si=b36e14df2c0449fa"
 capo: 0 up to 3 (max 5)
 song_tags:
   alabanza:

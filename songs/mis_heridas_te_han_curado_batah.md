@@ -2,12 +2,15 @@
 fname: mis_heridas_te_han_curado_batah
 title: Mis heridas te han curado
 autor: Batah
-link: ""
+link: "https://open.spotify.com/track/4bFO60QUr4hI5NcDVwChBI?si=57582e5f71cf40e5"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
+  tema:
+    - cristo
 ---
 
 G Am D G D/F# 

@@ -1,14 +1,12 @@
 ---
-
-fname: surge_valentia_popular
-
+fname: surge_valentia_schoenstatt
 title: Surge Valentía
-autor: popular
-link: ""
+autor: Schoenstatt
+link: "https://open.spotify.com/track/2HvAaldhVw9qcJD9Z0maad?si=79a575704fcd448a"
 capo: 1
-
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---

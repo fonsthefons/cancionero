@@ -2,10 +2,12 @@
 fname: los_coros_del_universo_hakuna
 title: Los coros del universo
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/4Kd1BPlAVPxN1J5mIS696N?si=3f753f5c4ebc43b5"
 capo: 0
 capo_notes: []
 song_tags:
+  alabanza:
+    - segundo_ciclo
   misa:
     - entrada
     - comunion

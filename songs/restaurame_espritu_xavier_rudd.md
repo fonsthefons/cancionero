@@ -5,10 +5,12 @@ link: "https://open.spotify.com/track/70zZclGWOjOVv9VRJ7RCyq?si=2714be994dca411b
 capo: "0"
 song_tags:
   adoracion: []
-  tema:
-    - espiritu
+  alabanza:
+    - primer_ciclo
   misa: 
     - comunion
+  tema:
+    - espiritu
 ---
 
 F Am C G x2

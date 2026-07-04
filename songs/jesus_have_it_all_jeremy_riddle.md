@@ -2,11 +2,11 @@
 fname: jesus_have_it_all_jeremy_riddle
 title: Jesus have it all
 autor: Jeremy Riddle
-link: ""
+link: "https://open.spotify.com/track/0wiYqRXy97hVdhy8xDVH9V?si=d0aa9e33a0014fef"
 capo: (original capo 3 D A G Em7 D)
 song_tags:
+  adoracion: []
   alabanza:
-    - segundo_ciclo
     - tercer_ciclo
   misa: 
     - comunion

@@ -1,12 +1,10 @@
 ---
 
 fname: santo_manchego_popular
-
 title: Santo Manchego
 autor: popular
 link: ""
 capo: 0
-
 capo_notes: []
 song_tags:
   alabanza:

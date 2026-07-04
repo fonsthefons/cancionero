@@ -2,12 +2,13 @@
 fname: nadie_te_ama_como_yo_popular
 title: Nadie te ama como yo
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/1vlMuCv1QKQrXc6AFqF6Hs?si=c5c2e4131f4d4f5d"
 capo: 0
 
 capo_notes: ["to be checked"]
 song_tags:
-  misa: 
+  adoracion: []
+  misa:
     - comunion
 ---
 

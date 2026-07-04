@@ -1,15 +1,17 @@
 ---
 
-fname: madre_y_reina_siquem
-title: Madre y Reina
+fname: reina_y_madre_siquem
+title: Reina y Madre
 autor: Siquem
-link: ""
+link: "https://open.spotify.com/track/7cNdAOMqjrSA7AEPR1M7hz?si=7b1e652a9db84d2d"
 capo: 0
 song_tags:
   alabanza:
     - cuarto_ciclo
   misa: 
     - salida
+  tema:
+    - virgen
 ---
 Dm Bb Gm A
 

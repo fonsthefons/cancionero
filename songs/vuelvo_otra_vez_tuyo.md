@@ -2,11 +2,12 @@
 fname: vuelvo_otra_vez_tuyo
 title: Vuelvo Otra Vez
 autor: tuyo
-link: ""
+link: "https://open.spotify.com/track/5QG7pw4RFN6CpL5915xUkP?si=1d4f8a3f097f4d5b"
 capo: 0
 capo_notes:
   - C# (as indicated in original header)
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

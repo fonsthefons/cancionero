@@ -2,12 +2,17 @@
 fname: para_que_entre_el_rey_popular
 title: Para que entre el rey
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/6dAlF4oYH5dzfhTmzbHPtm?si=4def8e551b134cea"
 capo: 0
 capo_notes: []
 song_tags:
+  alabanza:
+    - segundo_ciclo
+    - tercer_ciclo
   misa:
     - comunion
+  tema:
+    - cristo
 ---
 Am F C G Am
 

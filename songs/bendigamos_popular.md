@@ -10,6 +10,8 @@ song_tags:
     - segundo_ciclo
   misa: 
     - entrada
+  tema:
+    - espiritu
 ---
 E                    C#m
 BENDIGAMOS AL SEÑOR, DIOS DE TODA LA CREACIÓN,

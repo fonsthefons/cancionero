@@ -2,12 +2,17 @@
 fname: la_fe_de_maria_popular
 title: La Fe de María
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/1pFIBmLqu8VFPaPlvKs2rs?si=e38f234e604d4696"
 capo: 0
 capo_notes: []
 song_tags:
+  alabanza:
+   - cuarto_ciclo
   misa: 
     - salida
+  tema:
+   - virgen
+   
 ---
 Bm  A  G  Bm  A  G
 

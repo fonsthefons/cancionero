@@ -1,14 +1,12 @@
 ---
-
 fname: sencillamente_hakuna
-
 title: Sencillamente
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/1t7i3ZQgjhU341Il43ijW8?si=6a56c83749c1484d"
 capo: 0
-
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---

@@ -2,11 +2,16 @@
 fname: espiritu_ven_batah
 title: Espíritu ven
 autor: Batah
-link: ""
+link: "https://open.spotify.com/track/5JEwE6o4TwtzroRg7qT84R?si=69d4642c14f74593"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
+  alabanza:
+    - primer_ciclo
   misa:
+    - entrada
+    - ofertorio
     - comunion
 ---
 G Em C D

@@ -2,14 +2,16 @@
 fname: otra_vez_un_corazon
 title: Otra Vez
 autor: Un Corazón
-link: ""
+link: "https://open.spotify.com/track/1Z2LOOXfH3lFEAGDX7haCA?si=afcfb5bee9f0444f"
 capo: Original (capo 2 F#m D, D A E)
 song_tags:
+  adoracion: []
   alabanza:
     - tercer_ciclo
-    - cuarto_ciclo
   misa: 
     - comunion
+  tema:
+    - cristo
 ---
 Original (capo 2 F#m D, D A E)
 Capo 0 Em G - Em C G D
@@ -48,9 +50,6 @@ Y aún cuando no lo comprendo
 Confío en tu corazón
 Otra vez
 Otra vez
-
-
-
 
 
 [Bridge]

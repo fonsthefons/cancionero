@@ -1,14 +1,13 @@
 ---
-
 fname: ven_espiritu_secuencia
-
 title: Ven Espíritu
 autor: popular
 link: ""
 capo: 0
-
 capo_notes: []
 song_tags:
+  alabanza:
+    - primer_ciclo
   misa: 
     - entrada
     - comunion

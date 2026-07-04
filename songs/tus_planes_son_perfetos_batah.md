@@ -1,16 +1,14 @@
 ---
-
 fname: tus_planes_son_perfetos_batah
-
 title: Tus Planes Son Perfectos
 autor: Batah
-link: ""
+link: "https://open.spotify.com/track/3dg38AoQd9jPellNzklq2Y?si=b47b122d453d4fdd"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
-
 ---
 
 Original: A E F#m D

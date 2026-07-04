@@ -2,10 +2,11 @@
 fname: la_samaritana_popular
 title: La Samaritana
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/7D9WJZgYgMUCpoGtGXSWeW?si=432759b781664caf"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - ofertorio
     - comunion

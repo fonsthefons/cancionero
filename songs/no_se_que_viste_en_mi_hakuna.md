@@ -2,12 +2,15 @@
 fname: no_se_que_viste_en_mi_hakuna
 title: No sé qué viste en mí
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/3RXhBTRteM9nS1Engqaude?si=36464a3ad5074a1e"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
+  tema:
+    - cristo
 ---
 [Verse 1]
           F        F                       Dm

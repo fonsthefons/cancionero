@@ -1,8 +1,7 @@
 ---
-
-fname: ven_espiritu_ven_teresa_popular
-title: Ven Espiritu Ven (Teresa)
-autor: popular
+fname: ven_espiritu_ven_teresa
+title: Ven Espiritu Ven
+autor: Teresa
 link: ""
 capo: 1
 song_tags:
@@ -11,6 +10,8 @@ song_tags:
   misa: 
     - entrada
     - comunion
+  tema:
+    - espiritu
 ---
 G C Em C
 G C Em-D-C

@@ -1,11 +1,12 @@
 ---
-fname: hasta_la_locura_popular
+fname: hasta_la_locura_pablo_martinez
 title: Hasta La Locura
-autor: popular
-link: ""
+autor: Pablo Martinez
+link: "https://open.spotify.com/track/4Q2DcuvLzZrw67zpmaaxR0?si=b558b8c71a5c4622"
 capo: 0
 capo_notes: ["to be checked"]
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---

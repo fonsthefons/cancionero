@@ -2,9 +2,10 @@
 fname: hermoso_nombre_hillsong
 title: Hermoso Nombre
 autor: Hillsong
-link: ""
+link: "https://open.spotify.com/track/7HAxoYUvYynHfn4vQFJr6d?si=fdb6b971cfa748fe"
 capo: 0
 song_tags:
+  adoracion: []
   alabanza:
     - segundo_ciclo
     - tercer_ciclo

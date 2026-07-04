@@ -2,12 +2,15 @@
 fname: dulce_locura_batah
 title: Dulce locura
 autor: Batah
-link: ""
+link: "https://open.spotify.com/track/7EyQamuzh9Xey9mZlDotkz?si=ebea17aa442641eb"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
+  tema:
+    - cristo
 ---
 
 [Verse]

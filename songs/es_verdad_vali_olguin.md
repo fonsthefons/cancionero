@@ -2,10 +2,11 @@
 fname: es_verdad_vali_olguin
 title: Es verdad
 autor: Vali Olguin
-link: ""
+link: "https://open.spotify.com/track/45RY9mzY1SELeeVp9YoPQ1?si=71271937cc4f470d"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

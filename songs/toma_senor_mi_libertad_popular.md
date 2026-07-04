@@ -2,7 +2,7 @@
 fname: toma_senor_mi_libertad_popular
 title: Toma Señor mi libertad
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/7veeY1drohTipgIFdAPrS0?si=b7844c191771466d"
 capo: 0
 capo_notes: []
 song_tags:

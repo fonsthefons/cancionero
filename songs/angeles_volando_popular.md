@@ -7,7 +7,8 @@ capo: 0
 capo_notes: []
 song_tags:
   misa:
-    - comunion
+    - entrada
+    - salida
 ---
 C G Am F C G
 

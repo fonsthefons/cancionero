@@ -1,12 +1,9 @@
 ---
-
 fname: santo_jaime_olguin
-
 title: Santo
 autor: Jaime Olguín
 link: ""
 capo: 2
-
 capo_notes: []
 song_tags:
   misa: 

@@ -10,6 +10,8 @@ song_tags:
   misa: 
     - entrada
     - comunion
+  tema:
+    - espiritu
 ---
 Em     C7      D Em
 Ruah Ruah Ruah

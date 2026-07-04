@@ -2,10 +2,11 @@
 fname: huracan_hakuna
 title: Huracán
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/1Gd6Hz1MSEiY8205ToJjsh?si=3df71dbc210747df"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

@@ -3,7 +3,7 @@
 fname: buenas_noches_maria_popular
 title: Buenas Noches María
 autor: popular
-link: ""
+link: "https://www.youtube.com/watch?v=B0Di5EztMvE&list=RDB0Di5EztMvE&start_radio=1"
 capo: 0
 song_tags:
   alabanza:

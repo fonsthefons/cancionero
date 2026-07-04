@@ -2,7 +2,7 @@
 fname: ven_ante_su_trono_elevation_worship
 title: Ven ante Su trono
 autor: Elevation Worship
-link: ""
+link: "https://open.spotify.com/track/00N19SVEo6XJFaerouyckn?si=8ba464502061439d"
 capo: Really Capo 3 C F
 song_tags:
   alabanza:

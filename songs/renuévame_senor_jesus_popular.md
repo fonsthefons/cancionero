@@ -1,12 +1,9 @@
 ---
-
 fname: renuévame_senor_jesus_popular
-
 title: Renuévame Señor Jesús
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/0aTyTQYoly6pTflkIKMs48?si=bb2a9f1757334ef8"
 capo: 0
-
 capo_notes: []
 song_tags:
   misa: 

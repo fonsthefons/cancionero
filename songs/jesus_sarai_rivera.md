@@ -2,14 +2,17 @@
 fname: jesus_sarai_rivera
 title: Jesus
 autor: Sarai Rivera
-link: ""
+link: "https://open.spotify.com/track/5blgde2k3YONRA1yBNohPs?si=e4143011219e4888"
 capo: (original capo 5 C-G-Am-F)
 song_tags:
+  adoracion: []
   alabanza:
     - segundo_ciclo
     - tercer_ciclo
   misa: 
     - comunion
+  tema:
+    - cristo
 ---
 No Capo (max capo 0)
 (original capo 5 C-G-Am-F)

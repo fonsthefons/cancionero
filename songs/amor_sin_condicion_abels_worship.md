@@ -9,6 +9,7 @@ song_tags:
     - tercer_ciclo
   adoracion: []
   misa:
+    - entrada
     - comunion
   tema:
     - cristo

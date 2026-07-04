@@ -6,7 +6,7 @@ link: "https://open.spotify.com/track/6ODiSmpQBjQbGvLrNLwSQj?si=52a2e6e2bf344d1e
 capo: 0
 song_tags:
   alabanza:
-    - cuarto_ciclo
+    - tercer_ciclo
   misa: 
     - comunion
     - salida

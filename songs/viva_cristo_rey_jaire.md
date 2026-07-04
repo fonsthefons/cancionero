@@ -1,9 +1,8 @@
 ---
-
 fname: viva_cristo_rey_jaire
 title: Viva Cristo Rey
 autor: Jaire
-link: ""
+link: "https://open.spotify.com/track/4p4FTS0SfIIca9nuixNEjv?si=8e3785ceec274316"
 capo: 0
 song_tags:
   alabanza:
@@ -11,7 +10,10 @@ song_tags:
     - tercer_ciclo
     - cuarto_ciclo
   misa: 
+    - entrada
     - salida
+  tema:
+    - cristo
 ---
 G D C D (x2)
 

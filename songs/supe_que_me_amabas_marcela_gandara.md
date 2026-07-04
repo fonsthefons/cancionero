@@ -1,14 +1,12 @@
 ---
-
 fname: supe_que_me_amabas_marcela_gandara
-
 title: Supe que me Amabas
 autor: Marcela Gándara
-link: ""
+link: "https://open.spotify.com/track/36e4Sr0dXiyzjVeBWv8cON?si=18b9fd4449cc48a9"
 capo: 0
-
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---

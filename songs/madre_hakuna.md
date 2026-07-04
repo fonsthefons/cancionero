@@ -3,13 +3,15 @@
 fname: madre_hakuna
 title: Madre
 autor: Hakuna
-link: ""
+link: "https://open.spotify.com/track/4LFnaNrPChE1u6CpwD0TLA?si=e4d84cb3fb2d452c"
 capo: 4
 song_tags:
   alabanza:
     - cuarto_ciclo
   misa: 
     - salida
+  tema:
+    - virgen
 ---
 C-G-Am-G6-F-G-C-G
 

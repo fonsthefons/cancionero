@@ -2,7 +2,7 @@
 fname: dios_incomparable_marcos_barrientos
 title: Dios Incomparable
 autor: Marcos Barrientos
-link: ""
+link: "https://open.spotify.com/track/4i6pgmkSpkhFuGnNgDcDIF?si=3588657bb5df4525"
 capo: 0
 song_tags:
   alabanza:

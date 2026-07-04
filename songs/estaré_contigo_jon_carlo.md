@@ -2,10 +2,11 @@
 fname: estaré_contigo_jon_carlo
 title: Estaré Contigo
 autor: Jon Carlo
-link: ""
+link: "https://open.spotify.com/track/6faN0qQaOXisMtlrtyknJ3?si=e0e3d940b7944a4c"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---

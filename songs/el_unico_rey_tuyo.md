@@ -2,9 +2,10 @@
 fname: el_unico_rey_tuyo
 title: El Unico Rey
 autor: Tuyo
-link: ""
+link: "https://open.spotify.com/track/1KKzqz1pmM516c1xAK84pd?si=537e9e87b6964b43"
 capo: Really in A# no capo but better C capo 4
 song_tags:
+  adoracion: []
   alabanza:
     - segundo_ciclo
     - tercer_ciclo

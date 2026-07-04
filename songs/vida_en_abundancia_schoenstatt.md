@@ -2,10 +2,11 @@
 fname: vida_en_abundancia_schoenstatt
 title: Vida en abundancia
 autor: schoenstatt
-link: ""
+link: "https://open.spotify.com/track/7oMgpX0X6TnxXdADuAz7Sc?si=337568872ea5469a"
 capo: 0
 capo_notes: []
 song_tags:
+  adoracion: []
   misa:
     - comunion
 ---

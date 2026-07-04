@@ -1,14 +1,12 @@
 ---
-
 fname: vengo_a_adorarte_popular
-
 title: Vengo a Adorarte
 autor: popular
-link: ""
+link: "https://open.spotify.com/track/5O3twBxBiRZdA4ydrVEapK?si=500409aa0ea049d7"
 capo: 0
-
 capo_notes: []
 song_tags:
+  adoracion: []
   misa: 
     - comunion
 ---
