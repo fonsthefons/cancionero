@@ -60,6 +60,13 @@ LYRICS_CSS = """
   font-weight: bold;
   color: #d14;
 }
+.chord-line {
+  display: block;
+}
+
+.lyric-line {
+  display: block;
+}
 """
 
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
@@ -250,6 +257,24 @@ def write_tag_sections(f, grouped, link_fn):
 def bold_chords(line):
     return CHORD_RE.sub(r"<strong>\1</strong>", line)
 
+def is_chord_line(line):
+    stripped = line.strip()
+
+    if not stripped:
+        return False
+
+    # Only allow chord-like tokens separated by spaces/tabs
+    tokens = re.split(r'\s+', stripped)
+
+    for token in tokens:
+        if not re.fullmatch(
+            r"[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add|dom)?\d*(?:/[A-G](?:#|b)?)?",
+            token
+        ):
+            return False
+
+    return True
+
 
 def format_lyrics(content):
     lines = []
@@ -257,12 +282,13 @@ def format_lyrics(content):
     for line in content.split("\n"):
         escaped = html.escape(line, quote=False)
 
-        # Wrap chords inline (keeps spacing intact)
-        wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
+        if is_chord_line(line):
+            wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
+            lines.append(f'<span class="chord-line">{wrapped}</span>')
+        else:
+            lines.append(f'<span class="lyric-line">{escaped}</span>')
 
-        lines.append(wrapped)
-
-    return "<pre class=\"lyrics\">\n" + "\n".join(lines) + "\n</pre>"
+    return '<pre class="lyrics">\n' + "\n".join(lines) + '\n</pre>'
 
 
 def write_song_meta(f, song):
