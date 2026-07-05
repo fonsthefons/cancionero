@@ -51,16 +51,14 @@ TAG_ORDER = ["misa", "alabanza", "adoracion", "tema"]
 
 LYRICS_CSS = """
 .lyrics {
-  white-space: pre-wrap;
-  font-family: inherit;
-  font-size: inherit;
-  margin: 1em 0;
-  border: none;
-  background: none;
-  padding: 0;
+  font-family: monospace;
+  white-space: pre;
+  line-height: 1.4;
 }
-.lyrics strong {
+
+.chord {
   font-weight: bold;
+  color: #d14;
 }
 """
 
@@ -254,8 +252,17 @@ def bold_chords(line):
 
 
 def format_lyrics(content):
-    lines = [bold_chords(html.escape(line)) for line in content.split("\n")]
-    return f'<pre class="lyrics">{"\n".join(lines)}</pre>'
+    lines = []
+
+    for line in content.split("\n"):
+        escaped = html.escape(line, quote=False)
+
+        # Wrap chords inline (keeps spacing intact)
+        wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
+
+        lines.append(wrapped)
+
+    return "<pre class=\"lyrics\">\n" + "\n".join(lines) + "\n</pre>"
 
 
 def write_song_meta(f, song):
