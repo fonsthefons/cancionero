@@ -49,23 +49,87 @@ FLAT_TAGS = [
 
 TAG_ORDER = ["misa", "alabanza", "adoracion", "tema"]
 
+# LYRICS_CSS = """
+# .lyrics {
+#   font-family: monospace;
+#   white-space: pre;
+#   line-height: 1.4;
+# }
+
+# .chord {
+#   font-weight: bold;
+#   color: #d14;
+# }
+# .chord-line {
+#   display: block;
+# }
+
+# .lyric-line {
+#   display: block;
+# }
+# """
+# LYRICS_CSS = """
+# .lyrics {
+#   font-family: monospace;
+#   white-space: pre;
+#   line-height: 1.1;   /* tighter overall spacing */
+#   margin: 0;
+# }
+
+# /* CHORD LINE */
+# .chord-line {
+#   display: block;
+#   line-height: 1.0;   /* tight */
+#   margin: 0;
+#   padding: 0;
+# }
+
+# /* LYRICS */
+# .lyric-line {
+#   display: block;
+#   line-height: 1.05;  /* slightly relaxed but tight */
+#   margin: 0;
+#   padding: 0;
+# }
+
+# /* CHORDS */
+# .chord {
+#   font-weight: bold;
+#   color: #d14;
+# }
+# """
 LYRICS_CSS = """
 .lyrics {
   font-family: monospace;
-  white-space: pre;
-  line-height: 1.4;
+
+  /* CRITICAL: override default pre spacing */
+  white-space: pre-wrap;
+  line-height: 1.15;
+
+  margin: 0;
+  padding: 0;
 }
 
+/* chord line (above lyrics) */
+.chord-line {
+  display: block;
+  line-height: 1.05;
+  margin: 0;
+  padding: 0;
+}
+
+/* lyric line */
+.lyric-line {
+  display: block;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+/* chord styling */
 .chord {
   font-weight: bold;
   color: #d14;
-}
-.chord-line {
-  display: block;
-}
-
-.lyric-line {
-  display: block;
 }
 """
 
