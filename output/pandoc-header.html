@@ -54,44 +54,36 @@ body.no-chords-global .chord-line {
 </style>
 
 <script>
-(function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-    function isGlobalHidden() {
-        return document.body.classList.contains("no-chords-global");
+    function songHasChords(song) {
+        return !song.classList.contains("no-chords");
     }
 
-    function toggleSong(song, button) {
-        song.classList.toggle("no-chords");
-
-        const localHidden = song.classList.contains("no-chords");
-
-        button.textContent = localHidden ? "Show chords" : "Hide chords";
+    function updateSongButton(button, song) {
+        button.textContent = songHasChords(song)
+            ? "Hide chords"
+            : "Show chords";
     }
 
-    function toggleGlobal(btn) {
-        document.body.classList.toggle("no-chords-global");
-
-        const hidden = isGlobalHidden();
-        btn.textContent = hidden ? "Show chords" : "Hide chords";
-    }
-
-    // 🔥 CRITICAL: event delegation (iOS-safe)
-    document.addEventListener("click", function (e) {
-
-        const songBtn = e.target.closest(".toggle-chords");
-        if (songBtn) {
-            const song = songBtn.closest(".song");
-            if (!song) return;
-
-            toggleSong(song, songBtn);
-            return;
-        }
-
-        if (e.target && e.target.id === "toggle-all-chords") {
-            toggleGlobal(e.target);
-        }
-
+    document.querySelectorAll(".toggle-chords").forEach(button => {
+        button.addEventListener("click", () => {
+            const song = button.closest(".song");
+            song.classList.toggle("no-chords");
+            updateSongButton(button, song);
+        });
     });
 
-})();
+    const globalBtn = document.getElementById("toggle-all-chords");
+
+    if (globalBtn) {
+        globalBtn.addEventListener("click", () => {
+            document.body.classList.toggle("no-chords-global");
+
+            const hidden = document.body.classList.contains("no-chords-global");
+            globalBtn.textContent = hidden ? "Show chords" : "Hide chords";
+        });
+    }
+
+});
 </script>
