@@ -2,12 +2,14 @@ import argparse
 import html
 import os
 import re
+import shutil
 import subprocess
 import sys
 import yaml
 
 HYMNS_DIR = "songs"
 OUTPUT_DIR = "output"
+ROOT_HTML = "index.html"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "book.md")
 OUTPUT_PDF_MD = os.path.join(OUTPUT_DIR, "book-pdf.md")
 OUTPUT_PDF = os.path.join(OUTPUT_DIR, "book.pdf")
@@ -427,6 +429,9 @@ def build_html():
         ],
         check=True,
     )
+
+    # Copy OUTPUT_HTML → ROOT_HTML (overwrite if exists)
+    shutil.copyfile(OUTPUT_HTML, ROOT_HTML)
 
 
 def build_pdf():

@@ -12,40 +12,40 @@ song_tags:
 ---
 Cuando siento tu amor tocar mi corazón 
 Cuando veo en tu luz, la fuerza de tu calor
- LAm                   RE
+ Am                   D
 No hay más respuesta posible
 
-         SOL      LAm           SI7
+         G      Am           B7
 Que entregar todo lo que hay en mí
 
-Mimm RE-DO       LAm
+Em D-C       Am
 Tómame Señor y seré como un niño ante ti
 
-       RE       SI7
+       D       B7
 Seré tuyo como acto de amor
 
 Aqui empiesa el rasgeo
 
 
-    MIm       SIm             MIm
+    Em       Bm             Em
 Déjame que te ame con todo mi ser
 
-       SIm                RE
+       Bm                D
 Y en silencio puedas entender
 
-         Llam                 FA     DO     LAm       RE
+         Am                 F     C     Am       D
 lo que entrega mi amor cuando veo en ti esa cruz de dolor
 
-    MIm         SIm                 MIm
+    Em         Bm                 Em
 Y sabrás que quiero desangrarme por ti
 
-      SIm                DO               FA
+      Bm                C               F
 Si me tomas la mano y me usas hoy para vencer
 
-     DO        LAm       RE        LAm-SOL/SI-DO
+     C        Am       D        Am-G/B-C
 Y clavar tu bandera y tu voz sin dudar ni temer
 
-SI7           MIm - RE/FA#
+B7           Em - D/F#
 Sin dudar ni temer
 
 

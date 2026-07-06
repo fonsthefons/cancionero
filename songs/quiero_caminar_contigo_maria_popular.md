@@ -12,59 +12,59 @@ song_tags:
   tema:
     - virgen
 ---
-Re Sol Re Sol
+D G D G
 
-Re                Sol
+D                G
 Quiero caminar contigo María
-Re                Sol
+D                G
 Pues tu eres mi Madre eres mi guía
-La                Sol
+A                G
 Tu eres para mi el más grande ejemplo
-Re          La
+D          A
 de santidad, de humildad
 
-Re                Sol
+D                G
 Quiero caminar contigo María
-Re                Sol
+D                G
 No solo un momento, todos los días
-La                Sol
+A                G
 Necesito tu amor de Madre
-Re          La
+D          A
 Tu intercesión ante el Señor
 
-Re
+D
 Guía mis pasos
-Sol    Re (La)
+G    D (A)
 Llévame al cielo
-Sim
+Bm
 Bajo tu manto
-Sol     La
+G     A
 No tengo miedo
-Re
+D
 Llena de gracia
-Sol Re (La)
+G D (A)
 Ave María
-Sim
+Bm
 Hoy yo te ofrezco
-La     Re
+A     D
 toda mi vida
 
-Re                Sol
+D                G
 Quiero caminar contigo María
-Re                Sol
+D                G
 Madre en el dolor y en la alegría
-La                Sol
+A                G
 Tu que fuiste fiel hasta el extremo
-Re          La
+D          A
 Fiel en la cruz, fiel a Jesús
 
 (Repite coro)
 
-Mim
+Em
 Celestial princesa
-Sim (La)
+Bm (A)
 mírame con compasión
-Sol
+G
 Hoy te doy mi alma
-La
+A
 vida y corazón

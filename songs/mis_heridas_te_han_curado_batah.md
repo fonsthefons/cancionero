@@ -17,7 +17,7 @@ G Am D G D/F#
 Mírame en la Cruz, crees que mi amor no va a alcanzarte 
 Em Am D G 
 Ven y/aquí podrás saciar tu sed, en esta fuente inagotable 
-G Am D G RE/Fa#m 
+G Am D G D/F#m 
 Dime, que te turba el corazón, en qué tienes esperanza, 
 Em Am D G 
 Ábrete y confía yo soy el Señor, que te protege noche y día 

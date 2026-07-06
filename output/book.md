@@ -2567,36 +2567,36 @@ Que regalas la vida sin fin
 
 [Link](https://open.spotify.com/track/3I1i06q4ut8Bs4faYaqGxQ?si=98aad8ba075e45f0)
 
-Lam                  Do
+Am                 C
 Una noche de sudores con la barca en el mar,
-            Sol                        Fa              Lam
+            G                        F              Am
 Mientras el cielo aclara ya, mirabas tus redes vacías.
-            Do                         Sol        Do
+            C                         G        C
 Pero hay alguien que te llama y otros mares te enseñará,
-      Fa        Do           Fa   Sol   Lam
+      F        C           F   G   Am
 En el corazón del hombre sus redes echará.
 
-Lam              Do             Sol             Fa
+Am             C             G             F
 Dona toda tu vida como María al pie de la Cruz
-Do             Sol                 Fa
+C             G                 F
 Y serás siervo de cada hombre, siervo por amor,
-Do        Fa    Sol   Lam
+C        F    G   Am
 Sacerdote de la humanidad
 
-Lam                        Do
+Am                       C
 caminabas en el silencio, entre lágrimas esperando
-            Sol                          Fa            Lam
+            G                          F            Am
 Que la semilla echada ya cayera en la tierra buena.
-            Do                         Sol        Do
+            C                         G        C
 Hoy tu corazón se alegra porque el grano ha dorado ya
-            Fa          Do         Fa   Sol   Lam
+            F          C         F   G   Am
 Y madurado bajo el sol, sólo queda recogerlo.
 
-Lam              Do             Sol             Fa
+Am             C             G             F
 Dona toda tu vida como María al pie de la Cruz
-Do             Sol                 Fa
+C             G                 F
 Y serás siervo de cada hombre, siervo por amor,
-Do        Fa    Sol   Lam
+C        F    G   Am
 Sacerdote de la humanidad
 
 ---
@@ -3227,40 +3227,40 @@ Para en todo amarle y servir
 
 Cuando siento tu amor tocar mi corazón 
 Cuando veo en tu luz, la fuerza de tu calor
- LAm                   RE
+ Am                   D
 No hay más respuesta posible
 
-         SOL      LAm           SI7
+         G      Am           B7
 Que entregar todo lo que hay en mí
 
-Mimm RE-DO       LAm
+Em D-C       Am
 Tómame Señor y seré como un niño ante ti
 
-       RE       SI7
+       D       B7
 Seré tuyo como acto de amor
 
 Aqui empiesa el rasgeo
 
 
-    MIm       SIm             MIm
+    Em       Bm             Em
 Déjame que te ame con todo mi ser
 
-       SIm                RE
+       Bm                D
 Y en silencio puedas entender
 
-         Llam                 FA     DO     LAm       RE
+         Am                 F     C     Am       D
 lo que entrega mi amor cuando veo en ti esa cruz de dolor
 
-    MIm         SIm                 MIm
+    Em         Bm                 Em
 Y sabrás que quiero desangrarme por ti
 
-      SIm                DO               FA
+      Bm                C               F
 Si me tomas la mano y me usas hoy para vencer
 
-     DO        LAm       RE        LAm-SOL/SI-DO
+     C        Am       D        Am-G/B-C
 Y clavar tu bandera y tu voz sin dudar ni temer
 
-SI7           MIm - RE/FA#
+B7           Em - D/F#
 Sin dudar ni temer
 
 
@@ -5518,7 +5518,7 @@ G Am D G D/F#
 Mírame en la Cruz, crees que mi amor no va a alcanzarte 
 Em Am D G 
 Ven y/aquí podrás saciar tu sed, en esta fuente inagotable 
-G Am D G RE/Fa#m 
+G Am D G D/F#m 
 Dime, que te turba el corazón, en qué tienes esperanza, 
 Em Am D G 
 Ábrete y confía yo soy el Señor, que te protege noche y día 
@@ -6779,61 +6779,61 @@ La encontrará, la encontrará.
 
 [Link](https://open.spotify.com/track/1isN9cnGC34Cq699RN9PjN?si=04d5d00549784b27)
 
-Re Sol Re Sol
+D G D G
 
-Re                Sol
+D                G
 Quiero caminar contigo María
-Re                Sol
+D                G
 Pues tu eres mi Madre eres mi guía
-La                Sol
+A                G
 Tu eres para mi el más grande ejemplo
-Re          La
+D          A
 de santidad, de humildad
 
-Re                Sol
+D                G
 Quiero caminar contigo María
-Re                Sol
+D                G
 No solo un momento, todos los días
-La                Sol
+A                G
 Necesito tu amor de Madre
-Re          La
+D          A
 Tu intercesión ante el Señor
 
-Re
+D
 Guía mis pasos
-Sol    Re (La)
+G    D (A)
 Llévame al cielo
-Sim
+Bm
 Bajo tu manto
-Sol     La
+G     A
 No tengo miedo
-Re
+D
 Llena de gracia
-Sol Re (La)
+G D (A)
 Ave María
-Sim
+Bm
 Hoy yo te ofrezco
-La     Re
+A     D
 toda mi vida
 
-Re                Sol
+D                G
 Quiero caminar contigo María
-Re                Sol
+D                G
 Madre en el dolor y en la alegría
-La                Sol
+A                G
 Tu que fuiste fiel hasta el extremo
-Re          La
+D          A
 Fiel en la cruz, fiel a Jesús
 
 (Repite coro)
 
-Mim
+Em
 Celestial princesa
-Sim (La)
+Bm (A)
 mírame con compasión
-Sol
+G
 Hoy te doy mi alma
-La
+A
 vida y corazón
 
 ---
@@ -7867,7 +7867,7 @@ A                        	     B7
 Sopla Señor en mi vida, y arrancame esta tristeza.
 E          A          B7          C#m
 Sopla, sopla Señor tu grandeza, sopla
-LA            	      SI7
+A            	      B7
 Hazme fiel en mi pobreza, sopla.
 
 E                   E7    	   A         	   B7
@@ -7884,7 +7884,7 @@ A                        	     B7
 Mi cansancio, mis pecado y moldéame a tu modo.
 E          A          B7          C#m
 Sopla, y bautízame en tu brisa, sopla
-LA            	      SI7
+A            	      B7
 Renovame en tu sonrisa, sopla.
 
 
@@ -7902,15 +7902,15 @@ A                     	  B7
 Que madure en tu palabra, como un ave en pleno vuelo.
 E          A          B7          C#m
 Sopla, sopla Señor tu grandeza, sopla
-LA            	      SI7
+A            	      B7
 Hazme fiel en mi pobreza, sopla.
-LA            	      SI7
+A            	      B7
 y bautízame en tu brisa, sopla
-LA            	      SI7
+A            	      B7
 Renovame en tu sonrisa, sopla.
 
 
-MI      LA       DO#m         LA SI7
+E      A       C#m         A B7
 Sopla, sopla, sopla Señor, sopla
 Sopla, sopla, sopla Señor, sopla
 Sopla, sopla, sopla Señor, sopla

@@ -29,7 +29,7 @@ A                        	     B7
 Sopla Señor en mi vida, y arrancame esta tristeza.
 E          A          B7          C#m
 Sopla, sopla Señor tu grandeza, sopla
-LA            	      SI7
+A            	      B7
 Hazme fiel en mi pobreza, sopla.
 
 E                   E7    	   A         	   B7
@@ -46,7 +46,7 @@ A                        	     B7
 Mi cansancio, mis pecado y moldéame a tu modo.
 E          A          B7          C#m
 Sopla, y bautízame en tu brisa, sopla
-LA            	      SI7
+A            	      B7
 Renovame en tu sonrisa, sopla.
 
 
@@ -64,15 +64,15 @@ A                     	  B7
 Que madure en tu palabra, como un ave en pleno vuelo.
 E          A          B7          C#m
 Sopla, sopla Señor tu grandeza, sopla
-LA            	      SI7
+A            	      B7
 Hazme fiel en mi pobreza, sopla.
-LA            	      SI7
+A            	      B7
 y bautízame en tu brisa, sopla
-LA            	      SI7
+A            	      B7
 Renovame en tu sonrisa, sopla.
 
 
-MI      LA       DO#m         LA SI7
+E      A       C#m         A B7
 Sopla, sopla, sopla Señor, sopla
 Sopla, sopla, sopla Señor, sopla
 Sopla, sopla, sopla Señor, sopla

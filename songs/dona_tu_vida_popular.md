@@ -11,34 +11,34 @@ song_tags:
     - comunion
 ---
 
-Lam                  Do
+Am                 C
 Una noche de sudores con la barca en el mar,
-            Sol                        Fa              Lam
+            G                        F              Am
 Mientras el cielo aclara ya, mirabas tus redes vacías.
-            Do                         Sol        Do
+            C                         G        C
 Pero hay alguien que te llama y otros mares te enseñará,
-      Fa        Do           Fa   Sol   Lam
+      F        C           F   G   Am
 En el corazón del hombre sus redes echará.
 
-Lam              Do             Sol             Fa
+Am             C             G             F
 Dona toda tu vida como María al pie de la Cruz
-Do             Sol                 Fa
+C             G                 F
 Y serás siervo de cada hombre, siervo por amor,
-Do        Fa    Sol   Lam
+C        F    G   Am
 Sacerdote de la humanidad
 
-Lam                        Do
+Am                       C
 caminabas en el silencio, entre lágrimas esperando
-            Sol                          Fa            Lam
+            G                          F            Am
 Que la semilla echada ya cayera en la tierra buena.
-            Do                         Sol        Do
+            C                         G        C
 Hoy tu corazón se alegra porque el grano ha dorado ya
-            Fa          Do         Fa   Sol   Lam
+            F          C         F   G   Am
 Y madurado bajo el sol, sólo queda recogerlo.
 
-Lam              Do             Sol             Fa
+Am             C             G             F
 Dona toda tu vida como María al pie de la Cruz
-Do             Sol                 Fa
+C             G                 F
 Y serás siervo de cada hombre, siervo por amor,
-Do        Fa    Sol   Lam
+C        F    G   Am
 Sacerdote de la humanidad
