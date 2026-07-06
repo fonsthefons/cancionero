@@ -38,7 +38,7 @@ F                                    Dm                  G
 Por las almas de tus fieles hasta el fondo
                                     Am
 Qué vacío hay en el hombre
-F                                Dm               Sol
+F                                Dm               G
 Qué dominio de la culpa sin tu soplo
                                                   C
 Lava el rostro de lo inmundo

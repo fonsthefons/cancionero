@@ -13,7 +13,7 @@ song_tags:
 G   D      C
 Señor, toma mi vida nueva
 
-Lam              C
+Am              C
 antes de que la espera
 
           D

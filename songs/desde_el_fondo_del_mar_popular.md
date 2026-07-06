@@ -11,40 +11,40 @@ song_tags:
     - entrada
 ---
 No capo (max 2)
-Re 
+D 
 Desde el fondo del mar 
 (desde el fondo del mar)
-              La
+              A
 del más alto lugar 
 (del más alto lugar),
-               sim                                                                           
+               Bm                                                                           
 del más hondo abismo 
 (del más hondo abismo)
 
-Sol     Re       Sol - La
+G     D       G - A
 Te ala  -  ba  -  ré.
 
-           Re
+           D
 Desde mi corazón 
 (desde mi corazón)
-                 La
+                 A
 fuerte o débil esté
  (fuerte o débil esté)
-             sim                                                                                   
+             Bm                                                                                   
 cada instante de mi vida 
 (cada instante de mi vida)
-Sol      Re    Sol    La      D
+G      D    G    A      D
 con go  -  zo   yo   di  -  ré
 
-                           Sol       La   
+                           G       A   
 Que tú eres la Roca eterna 
-Re                      Sol         La         
+D                      G         A         
 Señor sobre cielo y tierra
-sim    Sol    La
+Bm    G    A
 ¡Tú eres Dios!
-Re                    Sol         La 
+D                    G         A 
 Que toda criatura adore, 
- Re                      Sol         La         
+ D                      G         A         
 que toda nación se postre a ti
-sim  Sol     La     Re            Sol – La – Re  
+Bm  G     A     D            G – A – D  
 Se  -  ñor, Tú eres Dios. 
