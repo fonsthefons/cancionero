@@ -104,6 +104,19 @@ LYRICS_CSS = """
 body.no-chords-global .chord-line {
   display: none !important;
 }
+
+body.hide-all-chords .chord-line {
+  display: none;
+}
+
+/* local overrides */
+.song.force-show-chords .chord-line {
+  display: block !important;
+}
+
+.song.force-hide-chords .chord-line {
+  display: none !important;
+}
 """
 
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
@@ -291,26 +304,6 @@ def write_tag_sections(f, grouped, link_fn):
 
 
 
-# def bold_chords(line):
-#     return CHORD_RE.sub(r"<strong>\1</strong>", line)
-# Original
-# def is_chord_line(line):
-#     stripped = line.strip()
-
-#     if not stripped:
-#         return False
-
-#     # Only allow chord-like tokens separated by spaces/tabs
-#     tokens = re.split(r'\s+', stripped)
-
-#     for token in tokens:
-#         if not re.fullmatch(
-#             r"[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add|dom)?\d*(?:/[A-G](?:#|b)?)?",
-#             token
-#         ):
-#             return False
-
-#     return True
 SEPARATOR_RE = re.compile(r"^[-|]+$")  # allows -, --, |, || etc.
 
 def split_embedded_chords(token):
@@ -348,35 +341,6 @@ def is_chord_line(line):
 
     return has_chord
 
-# V1 almost working
-# def is_chord_line(line):
-#     stripped = line.strip()
-
-#     if not stripped:
-#         return False
-
-#     tokens = re.split(r'\s+', stripped)
-
-#     has_chord = False
-
-#     for token in tokens:
-#         # Check if token contains embedded chords like A-D
-#         sub_tokens = split_embedded_chords(token)
-
-#         for sub in sub_tokens:
-#             if not sub:
-#                 continue
-
-#             if CHORD_RE.fullmatch(sub):
-#                 has_chord = True
-#                 continue
-
-#             if SEPARATOR_RE.fullmatch(sub):
-#                 continue
-
-#             return False
-
-#     return has_chord
 
 
 def format_lyrics(content):
@@ -449,10 +413,11 @@ def write_pdf_book(f, songs, grouped):
         autor = h.get("autor", "") or ""
         # build heading
         heading_text = f"{h['heading']} - {autor}"
-        # f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
-        # write_song_meta(f, h)
-        # f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
-        f.write(f'<div class="song">\n\n')
+        song_id = h.get("fname")
+        if not song_id:
+            raise ValueError(f"Missing song ID for {h.get('title', '')}")
+
+        f.write(f'<div class="song" data-song-id="{song_id}">\n\n')
 
         f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
 
@@ -478,67 +443,6 @@ def build_html():
 {script}
 </script>
 """)
-# V2
-#         f.write("""
-# <script>
-# document.addEventListener("DOMContentLoaded", function () {
-
-#   // -----------------------------
-#   // PER-SONG TOGGLE (existing)
-#   // -----------------------------
-#   document.querySelectorAll(".toggle-chords").forEach(button => {
-#     button.addEventListener("click", () => {
-#       const song = button.closest(".song");
-#       song.classList.toggle("no-chords");
-
-#       if (song.classList.contains("no-chords")) {
-#         button.textContent = "Show chords";
-#       } else {
-#         button.textContent = "Hide chords";
-#       }
-#     });
-#   });
-
-
-#   // -----------------------------
-#   // GLOBAL TOGGLE (NEW)
-#   // -----------------------------
-#   const globalBtn = document.getElementById("toggle-all-chords");
-
-#   if (globalBtn) {
-#     globalBtn.addEventListener("click", () => {
-#       document.body.classList.toggle("no-chords-global");
-
-#       if (document.body.classList.contains("no-chords-global")) {
-#         globalBtn.textContent = "Show all chords";
-#       } else {
-#         globalBtn.textContent = "Hide all chords";
-#       }
-#     });
-#   }
-
-# });
-# </script>
-# """)
-# V1
-#         f.write("""
-# <script>
-# document.addEventListener("DOMContentLoaded", function () {
-#   document.querySelectorAll(".toggle-chords").forEach(button => {
-#     button.addEventListener("click", () => {
-#       const song = button.closest(".song");
-#       song.classList.toggle("no-chords");
-
-#       if (song.classList.contains("no-chords")) {
-#         button.textContent = "Show chords";
-#       } else {
-#         button.textContent = "Hide chords";
-#       }
-#     });
-#   });
-# });
-# </script>
-# """)
 
     subprocess.run(
         [

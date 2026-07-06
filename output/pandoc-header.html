@@ -51,39 +51,82 @@
 body.no-chords-global .chord-line {
   display: none !important;
 }
+
+body.hide-all-chords .chord-line {
+  display: none;
+}
+
+/* local overrides */
+.song.force-show-chords .chord-line {
+  display: block !important;
+}
+
+.song.force-hide-chords .chord-line {
+  display: none !important;
+}
 </style>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("click", function (e) {
 
-    function songHasChords(song) {
-        return !song.classList.contains("no-chords");
-    }
+    // -------------------------
+    // GLOBAL TOGGLE
+    // -------------------------
+    if (e.target.id === "toggle-all-chords") {
 
-    function updateSongButton(button, song) {
-        button.textContent = songHasChords(song)
-            ? "Hide chords"
-            : "Show chords";
-    }
+        document.body.classList.toggle("hide-all-chords");
 
-    document.querySelectorAll(".toggle-chords").forEach(button => {
-        button.addEventListener("click", () => {
-            const song = button.closest(".song");
-            song.classList.toggle("no-chords");
-            updateSongButton(button, song);
+        const hidden = document.body.classList.contains("hide-all-chords");
+        e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
+
+        // ✅ RESET ALL LOCAL OVERRIDES
+        document.querySelectorAll(".song").forEach(song => {
+            song.classList.remove("force-hide-chords", "force-show-chords");
+
+            const btn = song.querySelector(".toggle-chords");
+            if (!btn) return;
+
+            btn.textContent = hidden ? "Show chords" : "Hide chords";
         });
-    });
 
-    const globalBtn = document.getElementById("toggle-all-chords");
-
-    if (globalBtn) {
-        globalBtn.addEventListener("click", () => {
-            document.body.classList.toggle("no-chords-global");
-
-            const hidden = document.body.classList.contains("no-chords-global");
-            globalBtn.textContent = hidden ? "Show chords" : "Hide chords";
-        });
+        return;
     }
+
+    // -------------------------
+    // LOCAL TOGGLE
+    // -------------------------
+    const btn = e.target.closest(".toggle-chords");
+    if (!btn) return;
+
+    const song = btn.closest(".song");
+    if (!song) return;
+
+    const globalHidden = document.body.classList.contains("hide-all-chords");
+
+    const forceHide = song.classList.contains("force-hide-chords");
+    const forceShow = song.classList.contains("force-show-chords");
+
+    let currentlyHidden;
+
+    if (forceHide) {
+        currentlyHidden = true;
+    } else if (forceShow) {
+        currentlyHidden = false;
+    } else {
+        currentlyHidden = globalHidden;
+    }
+
+    // clear previous override
+    song.classList.remove("force-hide-chords", "force-show-chords");
+
+    // apply new override (flip current state)
+    if (currentlyHidden) {
+        song.classList.add("force-show-chords");
+    } else {
+        song.classList.add("force-hide-chords");
+    }
+
+    btn.textContent = currentlyHidden ? "Hide chords" : "Show chords";
 
 });
 </script>
