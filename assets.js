@@ -1,59 +1,3 @@
-<style>
-.lyrics {
-  font-family: ui-monospace;
-
-  /* CRITICAL: override default pre spacing */
-  white-space: pre-wrap;
-  line-height: 1.0;
-
-  margin: 0;
-  padding: 0;
-}
-
-/* chord line (above lyrics) */
-.chord-line {
-  display: block;
-  line-height: 1.0;
-  margin-top: 0.3rem;
-  padding: 0;
-}
-
-/* lyric line */
-.lyric-line {
-  display: block;
-  line-height: 1.0;
-  margin: 0;
-  padding: 0;
-  font-size: large;
-}
-
-/* chord styling */
-.chord {
-  font-weight: bold;
-  color: #22a3a7;
-}
-
-.verse-break {
-  display: block;
-  margin-top: 2.0rem;
-}
-
-.song.no-chords .chord-line {
-  display: none !important;
-}
-
-.toggle-chords {
-  margin: 10px 0;
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
-body.no-chords-global .chord-line {
-  display: none !important;
-}
-</style>
-
-<script>
 (function () {
 
     function isGlobalHidden() {
@@ -94,4 +38,3 @@ body.no-chords-global .chord-line {
     });
 
 })();
-</script>

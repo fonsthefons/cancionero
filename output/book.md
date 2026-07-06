@@ -1277,71 +1277,43 @@ X4
 [Link](https://open.spotify.com/track/1kQRahBqpKWMAhsoqfEETp?si=cc7effe715b54e16)
 
 Am F C C
-
 I believe in the son, I believe in the risen one
-
 Am      F2      C          F2           Am       G
-
 I believe I overcome, by the power of his blood
 
 F   G  Am  G/B   C    G/B   C
-
 A-men, a-men, i'm alive, i'm alive
-
 Am       G
-
 Because he lives
-
 F   G  Am  G/B    C     G/B     C        Am     G
-
 A-men, a-men, let my song join the one that never ends
-
 Am F C C  Am F C C
-
 Because he lives
 
 Am          F2  C        Am         F2      C
-
 I was dead in the grave, I was covered in sin and shame
-
 Am        F     C     F           Am    G
-
 I heard mercy call my name, he rolled the stone away
 
 F   G  Am  G/B   C    G/B   C
-
 A-men, a-men, i'm alive, i'm alive
-
 Am       G
-
 Because he lives
-
 F   G  Am  G/B    C     G/B     C        Am     G
-
 A-men, a-men, let my song join the one that never ends
 
 C     F           G
-
 Because he lives, I can face tomorrow
-
 C     F            G
-
 Because he lives, every fear is gone
-
 C     F        Am      G             F
-
 I know he holds my life my future in his hands
 
 F   G  Am  G/B   C    G/B   C
-
 A-men, a-men, i'm alive, i'm alive
-
 Am       G
-
 Because he lives
-
 F   G  Am  G/B    C     G/B     C        Am     G
-
 A-men, a-men, let my song join the one that never ends
 
 ---
@@ -1554,65 +1526,42 @@ G Em C D
 
 C         F           C
 Todos me dicen que tu estás
-
 Nada veo nada siento
-
 Es difícil yo no puedo
-
 Siempre he querido ir más allá
 
 Estoy tranquilo y con cierta paz
-
 Quiero hacerlo, quiero hacerlo
-
 Nada me podrá parar
-
 En mi encuentro contigo
 
 Señor creo que tu estás
-
 Aún sin verte ni sentirte
-
 Me palpita el corazón y se derrite
-
 En tus manos
 
 Señor creo que tu estás
-
 Aun sin verte ni sentirte
-
 Quiero conocerte cada día un poco más
 
 Oyeme no te dejo de hablar
-
 Parece que ayer solo
-
 No me quiero rendir ya
-
 Quizá un abrazo tuyo bastará
 
 Lo sé no debo sentir más
-
 Pero anhelo el sentimiento
-
 De sentir que aquí estas
-
 Amar sin sentir eso sí es amar
 
 Señor creo que tu estás
-
 Aún sin verte ni sentirte
-
 Me palpita el corazón y se derrite
-
 En tus manos
 
 Señor creo que tu estás
-
 Aún sin verte ni sentirte
-
 Quiero conocerte cada día un poco más
-
 Un poco más Un poco más
 
 ---

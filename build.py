@@ -90,6 +90,20 @@ LYRICS_CSS = """
   display: block;
   margin-top: 2.0rem;
 }
+
+.song.no-chords .chord-line {
+  display: none !important;
+}
+
+.toggle-chords {
+  margin: 10px 0;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+body.no-chords-global .chord-line {
+  display: none !important;
+}
 """
 
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
@@ -382,13 +396,6 @@ def format_lyrics(content):
         else:
             lines.append(f'<span class="lyric-line">{escaped}</span>')
 
-        # if is_chord_line(line):
-        #     wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
-        #     lines.append(f'<span class="chord-line">{wrapped}</span>')
-        # else:
-        #     lines.append(f'<span class="lyric-line">{escaped}</span>')
-
-    # return '<pre class="lyrics">\n' + "\n".join(lines) + '\n</pre>'
     return '<pre class="lyrics">' + "".join(lines) + '</pre>'
 
 
@@ -442,14 +449,96 @@ def write_pdf_book(f, songs, grouped):
         autor = h.get("autor", "") or ""
         # build heading
         heading_text = f"{h['heading']} - {autor}"
+        # f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
+        # write_song_meta(f, h)
+        # f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
+        f.write(f'<div class="song">\n\n')
+
         f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
+
+        # Toggle button
+        f.write('<button class="toggle-chords">Hide chords</button>\n\n')
+
         write_song_meta(f, h)
-        f.write(format_lyrics(h["content"]) + "\n\n---\n\n")
 
+        f.write(format_lyrics(h["content"]) + "\n\n")
 
+        f.write("</div>\n\n---\n\n")
+
+    f.write("\n# Settings\n\n")
+    f.write(f'<button id="toggle-all-chords">Hide all chords</button>')
+    
 def build_html():
     with open(PANDOC_HEADER, "w", encoding="utf-8") as f:
         f.write(f"<style>{LYRICS_CSS}</style>\n")
+        with open("assets.js", "r", encoding="utf-8") as js:
+            script = js.read()
+            f.write(f"""
+<script>
+{script}
+</script>
+""")
+# V2
+#         f.write("""
+# <script>
+# document.addEventListener("DOMContentLoaded", function () {
+
+#   // -----------------------------
+#   // PER-SONG TOGGLE (existing)
+#   // -----------------------------
+#   document.querySelectorAll(".toggle-chords").forEach(button => {
+#     button.addEventListener("click", () => {
+#       const song = button.closest(".song");
+#       song.classList.toggle("no-chords");
+
+#       if (song.classList.contains("no-chords")) {
+#         button.textContent = "Show chords";
+#       } else {
+#         button.textContent = "Hide chords";
+#       }
+#     });
+#   });
+
+
+#   // -----------------------------
+#   // GLOBAL TOGGLE (NEW)
+#   // -----------------------------
+#   const globalBtn = document.getElementById("toggle-all-chords");
+
+#   if (globalBtn) {
+#     globalBtn.addEventListener("click", () => {
+#       document.body.classList.toggle("no-chords-global");
+
+#       if (document.body.classList.contains("no-chords-global")) {
+#         globalBtn.textContent = "Show all chords";
+#       } else {
+#         globalBtn.textContent = "Hide all chords";
+#       }
+#     });
+#   }
+
+# });
+# </script>
+# """)
+# V1
+#         f.write("""
+# <script>
+# document.addEventListener("DOMContentLoaded", function () {
+#   document.querySelectorAll(".toggle-chords").forEach(button => {
+#     button.addEventListener("click", () => {
+#       const song = button.closest(".song");
+#       song.classList.toggle("no-chords");
+
+#       if (song.classList.contains("no-chords")) {
+#         button.textContent = "Show chords";
+#       } else {
+#         button.textContent = "Hide chords";
+#       }
+#     });
+#   });
+# });
+# </script>
+# """)
 
     subprocess.run(
         [
