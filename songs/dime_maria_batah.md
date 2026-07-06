@@ -28,12 +28,12 @@ C           (G/B)               Am
 cómo escuchas sus latidos y su voz?
      Am            G               F        C
 ¿Cómo tratas a tu hijo sabiendo que es el Señor,
-     Dm                         G (G 7)
+     Dm                         G (G7)
  que viene a salvar al mundo por Amor?
 
 CORO:
 
- F C G       Am   Dm       G C (7)
+ F C G       Am   Dm       G C (C7)
 María llena de gracia Madre que ama,
 F C G   Am  Dm  G       C
 María Inmaculada       Mujer amada
@@ -44,7 +44,7 @@ C           (G/B)               Am
 cuando se despierta y llora de repente?
      Am            G               F        C
 ¿Cómo calmas con tu abrazo, y secas lagrimas divinas,
-     Dm                          G (G 7)
+     Dm                          G (G7)
 cuando resbalan y caen por sus mejillas?
 
 C           (G/B)               Am
@@ -53,10 +53,10 @@ C           (G/B)               Am
  se lastima las rodillas el que calmará la mar?
      Am            G               F        C
  Y dime, ¿sientes que este tiempo se te escapa entre los dedos,
-     Dm                          G (G 7)
+     Dm                          G (G7)
 y disfrutas cada risa, cada gesto?
 
- F C G       Am   Dm       G C (7)
+ F C G       Am   Dm       G C (C7)
 María llena de gracia Madre que ama,
 F C G   Am  Dm  G       C
 María Inmaculada       Mujer amada

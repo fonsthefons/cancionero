@@ -205,8 +205,8 @@
   - [65. La Bendicion - Elevation Worship](#hymn-65-la-bendicion-elevation-worship)
   - [66. La Fe de María - popular](#hymn-66-la-fe-de-maria-popular)
   - [71. Lord, I Need You - Matt Maher](#hymn-71-lord-i-need-you-matt-maher)
-  - [73. Madre - Hakuna](#hymn-73-madre-de-hakuna-hakuna)
-  - [74. Madre - Hakuna](#hymn-74-madre-hakuna)
+  - [73. Madre - Hakuna](#hymn-73-madre-hakuna)
+  - [74. Madre de Hakuna - Hakuna](#hymn-74-madre-de-hakuna-hakuna)
   - [89. No tengo miedo - popular](#hymn-89-no-tengo-miedo-popular)
   - [100. Quiero Caminar Contigo María - popular](#hymn-100-quiero-caminar-contigo-maria-popular)
   - [103. Reina y Madre - Siquem](#hymn-103-reina-y-madre-siquem)
@@ -312,8 +312,8 @@
   - [56. Himno Misión País - Schoenstatt](#hymn-56-himno-mision-pais-schoenstatt)
   - [65. La Bendicion - Elevation Worship](#hymn-65-la-bendicion-elevation-worship)
   - [66. La Fe de María - popular](#hymn-66-la-fe-de-maria-popular)
-  - [73. Madre - Hakuna](#hymn-73-madre-de-hakuna-hakuna)
-  - [74. Madre - Hakuna](#hymn-74-madre-hakuna)
+  - [73. Madre - Hakuna](#hymn-73-madre-hakuna)
+  - [74. Madre de Hakuna - Hakuna](#hymn-74-madre-de-hakuna-hakuna)
   - [89. No tengo miedo - popular](#hymn-89-no-tengo-miedo-popular)
   - [100. Quiero Caminar Contigo María - popular](#hymn-100-quiero-caminar-contigo-maria-popular)
   - [103. Reina y Madre - Siquem](#hymn-103-reina-y-madre-siquem)
@@ -464,8 +464,8 @@
   - [56. Himno Misión País - Schoenstatt](#hymn-56-himno-mision-pais-schoenstatt)
   - [64. Junto a ti María - popular](#hymn-64-junto-a-ti-maria-popular)
   - [66. La Fe de María - popular](#hymn-66-la-fe-de-maria-popular)
-  - [73. Madre - Hakuna](#hymn-73-madre-de-hakuna-hakuna)
-  - [74. Madre - Hakuna](#hymn-74-madre-hakuna)
+  - [73. Madre - Hakuna](#hymn-73-madre-hakuna)
+  - [74. Madre de Hakuna - Hakuna](#hymn-74-madre-de-hakuna-hakuna)
   - [100. Quiero Caminar Contigo María - popular](#hymn-100-quiero-caminar-contigo-maria-popular)
   - [103. Reina y Madre - Siquem](#hymn-103-reina-y-madre-siquem)
   - [111. Salve Reina - Servus Mariae](#hymn-111-salve-reina-servus-mariae)
@@ -611,8 +611,10 @@ Abba Padre. Abba Padre
 
 *Capo: 2*
 
-D     A7      G        D     G     D   E7    A7   (BIS: A7 D)
+D     A7      G        D     G     D   E7    A7   
 Aleluya, alelu, aleluya, aleluya, aleluya
+BIS 
+A7 D
 
 ---
 
@@ -639,55 +641,43 @@ Aleluya Aleluya
 
 G   D      C
 Señor, toma mi vida nueva
-
 Am              C
 antes de que la espera
-
           D
 desgaste años en mí.
 
 G   D        C
 Estoy dispuesto a lo que quieras
-
-Lam
+Am
 no importa lo que sea,
-
 C        D
 Tú llámame a servir.
 
      G        D
 Llévame donde los hombres
-
    Em        C
 necesiten tus palabras
-
  G   C   D
 necesiten mis ganas de vivir.
 
      G        D
 Donde falte la esperanza
-
    Em      C
 donde falte la alegría
-
 G   D   G
 simplememente por no saber de Ti.
 
 G   D      C
 Te doy el corazón sincero
-
-Lam
+Am
 para gritar sin miedo
-
 C        D
 lo hermoso que es tu amor.
 
 G   D      C
 Señor tengo alma misionera
-
-Lam
+Am
 condúceme a la tierra
-
 C        D
 que tenga sed de Dios.
 
@@ -695,22 +685,17 @@ que tenga sed de Dios.
 
 G   D      C
 Y así en marcha iré cantando
-
-Lam
+Am
 por pueblos predicando
-
 C        D
 tu grandeza, Señor.
 
 G   D      C
 Tendré tus brazos sin cansancio,
-
-Lam
+Am
 tu historia entre mis labios,
-
 C      D
 tu fuerza en la oración.
-
 (Repite coro)
 
 ---
@@ -2294,12 +2279,12 @@ C           (G/B)               Am
 cómo escuchas sus latidos y su voz?
      Am            G               F        C
 ¿Cómo tratas a tu hijo sabiendo que es el Señor,
-     Dm                         G (G 7)
+     Dm                         G (G7)
  que viene a salvar al mundo por Amor?
 
 CORO:
 
- F C G       Am   Dm       G C (7)
+ F C G       Am   Dm       G C (C7)
 María llena de gracia Madre que ama,
 F C G   Am  Dm  G       C
 María Inmaculada       Mujer amada
@@ -2310,7 +2295,7 @@ C           (G/B)               Am
 cuando se despierta y llora de repente?
      Am            G               F        C
 ¿Cómo calmas con tu abrazo, y secas lagrimas divinas,
-     Dm                          G (G 7)
+     Dm                          G (G7)
 cuando resbalan y caen por sus mejillas?
 
 C           (G/B)               Am
@@ -2319,10 +2304,10 @@ C           (G/B)               Am
  se lastima las rodillas el que calmará la mar?
      Am            G               F        C
  Y dime, ¿sientes que este tiempo se te escapa entre los dedos,
-     Dm                          G (G 7)
+     Dm                          G (G7)
 y disfrutas cada risa, cada gesto?
 
- F C G       Am   Dm       G C (7)
+ F C G       Am   Dm       G C (C7)
 María llena de gracia Madre que ama,
 F C G   Am  Dm  G       C
 María Inmaculada       Mujer amada
@@ -5127,60 +5112,7 @@ A ti para siempre
 
 ---
 
-### 73. Madre - Hakuna {#hymn-73-madre-de-hakuna-hakuna}
-
-*Autor: Hakuna*
-
-*Capo: 0*
-
-[Link](https://open.spotify.com/track/2JaPSQUUlyRUjEJmZolqMz?si=c2314d3086f34d36)
-
-[Verse]
-E                         F#m
-Llévame contigo a todos lados,
-       B7                        E
-que pueda dormir tranquilo bajo tu precioso manto
-E                       F#m
-Llévame contigo, no me sueltes de la mano,
-       B7                      E
-Y que cuando sienta frío, note tu cálido abrazo.
- 
-                          F#m
-Llévame contigo, a donde quieras,
-             B7
-Y es que no hay mayor consuelo que
-     E
-una madre que te quiera y que algún
-       F#m  B7                         E
-día pudiera,   al Cielo ir por tu escalera
-                 F#m
-Y entender que contigo Madre
-   B7              E
-querida, valió la pena
- 
- 
-[Verse]
-A               B          E
-Que no me canse nunca de mirarte
-A               B          E
-Y repetir con humilde devoción:
-A               B             E
-Te quiero con locura preciosa Madre
-A             B           E
-Tú el mejor regalo de mi Dios
- 
-A               B          E
-Que no me canse nunca de mirarte
-A               B          E
-Y repetir con humilde devoción:
-A               B             E
-Te quiero con locura preciosa Madre
-A             B              E
-Tú Madre de Hakuna y mi corazón.
-
----
-
-### 74. Madre - Hakuna {#hymn-74-madre-hakuna}
+### 73. Madre - Hakuna {#hymn-73-madre-hakuna}
 
 *Autor: Hakuna*
 
@@ -5268,6 +5200,59 @@ D                        B
 De sus labios que aún repiten "Tengo sed",
 A        B        A-Am-E
 De sus labios que aún me dicen "Tengo sed".
+
+---
+
+### 74. Madre de Hakuna - Hakuna {#hymn-74-madre-de-hakuna-hakuna}
+
+*Autor: Hakuna*
+
+*Capo: 0*
+
+[Link](https://open.spotify.com/track/2JaPSQUUlyRUjEJmZolqMz?si=c2314d3086f34d36)
+
+[Verse]
+E                         F#m
+Llévame contigo a todos lados,
+       B7                        E
+que pueda dormir tranquilo bajo tu precioso manto
+E                       F#m
+Llévame contigo, no me sueltes de la mano,
+       B7                      E
+Y que cuando sienta frío, note tu cálido abrazo.
+ 
+                          F#m
+Llévame contigo, a donde quieras,
+             B7
+Y es que no hay mayor consuelo que
+     E
+una madre que te quiera y que algún
+       F#m  B7                         E
+día pudiera,   al Cielo ir por tu escalera
+                 F#m
+Y entender que contigo Madre
+   B7              E
+querida, valió la pena
+ 
+ 
+[Verse]
+A               B          E
+Que no me canse nunca de mirarte
+A               B          E
+Y repetir con humilde devoción:
+A               B             E
+Te quiero con locura preciosa Madre
+A             B           E
+Tú el mejor regalo de mi Dios
+ 
+A               B          E
+Que no me canse nunca de mirarte
+A               B          E
+Y repetir con humilde devoción:
+A               B             E
+Te quiero con locura preciosa Madre
+A             B              E
+Tú Madre de Hakuna y mi corazón.
 
 ---
 
@@ -8296,6 +8281,7 @@ Por cada uno de los días
 Gracias, Señor
 		           E
 Pues siempre has estado Tú
+
 
 A	       E		       F#m
 Tus planes son perfectos

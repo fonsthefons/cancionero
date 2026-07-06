@@ -10,5 +10,7 @@ song_tags:
       - aleluya
 ---
 
-D     A7      G        D     G     D   E7    A7   (BIS: A7 D)
+D     A7      G        D     G     D   E7    A7   
 Aleluya, alelu, aleluya, aleluya, aleluya
+BIS 
+A7 D

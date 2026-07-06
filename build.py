@@ -51,62 +51,13 @@ FLAT_TAGS = [
 
 TAG_ORDER = ["misa", "alabanza", "adoracion", "tema"]
 
-# LYRICS_CSS = """
-# .lyrics {
-#   font-family: monospace;
-#   white-space: pre;
-#   line-height: 1.4;
-# }
-
-# .chord {
-#   font-weight: bold;
-#   color: #d14;
-# }
-# .chord-line {
-#   display: block;
-# }
-
-# .lyric-line {
-#   display: block;
-# }
-# """
-# LYRICS_CSS = """
-# .lyrics {
-#   font-family: monospace;
-#   white-space: pre;
-#   line-height: 1.1;   /* tighter overall spacing */
-#   margin: 0;
-# }
-
-# /* CHORD LINE */
-# .chord-line {
-#   display: block;
-#   line-height: 1.0;   /* tight */
-#   margin: 0;
-#   padding: 0;
-# }
-
-# /* LYRICS */
-# .lyric-line {
-#   display: block;
-#   line-height: 1.05;  /* slightly relaxed but tight */
-#   margin: 0;
-#   padding: 0;
-# }
-
-# /* CHORDS */
-# .chord {
-#   font-weight: bold;
-#   color: #d14;
-# }
-# """
 LYRICS_CSS = """
 .lyrics {
-  font-family: monospace;
+  font-family: ui-monospace;
 
   /* CRITICAL: override default pre spacing */
   white-space: pre-wrap;
-  line-height: 1.15;
+  line-height: 1.0;
 
   margin: 0;
   padding: 0;
@@ -115,23 +66,29 @@ LYRICS_CSS = """
 /* chord line (above lyrics) */
 .chord-line {
   display: block;
-  line-height: 1.05;
-  margin: 0;
+  line-height: 1.0;
+  margin-top: 0.3rem;
   padding: 0;
 }
 
 /* lyric line */
 .lyric-line {
   display: block;
-  line-height: 1.1;
+  line-height: 1.0;
   margin: 0;
   padding: 0;
+  font-size: large;
 }
 
 /* chord styling */
 .chord {
   font-weight: bold;
-  color: #d14;
+  color: #22a3a7;
+}
+
+.verse-break {
+  display: block;
+  margin-top: 2.0rem;
 }
 """
 
@@ -148,7 +105,7 @@ CHORD_RE = re.compile(
     r"|"
     r"\d+"
     r")?"
-    r"(?:\/[A-G](?:#|b)?)?"
+    r"(?:/[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add|dom)?\d*)?"
     r")"
     r"(?!\w)"
 )
@@ -320,26 +277,92 @@ def write_tag_sections(f, grouped, link_fn):
 
 
 
-def bold_chords(line):
-    return CHORD_RE.sub(r"<strong>\1</strong>", line)
+# def bold_chords(line):
+#     return CHORD_RE.sub(r"<strong>\1</strong>", line)
+# Original
+# def is_chord_line(line):
+#     stripped = line.strip()
 
+#     if not stripped:
+#         return False
+
+#     # Only allow chord-like tokens separated by spaces/tabs
+#     tokens = re.split(r'\s+', stripped)
+
+#     for token in tokens:
+#         if not re.fullmatch(
+#             r"[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add|dom)?\d*(?:/[A-G](?:#|b)?)?",
+#             token
+#         ):
+#             return False
+
+#     return True
+SEPARATOR_RE = re.compile(r"^[-|]+$")  # allows -, --, |, || etc.
+
+def split_embedded_chords(token):
+    return re.split(r"-", token)
+
+def extract_chords(token):
+    # Find all chord-like matches inside the token
+    return CHORD_RE.findall(token)
+
+# V2
 def is_chord_line(line):
     stripped = line.strip()
 
     if not stripped:
         return False
 
-    # Only allow chord-like tokens separated by spaces/tabs
     tokens = re.split(r'\s+', stripped)
 
-    for token in tokens:
-        if not re.fullmatch(
-            r"[A-G](?:#|b)?(?:m|maj|min|dim|aug|sus|add|dom)?\d*(?:/[A-G](?:#|b)?)?",
-            token
-        ):
-            return False
+    has_chord = False
 
-    return True
+    for token in tokens:
+        # Extract all chords inside token
+        chords = extract_chords(token)
+
+        if chords:
+            has_chord = True
+            continue
+
+        # Allow pure separators
+        if re.fullmatch(r"[-|()]+", token):
+            continue
+
+        # If token has no chords and isn't just separators → fail
+        return False
+
+    return has_chord
+
+# V1 almost working
+# def is_chord_line(line):
+#     stripped = line.strip()
+
+#     if not stripped:
+#         return False
+
+#     tokens = re.split(r'\s+', stripped)
+
+#     has_chord = False
+
+#     for token in tokens:
+#         # Check if token contains embedded chords like A-D
+#         sub_tokens = split_embedded_chords(token)
+
+#         for sub in sub_tokens:
+#             if not sub:
+#                 continue
+
+#             if CHORD_RE.fullmatch(sub):
+#                 has_chord = True
+#                 continue
+
+#             if SEPARATOR_RE.fullmatch(sub):
+#                 continue
+
+#             return False
+
+#     return has_chord
 
 
 def format_lyrics(content):
@@ -348,13 +371,25 @@ def format_lyrics(content):
     for line in content.split("\n"):
         escaped = html.escape(line, quote=False)
 
-        if is_chord_line(line):
+        if not line.strip():
+            # preserve blank lines (verse spacing)
+            lines.append('<span class="verse-break"></span>')
+
+        elif is_chord_line(line):
             wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
             lines.append(f'<span class="chord-line">{wrapped}</span>')
+
         else:
             lines.append(f'<span class="lyric-line">{escaped}</span>')
 
-    return '<pre class="lyrics">\n' + "\n".join(lines) + '\n</pre>'
+        # if is_chord_line(line):
+        #     wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
+        #     lines.append(f'<span class="chord-line">{wrapped}</span>')
+        # else:
+        #     lines.append(f'<span class="lyric-line">{escaped}</span>')
+
+    # return '<pre class="lyrics">\n' + "\n".join(lines) + '\n</pre>'
+    return '<pre class="lyrics">' + "".join(lines) + '</pre>'
 
 
 def write_song_meta(f, song):

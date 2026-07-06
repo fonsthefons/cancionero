@@ -31,6 +31,7 @@ Gracias, Señor
 		           E
 Pues siempre has estado Tú
 
+
 A	       E		       F#m
 Tus planes son perfectos
 		   D				A
