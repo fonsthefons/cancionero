@@ -1,5 +1,7 @@
 // -----------------------------
+// -----------------------------
 // SHOW/HIDE CHORDS LOGIC
+// -----------------------------
 // -----------------------------
 document.addEventListener("click", function (e) {
 
@@ -9,21 +11,21 @@ document.addEventListener("click", function (e) {
     if (e.target.id === "toggle-all-chords") {
 
         document.body.classList.toggle("hide-all-chords");
-    
+
         const hidden = document.body.classList.contains("hide-all-chords");
         e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
-    
+
         // ONLY clear overrides (cheap, no heavy DOM work)
         document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
             .forEach(song => {
                 song.classList.remove("force-hide-chords", "force-show-chords");
-    
+
                 const btn = song.querySelector(".toggle-chords");
                 if (btn) {
                     btn.textContent = hidden ? "Show chords" : "Hide chords";
                 }
             });
-    
+
         return;
     }
 
@@ -66,12 +68,13 @@ document.addEventListener("click", function (e) {
 });
 
 
-
+// -----------------------------
 // -----------------------------
 // TRANSPOSE LOGIC
 // -----------------------------
-const NOTES_SHARP = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
-const NOTES_FLAT  = ["C","Db","D","Eb","E","F","Gb","G","Ab","A","Bb","B"];
+// -----------------------------
+const NOTES_SHARP = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+const NOTES_FLAT = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 
 function transposeNote(note, shift) {
     let scale = note.includes("b") ? NOTES_FLAT : NOTES_SHARP;
@@ -84,7 +87,6 @@ function transposeNote(note, shift) {
 
     return scale[newIndex];
 }
-
 // -----------------------------
 // TRANSPOSE CHORD
 // -----------------------------
@@ -158,4 +160,25 @@ document.addEventListener("click", function (e) {
         return;
     }
 
+});
+
+// -----------------------------
+// -----------------------------
+// COLUMN TOGGLE LOGIC
+// -----------------------------
+// -----------------------------
+document.addEventListener("click", function (e) {
+    const colBtn = e.target.closest(".toggle-columns");
+    if (colBtn) {
+        console.log(`HIT COLUMN BUTTON`);
+        const song = colBtn.closest(".song");
+        if (!song) return;
+
+        song.classList.toggle("two-columns");
+
+        const isTwo = song.classList.contains("two-columns");
+        colBtn.textContent = isTwo ? "1 column" : "2 columns";
+
+        return;
+    }
 });

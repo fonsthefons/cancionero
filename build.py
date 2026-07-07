@@ -135,6 +135,17 @@ body.hide-all-chords .chord-line {
   min-width: 24px;
   text-align: center;
 }
+
+.song.two-columns .lyrics {
+  column-count: 2;
+  column-gap: 24px;
+}
+
+/* Optional: better readability */
+.song.two-columns .chord-line,
+.song.two-columns .lyric-line {
+  break-inside: avoid;
+}
 """
 
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
@@ -448,6 +459,7 @@ def write_pdf_book(f, songs, grouped):
   <button class="transpose-up">+</button>
 </div>
 """)
+        f.write("""<button class="toggle-columns">2 columns</button>""")
 
         write_song_meta(f, h)
 
@@ -460,7 +472,9 @@ def write_pdf_book(f, songs, grouped):
     
 def build_html():
     with open(PANDOC_HEADER, "w", encoding="utf-8") as f:
-        f.write(f"<style>{LYRICS_CSS}</style>\n")
+        with open("book.css", "r", encoding="utf-8") as js:
+            book_css = js.read()
+            f.write(f"<style>{book_css}</style>\n")
         with open("assets.js", "r", encoding="utf-8") as js:
             script = js.read()
             f.write(f"""

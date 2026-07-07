@@ -486,7 +486,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Matt Redman*
+<button class="toggle-columns">2 columns</button>*Autor: Matt Redman*
 
 *Capo: 0*
 
@@ -510,7 +510,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -534,7 +534,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0, 0-5*
 
@@ -558,7 +558,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Taizé*
+<button class="toggle-columns">2 columns</button>*Autor: Taizé*
 
 *Capo: 2*
 
@@ -580,7 +580,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -602,7 +602,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jaire*
+<button class="toggle-columns">2 columns</button>*Autor: Jaire*
 
 *Capo: 0*
 
@@ -626,7 +626,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 0*
 
@@ -650,7 +650,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: VIVAFE*
+<button class="toggle-columns">2 columns</button>*Autor: VIVAFE*
 
 *Capo: 0*
 
@@ -674,7 +674,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Maite Lopez*
+<button class="toggle-columns">2 columns</button>*Autor: Maite Lopez*
 
 *Capo: 2*
 
@@ -698,7 +698,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Mater Salvatoris*
+<button class="toggle-columns">2 columns</button>*Autor: Mater Salvatoris*
 
 *Capo: 0*
 
@@ -722,7 +722,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Sarai*
+<button class="toggle-columns">2 columns</button>*Autor: Sarai*
 
 [Link](https://open.spotify.com/track/4ThlBUbvmZlSheQWu0suz9?si=91739e6f1ba345f5)
 
@@ -744,7 +744,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Abels Worship*
+<button class="toggle-columns">2 columns</button>*Autor: Abels Worship*
 
 *Capo: 0, 0-2*
 
@@ -768,7 +768,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -792,7 +792,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 [Link](https://open.spotify.com/track/3NqWY64lVnau51oFM3wH5A?si=1cd02715ed394d8a)
 
@@ -814,7 +814,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Matt Maher*
+<button class="toggle-columns">2 columns</button>*Autor: Matt Maher*
 
 *Capo: 0*
 
@@ -838,7 +838,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -860,7 +860,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: HAM*
+<button class="toggle-columns">2 columns</button>*Autor: HAM*
 
 *Capo: 0*
 
@@ -882,7 +882,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -906,7 +906,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -930,7 +930,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -954,7 +954,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -978,7 +978,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1002,7 +1002,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Felipe Gomez*
+<button class="toggle-columns">2 columns</button>*Autor: Felipe Gomez*
 
 *Capo: 0*
 
@@ -1026,7 +1026,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1048,7 +1048,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Verbum Dei*
+<button class="toggle-columns">2 columns</button>*Autor: Verbum Dei*
 
 *Capo: 0*
 
@@ -1072,7 +1072,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Besmaya*
+<button class="toggle-columns">2 columns</button>*Autor: Besmaya*
 
 *Capo: 0*
 
@@ -1096,7 +1096,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 1*
 
@@ -1120,7 +1120,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1144,7 +1144,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Abels Worship*
+<button class="toggle-columns">2 columns</button>*Autor: Abels Worship*
 
 *Capo: Capo 3*
 
@@ -1168,7 +1168,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Laraland*
+<button class="toggle-columns">2 columns</button>*Autor: Laraland*
 
 *Capo: 0*
 
@@ -1192,7 +1192,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 5*
 
@@ -1216,7 +1216,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Helena*
+<button class="toggle-columns">2 columns</button>*Autor: Helena*
 
 *Capo: 0*
 
@@ -1240,7 +1240,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Marcos Barrientos*
+<button class="toggle-columns">2 columns</button>*Autor: Marcos Barrientos*
 
 *Capo: 0*
 
@@ -1264,7 +1264,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 3*
 
@@ -1288,7 +1288,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1312,7 +1312,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 0*
 
@@ -1336,7 +1336,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Misión País*
+<button class="toggle-columns">2 columns</button>*Autor: Misión País*
 
 *Capo: 0*
 
@@ -1360,7 +1360,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: (original capo 4 D A Bm D A)*
 
@@ -1384,7 +1384,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 3*
 
@@ -1408,7 +1408,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1432,7 +1432,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Tuyo*
+<button class="toggle-columns">2 columns</button>*Autor: Tuyo*
 
 *Capo: Really in A# no capo but better C capo 4*
 
@@ -1456,7 +1456,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -1480,7 +1480,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1504,7 +1504,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -1528,7 +1528,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 0*
 
@@ -1552,7 +1552,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: anonimo*
+<button class="toggle-columns">2 columns</button>*Autor: anonimo*
 
 *Capo: 0*
 
@@ -1574,7 +1574,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Vali Olguin*
+<button class="toggle-columns">2 columns</button>*Autor: Vali Olguin*
 
 *Capo: 0*
 
@@ -1598,7 +1598,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 0*
 
@@ -1622,7 +1622,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jon Carlo*
+<button class="toggle-columns">2 columns</button>*Autor: Jon Carlo*
 
 *Capo: 0*
 
@@ -1646,7 +1646,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 0*
 
@@ -1670,7 +1670,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: David Burke*
+<button class="toggle-columns">2 columns</button>*Autor: David Burke*
 
 *Capo: 0*
 
@@ -1694,7 +1694,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Pablo Martinez*
+<button class="toggle-columns">2 columns</button>*Autor: Pablo Martinez*
 
 *Capo: 0*
 
@@ -1718,7 +1718,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Francisco Alvarado*
+<button class="toggle-columns">2 columns</button>*Autor: Francisco Alvarado*
 
 *Capo: 0*
 
@@ -1742,7 +1742,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -1766,7 +1766,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hillsong*
+<button class="toggle-columns">2 columns</button>*Autor: Hillsong*
 
 *Capo: 0*
 
@@ -1790,7 +1790,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 3*
 
@@ -1814,7 +1814,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Factor de Cambio*
+<button class="toggle-columns">2 columns</button>*Autor: Factor de Cambio*
 
 *Capo: Capo 4*
 
@@ -1838,7 +1838,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -1862,7 +1862,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 2*
 
@@ -1886,7 +1886,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Athenas*
+<button class="toggle-columns">2 columns</button>*Autor: Athenas*
 
 *Capo: 0*
 
@@ -1910,7 +1910,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Un Corazon*
+<button class="toggle-columns">2 columns</button>*Autor: Un Corazon*
 
 *Capo: 0*
 
@@ -1934,7 +1934,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Sarai Rivera*
+<button class="toggle-columns">2 columns</button>*Autor: Sarai Rivera*
 
 *Capo: (original capo 5 C-G-Am-F)*
 
@@ -1958,7 +1958,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jeremy Riddle*
+<button class="toggle-columns">2 columns</button>*Autor: Jeremy Riddle*
 
 *Capo: (original capo 3 D A G Em7 D)*
 
@@ -1982,7 +1982,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2006,7 +2006,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Elevation Worship*
+<button class="toggle-columns">2 columns</button>*Autor: Elevation Worship*
 
 *Capo: 0*
 
@@ -2030,7 +2030,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2054,7 +2054,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -2078,7 +2078,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2102,7 +2102,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Miel San Marcos*
+<button class="toggle-columns">2 columns</button>*Autor: Miel San Marcos*
 
 *Capo: 0*
 
@@ -2126,7 +2126,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Ignis*
+<button class="toggle-columns">2 columns</button>*Autor: Ignis*
 
 *Capo: 0*
 
@@ -2150,7 +2150,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Matt Maher*
+<button class="toggle-columns">2 columns</button>*Autor: Matt Maher*
 
 *Capo: Capo 3*
 
@@ -2174,7 +2174,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -2198,7 +2198,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 4*
 
@@ -2222,7 +2222,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -2246,7 +2246,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 4*
 
@@ -2270,7 +2270,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: schoenstatt*
 
 *Capo: 4*
 
@@ -2294,7 +2294,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Majo y Dan*
+<button class="toggle-columns">2 columns</button>*Autor: Majo y Dan*
 
 *Capo: 0 up to 4*
 
@@ -2318,7 +2318,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -2342,7 +2342,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 0*
 
@@ -2366,7 +2366,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2390,7 +2390,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Generación 12*
+<button class="toggle-columns">2 columns</button>*Autor: Generación 12*
 
 *Capo: Capo 3*
 
@@ -2414,7 +2414,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Santa Teresa*
+<button class="toggle-columns">2 columns</button>*Autor: Santa Teresa*
 
 *Capo: 0*
 
@@ -2438,7 +2438,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2462,7 +2462,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Miel San Marcos*
+<button class="toggle-columns">2 columns</button>*Autor: Miel San Marcos*
 
 *Capo: 0*
 
@@ -2486,7 +2486,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jesús Adrián Romero*
+<button class="toggle-columns">2 columns</button>*Autor: Jesús Adrián Romero*
 
 *Capo: 0*
 
@@ -2510,7 +2510,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Bethel*
+<button class="toggle-columns">2 columns</button>*Autor: Bethel*
 
 *Capo: Capo 5*
 
@@ -2534,7 +2534,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -2558,7 +2558,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jaime Olguín*
+<button class="toggle-columns">2 columns</button>*Autor: Jaime Olguín*
 
 *Capo: 2*
 
@@ -2582,7 +2582,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: Capo 2*
 
@@ -2606,7 +2606,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hillsong*
+<button class="toggle-columns">2 columns</button>*Autor: Hillsong*
 
 *Capo: 0*
 
@@ -2630,7 +2630,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Un Corazón*
+<button class="toggle-columns">2 columns</button>*Autor: Un Corazón*
 
 *Capo: Original (capo 2 F#m D, D A E)*
 
@@ -2654,7 +2654,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2678,7 +2678,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Helena*
+<button class="toggle-columns">2 columns</button>*Autor: Helena*
 
 *Capo: 0*
 
@@ -2702,7 +2702,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2726,7 +2726,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2750,7 +2750,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2774,7 +2774,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Tuyo*
+<button class="toggle-columns">2 columns</button>*Autor: Tuyo*
 
 *Capo: 0*
 
@@ -2798,7 +2798,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: María Olguín*
+<button class="toggle-columns">2 columns</button>*Autor: María Olguín*
 
 *Capo: 0*
 
@@ -2822,7 +2822,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hermana Glenda*
+<button class="toggle-columns">2 columns</button>*Autor: Hermana Glenda*
 
 *Capo: 0*
 
@@ -2846,7 +2846,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2870,7 +2870,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Fray Nacho*
+<button class="toggle-columns">2 columns</button>*Autor: Fray Nacho*
 
 *Capo: 0*
 
@@ -2894,7 +2894,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Bethel Music*
+<button class="toggle-columns">2 columns</button>*Autor: Bethel Music*
 
 *Capo: 0, 0-2*
 
@@ -2918,7 +2918,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Siquem*
+<button class="toggle-columns">2 columns</button>*Autor: Siquem*
 
 *Capo: 0*
 
@@ -2942,7 +2942,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -2966,7 +2966,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Xavier Rudd*
+<button class="toggle-columns">2 columns</button>*Autor: Xavier Rudd*
 
 *Capo: 0*
 
@@ -2990,7 +2990,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Kenosis*
+<button class="toggle-columns">2 columns</button>*Autor: Kenosis*
 
 *Capo: 0*
 
@@ -3014,7 +3014,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Marcos Barrientos*
+<button class="toggle-columns">2 columns</button>*Autor: Marcos Barrientos*
 
 *Capo: 0*
 
@@ -3038,7 +3038,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3060,7 +3060,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jaire*
+<button class="toggle-columns">2 columns</button>*Autor: Jaire*
 
 *Capo: 4*
 
@@ -3084,7 +3084,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Un Corazón*
+<button class="toggle-columns">2 columns</button>*Autor: Un Corazón*
 
 *Capo: 0 up to 4*
 
@@ -3108,7 +3108,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Servus Mariae*
+<button class="toggle-columns">2 columns</button>*Autor: Servus Mariae*
 
 *Capo: 0*
 
@@ -3132,7 +3132,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jaime Olguín*
+<button class="toggle-columns">2 columns</button>*Autor: Jaime Olguín*
 
 *Capo: 2*
 
@@ -3154,7 +3154,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3176,7 +3176,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 0*
 
@@ -3200,7 +3200,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -3224,7 +3224,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Adrián*
+<button class="toggle-columns">2 columns</button>*Autor: Adrián*
 
 *Capo: 0*
 
@@ -3248,7 +3248,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3272,7 +3272,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -3296,7 +3296,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Marcela Gándara*
+<button class="toggle-columns">2 columns</button>*Autor: Marcela Gándara*
 
 *Capo: 0*
 
@@ -3320,7 +3320,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 1*
 
@@ -3344,7 +3344,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3368,7 +3368,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3392,7 +3392,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Servus Mariae*
+<button class="toggle-columns">2 columns</button>*Autor: Servus Mariae*
 
 *Capo: 0*
 
@@ -3416,7 +3416,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Batah*
+<button class="toggle-columns">2 columns</button>*Autor: Batah*
 
 *Capo: 0*
 
@@ -3440,7 +3440,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Luispo*
+<button class="toggle-columns">2 columns</button>*Autor: Luispo*
 
 *Capo: 1*
 
@@ -3464,7 +3464,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Hakuna*
+<button class="toggle-columns">2 columns</button>*Autor: Hakuna*
 
 *Capo: 0*
 
@@ -3488,7 +3488,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: mision_pais*
+<button class="toggle-columns">2 columns</button>*Autor: mision_pais*
 
 *Capo: 0*
 
@@ -3512,7 +3512,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3536,7 +3536,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Elevation Worship*
+<button class="toggle-columns">2 columns</button>*Autor: Elevation Worship*
 
 *Capo: Really Capo 3 C F*
 
@@ -3560,7 +3560,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Teresa*
+<button class="toggle-columns">2 columns</button>*Autor: Teresa*
 
 *Capo: 1*
 
@@ -3582,7 +3582,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3604,7 +3604,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: Schoenstatt*
 
 *Capo: 0*
 
@@ -3628,7 +3628,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3650,7 +3650,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Generación 12*
+<button class="toggle-columns">2 columns</button>*Autor: Generación 12*
 
 *Capo: 0*
 
@@ -3674,7 +3674,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3698,7 +3698,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: schoenstatt*
+<button class="toggle-columns">2 columns</button>*Autor: schoenstatt*
 
 *Capo: 0*
 
@@ -3722,7 +3722,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3746,7 +3746,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Jaire*
+<button class="toggle-columns">2 columns</button>*Autor: Jaire*
 
 *Capo: 0*
 
@@ -3770,7 +3770,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3794,7 +3794,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: tuyo*
+<button class="toggle-columns">2 columns</button>*Autor: tuyo*
 
 *Capo: 0*
 
@@ -3818,7 +3818,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: Generacion 12*
+<button class="toggle-columns">2 columns</button>*Autor: Generacion 12*
 
 *Capo: 0 up to 3 (max 5)*
 
@@ -3842,7 +3842,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 
@@ -3866,7 +3866,7 @@
   <span class="transpose-value">0</span>
   <button class="transpose-up">+</button>
 </div>
-*Autor: popular*
+<button class="toggle-columns">2 columns</button>*Autor: popular*
 
 *Capo: 0*
 

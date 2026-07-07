@@ -174,95 +174,106 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <style>
-  .lyrics {
-    font-family: ui-monospace;
-
-    /* CRITICAL: override default pre spacing */
-    white-space: pre-wrap;
-    line-height: 1.0;
-
-    margin: 0;
-    padding: 0;
-  }
-
-  /* chord line (above lyrics) */
-  .chord-line {
-    display: block;
-    line-height: 1.0;
-    margin-top: 0.3rem;
-    padding: 0;
-  }
-
-  /* lyric line */
-  .lyric-line {
-    display: block;
-    line-height: 1.0;
-    margin: 0;
-    padding: 0;
-    font-size: large;
-  }
-
-  /* chord styling */
-  .chord {
-    font-weight: bold;
-    color: #22a3a7;
-  }
-
-  .verse-break {
-    display: block;
-    margin-top: 2.0rem;
-  }
-
-  .song.no-chords .chord-line {
-    display: none !important;
-  }
-
-  .toggle-chords {
-    margin: 10px 0;
-    padding: 4px 8px;
-    cursor: pointer;
-  }
-
-  body.no-chords-global .chord-line {
-    display: none !important;
-  }
-
-  body.hide-all-chords .chord-line {
-    display: none;
-  }
-
-  /* local overrides */
-  .song.force-show-chords .chord-line {
-    display: block !important;
-  }
-
-  .song.force-hide-chords .chord-line {
-    display: none !important;
-  }
-
-  .transpose-controls {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin: 6px 0;
-  }
-
-  .transpose-controls button {
-    font-size: 16px;
-    padding: 2px 8px;
-  }
-
-  .transpose-value {
-    font-weight: bold;
-    min-width: 24px;
-    text-align: center;
-  }
-  </style>
+  <style>.lyrics {
+      font-family: ui-monospace;
+    
+      /* CRITICAL: override default pre spacing */
+      white-space: pre-wrap;
+      line-height: 1.0;
+    
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* chord line (above lyrics) */
+    .chord-line {
+      display: block;
+      line-height: 1.0;
+      margin-top: 0.3rem;
+      padding: 0;
+    }
+    
+    /* lyric line */
+    .lyric-line {
+      display: block;
+      line-height: 1.0;
+      margin: 0;
+      padding: 0;
+      font-size: large;
+    }
+    
+    /* chord styling */
+    .chord {
+      font-weight: bold;
+      color: #22a3a7;
+    }
+    
+    .verse-break {
+      display: block;
+      margin-top: 2.0rem;
+    }
+    
+    .song.no-chords .chord-line {
+      display: none !important;
+    }
+    
+    .toggle-chords {
+      margin: 10px 0;
+      padding: 4px 8px;
+      cursor: pointer;
+    }
+    
+    body.no-chords-global .chord-line {
+      display: none !important;
+    }
+    
+    body.hide-all-chords .chord-line {
+      display: none;
+    }
+    
+    /* local overrides */
+    .song.force-show-chords .chord-line {
+      display: block !important;
+    }
+    
+    .song.force-hide-chords .chord-line {
+      display: none !important;
+    }
+    
+    .transpose-controls {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin: 6px 0;
+    }
+    
+    .transpose-controls button {
+      font-size: 16px;
+      padding: 2px 8px;
+    }
+    
+    .transpose-value {
+      font-weight: bold;
+      min-width: 24px;
+      text-align: center;
+    }
+    
+    .song.two-columns .lyrics {
+      column-count: 2;
+      column-gap: 24px;
+    }
+    
+    /* Optional: better readability */
+    .song.two-columns .chord-line,
+    .song.two-columns .lyric-line {
+      break-inside: avoid;
+    }</style>
 
   <script>
   // -----------------------------
+  // -----------------------------
   // SHOW/HIDE CHORDS LOGIC
+  // -----------------------------
   // -----------------------------
   document.addEventListener("click", function (e) {
 
@@ -272,21 +283,21 @@
       if (e.target.id === "toggle-all-chords") {
 
           document.body.classList.toggle("hide-all-chords");
-      
+
           const hidden = document.body.classList.contains("hide-all-chords");
           e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
-      
+
           // ONLY clear overrides (cheap, no heavy DOM work)
           document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
               .forEach(song => {
                   song.classList.remove("force-hide-chords", "force-show-chords");
-      
+
                   const btn = song.querySelector(".toggle-chords");
                   if (btn) {
                       btn.textContent = hidden ? "Show chords" : "Hide chords";
                   }
               });
-      
+
           return;
       }
 
@@ -329,12 +340,13 @@
   });
 
 
-
+  // -----------------------------
   // -----------------------------
   // TRANSPOSE LOGIC
   // -----------------------------
-  const NOTES_SHARP = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
-  const NOTES_FLAT  = ["C","Db","D","Eb","E","F","Gb","G","Ab","A","Bb","B"];
+  // -----------------------------
+  const NOTES_SHARP = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+  const NOTES_FLAT = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 
   function transposeNote(note, shift) {
       let scale = note.includes("b") ? NOTES_FLAT : NOTES_SHARP;
@@ -347,7 +359,6 @@
 
       return scale[newIndex];
   }
-
   // -----------------------------
   // TRANSPOSE CHORD
   // -----------------------------
@@ -422,6 +433,28 @@
       }
 
   });
+
+  // -----------------------------
+  // -----------------------------
+  // COLUMN TOGGLE LOGIC
+  // -----------------------------
+  // -----------------------------
+  document.addEventListener("click", function (e) {
+      const colBtn = e.target.closest(".toggle-columns");
+      if (colBtn) {
+          console.log(`HIT COLUMN BUTTON`);
+          const song = colBtn.closest(".song");
+          if (!song) return;
+
+          song.classList.toggle("two-columns");
+
+          const isTwo = song.classList.contains("two-columns");
+          colBtn.textContent = isTwo ? "1 column" : "2 columns";
+
+          return;
+      }
+  });
+
   </script>
 </head>
 <body>
@@ -1695,6 +1728,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Matt Redman</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1713,6 +1749,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1731,6 +1770,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0, 0-5</em></p>
 <p><a
@@ -1749,6 +1791,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Taizé</em></p>
 <p><em>Capo: 2</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">D</span>     <span class="chord">A7</span>      <span class="chord">G</span>        <span class="chord">D</span>     <span class="chord">G</span>     <span class="chord">D</span>   <span class="chord">E7</span>    <span class="chord">A7</span>   </span><span class="lyric-line">Aleluya, alelu, aleluya, aleluya, aleluya</span><span class="lyric-line">BIS </span><span class="chord-line"><span class="chord">A7</span> <span class="chord">D</span></span></pre>
@@ -1765,6 +1810,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">C</span>     <span class="chord">Em</span> <span class="chord">F</span> <span class="chord">G</span></span><span class="lyric-line">Aleluya Aleluya</span><span class="chord-line"><span class="chord">C</span>     <span class="chord">Em</span> <span class="chord">F</span> <span class="chord">G</span>  <span class="chord">C</span></span><span class="lyric-line">Aleluya Aleluya</span></pre>
@@ -1781,6 +1829,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jaire</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1799,6 +1850,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1817,6 +1871,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: VIVAFE</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1835,6 +1892,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Maite Lopez</em></p>
 <p><em>Capo: 2</em></p>
 <p><a
@@ -1853,6 +1913,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Mater Salvatoris</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1871,6 +1934,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Sarai</em></p>
 <p><a
 href="https://open.spotify.com/track/4ThlBUbvmZlSheQWu0suz9?si=91739e6f1ba345f5">Link</a></p>
@@ -1888,6 +1954,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Abels Worship</em></p>
 <p><em>Capo: 0, 0-2</em></p>
 <p><a
@@ -1906,6 +1975,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1924,6 +1996,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><a
 href="https://open.spotify.com/track/3NqWY64lVnau51oFM3wH5A?si=1cd02715ed394d8a">Link</a></p>
@@ -1941,6 +2016,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Matt Maher</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -1959,6 +2037,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">E</span>                    <span class="chord">C#m</span></span><span class="lyric-line">BENDIGAMOS AL SEÑOR, DIOS DE TODA LA CREACIÓN,</span><span class="chord-line">      <span class="chord">A</span>         <span class="chord">F#m</span>       <span class="chord">B</span></span><span class="lyric-line">POR HABERNOS REGALADO SU AMOR.</span><span class="chord-line"><span class="chord">G#m</span>                  <span class="chord">C#m</span></span><span class="lyric-line">SU BONDAD Y SU PERDÓN, Y SU GRAN FIDELIDAD</span><span class="chord-line">        <span class="chord">A</span>            <span class="chord">B</span>          <span class="chord">E</span>    <span class="chord">E7</span> </span><span class="lyric-line">POR LOS SIGLOS DE LOS SIGLOS DURARÁN.</span><span class="verse-break"></span><span class="verse-break"></span><span class="lyric-line">(ESTRIBILLO)</span><span class="chord-line">     <span class="chord">A</span>         <span class="chord">B</span>        <span class="chord">G#m</span>    <span class="chord">C#m</span></span><span class="lyric-line">EL ESPÍRITU DE DIOS HOY ESTÁ SOBRE MÍ,</span><span class="chord-line"><span class="chord">A</span>                  <span class="chord">B</span>           <span class="chord">E</span>    <span class="chord">E7</span> </span><span class="lyric-line">ÉL ES QUIEN ME HA URGIDO A PROCLAMAR,</span><span class="chord-line"><span class="chord">A</span>        <span class="chord">B</span>             <span class="chord">G#m</span> <span class="chord">C#m</span></span><span class="lyric-line">LA BUENA NUEVA A LOS MÁS POBRES,</span><span class="chord-line"><span class="chord">A</span>        <span class="chord">B</span>          <span class="chord">E</span> </span><span class="lyric-line">LA GRACIA DE SU SALVACIÓN.</span></pre>
@@ -1975,6 +2056,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: HAM</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">G</span>        <span class="chord">Bm</span></span><span class="lyric-line">En tu belleza y humildad</span><span class="chord-line"><span class="chord">Am</span>        <span class="chord">D</span></span><span class="lyric-line">Dios se ha complacido</span><span class="lyric-line">X2</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span>              <span class="chord">Bm</span></span><span class="lyric-line">Bendita tú, los ángeles te admiran.</span><span class="chord-line"><span class="chord">C</span>        <span class="chord">Am</span>        <span class="chord">D</span></span><span class="lyric-line">Bendita tú, la Trinidad se goza en Ti</span><span class="lyric-line">X2</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span>        <span class="chord">Bm</span></span><span class="lyric-line">Cuando naciste Dios sonrió</span><span class="chord-line"><span class="chord">Am</span>        <span class="chord">D</span></span><span class="lyric-line">Al mirar tu alma</span><span class="lyric-line">X2</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span>              <span class="chord">Bm</span></span><span class="lyric-line">Bendita tú, los ángeles te admiran.</span><span class="chord-line"><span class="chord">C</span>        <span class="chord">Am</span>        <span class="chord">D</span></span><span class="lyric-line">Bendita tú, la Trinidad se goza en Ti</span><span class="lyric-line">X2</span></pre>
@@ -1991,6 +2075,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2009,6 +2096,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2027,6 +2117,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2045,6 +2138,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2063,6 +2159,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2081,6 +2180,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Felipe Gomez</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2099,6 +2201,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">A</span> <span class="chord">C#m</span> <span class="chord">D</span> <span class="chord">E</span></span><span class="lyric-line">Cordero de Dios tú que quitas el pecado</span><span class="chord-line"><span class="chord">A</span> <span class="chord">C#m</span> <span class="chord">D</span> <span class="chord">E</span></span><span class="lyric-line">Cordero de Dios tú que quitas el pecado</span><span class="chord-line"><span class="chord">D</span>       <span class="chord">A</span>         <span class="chord">E</span>           <span class="chord">A</span></span><span class="lyric-line">Ten piedad de nosotros</span><span class="chord-line"><span class="chord">D</span>       <span class="chord">A</span>         <span class="chord">E</span>           <span class="chord">A</span></span><span class="lyric-line">Ten piedad de nosotros</span><span class="chord-line"><span class="chord">A</span> <span class="chord">C#m</span> <span class="chord">D</span> <span class="chord">E</span></span><span class="lyric-line">Cordero de Dios tú que quitas el pecado</span><span class="chord-line"><span class="chord">A</span> <span class="chord">C#m</span> <span class="chord">D</span> <span class="chord">E</span></span><span class="lyric-line">Cordero de Dios tú que quitas el pecado</span><span class="chord-line"><span class="chord">D</span>       <span class="chord">A</span>         <span class="chord">E</span>           <span class="chord">A</span></span><span class="lyric-line">Danos la paz</span><span class="chord-line"><span class="chord">D</span>       <span class="chord">A</span>         <span class="chord">E</span>           <span class="chord">A</span></span><span class="lyric-line">Danos la paz</span></pre>
@@ -2115,6 +2220,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Verbum Dei</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2133,6 +2241,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Besmaya</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2151,6 +2262,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 1</em></p>
 <p><a
@@ -2169,6 +2283,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2187,6 +2304,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Abels Worship</em></p>
 <p><em>Capo: Capo 3</em></p>
 <p><a
@@ -2205,6 +2325,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Laraland</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2223,6 +2346,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 5</em></p>
 <p><a
@@ -2241,6 +2367,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Helena</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2259,6 +2388,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Marcos Barrientos</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2277,6 +2409,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 3</em></p>
 <p><a
@@ -2295,6 +2430,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2313,6 +2451,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2331,6 +2472,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Misión País</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2349,6 +2493,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: (original capo 4 D A Bm D A)</em></p>
 <p><a
@@ -2367,6 +2514,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 3</em></p>
 <p><a
@@ -2385,6 +2535,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2403,6 +2556,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Tuyo</em></p>
 <p><em>Capo: Really in A# no capo but better C capo 4</em></p>
 <p><a
@@ -2421,6 +2577,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2439,6 +2598,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2457,6 +2619,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2475,6 +2640,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2493,6 +2661,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: anonimo</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">Dm</span>        <span class="chord">Gm</span></span><span class="lyric-line">Terminó, ya no queda nada</span><span class="chord-line"><span class="chord">C</span>        <span class="chord">F</span></span><span class="lyric-line">Ya no hay nadie a quién buscar</span><span class="chord-line"><span class="chord">Gm</span>       <span class="chord">Dm</span></span><span class="lyric-line">Por ser fieles, se los llevaron</span><span class="chord-line"><span class="chord">Bbm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">Ya no volverán</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Dm</span>        <span class="chord">Gm</span></span><span class="lyric-line">Despojado, como del amado</span><span class="chord-line"><span class="chord">C</span>        <span class="chord">F</span></span><span class="lyric-line">Sin alforja, has de caminar</span><span class="chord-line"><span class="chord">Gm</span>       <span class="chord">Dm</span></span><span class="lyric-line">Si te acusan, ya no tienes miedo</span><span class="chord-line"><span class="chord">Bbm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">No le negarás</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Gm</span> <span class="chord">C</span> <span class="chord">F</span></span><span class="lyric-line">Coje tu cruz, y eres testigo</span><span class="chord-line"><span class="chord">Gm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">De lo más grande que han conocido</span><span class="chord-line"><span class="chord">Gm</span></span><span class="lyric-line">Y aunque hoy te maten</span><span class="chord-line"><span class="chord">C</span> <span class="chord">F</span> <span class="chord">Dm</span></span><span class="lyric-line">Te quedes solo</span><span class="chord-line"><span class="chord">Gm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">Tienes a Cristo, lo tienes todo</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Dm</span>        <span class="chord">Gm</span></span><span class="lyric-line">Esperar a que te señalen</span><span class="chord-line"><span class="chord">C</span>        <span class="chord">F</span></span><span class="lyric-line">Por ser solo un Cristiano más</span><span class="chord-line"><span class="chord">Gm</span>       <span class="chord">Dm</span></span><span class="lyric-line">Que ya no vive sin su Maestro</span><span class="chord-line"><span class="chord">Bbm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">No hace falta más</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Dm</span>        <span class="chord">Gm</span></span><span class="lyric-line">Y aunque quieran callar tus labios</span><span class="chord-line"><span class="chord">C</span>        <span class="chord">F</span></span><span class="lyric-line">Y te quiten la libertad</span><span class="chord-line"><span class="chord">Gm</span>       <span class="chord">Dm</span></span><span class="lyric-line">No tienes miedo, eres de Cristo</span><span class="chord-line"><span class="chord">Bbm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">No te dejará</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Gm</span> <span class="chord">C</span> <span class="chord">F</span></span><span class="lyric-line">Coje tu cruz, y eres testigo</span><span class="chord-line"><span class="chord">Gm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">De lo más grande que han conocido</span><span class="chord-line"><span class="chord">Gm</span></span><span class="lyric-line">Y aunque hoy te maten</span><span class="chord-line"><span class="chord">C</span> <span class="chord">F</span> <span class="chord">Dm</span></span><span class="lyric-line">Te quedes solo</span><span class="chord-line"><span class="chord">Gm</span> <span class="chord">A7</span> <span class="chord">Dm</span></span><span class="lyric-line">Tienes a Cristo, lo tienes todo</span></pre>
@@ -2509,6 +2680,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Vali Olguin</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2527,6 +2701,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2545,6 +2722,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jon Carlo</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2563,6 +2743,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2581,6 +2764,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: David Burke</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2599,6 +2785,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Pablo Martinez</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2618,6 +2807,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Francisco Alvarado</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2636,6 +2828,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2654,6 +2849,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hillsong</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2672,6 +2870,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 3</em></p>
 <p><a
@@ -2690,6 +2891,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Factor de Cambio</em></p>
 <p><em>Capo: Capo 4</em></p>
 <p><a
@@ -2708,6 +2912,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2726,6 +2933,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 2</em></p>
 <p><a
@@ -2744,6 +2954,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Athenas</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2762,6 +2975,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Un Corazon</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2780,6 +2996,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Sarai Rivera</em></p>
 <p><em>Capo: (original capo 5 C-G-Am-F)</em></p>
 <p><a
@@ -2798,6 +3017,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jeremy Riddle</em></p>
 <p><em>Capo: (original capo 3 D A G Em7 D)</em></p>
 <p><a
@@ -2816,6 +3038,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2834,6 +3059,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Elevation Worship</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2852,6 +3080,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2870,6 +3101,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2888,6 +3122,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2906,6 +3143,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Miel San Marcos</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2924,6 +3164,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Ignis</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2942,6 +3185,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Matt Maher</em></p>
 <p><em>Capo: Capo 3</em></p>
 <p><a
@@ -2960,6 +3206,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -2978,6 +3227,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 4</em></p>
 <p><a
@@ -2996,6 +3248,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3014,6 +3269,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 4</em></p>
 <p><a
@@ -3032,6 +3290,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: schoenstatt</em></p>
 <p><em>Capo: 4</em></p>
 <p><a
@@ -3050,6 +3311,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Majo y Dan</em></p>
 <p><em>Capo: 0 up to 4</em></p>
 <p><a
@@ -3068,6 +3332,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3086,6 +3353,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3104,6 +3374,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3122,6 +3395,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Generación 12</em></p>
 <p><em>Capo: Capo 3</em></p>
 <p><a
@@ -3140,6 +3416,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Santa Teresa</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3158,6 +3437,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3176,6 +3458,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Miel San Marcos</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3194,6 +3479,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jesús Adrián Romero</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3212,6 +3500,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Bethel</em></p>
 <p><em>Capo: Capo 5</em></p>
 <p><a
@@ -3230,6 +3521,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3248,6 +3542,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jaime Olguín</em></p>
 <p><em>Capo: 2</em></p>
 <p><a
@@ -3266,6 +3563,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: Capo 2</em></p>
 <p><a
@@ -3284,6 +3584,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hillsong</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3302,6 +3605,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Un Corazón</em></p>
 <p><em>Capo: Original (capo 2 F#m D, D A E)</em></p>
 <p><a
@@ -3320,6 +3626,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3338,6 +3647,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Helena</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3356,6 +3668,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3374,6 +3689,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3392,6 +3710,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3410,6 +3731,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Tuyo</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3428,6 +3752,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: María Olguín</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3446,6 +3773,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hermana Glenda</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3464,6 +3794,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3482,6 +3815,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Fray Nacho</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3500,6 +3836,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Bethel Music</em></p>
 <p><em>Capo: 0, 0-2</em></p>
 <p><a
@@ -3518,6 +3857,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Siquem</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3536,6 +3878,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3554,6 +3899,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Xavier Rudd</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3572,6 +3920,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Kenosis</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3590,6 +3941,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Marcos Barrientos</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3608,6 +3962,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">Em</span>     <span class="chord">C7</span>      <span class="chord">D</span> <span class="chord">Em</span></span><span class="lyric-line">Ruah Ruah Ruah</span><span class="lyric-line">Ruah Ruah Ruah</span><span class="lyric-line">Ruah Ruah Ruah</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Em</span>                         <span class="chord">C7</span></span><span class="lyric-line">No es el poder ni la fuerza</span><span class="chord-line"><span class="chord">D</span>                            <span class="chord">Em</span></span><span class="lyric-line">Sino el Espíritu de Dios x2</span><span class="verse-break"></span><span class="chord-line"><span class="chord">Em</span>     <span class="chord">C7</span>      <span class="chord">D</span> <span class="chord">Em</span></span><span class="lyric-line">Ruah Ruah Ruah</span><span class="lyric-line">Ruah Ruah Ruah</span><span class="lyric-line">Ruah Ruah Ruah</span></pre>
@@ -3624,6 +3981,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jaire</em></p>
 <p><em>Capo: 4</em></p>
 <p><a
@@ -3642,6 +4002,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Un Corazón</em></p>
 <p><em>Capo: 0 up to 4</em></p>
 <p><a
@@ -3660,6 +4023,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Servus Mariae</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3678,6 +4044,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jaime Olguín</em></p>
 <p><em>Capo: 2</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">A9</span>  <span class="chord">D/F#</span></span><span class="lyric-line">Santo, santo es el señor</span><span class="chord-line"><span class="chord">A9</span>   <span class="chord">D/F#</span></span><span class="lyric-line">Dios, Dios del universo</span><span class="chord-line"><span class="chord">E</span></span><span class="lyric-line">Llenos están</span><span class="chord-line"><span class="chord">D/F#</span>          <span class="chord">E</span></span><span class="lyric-line">El cielo y la tierra de tu gloria,</span><span class="chord-line"><span class="chord">D/F#</span>   <span class="chord">E</span>    <span class="chord">A9</span></span><span class="lyric-line">Hosanna en el cielo</span><span class="chord-line"><span class="chord">A9</span>   <span class="chord">D/F#</span></span><span class="lyric-line">Bendito, bendito el que viene</span><span class="chord-line"><span class="chord">A9</span> </span><span class="lyric-line">en nombre del Señor,</span><span class="chord-line"><span class="chord">D/F#</span></span><span class="lyric-line">Hosanna en el cielo</span><span class="chord-line"><span class="chord">E</span></span><span class="lyric-line">Llenos están</span><span class="chord-line"><span class="chord">D/F#</span>           <span class="chord">E</span></span><span class="lyric-line">El cielo y la tierra de tu gloria,</span><span class="chord-line"><span class="chord">D/F#</span>   <span class="chord">E</span>    <span class="chord">A9</span></span><span class="lyric-line">Hosanna en el cielo</span></pre>
@@ -3694,6 +4063,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">Em</span> <span class="chord">D</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">Chicos: Saaaanto</span><span class="lyric-line">Chicas: Saaaanto</span><span class="lyric-line">Chicos: Saaaanto</span><span class="lyric-line">Chicas: Saaaanto</span><span class="verse-break"></span><span class="lyric-line">STOP</span><span class="lyric-line">Chicos: El cielo y la tierra están llenos de tu Gloria</span><span class="verse-break"></span><span class="lyric-line">Chicas: Saaaanto</span><span class="lyric-line">Chicos: Saaaanto</span><span class="lyric-line">Chicas: Saaaanto</span><span class="lyric-line">Chicos: Saaaanto</span><span class="verse-break"></span><span class="lyric-line">STOP</span><span class="lyric-line">Chicas: Bendito el que viene en el nombre del señor</span><span class="verse-break"></span><span class="lyric-line">Chicos: Hosanna Hosanna Hosanna en las alturas</span><span class="lyric-line">Chicas: Hosanna Hosanna Hosanna en las alturas</span><span class="lyric-line">Todos: Hosanna Hosanna Hosanna en las alturas</span></pre>
@@ -3710,6 +4082,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3728,6 +4103,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3746,6 +4124,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Adrián</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3764,6 +4145,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3782,6 +4166,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3800,6 +4187,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Marcela Gándara</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3818,6 +4208,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 1</em></p>
 <p><a
@@ -3836,6 +4229,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3854,6 +4250,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3872,6 +4271,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Servus Mariae</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3890,6 +4292,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3908,6 +4313,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Luispo</em></p>
 <p><em>Capo: 1</em></p>
 <p><a
@@ -3926,6 +4334,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3944,6 +4355,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: mision_pais</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3962,6 +4376,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -3980,6 +4397,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Elevation Worship</em></p>
 <p><em>Capo: Really Capo 3 C F</em></p>
 <p><a
@@ -3998,6 +4418,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Teresa</em></p>
 <p><em>Capo: 1</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">Em</span> <span class="chord">C</span></span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">Em</span>-<span class="chord">D</span>-<span class="chord">C</span></span><span class="chord-line"><span class="chord">G</span>      <span class="chord">C</span></span><span class="lyric-line">Ven Espíritu Ven</span><span class="chord-line"><span class="chord">Em</span>     <span class="chord">C</span></span><span class="lyric-line">Ven Espíritu Ven</span><span class="chord-line"><span class="chord">G</span>      <span class="chord">C</span></span><span class="lyric-line">Ven Espíritu Ven</span><span class="chord-line">     <span class="chord">Em</span>-<span class="chord">D</span>-<span class="chord">C</span></span><span class="lyric-line">Llena mi corazón (bis x2)</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span>        <span class="chord">D</span></span><span class="lyric-line">Ven con tu fuego que me abrasa</span><span class="chord-line"><span class="chord">Em</span>      <span class="chord">C</span></span><span class="lyric-line">Ven con tu agua que me sana</span><span class="chord-line"><span class="chord">G</span>        <span class="chord">D</span></span><span class="lyric-line">Ven con tu brisa que me conforta</span><span class="chord-line"><span class="chord">Em</span>-<span class="chord">D</span>-<span class="chord">C</span></span><span class="lyric-line">Y refresca mi corazón</span></pre>
@@ -4014,6 +4437,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">C</span>         <span class="chord">D</span>     <span class="chord">Em</span> <span class="chord">C</span>          <span class="chord">D</span>    <span class="chord">Em</span></span><span class="lyric-line">VEN ESPÍRITU, VEN ESPÍRITU,</span><span class="chord-line"><span class="chord">C</span>           <span class="chord">D</span>      <span class="chord">Em</span> <span class="chord">D</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">VEN ESPÍRITU.</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">Ven, Espíritu divino, </span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">manda tu luz desde el cielo. </span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span> </span><span class="lyric-line">Padre amoroso del pobre; </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">don, en tus dones espléndido;</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">luz que penetra las almas; </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">fuente del mayor consuelo.</span><span class="verse-break"></span><span class="chord-line"><span class="chord">C</span>        <span class="chord">D</span>     <span class="chord">Em</span> <span class="chord">C</span>          <span class="chord">D</span>    <span class="chord">Em</span></span><span class="lyric-line">VEN ESPÍRITU, VEN ESPÍRITU,</span><span class="chord-line"><span class="chord">C</span>           <span class="chord">D</span>      <span class="chord">Em</span> <span class="chord">D</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">VEN ESPÍRITU.</span><span class="verse-break"></span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">Ven, dulce huésped del alma, </span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">descanso de nuestro esfuerzo,</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span> </span><span class="lyric-line">tregua en el duro trabajo, </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">brisa en las horas de fuego,</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">gozo que enjuga las lágrimas </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">y reconforta en los duelos.</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">Entra hasta el fondo del alma, </span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">divina luz, y enriquécenos.</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span> </span><span class="lyric-line">Mira el vacío del hombre </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">si tú le faltas por dentro; </span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">mira el poder del pecado </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">cuando no envías tu aliento</span><span class="verse-break"></span><span class="chord-line"><span class="chord">C</span>       <span class="chord">D</span>     <span class="chord">Em</span> <span class="chord">C</span>          <span class="chord">D</span>    <span class="chord">Em</span></span><span class="lyric-line">VEN ESPÍRITU, VEN ESPÍRITU,</span><span class="chord-line"><span class="chord">C</span>           <span class="chord">D</span>      <span class="chord">Em</span> <span class="chord">D</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">VEN ESPÍRITU.</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">Riega la tierra en sequía, </span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">sana el corazón enfermo,</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">lava las manchas, infunde</span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">calor de vida en el hielo, </span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">doma el espíritu indómito, </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">guía al que tuerce el sendero</span><span class="verse-break"></span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">Reparte tus siete dones </span><span class="chord-line"><span class="chord">G</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">según la fe de tus siervos;</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">por tu bondad y tu gracia</span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">dale al esfuerzo su mérito;</span><span class="chord-line"><span class="chord">Bm</span> <span class="chord">Em</span></span><span class="lyric-line">salva al que busca salvarse </span><span class="chord-line"><span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">y danos tu gozo eterno</span><span class="verse-break"></span><span class="verse-break"></span><span class="verse-break"></span><span class="chord-line"><span class="chord">C</span>        <span class="chord">D</span>     <span class="chord">Em</span> <span class="chord">C</span>          <span class="chord">D</span>    <span class="chord">Em</span></span><span class="lyric-line">VEN ESPÍRITU, VEN ESPÍRITU,</span><span class="chord-line"><span class="chord">C</span>           <span class="chord">D</span>      <span class="chord">Em</span> <span class="chord">D</span> <span class="chord">C</span> <span class="chord">D</span></span><span class="lyric-line">VEN ESPÍRITU.</span><span class="lyric-line">x4</span></pre>
@@ -4030,6 +4456,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4048,6 +4477,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <pre class="lyrics"><span class="chord-line"><span class="chord">C</span>             <span class="chord">G/B</span>       <span class="chord">Am</span></span><span class="lyric-line">Ven, Espíritu, Ven,</span><span class="chord-line">       <span class="chord">Em</span>                 <span class="chord">F</span></span><span class="lyric-line">Y lléname, Señor</span><span class="chord-line"><span class="chord">Dm7</span>              <span class="chord">G</span></span><span class="lyric-line">Con tu preciosa unción</span><span class="chord-line"><span class="chord">C</span>            <span class="chord">G/B</span>       <span class="chord">Am</span></span><span class="lyric-line">Ven, Espíritu, Ven,</span><span class="chord-line">       <span class="chord">Em</span>                 <span class="chord">F</span></span><span class="lyric-line">Y lléname, Señor</span><span class="chord-line"><span class="chord">Dm7</span>              <span class="chord">G</span></span><span class="lyric-line">Con tu preciosa unción</span><span class="verse-break"></span><span class="chord-line"><span class="chord">C</span>              <span class="chord">G/B</span></span><span class="lyric-line">Purifícame y lávame,</span><span class="chord-line">       <span class="chord">Am</span>                 <span class="chord">Em</span>               <span class="chord">F</span></span><span class="lyric-line">Renuévame, restáurame, Señor</span><span class="chord-line"><span class="chord">Dm7</span>        <span class="chord">G</span></span><span class="lyric-line">Con tu poder</span><span class="chord-line"><span class="chord">C</span>              <span class="chord">G/B</span></span><span class="lyric-line">Purifícame y lávame,</span><span class="chord-line">       <span class="chord">Am</span>                 <span class="chord">Em</span>               <span class="chord">F</span></span><span class="lyric-line">Renuévame, restáurame, Señor</span><span class="chord-line"><span class="chord">G</span>        <span class="chord">C</span></span><span class="lyric-line">Te quiero conocer</span></pre>
@@ -4064,6 +4496,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Generación 12</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4082,6 +4517,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4100,6 +4538,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4118,6 +4559,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4136,6 +4580,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Jaire</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4154,6 +4601,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4172,6 +4622,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: tuyo</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4190,6 +4643,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: Generacion 12</em></p>
 <p><em>Capo: 0 up to 3 (max 5)</em></p>
 <p><a
@@ -4208,6 +4664,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
@@ -4226,6 +4685,9 @@ Hide chords
 class="transpose-value">0</span>
 <button class="transpose-up">+</button></p>
 </div>
+<button class="toggle-columns">
+2 columns
+</button>
 <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
 <p><a
