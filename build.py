@@ -51,102 +51,7 @@ FLAT_TAGS = [
 
 TAG_ORDER = ["misa", "alabanza", "adoracion", "tema"]
 
-LYRICS_CSS = """
-.lyrics {
-  font-family: ui-monospace;
 
-  /* CRITICAL: override default pre spacing */
-  white-space: pre-wrap;
-  line-height: 1.0;
-
-  margin: 0;
-  padding: 0;
-}
-
-/* chord line (above lyrics) */
-.chord-line {
-  display: block;
-  line-height: 1.0;
-  margin-top: 0.3rem;
-  padding: 0;
-}
-
-/* lyric line */
-.lyric-line {
-  display: block;
-  line-height: 1.0;
-  margin: 0;
-  padding: 0;
-  font-size: large;
-}
-
-/* chord styling */
-.chord {
-  font-weight: bold;
-  color: #22a3a7;
-}
-
-.verse-break {
-  display: block;
-  margin-top: 2.0rem;
-}
-
-.song.no-chords .chord-line {
-  display: none !important;
-}
-
-.toggle-chords {
-  margin: 10px 0;
-  padding: 4px 8px;
-  cursor: pointer;
-}
-
-body.no-chords-global .chord-line {
-  display: none !important;
-}
-
-body.hide-all-chords .chord-line {
-  display: none;
-}
-
-/* local overrides */
-.song.force-show-chords .chord-line {
-  display: block !important;
-}
-
-.song.force-hide-chords .chord-line {
-  display: none !important;
-}
-
-.transpose-controls {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin: 6px 0;
-}
-
-.transpose-controls button {
-  font-size: 16px;
-  padding: 2px 8px;
-}
-
-.transpose-value {
-  font-weight: bold;
-  min-width: 24px;
-  text-align: center;
-}
-
-.song.two-columns .lyrics {
-  column-count: 2;
-  column-gap: 24px;
-}
-
-/* Optional: better readability */
-.song.two-columns .chord-line,
-.song.two-columns .lyric-line {
-  break-inside: avoid;
-}
-"""
 
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
 CHORD_RE = re.compile(
@@ -374,20 +279,48 @@ def is_chord_line(line):
 
 def format_lyrics(content):
     lines = []
+    content_lines = content.split("\n")
 
-    for line in content.split("\n"):
+    i = 0
+    while i < len(content_lines):
+        line = content_lines[i]
         escaped = html.escape(line, quote=False)
 
+        # -------------------------
+        # BLANK LINE (verse break)
+        # -------------------------
         if not line.strip():
-            # preserve blank lines (verse spacing)
-            lines.append('<span class="verse-break"></span>')
+            lines.append('<div class="verse-break"></div>')
+            i += 1
+            continue
 
-        elif is_chord_line(line):
-            wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
-            lines.append(f'<span class="chord-line">{wrapped}</span>')
+        # -------------------------
+        # CHORD LINE + LYRIC LINE PAIR
+        # -------------------------
+        if is_chord_line(line) and i + 1 < len(content_lines):
+            next_line = content_lines[i + 1]
+            escaped_next = html.escape(next_line, quote=False)
 
-        else:
-            lines.append(f'<span class="lyric-line">{escaped}</span>')
+            wrapped = CHORD_RE.sub(
+                r'<span class="chord">\1</span>',
+                escaped
+            )
+
+            lines.append(
+                '<div class="chord-lyric-line-pair">'
+                f'<span class="chord-line">{wrapped}</span>'
+                f'<span class="lyric-line">{escaped_next}</span>'
+                '</div>'
+            )
+
+            i += 2
+            continue
+
+        # -------------------------
+        # NORMAL LYRIC LINE
+        # -------------------------
+        lines.append(f'<span class="lyric-line">{escaped}</span>')
+        i += 1
 
     return '<pre class="lyrics">' + "".join(lines) + '</pre>'
 
