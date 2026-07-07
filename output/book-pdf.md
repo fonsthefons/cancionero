@@ -480,6 +480,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Matt Redman*
 
 *Capo: 0*
@@ -498,6 +504,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -516,6 +528,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0, 0-5*
@@ -534,6 +552,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Taizé*
 
 *Capo: 2*
@@ -550,6 +574,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -566,6 +596,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jaire*
 
 *Capo: 0*
@@ -584,6 +620,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 0*
@@ -602,6 +644,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: VIVAFE*
 
 *Capo: 0*
@@ -620,6 +668,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Maite Lopez*
 
 *Capo: 2*
@@ -638,6 +692,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Mater Salvatoris*
 
 *Capo: 0*
@@ -656,6 +716,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Sarai*
 
 [Link](https://open.spotify.com/track/4ThlBUbvmZlSheQWu0suz9?si=91739e6f1ba345f5)
@@ -672,6 +738,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Abels Worship*
 
 *Capo: 0, 0-2*
@@ -690,6 +762,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -708,6 +786,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 [Link](https://open.spotify.com/track/3NqWY64lVnau51oFM3wH5A?si=1cd02715ed394d8a)
@@ -724,6 +808,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Matt Maher*
 
 *Capo: 0*
@@ -742,6 +832,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -758,6 +854,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: HAM*
 
 *Capo: 0*
@@ -774,6 +876,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -792,6 +900,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -810,6 +924,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -828,6 +948,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -846,6 +972,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -864,6 +996,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Felipe Gomez*
 
 *Capo: 0*
@@ -882,6 +1020,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -898,6 +1042,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Verbum Dei*
 
 *Capo: 0*
@@ -916,6 +1066,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Besmaya*
 
 *Capo: 0*
@@ -934,6 +1090,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 1*
@@ -952,6 +1114,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -970,6 +1138,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Abels Worship*
 
 *Capo: Capo 3*
@@ -988,6 +1162,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Laraland*
 
 *Capo: 0*
@@ -1006,6 +1186,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 5*
@@ -1024,6 +1210,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Helena*
 
 *Capo: 0*
@@ -1042,6 +1234,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Marcos Barrientos*
 
 *Capo: 0*
@@ -1060,6 +1258,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 3*
@@ -1078,6 +1282,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1096,6 +1306,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 0*
@@ -1114,6 +1330,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Misión País*
 
 *Capo: 0*
@@ -1132,6 +1354,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: (original capo 4 D A Bm D A)*
@@ -1150,6 +1378,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 3*
@@ -1168,6 +1402,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1186,6 +1426,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Tuyo*
 
 *Capo: Really in A# no capo but better C capo 4*
@@ -1204,6 +1450,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1222,6 +1474,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1240,6 +1498,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1258,6 +1522,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 0*
@@ -1276,6 +1546,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: anonimo*
 
 *Capo: 0*
@@ -1292,6 +1568,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Vali Olguin*
 
 *Capo: 0*
@@ -1310,6 +1592,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 0*
@@ -1328,6 +1616,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jon Carlo*
 
 *Capo: 0*
@@ -1346,6 +1640,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 0*
@@ -1364,6 +1664,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: David Burke*
 
 *Capo: 0*
@@ -1382,6 +1688,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Pablo Martinez*
 
 *Capo: 0*
@@ -1400,6 +1712,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Francisco Alvarado*
 
 *Capo: 0*
@@ -1418,6 +1736,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1436,6 +1760,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hillsong*
 
 *Capo: 0*
@@ -1454,6 +1784,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 3*
@@ -1472,6 +1808,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Factor de Cambio*
 
 *Capo: Capo 4*
@@ -1490,6 +1832,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1508,6 +1856,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 2*
@@ -1526,6 +1880,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Athenas*
 
 *Capo: 0*
@@ -1544,6 +1904,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Un Corazon*
 
 *Capo: 0*
@@ -1562,6 +1928,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Sarai Rivera*
 
 *Capo: (original capo 5 C-G-Am-F)*
@@ -1580,6 +1952,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jeremy Riddle*
 
 *Capo: (original capo 3 D A G Em7 D)*
@@ -1598,6 +1976,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1616,6 +2000,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Elevation Worship*
 
 *Capo: 0*
@@ -1634,6 +2024,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1652,6 +2048,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1670,6 +2072,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1688,6 +2096,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Miel San Marcos*
 
 *Capo: 0*
@@ -1706,6 +2120,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Ignis*
 
 *Capo: 0*
@@ -1724,6 +2144,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Matt Maher*
 
 *Capo: Capo 3*
@@ -1742,6 +2168,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1760,6 +2192,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 4*
@@ -1778,6 +2216,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1796,6 +2240,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 4*
@@ -1814,6 +2264,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: schoenstatt*
 
 *Capo: 4*
@@ -1832,6 +2288,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Majo y Dan*
 
 *Capo: 0 up to 4*
@@ -1850,6 +2312,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -1868,6 +2336,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 0*
@@ -1886,6 +2360,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1904,6 +2384,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Generación 12*
 
 *Capo: Capo 3*
@@ -1922,6 +2408,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Santa Teresa*
 
 *Capo: 0*
@@ -1940,6 +2432,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -1958,6 +2456,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Miel San Marcos*
 
 *Capo: 0*
@@ -1976,6 +2480,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jesús Adrián Romero*
 
 *Capo: 0*
@@ -1994,6 +2504,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Bethel*
 
 *Capo: Capo 5*
@@ -2012,6 +2528,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -2030,6 +2552,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jaime Olguín*
 
 *Capo: 2*
@@ -2048,6 +2576,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: Capo 2*
@@ -2066,6 +2600,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hillsong*
 
 *Capo: 0*
@@ -2084,6 +2624,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Un Corazón*
 
 *Capo: Original (capo 2 F#m D, D A E)*
@@ -2102,6 +2648,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2120,6 +2672,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Helena*
 
 *Capo: 0*
@@ -2138,6 +2696,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2156,6 +2720,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2174,6 +2744,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2192,6 +2768,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Tuyo*
 
 *Capo: 0*
@@ -2210,6 +2792,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: María Olguín*
 
 *Capo: 0*
@@ -2228,6 +2816,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hermana Glenda*
 
 *Capo: 0*
@@ -2246,6 +2840,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2264,6 +2864,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Fray Nacho*
 
 *Capo: 0*
@@ -2282,6 +2888,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Bethel Music*
 
 *Capo: 0, 0-2*
@@ -2300,6 +2912,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Siquem*
 
 *Capo: 0*
@@ -2318,6 +2936,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2336,6 +2960,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Xavier Rudd*
 
 *Capo: 0*
@@ -2354,6 +2984,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Kenosis*
 
 *Capo: 0*
@@ -2372,6 +3008,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Marcos Barrientos*
 
 *Capo: 0*
@@ -2390,6 +3032,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2406,6 +3054,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jaire*
 
 *Capo: 4*
@@ -2424,6 +3078,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Un Corazón*
 
 *Capo: 0 up to 4*
@@ -2442,6 +3102,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Servus Mariae*
 
 *Capo: 0*
@@ -2460,6 +3126,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jaime Olguín*
 
 *Capo: 2*
@@ -2476,6 +3148,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2492,6 +3170,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 0*
@@ -2510,6 +3194,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -2528,6 +3218,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Adrián*
 
 *Capo: 0*
@@ -2546,6 +3242,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2564,6 +3266,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -2582,6 +3290,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Marcela Gándara*
 
 *Capo: 0*
@@ -2600,6 +3314,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 1*
@@ -2618,6 +3338,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2636,6 +3362,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2654,6 +3386,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Servus Mariae*
 
 *Capo: 0*
@@ -2672,6 +3410,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Batah*
 
 *Capo: 0*
@@ -2690,6 +3434,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Luispo*
 
 *Capo: 1*
@@ -2708,6 +3458,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Hakuna*
 
 *Capo: 0*
@@ -2726,6 +3482,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: mision_pais*
 
 *Capo: 0*
@@ -2744,6 +3506,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2762,6 +3530,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Elevation Worship*
 
 *Capo: Really Capo 3 C F*
@@ -2780,6 +3554,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Teresa*
 
 *Capo: 1*
@@ -2796,6 +3576,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2812,6 +3598,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Schoenstatt*
 
 *Capo: 0*
@@ -2830,6 +3622,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2846,6 +3644,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Generación 12*
 
 *Capo: 0*
@@ -2864,6 +3668,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2882,6 +3692,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: schoenstatt*
 
 *Capo: 0*
@@ -2900,6 +3716,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2918,6 +3740,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Jaire*
 
 *Capo: 0*
@@ -2936,6 +3764,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -2954,6 +3788,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: tuyo*
 
 *Capo: 0*
@@ -2972,6 +3812,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: Generacion 12*
 
 *Capo: 0 up to 3 (max 5)*
@@ -2990,6 +3836,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*
@@ -3008,6 +3860,12 @@
 
 <button class="toggle-chords">Hide chords</button>
 
+
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
 *Autor: popular*
 
 *Capo: 0*

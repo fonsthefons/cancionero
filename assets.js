@@ -1,3 +1,6 @@
+// -----------------------------
+// SHOW/HIDE CHORDS LOGIC
+// -----------------------------
 document.addEventListener("click", function (e) {
 
     // -------------------------
@@ -6,20 +9,21 @@ document.addEventListener("click", function (e) {
     if (e.target.id === "toggle-all-chords") {
 
         document.body.classList.toggle("hide-all-chords");
-
+    
         const hidden = document.body.classList.contains("hide-all-chords");
         e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
-
-        // ✅ RESET ALL LOCAL OVERRIDES
-        document.querySelectorAll(".song").forEach(song => {
-            song.classList.remove("force-hide-chords", "force-show-chords");
-
-            const btn = song.querySelector(".toggle-chords");
-            if (!btn) return;
-
-            btn.textContent = hidden ? "Show chords" : "Hide chords";
-        });
-
+    
+        // ONLY clear overrides (cheap, no heavy DOM work)
+        document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
+            .forEach(song => {
+                song.classList.remove("force-hide-chords", "force-show-chords");
+    
+                const btn = song.querySelector(".toggle-chords");
+                if (btn) {
+                    btn.textContent = hidden ? "Show chords" : "Hide chords";
+                }
+            });
+    
         return;
     }
 
@@ -58,5 +62,100 @@ document.addEventListener("click", function (e) {
     }
 
     btn.textContent = currentlyHidden ? "Hide chords" : "Show chords";
+
+});
+
+
+
+// -----------------------------
+// TRANSPOSE LOGIC
+// -----------------------------
+const NOTES_SHARP = ["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"];
+const NOTES_FLAT  = ["C","Db","D","Eb","E","F","Gb","G","Ab","A","Bb","B"];
+
+function transposeNote(note, shift) {
+    let scale = note.includes("b") ? NOTES_FLAT : NOTES_SHARP;
+    let index = scale.indexOf(note);
+
+    if (index === -1) return note;
+
+    let newIndex = (index + shift) % 12;
+    if (newIndex < 0) newIndex += 12;
+
+    return scale[newIndex];
+}
+
+// -----------------------------
+// TRANSPOSE CHORD
+// -----------------------------
+function transposeChord(chord, shift) {
+    return chord.replace(
+        /^([A-G](#|b)?)/,
+        (match) => transposeNote(match, shift)
+    );
+}
+
+// -----------------------------
+// APPLY TRANSPOSE TO SONG
+// -----------------------------
+function applyTranspose(song) {
+    const shift = parseInt(song.dataset.transpose || "0");
+
+    song.querySelectorAll(".chord").forEach(el => {
+        const original = el.dataset.original;
+        if (!original) return;
+
+        el.textContent = transposeChord(original, shift);
+    });
+
+    const label = song.querySelector(".transpose-value");
+    if (label) {
+        label.textContent = shift > 0 ? `+${shift}` : `${shift}`;
+    }
+}
+
+// -----------------------------
+// INITIALIZE ORIGINAL CHORDS
+// -----------------------------
+function initChords(song) {
+    song.querySelectorAll(".chord").forEach(el => {
+        if (!el.dataset.original) {
+            el.dataset.original = el.textContent.trim();
+        }
+    });
+
+    if (!song.dataset.transpose) {
+        song.dataset.transpose = "0";
+    }
+}
+
+// -----------------------------
+// EVENT HANDLING
+// -----------------------------
+document.addEventListener("click", function (e) {
+
+    const song = e.target.closest(".song");
+    if (!song) return;
+
+    // INIT ON FIRST USE
+    initChords(song);
+
+    // -------------------------
+    // TRANSPOSE UP
+    // -------------------------
+    if (e.target.closest(".transpose-up")) {
+        song.dataset.transpose = parseInt(song.dataset.transpose) + 1;
+        applyTranspose(song);
+        return;
+    }
+
+    // -------------------------
+    // TRANSPOSE DOWN
+    // -------------------------
+    if (e.target.closest(".transpose-down")) {
+        song.dataset.transpose = parseInt(song.dataset.transpose) - 1;
+        applyTranspose(song);
+        return;
+    }
 
 });

@@ -117,6 +117,24 @@ body.hide-all-chords .chord-line {
 .song.force-hide-chords .chord-line {
   display: none !important;
 }
+
+.transpose-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.transpose-controls button {
+  font-size: 16px;
+  padding: 2px 8px;
+}
+
+.transpose-value {
+  font-weight: bold;
+  min-width: 24px;
+  text-align: center;
+}
 """
 
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
@@ -423,6 +441,13 @@ def write_pdf_book(f, songs, grouped):
 
         # Toggle button
         f.write('<button class="toggle-chords">Hide chords</button>\n\n')
+        f.write("""
+<div class="transpose-controls">
+  <button class="transpose-down">−</button>
+  <span class="transpose-value">0</span>
+  <button class="transpose-up">+</button>
+</div>
+""")
 
         write_song_meta(f, h)
 
