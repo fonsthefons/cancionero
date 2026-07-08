@@ -2,6 +2,8 @@
   font-family: monospace;
   margin: 0;
   padding: 0;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 
@@ -79,20 +81,36 @@ body.hide-all-chords .chord-line,
 /* Two column songs */
 .song.two-columns .lyrics {
   column-count: 2;
-  column-gap: 24px;
+  column-gap: 2rem;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
+
+/* Keep chord + lyric groups together */
 .song.two-columns .chord-lyric-line-pair {
   display: block;
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
 }
 
+
+/* Allow wrapping but never break words */
 .song.two-columns .chord-line,
 .song.two-columns .lyric-line {
   break-inside: avoid;
-  white-space: nowrap;
-}</style>
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+
+/* On narrow screens use one column */
+/* @media (max-width: 700px) {
+  .song.two-columns .lyrics {
+    column-count: 1;
+  }
+} */</style>
 
 <script>
 // -----------------------------
