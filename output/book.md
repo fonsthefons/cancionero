@@ -9502,6 +9502,18 @@ Intro G D A# Bbm
 
 Spaces
 
+XDDDDDDDDDDDDX
+X            X
+XaaaaaaaaaaaaX
+XbbbbbbbbbbbbX
+G            X
+XDDDDDDDDDDDDX
+G    A       D
+XDDDDADDDDDDDX
+X            X
+XaaaaaaaaaaaaX
+XbbbbbbbbbbbbX
+
 G            D
 Con lo que soy
 Em    Bm
