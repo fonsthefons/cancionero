@@ -276,116 +276,17 @@ def is_chord_line(line):
     return has_chord
 
 
-# ONE OF THESE WILL WORK FOR THE 2 COLUMNS NO SPLIT BUT WE NEED TO BE 
-# CAREFUL SO THAT THE CHORD LINES ARE READ CORRECTLY
-# PROBABLY THE PROBLEM IS THAT THE LOGIC ASSUMES THAT ONLY THERE CAN ONLY BE 1 CHORD LINE AND THEN A LYRIC LINE
-# BUT THIS IS NOT THE CASE
-# def format_lyrics(content):
-#     lines = []
-#     content_lines = content.split("\n")
-
-#     i = 0
-#     while i < len(content_lines):
-#         line = content_lines[i]
-#         escaped = html.escape(line, quote=False)
-
-#         # -------------------------
-#         # BLANK LINE (verse break)
-#         # -------------------------
-#         if not line.strip():
-#             lines.append('<div class="verse-break"></div>')
-#             i += 1
-#             continue
-
-#         # -------------------------
-#         # CHORD LINE + LYRIC LINE PAIR
-#         # -------------------------
-#         if is_chord_line(line) and i + 1 < len(content_lines):
-#             next_line = content_lines[i + 1]
-#             escaped_next = html.escape(next_line, quote=False)
-
-#             wrapped = CHORD_RE.sub(
-#                 r'<span class="chord">\1</span>',
-#                 escaped
-#             )
-
-#             lines.append(
-#                 '<div class="chord-lyric-line-pair">'
-#                 f'<span class="chord-line">{wrapped}</span>'
-#                 f'<span class="lyric-line">{escaped_next}</span>'
-#                 '</div>'
-#             )
-
-#             i += 2
-#             continue
-
-#         # -------------------------
-#         # NORMAL LYRIC LINE
-#         # -------------------------
-#         lines.append(f'<span class="lyric-line">{escaped}</span>')
-#         i += 1
-
-#     return '<div class="lyrics">' + "".join(lines) + '</div>'
-
-
-# def format_lyrics(content):
-#     lines = []
-#     content_lines = content.split("\n")
-
-#     i = 0
-#     while i < len(content_lines):
-#         line = content_lines[i]
-#         escaped = html.escape(line, quote=False)
-
-#         # -------------------------
-#         # BLANK LINE
-#         # -------------------------
-#         if not line.strip():
-#             lines.append('<div class="verse-break"></div>')
-#             i += 1
-#             continue
-
-#         # -------------------------
-#         # CHORD LINE
-#         # -------------------------
-#         if is_chord_line(line):
-
-#             # case: chord + lyric pair
-#             if i + 1 < len(content_lines) and content_lines[i + 1].strip():
-#                 next_line = content_lines[i + 1]
-#                 escaped_next = html.escape(next_line, quote=False)
-
-#                 lines.append(
-#                     '<div class="line-pair">'
-#                     f'<div class="chord-line">{escaped}</div>'
-#                     f'<div class="lyric-line">{escaped_next}</div>'
-#                     '</div>'
-#                 )
-
-#                 i += 2
-#                 continue
-
-#             # case: chord line alone
-#             else:
-#                 lines.append(f'<div class="chord-line">{escaped}</div>')
-#                 i += 1
-#                 continue
-
-#         # -------------------------
-#         # NORMAL LYRIC LINE
-#         # -------------------------
-#         lines.append(f'<div class="lyric-line">{escaped}</div>')
-#         i += 1
-
-#     return '<div class="lyrics">' + "".join(lines) + '</div>'
-
 def format_lyrics(content):
     lines = []
 
     for line in content.split("\n"):
-        escaped = html.escape(line, quote=False)
+        working_line = line.replace("\xa0", " ")  # normalize spaces
+        stripped = working_line.strip()
 
-        if not line.strip():
+        # escape + preserve spacing
+        escaped = html.escape(working_line, quote=False).replace(" ", "&nbsp;")
+
+        if not stripped:
             # preserve blank lines (verse spacing)
             lines.append('<span class="verse-break"></span>')
 
@@ -396,7 +297,7 @@ def format_lyrics(content):
         else:
             lines.append(f'<span class="lyric-line">{escaped}</span>')
 
-    return '<pre class="lyrics">' + "".join(lines) + '</pre>'
+    return '<div class="lyrics">' + "".join(lines) + '</div>'
 
 
 def write_song_meta(f, song):
