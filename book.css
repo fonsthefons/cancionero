@@ -3,6 +3,7 @@ body {
   max-width: none !important;
   padding-left: 10px !important;
   padding-right: 10px !important;
+  overflow-x: auto;
 }
 
 .lyrics {
@@ -85,38 +86,50 @@ body.hide-all-chords .chord-line,
 }
 
 
-/* Two column songs */
+/* ================================= */
+/* Two column songs                  */
+/* ================================= */
+
+/*
+ Keep two columns side-by-side.
+ On narrow screens the user can scroll horizontally.
+*/
 .song.two-columns .lyrics {
   column-count: 2;
   column-gap: 2rem;
-  overflow: hidden;
+  column-width: 380px;
+
+  width: max-content;
 }
 
 
-/* Ensure everything respects column width */
-.song.two-columns .lyrics > *,
-.song.two-columns .verse,
-.song.two-columns .chord-lyric-line-pair,
-.song.two-columns .chord-line,
-.song.two-columns .lyric-line {
-  max-width: 100%;
-}
-
-
-/* Keep chord + lyric groups together */
+/*
+ Keep chord + lyric pairs together
+*/
 .song.two-columns .chord-lyric-line-pair {
-  display: block;
   break-inside: avoid-column;
   -webkit-column-break-inside: avoid;
 }
 
 
-/* Allow wrapping ONLY at spaces (never split words) */
+/*
+ Ensure content does not shrink
+*/
+.song.two-columns .lyrics > *,
+.song.two-columns .verse,
+.song.two-columns .chord-lyric-line-pair,
 .song.two-columns .chord-line,
 .song.two-columns .lyric-line {
-  break-inside: avoid;
-  white-space: normal;
+  max-width: none;
+}
+
+
+/*
+ Preserve chord alignment
+*/
+.song.two-columns .chord-line,
+.song.two-columns .lyric-line {
+  white-space: pre;
   overflow-wrap: normal;
   word-break: normal;
 }
-
