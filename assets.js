@@ -182,3 +182,101 @@ document.addEventListener("click", function (e) {
         return;
     }
 });
+
+
+// -----------------------------
+// -----------------------------
+// Search Logic
+// -----------------------------
+// -----------------------------
+function normalize(text) {
+    return text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+}
+
+
+function searchSongs(query) {
+
+    const q = normalize(query.trim());
+
+    if (!q) {
+        return [];
+    }
+
+    return SONG_INDEX.filter(song => {
+
+        const searchable =
+            normalize(
+                song.title +
+                " " +
+                song.author +
+                " " +
+                song.text
+            );
+
+        return searchable.includes(q);
+    });
+}
+
+
+
+function showSearchResults(results) {
+
+    const container =
+        document.getElementById("search-results");
+
+    container.innerHTML = "";
+
+
+    results.slice(0, 50).forEach(song => {
+
+        const link =
+            document.createElement("a");
+
+        link.href =
+            "#" + song.id;
+
+
+        link.textContent =
+            song.title +
+            (song.author
+                ? " — " + song.author
+                : "");
+
+
+        link.className =
+            "search-result";
+
+
+        container.appendChild(link);
+
+        container.appendChild(
+            document.createElement("br")
+        );
+    });
+}
+
+
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const box =
+            document.getElementById("search-box");
+
+
+        box.addEventListener(
+            "input",
+            () => {
+
+                const results =
+                    searchSongs(box.value);
+
+                showSearchResults(results);
+            }
+        );
+    }
+);

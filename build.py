@@ -1,5 +1,6 @@
 import argparse
 import html
+import json
 import os
 import re
 import shutil
@@ -275,70 +276,6 @@ def is_chord_line(line):
 
     return has_chord
 
-# # WORKING VERSION
-# def format_lyrics(content):
-#     lines = []
-
-#     pending_chord = None
-
-#     for line in content.split("\n"):
-#         # working_line = line.replace("\xa0", " ")  # normalize spaces
-#         working_line = line.replace("\xa0", " ").expandtabs(2)  # normalize spaces and tabs
-#         stripped = working_line.strip()
-
-#         # escape + preserve spacing
-#         escaped = html.escape(working_line, quote=False).replace(" ", "&nbsp;")
-
-#         if not stripped:
-#             # flush pending chord if it was not followed by lyrics
-#             if pending_chord:
-#                 lines.append(
-#                     '<div class="chord-lyric-line-pair">'
-#                     + pending_chord
-#                     + '</div>'
-#                 )
-#                 pending_chord = None
-
-#             # preserve blank lines
-#             lines.append('<span class="verse-break"></span>')
-
-#         elif is_chord_line(line):
-#             wrapped = CHORD_RE.sub(
-#                 r'<span class="chord">\1</span>',
-#                 escaped
-#             )
-
-#             pending_chord = (
-#                 f'<span class="chord-line">{wrapped}</span>'
-#             )
-
-#         else:
-#             lyric_line = (
-#                 f'<span class="lyric-line">{escaped}</span>'
-#             )
-
-#             if pending_chord:
-#                 lines.append(
-#                     '<div class="chord-lyric-line-pair">'
-#                     + pending_chord
-#                     + lyric_line
-#                     + '</div>'
-#                 )
-#                 pending_chord = None
-#             else:
-#                 lines.append(lyric_line)
-
-#     # flush trailing chord line at end of song
-#     if pending_chord:
-#         lines.append(
-#             '<div class="chord-lyric-line-pair">'
-#             + pending_chord
-#             + '</div>'
-#         )
-
-#     return '<div class="lyrics">' + "".join(lines) + '</div>'
-
-
 def format_lyrics(content):
     verses = []
     lines = []
@@ -425,6 +362,10 @@ def write_obsidian_book(f, songs, grouped):
 
     write_tag_sections(f, grouped, link)
     f.write("\n# All Songs\n\n")
+
+    # For searching songs in the doc
+    search_index = []
+
     for h in songs:
         # get autor
         autor = h.get("autor", "") or ""
@@ -436,9 +377,26 @@ def write_obsidian_book(f, songs, grouped):
         write_song_meta(f, h)
         f.write(h["content"] + "\n\n---\n\n")
 
+        search_index.append({
+            "id": h["anchor"],
+            "title": h["heading"],
+            "author": h.get("autor", ""),
+            "text": h["content"]
+        })
+
+    print("BUILDING SONG INDEX DOC")
+    with open("search-index.json", "w", encoding="utf-8") as f:
+        json.dump(search_index, f, ensure_ascii=False)
+
+
 
 def write_pdf_book(f, songs, grouped):
     f.write("# Hymn Book\n\n")
+    f.write("""
+<div id="search-container">
+  <input id="search-box" type="search" placeholder="Search songs...">
+  <div id="search-results"></div>
+</div>""")
 
     def link(song, indent=0):
         prefix = "  " * indent
@@ -449,6 +407,7 @@ def write_pdf_book(f, songs, grouped):
     write_tag_sections(f, grouped, link)
     
     f.write("\n# All Songs\n\n")
+
     for h in songs:
         # get autor
         autor = h.get("autor", "") or ""
@@ -492,6 +451,13 @@ def build_html():
             f.write(f"""
 <script>
 {script}
+</script>
+""")
+        with open("search-index.json", "r", encoding="utf-8") as search_js:
+            search_index_json = search_js.read()
+            f.write(f"""
+<script>
+const SONG_INDEX = {search_index_json};
 </script>
 """)
 

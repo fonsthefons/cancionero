@@ -1,6 +1,10 @@
 # Hymn Book
 
 
+<div id="search-container">
+  <input id="search-box" type="search" placeholder="Search songs...">
+  <div id="search-results"></div>
+</div>
 # Misa
 
 
