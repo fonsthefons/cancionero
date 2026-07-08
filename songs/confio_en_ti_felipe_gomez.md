@@ -15,83 +15,83 @@ C F Dm F G
  
          C 
 Confió en Ti
-                                        			F 
+                                              F 
 Y Estoy seguro pues Tú nunca me has fallado
-                                      				Dm
+                                              Dm
 Aunque camine a oscuras tu estas a mi lado
-        		F                           	G 
+            F                             G 
 Y ya no temo a nada, Sé que estas aquí
 
           C 
 Confió en Ti.
-                                    			F 
+                                          F 
 Ya no me apoyo en mi supuesta fortaleza
-                             			 Dm
+                                    Dm
 Ni me confunde mi pecado, mi tibieza
-      	    F                           		G 
+            F                               G 
 Eres amor tan solo amor confío en ti
           Em
 Confío en Ti
-                                            			Dm
+                                                  Dm
 Pues siendo Dios me tratas como a un buen amigo
-                                    			F 
+                                          F 
 Y de tu dulce  amor, he sido tu testigo
-       	    Dm                             		G 
+             Dm                                 G 
 Eres mi todo eres la fuerza que hay en mi
 
           C 
 Confío en Ti
-                                   			F 
+                                         F 
 porque tu sangre ha lavado mi tristeza
-                                		Dm
+                                    Dm
 Y no te asusta mi pecado mi tibieza
-         		F                               		G 
+             F                                   G 
 Eres tan grande, Eres tan Dios, Eres tan todo para mi
           C 
 Confío en ti
-                                       				F 
+                                               F 
 Porque la vida que me has dado, se renueva
-                                      				 Dm
+                                               Dm
 Y me has sacado de lo oscuro de esta cueva
-         		F                          			G 
+             F                                G 
 Y mendigando amores falsos vuelvo a ti
-          	F            	Em            	F       
+            F              Em              F       
 Confío en Ti, Confío en Ti, Confío en Ti, Confío
 
           C 
 Confío en Ti
-                                    			F 
+                                          F 
 Mi vida entera está sujeta en tus manos
-                                        			Dm
+                                              Dm
 Me has sostenido soy tu hijo y soy tu hermano
-        		F                           		G 
+            F                               G 
 Como temer  Si yo te tengo  junto a mí.
 
           Em
 Confío en Ti
-                                            				Dm
+                                                    Dm
 Pues siendo Dios me tratas como a un buen amigo
-                                    			F 
+                                          F 
 Y de tu dulce  amor, he sido tu testigo
-       	    Dm                             			G 
+             Dm                                   G 
 Eres mi todo eres la fuerza que hay en mi
 
           C 
 Confío en Ti
-                                   			F 
+                                         F 
 porque tu sangre ha lavado mi tristeza
-                                		Dm
+                                    Dm
 Y no te asusta mi pecado mi tibieza
-         		F                               		G 
+             F                                   G 
 Eres tan grande, Eres tan Dios, Eres tan todo para mi
           
 C 
 Confío en ti
-                                       				F 
+                                               F 
 Porque la vida que me has dado, se renueva
-                                      				 Dm
+                                               Dm
 Y me has sacado de lo oscuro de esta cueva
-         		F                          			G 
+             F                                G 
 Y mendigando amores falsos vuelvo a ti
-          	F            	Em            	F       		C
+            F              Em              F           C
 Confío en Ti, Confío en Ti, Confío en Ti, Confío

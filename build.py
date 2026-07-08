@@ -247,7 +247,7 @@ def extract_chords(token):
     # Find all chord-like matches inside the token
     return CHORD_RE.findall(token)
 
-# V2
+
 def is_chord_line(line):
     stripped = line.strip()
 
@@ -279,26 +279,64 @@ def is_chord_line(line):
 def format_lyrics(content):
     lines = []
 
+    pending_chord = None
+
     for line in content.split("\n"):
-        working_line = line.replace("\xa0", " ")  # normalize spaces
+        # working_line = line.replace("\xa0", " ")  # normalize spaces
+        working_line = line.replace("\xa0", " ").expandtabs(2)  # normalize spaces and tabs
         stripped = working_line.strip()
 
         # escape + preserve spacing
         escaped = html.escape(working_line, quote=False).replace(" ", "&nbsp;")
 
         if not stripped:
-            # preserve blank lines (verse spacing)
+            # flush pending chord if it was not followed by lyrics
+            if pending_chord:
+                lines.append(
+                    '<div class="chord-lyric-line-pair">'
+                    + pending_chord
+                    + '</div>'
+                )
+                pending_chord = None
+
+            # preserve blank lines
             lines.append('<span class="verse-break"></span>')
 
         elif is_chord_line(line):
-            wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
-            lines.append(f'<span class="chord-line">{wrapped}</span>')
+            wrapped = CHORD_RE.sub(
+                r'<span class="chord">\1</span>',
+                escaped
+            )
+
+            pending_chord = (
+                f'<span class="chord-line">{wrapped}</span>'
+            )
 
         else:
-            lines.append(f'<span class="lyric-line">{escaped}</span>')
+            lyric_line = (
+                f'<span class="lyric-line">{escaped}</span>'
+            )
+
+            if pending_chord:
+                lines.append(
+                    '<div class="chord-lyric-line-pair">'
+                    + pending_chord
+                    + lyric_line
+                    + '</div>'
+                )
+                pending_chord = None
+            else:
+                lines.append(lyric_line)
+
+    # flush trailing chord line at end of song
+    if pending_chord:
+        lines.append(
+            '<div class="chord-lyric-line-pair">'
+            + pending_chord
+            + '</div>'
+        )
 
     return '<div class="lyrics">' + "".join(lines) + '</div>'
-
 
 def write_song_meta(f, song):
     if song.get("autor"):

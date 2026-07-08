@@ -17,7 +17,7 @@ C
 Oh gloriosa cruz 
 Donde en mi lugar
 Con sangre y dolor 
-			F
+      F
 El hijo murió en soledad
 
 Oh sublime amor
@@ -25,13 +25,13 @@ Cómo comprender?
 Que dios entregó 
 Deseando tenerme con él
 
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
 
 
@@ -45,24 +45,24 @@ Oh cuán dulce paz
 Que llenó mi ser
 Am          
 Y por su perdón
-      G/B -   C      	    F
+      G/B -   C            F
 me puedo acercar otra vez, otra vez
 
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
 
 ( F  C  Am  G )
@@ -70,18 +70,18 @@ Ooo ooo oooo oooo
 ( F  C  Am  G )
 Ooo ooo oooo oooo
 
-F     		C           
+F         C           
 Todo mi corazón 
-  	Am      G
+    Am      G
 Te pertenece, señor
 
 (x4)
 
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser

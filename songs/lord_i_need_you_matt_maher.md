@@ -34,7 +34,7 @@ Oh God, how I need you
 
                G          C        G
 Where sin runs deep, Your grace is more
-      		       Em       D          C
+                 Em       D          C
 Where grace is found, is where you are
               G         C     G
 And where you are, Lord I am free,
@@ -59,7 +59,7 @@ And when I cannot stand I’ll fall on you,
 C      G          D         G                            C
 Jesus, you’re my hope and stay
 
-      	G           C    G    D
+        G           C    G    D
 Lord, I need you, oh I need you
 Em    C      G    D
 Every hour I need you

@@ -83,7 +83,14 @@ body.hide-all-chords .chord-line,
   column-gap: 24px;
 }
 
+.song.two-columns .chord-lyric-line-pair {
+  display: block;
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+}
+
 .song.two-columns .chord-line,
 .song.two-columns .lyric-line {
   break-inside: avoid;
+  white-space: nowrap;
 }

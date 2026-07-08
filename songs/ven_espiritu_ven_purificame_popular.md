@@ -16,13 +16,13 @@ song_tags:
   tema:
     - espiritu
 ---
-C   	      G/B       Am
+C           G/B       Am
 Ven, Espíritu, Ven,
        Em                 F
 Y lléname, Señor
 Dm7              G
 Con tu preciosa unción
-C   	      G/B       Am
+C           G/B       Am
 Ven, Espíritu, Ven,
        Em                 F
 Y lléname, Señor

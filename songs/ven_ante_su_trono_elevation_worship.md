@@ -14,7 +14,7 @@ song_tags:
 Really Capo 3 C F
 But no Capo G C (up to capo 2)
 
-G			C
+G      C
 Si abatido y dolido estás
 Y cansado del peso cargar
 Cristo nos llama
@@ -23,9 +23,9 @@ Si al final del camino estás
 Sin saber a hacia donde mirar
 Cristo nos llama
 
-G		C
+G    C
 Ven ante Su trono
-Em		     D
+Em         D
 El Padre te recibirá
 Con sangre preciosa
 Jesús borró nuestra maldad
@@ -38,19 +38,19 @@ Trae a toda tristeza al altar
 Nueva vida Jesús te dará
 Cristo nos llama
 
-G		C
+G    C
 Ven ante Su trono
-Em		     D
+Em         D
 El Padre te recibirá
 Con sangre preciosa
 Jesús borró nuestra maldad
 X2
 
-G			C
+G      C
 Oh, cuán hermoso
-Em			C
+Em      C
 Es nuestro Salvador
-Em	       D		  G
+Em         D      G
 Canta aleluya, Cristo vive
 Nadie es más grande
 Sólo Él es Señor
@@ -58,9 +58,9 @@ Canta aleluya, Cristo vive
 X4
 
 
-G		C
+G    C
 Ven ante Su trono
-Em		     D
+Em         D
 El Padre te recibirá
 Con sangre preciosa
 Jesús borró nuestra maldad

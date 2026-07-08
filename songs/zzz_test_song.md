@@ -13,18 +13,16 @@ song_tags:
 Intro G D A# Bbm
 
 Spaces
-
-XDDDDDDDDDDDDX
 X            X
 XaaaaaaaaaaaaX
-XbbbbbbbbbbbbX
 G            X
 XDDDDDDDDDDDDX
 G    A       D
 XDDDDADDDDDDDX
-X            X
-XaaaaaaaaaaaaX
-XbbbbbbbbbbbbX
+
+      C         D              F             G
+Mi vida está en tus manos para siempre Señor
+
 
 G            D
 Con lo que soy
@@ -53,7 +51,7 @@ G D A# Bbm
 
 Tabs
 
-G            D
+Em      C
 Con lo que soy
 Em    Bm
 Vengo ante ti

@@ -22,20 +22,20 @@ Am
 Hazme reír o hazme llorar
 C
 Inunda mi ser con tu
-			        G
+              G
 Poder y majestad
 
 F
 Late en mi tu corazón
 Am
 Brilla tu luz ardes en mi
-C				                    G
+C                            G
 Necesito más, quiero más de ti
 
 [pre-chorus]
-F 	      Am
+F         Am
 Lléname, lléname
-C 	       G
+C          G
 Lléname, lléname
 X2 (x4)
 

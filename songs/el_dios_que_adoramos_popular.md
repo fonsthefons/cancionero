@@ -15,36 +15,36 @@ song_tags:
 Preferred: Capo 2: A E F#m A E
 
 
-A				E
+A        E
 El Dios que hizo los cielos y la tierra
-			F#m
+      F#m
 Con el poder de su palabra
-		     D
+         D
 Y reina con autoridad
 
-A				       E
+A               E
 El Dios que aún los vientos le obedecen
-			F#m
+      F#m
 Una palabra es suficiente
-		   	D
+         D
 Para los muertos levantar
 D
 Nadie es como él
-	E
+  E
 Oh, gran yo soy
 
 A
 Tú eres el Dios que adoramos
-	  E
+    E
 Todopoderoso y soberano
-	          F#m    D	A		E
+            F#m    D  A    E
 Grande en misericordia y poder para salvar
 
 A
 Tú eres el Dios que adoramos
-	  E
+    E
 Quien derrotó la muerte y el pecado
-	          F#m    D	E		A
+            F#m    D  E    A
 Glorioso redentor y rey, te adoramos
 
 A E F#m A E
@@ -67,9 +67,9 @@ Tú eres el Dios que adoramos
 Quien derrotó la muerte y el pecado
 Glorioso redentor y rey, te adoramos
 
-D		E
+D    E
 A él sea la gloria y el poder
-	F#m		E
+  F#m    E
 Todo es de él y para él
 x4
 

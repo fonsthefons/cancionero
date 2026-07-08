@@ -11,65 +11,65 @@ song_tags:
     - comunion
 ---
 
-C                    		G                         F
+C                        G                         F
 
 Cuando pienso en tu amor y en tu fidelidad
-                	         G                       	        C
+                           G                                 C
 No puedo hacer más que postrarme y adorar
-                          		      G                           		Am
+                                    G                               Am
 Cuando pienso en como he sido y hasta donde me has traído
-              	      F
+                      F
 Me asombro de Ti
 
-Am         	G         	F
+Am           G           F
 Y no me quiero conformar
-Am         F             	      G
+Am         F                     G
 He probado y quiero más
 
-C                           		     G
+C                                    G
 Yo quiero enamorarme más de Ti
-                            		Am 
+                                Am 
 enséñame a amarte y a vivir
-                 	      G                  F
+                         G                  F
 Conforme a tu Justicia y tu verdad
-               G		     C
+               G         C
 con mi vida quiero adorar
-                                			G
+                                      G
 Con todo lo que tengo y lo que soy
-                              	      Am
+                                      Am
 todo lo que he sido te lo doy
-              G      	     F
+              G             F
 Que mi vida sea para ti
-       	G		C
+         G    C
 como un perfume a tus pies
 
-C                    	       G                          	       Am
+C                             G                                   Am
 Cuando pienso en tu cruz y en todo lo que has dado
-              	    F           G         	     C
+                    F           G                C
 Tu sangre por mi, por llevar mi pecado
-                     		       G                             		     Am
+                                G                                      Am
 Cuando pienso en tu mano, que hasta aquí hemos llegado
-              	F
+                F
 Por tu fidelidad
 
-Am         	G         	F
+Am           G           F
 Y no me quiero conformar
-Am         F             	      G
+Am         F                     G
 He probado y quiero más
 
-C                           		     G
+C                                    G
 Yo quiero enamorarme más de Ti
-                            		Am 
+                                Am 
 enséñame a amarte y a vivir
-                 	      G                  F
+                         G                  F
 Conforme a tu Justicia y tu verdad
-               G		     C
+               G         C
 con mi vida quiero adorar
-                                			G
+                                      G
 Con todo lo que tengo y lo que soy
-                              	      Am
+                                      Am
 todo lo que he sido te lo doy
-              G      	     F
+              G             F
 Que mi vida sea para ti
-       	G		C
+         G    C
 como un perfume a tus pies

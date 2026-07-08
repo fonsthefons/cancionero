@@ -14,61 +14,61 @@ song_tags:
 ---
 
 Capo on 4
-Am           		Dm                   		G
+Am               Dm                       G
 Saliendo del pretorio marcha una procesión,
-              		C        Em             		Am
+                  C        Em                 Am
 con rumbo al Calvario sufriendo va un varón.
-                  		   Dm                 	      G 
+                         Dm                         G 
 la cruz sobre su espalda llagándole está
-            		C  Em
+                C  Em
 no puede caminar.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede dar un paso y cae sobre el camino,
-             	    C        	Em              		Am
+                   C          Em                  Am
 recibe un latigazo sobre su cuerpo herido.
-           	    Dm                        		G 
+                 Dm                            G 
 No puede avanzar se escucha solo un grito:
-              		C  Em
+                  C  Em
 'levántate maldito'.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede ser maldito aquél que en su dolor,
-         			C              Em        Am
+               C              Em        Am
 exclama con un grito perdónales Señor,
-               		Dm                   		G 	Em
+                   Dm                       G   Em
 perdónales sus faltas no mires su actuación,
-                			Am
+                      Am
 de ellos ten compasión.
 
 
-Am           			Dm                   		     G
+Am                 Dm                            G
 !Sed¡, sed tengo de un amigo, sed tengo de un amor,
-              		     C        Em		Am
+                       C        Em    Am
 se tengo que un humano tenga compasion
-                  			Dm                 	     G 		Em
+                        Dm                        G     Em
 Que acepte ésta sangre que derramando estoy,
           Am
 por su salvación.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede dar un paso y cae sobre el camino,
-             	    C        	Em              		Am
+                   C          Em                  Am
 recibe un latigazo sobre su cuerpo herido.
-           	    Dm                        		G 
+                 Dm                            G 
 No puede avanzar se escucha solo un grito:
-              		C  Em
+                  C  Em
 'levántate maldito'.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede ser maldito aquél que en su dolor,
-         			C              Em        Am
+               C              Em        Am
 exclama con un grito perdónales Señor,
-               		Dm                   		G 
+                   Dm                       G 
 perdónales sus faltas no mires su actuación,
-                			Am
+                      Am
 de ellos ten compasión.

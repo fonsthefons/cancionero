@@ -584,25 +584,25 @@ A ti te alabo
 Intro: Em D-C
 
 [verse]
-Em			 C		         G		D
+Em       C             G    D
 Ante ti venimos, pues tu nos has llamado y nos atrae tu voz
-Em			   C			         G		D
+Em         C               G    D
 Como un solo pueblo danzando en tu presencia te damos el honor
-C			      D			          C
+C            D                C
 Sobre nosotros descienda el poder de tu Espiritu que
-	   	B7
+       B7
 Nos hará clamar
 
 [chorus]
-Em D	  C	   Em  D C
+Em D    C     Em  D C
 Abba padre. Abba Padre
-	     G
+       G
 Hoy tus hijos cantamos
-	 Am
+   Am
 Tu amor celebramos
-	D		B7
+  D    B7
 Clamando con una voz
-	Em D C     Em D C	
+  Em D C     Em D C  
 Abba Padre. Abba Padre
 
 ---
@@ -1648,85 +1648,85 @@ C F Dm F G
  
          C 
 Confió en Ti
-                                        			F 
+                                              F 
 Y Estoy seguro pues Tú nunca me has fallado
-                                      				Dm
+                                              Dm
 Aunque camine a oscuras tu estas a mi lado
-        		F                           	G 
+            F                             G 
 Y ya no temo a nada, Sé que estas aquí
 
           C 
 Confió en Ti.
-                                    			F 
+                                          F 
 Ya no me apoyo en mi supuesta fortaleza
-                             			 Dm
+                                    Dm
 Ni me confunde mi pecado, mi tibieza
-      	    F                           		G 
+            F                               G 
 Eres amor tan solo amor confío en ti
           Em
 Confío en Ti
-                                            			Dm
+                                                  Dm
 Pues siendo Dios me tratas como a un buen amigo
-                                    			F 
+                                          F 
 Y de tu dulce  amor, he sido tu testigo
-       	    Dm                             		G 
+             Dm                                 G 
 Eres mi todo eres la fuerza que hay en mi
 
           C 
 Confío en Ti
-                                   			F 
+                                         F 
 porque tu sangre ha lavado mi tristeza
-                                		Dm
+                                    Dm
 Y no te asusta mi pecado mi tibieza
-         		F                               		G 
+             F                                   G 
 Eres tan grande, Eres tan Dios, Eres tan todo para mi
           C 
 Confío en ti
-                                       				F 
+                                               F 
 Porque la vida que me has dado, se renueva
-                                      				 Dm
+                                               Dm
 Y me has sacado de lo oscuro de esta cueva
-         		F                          			G 
+             F                                G 
 Y mendigando amores falsos vuelvo a ti
-          	F            	Em            	F       
+            F              Em              F       
 Confío en Ti, Confío en Ti, Confío en Ti, Confío
 
           C 
 Confío en Ti
-                                    			F 
+                                          F 
 Mi vida entera está sujeta en tus manos
-                                        			Dm
+                                              Dm
 Me has sostenido soy tu hijo y soy tu hermano
-        		F                           		G 
+            F                               G 
 Como temer  Si yo te tengo  junto a mí.
 
           Em
 Confío en Ti
-                                            				Dm
+                                                    Dm
 Pues siendo Dios me tratas como a un buen amigo
-                                    			F 
+                                          F 
 Y de tu dulce  amor, he sido tu testigo
-       	    Dm                             			G 
+             Dm                                   G 
 Eres mi todo eres la fuerza que hay en mi
 
           C 
 Confío en Ti
-                                   			F 
+                                         F 
 porque tu sangre ha lavado mi tristeza
-                                		Dm
+                                    Dm
 Y no te asusta mi pecado mi tibieza
-         		F                               		G 
+             F                                   G 
 Eres tan grande, Eres tan Dios, Eres tan todo para mi
           
 C 
 Confío en ti
-                                       				F 
+                                               F 
 Porque la vida que me has dado, se renueva
-                                      				 Dm
+                                               Dm
 Y me has sacado de lo oscuro de esta cueva
-         		F                          			G 
+             F                                G 
 Y mendigando amores falsos vuelvo a ti
-          	F            	Em            	F       		C
+            F              Em              F           C
 Confío en Ti, Confío en Ti, Confío en Ti, Confío
 
 ---
@@ -1765,64 +1765,64 @@ Danos la paz
 [Link](https://open.spotify.com/track/2YMqbYD2G59IhYXMNLpYaP?si=a87453e85f144535)
 
 NO capo (MAX capo 2)
-	A	          E
+  A            E
 ¡Cristo Vive! Anúncialo
-           D		A
+           D    A
 Lo he oído en mi corazón
-	F#m	        C#m
+  F#m          C#m
 Y me habla de mi padre
-	  Bm		E
+    Bm    E
 Que me ama con locura
 
-	A	          E
+  A            E
 ¡Cristo Vive! Anúncialo
-           D		A
+           D    A
 Lo he oído en mi corazón
-F#m	        C#m
+F#m          C#m
 Lo he visto en mis hermanos
-Bm		E
+Bm    E
 Que comparten amor y gozo
 
-	D	E	A	F#m
+  D  E  A  F#m
 ¡Oh hermano! ¡Ven conmigo!
-	D	E		A	F#m
+  D  E    A  F#m
 Si es amor lo que mueve tu vida
-		D
+    D
 Muestra que Cristo
-	E     A-E-F#m
+  E     A-E-F#m
 Ya vive en tu corazón
-	D	      E		A D A E
+  D        E    A D A E
 ¡Mirad! El vive hoy ¡Anúncialo!
 
 A D A E
 
-	A	          E
+  A            E
 ¡Cristo Vive! Anúncialo
-           D		A
+           D    A
 Lo he oído en mi corazón
-	F#m	        C#m
+  F#m          C#m
 Pues la muerte nada puede
-	  Bm		E
+    Bm    E
 Porque el Padre lo resucita
-	A	          E
+  A            E
 Cristo Vive! Anúncialo
-           D		A
+           D    A
 Lo he oído en mi corazón
-	F#m	        C#m
+  F#m          C#m
 Y me grita en mis hermanos
-	  Bm		E
+    Bm    E
 Los que sufren y viven solos
 
 
-	D	E	A	F#m
+  D  E  A  F#m
 ¡Oh hermano! ¡Ven conmigo!
-	D	E		A	F#m
+  D  E    A  F#m
 Si es amor lo que mueve tu vida
-		D
+    D
 Muestra que Cristo
-	E     A-E-F#m
+  E     A-E-F#m
 Ya vive en tu corazón
-	D	      E		A D A E
+  D        E    A D A E
 ¡Mirad! El vive hoy ¡Anúncialo!
 
 A D A E
@@ -1838,73 +1838,73 @@ A D A-E-A
 
 [Link](https://open.spotify.com/track/3ieBy1I9Kxf5yJsBid2O6s?si=ceb705591acc4ba7)
 
-Am                	    C
+Am                      C
 Vives en cajas de metal
-Am                           	    C
+Am                                 C
 Miras con los ojos del que no ha aprendido a odiar
-G                       		         F
+G                                    F
 Y en tu cicatriz un incondicional
 
-Am                         		   C
+Am                                C
 Entro en tu palacio de cristal
-Am                          		       C
+Am                                     C
 Noto en mis entrañas Tu presencia colosal
-G                      				        F
+G                                      F
 Quiero darte todo pero siempre un poco más 
- G                      		    F             G
+ G                              F             G
 Aunque te conformes con mi debilidad
  
 
 F
 Siento que me puedo ahogar
-     C                    		G
+     C                        G
 Sino me lanzas la cuerda auxiliar
      F                         
 Y dime si seré capaz
-   C                      G                 		F
+   C                      G                     F
 De cruzar el mar que nos separa sin naufragar
 
 
-Am                      		 C
+Am                           C
 Nunca he visto nada similar
-Am                        		    C
+Am                                C
 Curas con tu sangre mi vacío existencial
-G                      	       F
+G                               F
 Vienes a sacarme del ojo del huracán
-G                      		F            	G
+G                          F              G
 Aunque yo te acuse de ser la tempestad
  
  
 
 F
 Siento que me puedo ahogar
-     C                    		G
+     C                        G
 Sino me lanzas la cuerda auxiliar
      F                         
 Y dime si seré capaz
-   C                      G                 		F
+   C                      G                     F
 De cruzar el mar que nos separa sin naufragar
  
  
 F
 He encontrado morada
-       G       		Am
+       G           Am
 En tus palabras y un hogar
-F                  		        G                 Am
+F                              G                 Am
 Solo, arrodillado frente un trozo de pan
-F                             			  G            	Am
+F                                     G              Am
 Vengo a que me expliques la parábola en la cual
-F             			 G
+F                    G
 Me olvido de todo y me atrevo con tu plan
  
  
 F
 Siento que me puedo ahogar
-     C                    		G
+     C                        G
 Sino me lanzas la cuerda auxiliar
      F                         
 Y dime si seré capaz
-   C                      G                 		F
+   C                      G                     F
 De cruzar el mar que nos separa sin naufragar
 
 F  G
@@ -2107,15 +2107,15 @@ Se  -  ñor, Tú eres Dios.
 
 Em
 
-Em			C
+Em      C
 No sé lo que viste en mí
-Em			C
+Em      C
 Para amarme tanto así
-Em		C
+Em    C
 Tanta paciencia
-Em		C
+Em    C
 Tanta misericordia
-	Am		    D
+  Am        D
 Me hiciste deseable para ti
 
 [Verso 2]
@@ -2126,25 +2126,25 @@ Me compraste con tu sangre
 Y me hiciste deseable para ti
 
 [Coro]
-G		D
+G    D
 Llévame señor
-			C
+      C
 A tus cámaras de amor
-			Am	  D
+      Am    D
 Donde me enamoro más, de ti
-G		D
+G    D
 Llévame señor
-			C
+      C
 Dentro de tu corazón
-		       Am        D
+           Am        D
 Yo encuentro mi lugar, en ti
 
 [Post-Coro 1]
-Em	        C
+Em          C
 Lai--lai-lai-lai
-D		Em
+D    Em
 Lai-lai--lai-lai-lai--lai
-	C
+  C
 Lai--lai-lai
 
 [Verso 1]
@@ -2162,25 +2162,25 @@ Me compraste con tu sangre
 Y me hiciste deseable para ti
 
 [Coro]
-G		D
+G    D
 Llévame señor
-			C
+      C
 A tus cámaras de amor
-			Am	  D
+      Am    D
 Donde me enamoro más, de ti
-G		D
+G    D
 Llévame señor
-			C
+      C
 Dentro de tu corazón
-		       Am        D
+           Am        D
 Yo encuentro mi lugar, en ti
 
 [Post-Coro 1]
-Em	        C
+Em          C
 Lai--lai-lai-lai
-D		Em
+D    Em
 Lai-lai--lai-lai-lai--lai
-	C
+  C
 Lai--lai-lai
 
 [Coro]
@@ -2419,48 +2419,48 @@ Corazones sedientos de paz.
 [Link](https://open.spotify.com/track/4i6pgmkSpkhFuGnNgDcDIF?si=3588657bb5df4525)
 
 C G Am F
-C		       G
+C           G
 Dios de mi corazón
-      Am		F
+      Am    F
 En ti encontré mi salvación
-        C		        G
+        C            G
 Tu gloria y majestad
-Am		        F
+Am            F
 Quiero siempre contemplar
 
-C		G
+C    G
 Eres Dios eterno
-		    Am
+        Am
 Solo tú eres bueno
-		F		C
+    F    C
 Dios incomparable eres tú
-C		  	G
+C        G
 Nunca me separaré
    Am 
 De tu gran amor
-		F		C
+    F    C
 Eres mi Señor, mi salvador
 
-C		         G
+C             G
 Tú eres mi adoración
-Am		         F
+Am             F
 Y mi eterna canción
-C		   G
+C       G
 Todo mi interior
-Am		  F
+Am      F
 Es cautivado por tu amor
 
-C		G
+C    G
 Eres Dios eterno
-		    Am
+        Am
 Solo tú eres bueno
-		F		C
+    F    C
 Dios incomparable eres tú
-C		  	G
+C        G
 Nunca me separaré
    Am 
 De tu gran amor
-		F		C
+    F    C
 Eres mi Señor, mi salvador
 
 ---
@@ -2736,36 +2736,36 @@ Que Yo encendí en tu corazón
 Preferred: Capo 2: A E F#m A E
 
 
-A				E
+A        E
 El Dios que hizo los cielos y la tierra
-			F#m
+      F#m
 Con el poder de su palabra
-		     D
+         D
 Y reina con autoridad
 
-A				       E
+A               E
 El Dios que aún los vientos le obedecen
-			F#m
+      F#m
 Una palabra es suficiente
-		   	D
+         D
 Para los muertos levantar
 D
 Nadie es como él
-	E
+  E
 Oh, gran yo soy
 
 A
 Tú eres el Dios que adoramos
-	  E
+    E
 Todopoderoso y soberano
-	          F#m    D	A		E
+            F#m    D  A    E
 Grande en misericordia y poder para salvar
 
 A
 Tú eres el Dios que adoramos
-	  E
+    E
 Quien derrotó la muerte y el pecado
-	          F#m    D	E		A
+            F#m    D  E    A
 Glorioso redentor y rey, te adoramos
 
 A E F#m A E
@@ -2788,9 +2788,9 @@ Tú eres el Dios que adoramos
 Quien derrotó la muerte y el pecado
 Glorioso redentor y rey, te adoramos
 
-D		E
+D    E
 A él sea la gloria y el poder
-	F#m		E
+  F#m    E
 Todo es de él y para él
 x4
 
@@ -3646,30 +3646,30 @@ hasta que el mundo arda por Él.
 
 G Em Am D
 
-        	G    	  Am	      G
+          G        Am        G
  I, the Lord of sea and sky,
-       	  Em           Am       D
+           Em           Am       D
  I have heard my people cry.
-    G            Em       	  C
+    G            Em           C
  All who dwell in dark and sin,
-        Am	    D
+        Am      D
  My hand will save. 
-        	 G    	       Am	G
+           G             Am  G
 I, who made the stars of night,
          Em              Am           D
 I will make their darkness bright.
      G            Em        C
 Who will bear my light to them?
- 	  Am	   D
+     Am     D
 Whom shall I send? 
 
 
 
 [Chorus]
 
-       	G     Em   Am   D7  G   Em   Am
+         G     Em   Am   D7  G   Em   Am
 Here I am, Lord.         Is it I,   Lord?
-D7        G               Em  	C        Am         D
+D7        G               Em    C        Am         D
  I have heard you calling in the night.
          G    Em   Am   D7      G      Em  Am
 I will go, Lord,         if you lead me.
@@ -3680,30 +3680,30 @@ D7       G     Em    Am     D7         G  Em  Am  D7
 
 [Verse 2]
 
-        	G    	  Am	        G
+          G        Am          G
 I, the Lord of snow and rain,
-      	  Em           Am         D
+          Em           Am         D
 I have borne my people’s pain.
     G         Em        C
 I have wept for love of them.
-          Am	 D
+          Am   D
 They turn away. 
-        	 G    	       Am	  G
+           G             Am    G
 I will break their hearts of stone,
-         	        Em            Am     D
+                   Em            Am     D
 Give them hearts for love alone.
 G            Em           C
 I will speak my words to them.
-            Am	   D
+            Am     D
 Whom shall I send? 
 
 
 
 [Chorus]
 
-       	G     Em   Am   D7  G   Em   Am
+         G     Em   Am   D7  G   Em   Am
 Here I am, Lord.         Is it I,   Lord?
-D7        G               Em  	C        Am         D
+D7        G               Em    C        Am         D
  I have heard you calling in the night.
          G    Em   Am   D7      G      Em  Am
 I will go, Lord,         if you lead me.
@@ -3717,30 +3717,30 @@ D7       G     Em    Am     D7         G  Em  Am  D7
 
 [Verse 3]
 
-        	G    	 Am	        G
+          G       Am          G
 I, the Lord of wind and flame,
           Em          Am         D
 I will send the poor and lame.
 G      Em        C
 I will set a feast for them.
-       Am	 D
+       Am   D
 My hand will save.
-       	 G    	    Am	      G
+          G          Am        G
 Finest bread I will provide,
-         	     Em           Am  D
+                Em           Am  D
 'Til their hearts be satisfied.
 G          Em      C
 I will give my life to them.
-             Am	   D
+             Am     D
 Whom shall I send? 
 
 
 
 [Chorus]
 
-       	G     Em   Am   D7  G   Em   Am
+         G     Em   Am   D7  G   Em   Am
 Here I am, Lord.         Is it I,   Lord?
-D7        G               Em  	C        Am         D
+D7        G               Em    C        Am         D
  I have heard you calling in the night.
          G    Em   Am   D7      G      Em  Am
 I will go, Lord,         if you lead me.
@@ -4315,24 +4315,24 @@ Your life is now my own
 Your will is what I want
 Jesus, have it all
 
-D		G
+D    G
 Jesus, have it all
-G		  D
+G      D
 Jesus, have it all
-			A
+      A
 To You belongs the glory
-			Em7
+      Em7
 The praise of all the world
 
-Em7		G
+Em7    G
 Jesus, have it all
-G	  A	 Bm
+G    A   Bm
 Jesus, have it all
-Bm			A
+Bm      A
 All blessing and all honor
-A		    em7
+A        em7
 All majesty and awe
-Em7		 D
+Em7     D
 Jesus, have it all
 
 Jesus, have Your church, Your love, Your bride
@@ -4347,60 +4347,60 @@ Let all that has been made
 Glorify Your name
 Jesus, have it all
 
-D		G
+D    G
 Jesus, have it all
-G		  D
+G      D
 Jesus, have it all
-			A
+      A
 To You belongs the glory
-			Em7
+      Em7
 The praise of all the world
 
-Em7		G
+Em7    G
 Jesus, have it all
-G	  A	 Bm
+G    A   Bm
 Jesus, have it all
-Bm			A
+Bm      A
 All blessing and all honor
-A		    em7
+A        em7
 All majesty and awe
-Em7		 D
+Em7     D
 Jesus, have it all
 
-D		G
+D    G
 Jesus, have it all
-G		  D
+G      D
 Jesus, have it all
-			A
+      A
 To You belongs the glory
-			Em7
+      Em7
 The praise of all the world
 
-Em7		G
+Em7    G
 Jesus, have it all
-G	  A	 Bm
+G    A   Bm
 Jesus, have it all
-Bm			A
+Bm      A
 All blessing and all honor
-A		    em7
+A        em7
 All majesty and awe
-Em7		 G
+Em7     G
 Jesus, have it all
-Bm		 A
+Bm     A
 Jesus, have it all
 
-		G
+    G
 Jesus, have it all
-Bm		 A
+Bm     A
 Jesus, have it all
 
 Ooh, ooh, ooh
 Ooh, ooh, ooh
-		G
+    G
 Yeah, all my days
-	Bm
+  Bm
 All my life
-	A
+  A
 Have it all
 
 All my days
@@ -4991,7 +4991,7 @@ Oh God, how I need you
 
                G          C        G
 Where sin runs deep, Your grace is more
-      		       Em       D          C
+                 Em       D          C
 Where grace is found, is where you are
               G         C     G
 And where you are, Lord I am free,
@@ -5016,7 +5016,7 @@ And when I cannot stand I’ll fall on you,
 C      G          D         G                            C
 Jesus, you’re my hope and stay
 
-      	G           C    G    D
+        G           C    G    D
 Lord, I need you, oh I need you
 Em    C      G    D
 Every hour I need you
@@ -5371,7 +5371,7 @@ C
 Oh gloriosa cruz 
 Donde en mi lugar
 Con sangre y dolor 
-			F
+      F
 El hijo murió en soledad
 
 Oh sublime amor
@@ -5379,13 +5379,13 @@ Cómo comprender?
 Que dios entregó 
 Deseando tenerme con él
 
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
 
 
@@ -5399,24 +5399,24 @@ Oh cuán dulce paz
 Que llenó mi ser
 Am          
 Y por su perdón
-      G/B -   C      	    F
+      G/B -   C            F
 me puedo acercar otra vez, otra vez
 
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
 
 ( F  C  Am  G )
@@ -5424,20 +5424,20 @@ Ooo ooo oooo oooo
 ( F  C  Am  G )
 Ooo ooo oooo oooo
 
-F     		C           
+F         C           
 Todo mi corazón 
-  	Am      G
+    Am      G
 Te pertenece, señor
 
 (x4)
 
-      	      F                       C                 		
+              F                       C                     
 Me rindo a ti, vengo a tus pies, 
-      Am           		G
+      Am               G
 todo lo que soy, todo tuyo es
-      	      F                       C                 		
+              F                       C                     
 Cristo jesús quiero responder 
-      Am           		G
+      Am               G
 A tu grande amor entrego mi ser
 
 ---
@@ -5839,50 +5839,50 @@ F#m E A D
 
 A
 You unravel me, with a melody
-D		E	A
+D    E  A
 You surround me with a song
 A
 Of deliverance, from my enemies
-       D		E	A
+       D    E  A
 Till all my fears are gone
 
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
 
 A
 From my mothers womb
-			C#m
+      C#m
 You have chosen me
-D	        E		    A
+D          E        A
 Love has called my name
-A					C#m
+A          C#m
 I've been born again, into a family
-	D		E		A
+  D    E    A
 Your blood flows through my veins
 
 
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
 
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
 
 F#m E A D
@@ -5891,48 +5891,48 @@ oooo oooo oo oo oo
 oooo oooo ooo oo ooo
 oooo oooo oo oo oo
 
-F#m		   E
+F#m       E
 You split the sea
-		A		D
+    A    D
 So I could walk right through it
-F#m			E		      A
+F#m      E          A
 My fears were drowned in perfect love
 
-F#m		   E
+F#m       E
 You rescued me
-	         A		C#m
+           A    C#m
 And I will stand and sing
-   D	    E	      A
+   D      E        A
 I am a child of God
 
 
-F#m		   E
+F#m       E
 You split the sea
-		A		D
+    A    D
 So I could walk right through it
 
-F#m			E		      A
+F#m      E          A
 My fears were drowned in perfect love
 
-F#m		   E
+F#m       E
 You rescued me
-	         A		C#m
+           A    C#m
 And I will stand and sing
-   D	    E	      A
+   D      E        A
 I am a child of God
- D	    E	      A
+ D      E        A
 I am a child of God (yes I am)
 
-   D	    E	      A
+   D      E        A
 I am a child of God
- D	    E	      A
+ D      E        A
 I am a child of God (yes I am)
-   D	    E	      A
+   D      E        A
 I am a child of God (full of faith yes)
 
-   D	    E	      A
+   D      E        A
 I am a child of God
-   D	    E	      A
+   D      E        A
 I am a child of God
 
 ---
@@ -6019,45 +6019,45 @@ y aun así dices que me amas, no sé que viste en mí.
 
 [Link](https://open.spotify.com/track/3GhRKiLRLQ9RnjZ5y6oAjg?si=b54ae5a5291e4dcb)
 
-G		C G		D
+G    C G    D
 Si aún no lo ves, pronto lo verás,
-Em	  C	G		D
+Em    C  G    D
 todo un Dios enamorado de ti.
-G		C G		D
+G    C G    D
 Habla bien de Él, que no mentirás
-Em		C G		D
+Em    C G    D
 todo lo hizo para hacerte feliz.
-	C		   Em
+  C       Em
 Lo que pasa es que el mundo
-      G		D
+      G    D
 no quiere escuchar, 
-	G	    C
+  G      C
 no vaya a ser que vea, 
-G			D
+G      D
 que entienda y se empape, 
-G	       C
+G         C
 de esta alegría 
-G			D
+G      D
 que nos quiere regalar, 
-Em			C
+Em      C
 no vaya a ser que vea 
-G			D
+G      D
 se convierta y se sane.
 
-G		C
+G    C
 No temas a la luz, 
-G		D
+G    D
 no temas a la paz, 
-Em		C
+Em    C
 no temas a la alegría 
 
-		G		D
+    G    D
 no tengas miedo a ser feliz, 
-	Em		C
+  Em    C
 porque Él es el camino 
-	G		D
+  G    D
 que se ha abierto para ti, 
-G			C
+G      C
 porque Él es el que es ahora 
 G
 puedes ser feliz.
@@ -6283,11 +6283,11 @@ Otra vez
 
 [Bridge]
 
-G			Em
+G      Em
 Toma las piezas de mi corazón
-G			D		    C
+G      D        C
 Que puedan ser una ofrenda de adoración
-Em			C
+Em      C
 Una ofrenda de adoración
 X4
 
@@ -6447,67 +6447,67 @@ Ya no llores más, y quédate en paz.
 
 [Link](https://open.spotify.com/track/5cS1TaKqN5z5brcTnG2Ory?si=1148070897a64923)
 
-C                    		G                         F
+C                        G                         F
 
 Cuando pienso en tu amor y en tu fidelidad
-                	         G                       	        C
+                           G                                 C
 No puedo hacer más que postrarme y adorar
-                          		      G                           		Am
+                                    G                               Am
 Cuando pienso en como he sido y hasta donde me has traído
-              	      F
+                      F
 Me asombro de Ti
 
-Am         	G         	F
+Am           G           F
 Y no me quiero conformar
-Am         F             	      G
+Am         F                     G
 He probado y quiero más
 
-C                           		     G
+C                                    G
 Yo quiero enamorarme más de Ti
-                            		Am 
+                                Am 
 enséñame a amarte y a vivir
-                 	      G                  F
+                         G                  F
 Conforme a tu Justicia y tu verdad
-               G		     C
+               G         C
 con mi vida quiero adorar
-                                			G
+                                      G
 Con todo lo que tengo y lo que soy
-                              	      Am
+                                      Am
 todo lo que he sido te lo doy
-              G      	     F
+              G             F
 Que mi vida sea para ti
-       	G		C
+         G    C
 como un perfume a tus pies
 
-C                    	       G                          	       Am
+C                             G                                   Am
 Cuando pienso en tu cruz y en todo lo que has dado
-              	    F           G         	     C
+                    F           G                C
 Tu sangre por mi, por llevar mi pecado
-                     		       G                             		     Am
+                                G                                      Am
 Cuando pienso en tu mano, que hasta aquí hemos llegado
-              	F
+                F
 Por tu fidelidad
 
-Am         	G         	F
+Am           G           F
 Y no me quiero conformar
-Am         F             	      G
+Am         F                     G
 He probado y quiero más
 
-C                           		     G
+C                                    G
 Yo quiero enamorarme más de Ti
-                            		Am 
+                                Am 
 enséñame a amarte y a vivir
-                 	      G                  F
+                         G                  F
 Conforme a tu Justicia y tu verdad
-               G		     C
+               G         C
 con mi vida quiero adorar
-                                			G
+                                      G
 Con todo lo que tengo y lo que soy
-                              	      Am
+                                      Am
 todo lo que he sido te lo doy
-              G      	     F
+              G             F
 Que mi vida sea para ti
-       	G		C
+         G    C
 como un perfume a tus pies
 
 ---
@@ -6574,27 +6574,27 @@ Solo + organo x1
 Todos 2 voces x1
 
 Todos 4 voces x1
-E	  F#m        Gm#         B7
+E    F#m        Gm#         B7
 Pre-eparad el camino al Señor 
-E	F#m       Gm#         E
+E  F#m       Gm#         E
 y escuchad la palabra de Dios. 
 
 
 Solo
-E	 		A
+E       A
 Voz que clama en el desierto:
-           E		     B7
+           E         B7
 "preparad el camino al Señor, 
-E	 		A
+E       A
 haced rectas todas las  se-endas, 
-E		B7	   E
+E    B7     E
 preparad el camino al Señor."
 
 
 Todos 4 voces x2
-E	  F#m        Gm#         B7
+E    F#m        Gm#         B7
 Pre-eparad el camino al Señor 
-E	F#m       Gm#         E
+E  F#m       Gm#         E
 y escuchad la palabra de Dios.
 
 ---
@@ -6834,56 +6834,56 @@ vida y corazón
 INTRO: Bm A  G  X2
 Bm
 Quien si no tú
-                         		G 
+                             G 
 que calmaste hasta los mares
-                     		       Em                F#
+                                Em                F#
 podrá calmar de mi alma la tempestad
 
 Bm
 Quien si no tú
-                      	G 
+                        G 
 que llenaste soledades
-                        	Em
+                          Em
 podrá dar a mi esperanza
         F#
 un nuevo hogar
                      G 
 Quien si no tú
-                         	A 
+                           A 
 que después de tantos años
-                          	        F#
+                                    F#
 que a pesar de mis rechazos
-                     		    Bm
+                             Bm
  sigues dándome tu luz
-            A	G 
+            A  G 
 Quien si no tú
-                      	        A 
+                                A 
 que a pesar de mis pecados
-                      	F#
+                        F#
 no te cruzaste de brazos
-                      	     Bm
+                             Bm
 y en tu abrazo descubrí
 
 PRECORO:
-                  A     		G   	F#
+                  A         G     F#
 que me amaste desde siempre
    Bm       A          G 
 y para siempre
 
 CORO:
-          	   	Bm        A         		    G 
+                 Bm        A                 G 
 Quédate Señor y habita de nuevo en mi alma
-         Em			       G
+         Em             G
 que sola quedó tras mi marcha
-      Bm               	     A 
+      Bm                      A 
 herida por falta de amor
-            	Bm
+              Bm
 Quédate Señor
     A                            G 
 inúndame con tu palabra
-     Em			         G
+     Em               G
 seréname, ven, tráeme calma
-   	 Bm                         		A 
+      Bm                             A 
 que quiero entregarme a tu Amor
 Bm  A   G 
 Quédate Señor
@@ -6892,9 +6892,9 @@ Bm  A   G
 ESTROFA II
 Bm
 Quién si no tú
-                         	   G 
+                              G 
 que saciaste a multitudes
-                     		     Em          			F#
+                              Em                F#
 podrá alimentar mi alma que hambrienta está
 
 Bm
@@ -6902,48 +6902,48 @@ Quién si no tú
                       
         G 
 que curaste uno y mil mares
-                        	Em
+                          Em
 podrá sanar mis heridas
-             	F#
+               F#
 quién si no tú
 
-              	G 
+                G 
 Quien si no tu
-                         		   A 
+                                A 
 que a pesar de estar tan lejos
-                          	         F#
+                                     F#
 caminaste hasta mi encuentro
-                     		    Bm
+                             Bm
 para hacerme descubrir
  
             G 
 que solo tú
         A
 eras lo que yo anhelaba
-                      	   F# 
+                           F# 
 y de nuevo intensamente 
         Bm
 en tu abrazo descubrí
 PRECORO:
-                  A     		G   	F#
+                  A         G     F#
 que me amaste desde siempre
    Bm       A          G 
 y para siempre
 
 CORO:
-          	   	Bm        A         		    G 
+                 Bm        A                 G 
 Quédate Señor y habita de nuevo en mi alma
-         Em			       G
+         Em             G
 que sola quedó tras mi marcha
-      Bm               	     A 
+      Bm                      A 
 herida por falta de amor
-            	Bm
+              Bm
 Quédate Señor
     A                            G 
 inúndame con tu palabra
-     Em			         G
+     Em               G
 seréname, ven, tráeme calma
-   	 Bm                         		A 
+      Bm                             A 
 que quiero entregarme a tu Amor
 Bm  A   G 
 Quédate Señor
@@ -7156,20 +7156,20 @@ Am
 Hazme reír o hazme llorar
 C
 Inunda mi ser con tu
-			        G
+              G
 Poder y majestad
 
 F
 Late en mi tu corazón
 Am
 Brilla tu luz ardes en mi
-C				                    G
+C                            G
 Necesito más, quiero más de ti
 
 [pre-chorus]
-F 	      Am
+F         Am
 Lléname, lléname
-C 	       G
+C          G
 Lléname, lléname
 X2 (x4)
 
@@ -7332,63 +7332,63 @@ Ruah Ruah Ruah
 [Link](https://open.spotify.com/track/7MvefvPSvGHDCVjg8ZQ0k6?si=a2c79c7553ee4b49)
 
 Capo on 4
-Am           		Dm                   		G
+Am               Dm                       G
 Saliendo del pretorio marcha una procesión,
-              		C        Em             		Am
+                  C        Em                 Am
 con rumbo al Calvario sufriendo va un varón.
-                  		   Dm                 	      G 
+                         Dm                         G 
 la cruz sobre su espalda llagándole está
-            		C  Em
+                C  Em
 no puede caminar.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede dar un paso y cae sobre el camino,
-             	    C        	Em              		Am
+                   C          Em                  Am
 recibe un latigazo sobre su cuerpo herido.
-           	    Dm                        		G 
+                 Dm                            G 
 No puede avanzar se escucha solo un grito:
-              		C  Em
+                  C  Em
 'levántate maldito'.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede ser maldito aquél que en su dolor,
-         			C              Em        Am
+               C              Em        Am
 exclama con un grito perdónales Señor,
-               		Dm                   		G 	Em
+                   Dm                       G   Em
 perdónales sus faltas no mires su actuación,
-                			Am
+                      Am
 de ellos ten compasión.
 
 
-Am           			Dm                   		     G
+Am                 Dm                            G
 !Sed¡, sed tengo de un amigo, sed tengo de un amor,
-              		     C        Em		Am
+                       C        Em    Am
 se tengo que un humano tenga compasion
-                  			Dm                 	     G 		Em
+                        Dm                        G     Em
 Que acepte ésta sangre que derramando estoy,
           Am
 por su salvación.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede dar un paso y cae sobre el camino,
-             	    C        	Em              		Am
+                   C          Em                  Am
 recibe un latigazo sobre su cuerpo herido.
-           	    Dm                        		G 
+                 Dm                            G 
 No puede avanzar se escucha solo un grito:
-              		C  Em
+                  C  Em
 'levántate maldito'.
 
 
-Am	      A7          		Dm                    		G
+Am        A7              Dm                        G
 !No¡, no puede ser maldito aquél que en su dolor,
-         			C              Em        Am
+               C              Em        Am
 exclama con un grito perdónales Señor,
-               		Dm                   		G 
+                   Dm                       G 
 perdónales sus faltas no mires su actuación,
-                			Am
+                      Am
 de ellos ten compasión.
 
 ---
@@ -7511,17 +7511,17 @@ Salve Reina, los que van a morir
 
 *Capo: 2*
 
-A9 	D/F#
+A9   D/F#
 Santo, santo es el señor
-A9 	D/F#
+A9   D/F#
 Dios, Dios del universo
 E
 Llenos están
-D/F# 			E
+D/F#       E
 El cielo y la tierra de tu gloria,
-D/F# 	E	A9
+D/F#   E  A9
 Hosanna en el cielo
-A9 	D/F#
+A9   D/F#
 Bendito, bendito el que viene
 A9 
 en nombre del Señor,
@@ -7529,9 +7529,9 @@ D/F#
 Hosanna en el cielo
 E
 Llenos están
-D/F# 			E
+D/F#       E
 El cielo y la tierra de tu gloria,
-D/F# 	E	A9
+D/F#   E  A9
 Hosanna en el cielo
 
 ---
@@ -7574,70 +7574,70 @@ Todos: Hosanna Hosanna Hosanna en las alturas
 [Link](https://open.spotify.com/track/3vzJgxhjKr0a45Rh2gzEqy?si=d3a60514098942ad)
 
 Original C0: G D Em C Am D
-G	   D		Em
+G     D    Em
 Cuando llegue la tormenta
-C	Am	       D
+C  Am         D
 Y no pueda ver la luz
-G	   D		Em
+G     D    Em
 Cuando vea en la inmensidad del mar
-        C	        Am	 D
+        C          Am   D
 El reflejo de mi fragilidad
 
-C	        D G		Em
+C          D G    Em
 Recuérdame que te mire a Ti
-C	D	   G	G7
+C  D     G  G7
 Solo así seré feliz
-C	D 	G		Em
+C  D   G    Em
 Sé mi faro y sé también mi luz
-	      C			D		G
+        C      D    G
 No hay amor como el que Tu nos das Jesús
 
-G	   D		Em
+G     D    Em
 Sé que me tiendes la mano
-C	Am	       D
+C  Am         D
 Y quieres mi felicidad
-G	   D		Em
+G     D    Em
 Que ahora pase lo que tenga que pasar
-        C	        Am	 	D
+        C          Am     D
 Que de todo algo bueno sacarás
 
-C	        D G		Em
+C          D G    Em
 Recuérdame que te mire a Ti
-C	D	   G	G7
+C  D     G  G7
 Solo así seré feliz
-C	D 	G		Em
+C  D   G    Em
 Sé mi faro y sé también mi luz
-	      C			D		G
+        C      D    G
 No hay amor como el que Tu nos das Jesús
 
 Am
 Cuéntame 
-B7		          Em
+B7              Em
 Que Tú calmaste tempestades
 
-	     C	  	     D
+       C           D
 Que anduviste en estos mares
-    G	          B7
+    G            B7
 y ahora vienes a salvarme
 
-C		        	   D
+C                 D
 Que el mar se hizo gota a gota
-G			Em	
+G      Em  
 Y contigo no hay derrotas
-C				D
+C        D
 Que en Ti se encuentra el consuelo
-			G    G7
+      G    G7
 Tú das Paz y das aliento
 
-C	        D G		Em
+C          D G    Em
 Recuérdame que te mire a Ti
-C	D	   G	G7
+C  D     G  G7
 Solo así seré feliz
-C	D 	G		Em
+C  D   G    Em
 Sé mi faro y sé también mi luz
-	      C			D		G
+        C      D    G
 No hay amor como el que Tu nos das Jesús
-	      C		    D		  G
+        C        D      G
 Y que el mástil de mi barco sea tu Cruz
 
 ---
@@ -7837,61 +7837,61 @@ También yo estaba allí
 [Link](https://open.spotify.com/track/7DXwh3ogyKUbQ62vEseObR?si=2e9b9c5bdf624780)
 
 Intro: E E7 A B7 C#m A B7 (x2)
-E                   E7    	   A         	   B7
+E                   E7         A              B7
 Sopla Señor te lo pido, quédate esta noche en mi alma
-C#m                        		A         		B7
+C#m                            A             B7
 Pues solo tu amor y abrigo, me dará consuelo y calma.
-E                   E7    	       A         	   B7
+E                   E7             A              B7
 Sopla Señor sopla fuerte, envolveme con tu brisa
 
-C#m                        		     A         		B7
+C#m                                 A             B7
  Y en tu Espíritu renovame, hazme libre en tu sonrisa.
-A                     	  B7
+A                         B7
 A pesar de mis caídas, hazme fiel a tus promesas.
-A                        	     B7
+A                               B7
 Sopla Señor en mi vida, y arrancame esta tristeza.
 E          A          B7          C#m
 Sopla, sopla Señor tu grandeza, sopla
-A            	      B7
+A                    B7
 Hazme fiel en mi pobreza, sopla.
 
-E                   E7    	   A         	   B7
+E                   E7         A              B7
 Sopla Señor en mi oído, sopla fuerte arranca el miedo
-C#m                        		A         		B7
+C#m                            A             B7
 Pues sin Ti me hallo perdido, sin tu luz me encuentro ciego.
-E                   E7    	       A         	   B7
+E                   E7             A              B7
 Sopla Señor y hazte viento, y bautízame en tu nombre
-C#m                        		     A         		B7
+C#m                                 A             B7
 Llámame a servir Maestro, hazme fiel entre los hombres.
-A                     	  B7
+A                         B7
 Toma mi vida en tus manos, mis sueños mi amor, mi todo
-A                        	     B7
+A                               B7
 Mi cansancio, mis pecado y moldéame a tu modo.
 E          A          B7          C#m
 Sopla, y bautízame en tu brisa, sopla
-A            	      B7
+A                    B7
 Renovame en tu sonrisa, sopla.
 
 
-E                   E7    	   A         	   B7
+E                   E7         A              B7
 Sopla Señor tu caricia, por sobre mis sentimientos
-C#m                        		A         		B7
+C#m                            A             B7
 Que sea el Ángel de Tú Misa, quien obre en todo momento.
-E                   E7    	       A         	   B7
+E                   E7             A              B7
 Sopla Señor y hazte canto, pon tu palabra en mis manos
-C#m                        		     A         		B7
+C#m                                 A             B7
 En ellas tu providencia y bendice a mis hermanos.
-A                     	  B7
+A                         B7
 Quiero ser de tu árbol rama, fruto nuevo de tu cielo
-A                     	  B7
+A                         B7
 Que madure en tu palabra, como un ave en pleno vuelo.
 E          A          B7          C#m
 Sopla, sopla Señor tu grandeza, sopla
-A            	      B7
+A                    B7
 Hazme fiel en mi pobreza, sopla.
-A            	      B7
+A                    B7
 y bautízame en tu brisa, sopla
-A            	      B7
+A                    B7
 Renovame en tu sonrisa, sopla.
 
 
@@ -7913,81 +7913,81 @@ Sopla, sopla, sopla Señor, sopla
 
 No Capo
 
-A 		F#m
+A     F#m
 Mi mejor amigo 
-D 	        E
+D           E
 decidió morir por mí, 
-A 		F#m
+A     F#m
 cargó con mi castigo 
-D 	        E
+D           E
 para que yo pudiera vivir.
-A 		F#m
+A     F#m
 No viniste a juzgarme, 
-D 	        E
+D           E
 me viniste a salvar.
-A 		F#m
+A     F#m
 Y ahora lo que más quieres 
-D 	        E
+D           E
 es que yo me deje amar.
 
 D    E F#m  D E A 
 Abrázame, hoy me dejo querer.
 
-A 		    D
+A         D
 Todos mis pecados arden 
-F#m 		  E
+F#m       E
 en el fuego de tu amor.
-A 		    D
+A         D
 Y siempre que yo me caiga 
-F#m 		  E
+F#m       E
 Tú me levantarás.
 
-A 		F#m
+A     F#m
 Coronado con espinas, 
-D 	        E
+D           E
 vestido de dolor,
-A 		F#m
+A     F#m
 en tu último suspiro 
 
-D 	        E
+D           E
 mi mundo se apagó.
 
-A 		F#m
+A     F#m
 Pero al tercer día, 
-D 	        E
+D           E
 un gran ruido se escuchó,
-A 		F#m
+A     F#m
 fueron ángeles cantando: 
-D 	        E
+D           E
 ¡Jesús resucitó!
 
 D    E F#m  D E A 
 Abrázame, hoy me dejo querer.
 
-A 		    D
+A         D
 Todos mis pecados arden 
-F#m 		  E
+F#m       E
 en el fuego de tu amor.
-A 		    D
+A         D
 Y siempre que yo me caiga 
-F#m 		  E
+F#m       E
 Tú me levantarás.
 
-A 		    		D
+A             D
 Quiero volver a nacer en ti, 
 F#m
 quiero volver a nacer en ti, 
-				E
+        E
 quiero volver a nacer en ti. 
 A
 ¡Ahora soy libre! 
 D
 ¡Ahora soy libre! 
-F#m			E
+F#m      E
 ¡Porque tú me haces libre!
-A 		    D
+A         D
 Todos mis pecados arden 
-F#m 		  E
+F#m       E
 en el fuego de tu amor.
 
 ---
@@ -8051,79 +8051,79 @@ Cada dia me atraías hacia ti.
 
 Em C G D x2
 
-Em            	    C
+Em                  C
 Hoy acepto seguirte
-G              	     D
+G                     D
 Dejar viejas certezas atrás
-Em               	          C                            	       G
+Em                           C                                     G
 Arriesgar mis verdades, abrazar la inquietud
-        	     D	Dsus
+               D  Dsus
 Ir más allá
 
-Em            		C
+Em                C
 Tus brazos extendidos
-G              	     D
+G                     D
 Marcan el horizonte al final
-Em            	        C
+Em                      C
 Encuentro tu mirada
-              	     G
+                     G
 Escapo del temor
-                     		          D	Dsus D
+                                   D  Dsus D
 Que me ancla en mi barca
 
-Bm             	Em
+Bm               Em
 Pero dudo y espero...
-Bm                  	  C                     		      D	Dsus D
+Bm                      C                               D  Dsus D
 Que el viento sople menos, que el sol alumbre más
 
 
-Em         	C
+Em           C
 Surge valentía
-         	        Em                 	        D
+                   Em                           D
 Disipa las dudas de este corazón
-        	     	      Em
+                       Em
 Que teme al cruzar
-           	  C              		  G 
+               C                    G 
 Las fronteras que limitan lo conocido
-          	        D                         Em
+                    D                         Em
 Allá mar adentro, sobre el agua caminar
 Em C G D x2
 
-Em			C
+Em      C
 En tus huellas mis pasos
-	    G			     D
+      G           D
 En tus manos la fuerza del mar
-Em               	          C                            	  G
+Em                           C                                G
 Como tú quiero amar las miserias del mundo
-			D
+      D
 Cómo tú a mi debilidad
 
-Bm             	Em
+Bm               Em
 Pero dudo y espero...
-Bm                  	  C                     		      D
+Bm                      C                               D
 Que el viento sople menos, que el sol alumbre más
 
 
-Em         	C
+Em           C
 Surge valentía
-         	        Em                 	        D
+                   Em                           D
 Disipa las dudas de este corazón
-        	     	      Em
+                       Em
 Que teme al cruzar
-           	  C              		  G 
+               C                    G 
 Las fronteras que limitan lo conocido
-          	        D                         Em
+                    D                         Em
 Allá mar adentro, sobre el agua caminar
 
-Em         	C
+Em           C
 Surge valentía
-         	        		Em
+                       Em
 Despunta en mi tu Modo
-       		      D      		Em
+                 D          Em
 Tus huellas tus yagas, tu forma de amar
-           	  C
+               C
 Y cuando ya cansado
-		  D
+      D
 Peligre Tropezar 
 Em   C G D
 Surge valentía
@@ -8179,27 +8179,27 @@ Que esto me basta
 
 [Link](https://open.spotify.com/track/7oQZ8IF4QF9vjrPD9u0p34?si=c0ea2df122f34523)
 
-G	       C
+G         C
 Tu eres mi respirar
-G	       C
+G         C
 Tu eres mi respirar
-G      D	     Em	      C	      D
+G      D       Em        C        D
 Dios tu presencia vive en mi
 
-G	       C
+G         C
 Tu eres mi pan Señor
-G	       C
+G         C
 Tu eres mi pan Señor
-G      D	     Em	      C	      D
+G      D       Em        C        D
 Dios tus palabras son para mi
 
 G D Em D
 Y yo
-	      C G D
+        C G D
 Te anhelo Señor
 G D Em D
 Y estoy
-	      C G D
+        C G D
 Perdido sin ti
 
 ---
@@ -8265,87 +8265,87 @@ Yo te responderé
 Original: A E F#m D
 
 A
-	    E  F#m           D	          A
+      E  F#m           D            A
 Tu Misericordia eternamente cantaré
-	    E  F#m           D	          F#m
+      E  F#m           D            F#m
 Tu Misericordia eternamente cantaré
-	E   A	    E		  F#m    - D
+  E   A      E      F#m    - D
 Tú Señor sabes, puedes y me amas
-          E	      A	A	- D
+          E        A  A  - D
 Tu amor colma mi alma
-	  E	 		A
+    E       A
 Gracias por la vida
-	  E		F#m
+    E    F#m
 Por cada uno de los días
-	         D
+           D
 Gracias, Señor
-		           E
+               E
 Pues siempre has estado Tú
 
 
-A	       E		       F#m
+A         E           F#m
 Tus planes son perfectos
-		   D				A
+       D        A
 Todo está en tus manos, ya no hay más temor
-		E		  F#m
+    E      F#m
 De alegría y paz llenas el corazón
-	  E	      A
+    E        A
 En ti Jesús confío
 X2
 
 A E F#m D
 
 A
-	    E  F#m           D	          A
+      E  F#m           D            A
 Tu Misericordia eternamente cantaré
-	    E  F#m           D	          F#m
+      E  F#m           D            F#m
 Tu Misericordia eternamente cantaré
-	E   A	    E		  F#m    - D
+  E   A      E      F#m    - D
 Tú Señor sabes, puedes y me amas
-          E	      A       A	- D
+          E        A       A  - D
 Tu amor colma mi alma
-	  E	 		A
+    E       A
 Gracias por la vida
-	  E		F#m
+    E    F#m
 Por cada uno de los días
-	         D
+           D
 Gracias, Señor
-		           E
+               E
 Pues siempre has estado Tú
 
-A	       E		       F#m
+A         E           F#m
 Tus planes son perfectos
-		   D				A
+       D        A
 Todo está en tus manos, ya no hay más temor
-		E		  F#m
+    E      F#m
 De alegría y paz llenas el corazón
-	  D	      A
+    D        A
 En ti Jesús confío
 X4
-	  E	     F#m
+    E       F#m
 En ti Jesús confío
-	  D	      A
+    D        A
 En ti Jesús confío
-	  E	      F#m
+    E        F#m
 En ti Jesús confío
 
 
 
-	  D	
+    D  
 En ti Jesús
-        E	  A	      E		  F#m  D
+        E    A        E      F#m  D
 Pues tú Señor, sabes, puedes y me amas
-          E	      A    A	D
+          E        A    A  D
 Tu amor colma mi alma
-	  E	 	A
+    E     A
 Gracias por la vida
-	  E		F#m
+    E    F#m
 Por cada uno de los días
-	         D
+           D
 Gracias, Señor
-			E
+      E
 Pues siempre has estado Tú
-	         A
+           A
 Has estado Tú
 
 ---
@@ -8508,70 +8508,70 @@ no querrías ver nada más
 [Link](https://open.spotify.com/track/2xFpNxFnp9LhOJ4Pc1LRK5?si=21ec0fc3cbf64c26)
 
 Am G Am G
-Am		G	 C
+Am    G   C
 Mi alma tiene sed de ti
-Dm		       G
+Dm           G
 Del Dios que me llama
-F			       G
+F             G
 Que me acerca a su presencia
-F			  G
+F        G
 Para decirme que me ama
 
-Am		G	 C
+Am    G   C
 Mi alma tiene sed de ti
-Dm		       	        G
+Dm                     G
 Como tierra reseca y cansada
-F		         G
+F             G
 Ven Dios Trae tu cántaro
-F			        G
+F              G
 Derrama el canto de tu agua
 
 (Estribillo x2)
-C			G
-Ven soplo hasta mi alma 		(ven soplo)
-F		       C
-Ven Paloma sobre las aguas 	(ven paloma)
-Am		     Dm
-Ven Viento sobre la casa		(ven)
+C      G
+Ven soplo hasta mi alma     (ven soplo)
+F           C
+Ven Paloma sobre las aguas   (ven paloma)
+Am         Dm
+Ven Viento sobre la casa    (ven)
 Em
 Ven Fuego
 F
 Ven Fuego
        G
-De Libertad					
+De Libertad          
 
-Am		  G	   C
+Am      G     C
 Mi alma tiene sed de ti
-Dm		         G
+Dm             G
 Hoy levanta la mirada
-F		    G
+F        G
 Para llenar su rostro
-F		    	 G
+F           G
 De la luz de madrugada
 
-Am		  G	   C
+Am      G     C
 Mi alma tiene sed de ti
-Dm		                   G
+Dm                       G
 De la soledad donde se ama
-F		    	         G
+F                   G
 Del silencio que es presencia
-F		            G
+F                G
 Del Dios que me abraza
 
 (Estribillo x2)
-C			G
-Ven soplo hasta mi alma 		(ven soplo)
-F		       C
-Ven Paloma sobre las aguas 	(ven paloma)
-Am		     Dm
-Ven Viento sobre la casa		(ven)
+C      G
+Ven soplo hasta mi alma     (ven soplo)
+F           C
+Ven Paloma sobre las aguas   (ven paloma)
+Am         Dm
+Ven Viento sobre la casa    (ven)
 Em
 Ven Fuego
 F
 Ven Fuego
        G
 De Libertad
-Am		  G	   C
+Am      G     C
 Mi alma tiene sed de ti
 
 ---
@@ -8633,7 +8633,7 @@ Tu solo alábale
 Really Capo 3 C F
 But no Capo G C (up to capo 2)
 
-G			C
+G      C
 Si abatido y dolido estás
 Y cansado del peso cargar
 Cristo nos llama
@@ -8642,9 +8642,9 @@ Si al final del camino estás
 Sin saber a hacia donde mirar
 Cristo nos llama
 
-G		C
+G    C
 Ven ante Su trono
-Em		     D
+Em         D
 El Padre te recibirá
 Con sangre preciosa
 Jesús borró nuestra maldad
@@ -8657,19 +8657,19 @@ Trae a toda tristeza al altar
 Nueva vida Jesús te dará
 Cristo nos llama
 
-G		C
+G    C
 Ven ante Su trono
-Em		     D
+Em         D
 El Padre te recibirá
 Con sangre preciosa
 Jesús borró nuestra maldad
 X2
 
-G			C
+G      C
 Oh, cuán hermoso
-Em			C
+Em      C
 Es nuestro Salvador
-Em	       D		  G
+Em         D      G
 Canta aleluya, Cristo vive
 Nadie es más grande
 Sólo Él es Señor
@@ -8677,9 +8677,9 @@ Canta aleluya, Cristo vive
 X4
 
 
-G		C
+G    C
 Ven ante Su trono
-Em		     D
+Em         D
 El Padre te recibirá
 Con sangre preciosa
 Jesús borró nuestra maldad
@@ -8721,7 +8721,7 @@ Y refresca mi corazón
 
 *Capo: 0*
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -8739,7 +8739,7 @@ luz que penetra las almas;
 C D
 fuente del mayor consuelo.
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -8771,7 +8771,7 @@ mira el poder del pecado
 C D
 cuando no envías tu aliento
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -8804,7 +8804,7 @@ y danos tu gozo eterno
 
 
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -8820,21 +8820,21 @@ x4
 
 [Link](https://open.spotify.com/track/5EOuojJVIrVyHcMoMVjQQB?si=a76b2cec4b4d416e)
 
-C	   F	     C
+C     F       C
 Ven Espíritu Divino
 F                G                Am       F             C
 Manda un rayo de tu lumbre desde el cielo
-C	      F	     	     C
+C        F              C
 Ven, oh Padre de los pobres
-F            G                    Am    F             C		G
+F            G                    Am    F             C    G
 Luz profunda en tus dones Dios espléndido
 C                   F                      C7
 No hay consuelo como el tuyo
-F              G         	Am           F           C
+F              G           Am           F           C
 Dulce huésped de las almas mi descanso
 C            F                     C7
 Suave tregua en la fatiga
-F                   G     Am	F
+F                   G     Am  F
 Fresco en horas de bochorno
                    C  G  (G C)
 Paz del llanto
@@ -8854,9 +8854,9 @@ Llueve, Tú, nuestra sequía, ven y sánanos
 
 C          F                      C
 Toma todo lo que es rígido
-F               G                    	Am   	F               C
+F               G                      Am     F               C
 Funde el témpano encamina lo extraviado
-C              F                       	     C
+C              F                              C
 Da a los fieles que en Ti esperan
 F            G                 Am  F
 Tus sagrados siete dones 
@@ -8877,13 +8877,13 @@ alegría.               Amén
 
 *Capo: 0*
 
-C   	      G/B       Am
+C           G/B       Am
 Ven, Espíritu, Ven,
        Em                 F
 Y lléname, Señor
 Dm7              G
 Con tu preciosa unción
-C   	      G/B       Am
+C           G/B       Am
 Ven, Espíritu, Ven,
        Em                 F
 Y lléname, Señor
@@ -9463,31 +9463,33 @@ x6
 
 [Link](https://open.spotify.com/track/17ciTNtUcQxJ5gRJuLtbNX?si=a0c8c30edc634d0d)
 
-G		D
+G   D
 Con lo que soy
-Em		Bm
+G   D
+Con lo que soy
+Em    Bm
 Vengo ante ti
-      C			  D
+      C        D
 Mi vida está en tus manos
 G
 Tómala
 
-G		D   Em	   Bm
+G    D   Em     Bm
 Tú sabes bien, Señor que soy
          C
 Obstáculo en tu obra
-	Am		D
+  Am    D
 Sin méritos ni fuerzas
 
-G			        Bm
+G              Bm
 Pero tú me has querido asociar
-C	   D		G G7
+C     D    G G7
 Por amor a tu labor
-	C	    D		    G
+  C      D        G
 Y tenerme siempre junto a ti
-	  E
+    E
 Siempre juntos
-	C	D D7
+  C  D D7
 Tú y yo Señor
 
 ---
@@ -9501,18 +9503,16 @@ Tú y yo Señor
 Intro G D A# Bbm
 
 Spaces
-
-XDDDDDDDDDDDDX
 X            X
 XaaaaaaaaaaaaX
-XbbbbbbbbbbbbX
 G            X
 XDDDDDDDDDDDDX
 G    A       D
 XDDDDADDDDDDDX
-X            X
-XaaaaaaaaaaaaX
-XbbbbbbbbbbbbX
+
+      C         D              F             G
+Mi vida está en tus manos para siempre Señor
+
 
 G            D
 Con lo que soy
@@ -9541,7 +9541,7 @@ G D A# Bbm
 
 Tabs
 
-G            D
+Em      C
 Con lo que soy
 Em    Bm
 Vengo ante ti

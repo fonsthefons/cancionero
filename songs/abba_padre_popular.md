@@ -15,23 +15,23 @@ song_tags:
 Intro: Em D-C
 
 [verse]
-Em			 C		         G		D
+Em       C             G    D
 Ante ti venimos, pues tu nos has llamado y nos atrae tu voz
-Em			   C			         G		D
+Em         C               G    D
 Como un solo pueblo danzando en tu presencia te damos el honor
-C			      D			          C
+C            D                C
 Sobre nosotros descienda el poder de tu Espiritu que
-	   	B7
+       B7
 Nos hará clamar
 
 [chorus]
-Em D	  C	   Em  D C
+Em D    C     Em  D C
 Abba padre. Abba Padre
-	     G
+       G
 Hoy tus hijos cantamos
-	 Am
+   Am
 Tu amor celebramos
-	D		B7
+  D    B7
 Clamando con una voz
-	Em D C     Em D C	
+  Em D C     Em D C  
 Abba Padre. Abba Padre

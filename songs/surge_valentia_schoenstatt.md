@@ -13,79 +13,79 @@ song_tags:
 
 Em C G D x2
 
-Em            	    C
+Em                  C
 Hoy acepto seguirte
-G              	     D
+G                     D
 Dejar viejas certezas atrás
-Em               	          C                            	       G
+Em                           C                                     G
 Arriesgar mis verdades, abrazar la inquietud
-        	     D	Dsus
+               D  Dsus
 Ir más allá
 
-Em            		C
+Em                C
 Tus brazos extendidos
-G              	     D
+G                     D
 Marcan el horizonte al final
-Em            	        C
+Em                      C
 Encuentro tu mirada
-              	     G
+                     G
 Escapo del temor
-                     		          D	Dsus D
+                                   D  Dsus D
 Que me ancla en mi barca
 
-Bm             	Em
+Bm               Em
 Pero dudo y espero...
-Bm                  	  C                     		      D	Dsus D
+Bm                      C                               D  Dsus D
 Que el viento sople menos, que el sol alumbre más
 
 
-Em         	C
+Em           C
 Surge valentía
-         	        Em                 	        D
+                   Em                           D
 Disipa las dudas de este corazón
-        	     	      Em
+                       Em
 Que teme al cruzar
-           	  C              		  G 
+               C                    G 
 Las fronteras que limitan lo conocido
-          	        D                         Em
+                    D                         Em
 Allá mar adentro, sobre el agua caminar
 Em C G D x2
 
-Em			C
+Em      C
 En tus huellas mis pasos
-	    G			     D
+      G           D
 En tus manos la fuerza del mar
-Em               	          C                            	  G
+Em                           C                                G
 Como tú quiero amar las miserias del mundo
-			D
+      D
 Cómo tú a mi debilidad
 
-Bm             	Em
+Bm               Em
 Pero dudo y espero...
-Bm                  	  C                     		      D
+Bm                      C                               D
 Que el viento sople menos, que el sol alumbre más
 
 
-Em         	C
+Em           C
 Surge valentía
-         	        Em                 	        D
+                   Em                           D
 Disipa las dudas de este corazón
-        	     	      Em
+                       Em
 Que teme al cruzar
-           	  C              		  G 
+               C                    G 
 Las fronteras que limitan lo conocido
-          	        D                         Em
+                    D                         Em
 Allá mar adentro, sobre el agua caminar
 
-Em         	C
+Em           C
 Surge valentía
-         	        		Em
+                       Em
 Despunta en mi tu Modo
-       		      D      		Em
+                 D          Em
 Tus huellas tus yagas, tu forma de amar
-           	  C
+               C
 Y cuando ya cansado
-		  D
+      D
 Peligre Tropezar 
 Em   C G D
 Surge valentía

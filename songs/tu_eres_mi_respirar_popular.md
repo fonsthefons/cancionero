@@ -13,25 +13,25 @@ song_tags:
     - ofertorio
     - comunion
 ---
-G	       C
+G         C
 Tu eres mi respirar
-G	       C
+G         C
 Tu eres mi respirar
-G      D	     Em	      C	      D
+G      D       Em        C        D
 Dios tu presencia vive en mi
 
-G	       C
+G         C
 Tu eres mi pan Señor
-G	       C
+G         C
 Tu eres mi pan Señor
-G      D	     Em	      C	      D
+G      D       Em        C        D
 Dios tus palabras son para mi
 
 G D Em D
 Y yo
-	      C G D
+        C G D
 Te anhelo Señor
 G D Em D
 Y estoy
-	      C G D
+        C G D
 Perdido sin ti

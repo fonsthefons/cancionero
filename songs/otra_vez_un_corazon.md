@@ -54,11 +54,11 @@ Otra vez
 
 [Bridge]
 
-G			Em
+G      Em
 Toma las piezas de mi corazón
-G			D		    C
+G      D        C
 Que puedan ser una ofrenda de adoración
-Em			C
+Em      C
 Una ofrenda de adoración
 X4
 

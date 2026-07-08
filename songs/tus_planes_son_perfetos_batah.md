@@ -14,85 +14,85 @@ song_tags:
 Original: A E F#m D
 
 A
-	    E  F#m           D	          A
+      E  F#m           D            A
 Tu Misericordia eternamente cantaré
-	    E  F#m           D	          F#m
+      E  F#m           D            F#m
 Tu Misericordia eternamente cantaré
-	E   A	    E		  F#m    - D
+  E   A      E      F#m    - D
 Tú Señor sabes, puedes y me amas
-          E	      A	A	- D
+          E        A  A  - D
 Tu amor colma mi alma
-	  E	 		A
+    E       A
 Gracias por la vida
-	  E		F#m
+    E    F#m
 Por cada uno de los días
-	         D
+           D
 Gracias, Señor
-		           E
+               E
 Pues siempre has estado Tú
 
 
-A	       E		       F#m
+A         E           F#m
 Tus planes son perfectos
-		   D				A
+       D        A
 Todo está en tus manos, ya no hay más temor
-		E		  F#m
+    E      F#m
 De alegría y paz llenas el corazón
-	  E	      A
+    E        A
 En ti Jesús confío
 X2
 
 A E F#m D
 
 A
-	    E  F#m           D	          A
+      E  F#m           D            A
 Tu Misericordia eternamente cantaré
-	    E  F#m           D	          F#m
+      E  F#m           D            F#m
 Tu Misericordia eternamente cantaré
-	E   A	    E		  F#m    - D
+  E   A      E      F#m    - D
 Tú Señor sabes, puedes y me amas
-          E	      A       A	- D
+          E        A       A  - D
 Tu amor colma mi alma
-	  E	 		A
+    E       A
 Gracias por la vida
-	  E		F#m
+    E    F#m
 Por cada uno de los días
-	         D
+           D
 Gracias, Señor
-		           E
+               E
 Pues siempre has estado Tú
 
-A	       E		       F#m
+A         E           F#m
 Tus planes son perfectos
-		   D				A
+       D        A
 Todo está en tus manos, ya no hay más temor
-		E		  F#m
+    E      F#m
 De alegría y paz llenas el corazón
-	  D	      A
+    D        A
 En ti Jesús confío
 X4
-	  E	     F#m
+    E       F#m
 En ti Jesús confío
-	  D	      A
+    D        A
 En ti Jesús confío
-	  E	      F#m
+    E        F#m
 En ti Jesús confío
 
 
 
-	  D	
+    D  
 En ti Jesús
-        E	  A	      E		  F#m  D
+        E    A        E      F#m  D
 Pues tú Señor, sabes, puedes y me amas
-          E	      A    A	D
+          E        A    A  D
 Tu amor colma mi alma
-	  E	 	A
+    E     A
 Gracias por la vida
-	  E		F#m
+    E    F#m
 Por cada uno de los días
-	         D
+           D
 Gracias, Señor
-			E
+      E
 Pues siempre has estado Tú
-	         A
+           A
 Has estado Tú

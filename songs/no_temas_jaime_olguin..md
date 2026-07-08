@@ -13,45 +13,45 @@ song_tags:
     - comunion
 ---
 
-G		C G		D
+G    C G    D
 Si aún no lo ves, pronto lo verás,
-Em	  C	G		D
+Em    C  G    D
 todo un Dios enamorado de ti.
-G		C G		D
+G    C G    D
 Habla bien de Él, que no mentirás
-Em		C G		D
+Em    C G    D
 todo lo hizo para hacerte feliz.
-	C		   Em
+  C       Em
 Lo que pasa es que el mundo
-      G		D
+      G    D
 no quiere escuchar, 
-	G	    C
+  G      C
 no vaya a ser que vea, 
-G			D
+G      D
 que entienda y se empape, 
-G	       C
+G         C
 de esta alegría 
-G			D
+G      D
 que nos quiere regalar, 
-Em			C
+Em      C
 no vaya a ser que vea 
-G			D
+G      D
 se convierta y se sane.
 
-G		C
+G    C
 No temas a la luz, 
-G		D
+G    D
 no temas a la paz, 
-Em		C
+Em    C
 no temas a la alegría 
 
-		G		D
+    G    D
 no tengas miedo a ser feliz, 
-	Em		C
+  Em    C
 porque Él es el camino 
-	G		D
+  G    D
 que se ha abierto para ti, 
-G			C
+G      C
 porque Él es el que es ahora 
 G
 puedes ser feliz.

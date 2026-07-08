@@ -12,46 +12,46 @@ song_tags:
     - comunion
 ---
 C G Am F
-C		       G
+C           G
 Dios de mi corazón
-      Am		F
+      Am    F
 En ti encontré mi salvación
-        C		        G
+        C            G
 Tu gloria y majestad
-Am		        F
+Am            F
 Quiero siempre contemplar
 
-C		G
+C    G
 Eres Dios eterno
-		    Am
+        Am
 Solo tú eres bueno
-		F		C
+    F    C
 Dios incomparable eres tú
-C		  	G
+C        G
 Nunca me separaré
    Am 
 De tu gran amor
-		F		C
+    F    C
 Eres mi Señor, mi salvador
 
-C		         G
+C             G
 Tú eres mi adoración
-Am		         F
+Am             F
 Y mi eterna canción
-C		   G
+C       G
 Todo mi interior
-Am		  F
+Am      F
 Es cautivado por tu amor
 
-C		G
+C    G
 Eres Dios eterno
-		    Am
+        Am
 Solo tú eres bueno
-		F		C
+    F    C
 Dios incomparable eres tú
-C		  	G
+C        G
 Nunca me separaré
    Am 
 De tu gran amor
-		F		C
+    F    C
 Eres mi Señor, mi salvador

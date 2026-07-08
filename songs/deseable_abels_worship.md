@@ -13,15 +13,15 @@ song_tags:
 ---
 Em
 
-Em			C
+Em      C
 No sé lo que viste en mí
-Em			C
+Em      C
 Para amarme tanto así
-Em		C
+Em    C
 Tanta paciencia
-Em		C
+Em    C
 Tanta misericordia
-	Am		    D
+  Am        D
 Me hiciste deseable para ti
 
 [Verso 2]
@@ -32,25 +32,25 @@ Me compraste con tu sangre
 Y me hiciste deseable para ti
 
 [Coro]
-G		D
+G    D
 Llévame señor
-			C
+      C
 A tus cámaras de amor
-			Am	  D
+      Am    D
 Donde me enamoro más, de ti
-G		D
+G    D
 Llévame señor
-			C
+      C
 Dentro de tu corazón
-		       Am        D
+           Am        D
 Yo encuentro mi lugar, en ti
 
 [Post-Coro 1]
-Em	        C
+Em          C
 Lai--lai-lai-lai
-D		Em
+D    Em
 Lai-lai--lai-lai-lai--lai
-	C
+  C
 Lai--lai-lai
 
 [Verso 1]
@@ -68,25 +68,25 @@ Me compraste con tu sangre
 Y me hiciste deseable para ti
 
 [Coro]
-G		D
+G    D
 Llévame señor
-			C
+      C
 A tus cámaras de amor
-			Am	  D
+      Am    D
 Donde me enamoro más, de ti
-G		D
+G    D
 Llévame señor
-			C
+      C
 Dentro de tu corazón
-		       Am        D
+           Am        D
 Yo encuentro mi lugar, en ti
 
 [Post-Coro 1]
-Em	        C
+Em          C
 Lai--lai-lai-lai
-D		Em
+D    Em
 Lai-lai--lai-lai-lai--lai
-	C
+  C
 Lai--lai-lai
 
 [Coro]

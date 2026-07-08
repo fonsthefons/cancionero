@@ -25,24 +25,24 @@ Your life is now my own
 Your will is what I want
 Jesus, have it all
 
-D		G
+D    G
 Jesus, have it all
-G		  D
+G      D
 Jesus, have it all
-			A
+      A
 To You belongs the glory
-			Em7
+      Em7
 The praise of all the world
 
-Em7		G
+Em7    G
 Jesus, have it all
-G	  A	 Bm
+G    A   Bm
 Jesus, have it all
-Bm			A
+Bm      A
 All blessing and all honor
-A		    em7
+A        em7
 All majesty and awe
-Em7		 D
+Em7     D
 Jesus, have it all
 
 Jesus, have Your church, Your love, Your bride
@@ -57,60 +57,60 @@ Let all that has been made
 Glorify Your name
 Jesus, have it all
 
-D		G
+D    G
 Jesus, have it all
-G		  D
+G      D
 Jesus, have it all
-			A
+      A
 To You belongs the glory
-			Em7
+      Em7
 The praise of all the world
 
-Em7		G
+Em7    G
 Jesus, have it all
-G	  A	 Bm
+G    A   Bm
 Jesus, have it all
-Bm			A
+Bm      A
 All blessing and all honor
-A		    em7
+A        em7
 All majesty and awe
-Em7		 D
+Em7     D
 Jesus, have it all
 
-D		G
+D    G
 Jesus, have it all
-G		  D
+G      D
 Jesus, have it all
-			A
+      A
 To You belongs the glory
-			Em7
+      Em7
 The praise of all the world
 
-Em7		G
+Em7    G
 Jesus, have it all
-G	  A	 Bm
+G    A   Bm
 Jesus, have it all
-Bm			A
+Bm      A
 All blessing and all honor
-A		    em7
+A        em7
 All majesty and awe
-Em7		 G
+Em7     G
 Jesus, have it all
-Bm		 A
+Bm     A
 Jesus, have it all
 
-		G
+    G
 Jesus, have it all
-Bm		 A
+Bm     A
 Jesus, have it all
 
 Ooh, ooh, ooh
 Ooh, ooh, ooh
-		G
+    G
 Yeah, all my days
-	Bm
+  Bm
 All my life
-	A
+  A
 Have it all
 
 All my days

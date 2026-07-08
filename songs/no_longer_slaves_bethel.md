@@ -16,50 +16,50 @@ F#m E A D
 
 A
 You unravel me, with a melody
-D		E	A
+D    E  A
 You surround me with a song
 A
 Of deliverance, from my enemies
-       D		E	A
+       D    E  A
 Till all my fears are gone
 
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
 
 A
 From my mothers womb
-			C#m
+      C#m
 You have chosen me
-D	        E		    A
+D          E        A
 Love has called my name
-A					C#m
+A          C#m
 I've been born again, into a family
-	D		E		A
+  D    E    A
 Your blood flows through my veins
 
 
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
 
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
-	D	       E		A
+  D         E    A
 I'm no longer a slave to fear
-   F#m    E	      A
+   F#m    E        A
 I am a child of God
 
 F#m E A D
@@ -68,46 +68,46 @@ oooo oooo oo oo oo
 oooo oooo ooo oo ooo
 oooo oooo oo oo oo
 
-F#m		   E
+F#m       E
 You split the sea
-		A		D
+    A    D
 So I could walk right through it
-F#m			E		      A
+F#m      E          A
 My fears were drowned in perfect love
 
-F#m		   E
+F#m       E
 You rescued me
-	         A		C#m
+           A    C#m
 And I will stand and sing
-   D	    E	      A
+   D      E        A
 I am a child of God
 
 
-F#m		   E
+F#m       E
 You split the sea
-		A		D
+    A    D
 So I could walk right through it
 
-F#m			E		      A
+F#m      E          A
 My fears were drowned in perfect love
 
-F#m		   E
+F#m       E
 You rescued me
-	         A		C#m
+           A    C#m
 And I will stand and sing
-   D	    E	      A
+   D      E        A
 I am a child of God
- D	    E	      A
+ D      E        A
 I am a child of God (yes I am)
 
-   D	    E	      A
+   D      E        A
 I am a child of God
- D	    E	      A
+ D      E        A
 I am a child of God (yes I am)
-   D	    E	      A
+   D      E        A
 I am a child of God (full of faith yes)
 
-   D	    E	      A
+   D      E        A
 I am a child of God
-   D	    E	      A
+   D      E        A
 I am a child of God

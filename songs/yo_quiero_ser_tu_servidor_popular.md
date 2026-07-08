@@ -10,29 +10,31 @@ song_tags:
     - ofertorio
     - comunion
 ---
-G		D
+G   D
 Con lo que soy
-Em		Bm
+G   D
+Con lo que soy
+Em    Bm
 Vengo ante ti
-      C			  D
+      C        D
 Mi vida está en tus manos
 G
 Tómala
 
-G		D   Em	   Bm
+G    D   Em     Bm
 Tú sabes bien, Señor que soy
          C
 Obstáculo en tu obra
-	Am		D
+  Am    D
 Sin méritos ni fuerzas
 
-G			        Bm
+G              Bm
 Pero tú me has querido asociar
-C	   D		G G7
+C     D    G G7
 Por amor a tu labor
-	C	    D		    G
+  C      D        G
 Y tenerme siempre junto a ti
-	  E
+    E
 Siempre juntos
-	C	D D7
+  C  D D7
 Tú y yo Señor

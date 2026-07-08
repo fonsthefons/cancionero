@@ -12,7 +12,7 @@ song_tags:
     - entrada
     - comunion
 ---
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -30,7 +30,7 @@ luz que penetra las almas;
 C D
 fuente del mayor consuelo.
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -62,7 +62,7 @@ mira el poder del pecado
 C D
 cuando no envías tu aliento
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
@@ -95,7 +95,7 @@ y danos tu gozo eterno
 
 
 
-C   	  D     Em C          D    Em
+C       D     Em C          D    Em
 VEN ESPÍRITU, VEN ESPÍRITU,
 C           D      Em D C D
 VEN ESPÍRITU.
