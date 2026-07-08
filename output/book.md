@@ -9510,52 +9510,76 @@ XDDDDDDDDDDDDX
 G    A       D
 XDDDDADDDDDDDX
 
-      C         D              F             G
-Mi vida está en tus manos para siempre Señor
+Intro: 
+E E7 A B7 C#m A B7
+E                   E7         A              B7
+Sopla Señor te lo pido, quédate esta noche en mi alma
+C#m                            A             B7
+Pues solo tu amor y abrigo, me dará consuelo y calma.
+E                   E7             A              B7
+Sopla Señor sopla fuerte, envolveme con tu brisa
+E E7 A B7 C#m A B7
+E E7 A B7 C#m A B7
+
+E E7 A B7 C#m A B7 (x2)
+
+C#m                                 A             B7
+Y en tu Espíritu renovame, hazme libre en tu sonrisa.
+Y en tu Santo nombre hazme nuevo, libre en tu cielo para siempre.
+A                         B7
+A pesar de mis caídas, hazme fiel a tus promesas.
+A                               B7
+Sopla Señor en mi vida, y arrancame esta tristeza.
+E          A          B7          C#m
+Sopla, sopla Señor tu grandeza, sopla
+A                    B7
+Hazme fiel en mi pobreza, sopla.
+
+E                   E7         A              B7
+Sopla Señor en mi oído, sopla fuerte arranca el miedo
+C#m                            A             B7
+Pues sin Ti me hallo perdido, sin tu luz me encuentro ciego.
+E                   E7             A              B7
+Sopla Señor y hazte viento, y bautízame en tu nombre
+C#m                                 A             B7
+Llámame a servir Maestro, hazme fiel entre los hombres.
+A                         B7
+Toma mi vida en tus manos, mis sueños mi amor, mi todo
+A                               B7
+Mi cansancio, mis pecado y moldéame a tu modo.
+E          A          B7          C#m
+Sopla, y bautízame en tu brisa, sopla
+A                    B7
+Renovame en tu sonrisa, sopla.
 
 
-G            D
-Con lo que soy
-Em    Bm
-Vengo ante ti
-      C         D
-Mi vida está en tus manos
-      G
-Tómala
-Y tenla siempre en tus brazos
-      C         D              F             G
-Mi vida está en tus manos para siempre Señor
-      G
-Tómala
-Y tenla siempre en tus brazos
-      C         D              F             G
-Mi vida está en tus manos para siempre Señor
-      G
-Tómala
-Y tenla siempre en tus brazos
-      C         D              F             G
-Mi vida está en tus manos para siempre Señor
+E                   E7         A              B7
+Sopla Señor tu caricia, por sobre mis sentimientos
+C#m                            A             B7
+Que sea el Ángel de Tú Misa, quien obre en todo momento.
+E                   E7             A              B7
+Sopla Señor y hazte canto, pon tu palabra en mis manos
+C#m                                 A             B7
+En ellas tu providencia y bendice a mis hermanos.
+A                         B7
+Quiero ser de tu árbol rama, fruto nuevo de tu cielo
+A                         B7
+Que madure en tu palabra, como un ave en pleno vuelo.
+E          A          B7          C#m
+Sopla, sopla Señor tu grandeza, sopla
+A                    B7
+Hazme fiel en mi pobreza, sopla.
+A                    B7
+y bautízame en tu brisa, sopla
+A                    B7
+Renovame en tu sonrisa, sopla.
 
-G D A# Bbm
-G D A# Bbm
 
-Tabs
-
-Em      C
-Con lo que soy
-Em    Bm
-Vengo ante ti
-      C         D
-Mi vida está en tus manos
-      G
-Tómala
-Y tenla siempre en tus brazos
-      C         D              F            G
-Mi vida está en tus manos para siempre Señor
-
-G D A# Bbm
-
-G D A# Bbm
+E      A       C#m         A B7
+Sopla, sopla, sopla Señor, sopla
+Sopla, sopla, sopla Señor, sopla
+Sopla, sopla, sopla Señor, sopla
+Sopla, sopla, sopla Señor, sopla
 
 ---
 

@@ -275,7 +275,7 @@ def is_chord_line(line):
 
     return has_chord
 
-
+# # WORKING VERSION
 def format_lyrics(content):
     lines = []
 
@@ -337,6 +337,96 @@ def format_lyrics(content):
         )
 
     return '<div class="lyrics">' + "".join(lines) + '</div>'
+
+# import html
+# import re
+
+# def extract_chords_with_positions(chord_line, lyric_line):
+#     chords = []
+
+#     # pad lyric line to avoid index errors
+#     if len(lyric_line) < len(chord_line):
+#         lyric_line = lyric_line.ljust(len(chord_line))
+
+#     for match in CHORD_RE.finditer(chord_line):
+#         chord = match.group(1)
+#         index = match.start()
+
+#         # compute relative position
+#         if len(lyric_line.strip()) == 0:
+#             continue
+
+#         rel = index / max(len(lyric_line), 1)
+
+#         chords.append((chord, rel))
+
+#     return chords
+
+# def merge_chords_into_lyrics(chord_line, lyric_line):
+#     result = []
+#     i = 0
+
+#     chord_matches = list(CHORD_RE.finditer(chord_line))
+#     chord_idx = 0
+
+#     while i < len(lyric_line):
+#         # insert chord if it starts here
+#         if chord_idx < len(chord_matches) and chord_matches[chord_idx].start() == i:
+#             chord = chord_matches[chord_idx].group(1)
+#             result.append(
+#                 f'<span class="chord-anchor">{html.escape(chord)}</span>'
+#             )
+#             chord_idx += 1
+
+#         # add lyric character
+#         result.append(html.escape(lyric_line[i]))
+#         i += 1
+
+#     return ''.join(result)
+
+# def format_lyrics(content):
+#     verses = []
+
+#     raw_verses = re.split(r'\n\s*\n', content.strip())
+
+#     for verse in raw_verses:
+#         lines = []
+#         pending_chord_line = None
+
+#         for line in verse.split("\n"):
+#             working_line = line.replace("\xa0", " ").expandtabs(2)
+#             stripped = working_line.strip()
+
+#             if not stripped:
+#                 continue
+
+#             if is_chord_line(working_line):
+#                 pending_chord_line = working_line
+#             else:
+#                 lyric = html.escape(working_line)
+
+#                 if pending_chord_line:
+#                     merged = merge_chords_into_lyrics(
+#                         pending_chord_line,
+#                         working_line
+#                     )
+
+#                     lines.append(
+#                         f'<div class="line"><span class="lyric-line">{merged}</span></div>'
+#                     )
+
+#                     pending_chord_line = None
+#                 else:
+#                     lines.append(
+#                         f'<div class="line"><span class="lyric-line">{html.escape(working_line)}</span></div>'
+#                     )
+
+#         verses.append(
+#             '<div class="verse">' + "".join(lines) + '</div>'
+#         )
+
+#     return '<div class="lyrics">' + "".join(verses) + '</div>'
+
 
 def write_song_meta(f, song):
     if song.get("autor"):

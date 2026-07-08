@@ -174,7 +174,14 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <style>.lyrics {
+  <style>body {
+    margin: 0 !important;
+    max-width: none !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .lyrics {
     font-family: monospace;
     margin: 0;
     padding: 0;
@@ -258,8 +265,17 @@
   .song.two-columns .lyrics {
     column-count: 2;
     column-gap: 2rem;
-    overflow-wrap: normal;
-    word-break: normal;
+    overflow: hidden;
+  }
+
+
+  /* Ensure everything respects column width */
+  .song.two-columns .lyrics > *,
+  .song.two-columns .verse,
+  .song.two-columns .chord-lyric-line-pair,
+  .song.two-columns .chord-line,
+  .song.two-columns .lyric-line {
+    max-width: 100%;
   }
 
 
@@ -271,7 +287,7 @@
   }
 
 
-  /* Allow wrapping but never break words */
+  /* Allow wrapping ONLY at spaces (never split words) */
   .song.two-columns .chord-line,
   .song.two-columns .lyric-line {
     break-inside: avoid;
@@ -280,13 +296,7 @@
     word-break: normal;
   }
 
-
-  /* On narrow screens use one column */
-  /* @media (max-width: 700px) {
-    .song.two-columns .lyrics {
-      column-count: 1;
-    }
-  } */</style>
+  </style>
 
   <script>
   // -----------------------------
@@ -20424,118 +20434,208 @@ class="lyric-line">XDDDDDDDDDDDDX</span>
 class="chord">A</span>       <span class="chord">D</span></span><span
 class="lyric-line">XDDDDADDDDDDDX</span>
 </div>
+<span class="verse-break"></span><span class="lyric-line">Intro: </span>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">E</span>                   <span
+class="chord">E7</span>         <span
+class="chord">A</span>              <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor te lo pido, quédate esta noche en mi alma</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">C#m</span>                            <span
+class="chord">A</span>             <span
+class="chord">B7</span></span><span
+class="lyric-line">Pues solo tu amor y abrigo, me dará consuelo y calma.</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">E</span>                   <span
+class="chord">E7</span>             <span
+class="chord">A</span>              <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor sopla fuerte, envolveme con tu brisa</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span class="chord">E</span> <span
+class="chord">E7</span> <span class="chord">A</span> <span
+class="chord">B7</span> <span class="chord">C#m</span> <span
+class="chord">A</span> <span class="chord">B7</span></span>
+</div>
+<span class="verse-break"></span><span
+class="lyric-line">E E7 A B7 C#m A B7 (x2)</span><span
+class="verse-break"></span>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">C#m</span>                                 <span
+class="chord">A</span>             <span
+class="chord">B7</span></span><span
+class="lyric-line">Y en tu Espíritu renovame, hazme libre en tu sonrisa.</span>
+</div>
+<span
+class="lyric-line">Y en tu Santo nombre hazme nuevo, libre en tu cielo para siempre.</span>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">A</span>                         <span
+class="chord">B7</span></span><span
+class="lyric-line">A pesar de mis caídas, hazme fiel a tus promesas.</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">A</span>                               <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor en mi vida, y arrancame esta tristeza.</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span class="chord">E</span>          <span
+class="chord">A</span>          <span
+class="chord">B7</span>          <span
+class="chord">C#m</span></span><span
+class="lyric-line">Sopla, sopla Señor tu grandeza, sopla</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">A</span>                    <span
+class="chord">B7</span></span><span
+class="lyric-line">Hazme fiel en mi pobreza, sopla.</span>
+</div>
 <span class="verse-break"></span>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span
-class="chord">D</span>              <span
-class="chord">F</span>             <span
-class="chord">G</span></span><span
-class="lyric-line">Mi vida está en tus manos para siempre Señor</span>
+<span class="chord-line"><span
+class="chord">E</span>                   <span
+class="chord">E7</span>         <span
+class="chord">A</span>              <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor en mi oído, sopla fuerte arranca el miedo</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">C#m</span>                            <span
+class="chord">A</span>             <span
+class="chord">B7</span></span><span
+class="lyric-line">Pues sin Ti me hallo perdido, sin tu luz me encuentro ciego.</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">E</span>                   <span
+class="chord">E7</span>             <span
+class="chord">A</span>              <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor y hazte viento, y bautízame en tu nombre</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">C#m</span>                                 <span
+class="chord">A</span>             <span
+class="chord">B7</span></span><span
+class="lyric-line">Llámame a servir Maestro, hazme fiel entre los hombres.</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">A</span>                         <span
+class="chord">B7</span></span><span
+class="lyric-line">Toma mi vida en tus manos, mis sueños mi amor, mi todo</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">A</span>                               <span
+class="chord">B7</span></span><span
+class="lyric-line">Mi cansancio, mis pecado y moldéame a tu modo.</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span class="chord">E</span>          <span
+class="chord">A</span>          <span
+class="chord">B7</span>          <span
+class="chord">C#m</span></span><span
+class="lyric-line">Sopla, y bautízame en tu brisa, sopla</span>
+</div>
+<div class="chord-lyric-line-pair">
+<span class="chord-line"><span
+class="chord">A</span>                    <span
+class="chord">B7</span></span><span
+class="lyric-line">Renovame en tu sonrisa, sopla.</span>
 </div>
 <span class="verse-break"></span><span class="verse-break"></span>
 <div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">G</span>            <span
-class="chord">D</span></span><span
-class="lyric-line">Con lo que soy</span>
+<span class="chord-line"><span
+class="chord">E</span>                   <span
+class="chord">E7</span>         <span
+class="chord">A</span>              <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor tu caricia, por sobre mis sentimientos</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">Em</span>    <span
-class="chord">Bm</span></span><span
-class="lyric-line">Vengo ante ti</span>
+<span class="chord-line"><span
+class="chord">C#m</span>                            <span
+class="chord">A</span>             <span
+class="chord">B7</span></span><span
+class="lyric-line">Que sea el Ángel de Tú Misa, quien obre en todo momento.</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span class="chord">D</span></span><span
-class="lyric-line">Mi vida está en tus manos</span>
+<span class="chord-line"><span
+class="chord">E</span>                   <span
+class="chord">E7</span>             <span
+class="chord">A</span>              <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla Señor y hazte canto, pon tu palabra en mis manos</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span class="chord">G</span></span><span
-class="lyric-line">Tómala</span>
-</div>
-<span class="lyric-line">Y tenla siempre en tus brazos</span>
-<div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span
-class="chord">D</span>              <span
-class="chord">F</span>             <span
-class="chord">G</span></span><span
-class="lyric-line">Mi vida está en tus manos para siempre Señor</span>
+<span class="chord-line"><span
+class="chord">C#m</span>                                 <span
+class="chord">A</span>             <span
+class="chord">B7</span></span><span
+class="lyric-line">En ellas tu providencia y bendice a mis hermanos.</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span class="chord">G</span></span><span
-class="lyric-line">Tómala</span>
-</div>
-<span class="lyric-line">Y tenla siempre en tus brazos</span>
-<div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span
-class="chord">D</span>              <span
-class="chord">F</span>             <span
-class="chord">G</span></span><span
-class="lyric-line">Mi vida está en tus manos para siempre Señor</span>
+<span class="chord-line"><span
+class="chord">A</span>                         <span
+class="chord">B7</span></span><span
+class="lyric-line">Quiero ser de tu árbol rama, fruto nuevo de tu cielo</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span class="chord">G</span></span><span
-class="lyric-line">Tómala</span>
-</div>
-<span class="lyric-line">Y tenla siempre en tus brazos</span>
-<div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span
-class="chord">D</span>              <span
-class="chord">F</span>             <span
-class="chord">G</span></span><span
-class="lyric-line">Mi vida está en tus manos para siempre Señor</span>
-</div>
-<span class="verse-break"></span>
-<div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">G</span> <span
-class="chord">D</span> <span class="chord">A#</span> <span
-class="chord">Bbm</span></span>
-</div>
-<span class="verse-break"></span><span
-class="lyric-line">Tabs</span><span class="verse-break"></span>
-<div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">Em</span>      <span
-class="chord">C</span></span><span
-class="lyric-line">Con lo que soy</span>
+<span class="chord-line"><span
+class="chord">A</span>                         <span
+class="chord">B7</span></span><span
+class="lyric-line">Que madure en tu palabra, como un ave en pleno vuelo.</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">Em</span>    <span
-class="chord">Bm</span></span><span
-class="lyric-line">Vengo ante ti</span>
+<span class="chord-line"><span class="chord">E</span>          <span
+class="chord">A</span>          <span
+class="chord">B7</span>          <span
+class="chord">C#m</span></span><span
+class="lyric-line">Sopla, sopla Señor tu grandeza, sopla</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span class="chord">D</span></span><span
-class="lyric-line">Mi vida está en tus manos</span>
+<span class="chord-line"><span
+class="chord">A</span>                    <span
+class="chord">B7</span></span><span
+class="lyric-line">Hazme fiel en mi pobreza, sopla.</span>
 </div>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span class="chord">G</span></span><span
-class="lyric-line">Tómala</span>
+<span class="chord-line"><span
+class="chord">A</span>                    <span
+class="chord">B7</span></span><span
+class="lyric-line">y bautízame en tu brisa, sopla</span>
 </div>
-<span class="lyric-line">Y tenla siempre en tus brazos</span>
 <div class="chord-lyric-line-pair">
-<span class="chord-line">      <span
-class="chord">C</span>         <span
-class="chord">D</span>              <span
-class="chord">F</span>            <span
-class="chord">G</span></span><span
-class="lyric-line">Mi vida está en tus manos para siempre Señor</span>
+<span class="chord-line"><span
+class="chord">A</span>                    <span
+class="chord">B7</span></span><span
+class="lyric-line">Renovame en tu sonrisa, sopla.</span>
 </div>
-<span class="verse-break"></span>
+<span class="verse-break"></span><span class="verse-break"></span>
 <div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">G</span> <span
-class="chord">D</span> <span class="chord">A#</span> <span
-class="chord">Bbm</span></span>
+<span class="chord-line"><span class="chord">E</span>      <span
+class="chord">A</span>       <span
+class="chord">C#m</span>         <span class="chord">A</span> <span
+class="chord">B7</span></span><span
+class="lyric-line">Sopla, sopla, sopla Señor, sopla</span>
 </div>
-<span class="verse-break"></span>
-<div class="chord-lyric-line-pair">
-<span class="chord-line"><span class="chord">G</span> <span
-class="chord">D</span> <span class="chord">A#</span> <span
-class="chord">Bbm</span></span>
-</div>
+<span class="lyric-line">Sopla, sopla, sopla Señor, sopla</span><span
+class="lyric-line">Sopla, sopla, sopla Señor, sopla</span><span
+class="lyric-line">Sopla, sopla, sopla Señor, sopla</span>
 </div>
 </section>
 <hr />

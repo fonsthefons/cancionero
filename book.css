@@ -1,3 +1,10 @@
+body {
+  margin: 0 !important;
+  max-width: none !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
 .lyrics {
   font-family: monospace;
   margin: 0;
@@ -82,8 +89,17 @@ body.hide-all-chords .chord-line,
 .song.two-columns .lyrics {
   column-count: 2;
   column-gap: 2rem;
-  overflow-wrap: normal;
-  word-break: normal;
+  overflow: hidden;
+}
+
+
+/* Ensure everything respects column width */
+.song.two-columns .lyrics > *,
+.song.two-columns .verse,
+.song.two-columns .chord-lyric-line-pair,
+.song.two-columns .chord-line,
+.song.two-columns .lyric-line {
+  max-width: 100%;
 }
 
 
@@ -95,7 +111,7 @@ body.hide-all-chords .chord-line,
 }
 
 
-/* Allow wrapping but never break words */
+/* Allow wrapping ONLY at spaces (never split words) */
 .song.two-columns .chord-line,
 .song.two-columns .lyric-line {
   break-inside: avoid;
@@ -104,10 +120,3 @@ body.hide-all-chords .chord-line,
   word-break: normal;
 }
 
-
-/* On narrow screens use one column */
-/* @media (max-width: 700px) {
-  .song.two-columns .lyrics {
-    column-count: 1;
-  }
-} */
