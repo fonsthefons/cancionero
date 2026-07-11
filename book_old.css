@@ -1,0 +1,141 @@
+body {
+  margin: 0 !important;
+  max-width: none !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  overflow-x: auto;
+}
+
+.verse {
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+.lyrics {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
+
+/* Each line occupies its own row */
+.chord-line,
+.lyric-line {
+  display: block;
+  line-height: 1.2;
+  padding: 0;
+  font-size: small;
+}
+
+
+/* Small separation before chord lines */
+.chord-line {
+  margin-top: 0.3rem;
+}
+
+
+/* Chord styling */
+.chord {
+  font-weight: bold;
+  color: #22a3a7;
+}
+
+
+/* Blank verse spacing */
+.verse-break {
+  display: block;
+  margin-top: 1rem;
+}
+
+
+/* Chord visibility */
+.song.no-chords .chord-line,
+body.no-chords-global .chord-line,
+body.hide-all-chords .chord-line,
+.song.force-hide-chords .chord-line {
+  display: none !important;
+}
+
+.song.force-show-chords .chord-line {
+  display: block !important;
+}
+
+
+/* Chord toggle button */
+.toggle-chords {
+  margin: 10px 0;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+
+/* Transposition controls */
+.transpose-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 6px 0;
+}
+
+.transpose-controls button {
+  font-size: 16px;
+  padding: 2px 8px;
+}
+
+.transpose-value {
+  font-weight: bold;
+  min-width: 24px;
+  text-align: center;
+}
+
+
+/* ================================= */
+/* Two column songs                  */
+/* ================================= */
+
+/*
+ Keep two columns side-by-side.
+ On narrow screens the user can scroll horizontally.
+*/
+.song.two-columns .lyrics {
+  column-count: 2;
+  column-gap: 2rem;
+  column-width: 380px;
+
+  width: max-content;
+}
+
+
+/*
+ Keep chord + lyric pairs together
+*/
+.song.two-columns .chord-lyric-line-pair {
+  break-inside: avoid-column;
+  -webkit-column-break-inside: avoid;
+}
+
+
+/*
+ Ensure content does not shrink
+*/
+.song.two-columns .lyrics > *,
+.song.two-columns .verse,
+.song.two-columns .chord-lyric-line-pair,
+.song.two-columns .chord-line,
+.song.two-columns .lyric-line {
+  max-width: none;
+}
+
+
+/*
+ Preserve chord alignment
+*/
+.song.two-columns .chord-line,
+.song.two-columns .lyric-line {
+  white-space: pre;
+  overflow-wrap: normal;
+  word-break: normal;
+}

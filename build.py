@@ -1,10 +1,8 @@
-import argparse
 import html
 import json
 import os
 import re
 import shutil
-import subprocess
 import sys
 import yaml
 
@@ -53,7 +51,6 @@ FLAT_TAGS = [
 TAG_ORDER = ["misa", "alabanza", "adoracion", "tema"]
 
 
-
 # Matches standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, etc.
 CHORD_RE = re.compile(
     r"(?<!\w)"
@@ -71,6 +68,8 @@ CHORD_RE = re.compile(
     r")"
     r"(?!\w)"
 )
+
+SEPARATOR_RE = re.compile(r"^[-|]+$")  # allows -, --, |, || etc.
 
 
 def hymn_anchor(number, uniqueId):
@@ -97,8 +96,7 @@ def parse_song_tags(meta):
 
     if isinstance(raw, dict):
         categories = {
-            tag: list(subtags) if subtags else []
-            for tag, subtags in raw.items()
+            tag: list(subtags) if subtags else [] for tag, subtags in raw.items()
         }
     elif isinstance(raw, list):
         categories = {tag: [] for tag in raw}
@@ -127,9 +125,7 @@ def validate_categories(title, categories):
                     )
         elif tag in FLAT_TAGS:
             if subtags:
-                errors.append(
-                    f'  {title}: "{tag}" has no subtags — use `{tag}: []`'
-                )
+                errors.append(f'  {title}: "{tag}" has no subtags — use `{tag}: []`')
         else:
             errors.append(f'  {title}: unknown tag "{tag}"')
 
@@ -169,15 +165,17 @@ def get_all_songs():
 
             all_errors.extend(validate_categories(title, categories))
 
-            songs.append({
-                "fname": fname,
-                "title": title,
-                "autor": meta.get("autor") or None,
-                "link": meta.get("link") or None,
-                "capo": capo,
-                "categories": categories,
-                "content": body,
-            })
+            songs.append(
+                {
+                    "fname": fname,
+                    "title": title,
+                    "autor": meta.get("autor") or None,
+                    "link": meta.get("link") or None,
+                    "capo": capo,
+                    "categories": categories,
+                    "content": body,
+                }
+            )
 
     if all_errors:
         print("Tag errors:", file=sys.stderr)
@@ -211,38 +209,42 @@ def group_songs(songs):
 
     return grouped
 
-def write_tag_sections(f, grouped, link_fn):
-    for tag in sorted(grouped.keys(), key=tag_sort_key):
-        subgroups = grouped[tag]
-        
-        # Main Section Title (Level 1 Heading)
-        f.write(f"\n# {format_label(tag)}\n\n")
 
-        # Flat songs if any
+def write_song_link_html(f, song, indent=False):
+    prefix = "&nbsp;&nbsp;" if indent else ""
+    autor = song.get("autor") or ""
+    text = f"{song['heading']}{f' - {autor}' if autor else ''}"
+
+    f.write(f'{prefix}<a href="#{song["anchor"]}">{text}</a><br>\n')
+
+
+def write_tag_sections_html(f, grouped):
+    for tag in sorted(grouped.keys(), key=tag_sort_key):
+        f.write(f'<h2 id="{tag}">{format_label(tag)}</h2>\n')
+
+        subgroups = grouped[tag]
+
+        # flat songs
         for h in sorted(subgroups.get("_ungrouped", []), key=lambda x: x["number"]):
-            f.write(link_fn(h))
+            write_song_link_html(f, h)
 
         subtags = sorted(
             (k for k in subgroups if k != "_ungrouped"),
             key=lambda k: subtag_sort_key(tag, k),
         )
-        
+
         for subtag in subtags:
-            # Change to Heading 2 so it appears in the TOC sidebar as a nested item
-            f.write(f"\n## {format_label(subtag)}\n\n")
-            
-            # Songs under this subsection
-            for h in sorted(grouped[tag][subtag], key=lambda x: x["number"]):
-                f.write(link_fn(h, indent=1))
-        # Add a blank line to separate sections cleanly
-        f.write("\n")
+            f.write(f'<h3 id="{tag}-{subtag}">{format_label(subtag)}</h3>\n')
 
+            for h in sorted(subgroups[subtag], key=lambda x: x["number"]):
+                write_song_link_html(f, h, indent=True)
 
+        f.write("<br>\n")
 
-SEPARATOR_RE = re.compile(r"^[-|]+$")  # allows -, --, |, || etc.
 
 def split_embedded_chords(token):
     return re.split(r"-", token)
+
 
 def extract_chords(token):
     # Find all chord-like matches inside the token
@@ -255,7 +257,7 @@ def is_chord_line(line):
     if not stripped:
         return False
 
-    tokens = re.split(r'\s+', stripped)
+    tokens = re.split(r"\s+", stripped)
 
     has_chord = False
 
@@ -275,6 +277,7 @@ def is_chord_line(line):
         return False
 
     return has_chord
+
 
 def format_lyrics(content):
     verses = []
@@ -298,26 +301,19 @@ def format_lyrics(content):
                 continue
 
             elif is_chord_line(line):
-                wrapped = CHORD_RE.sub(
-                    r'<span class="chord">\1</span>',
-                    escaped
-                )
+                wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
 
-                pending_chord = (
-                    f'<span class="chord-line">{wrapped}</span>'
-                )
+                pending_chord = f'<span class="chord-line">{wrapped}</span>'
 
             else:
-                lyric_line = (
-                    f'<span class="lyric-line">{escaped}</span>'
-                )
+                lyric_line = f'<span class="lyric-line">{escaped}</span>'
 
                 if pending_chord:
                     verse_lines.append(
                         '<div class="chord-lyric-line-pair">'
                         + pending_chord
                         + lyric_line
-                        + '</div>'
+                        + "</div>"
                     )
                     pending_chord = None
                 else:
@@ -326,19 +322,13 @@ def format_lyrics(content):
         # flush trailing chord line in this verse
         if pending_chord:
             verse_lines.append(
-                '<div class="chord-lyric-line-pair">'
-                + pending_chord
-                + '</div>'
+                '<div class="chord-lyric-line-pair">' + pending_chord + "</div>"
             )
 
         if verse_lines:
-            verses.append(
-                '<div class="verse">'
-                + "".join(verse_lines)
-                + '</div>'
-            )
+            verses.append('<div class="verse">' + "".join(verse_lines) + "</div>")
 
-    return '<div class="lyrics">' + "".join(verses) + '</div>'
+    return '<div class="lyrics">' + "".join(verses) + "</div>"
 
 
 def write_song_meta(f, song):
@@ -350,189 +340,198 @@ def write_song_meta(f, song):
         f.write(f"[Link]({song['link']})\n\n")
 
 
+def write_all_songs_links(f, songs):
+    f.write('<h2 id="all-songs-list">All Songs</h2>\n')
 
-def write_obsidian_book(f, songs, grouped):
-    f.write("# Hymn Book\n\n")
+    for s in songs:
+        autor = s.get("autor") or ""
+        text = f"{s['heading']}{f' - {autor}' if autor else ''}"
 
-    def link(song, indent=0):
-        prefix = "  " * indent
-        autor = song.get("autor", "") or ""
-        heading_text = f"{song['heading']}{f' - {autor}' if autor else ''}"
-        return f"{prefix}- [{heading_text}](#{song['anchor']})\n"
-
-    write_tag_sections(f, grouped, link)
-    f.write("\n# All Songs\n\n")
-
-    # For searching songs in the doc
-    search_index = []
-
-    for h in songs:
-        # get autor
-        autor = h.get("autor", "") or ""
-        # build heading
-        heading_text = f"{h['heading']} - {autor}"
-
-        # Write as a Header with internal link
-        f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
-        write_song_meta(f, h)
-        f.write(h["content"] + "\n\n---\n\n")
-
-        search_index.append({
-            "id": h["anchor"],
-            "title": h["heading"],
-            "author": h.get("autor", ""),
-            "text": h["content"]
-        })
-
-    print("BUILDING SONG INDEX DOC")
-    with open("search-index.json", "w", encoding="utf-8") as f:
-        json.dump(search_index, f, ensure_ascii=False)
+        f.write(f'<a href="#{s["anchor"]}">{text}</a><br>\n')
 
 
+# Mini Index of indexes
+def write_mini_toc_html(f, grouped):
+    f.write('<div class="mini-toc">\n')
+    f.write("<h2>Contenido</h2>\n")
 
-def write_pdf_book(f, songs, grouped):
-    f.write("# Hymn Book\n\n")
-    f.write("""
-<div id="search-container">
-  <input id="search-box" type="search" placeholder="Search songs...">
-  <div id="search-results"></div>
-</div>""")
+    # 🔥 All Songs link
+    f.write(f'<a href="#all-songs-list">All Songs</a><br>\n')
 
-    def link(song, indent=0):
-        prefix = "  " * indent
-        autor = song.get("autor", "") or ""
-        heading_text = f"{song['heading']}{f' - {autor}' if autor else ''}"
-        return f"{prefix}- [{heading_text}](#{song['anchor']})\n"
+    for tag in sorted(grouped.keys(), key=tag_sort_key):
+        f.write(f'<a href="#{tag}">{format_label(tag)}</a><br>\n')
 
-    write_tag_sections(f, grouped, link)
-    
-    f.write("\n# All Songs\n\n")
+        subgroups = grouped[tag]
 
-    for h in songs:
-        # get autor
-        autor = h.get("autor", "") or ""
-        # build heading
-        heading_text = f"{h['heading']} - {autor}"
-        song_id = h.get("fname")
-        if not song_id:
-            raise ValueError(f"Missing song ID for {h.get('title', '')}")
+        subtags = sorted(
+            (k for k in subgroups if k != "_ungrouped"),
+            key=lambda k: subtag_sort_key(tag, k),
+        )
 
-        f.write(f'<div class="song" data-song-id="{song_id}">\n\n')
+        for subtag in subtags:
+            f.write(f'&nbsp;&nbsp;<a href="#{tag}-{subtag}">{format_label(subtag)}</a><br>\n')
 
-        f.write(f"### {heading_text} {{#{h['anchor']}}}\n\n")
+    f.write(f'<a href="#settings">Settings</a><br>\n')
+    f.write("</div>\n")
 
-        # Toggle button
-        f.write('<button class="toggle-chords">Hide chords</button>\n\n')
+
+def write_html_book(output_path, songs, grouped):
+    with open(output_path, "w", encoding="utf-8") as f:
+
+        # =========================
+        # HTML HEAD (FROM YOUR example.html)
+        # =========================
+        f.write(
+            """<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cancionero</title>
+"""
+        )
+
+        # ---- INSERT YOUR FULL CSS HERE ----
+        with open("book.css", "r", encoding="utf-8") as ccs_file:
+            book_css = ccs_file.read()
+        f.write(f"<style>\n{book_css}\n</style>\n")
+
+        # ---- INSERT YOUR FULL JS HERE ----
+        with open("assets.js", "r", encoding="utf-8") as js_file:
+            script = js_file.read()
+            f.write(f"""<script>{script}</script>""")
+
+        f.write("</head><body>\n")
+
+        # MINI TOC SIDEBAR
         f.write("""
-<div class="transpose-controls">
-  <button class="transpose-down">−</button>
-  <span class="transpose-value">0</span>
-  <button class="transpose-up">+</button>
+            <div id="toc-sidebar" class="toc-sidebar">
+                <div class="toc-content">
+        """)
+        write_mini_toc_html(f, grouped)
+        f.write("""
+                </div>
+            </div>
+            <button id="toc-toggle" class="toc-toggle">➤</button>
+        """)
+
+        # =========================
+        # HEADER
+        # =========================
+        f.write("<h1>Cancionero</h1>\n")
+
+        # =========================
+        # SEARCH UI (now REAL HTML, not escaped)
+        # =========================
+        f.write(
+            """
+<div id="search-container">
+    <input id="search-box" type="search" placeholder="Search songs...">
+    <div id="search-results"></div>
 </div>
-""")
-        f.write("""<button class="toggle-columns">2 columns</button>""")
+"""
+        )
 
-        write_song_meta(f, h)
+        # =========================
+        # MINI TOC (TOP NAV)
+        # =========================
+        write_mini_toc_html(f, grouped)
 
-        f.write(format_lyrics(h["content"]) + "\n\n")
+        # =========================
+        # FULL CONTENTS TABLE
+        # =========================
+        write_tag_sections_html(f, grouped)
 
-        f.write("</div>\n\n---\n\n")
+        # =========================
+        # ALL SONGS (IN CONTENTS)
+        # =========================
+        write_all_songs_links(f, songs)
 
-    f.write("\n# Settings\n\n")
-    f.write(f'<button id="toggle-all-chords">Hide all chords</button>')
-    
-def build_html():
-    with open(PANDOC_HEADER, "w", encoding="utf-8") as f:
-        with open("book.css", "r", encoding="utf-8") as js:
-            book_css = js.read()
-            f.write(f"<style>{book_css}</style>\n")
-        with open("assets.js", "r", encoding="utf-8") as js:
-            script = js.read()
-            f.write(f"""
-<script>
-{script}
-</script>
-""")
-        with open("search-index.json", "r", encoding="utf-8") as search_js:
-            search_index_json = search_js.read()
-            f.write(f"""
-<script>
-const SONG_INDEX = {search_index_json};
-</script>
-""")
+        # =========================
+        # ALL SONGS
+        # =========================
+        f.write('<h1>All Songs</h1>\n')
 
-    subprocess.run(
-        [
-            "pandoc",
-            OUTPUT_PDF_MD,
-            "-o",
-            OUTPUT_HTML,
-            "--toc",
-            "--standalone",
-            "-H",
-            PANDOC_HEADER,
-        ],
-        check=True,
-    )
+        search_index = []
 
-    # Copy OUTPUT_HTML → ROOT_HTML (overwrite if exists)
-    shutil.copyfile(OUTPUT_HTML, ROOT_HTML)
+        for h in songs:
+            autor = h.get("autor") or ""
+            heading_text = f"{h['heading']}{f' - {autor}' if autor else ''}"
 
+            f.write(
+                f'<div class="song" data-song-id="{h["fname"]}" id="{h["anchor"]}">\n'
+            )
 
-def build_pdf():
-    subprocess.run(
-        [
-            "pandoc",
-            OUTPUT_PDF_MD,
-            "-o",
-            OUTPUT_PDF,
-            "--toc",
-            "-V",
-            "geometry:margin=1in",
-        ],
-        check=True,
-    )
+            # ---- TITLE ----
+            f.write(f"<h3>{heading_text}</h3>\n")
 
+            # ---- CONTROLS ----
+            f.write(
+                """
+<div class="controls">
+    <button class="toggle-chords">Hide chords</button>
+    <div class="transpose-controls">
+        <button class="transpose-down">-</button>
+        <span class="transpose-value">0</span>
+        <button class="transpose-up">+</button>
+    </div>
+    <button class="toggle-columns">2 columns</button>
+</div>
+"""
+            )
 
-def build_book(pdf=False, html=False):
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+            # ---- META ----
+            if h.get("autor"):
+                f.write(f'<p><em>Autor: {h["autor"]}</em></p>\n')
+            if h.get("capo") is not None:
+                f.write(f'<p><em>Capo: {h["capo"]}</em></p>\n')
+            if h.get("link"):
+                f.write(f'<p><a href="{h["link"]}" target="_blank">Link</a></p>\n')
 
-    songs = get_all_songs()
-    grouped = group_songs(songs)
+            # ---- LYRICS (YOUR FUNCTION, UNTOUCHED) ----
+            f.write(format_lyrics(h["content"]))
 
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        write_obsidian_book(f, songs, grouped)
-    print(f"Obsidian book generated at {OUTPUT_FILE}")
+            f.write("</div>\n\n")
 
-    with open(OUTPUT_PDF_MD, "w", encoding="utf-8") as f:
-        write_pdf_book(f, songs, grouped)
-    print(f"PDF source generated at {OUTPUT_PDF_MD}")
+            # ---- Create SEARCH INDEX ----
+            search_index.append(
+                {
+                    "id": h["anchor"],
+                    "title": h["heading"],
+                    "author": h.get("autor", ""),
+                    "text": h["content"],
+                }
+            )
 
-    if html:
-        build_html()
-        print(f"HTML generated at {OUTPUT_HTML}")
+        f.write(
+            """
+        <div class="settings" id="settings">
+            <h1>Settings</h1>
+            <button id="toggle-all-chords">Hide all chords</button>
+        </div>
+        """
+        )
+        # =========================
+        # SEARCH INDEX
+        # =========================
+        f.write("<script>\n")
+        f.write("const SONG_INDEX = ")
+        json.dump(search_index, f, ensure_ascii=False)
+        f.write(";\n</script>\n")
 
-    if pdf:
-        build_pdf()
-        print(f"PDF generated at {OUTPUT_PDF}")
+        f.write("</body></html>")
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Build the hymn book")
-    parser.add_argument(
-        "--html",
-        action="store_true",
-        help="Also generate output/index.html via pandoc",
-    )
-    parser.add_argument(
-        "--pdf",
-        action="store_true",
-        help="Also generate output/book.pdf via pandoc",
-    )
-    args = parser.parse_args()
-
-    try:
-        build_book(pdf=args.pdf, html=args.html)
-    except subprocess.CalledProcessError as exc:
-        print(f"Pandoc failed with exit code {exc.returncode}", file=sys.stderr)
-        sys.exit(exc.returncode)
+    print("[START]: Gathering all songs")
+    songs = get_all_songs()
+    print("[END]: Gathering all songs")
+    print("[START]: Grouping all songs")
+    grouped = group_songs(songs)
+    print("[END]: Grouping all songs")
+    print("[START]: Writing HTML BOOK")
+    write_html_book(OUTPUT_HTML, songs, grouped)
+    print("[END]: Writing HTML BOOK")
+    print("[START]: Copying HTML BOOK TO INDEX")
+    shutil.copyfile(OUTPUT_HTML, ROOT_HTML)
+    print("[END]: Copying HTML BOOK TO INDEX")

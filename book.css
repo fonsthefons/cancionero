@@ -1,55 +1,128 @@
+/* ============================= */
+/* GLOBAL BOOK STYLE             */
+/* ============================= */
+
 body {
-  margin: 0 !important;
-  max-width: none !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  overflow-x: auto;
+    margin: 20px;
+    padding: 0 !important;
+    background: #f4f1ea; /* soft paper tone */
+    color: #2b2b2b;
+    font-family: Georgia, "Times New Roman", serif;
 }
 
-.verse {
-  break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
-  margin-bottom: 1rem;
+/* Center page like a book */
+/* .song {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px 50px;
+    background: #fffdf8;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 6px;
+} */
+
+/* Title (you can add class if needed) */
+.song-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
 
-.lyrics {
-  font-family: monospace;
-  margin: 0;
-  padding: 0;
-  overflow-wrap: normal;
-  word-break: normal;
+/* Metadata */
+.song p em {
+    color: #666;
+    font-size: 0.9rem;
 }
 
+/* ============================= */
+/* LINKS (FIX YOUR ISSUE #3)     */
+/* ============================= */
 
-/* Each line occupies its own row */
-.chord-line,
-.lyric-line {
-  display: block;
-  line-height: 1.2;
-  padding: 0;
-  font-size: small;
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
-
-/* Small separation before chord lines */
-.chord-line {
-  margin-top: 0.3rem;
+a:visited,
+a:active,
+a:focus {
+    color: inherit;
+    outline: none;
 }
 
-
-/* Chord styling */
-.chord {
-  font-weight: bold;
-  color: #22a3a7;
+/* Optional subtle hover instead of ugly highlight */
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
 }
 
+/* ============================= */
+/* CONTROL BAR                   */
+/* ============================= */
 
-/* Blank verse spacing */
-.verse-break {
-  display: block;
-  margin-top: 1rem;
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    color:  #9fa2cf;
+
 }
 
+/* All buttons unified */
+.controls button {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    border: 1px solid #ccc;
+    background: #fffaf1;
+    color:  #9fa2cf;
+
+    cursor: pointer;
+}
+
+/* Hover */
+.controls button:hover {
+    background: #f0f0f0;
+}
+
+/* Active (feels like real UI) */
+.controls button:active {
+    background: #e6e6e6;
+}
+
+/* Transpose group */
+.transpose-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Make + / - square and tighter */
+.transpose-controls button {
+    width: 28px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+/* Value display */
+.transpose-value {
+    min-width: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/* Remove all conflicting margins */
+.toggle-chords,
+.toggle-columns,
+.transpose-controls {
+    margin: 0;
+}
 
 /* Chord visibility */
 .song.no-chords .chord-line,
@@ -64,78 +137,144 @@ body.hide-all-chords .chord-line,
 }
 
 
-/* Chord toggle button */
-.toggle-chords {
-  margin: 10px 0;
-  padding: 4px 8px;
-  cursor: pointer;
+/* ============================= */
+/* LYRICS                        */
+/* ============================= */
+
+
+.song {
+    font-family: Georgia, "Times New Roman", serif;
+    margin-top: 20px;
 }
 
-
-/* Transposition controls */
-.transpose-controls {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin: 6px 0;
+.lyrics {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.95rem;
+    line-height: 1.2;
 }
 
-.transpose-controls button {
-  font-size: 16px;
-  padding: 2px 8px;
+/* Each line */
+.chord-line,
+.lyric-line {
+    display: block;
+    line-height: 1.25;
+    font-size: 0.95rem;
 }
 
-.transpose-value {
-  font-weight: bold;
-  min-width: 24px;
-  text-align: center;
+/* Keep your spacing logic intact */
+.chord-line,
+.lyric-line {
+    white-space: pre;
 }
 
+/* Chords styling (more subtle + book-like) */
+.chord {
+    font-weight: bold;
+    color: #1d9f9f;
+}
 
-/* ================================= */
-/* Two column songs                  */
-/* ================================= */
+/* Verse spacing */
+.verse {
+    margin-bottom: 1.2rem;
+}
 
-/*
- Keep two columns side-by-side.
- On narrow screens the user can scroll horizontally.
-*/
+/* Slight visual grouping */
+.chord-lyric-line-pair {
+    margin-bottom: 2px;
+}
+
+/* ============================= */
+/* TWO COLUMN MODE (IMPROVED)    */
+/* ============================= */
+
 .song.two-columns .lyrics {
-  column-count: 2;
-  column-gap: 2rem;
-  column-width: 380px;
+    column-count: 2;
+    column-gap: 3rem;
+    column-width: 380px;
 
-  width: max-content;
+    /* Important for scroll instead of squish */
+    width: max-content;
 }
 
-
-/*
- Keep chord + lyric pairs together
-*/
-.song.two-columns .chord-lyric-line-pair {
-  break-inside: avoid-column;
-  -webkit-column-break-inside: avoid;
-}
-
-
-/*
- Ensure content does not shrink
-*/
-.song.two-columns .lyrics > *,
+/* Prevent breaking inside verses */
 .song.two-columns .verse,
-.song.two-columns .chord-lyric-line-pair,
+.song.two-columns .chord-lyric-line-pair {
+    break-inside: avoid-column;
+}
+
+/* Keep alignment perfect */
 .song.two-columns .chord-line,
 .song.two-columns .lyric-line {
-  max-width: none;
+    white-space: pre;
+}
+
+/* ============================= */
+/* OPTIONAL: PAGE FEEL           */
+/* ============================= */
+
+/* subtle page separator if multiple songs */
+.song + .song {
+    margin-top: 60px;
+}
+
+/* print-friendly (optional bonus) */
+@media print {
+    body {
+        background: white;
+    }
+
+    .song {
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+    }
 }
 
 
-/*
- Preserve chord alignment
-*/
-.song.two-columns .chord-line,
-.song.two-columns .lyric-line {
-  white-space: pre;
-  overflow-wrap: normal;
-  word-break: normal;
+/* Sidebar container */
+.toc-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 260px;
+
+    background: white;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* When open */
+.toc-sidebar.open {
+    transform: translateX(0);
+}
+
+/* Inner content */
+.toc-content {
+    padding: 15px;
+}
+
+/* Toggle button (arrow) */
+.toc-toggle {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+
+    z-index: 1100;
+
+    font-size: 18px;
+    padding: 6px 10px;
+
+    cursor: pointer;
+}
+
+/* Move arrow when open */
+.toc-sidebar.open + .toc-toggle {
+    right: 270px;
 }
