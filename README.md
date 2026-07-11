@@ -1,10 +1,26 @@
 # Hymn Book
 
+## SETUP from scratch
+### 0. Clone the repo
+gh repo clone fonsthefons/cancionero
+
+### 1. Create venv named venv (name doesn't matter change it if necessary)
+python3 -m venv venv
+
+### 2. Activate
+source venv/bin/activate     # macOS/Linux
+
+### 3. Install PyYAML
+pip install -r requirements.txt
+
+### 4. Run the build
+python build.py
+
 ## Adding a new song
 
 1. Create a new `.md` file in `songs/` (e.g. `songs/mi_cancion.md`).
 
-2. Add frontmatter at the top, then the lyrics below:
+2. Add metadata at the top, then the lyrics below. If you include chords, use spaces (not tabs) to align them with the desired lyric
 
 ```markdown
 ---
@@ -66,29 +82,9 @@ song_tags:
 4. Rebuild the book:
 
 ```bash
-python3 build.py          # generates output/book.md and output/book-pdf.md
-python3 build.py --html   # also generates output/index.html
-python3 build.py --pdf    # also generates output/book.pdf (requires LaTeX)
+python3 build.py          # generates output/index.html and root/index.html (necessary for github pages)
 ```
 
-## Output files
-
-| File | Purpose |
-|------|---------|
-| `output/book.md` | For browsing in Obsidian (wikilink table of contents) |
-| `output/book-pdf.md` | Source for Pandoc HTML/PDF export |
-| `output/index.html` | Standalone HTML with clickable links and preserved lyrics |
-| `output/book.pdf` | PDF (via Pandoc + LaTeX) |
-
-To generate HTML manually:
-
-```bash
-pandoc output/book-pdf.md -o output/index.html --toc --standalone -H output/pandoc-header.html
-```
-
-## Browsing in Obsidian
-
-The `indexes/` folder contains dataview queries that list songs by tag. After adding a song, open the relevant index note to confirm it appears.
 
 ## Tags and subtags
 
@@ -148,7 +144,7 @@ The built book lists sections in this order: Misa → Alabanza → Adoracion →
 ### Tagging a song
 
 1. Edit the song's `song_tags` in frontmatter using only the allowed values above.
-2. Rebuild: `python3 build.py --html`
+2. Rebuild: `python3 build.py`
 3. Check the matching note in `indexes/` (e.g. `indexes/misa.md`, `indexes/tema.md`).
 
 To remove a song from a subtag or tag, delete that entry from frontmatter.
