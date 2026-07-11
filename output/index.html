@@ -151,13 +151,15 @@ body.hide-all-chords .chord-line,
 /* LYRICS                        */
 /* ============================= */
 
-
 .song {
     font-family: Georgia, "Times New Roman", serif;
     margin-top: 20px;
 }
 
-.lyrics {
+
+.song .lyrics {
+    column-count: 1;
+    break-inside: avoid;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 0.95rem;
     line-height: 1.2;
@@ -194,41 +196,46 @@ body.hide-all-chords .chord-line,
 }
 
 /* ============================= */
-/* TWO COLUMN MODE               */
+/* COLUMN LOGIC                  */
 /* ============================= */
-body.two-columns-global .lyrics,
-.song.force-two-columns .lyrics {
-    column-count: 2;
-    column-gap: 3rem;
-    column-width: 380px;
-
-    /* Important for scroll instead of squish */
-    width: max-content;
-}
-
-
-/* Prevent breaking inside verses */
-body.two-columns-global .verse,
-.song.force-two-columns .verse,
-.song.force-two-columns .chord-lyric-line-pair,
-body.two-columns-global .chord-lyric-line-pair
- {
+/* Prevent bad breaks inside verses and lines */
+.song .verse,
+.song .chord-lyric-line-pair {
     break-inside: avoid-column;
 }
 
-/* Keep alignment perfect */
-body.two-columns-global .chord-line,
-.song.force-two-columns .chord-line,
-.song.force-two-columns .lyric-line,
-body.two-columns-global .lyric-line
- {
+/* Keep chord + lyric alignment */
+.song .chord-line,
+.song .lyric-line {
     white-space: pre;
 }
 
-/* FORCE 1 column */
-.song.force-one-column .lyrics {
+/* ======================
+   GLOBAL 2-COLUMN MODE
+   ====================== */
+body.two-columns-global .song .lyrics {
+    column-count: 2;
+    column-gap: 3rem;
+    column-width: 380px;
+}
+
+/* ======================
+   LOCAL OVERRIDES
+   ====================== */
+
+/* Force 1 column */
+.song.force-one-column .lyrics,
+body.two-columns-global .song.force-one-column .lyrics {
     column-count: 1 !important;
-  }
+}
+
+/* Force 2 columns */
+.song.force-two-columns .lyrics,
+body.two-columns-global .song.force-two-columns .lyrics {
+    column-count: 2 !important;
+    column-gap: 3rem;
+    column-width: 380px;
+}
 
 
 /* subtle page separator if multiple songs */
@@ -401,26 +408,6 @@ document.addEventListener("click", function (e) {
         const hidden = document.body.classList.contains("hide-all-chords");
         e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
 
-        document.querySelectorAll(".song")
-            .forEach(song => {
-                song.classList.remove("force-hide-chords", "force-show-chords");
-
-                const btn = song.querySelector(".toggle-chords");
-                if (btn) {
-                    btn.textContent = hidden ? "Show chords" : "Hide chords";
-                }
-            });
-
-        // // ONLY clear overrides (cheap, no heavy DOM work)
-        // document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
-        //     .forEach(song => {
-        //         song.classList.remove("force-hide-chords", "force-show-chords");
-
-        //         const btn = song.querySelector(".toggle-chords");
-        //         if (btn) {
-        //             btn.textContent = hidden ? "Show chords" : "Hide chords";
-        //         }
-        //     });
 
         return;
     }
@@ -562,75 +549,77 @@ document.addEventListener("click", function (e) {
 });
 
 
-// -----------------------------
-// -----------------------------
 // COLUMN LOGIC
-// -----------------------------
-// -----------------------------
 document.addEventListener("click", function (e) {
 
-    // -------------------------
     // GLOBAL TOGGLE
-    // -------------------------
     if (e.target.id === "toggle-global-columns") {
-        document.body.classList.toggle("two-columns-global");
-        const isOneColumn = document.body.classList.contains("one-columns-global");
-        const isTwoColumns = document.body.classList.contains("two-columns-global");
-        e.target.textContent = isTwoColumns ? "1 column" : "2 columns";
+        const body = document.body;
+        const willBeTwo = !body.classList.contains("two-columns-global");
 
+        body.classList.toggle("two-columns-global", willBeTwo);
+        e.target.textContent = willBeTwo ? "1 column" : "2 columns";
 
-        // Reset all buttons overrides
-        document.querySelectorAll(".song")
-            .forEach(song => {
-                song.classList.remove("force-two-columns", "force-one-column");
+        document.querySelectorAll(".song.force-one-column, .song.force-two-columns").forEach(song => {
+            const btn = song.querySelector(".toggle-columns");
+            if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
+            song.classList.remove("force-one-column");
+            song.classList.remove("force-two-columns");
+        });
 
-                const btn = song.querySelector(".toggle-columns");
-                if (btn) {
-                    btn.textContent = isTwoColumns ? "1 column" : "2 columns";
-                }
-            });
-
+        // if (willBeTwo) {
+        //     document.querySelectorAll(".song.force-one-column").forEach(song => {
+        //         song.classList.remove("force-one-column");
+        //         const btn = song.querySelector(".toggle-columns");
+        //         if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
+        //     });
+        // } else {
+        //     document.querySelectorAll(".song.force-two-columns").forEach(song => {
+        //         song.classList.remove("force-two-column");
+        //         const btn = song.querySelector(".toggle-columns");
+        //         if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
+        //     });
+        // }
 
         return;
     }
 
-    // -------------------------
     // LOCAL TOGGLE
-    // -------------------------
     const btn = e.target.closest(".toggle-columns");
     if (!btn) return;
 
     const song = btn.closest(".song");
     if (!song) return;
 
-    const globalEnabled = document.body.classList.contains("two-columns-global");
+    // Remove previous local overrides
+    // song.classList.remove("force-one-column", "force-two-columns");
 
-    const forceTwo = song.classList.contains("force-two-columns");
-    const forceOne = song.classList.contains("force-one-column");
+    const globalIsTwo = document.body.classList.contains("two-columns-global");
 
-    let currentlyTwo;
+    const wantsTwoColumns =
+        (globalIsTwo && song.classList.contains("force-one-column")) ||
+        (!globalIsTwo && !song.classList.contains("force-one-column") && !song.classList.contains("force-two-columns")) ||
+        (!globalIsTwo && song.classList.contains("force-one-column") && !song.classList.contains("force-two-columns"))
 
-    if (forceTwo) {
-        currentlyTwo = true;
-    } else if (forceOne) {
-        currentlyTwo = false;
+
+    if (wantsTwoColumns) {
+        // when global is set to 2 and we want 2 columns, nothing local can override
+        song.classList.remove("force-one-column");
+        if (globalIsTwo) {
+            song.classList.remove("force-two-columns");
+        } else {
+            song.classList.add("force-two-columns");
+        }
+
+        btn.textContent = "1 column";
     } else {
-        currentlyTwo = globalEnabled;
+        song.classList.remove("force-two-columns")
+        if (globalIsTwo) {
+            song.classList.add("force-one-column");
+        }
+        btn.textContent = "2 columns";
     }
-
-    // clear previous override
-    song.classList.remove("force-two-columns", "force-one-column");
-
-    // apply new override
-    if (currentlyTwo) {
-        song.classList.add("force-one-column");
-    } else {
-        song.classList.add("force-two-columns");
-    }
-
-    btn.textContent = currentlyTwo ? "2 columns" : "1 column";
 });
-
 
 
 
@@ -713,6 +702,7 @@ function showSearchResults(results, type) {
 
 
 
+// Search box main
 document.addEventListener(
     "DOMContentLoaded",
     () => {
@@ -734,6 +724,7 @@ document.addEventListener(
     }
 );
 
+// Search box toc
 document.addEventListener(
     "DOMContentLoaded",
     () => {
@@ -755,7 +746,7 @@ document.addEventListener(
     }
 );
 
-
+// SIDEBAR TOGGLE
 document.addEventListener("click", function (e) {
 
     // -------------------------
@@ -790,11 +781,7 @@ document.addEventListener("click", function (e) {
 
 });
 
-// -------------------------
-// -------------------------
 // PRINT LOGIC
-// -------------------------
-// -------------------------
 document.addEventListener("click", function (e) {
 
 

@@ -141,13 +141,15 @@ body.hide-all-chords .chord-line,
 /* LYRICS                        */
 /* ============================= */
 
-
 .song {
     font-family: Georgia, "Times New Roman", serif;
     margin-top: 20px;
 }
 
-.lyrics {
+
+.song .lyrics {
+    column-count: 1;
+    break-inside: avoid;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 0.95rem;
     line-height: 1.2;
@@ -184,41 +186,46 @@ body.hide-all-chords .chord-line,
 }
 
 /* ============================= */
-/* TWO COLUMN MODE               */
+/* COLUMN LOGIC                  */
 /* ============================= */
-body.two-columns-global .lyrics,
-.song.force-two-columns .lyrics {
-    column-count: 2;
-    column-gap: 3rem;
-    column-width: 380px;
-
-    /* Important for scroll instead of squish */
-    width: max-content;
-}
-
-
-/* Prevent breaking inside verses */
-body.two-columns-global .verse,
-.song.force-two-columns .verse,
-.song.force-two-columns .chord-lyric-line-pair,
-body.two-columns-global .chord-lyric-line-pair
- {
+/* Prevent bad breaks inside verses and lines */
+.song .verse,
+.song .chord-lyric-line-pair {
     break-inside: avoid-column;
 }
 
-/* Keep alignment perfect */
-body.two-columns-global .chord-line,
-.song.force-two-columns .chord-line,
-.song.force-two-columns .lyric-line,
-body.two-columns-global .lyric-line
- {
+/* Keep chord + lyric alignment */
+.song .chord-line,
+.song .lyric-line {
     white-space: pre;
 }
 
-/* FORCE 1 column */
-.song.force-one-column .lyrics {
+/* ======================
+   GLOBAL 2-COLUMN MODE
+   ====================== */
+body.two-columns-global .song .lyrics {
+    column-count: 2;
+    column-gap: 3rem;
+    column-width: 380px;
+}
+
+/* ======================
+   LOCAL OVERRIDES
+   ====================== */
+
+/* Force 1 column */
+.song.force-one-column .lyrics,
+body.two-columns-global .song.force-one-column .lyrics {
     column-count: 1 !important;
-  }
+}
+
+/* Force 2 columns */
+.song.force-two-columns .lyrics,
+body.two-columns-global .song.force-two-columns .lyrics {
+    column-count: 2 !important;
+    column-gap: 3rem;
+    column-width: 380px;
+}
 
 
 /* subtle page separator if multiple songs */
