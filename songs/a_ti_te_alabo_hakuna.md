@@ -32,7 +32,8 @@ No creía que fuera posible este don
 Un Dios
 Todo lo que veo a mi alrededor
 Grita que aquí estás y esconde mi temor
-Todo ser que aliente a la vida al Señor y grite bien fuerte
+Todo ser que aliente a la vida al Señor 
+y grite bien fuerte
 
 A ti te alabo, Señor en tu templo
 A ti te alabo con todo el firmamento

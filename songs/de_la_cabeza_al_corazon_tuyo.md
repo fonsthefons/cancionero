@@ -29,6 +29,7 @@ E           D
 Lo sabe mi cabeza
 A                        E
 pero se le olvida al corazón
+
 [Pre-Chorus]
 E              B
 Convénceme Señor
@@ -36,6 +37,7 @@ Convénceme Señor
 De que tu amor no se merece
                           E
 Y llévame de la cabeza al corazón
+
 [Chorus]
                A
 Tu amor es más grande
@@ -55,8 +57,10 @@ A
 Hazme viajar
 B                    E
 De la cabeza al corazón
+
 [Interlude]
 E D A E
+
 [Verse]
 E                   D
 Cada vez que me sonríes
@@ -74,6 +78,7 @@ E                    D
 Ahora lo sabe mi cabeza
 A                       E
 Haz que lo sepa el corazón
+
 [Pre-Chorus]
 E              B
 Convénceme Señor
@@ -81,6 +86,7 @@ Convénceme Señor
 de que me quieres porque quieres
                               E
 y llévame de la cabeza al corazón
+
 [Chorus]
                    A
 Tu amor es más grande
@@ -118,6 +124,7 @@ A
 Hazme viajar
 B                    E
 De la cabeza al corazón
+
 [Outro]
 A        Am             E
 Día tras día aquí de rodillas
