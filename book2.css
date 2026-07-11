@@ -229,3 +229,52 @@ body.hide-all-chords .chord-line,
         page-break-after: always;
     }
 }
+
+
+/* Sidebar container */
+.toc-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 260px;
+
+    background: white;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* When open */
+.toc-sidebar.open {
+    transform: translateX(0);
+}
+
+/* Inner content */
+.toc-content {
+    padding: 15px;
+}
+
+/* Toggle button (arrow) */
+.toc-toggle {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+
+    z-index: 1100;
+
+    font-size: 18px;
+    padding: 6px 10px;
+
+    cursor: pointer;
+}
+
+/* Move arrow when open */
+.toc-sidebar.open + .toc-toggle {
+    right: 270px;
+}

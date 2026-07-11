@@ -1,10 +1,8 @@
-import argparse
 import html
 import json
 import os
 import re
 import shutil
-import subprocess
 import sys
 import yaml
 
@@ -70,6 +68,8 @@ CHORD_RE = re.compile(
     r")"
     r"(?!\w)"
 )
+
+SEPARATOR_RE = re.compile(r"^[-|]+$")  # allows -, --, |, || etc.
 
 
 def hymn_anchor(number, uniqueId):
@@ -234,15 +234,12 @@ def write_tag_sections_html(f, grouped):
         )
 
         for subtag in subtags:
-            f.write(f'<h3 id="{subtag}">{format_label(subtag)}</h3>\n')
+            f.write(f'<h3 id="{tag}-{subtag}">{format_label(subtag)}</h3>\n')
 
             for h in sorted(subgroups[subtag], key=lambda x: x["number"]):
                 write_song_link_html(f, h, indent=True)
 
         f.write("<br>\n")
-
-
-SEPARATOR_RE = re.compile(r"^[-|]+$")  # allows -, --, |, || etc.
 
 
 def split_embedded_chords(token):
@@ -343,6 +340,41 @@ def write_song_meta(f, song):
         f.write(f"[Link]({song['link']})\n\n")
 
 
+def write_all_songs_links(f, songs):
+    f.write('<h2 id="all-songs-list">All Songs</h2>\n')
+
+    for s in songs:
+        autor = s.get("autor") or ""
+        text = f"{s['heading']}{f' - {autor}' if autor else ''}"
+
+        f.write(f'<a href="#{s["anchor"]}">{text}</a><br>\n')
+
+
+# Mini Index of indexes
+def write_mini_toc_html(f, grouped):
+    f.write('<div class="mini-toc">\n')
+    f.write("<h2>Contenido</h2>\n")
+
+    # 🔥 All Songs link
+    f.write(f'<a href="#all-songs-list">All Songs</a><br>\n')
+
+    for tag in sorted(grouped.keys(), key=tag_sort_key):
+        f.write(f'<a href="#{tag}">{format_label(tag)}</a><br>\n')
+
+        subgroups = grouped[tag]
+
+        subtags = sorted(
+            (k for k in subgroups if k != "_ungrouped"),
+            key=lambda k: subtag_sort_key(tag, k),
+        )
+
+        for subtag in subtags:
+            f.write(f'&nbsp;&nbsp;<a href="#{tag}-{subtag}">{format_label(subtag)}</a><br>\n')
+
+    f.write(f'<a href="#settings">Settings</a><br>\n')
+    f.write("</div>\n")
+
+
 def write_html_book(output_path, songs, grouped):
     with open(output_path, "w", encoding="utf-8") as f:
 
@@ -355,7 +387,7 @@ def write_html_book(output_path, songs, grouped):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hymn Book</title>
+<title>Cancionero</title>
 """
         )
 
@@ -371,10 +403,22 @@ def write_html_book(output_path, songs, grouped):
 
         f.write("</head><body>\n")
 
+        # MINI TOC SIDEBAR
+        f.write("""
+            <div id="toc-sidebar" class="toc-sidebar">
+                <div class="toc-content">
+        """)
+        write_mini_toc_html(f, grouped)
+        f.write("""
+                </div>
+            </div>
+            <button id="toc-toggle" class="toc-toggle">➤</button>
+        """)
+
         # =========================
         # HEADER
         # =========================
-        f.write("<h1>Hymn Book</h1>\n")
+        f.write("<h1>Cancionero</h1>\n")
 
         # =========================
         # SEARCH UI (now REAL HTML, not escaped)
@@ -389,14 +433,24 @@ def write_html_book(output_path, songs, grouped):
         )
 
         # =========================
-        # TAG SECTIONS (REPLACES MARKDOWN)
+        # MINI TOC (TOP NAV)
+        # =========================
+        write_mini_toc_html(f, grouped)
+
+        # =========================
+        # FULL CONTENTS TABLE
         # =========================
         write_tag_sections_html(f, grouped)
 
         # =========================
+        # ALL SONGS (IN CONTENTS)
+        # =========================
+        write_all_songs_links(f, songs)
+
+        # =========================
         # ALL SONGS
         # =========================
-        f.write('<h1 id="all-songs">All Songs</h1>\n')
+        f.write('<h1>All Songs</h1>\n')
 
         search_index = []
 
@@ -412,7 +466,8 @@ def write_html_book(output_path, songs, grouped):
             f.write(f"<h3>{heading_text}</h3>\n")
 
             # ---- CONTROLS ----
-            f.write("""
+            f.write(
+                """
 <div class="controls">
     <button class="toggle-chords">Hide chords</button>
     <div class="transpose-controls">
@@ -422,8 +477,8 @@ def write_html_book(output_path, songs, grouped):
     </div>
     <button class="toggle-columns">2 columns</button>
 </div>
-""")
-
+"""
+            )
 
             # ---- META ----
             if h.get("autor"):
@@ -448,12 +503,14 @@ def write_html_book(output_path, songs, grouped):
                 }
             )
 
-        f.write("""
+        f.write(
+            """
         <div class="settings" id="settings">
             <h1>Settings</h1>
             <button id="toggle-all-chords">Hide all chords</button>
         </div>
-        """)
+        """
+        )
         # =========================
         # SEARCH INDEX
         # =========================

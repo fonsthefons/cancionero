@@ -280,3 +280,38 @@ document.addEventListener(
         );
     }
 );
+
+
+document.addEventListener("click", function (e) {
+
+    // -------------------------
+    // SIDEBAR TOGGLE
+    // -------------------------
+    if (e.target.id === "toc-toggle") {
+
+        const sidebar = document.getElementById("toc-sidebar");
+        const btn = e.target;
+
+        sidebar.classList.toggle("open");
+
+        btn.textContent = sidebar.classList.contains("open") ? "◀" : "➤";
+
+        return;
+    }
+
+    // -------------------------
+    // CLOSE SIDEBAR ON LINK CLICK
+    // -------------------------
+    if (e.target.closest("#toc-sidebar a")) {
+
+        const sidebar = document.getElementById("toc-sidebar");
+        const btn = document.getElementById("toc-toggle");
+
+        sidebar.classList.remove("open");
+
+        if (btn) btn.textContent = "➤";
+
+        return;
+    }
+
+});
