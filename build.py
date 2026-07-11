@@ -451,24 +451,24 @@ def write_html_book(output_path, songs, grouped):
         # MINI TOC (TOP NAV)
         # =========================
         write_mini_toc_html(f, grouped)
-        f.write("<hr>\n")
+        # f.write("<hr>\n")
 
         # =========================
         # FULL CONTENTS TABLE
         # =========================
         write_tag_sections_html(f, grouped)
-        f.write("<hr>\n")
+        # f.write("<hr>\n")
 
         # =========================
         # ALL SONGS (IN CONTENTS)
         # =========================
         write_all_songs_links(f, songs)
-        f.write("<hr>\n")
+        # f.write("<hr>\n")
 
         # =========================
         # ALL SONGS
         # =========================
-        f.write("<hr>\n")
+        # f.write("<hr>\n")
         f.write("<h1>All Songs</h1>\n")
 
         search_index = []
@@ -524,7 +524,7 @@ def write_html_book(output_path, songs, grouped):
                 }
             )
 
-        f.write("<hr>\n")
+        # f.write("<hr>\n")
         f.write(
             """
             <div class="settings" id="settings">

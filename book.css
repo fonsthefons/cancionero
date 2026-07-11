@@ -160,7 +160,7 @@ body.hide-all-chords .chord-line {
     column-count: 1;
     break-inside: avoid;
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-    font-size: 0.95rem;
+    font-size: 0.75rem;
     line-height: 1.2;
     width: max-content;
 }
@@ -170,7 +170,7 @@ body.hide-all-chords .chord-line {
 .lyric-line {
     display: block;
     line-height: 1.25;
-    font-size: 0.95rem;
+    font-size: 0.75rem;
 }
 
 /* Keep your spacing logic intact */
@@ -215,7 +215,7 @@ body.hide-all-chords .chord-line {
    ====================== */
 body.two-columns-global .song .lyrics {
     column-count: 2;
-    column-gap: 3rem;
+    column-gap: 2rem;
     column-width: 380px;
     width: max-content;
 }
@@ -234,9 +234,9 @@ body.two-columns-global .song.force-one-column .lyrics {
 .song.force-two-columns .lyrics,
 body.two-columns-global .song.force-two-columns .lyrics {
     column-count: 2 !important;
-    column-gap: 3rem;
+    column-gap: 2rem;
     column-width: 380px;
-    width: max-content;
+    /* width: max-content; */
 }
 
 
@@ -377,7 +377,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
     /* TWO COLUMN PRINT */
     body.print-two-columns .lyrics {
         column-count: 2;
-        column-gap: 3rem;
+        column-gap: 2rem;
     }
 
     /* ONE COLUMN PRINT */

@@ -17,7 +17,7 @@ Desde el fondo del mar
               A
 del más alto lugar 
 (del más alto lugar),
-               Bm                                                                           
+               Bm   
 del más hondo abismo 
 (del más hondo abismo)
 
@@ -30,21 +30,21 @@ Desde mi corazón
                  A
 fuerte o débil esté
  (fuerte o débil esté)
-             Bm                                                                                   
+             Bm         
 cada instante de mi vida 
 (cada instante de mi vida)
 G      D    G    A      D
 con go  -  zo   yo   di  -  ré
 
-                           G       A   
+               G      A   
 Que tú eres la Roca eterna 
-D                      G         A         
+D              G         A         
 Señor sobre cielo y tierra
 Bm    G    A
 ¡Tú eres Dios!
-D                    G         A 
+D             G       A 
 Que toda criatura adore, 
- D                      G         A         
+ D           G         A         
 que toda nación se postre a ti
-Bm  G     A     D            G – A – D  
+Bm  G     A     D         G – A – D  
 Se  -  ñor, Tú eres Dios. 
