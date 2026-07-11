@@ -15,8 +15,7 @@ document.addEventListener("click", function (e) {
         const hidden = document.body.classList.contains("hide-all-chords");
         e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
 
-        // ONLY clear overrides (cheap, no heavy DOM work)
-        document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
+        document.querySelectorAll(".song")
             .forEach(song => {
                 song.classList.remove("force-hide-chords", "force-show-chords");
 
@@ -25,6 +24,17 @@ document.addEventListener("click", function (e) {
                     btn.textContent = hidden ? "Show chords" : "Hide chords";
                 }
             });
+
+        // // ONLY clear overrides (cheap, no heavy DOM work)
+        // document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
+        //     .forEach(song => {
+        //         song.classList.remove("force-hide-chords", "force-show-chords");
+
+        //         const btn = song.querySelector(".toggle-chords");
+        //         if (btn) {
+        //             btn.textContent = hidden ? "Show chords" : "Hide chords";
+        //         }
+        //     });
 
         return;
     }
@@ -165,26 +175,80 @@ document.addEventListener("click", function (e) {
 
 });
 
+
 // -----------------------------
 // -----------------------------
-// COLUMN TOGGLE LOGIC
+// COLUMN LOGIC
 // -----------------------------
 // -----------------------------
 document.addEventListener("click", function (e) {
-    const colBtn = e.target.closest(".toggle-columns");
-    if (colBtn) {
-        console.log(`HIT COLUMN BUTTON`);
-        const song = colBtn.closest(".song");
-        if (!song) return;
 
-        song.classList.toggle("two-columns");
+    // -------------------------
+    // GLOBAL TOGGLE
+    // -------------------------
+    if (e.target.id === "toggle-global-columns") {
+        document.body.classList.toggle("two-columns-global");
+        const isOneColumn = document.body.classList.contains("one-columns-global");
+        const isTwoColumns = document.body.classList.contains("two-columns-global");
+        e.target.textContent = isTwoColumns ? "1 column" : "2 columns";
 
-        const isTwo = song.classList.contains("two-columns");
-        colBtn.textContent = isTwo ? "1 column" : "2 columns";
+
+        // Reset all buttons overrides
+        document.querySelectorAll(".song")
+            .forEach(song => {
+                song.classList.remove("force-two-columns", "force-one-column");
+
+                const btn = song.querySelector(".toggle-columns");
+                if (btn) {
+                    btn.textContent = isTwoColumns ? "1 column" : "2 columns";
+                }
+            });
+
 
         return;
     }
+
+    // -------------------------
+    // LOCAL TOGGLE
+    // -------------------------
+    const btn = e.target.closest(".toggle-columns");
+    if (!btn) return;
+
+    const song = btn.closest(".song");
+    if (!song) return;
+
+    const globalEnabled = document.body.classList.contains("two-columns-global");
+
+    const forceTwo = song.classList.contains("force-two-columns");
+    const forceOne = song.classList.contains("force-one-column");
+
+    let currentlyTwo;
+
+    if (forceTwo) {
+        currentlyTwo = true;
+    } else if (forceOne) {
+        currentlyTwo = false;
+    } else {
+        currentlyTwo = globalEnabled;
+    }
+
+    // clear previous override
+    song.classList.remove("force-two-columns", "force-one-column");
+
+    // apply new override
+    if (currentlyTwo) {
+        song.classList.add("force-one-column");
+    } else {
+        song.classList.add("force-two-columns");
+    }
+
+    btn.textContent = currentlyTwo ? "2 columns" : "1 column";
 });
+
+
+
+
+
 
 
 // -----------------------------
@@ -225,10 +289,10 @@ function searchSongs(query) {
 
 
 
-function showSearchResults(results) {
+function showSearchResults(results, type) {
 
     const container =
-        document.getElementById("search-results");
+        document.getElementById(`search-results-${type}`);
 
     container.innerHTML = "";
 
@@ -268,7 +332,7 @@ document.addEventListener(
     () => {
 
         const box =
-            document.getElementById("search-box");
+            document.getElementById("search-box-main");
 
 
         box.addEventListener(
@@ -278,7 +342,28 @@ document.addEventListener(
                 const results =
                     searchSongs(box.value);
 
-                showSearchResults(results);
+                showSearchResults(results, "main");
+            }
+        );
+    }
+);
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const box =
+            document.getElementById("search-box-toc");
+
+
+        box.addEventListener(
+            "input",
+            () => {
+
+                const results =
+                    searchSongs(box.value);
+
+                showSearchResults(results, "toc");
             }
         );
     }
@@ -316,5 +401,72 @@ document.addEventListener("click", function (e) {
 
         return;
     }
+
+});
+
+// -------------------------
+// -------------------------
+// PRINT LOGIC
+// -------------------------
+// -------------------------
+document.addEventListener("click", function (e) {
+
+
+    // -------------------------
+    // OPEN PRINT SETTINGS
+    // -------------------------
+    if (e.target.id === "print-button") {
+
+        document
+            .getElementById("print-dialog")
+            .classList.add("open");
+
+        return;
+    }
+
+
+    // -------------------------
+    // CONFIRM PRINT
+    // -------------------------
+    if (e.target.id === "confirm-print") {
+
+
+        const columns =
+            document.getElementById("print-columns").value;
+
+
+        const chords =
+            document.getElementById("print-chords").value;
+
+
+
+        // Columns
+        if (columns === "2") {
+            document.body.classList.add("print-two-columns");
+        } else {
+            document.body.classList.remove("print-two-columns");
+        }
+
+
+
+        // Chords
+        if (chords === "off") {
+            document.body.classList.add("print-no-chords");
+        } else {
+            document.body.classList.remove("print-no-chords");
+        }
+
+
+
+        document
+            .getElementById("print-dialog")
+            .classList.remove("open");
+
+
+        window.print();
+
+        return;
+    }
+
 
 });

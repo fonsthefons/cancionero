@@ -370,7 +370,9 @@ def write_mini_toc_html(f, grouped):
         )
 
         for subtag in subtags:
-            f.write(f'&nbsp;&nbsp;<a href="#{tag}-{subtag}" class="mini-toc-subtag">{format_label(subtag)}</a><br>\n')
+            f.write(
+                f'&nbsp;&nbsp;<a href="#{tag}-{subtag}" class="mini-toc-subtag">{format_label(subtag)}</a><br>\n'
+            )
         f.write("<hr>\n")
 
     f.write(f'<a href="#settings" class="mini-toc-tag">Settings</a><br>\n')
@@ -384,13 +386,16 @@ def write_html_book(output_path, songs, grouped):
         # HTML HEAD (FROM YOUR example.html)
         # =========================
         f.write(
-            """<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cancionero</title>
-"""
+            """
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Cancionero</title>
+            </head>
+            <body>
+            """
         )
 
         # ---- INSERT YOUR FULL CSS HERE ----
@@ -406,16 +411,24 @@ def write_html_book(output_path, songs, grouped):
         f.write("</head><body>\n")
 
         # MINI TOC SIDEBAR
-        f.write("""
+        f.write(
+            """
             <div id="toc-sidebar" class="toc-sidebar">
                 <div class="toc-content">
-        """)
+        """
+        )
         write_mini_toc_html(f, grouped)
-        f.write("""
+        f.write(
+            """
+                </div>
+                <div id="search-container-toc" class="search-container-toc">
+                    <input id="search-box-toc" type="search" placeholder="Search songs...">
+                    <div id="search-results-toc"></div>
                 </div>
             </div>
             <button id="toc-toggle" class="toc-toggle">➤</button>
-        """)
+        """
+        )
 
         # =========================
         # HEADER
@@ -427,11 +440,11 @@ def write_html_book(output_path, songs, grouped):
         # =========================
         f.write(
             """
-<div id="search-container">
-    <input id="search-box" type="search" placeholder="Search songs...">
-    <div id="search-results"></div>
-</div>
-"""
+            <div id="search-container-main">
+                <input id="search-box-main" type="search" placeholder="Search songs...">
+                <div id="search-results-main"></div>
+            </div>
+        """
         )
 
         # =========================
@@ -456,7 +469,7 @@ def write_html_book(output_path, songs, grouped):
         # ALL SONGS
         # =========================
         f.write("<hr>\n")
-        f.write('<h1>All Songs</h1>\n')
+        f.write("<h1>All Songs</h1>\n")
 
         search_index = []
 
@@ -474,16 +487,16 @@ def write_html_book(output_path, songs, grouped):
             # ---- CONTROLS ----
             f.write(
                 """
-<div class="controls">
-    <button class="toggle-chords">Hide chords</button>
-    <div class="transpose-controls">
-        <button class="transpose-down">-</button>
-        <span class="transpose-value">0</span>
-        <button class="transpose-up">+</button>
-    </div>
-    <button class="toggle-columns">2 columns</button>
-</div>
-"""
+                <div class="controls">
+                    <button class="toggle-chords">Hide chords</button>
+                    <div class="transpose-controls">
+                        <button class="transpose-down">-</button>
+                        <span class="transpose-value">0</span>
+                        <button class="transpose-up">+</button>
+                    </div>
+                    <button class="toggle-columns">2 columns</button>
+                </div>
+            """
             )
 
             # ---- META ----
@@ -514,14 +527,43 @@ def write_html_book(output_path, songs, grouped):
         f.write("<hr>\n")
         f.write(
             """
-        <div class="settings" id="settings">
-            <h1>Settings</h1>
-            <button id="toggle-all-chords">Hide all chords</button>
-        </div>
+            <div class="settings" id="settings">
+                <h1>Settings</h1>
+                <button id="toggle-all-chords">Hide all chords</button>
+                <button id="toggle-global-columns">2 columns</button>
+                <button id="print-button">Print</button>
+                <div id="print-dialog" class="print-dialog">
+                    <h3>Print settings</h3>
+                    <label>
+                        Columns:
+                        <select id="print-columns">
+                            <option value="1">1 column</option>
+                            <option value="2">2 columns</option>
+                        </select>
+                    </label>
+
+                    <br>
+
+                    <label>
+                        Chords:
+                        <select id="print-chords">
+                            <option value="on">Show chords</option>
+                            <option value="off">Hide chords</option>
+                        </select>
+                    </label>
+
+                    <br><br>
+
+                    <button id="confirm-print">
+                        Print PDF
+                    </button>
+
+                </div>
+            </div>
         """
         )
         # =========================
-        # SEARCH INDEX
+        # SAVE SEARCH INDEX
         # =========================
         f.write("<script>\n")
         f.write("const SONG_INDEX = ")

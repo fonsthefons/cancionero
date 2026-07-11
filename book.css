@@ -5,7 +5,8 @@
 body {
     margin: 20px;
     padding: 0 !important;
-    background: #f4f1ea; /* soft paper tone */
+    background: #f4f1ea;
+    /* soft paper tone */
     color: #2b2b2b;
     font-family: Georgia, "Times New Roman", serif;
 }
@@ -35,7 +36,7 @@ body {
 }
 
 /* ============================= */
-/* LINKS (FIX YOUR ISSUE #3)     */
+/* LINKS                         */
 /* ============================= */
 
 a {
@@ -65,7 +66,7 @@ a:hover {
     gap: 12px;
     margin-bottom: 16px;
     border-radius: 6px;
-    color:  #9fa2cf;
+    color: #9fa2cf;
 
 }
 
@@ -79,7 +80,7 @@ a:hover {
 
     border: 1px solid #ccc;
     background: #fffaf1;
-    color:  #9fa2cf;
+    color: #9fa2cf;
 
     cursor: pointer;
 }
@@ -128,11 +129,11 @@ a:hover {
 body.no-chords-global .chord-line,
 body.hide-all-chords .chord-line,
 .song.force-hide-chords .chord-line {
-  display: none !important;
+    display: none !important;
 }
 
 .song.force-show-chords .chord-line {
-  display: block !important;
+    display: block !important;
 }
 
 
@@ -183,10 +184,10 @@ body.hide-all-chords .chord-line,
 }
 
 /* ============================= */
-/* TWO COLUMN MODE (IMPROVED)    */
+/* TWO COLUMN MODE               */
 /* ============================= */
-
-.song.two-columns .lyrics {
+body.two-columns-global .lyrics,
+.song.force-two-columns .lyrics {
     column-count: 2;
     column-gap: 3rem;
     column-width: 380px;
@@ -195,39 +196,36 @@ body.hide-all-chords .chord-line,
     width: max-content;
 }
 
+
 /* Prevent breaking inside verses */
-.song.two-columns .verse,
-.song.two-columns .chord-lyric-line-pair {
+body.two-columns-global .verse,
+.song.force-two-columns .verse,
+.song.force-two-columns .chord-lyric-line-pair,
+body.two-columns-global .chord-lyric-line-pair
+ {
     break-inside: avoid-column;
 }
 
 /* Keep alignment perfect */
-.song.two-columns .chord-line,
-.song.two-columns .lyric-line {
+body.two-columns-global .chord-line,
+.song.force-two-columns .chord-line,
+.song.force-two-columns .lyric-line,
+body.two-columns-global .lyric-line
+ {
     white-space: pre;
 }
 
-/* ============================= */
-/* OPTIONAL: PAGE FEEL           */
-/* ============================= */
+/* FORCE 1 column */
+.song.force-one-column .lyrics {
+    column-count: 1 !important;
+  }
+
 
 /* subtle page separator if multiple songs */
-.song + .song {
+.song+.song {
     margin-top: 60px;
 }
 
-/* print-friendly (optional bonus) */
-@media print {
-    body {
-        background: white;
-    }
-
-    .song {
-        box-shadow: none;
-        margin: 0;
-        page-break-after: always;
-    }
-}
 
 /* Toc Formatting */
 
@@ -255,7 +253,7 @@ body.hide-all-chords .chord-line,
 
     background: white;
     border-left: 1px solid #ccc;
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
 
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -288,7 +286,90 @@ body.hide-all-chords .chord-line,
     cursor: pointer;
 }
 
+.search-container-toc {
+    padding-left: 15px;
+}
+
 /* Move arrow when open */
-.toc-sidebar.open + .toc-toggle {
+.toc-sidebar.open+.toc-toggle {
     right: 270px;
+}
+
+.print-dialog {
+    display: none;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: white;
+    padding: 25px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    z-index: 2000;
+}
+
+
+.print-dialog.open {
+    display: block;
+}
+
+/* print-friendly (optional bonus) */
+@media print {
+
+    /* Hide online-only UI */
+    .toc-toggle,
+    .controls,
+    .settings,
+    .toc-sidebar,
+    #search-container-main,
+    .print-dialog {
+        display: none !important;
+    }
+
+
+    /* Remove web styling */
+    body {
+        background: white;
+    }
+
+
+
+    .song {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+
+    .verse {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+
+
+    /* TWO COLUMN PRINT */
+    body.print-two-columns .lyrics {
+        column-count: 2;
+        column-gap: 3rem;
+    }
+
+    /* ONE COLUMN PRINT */
+    body:not(.print-two-columns) .lyrics {
+        column-count: 1;
+
+    }
+    /* Hide chords */
+    body.print-no-chords .chord-line {
+        display: none !important;
+
+    }
+
 }
