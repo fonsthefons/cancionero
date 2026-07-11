@@ -356,10 +356,11 @@ def write_mini_toc_html(f, grouped):
     f.write("<h2>Contenido</h2>\n")
 
     # 🔥 All Songs link
-    f.write(f'<a href="#all-songs-list">All Songs</a><br>\n')
+    f.write(f'<a href="#all-songs-list" class="mini-toc-tag">All Songs</a><br>\n')
+    f.write("<hr>\n")
 
     for tag in sorted(grouped.keys(), key=tag_sort_key):
-        f.write(f'<a href="#{tag}">{format_label(tag)}</a><br>\n')
+        f.write(f'<a href="#{tag}" class="mini-toc-tag">{format_label(tag)}</a><br>\n')
 
         subgroups = grouped[tag]
 
@@ -369,9 +370,10 @@ def write_mini_toc_html(f, grouped):
         )
 
         for subtag in subtags:
-            f.write(f'&nbsp;&nbsp;<a href="#{tag}-{subtag}">{format_label(subtag)}</a><br>\n')
+            f.write(f'&nbsp;&nbsp;<a href="#{tag}-{subtag}" class="mini-toc-subtag">{format_label(subtag)}</a><br>\n')
+        f.write("<hr>\n")
 
-    f.write(f'<a href="#settings">Settings</a><br>\n')
+    f.write(f'<a href="#settings" class="mini-toc-tag">Settings</a><br>\n')
     f.write("</div>\n")
 
 
@@ -436,20 +438,24 @@ def write_html_book(output_path, songs, grouped):
         # MINI TOC (TOP NAV)
         # =========================
         write_mini_toc_html(f, grouped)
+        f.write("<hr>\n")
 
         # =========================
         # FULL CONTENTS TABLE
         # =========================
         write_tag_sections_html(f, grouped)
+        f.write("<hr>\n")
 
         # =========================
         # ALL SONGS (IN CONTENTS)
         # =========================
         write_all_songs_links(f, songs)
+        f.write("<hr>\n")
 
         # =========================
         # ALL SONGS
         # =========================
+        f.write("<hr>\n")
         f.write('<h1>All Songs</h1>\n')
 
         search_index = []
@@ -491,6 +497,8 @@ def write_html_book(output_path, songs, grouped):
             # ---- LYRICS (YOUR FUNCTION, UNTOUCHED) ----
             f.write(format_lyrics(h["content"]))
 
+            f.write("<hr>\n")
+
             f.write("</div>\n\n")
 
             # ---- Create SEARCH INDEX ----
@@ -503,6 +511,7 @@ def write_html_book(output_path, songs, grouped):
                 }
             )
 
+        f.write("<hr>\n")
         f.write(
             """
         <div class="settings" id="settings">

@@ -46,7 +46,6 @@ a {
 a:visited,
 a:active,
 a:focus {
-    color: inherit;
     outline: none;
 }
 
@@ -228,6 +227,21 @@ body.hide-all-chords .chord-line,
         margin: 0;
         page-break-after: always;
     }
+}
+
+/* Toc Formatting */
+
+.mini-toc-tag {
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: bold;
+    color: #397380;
+}
+
+.mini-toc-subtag {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #369fb7;
 }
 
 

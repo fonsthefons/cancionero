@@ -142,11 +142,13 @@ document.addEventListener("click", function (e) {
     // INIT ON FIRST USE
     initChords(song);
 
+    let currentShift = parseInt(song.dataset.transpose);
     // -------------------------
     // TRANSPOSE UP
     // -------------------------
     if (e.target.closest(".transpose-up")) {
-        song.dataset.transpose = parseInt(song.dataset.transpose) + 1;
+        currentShift = (currentShift === 11) ? 0 : currentShift + 1;
+        song.dataset.transpose = currentShift;
         applyTranspose(song);
         return;
     }
@@ -155,7 +157,8 @@ document.addEventListener("click", function (e) {
     // TRANSPOSE DOWN
     // -------------------------
     if (e.target.closest(".transpose-down")) {
-        song.dataset.transpose = parseInt(song.dataset.transpose) - 1;
+        currentShift = (currentShift === -11) ? 0 : currentShift - 1;
+        song.dataset.transpose = currentShift;
         applyTranspose(song);
         return;
     }
