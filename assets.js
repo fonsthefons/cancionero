@@ -1,8 +1,4 @@
-// -----------------------------
-// -----------------------------
-// SHOW/HIDE CHORDS LOGIC
-// -----------------------------
-// -----------------------------
+// SHOW HIDE CHORDS LOGIC
 document.addEventListener("click", function (e) {
 
     // -------------------------
@@ -10,11 +6,20 @@ document.addEventListener("click", function (e) {
     // -------------------------
     if (e.target.id === "toggle-all-chords") {
 
-        document.body.classList.toggle("hide-all-chords");
+        const body = document.body;
+        const willBeHidden = !body.classList.contains("hide-all-chords");
 
-        const hidden = document.body.classList.contains("hide-all-chords");
-        e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
+        body.classList.toggle("hide-all-chords", willBeHidden);
 
+        e.target.textContent = willBeHidden
+            ? "Show all chords"
+            : "Hide all chords";
+
+        // CLEAR local overrides
+        document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
+            .forEach(song => {
+                song.classList.remove("force-hide-chords", "force-show-chords");
+            });
 
         return;
     }
@@ -28,32 +33,40 @@ document.addEventListener("click", function (e) {
     const song = btn.closest(".song");
     if (!song) return;
 
-    const globalHidden = document.body.classList.contains("hide-all-chords");
+    const globalVisible = !document.body.classList.contains("hide-all-chords");
 
-    const forceHide = song.classList.contains("force-hide-chords");
-    const forceShow = song.classList.contains("force-show-chords");
+    const wantsVisible =
+        (globalVisible && song.classList.contains("force-hide-chords")) ||
+        (!globalVisible && !song.classList.contains("force-hide-chords") && !song.classList.contains("force-show-chords")) ||
+        (!globalVisible && song.classList.contains("force-hide-chords") && !song.classList.contains("force-show-chords"));
 
-    let currentlyHidden;
+    console.log(`WANTS VISIBLE: ${wantsVisible}`);
+    console.log(`GH: ${globalVisible}`);
+    console.log(`LH: ${song.classList.contains("force-hide-chords")}`);
+    console.log(`LS: ${song.classList.contains("force-show-chords")}`);
 
-    if (forceHide) {
-        currentlyHidden = true;
-    } else if (forceShow) {
-        currentlyHidden = false;
+
+
+    if (wantsVisible) {
+
+        // show chords
+        song.classList.remove("force-hide-chords");
+
+        if (globalVisible) {
+            song.classList.remove("force-show-chords");
+        } else {
+            song.classList.add("force-show-chords");
+        }
+
     } else {
-        currentlyHidden = globalHidden;
+
+        // hide chords
+        song.classList.remove("force-show-chords");
+
+        if (globalVisible) {
+            song.classList.add("force-hide-chords");
+        }
     }
-
-    // clear previous override
-    song.classList.remove("force-hide-chords", "force-show-chords");
-
-    // apply new override (flip current state)
-    if (currentlyHidden) {
-        song.classList.add("force-show-chords");
-    } else {
-        song.classList.add("force-hide-chords");
-    }
-
-    btn.textContent = currentlyHidden ? "Hide chords" : "Show chords";
 
 });
 
@@ -121,9 +134,8 @@ function initChords(song) {
     }
 }
 
-// -----------------------------
-// EVENT HANDLING
-// -----------------------------
+
+// TRANSPOSE LOGIC
 document.addEventListener("click", function (e) {
 
     const song = e.target.closest(".song");
@@ -167,12 +179,10 @@ document.addEventListener("click", function (e) {
         body.classList.toggle("two-columns-global", willBeTwo);
         e.target.textContent = willBeTwo ? "1 column" : "2 columns";
 
-        document.querySelectorAll(".song.force-one-column, .song.force-two-columns").forEach(song => {
-            const btn = song.querySelector(".toggle-columns");
-            if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
-            song.classList.remove("force-one-column");
-            song.classList.remove("force-two-columns");
-        });
+        document.querySelectorAll(".song.force-one-column, .song.force-two-columns")
+            .forEach(song => {
+                song.classList.remove("force-one-column", "force-two-columns");
+            });
 
         return;
     }
@@ -183,9 +193,6 @@ document.addEventListener("click", function (e) {
 
     const song = btn.closest(".song");
     if (!song) return;
-
-    // Remove previous local overrides
-    // song.classList.remove("force-one-column", "force-two-columns");
 
     const globalIsTwo = document.body.classList.contains("two-columns-global");
 
@@ -204,13 +211,11 @@ document.addEventListener("click", function (e) {
             song.classList.add("force-two-columns");
         }
 
-        btn.textContent = "1 column";
     } else {
         song.classList.remove("force-two-columns")
         if (globalIsTwo) {
             song.classList.add("force-one-column");
         }
-        btn.textContent = "2 columns";
     }
 });
 

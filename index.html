@@ -135,10 +135,19 @@ a:hover {
 }
 
 /* Chord visibility */
-.song.no-chords .chord-line,
+/* .song.no-chords .chord-line,
 body.no-chords-global .chord-line,
 body.hide-all-chords .chord-line,
 .song.force-hide-chords .chord-line {
+    display: none !important;
+}
+
+.song.force-show-chords .chord-line {
+    display: block !important;
+} */
+
+.song.force-hide-chords .chord-line,
+body.hide-all-chords .chord-line {
     display: none !important;
 }
 
@@ -163,6 +172,7 @@ body.hide-all-chords .chord-line,
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 0.95rem;
     line-height: 1.2;
+    width: max-content;
 }
 
 /* Each line */
@@ -217,6 +227,7 @@ body.two-columns-global .song .lyrics {
     column-count: 2;
     column-gap: 3rem;
     column-width: 380px;
+    width: max-content;
 }
 
 /* ======================
@@ -235,6 +246,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
     column-count: 2 !important;
     column-gap: 3rem;
     column-width: 380px;
+    width: max-content;
 }
 
 
@@ -391,11 +403,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
 
 }
 </style>
-<script>// -----------------------------
-// -----------------------------
-// SHOW/HIDE CHORDS LOGIC
-// -----------------------------
-// -----------------------------
+<script>// SHOW HIDE CHORDS LOGIC
 document.addEventListener("click", function (e) {
 
     // -------------------------
@@ -403,11 +411,20 @@ document.addEventListener("click", function (e) {
     // -------------------------
     if (e.target.id === "toggle-all-chords") {
 
-        document.body.classList.toggle("hide-all-chords");
+        const body = document.body;
+        const willBeHidden = !body.classList.contains("hide-all-chords");
 
-        const hidden = document.body.classList.contains("hide-all-chords");
-        e.target.textContent = hidden ? "Show all chords" : "Hide all chords";
+        body.classList.toggle("hide-all-chords", willBeHidden);
 
+        e.target.textContent = willBeHidden
+            ? "Show all chords"
+            : "Hide all chords";
+
+        // CLEAR local overrides
+        document.querySelectorAll(".song.force-hide-chords, .song.force-show-chords")
+            .forEach(song => {
+                song.classList.remove("force-hide-chords", "force-show-chords");
+            });
 
         return;
     }
@@ -421,32 +438,40 @@ document.addEventListener("click", function (e) {
     const song = btn.closest(".song");
     if (!song) return;
 
-    const globalHidden = document.body.classList.contains("hide-all-chords");
+    const globalVisible = !document.body.classList.contains("hide-all-chords");
 
-    const forceHide = song.classList.contains("force-hide-chords");
-    const forceShow = song.classList.contains("force-show-chords");
+    const wantsVisible =
+        (globalVisible && song.classList.contains("force-hide-chords")) ||
+        (!globalVisible && !song.classList.contains("force-hide-chords") && !song.classList.contains("force-show-chords")) ||
+        (!globalVisible && song.classList.contains("force-hide-chords") && !song.classList.contains("force-show-chords"));
 
-    let currentlyHidden;
+    console.log(`WANTS VISIBLE: ${wantsVisible}`);
+    console.log(`GH: ${globalVisible}`);
+    console.log(`LH: ${song.classList.contains("force-hide-chords")}`);
+    console.log(`LS: ${song.classList.contains("force-show-chords")}`);
 
-    if (forceHide) {
-        currentlyHidden = true;
-    } else if (forceShow) {
-        currentlyHidden = false;
+
+
+    if (wantsVisible) {
+
+        // show chords
+        song.classList.remove("force-hide-chords");
+
+        if (globalVisible) {
+            song.classList.remove("force-show-chords");
+        } else {
+            song.classList.add("force-show-chords");
+        }
+
     } else {
-        currentlyHidden = globalHidden;
+
+        // hide chords
+        song.classList.remove("force-show-chords");
+
+        if (globalVisible) {
+            song.classList.add("force-hide-chords");
+        }
     }
-
-    // clear previous override
-    song.classList.remove("force-hide-chords", "force-show-chords");
-
-    // apply new override (flip current state)
-    if (currentlyHidden) {
-        song.classList.add("force-show-chords");
-    } else {
-        song.classList.add("force-hide-chords");
-    }
-
-    btn.textContent = currentlyHidden ? "Hide chords" : "Show chords";
 
 });
 
@@ -514,9 +539,8 @@ function initChords(song) {
     }
 }
 
-// -----------------------------
-// EVENT HANDLING
-// -----------------------------
+
+// TRANSPOSE LOGIC
 document.addEventListener("click", function (e) {
 
     const song = e.target.closest(".song");
@@ -560,26 +584,10 @@ document.addEventListener("click", function (e) {
         body.classList.toggle("two-columns-global", willBeTwo);
         e.target.textContent = willBeTwo ? "1 column" : "2 columns";
 
-        document.querySelectorAll(".song.force-one-column, .song.force-two-columns").forEach(song => {
-            const btn = song.querySelector(".toggle-columns");
-            if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
-            song.classList.remove("force-one-column");
-            song.classList.remove("force-two-columns");
-        });
-
-        // if (willBeTwo) {
-        //     document.querySelectorAll(".song.force-one-column").forEach(song => {
-        //         song.classList.remove("force-one-column");
-        //         const btn = song.querySelector(".toggle-columns");
-        //         if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
-        //     });
-        // } else {
-        //     document.querySelectorAll(".song.force-two-columns").forEach(song => {
-        //         song.classList.remove("force-two-column");
-        //         const btn = song.querySelector(".toggle-columns");
-        //         if (btn) btn.textContent = willBeTwo ? "1 column" : "2 columns";
-        //     });
-        // }
+        document.querySelectorAll(".song.force-one-column, .song.force-two-columns")
+            .forEach(song => {
+                song.classList.remove("force-one-column", "force-two-columns");
+            });
 
         return;
     }
@@ -590,9 +598,6 @@ document.addEventListener("click", function (e) {
 
     const song = btn.closest(".song");
     if (!song) return;
-
-    // Remove previous local overrides
-    // song.classList.remove("force-one-column", "force-two-columns");
 
     const globalIsTwo = document.body.classList.contains("two-columns-global");
 
@@ -611,13 +616,11 @@ document.addEventListener("click", function (e) {
             song.classList.add("force-two-columns");
         }
 
-        btn.textContent = "1 column";
     } else {
         song.classList.remove("force-two-columns")
         if (globalIsTwo) {
             song.classList.add("force-one-column");
         }
-        btn.textContent = "2 columns";
     }
 });
 
@@ -1504,13 +1507,13 @@ document.addEventListener("click", function (e) {
 <h3>1. 10000 razones - Matt Redman</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Matt Redman</em></p>
 <p><em>Capo: 0</em></p>
@@ -1522,13 +1525,13 @@ document.addEventListener("click", function (e) {
 <h3>2. A ti te alabo - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -1540,13 +1543,13 @@ document.addEventListener("click", function (e) {
 <h3>3. Abba Padre - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0, 0-5</em></p>
@@ -1558,13 +1561,13 @@ document.addEventListener("click", function (e) {
 <h3>4. Aleluya - Taizé</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Taizé</em></p>
 <p><em>Capo: 2</em></p>
@@ -1575,13 +1578,13 @@ document.addEventListener("click", function (e) {
 <h3>5. Aleluya - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1592,13 +1595,13 @@ document.addEventListener("click", function (e) {
 <h3>6. Alma Misionera - Jaire</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jaire</em></p>
 <p><em>Capo: 0</em></p>
@@ -1610,13 +1613,13 @@ document.addEventListener("click", function (e) {
 <h3>7. Alzar Banderas - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
@@ -1628,13 +1631,13 @@ document.addEventListener("click", function (e) {
 <h3>8. Alzo la mirada - VIVAFE</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: VIVAFE</em></p>
 <p><em>Capo: 0</em></p>
@@ -1646,13 +1649,13 @@ document.addEventListener("click", function (e) {
 <h3>9. Amando hasta el extremo - Maite Lopez</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Maite Lopez</em></p>
 <p><em>Capo: 2</em></p>
@@ -1664,13 +1667,13 @@ document.addEventListener("click", function (e) {
 <h3>10. Amor abnegado - Mater Salvatoris</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Mater Salvatoris</em></p>
 <p><em>Capo: 0</em></p>
@@ -1682,13 +1685,13 @@ document.addEventListener("click", function (e) {
 <h3>11. Amor de los Amores - Sarai</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Sarai</em></p>
 <p><a href="https://open.spotify.com/track/4ThlBUbvmZlSheQWu0suz9?si=91739e6f1ba345f5" target="_blank">Link</a></p>
@@ -1699,13 +1702,13 @@ document.addEventListener("click", function (e) {
 <h3>12. Amor sin condición - Abels Worship</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Abels Worship</em></p>
 <p><em>Capo: 0, 0-2</em></p>
@@ -1717,13 +1720,13 @@ document.addEventListener("click", function (e) {
 <h3>13. Angeles volando - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1735,13 +1738,13 @@ document.addEventListener("click", function (e) {
 <h3>14. Arde - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -1753,13 +1756,13 @@ document.addEventListener("click", function (e) {
 <h3>15. Arranca de mi Pecho - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><a href="https://open.spotify.com/track/3NqWY64lVnau51oFM3wH5A?si=1cd02715ed394d8a" target="_blank">Link</a></p>
@@ -1770,13 +1773,13 @@ document.addEventListener("click", function (e) {
 <h3>16. Because He Lives - Matt Maher</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Matt Maher</em></p>
 <p><em>Capo: 0</em></p>
@@ -1788,13 +1791,13 @@ document.addEventListener("click", function (e) {
 <h3>17. Bendigamos - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1805,13 +1808,13 @@ document.addEventListener("click", function (e) {
 <h3>18. Bendita Tu - HAM</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: HAM</em></p>
 <p><em>Capo: 0</em></p>
@@ -1822,13 +1825,13 @@ document.addEventListener("click", function (e) {
 <h3>19. Buenas Noches María - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1840,13 +1843,13 @@ document.addEventListener("click", function (e) {
 <h3>20. Canción para la comunión - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1858,13 +1861,13 @@ document.addEventListener("click", function (e) {
 <h3>21. Cirineo - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -1876,13 +1879,13 @@ document.addEventListener("click", function (e) {
 <h3>22. Colombia - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -1894,13 +1897,13 @@ document.addEventListener("click", function (e) {
 <h3>23. Como el padre me amó - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1912,13 +1915,13 @@ document.addEventListener("click", function (e) {
 <h3>24. Confío en Ti - Felipe Gomez</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Felipe Gomez</em></p>
 <p><em>Capo: 0</em></p>
@@ -1930,13 +1933,13 @@ document.addEventListener("click", function (e) {
 <h3>25. Cordero de Dios - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -1947,13 +1950,13 @@ document.addEventListener("click", function (e) {
 <h3>26. Cristo Vive - Verbum Dei</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Verbum Dei</em></p>
 <p><em>Capo: 0</em></p>
@@ -1965,13 +1968,13 @@ document.addEventListener("click", function (e) {
 <h3>27. Cuerda Auxiliar - Besmaya</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Besmaya</em></p>
 <p><em>Capo: 0</em></p>
@@ -1983,13 +1986,13 @@ document.addEventListener("click", function (e) {
 <h3>28. De la cabeza al corazón tuyo - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 1</em></p>
@@ -2001,13 +2004,13 @@ document.addEventListener("click", function (e) {
 <h3>29. Desde el Fondo del Mar - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2019,13 +2022,13 @@ document.addEventListener("click", function (e) {
 <h3>30. Deseable - Abels Worship</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Abels Worship</em></p>
 <p><em>Capo: Capo 3</em></p>
@@ -2037,13 +2040,13 @@ document.addEventListener("click", function (e) {
 <h3>31. Dime cómo hacerlo - Laraland</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Laraland</em></p>
 <p><em>Capo: 0</em></p>
@@ -2055,13 +2058,13 @@ document.addEventListener("click", function (e) {
 <h3>32. Dime María - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 5</em></p>
@@ -2073,13 +2076,13 @@ document.addEventListener("click", function (e) {
 <h3>33. Dime Rey - Helena</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Helena</em></p>
 <p><em>Capo: 0</em></p>
@@ -2091,13 +2094,13 @@ document.addEventListener("click", function (e) {
 <h3>34. Dios Incomparable - Marcos Barrientos</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Marcos Barrientos</em></p>
 <p><em>Capo: 0</em></p>
@@ -2109,13 +2112,13 @@ document.addEventListener("click", function (e) {
 <h3>35. Dios te salve - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 3</em></p>
@@ -2127,13 +2130,13 @@ document.addEventListener("click", function (e) {
 <h3>36. Dona tu Vida - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2145,13 +2148,13 @@ document.addEventListener("click", function (e) {
 <h3>37. Dulce locura - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
@@ -2163,13 +2166,13 @@ document.addEventListener("click", function (e) {
 <h3>38. Déjate - Misión País</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Misión País</em></p>
 <p><em>Capo: 0</em></p>
@@ -2181,13 +2184,13 @@ document.addEventListener("click", function (e) {
 <h3>39. El Dios que adoramos - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: (original capo 4 D A Bm D A)</em></p>
@@ -2199,13 +2202,13 @@ document.addEventListener("click", function (e) {
 <h3>40. El que muere por mí - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 3</em></p>
@@ -2217,13 +2220,13 @@ document.addEventListener("click", function (e) {
 <h3>41. El Rey de mi Vida - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2235,13 +2238,13 @@ document.addEventListener("click", function (e) {
 <h3>42. El Unico Rey - Tuyo</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Tuyo</em></p>
 <p><em>Capo: Really in A# no capo but better C capo 4</em></p>
@@ -2253,13 +2256,13 @@ document.addEventListener("click", function (e) {
 <h3>43. En medio del fuego - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2271,13 +2274,13 @@ document.addEventListener("click", function (e) {
 <h3>44. Enciende una luz - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2289,13 +2292,13 @@ document.addEventListener("click", function (e) {
 <h3>45. Enciéndeme - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2307,13 +2310,13 @@ document.addEventListener("click", function (e) {
 <h3>46. Entrega - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
@@ -2325,13 +2328,13 @@ document.addEventListener("click", function (e) {
 <h3>47. Eres Testigo - anonimo</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: anonimo</em></p>
 <p><em>Capo: 0</em></p>
@@ -2342,13 +2345,13 @@ document.addEventListener("click", function (e) {
 <h3>48. Es verdad - Vali Olguin</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Vali Olguin</em></p>
 <p><em>Capo: 0</em></p>
@@ -2360,13 +2363,13 @@ document.addEventListener("click", function (e) {
 <h3>49. Espíritu ven - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
@@ -2378,13 +2381,13 @@ document.addEventListener("click", function (e) {
 <h3>50. Estaré Contigo - Jon Carlo</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jon Carlo</em></p>
 <p><em>Capo: 0</em></p>
@@ -2396,13 +2399,13 @@ document.addEventListener("click", function (e) {
 <h3>51. Estás dentro de mí - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
@@ -2414,13 +2417,13 @@ document.addEventListener("click", function (e) {
 <h3>52. Hail Mary Prayer - David Burke</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: David Burke</em></p>
 <p><em>Capo: 0</em></p>
@@ -2432,13 +2435,13 @@ document.addEventListener("click", function (e) {
 <h3>53. Hasta La Locura - Pablo Martinez</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Pablo Martinez</em></p>
 <p><em>Capo: 0</em></p>
@@ -2450,13 +2453,13 @@ document.addEventListener("click", function (e) {
 <h3>54. Hasta que el mundo arda por Él - Francisco Alvarado</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Francisco Alvarado</em></p>
 <p><em>Capo: 0</em></p>
@@ -2468,13 +2471,13 @@ document.addEventListener("click", function (e) {
 <h3>55. Here I am Lord - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2486,13 +2489,13 @@ document.addEventListener("click", function (e) {
 <h3>56. Hermoso Nombre - Hillsong</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hillsong</em></p>
 <p><em>Capo: 0</em></p>
@@ -2504,13 +2507,13 @@ document.addEventListener("click", function (e) {
 <h3>57. Himno Misión País - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 3</em></p>
@@ -2522,13 +2525,13 @@ document.addEventListener("click", function (e) {
 <h3>58. Hoy Me Entrego - Factor de Cambio</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Factor de Cambio</em></p>
 <p><em>Capo: Capo 4</em></p>
@@ -2540,13 +2543,13 @@ document.addEventListener("click", function (e) {
 <h3>59. Huracán - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2558,13 +2561,13 @@ document.addEventListener("click", function (e) {
 <h3>60. Id y anunciad - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 2</em></p>
@@ -2576,13 +2579,13 @@ document.addEventListener("click", function (e) {
 <h3>61. Inúndame - Athenas</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Athenas</em></p>
 <p><em>Capo: 0</em></p>
@@ -2594,13 +2597,13 @@ document.addEventListener("click", function (e) {
 <h3>62. Jesucristo basta - Un Corazon</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Un Corazon</em></p>
 <p><em>Capo: 0</em></p>
@@ -2612,13 +2615,13 @@ document.addEventListener("click", function (e) {
 <h3>63. Jesus - Sarai Rivera</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Sarai Rivera</em></p>
 <p><em>Capo: (original capo 5 C-G-Am-F)</em></p>
@@ -2630,13 +2633,13 @@ document.addEventListener("click", function (e) {
 <h3>64. Jesus have it all - Jeremy Riddle</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jeremy Riddle</em></p>
 <p><em>Capo: (original capo 3 D A G Em7 D)</em></p>
@@ -2648,13 +2651,13 @@ document.addEventListener("click", function (e) {
 <h3>65. Junto a ti María - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2666,13 +2669,13 @@ document.addEventListener("click", function (e) {
 <h3>66. La Bendicion - Elevation Worship</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Elevation Worship</em></p>
 <p><em>Capo: 0</em></p>
@@ -2684,13 +2687,13 @@ document.addEventListener("click", function (e) {
 <h3>67. La Fe de María - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2702,13 +2705,13 @@ document.addEventListener("click", function (e) {
 <h3>68. La medida del amor - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2720,13 +2723,13 @@ document.addEventListener("click", function (e) {
 <h3>69. La Samaritana - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2738,13 +2741,13 @@ document.addEventListener("click", function (e) {
 <h3>70. Libre - Miel San Marcos</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Miel San Marcos</em></p>
 <p><em>Capo: 0</em></p>
@@ -2756,13 +2759,13 @@ document.addEventListener("click", function (e) {
 <h3>71. Llévame - Ignis</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Ignis</em></p>
 <p><em>Capo: 0</em></p>
@@ -2774,13 +2777,13 @@ document.addEventListener("click", function (e) {
 <h3>72. Lord, I Need You - Matt Maher</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Matt Maher</em></p>
 <p><em>Capo: Capo 3</em></p>
@@ -2792,13 +2795,13 @@ document.addEventListener("click", function (e) {
 <h3>73. Los coros del universo - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2810,13 +2813,13 @@ document.addEventListener("click", function (e) {
 <h3>74. Madre - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 4</em></p>
@@ -2828,13 +2831,13 @@ document.addEventListener("click", function (e) {
 <h3>75. Madre de Hakuna - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2846,13 +2849,13 @@ document.addEventListener("click", function (e) {
 <h3>76. Mar Adentro (Navegar) - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 4</em></p>
@@ -2864,13 +2867,13 @@ document.addEventListener("click", function (e) {
 <h3>77. Maravillas - schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: schoenstatt</em></p>
 <p><em>Capo: 4</em></p>
@@ -2882,13 +2885,13 @@ document.addEventListener("click", function (e) {
 <h3>78. Me Rindo a Ti - Majo y Dan</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Majo y Dan</em></p>
 <p><em>Capo: 0 up to 4</em></p>
@@ -2900,13 +2903,13 @@ document.addEventListener("click", function (e) {
 <h3>79. Mi amado - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -2918,13 +2921,13 @@ document.addEventListener("click", function (e) {
 <h3>80. Mis heridas te han curado - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
@@ -2936,13 +2939,13 @@ document.addEventListener("click", function (e) {
 <h3>81. Muevete en mi - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -2954,13 +2957,13 @@ document.addEventListener("click", function (e) {
 <h3>82. Muros - Generación 12</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Generación 12</em></p>
 <p><em>Capo: Capo 3</em></p>
@@ -2972,13 +2975,13 @@ document.addEventListener("click", function (e) {
 <h3>83. Nada te turbe - Santa Teresa</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Santa Teresa</em></p>
 <p><em>Capo: 0</em></p>
@@ -2990,13 +2993,13 @@ document.addEventListener("click", function (e) {
 <h3>84. Nadie te ama como yo - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3008,13 +3011,13 @@ document.addEventListener("click", function (e) {
 <h3>85. No hay lugar más alto - Miel San Marcos</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Miel San Marcos</em></p>
 <p><em>Capo: 0</em></p>
@@ -3026,13 +3029,13 @@ document.addEventListener("click", function (e) {
 <h3>86. No hay paredes - Jesús Adrián Romero</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jesús Adrián Romero</em></p>
 <p><em>Capo: 0</em></p>
@@ -3044,13 +3047,13 @@ document.addEventListener("click", function (e) {
 <h3>87. No Longer Slaves - Bethel</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Bethel</em></p>
 <p><em>Capo: Capo 5</em></p>
@@ -3062,13 +3065,13 @@ document.addEventListener("click", function (e) {
 <h3>88. No sé qué viste en mí - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -3080,13 +3083,13 @@ document.addEventListener("click", function (e) {
 <h3>89. No Temas - Jaime Olguín</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jaime Olguín</em></p>
 <p><em>Capo: 2</em></p>
@@ -3098,13 +3101,13 @@ document.addEventListener("click", function (e) {
 <h3>90. No tengo miedo - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: Capo 2</em></p>
@@ -3116,13 +3119,13 @@ document.addEventListener("click", function (e) {
 <h3>91. Oceans - Hillsong</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hillsong</em></p>
 <p><em>Capo: 0</em></p>
@@ -3134,13 +3137,13 @@ document.addEventListener("click", function (e) {
 <h3>92. Otra Vez - Un Corazón</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Un Corazón</em></p>
 <p><em>Capo: Original (capo 2 F#m D, D A E)</em></p>
@@ -3152,13 +3155,13 @@ document.addEventListener("click", function (e) {
 <h3>93. Para que entre el rey - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3170,13 +3173,13 @@ document.addEventListener("click", function (e) {
 <h3>94. Perdón - Helena</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Helena</em></p>
 <p><em>Capo: 0</em></p>
@@ -3188,13 +3191,13 @@ document.addEventListener("click", function (e) {
 <h3>95. Perfume a tus Pies - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3206,13 +3209,13 @@ document.addEventListener("click", function (e) {
 <h3>96. Pescador de hombres - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3224,13 +3227,13 @@ document.addEventListener("click", function (e) {
 <h3>97. Preparad el camino al Señor - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3242,13 +3245,13 @@ document.addEventListener("click", function (e) {
 <h3>98. Primero el cielo - Tuyo</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Tuyo</em></p>
 <p><em>Capo: 0</em></p>
@@ -3260,13 +3263,13 @@ document.addEventListener("click", function (e) {
 <h3>99. Que se quiebre mi corazón - María Olguín</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: María Olguín</em></p>
 <p><em>Capo: 0</em></p>
@@ -3278,13 +3281,13 @@ document.addEventListener("click", function (e) {
 <h3>100. Quien pierde su vida por mi - Hermana Glenda</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hermana Glenda</em></p>
 <p><em>Capo: 0</em></p>
@@ -3296,13 +3299,13 @@ document.addEventListener("click", function (e) {
 <h3>101. Quiero Caminar Contigo María - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3314,13 +3317,13 @@ document.addEventListener("click", function (e) {
 <h3>102. Quédate Señor - Fray Nacho</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Fray Nacho</em></p>
 <p><em>Capo: 0</em></p>
@@ -3332,13 +3335,13 @@ document.addEventListener("click", function (e) {
 <h3>103. Reckless Love - Bethel Music</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Bethel Music</em></p>
 <p><em>Capo: 0, 0-2</em></p>
@@ -3350,13 +3353,13 @@ document.addEventListener("click", function (e) {
 <h3>104. Reina y Madre - Siquem</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Siquem</em></p>
 <p><em>Capo: 0</em></p>
@@ -3368,13 +3371,13 @@ document.addEventListener("click", function (e) {
 <h3>105. Renuévame Señor Jesús - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3386,13 +3389,13 @@ document.addEventListener("click", function (e) {
 <h3>106. Restaurame Espiritu - Xavier Rudd</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Xavier Rudd</em></p>
 <p><em>Capo: 0</em></p>
@@ -3404,13 +3407,13 @@ document.addEventListener("click", function (e) {
 <h3>107. Resucitados - Kenosis</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Kenosis</em></p>
 <p><em>Capo: 0</em></p>
@@ -3422,13 +3425,13 @@ document.addEventListener("click", function (e) {
 <h3>108. Rey de Reyes - Marcos Barrientos</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Marcos Barrientos</em></p>
 <p><em>Capo: 0</em></p>
@@ -3440,13 +3443,13 @@ document.addEventListener("click", function (e) {
 <h3>109. RUAH - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3457,13 +3460,13 @@ document.addEventListener("click", function (e) {
 <h3>110. Saliendo del Pretorio - Jaire</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jaire</em></p>
 <p><em>Capo: 4</em></p>
@@ -3475,13 +3478,13 @@ document.addEventListener("click", function (e) {
 <h3>111. Salmo 23 - Un Corazón</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Un Corazón</em></p>
 <p><em>Capo: 0 up to 4</em></p>
@@ -3493,13 +3496,13 @@ document.addEventListener("click", function (e) {
 <h3>112. Salve Reina - Servus Mariae</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Servus Mariae</em></p>
 <p><em>Capo: 0</em></p>
@@ -3511,13 +3514,13 @@ document.addEventListener("click", function (e) {
 <h3>113. Santo - Jaime Olguín</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jaime Olguín</em></p>
 <p><em>Capo: 2</em></p>
@@ -3528,13 +3531,13 @@ document.addEventListener("click", function (e) {
 <h3>114. Santo Manchego - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3545,13 +3548,13 @@ document.addEventListener("click", function (e) {
 <h3>115. Se Mi Faro - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
@@ -3563,13 +3566,13 @@ document.addEventListener("click", function (e) {
 <h3>116. Sencillamente - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -3581,13 +3584,13 @@ document.addEventListener("click", function (e) {
 <h3>117. Si hubiera estado allí - Adrián</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Adrián</em></p>
 <p><em>Capo: 0</em></p>
@@ -3599,13 +3602,13 @@ document.addEventListener("click", function (e) {
 <h3>118. Sopla Señor - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3617,13 +3620,13 @@ document.addEventListener("click", function (e) {
 <h3>119. Soy Libre - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -3635,13 +3638,13 @@ document.addEventListener("click", function (e) {
 <h3>120. Supe que me Amabas - Marcela Gándara</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Marcela Gándara</em></p>
 <p><em>Capo: 0</em></p>
@@ -3653,13 +3656,13 @@ document.addEventListener("click", function (e) {
 <h3>121. Surge Valentía - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 1</em></p>
@@ -3671,13 +3674,13 @@ document.addEventListener("click", function (e) {
 <h3>122. Toma Señor mi libertad - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3689,13 +3692,13 @@ document.addEventListener("click", function (e) {
 <h3>123. Tu eres mi respirar - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3707,13 +3710,13 @@ document.addEventListener("click", function (e) {
 <h3>124. Tu Voluntad - Servus Mariae</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Servus Mariae</em></p>
 <p><em>Capo: 0</em></p>
@@ -3725,13 +3728,13 @@ document.addEventListener("click", function (e) {
 <h3>125. Tus Planes Son Perfectos - Batah</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Batah</em></p>
 <p><em>Capo: 0</em></p>
@@ -3743,13 +3746,13 @@ document.addEventListener("click", function (e) {
 <h3>126. Tuyas son - Luispo</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Luispo</em></p>
 <p><em>Capo: 1</em></p>
@@ -3761,13 +3764,13 @@ document.addEventListener("click", function (e) {
 <h3>127. Un Segundo - Hakuna</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Hakuna</em></p>
 <p><em>Capo: 0</em></p>
@@ -3779,13 +3782,13 @@ document.addEventListener("click", function (e) {
 <h3>128. Ven - mision_pais</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: mision_pais</em></p>
 <p><em>Capo: 0</em></p>
@@ -3797,13 +3800,13 @@ document.addEventListener("click", function (e) {
 <h3>129. Ven Ahora - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3815,13 +3818,13 @@ document.addEventListener("click", function (e) {
 <h3>130. Ven ante Su trono - Elevation Worship</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Elevation Worship</em></p>
 <p><em>Capo: Really Capo 3 C F</em></p>
@@ -3833,13 +3836,13 @@ document.addEventListener("click", function (e) {
 <h3>131. Ven Espiritu Ven - Teresa</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Teresa</em></p>
 <p><em>Capo: 1</em></p>
@@ -3850,13 +3853,13 @@ document.addEventListener("click", function (e) {
 <h3>132. Ven Espíritu - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3867,13 +3870,13 @@ document.addEventListener("click", function (e) {
 <h3>133. Ven Espíritu Divino - Schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
@@ -3885,13 +3888,13 @@ document.addEventListener("click", function (e) {
 <h3>134. Ven Espíritu Ven (Purifícame) - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3902,13 +3905,13 @@ document.addEventListener("click", function (e) {
 <h3>135. Ven Y Lléname - Generación 12</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Generación 12</em></p>
 <p><em>Capo: 0</em></p>
@@ -3920,13 +3923,13 @@ document.addEventListener("click", function (e) {
 <h3>136. Vengo a Adorarte - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3938,13 +3941,13 @@ document.addEventListener("click", function (e) {
 <h3>137. Vida en abundancia - schoenstatt</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: schoenstatt</em></p>
 <p><em>Capo: 0</em></p>
@@ -3956,13 +3959,13 @@ document.addEventListener("click", function (e) {
 <h3>138. Virgen Madre de Nuestro Dios - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -3974,13 +3977,13 @@ document.addEventListener("click", function (e) {
 <h3>139. Viva Cristo Rey - Jaire</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Jaire</em></p>
 <p><em>Capo: 0</em></p>
@@ -3992,13 +3995,13 @@ document.addEventListener("click", function (e) {
 <h3>140. Volverás a María - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -4010,13 +4013,13 @@ document.addEventListener("click", function (e) {
 <h3>141. Vuelvo Otra Vez - tuyo</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: tuyo</em></p>
 <p><em>Capo: 0</em></p>
@@ -4028,13 +4031,13 @@ document.addEventListener("click", function (e) {
 <h3>142. Yeshua - Generacion 12</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: Generacion 12</em></p>
 <p><em>Capo: 0 up to 3 (max 5)</em></p>
@@ -4046,13 +4049,13 @@ document.addEventListener("click", function (e) {
 <h3>143. Yo Quiero ser tu Servidor - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>
@@ -4064,13 +4067,13 @@ document.addEventListener("click", function (e) {
 <h3>144. ZZZ Test Song - popular</h3>
 
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             <p><em>Autor: popular</em></p>
 <p><em>Capo: 0</em></p>

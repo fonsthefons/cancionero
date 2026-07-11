@@ -125,10 +125,19 @@ a:hover {
 }
 
 /* Chord visibility */
-.song.no-chords .chord-line,
+/* .song.no-chords .chord-line,
 body.no-chords-global .chord-line,
 body.hide-all-chords .chord-line,
 .song.force-hide-chords .chord-line {
+    display: none !important;
+}
+
+.song.force-show-chords .chord-line {
+    display: block !important;
+} */
+
+.song.force-hide-chords .chord-line,
+body.hide-all-chords .chord-line {
     display: none !important;
 }
 
@@ -153,6 +162,7 @@ body.hide-all-chords .chord-line,
     font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
     font-size: 0.95rem;
     line-height: 1.2;
+    width: max-content;
 }
 
 /* Each line */
@@ -207,6 +217,7 @@ body.two-columns-global .song .lyrics {
     column-count: 2;
     column-gap: 3rem;
     column-width: 380px;
+    width: max-content;
 }
 
 /* ======================
@@ -225,6 +236,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
     column-count: 2 !important;
     column-gap: 3rem;
     column-width: 380px;
+    width: max-content;
 }
 
 

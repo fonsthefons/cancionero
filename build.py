@@ -488,13 +488,13 @@ def write_html_book(output_path, songs, grouped):
             f.write(
                 """
                 <div class="controls">
-                    <button class="toggle-chords">Hide chords</button>
+                    <button class="toggle-chords">Toggle chords</button>
                     <div class="transpose-controls">
                         <button class="transpose-down">-</button>
                         <span class="transpose-value">0</span>
                         <button class="transpose-up">+</button>
                     </div>
-                    <button class="toggle-columns">2 columns</button>
+                    <button class="toggle-columns">Toggle columns</button>
                 </div>
             """
             )
