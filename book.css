@@ -321,13 +321,13 @@ body.two-columns-global .song.force-two-columns .lyrics {
 
 /* Toggle button (arrow) */
 .toc-toggle {
-    position: fixed;
+    position: sticky;
     top: 20px;
     right: 20px;
 
     z-index: 9999;                   
 
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 14px;
 
     border-radius: 5px;
