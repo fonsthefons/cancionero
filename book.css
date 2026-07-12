@@ -321,13 +321,13 @@ body.two-columns-global .song.force-two-columns .lyrics {
 
 /* Toggle button (arrow) */
 .toc-toggle {
-    position: sticky;
-    top: 20px;
+    position: fixed;
+    top: 100px;
     right: 20px;
 
     z-index: 9999;                   
 
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px 14px;
 
     border-radius: 5px;
@@ -335,8 +335,8 @@ body.two-columns-global .song.force-two-columns .lyrics {
     background: #fffaf1;
     color: #9fa2cf;
 
-    min-width: 48px;
-    min-height: 48px;
+    min-width: 52px;
+    min-height: 52px;
 
     box-sizing: border-box;
     display: flex;
@@ -347,8 +347,11 @@ body.two-columns-global .song.force-two-columns .lyrics {
     user-select: none;
     touch-action: manipulation;
 
-    transform: scale(1) translateZ(0);
-    -webkit-transform: scale(1) translateZ(0);
+    transform: translate3d(0, 0, 0) scale(1);
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .search-container-toc {
