@@ -387,13 +387,14 @@ def write_html_book(output_path, songs, grouped):
         # =========================
         # <meta name="viewport" content="width=device-width, initial-scale=1.0">
         # <meta name="viewport" content="width=1000">
+        # <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
         f.write(
             """
             <!DOCTYPE html>
             <html>
             <head>
             <meta charset="utf-8">
-            <meta name="viewport" content="width=1000">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
             <title>Cancionero</title>
             """
         )

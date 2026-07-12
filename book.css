@@ -3,7 +3,7 @@
 /* ============================= */
 
 body {
-    min-width: 1000px;
+    min-width: fit-content;
     margin: 20px;
     padding: 0 !important;
     background: #f4f1ea;
@@ -152,7 +152,8 @@ body.hide-all-chords .chord-line {
 /* ============================= */
 
 .song {
-    max-width: 900px;
+    /* max-width: 900px; */
+    /* max-width: fit-content; */
     margin: 40px auto;
     padding: 40px 50px;
     background: #fffdf8;
@@ -228,7 +229,8 @@ body.two-columns-global .song .lyrics {
     column-count: 2;
     column-gap: 1rem;
     width: 100%;
-    max-width: 900px;
+    /* max-width: 900px; */
+    /* max-width: fit-content; */
     margin: 0 auto;
 }
 
@@ -311,12 +313,13 @@ body.two-columns-global .song.force-two-columns .lyrics {
 
     z-index: 1100;
 
-    font-size: 18px;
+    font-size: 30px;
     padding: 6px 10px;
 
     cursor: pointer;
 } */
-
+ 
+/* Toggle button (arrow) */
 .toc-toggle {
     position: fixed;
     top: 20px;
