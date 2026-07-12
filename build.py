@@ -385,16 +385,16 @@ def write_html_book(output_path, songs, grouped):
         # =========================
         # HTML HEAD (FROM YOUR example.html)
         # =========================
+        # <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        # <meta name="viewport" content="width=1000">
         f.write(
             """
             <!DOCTYPE html>
             <html>
             <head>
             <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=1000">
             <title>Cancionero</title>
-            </head>
-            <body>
             """
         )
 
@@ -528,7 +528,7 @@ def write_html_book(output_path, songs, grouped):
         f.write(
             """
             <div class="settings" id="settings">
-                <h1>Settings</h1>
+                <h1>Settings WIP (desktop only)</h1>
                 <button id="toggle-all-chords">Hide all chords</button>
                 <button id="toggle-global-columns">2 columns</button>
                 <button id="print-button">Print</button>

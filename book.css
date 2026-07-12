@@ -3,6 +3,7 @@
 /* ============================= */
 
 body {
+    min-width: 1000px;
     margin: 20px;
     padding: 0 !important;
     background: #f4f1ea;
@@ -225,7 +226,7 @@ body.hide-all-chords .chord-line {
 } */
 body.two-columns-global .song .lyrics {
     column-count: 2;
-    column-gap: 2rem;
+    column-gap: 1rem;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -245,7 +246,7 @@ body.two-columns-global .song.force-one-column .lyrics {
 .song.force-two-columns .lyrics,
 body.two-columns-global .song.force-two-columns .lyrics {
     column-count: 2 !important;
-    column-gap: 2rem;
+    column-gap: 1rem;
     /* column-width: 380px; */
     /* width: max-content; */
 }
@@ -303,7 +304,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
 }
 
 /* Toggle button (arrow) */
-.toc-toggle {
+/* .toc-toggle {
     position: fixed;
     top: 20px;
     right: 10px;
@@ -314,6 +315,38 @@ body.two-columns-global .song.force-two-columns .lyrics {
     padding: 6px 10px;
 
     cursor: pointer;
+} */
+
+.toc-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    z-index: 9999;                    /* very high */
+
+    font-size: 18px;
+    padding: 10px 14px;
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fffaf1;
+    color: #9fa2cf;
+
+    min-width: 48px;
+    min-height: 48px;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+
+    /* Helps prevent zoom/shrink issues */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .search-container-toc {
@@ -387,7 +420,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
     /* FORCE 2 COLUMNS IN PRINT */
     body.print-two-columns .lyrics {
         column-count: 2;
-        column-gap: 1.5rem;
+        column-gap: 1rem;
     }
 
     /* FORCE 1 COLUMN */
