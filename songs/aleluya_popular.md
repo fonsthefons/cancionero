@@ -10,7 +10,11 @@ song_tags:
       - aleluya
 ---
 
-C     Em F G
-Aleluya Aleluya
-C     Em F G  C
-Aleluya Aleluya
+C     Em
+Aleluya 
+F     G
+Aleluya
+C     Em
+Aleluya 
+F G   C
+Aleluya

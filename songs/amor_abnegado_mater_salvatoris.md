@@ -12,49 +12,84 @@ song_tags:
   tema:
     - cristo
 ---
-C F G C
 
+A           C#m
 Tú, hombre herido
+D              E           A
 Esclavo de tu propia libertad
+      A     D                  E
 Sobrevives porque no vives en mí
 
+A           C#m
 Tú, hijo perdido
+D                E           A
 ¿Dónde estás buscando la verdad?
+      A      D               E
 No desistas, estoy frente a ti
 
+A            D                   E
 Tienes lágrimas que no te dejan ver
+C#m-Bm         E                   A  E
 En medio del ruido no se puede pensar
 
+   A   D
 Estoy dentro de ti
+     Bm
 A pesar de tu rechazo
- mi amor hacia ti es abnegado
+     D                   A
+Mi amor hacia ti es abnegado
+          C#m                D
 Estoy enamorado de tu debilidad
+        E                    A
 Solo te pido que me dejes entrar
 
+   A   D
 Estoy dentro de ti
+     Bm
 A pesar de tu rechazo
+     D                   A
 mi amor hacia ti es abnegado
+          C#m                D
 Estoy enamorado de tu debilidad
+        E                    A
 Solo te pido que te dejes amar
 
+A           C#m
 Tú, Dios escondido
+D              E           A
 Quiero amarte como me amas tú
+      A     D               E
 Que tu voz no solo arda en mí
-Tú, mi Cristo vivo
 
+A             C#m
+Tú, mi Cristo vivo
+D             E           A
 Enséñame a vivir en plenitud
+        A         D               E
 Que el miedo no impida a darte un sí
+A              D              E
 Cuanto más profundo entierro yo mi cruz
+C#m-Bm         E                              A  E
 Más lejos me encuentro de donde estás clavado tú
 
+   A   D
 Estoy dentro de ti
+     Bm
 A pesar de tu rechazo
- mi amor hacia ti es abnegado
+     D                   A
+Mi amor hacia ti es abnegado
+          C#m                D
 Estoy enamorado de tu debilidad
+        E                    A
 Solo te pido que me dejes entrar
 
+   A   D
 Estoy dentro de ti
+     Bm
 A pesar de tu rechazo
+     D                   A
 mi amor hacia ti es abnegado
+          C#m                D
 Estoy enamorado de tu debilidad
+        E                    A
 Solo te pido que te dejes amar

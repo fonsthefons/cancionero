@@ -4,66 +4,84 @@ title: Alma Misionera
 autor: Jaire
 link: "https://open.spotify.com/track/76WoWcaAKowjgSEgWCeVaM?si=c98e4521bfd24824"
 capo: 0
-capo_notes: original capo 3 D A G Em7 D
+capo_notes: original capo 0
 song_tags:
   misa:
     - salida
 ---
-G   D      C
+   C                    F
 Señor, toma mi vida nueva
-Am              C
-antes de que la espera
-          D
-desgaste años en mí.
+                  Dm
+Antes de que la espera
+                  G
+desgaste años en mi
+   C                       F
+estoy dispuesto a lo que quieras
+                  Dm
+no importa lo que sea
+                  G
+tu llámame a servir
 
-G   D        C
-Estoy dispuesto a lo que quieras
-Am
-no importa lo que sea,
-C        D
-Tú llámame a servir.
-
-     G        D
+      C
 Llévame donde los hombres
-   Em        C
+     Am
 necesiten tus palabras
- G   C   D
-necesiten mis ganas de vivir.
-
-     G        D
-Donde falte la esperanza
-   Em      C
+     Dm                   G
+necesiten mis ganas de vivir
+       C
+donde falte la esperanza
+      Am
 donde falte la alegría
-G   D   G
-simplememente por no saber de Ti.
+       Dm                    G
+simplemente por no saber de ti
 
-G   D      C
-Te doy el corazón sincero
-Am
-para gritar sin miedo
-C        D
-lo hermoso que es tu amor.
-
-G   D      C
-Señor tengo alma misionera
-Am
-condúceme a la tierra
-C        D
+   C                  F
+Te doy mi corazón sincero
+                  Dm                   G
+para gritar sin miedo, tu grandeza Señor
+   C                    F
+Señor, tengo alma misionera,
+                  Dm
+condúceme a la tierra,
+                  G
 que tenga sed de Dios.
 
-(Repite coro)
+      C
+Llévame donde los hombres
+     Am
+necesiten tus palabras
+     Dm                   G
+necesiten mis ganas de vivir
+       C
+donde falte la esperanza
+      Am
+donde falte la alegría
+       Dm                    G
+simplemente por no saber de ti
 
-G   D      C
-Y así en marcha iré cantando
-Am
-por pueblos predicando
-C        D
-tu grandeza, Señor.
+   C                            F
+Y así, en marcha iré cantando,
+                  Dm                  G
+Por calles predicando tu grandeza Señor.
+   C                            F
+tendré mis manos sin cansancio
+                             Dm
+tu historia entre mis labios
+                  G
+y fuerza en la oración
 
-G   D      C
-Tendré tus brazos sin cansancio,
-Am
-tu historia entre mis labios,
-C      D
-tu fuerza en la oración.
-(Repite coro)
+      C
+Llévame donde los hombres
+     Am
+necesiten tus palabras
+     Dm                   G
+necesiten mis ganas de vivir
+       C
+donde falte la esperanza
+      Am
+donde falte la alegría
+       Dm                    G
+simplemente por no saber de ti
+       Dm             G      C
+simplemente por no saber de ti
+ 

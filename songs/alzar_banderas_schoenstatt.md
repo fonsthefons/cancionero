@@ -4,12 +4,14 @@ title: Alzar Banderas
 autor: Schoenstatt
 link: "https://open.spotify.com/track/3HQV64JXWIB9IhsGqH42U6?si=00782cadb10c4896"
 capo: 0
-capo_notes: []
+capo_notes: "max capo 0"
 song_tags:
   misa:
     - entrada
     - salida
 ---
+
+C  G  G  F  G  C  G
 
 C                        G
 Vamos a abrir la esperanza Señor

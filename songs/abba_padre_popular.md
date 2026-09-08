@@ -2,7 +2,8 @@
 title: Abba Padre
 autor: popular
 link: "https://open.spotify.com/track/7ItwdR7a8yBk2JzUwBFRCd?si=7d93757f203b4e69"
-capo: "0, 0-5"
+capo: 0
+capo_notes: "max 5"
 song_tags:
   misa:
     - entrada
@@ -15,23 +16,33 @@ song_tags:
 Intro: Em D-C
 
 [verse]
-Em       C             G    D
-Ante ti venimos, pues tu nos has llamado y nos atrae tu voz
-Em         C               G    D
-Como un solo pueblo danzando en tu presencia te damos el honor
-C            D                C
-Sobre nosotros descienda el poder de tu Espiritu que
+Em
+Ante ti venimos
+     C
+Pues tu nos has llamado
+G               D
+Y nos atrae tu voz
+Em
+Como un solo pueblo
+    C
+Danzando en tu presencia
+G              D
+Te damos el honor
+C
+Sobre nosotros
+    D                       C
+Descienda el poder de tu Espiritu que
        B7
 Nos hará clamar
 
-[chorus]
-Em D    C     Em  D C
+
+Em D  C     Em D  C
 Abba padre. Abba Padre
-       G
+         G
 Hoy tus hijos cantamos
-   Am
+     Am
 Tu amor celebramos
-  D    B7
+    D            B7
 Clamando con una voz
-  Em D C     Em D C  
-Abba Padre. Abba Padre
+Em D  C     Em D  C
+Abba padre. Abba Padre
