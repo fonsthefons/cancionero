@@ -3,8 +3,7 @@ fname: amando_hasta_el_extremo_maite_lopez
 title: Amando hasta el extremo
 autor: Maite Lopez
 link: "https://open.spotify.com/track/06OZGcgtpHtSRanig92kvB?si=0c1bb3c9b529422c"
-capo: 2
-capo_notes: "2-6"
+capo: "2, 2-6, original 2"
 song_tags:
   adoracion: []
   misa:

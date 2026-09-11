@@ -3,8 +3,7 @@ fname: alzar_banderas_schoenstatt
 title: Alzar Banderas
 autor: Schoenstatt
 link: "https://open.spotify.com/track/3HQV64JXWIB9IhsGqH42U6?si=00782cadb10c4896"
-capo: 0
-capo_notes: "max capo 0"
+capo: "0, original 0"
 song_tags:
   misa:
     - entrada

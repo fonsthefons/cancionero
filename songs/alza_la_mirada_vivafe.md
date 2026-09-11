@@ -3,8 +3,7 @@ fname: alza_la_mirada_vivafe
 title: Alza la mirada
 autor: VIVAFE
 link: "https://open.spotify.com/track/03QgYgZ0JZ5usst2UxT3oy?si=fdba726a02244734"
-capo: 0
-capo_notes: "0-5"
+capo: "0-5, original 0"
 song_tags:
   adoracion: []
   alabanza:
@@ -12,6 +11,9 @@ song_tags:
   misa:
     - comunion
 ---
+Intro:
+Em D G C Em D
+Em D G Em D G 
 Em      D/F#  G      C         D
 Alzo la mirada, mis ojos en Jesús
 Em      D/F#  G      C         D

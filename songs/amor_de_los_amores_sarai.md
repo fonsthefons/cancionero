@@ -1,7 +1,8 @@
 ---
+fname: amor_de_los_amores_sarai
 title: Amor de los Amores
 autor: Sarai
-capo: 
+capo: "2, 0-2, original 7"
 link: "https://open.spotify.com/track/4ThlBUbvmZlSheQWu0suz9?si=91739e6f1ba345f5"
 song_tags:
   misa:
@@ -14,8 +15,11 @@ song_tags:
     - cristo
 ---
 
-[verse]
-F        C
+F G Em Am
+F G Em Am
+F G
+
+         C
 Amado Jesús
                 Am
 Eres mi dulce realidad
@@ -24,12 +28,15 @@ todo lo tengo en Ti
    C      G
 en Ti, en Ti
 
+         C
 Amado Jesús
+                      Am
 mi respiración, mi verdad
+                 F
 mi destino eres Tú
+   C           G
 Eres Tú, Eres Tú, Tú
 
-[chorus]
               F
 Amor de los amores
    G               Am
@@ -44,13 +51,16 @@ quédate siempre aquí
         G          Am
 para amarnos Tú y yo
 
-[verse]
+
+         C
 Amado Jesús
-Eres luz en mi obscuridad
-mi morada
-está en Ti, en Ti, en Ti sólo en Ti
+                     Am
+Eres luz en mi oscuridad
+                   F
+mi morada está en Ti
+   C      G
+En Ti, en Ti (sólo en Ti)
 
-[chorus]
               F
 Amor de los amores
    G               Am
@@ -65,32 +75,34 @@ quédate siempre aquí
         G          Am
 para amarnos Tú y yo
 
-[bridge]
-              F
-Sólo Tú eres digno,
-G
-Digno
+              F      G
+Sólo Tú eres digno, digno
+   Am
+De todo Honor
+ F      G
+Digno, digno
     Am
 De todo Honor
 
-Sólo Tú eres digno,
-Digno
-De todo Honor
-
-Doy Gloria, 
-Gloria
+      F       G
+Doy Gloria, Gloria
+    Am
 A ti mi Dios
 
-Doy Gloria, 
-Gloria
+      F       G
+Doy Gloria, Gloria
+    Am
 A ti mi Dios
 
+F      G                 Am
 Santo, Santo, Santo Eres Tú
+F      G                 Am
 Santo, Santo, Santo Eres Tú
+F      G                 Am
 Santo, Santo, Santo Eres Tú
+F      G                 Am
 Santo, Santo, Santo Eres Tú
 
-[chorus]
               F
 Amor de los amores
    G               Am
