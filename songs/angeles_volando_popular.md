@@ -2,49 +2,65 @@
 fname: angeles_volando_popular
 title: Angeles volando
 autor: popular
-link: "https://open.spotify.com/track/4UsjdyG5q87Jz7T0JkGKAk?si=36cacfcbc6a34f69"
-capo: 0
-capo_notes: []
+link: "https://open.spotify.com/track/4UsjdyG5q87Jz7T0JkGKAk?si=41e920ccc5a04aa4"
+capo: "0, 0-5, original 0"
 song_tags:
   misa:
     - entrada
     - salida
 ---
-C G Am F C G
+C G Am-F C-G
 
-Si sientes un murmullo muy cerca de ti
-Hay un ángel llegando para recibir
-Todas tus oraciones y llevarlas al cielo
+C                                   G
+Si sientes un murmullo muy cerca de ti,
+                            F
+un ángel llegando para recibir
+                                     C  G
+todas tus oraciones y llevarlas al Cielo.
+  C                                   G
+Así, abre el corazón y comienza a alabar
+                                  F
+el gozo del cielo todo sobre el altar,
+                                            C   G
+hay un ángel llegando Hay bendición en sus manos.
 
-Así abre el corazón y comienza alabar
-El gozo del cielo está sobre el altar
-Hay un ángel llegando y bendición en sus manos
+C                             G
+Hay ángeles volando en este lugar,
+                                  F
+en medio del pueblo y junto al altar,
+                                        C   G
+subiendo y bajando en todas las direcciones.
+C                                       G
+No sé si la Iglesia subió o si el Cielo bajó,
+                                     F
+si sé que está lleno de ángeles de Dios,
+                 G          C        G
+porque el mismo Dios está aquí.
 
-Hay Ángeles volando en este lugar
-En medio del pueblo y junto al altar
-Subiendo y bajando en todas las direcciones
-No sé si la iglesia subió o si el cielo bajó
-Sí sé que está lleno de Ángeles de Dios
-Porque el mismo Dios está aquí
+C G Am-F C-G
 
-Cuando los Ángeles pasan la iglesia se alegra
-Ella canta, ella llora, ella ríe y congrega
-Enfrenta el infierno, disipa el mal
-Siente la brisa del vuelo de tu ángel ahora
-Confía hermano pues esta es tu hora
-La bendición llegó y te la vas a llevar
+C                                        G
+Cuando los ángeles pasan la Iglesia se alegra,
+                                      F
+ella canta, ella llora, ella ríe y congrega,
+                                 C G
+enfrenta al infierno, disipa el mal.
+ C                                      G
+Siente la brisa del vuelo de tu ángel ahora,
+                                F
+confía hermano pues esta es tu hora,
+                                    C  G
+la bendición llegó y te la vas a llevar.
 
-Hay Ángeles volando en este lugar
-En medio del pueblo y junto al altar
-Subiendo y bajando en todas las direcciones
-No sé si la iglesia subió o si el cielo bajó
-Sí sé que está lleno de Ángeles de Dios
-Porque el mismo Dios está aquí
-
-Hay Ángeles volando en este lugar
-En medio del pueblo y junto al altar
-Subiendo y bajando en todas las direcciones
-No sé si la iglesia subió o si el cielo bajó
-Sí sé que está lleno de Ángeles de Dios
-Porque el mismo Dios está aquí
-Está aquí
+C                             G
+Hay ángeles volando en este lugar,
+                                  F
+en medio del pueblo y junto al altar,
+                                        C   G
+subiendo y bajando en todas las direcciones.
+C                                       G
+No sé si la Iglesia subió o si el Cielo bajó,
+                                     F
+si sé que está lleno de ángeles de Dios,
+                 G          C
+porque el mismo Dios está aquí.

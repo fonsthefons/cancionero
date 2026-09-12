@@ -1,10 +1,10 @@
 ---
 
-fname: bendita_tu_ham
+fname: bendita_tu_popular
 title: Bendita Tu
-autor: HAM
+autor: Popular
 link: ""
-capo: 0
+capo: "3, 0-7"
 song_tags:
   alabanza:
     - cuarto_ciclo
@@ -13,26 +13,26 @@ song_tags:
   tema:
     - virgen
 ---
-G        Bm
+G             Bm
 En tu belleza y humildad
-Am        D
+Am                D
 Dios se ha complacido
 X2
 
-G              Bm
+G                             Bm
 Bendita tú, los ángeles te admiran.
-C        Am        D
+    C           Am          D
 Bendita tú, la Trinidad se goza en Ti
 X2
 
-G        Bm
+G              Bm
 Cuando naciste Dios sonrió
-Am        D
+Am          D
 Al mirar tu alma
 X2
 
-G              Bm
+G                             Bm
 Bendita tú, los ángeles te admiran.
-C        Am        D
+    C           Am          D
 Bendita tú, la Trinidad se goza en Ti
 X2

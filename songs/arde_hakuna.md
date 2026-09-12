@@ -3,8 +3,7 @@ fname: arde_hakuna
 title: Arde
 autor: Hakuna
 link: "https://open.spotify.com/track/0VxQq9ZDmkwllwhYZqucwB?si=e98fde2e5a1449f3"
-capo: 0
-capo_notes: []
+capo: "5, 0-5, original 5"
 song_tags:
   misa: 
     - comunion
@@ -81,11 +80,11 @@ Se le traspasa el alma
                 C
 Sufre su condición
 
-F            Bb           Dm        G   C
+F            Bb           Dm        G
 Un te quiero mudo en un silencio acogedor
      F           Bb              Dm          C
 Un humilde carpintero duerme en brazos a su Dios
-F            Bb           Dm        G   C
+F            Bb           Dm        G
 Un te quiero mudo en un silencio acogedor
      F           Bb              Dm       C
 Un humilde carpintero mira a los ojos a Dios
@@ -94,11 +93,16 @@ F                           Bb
 Sonríe, tranquilo al fin sonríe
                  Dm                    C
 Y en un último aliento hizo llorar a Dios
-F            Bb           Dm        G   C
+F            Bb           Dm        G
 Un te quiero mudo en un silencio acogedor
      F           Bb              Dm          C
 Un humilde carpintero duerme en brazos a su Dios
-F            Bb           Dm        G   C
+F            Bb           Dm        G
+Un te quiero mudo en un silencio acogedor
+     F           Bb              Dm       C
+Un humilde carpintero mira a los ojos a Dios
+
+F            Bb           Dm        G
 Un te quiero mudo en un silencio acogedor
      F           Bb              Dm       C
 Un humilde carpintero mira a los ojos a Dios

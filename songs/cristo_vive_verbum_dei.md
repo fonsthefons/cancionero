@@ -3,73 +3,77 @@ fname: cristo_vive_verbum_dei
 title: Cristo Vive
 autor: Verbum Dei
 link: "https://open.spotify.com/track/2YMqbYD2G59IhYXMNLpYaP?si=a87453e85f144535"
-capo: 0
+capo: "0, 0-2, original 0"
 song_tags:
   alabanza:
     - tercer_ciclo
   misa: 
     - entrada
     - salida
+  tema:
+    - cristo
 ---
-NO capo (MAX capo 2)
-  A            E
+Intro:
+A
+
+         A            E
 ¡Cristo Vive! Anúncialo
-           D    A
+       D              A
 Lo he oído en mi corazón
-  F#m          C#m
+     F#m         C#m
 Y me habla de mi padre
-    Bm    E
+       Bm         E
 Que me ama con locura
 
-  A            E
+         A            E
 ¡Cristo Vive! Anúncialo
-           D    A
+       D              A
 Lo he oído en mi corazón
-F#m          C#m
+      F#m             C#m
 Lo he visto en mis hermanos
-Bm    E
+        Bm           E
 Que comparten amor y gozo
 
-  D  E  A  F#m
+        D   E         A  F#m
 ¡Oh hermano! ¡Ven conmigo!
-  D  E    A  F#m
+        D         E         A  F#m
 Si es amor lo que mueve tu vida
-    D
+              D
 Muestra que Cristo
-  E     A-E-F#m
+    E       A-E-F#m
 Ya vive en tu corazón
-  D        E    A D A E
+    D            E           A D A E
 ¡Mirad! El vive hoy ¡Anúncialo!
 
 A D A E
 
-  A            E
+         A            E
 ¡Cristo Vive! Anúncialo
-           D    A
+       D              A
 Lo he oído en mi corazón
-  F#m          C#m
+        F#m          C#m
 Pues la muerte nada puede
-    Bm    E
+          Bm            E
 Porque el Padre lo resucita
-  A            E
+        A            E
 Cristo Vive! Anúncialo
-           D    A
+       D              A
 Lo he oído en mi corazón
-  F#m          C#m
+       F#m            C#m
 Y me grita en mis hermanos
-    Bm    E
+        Bm             E
 Los que sufren y viven solos
 
 
-  D  E  A  F#m
+        D   E         A  F#m
 ¡Oh hermano! ¡Ven conmigo!
-  D  E    A  F#m
+        D         E         A  F#m
 Si es amor lo que mueve tu vida
-    D
+              D
 Muestra que Cristo
-  E     A-E-F#m
+    E       A-E-F#m
 Ya vive en tu corazón
-  D        E    A D A E
+    D            E           A D A E
 ¡Mirad! El vive hoy ¡Anúncialo!
 
 A D A E

@@ -2,8 +2,8 @@
 fname: bendigamos_popular
 title: Bendigamos
 autor: popular
-link: ""
-capo: 0
+link: "https://open.spotify.com/track/3PuxJaqVeuKJazZLm3p4fv?si=b0628bf6a6e04110"
+capo: "0, 0-5"
 song_tags:
   alabanza:
     - primer_ciclo
@@ -14,21 +14,29 @@ song_tags:
     - espiritu
 ---
 E                    C#m
-BENDIGAMOS AL SEÑOR, DIOS DE TODA LA CREACIÓN,
+Bendigamos al señor, dios de toda la creación,
       A         F#m       B
-POR HABERNOS REGALADO SU AMOR.
+Por habernos regalado su amor.
 G#m                  C#m
-SU BONDAD Y SU PERDÓN, Y SU GRAN FIDELIDAD
+Su bondad y su perdón, y su gran fidelidad
         A            B          E    E7 
-POR LOS SIGLOS DE LOS SIGLOS DURARÁN.
+Por los siglos de los siglos durarán.
 
 
-(ESTRIBILLO)
-     A         B        G#m    C#m
-EL ESPÍRITU DE DIOS HOY ESTÁ SOBRE MÍ,
-A                  B           E    E7 
-ÉL ES QUIEN ME HA URGIDO A PROCLAMAR,
-A        B             G#m C#m
-LA BUENA NUEVA A LOS MÁS POBRES,
-A        B          E 
-LA GRACIA DE SU SALVACIÓN.
+     A         B          G#m      C#m
+El espíritu de dios hoy está sobre mí,
+A                    B               E  E7 
+Él es quien me ha ungido para proclamar,
+A        B               G#m C#m
+La buena nueva a los más pobres,
+A         E            B 
+La gracia de su salvación.
+
+     A         B          G#m      C#m
+El espíritu de dios hoy está sobre mí,
+A                    B               E  E7 
+Él es quien me ha ungido para proclamar,
+A        B               G#m C#m
+La buena nueva a los más pobres,
+A        B             E 
+La gracia de su salvación.

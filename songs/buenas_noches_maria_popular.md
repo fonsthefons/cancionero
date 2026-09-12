@@ -4,7 +4,7 @@ fname: buenas_noches_maria_popular
 title: Buenas Noches María
 autor: popular
 link: "https://www.youtube.com/watch?v=B0Di5EztMvE&list=RDB0Di5EztMvE&start_radio=1"
-capo: 0
+capo: "3, 0-7"
 song_tags:
   alabanza:
     - cuarto_ciclo
@@ -13,16 +13,17 @@ song_tags:
   tema:
     - virgen
 ---
-D A D
+D A Bm A D
+        D      A                 Bm
 Buenas noches, buenas noches, María
-A D
-Buenas noches, madre mía (x2)
+        A             D
+Buenas noches, madre mía
 
-G A D
+    G                  D
 El día fue bueno para ti,
-Em A D
+               Em A         D
 Fue bueno para mí, en armonía.
-G A D
+   G                D
 Tu eres la madre de Dios
-Em A D
+             Em A          D
 Y vives también en mi corazón
