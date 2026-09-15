@@ -3,7 +3,7 @@ fname: dime_maria_batah
 title: Dime María
 autor: Batah
 link: "https://open.spotify.com/track/3XquETxUYUBj3w3uvAEzQH?si=da7f801ba0b84103"
-capo: 5
+capo: "2, 0-4, original 5"
 capo_notes: []
 song_tags:
   misa:
@@ -12,51 +12,61 @@ song_tags:
   tema:
     - virgen
 ---
+Intro
+C Am F C Dm G
 
-C           (G/B)               Am
+C               (G/B)             Am
 ¿Qué le dices a José cuando se esfuerza,
-    Dm            G             C (G/B)
+       Dm          G               C
 por buscar refugio porque el niño llega?
-     Am            G               F        C
+      Am              G          F             C
 ¿Cómo miras hacia al cielo dando las gracias a Dios,
-     Dm                               G
+     Dm                              G
 por poder llevar tan dentro al Redentor?
 
-C           (G/B)               Am
+C               (G/B)         Am
 ¿Cómo miras esos ojos que son los ojos de Dios,
-    Dm            G             C (G/B)
+        Dm           G          C
 cómo escuchas sus latidos y su voz?
-     Am            G               F        C
+        Am         G          F              C
 ¿Cómo tratas a tu hijo sabiendo que es el Señor,
-     Dm                         G (G7)
- que viene a salvar al mundo por Amor?
+    Dm                            G (G7)
+que viene a salvar al mundo por Amor?
 
-CORO:
+ F C G         Am    
+María llena de gracia
+Dm G           C (C7)
+     Madre que ama,
+F C G        Am
+María Inmaculada
+  Dm  G       C
+       Mujer amada
 
- F C G       Am   Dm       G C (C7)
-María llena de gracia Madre que ama,
-F C G   Am  Dm  G       C
-María Inmaculada       Mujer amada
-
-C           (G/B)               Am
+C                   (G/B)        Am
 ¿Qué le cantas a tu Hijo cuando duerme,
-    Dm            G             C (G/B)
+       Dm               G         C
 cuando se despierta y llora de repente?
-     Am            G               F        C
+       Am               G           F            C
 ¿Cómo calmas con tu abrazo, y secas lagrimas divinas,
-     Dm                          G (G7)
+      Dm                          G (G7)
 cuando resbalan y caen por sus mejillas?
 
-C           (G/B)               Am
+C                  (G/B)       Am
 ¿Cómo limpias las heridas cuando de tanto jugar,
-    Dm            G             C (G/B)
- se lastima las rodillas el que calmará la mar?
-     Am            G               F        C
- Y dime, ¿sientes que este tiempo se te escapa entre los dedos,
-     Dm                          G (G7)
+       Dm            G          C
+se lastima las rodillas el que calmará la mar?
+         Am                     G
+Y dime, ¿sientes que este tiempo 
+          F              C
+se te escapa entre los dedos,
+      Dm                     G (G7)
 y disfrutas cada risa, cada gesto?
 
- F C G       Am   Dm       G C (C7)
-María llena de gracia Madre que ama,
-F C G   Am  Dm  G       C
-María Inmaculada       Mujer amada
+ F C G         Am    
+María llena de gracia
+Dm G           C (C7)
+     Madre que ama,
+F C G        Am
+María Inmaculada
+  Dm  G       C
+       Mujer amada

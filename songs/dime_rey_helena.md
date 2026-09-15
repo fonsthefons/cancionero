@@ -3,8 +3,7 @@ fname: dime_rey_helena
 title: Dime Rey
 autor: Helena
 link: "https://open.spotify.com/track/6pu8hHaPnU9h86EXcehDxz?si=84c985e49cfd42a2"
-capo: 0
-capo_notes: []
+capo: "5, 0-7, original 0"
 song_tags:
   adoracion: []
   misa: 
@@ -12,89 +11,92 @@ song_tags:
   tema:
     - cristo
 ---
+Intro:
+G D Em C
+G D Em C
 
-G              D
+       G                D
 Hoy miraba señor tus heridas
-Em                 C
+        Em                    C
 y el dolor que abarcaba esa cruz.
-G               D
+         G                   D
 Con tus manos muy bien extendidas,
-Em                 C
+     Em               C
 abrazabas toda multitud.
 
-G              D
+       G                D
 Hoy miraba señor al soldado
-Em                 C
+        Em                   C
 perforando con lanzas tus pies.
-G               D
+         G                   D
 Y esos clavos muy bien sujetados
-Em                 C
+      Em                C
 sostenían con odio tus pies.
 
-G                 D
+     G                        D
 Dime rey porque estás tan callado
-Em                 C
+        Em                C
 te latigaron con tanto furor.
-G                 D
+      G                       D
 Dime rey porque escondes el llanto
-Em                 C
+        Em                    C
 y perdonas aquel quien te mato.
-G                 D
+      G                     D
 Dime rey porque es tan necesario
-Em                 C
+        Em                    C
 morir así de esta forma tan cruel
-G                 D
+      G                 D
 Dime rey como puedo ayudarte
-Em                 C
+        Em                 C
 a soportar el dolor a tus pies.
 
-G              D
+      G                 D
 Hijo mío esa cruz tenebrosa,
-Em                 C
+       Em                  C
 me dolió y hasta sangre sudé.
-G              D
+      G                   D
 Por amor a esas vidas perdidas,
-Em                 C
+        Em                C
 toda aquella maldad soporté.
-G              D
+       G                 D
 Mi mensaje de amor y justicia
-Em                 C
+      Em             C
 salvaría toda humanidad,
-G              D
+      G                D
 pero más me dolió todavía
-Em                 C
-que no a todos les pudo llegar.
+    Em                      C
+que no a todos les pudo llegar
 
-G              D
+       G                  D
 Hoy miraba hijo mío esos niños
-Em                 C
+       Em                     C
 morir así, de esa forma tan cruel
-G              D
+       G               D
 Hoy miraba toda la pobreza
-Em                 C
+           Em                    C
 sufriendo frío con hambre y con sed.
-G              D
+        G                D
 Y esos jóvenes tan lastimados
-Em                 C
+        Em                 C
 Equivocados pecando otra vez,
-G              D
+       G                    D
 Me recuerdan aquel Viernes Santo
-Em                 C
-y ese dolor se repite otra vez.
+         Em                 C
+y ese dolor se repite otra vez
 
-Em                 C
+Em                       C
 Animate que tú estás conmigo
-G              D
+        G                 D
 a expandir ese amor de tu fe,
-Em                 C
+      Em               C
 Hijo mío ese fuego perdido,
-G              D
+       G                    D
 tú lo puedes volver a encender
-Em              C
-Misiona, transforma
-G              D
+     Em             C
+Misionar, transformar
+     G                     D
 esas almas que no pude entrar
-Em              C
-Misiona, transforma
-G              D
+      Em           C
+Misionar, transformar
+G                       D
 Corazones sedientos de paz.

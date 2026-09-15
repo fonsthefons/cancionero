@@ -3,7 +3,7 @@ fname: dios_incomparable_marcos_barrientos
 title: Dios Incomparable
 autor: Marcos Barrientos
 link: "https://open.spotify.com/track/4i6pgmkSpkhFuGnNgDcDIF?si=3588657bb5df4525"
-capo: 0
+capo: "3, 0-4, original 4"
 song_tags:
   alabanza:
     - segundo_ciclo
@@ -11,47 +11,52 @@ song_tags:
     - ofertorio
     - comunion
 ---
-C G Am F
-C           G
+G D Em C
+G            D    Em
 Dios de mi corazón
-      Am    F
+                    C
 En ti encontré mi salvación
-        C            G
+G            D       Em
 Tu gloria y majestad
-Am            F
+               C
 Quiero siempre contemplar
 
-C    G
+G           D
 Eres Dios eterno
-        Am
+             Em
 Solo tú eres bueno
-    F    C
+           C            G
 Dios incomparable eres tú
-C        G
+                D
 Nunca me separaré
-   Am 
+             Em
 De tu gran amor
-    F    C
+           C            G
 Eres mi Señor, mi salvador
 
-C             G
+G            D      Em
 Tú eres mi adoración
-Am             F
+                C
 Y mi eterna canción
-C       G
+G             D  Em
 Todo mi interior
-Am      F
+             C
 Es cautivado por tu amor
 
-C    G
+G           D
 Eres Dios eterno
-        Am
+             Em
 Solo tú eres bueno
-    F    C
+           C            G
 Dios incomparable eres tú
-C        G
+                D
 Nunca me separaré
-   Am 
+             Em
 De tu gran amor
-    F    C
+           C            G
 Eres mi Señor, mi salvador
+
+G     D
+Aleluya
+Em    C
+Aleluya

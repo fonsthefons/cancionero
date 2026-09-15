@@ -3,7 +3,7 @@ fname: dulce_locura_batah
 title: Dulce locura
 autor: Batah
 link: "https://open.spotify.com/track/7EyQamuzh9Xey9mZlDotkz?si=ebea17aa442641eb"
-capo: 0
+capo: "0, 0-5"
 capo_notes: []
 song_tags:
   adoracion: []
@@ -12,68 +12,69 @@ song_tags:
   tema:
     - cristo
 ---
+Intro:
+G C G C
 
-[Verse]
   G                          Am
 Creo que no encuentro las palabras
- D                  G
-Se hace dificil expresar
+ D                      G
+  Se hace dificil expresar
  Em                      Am
 El alma y gira y da mil vueltas
- D                     G
-Estas presente en el Altar
+D                        G
+ Estas presente en el Altar
  
   G                        Am
 Te veo escondido en la custodia
- D                  G
-Y siempre intento recordar
+D                  G
+ Y siempre intento recordar
  Em                      Am
 Que tu me miras, y yo te miro
- D                     G
-Y no hace falta mucho mas.
+D                     G
+ Y no hace falta mucho mas.
  
-[Chorus]
+
  G                    C
 Dulce locura, te escondes en el pan.
 D                 G
-Que mas podrias dar?
+ Que mas podrias dar?
 Em                        Am
 Sencillo y fragil, Dios eterno
-D                        G
-Nos traes la vida, traes la paz.
+D                             G
+ Nos traes la vida, traes la paz.
  
   G                  Am
 Me fascina este misterio,
- D                           G
-Como es que Tu has querido entrar
+D                           G
+ Como es que Tu has querido entrar
  Em                      Am
 Dentro de este pobre corazon
- D                     G
-Que en ti se funde al comulgar
+D                     G
+ Que en ti se funde al comulgar
  
   G               Am
 En el mundo no hay amor asi
- D                  G
-Amor que llego a morir
- Em                      Am
+D                  G
+ Amor que llego a morir
+Em                      Am
 Resucistaste y ahora estas aqui
- D                     G
-En el sagrario, junto a mi.
+D                        G
+ En el sagrario, junto a mi.
  
-  G                             C
+  G                  C
 Dulce locura, te escondes en el pan.
- D                 G
-Que mas podrias dar?
- Em                        Am
+D                 G
+ Que mas podrias dar?
+Em                        Am
 Sencillo y fragil, Dios eterno
- D                        G
-Nos traes la vida, traes la paz.
+D                             G
+ Nos traes la vida, traes la paz.
  
  D                G
 Ante ti rindo mi vida
- Am          D        G
+ Am        D          G
 Quiero estar cerca de ti
- Am          D           Em
-Compartir mis suenos y alegrias.
+Am      D                    Em
+ Compartir mis suenos y alegrias.
  Am          D        G
 Quiero amarte... Cada dia mas.
