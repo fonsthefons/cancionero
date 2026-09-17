@@ -3,7 +3,7 @@ fname: dulce_locura_batah
 title: Dulce locura
 autor: Batah
 link: "https://open.spotify.com/track/7EyQamuzh9Xey9mZlDotkz?si=ebea17aa442641eb"
-capo: "0, 0-5"
+capo: "0, 0-7, original 0"
 capo_notes: []
 song_tags:
   adoracion: []
@@ -13,68 +13,70 @@ song_tags:
     - cristo
 ---
 Intro:
-G C G C
+G C G C  G
 
-  G                          Am
+                             Am    D
 Creo que no encuentro las palabras
- D                      G
-  Se hace dificil expresar
- Em                      Am
+                      G  Em
+Se hace dificil expresar
+                        Am      D
 El alma y gira y da mil vueltas
-D                        G
- Estas presente en el Altar
+                        G  C  G
+Estas presente en el Altar
  
-  G                        Am
+                           Am   D
 Te veo escondido en la custodia
-D                  G
- Y siempre intento recordar
- Em                      Am
+                        G   Em
+Y siempre intento recordar
+                         Am   D
 Que tu me miras, y yo te miro
-D                     G
- Y no hace falta mucho mas.
- 
+                      G   C  G
+Y no hace falta mucho mas.
 
- G                    C
+                    C                D
 Dulce locura, te escondes en el pan.
-D                 G
- Que mas podrias dar?
-Em                        Am
+                G    Em
+Que mas podrias dar?
+                          Am   D
 Sencillo y fragil, Dios eterno
-D                             G
- Nos traes la vida, traes la paz.
+                            G
+Nos traes la vida, traes la paz.
+
+C G C  G
  
-  G                  Am
+                    Am    D
 Me fascina este misterio,
-D                           G
- Como es que Tu has querido entrar
- Em                      Am
+                               G  Em
+Como es que Tu has querido entrar
+                          Am  D
 Dentro de este pobre corazon
-D                     G
- Que en ti se funde al comulgar
+                            G  C  G
+Que en ti se funde al comulgar
  
-  G               Am
+                    Am      D
 En el mundo no hay amor asi
-D                  G
- Amor que llego a morir
-Em                      Am
+                    G  Em
+Amor que llego a morir
+                        Am      D
 Resucistaste y ahora estas aqui
-D                        G
- En el sagrario, junto a mi.
+                        G  C  G
+En el sagrario, junto a mi.
  
-  G                  C
+                    C                D
 Dulce locura, te escondes en el pan.
-D                 G
- Que mas podrias dar?
-Em                        Am
+                G    Em
+Que mas podrias dar?
+                          Am   D
 Sencillo y fragil, Dios eterno
-D                             G
- Nos traes la vida, traes la paz.
+                            G    Am
+Nos traes la vida, traes la paz.
+(x2)
  
- D                G
+     D           G    Am
 Ante ti rindo mi vida
- Am        D          G
+          D           G  Am
 Quiero estar cerca de ti
-Am      D                    Em
- Compartir mis suenos y alegrias.
- Am          D        G
+       D             G      Em  Am
+Compartir mis suenos y alegrias.
+         D               G
 Quiero amarte... Cada dia mas.

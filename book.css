@@ -171,6 +171,11 @@ body.hide-all-chords .chord-line {
     /* width: max-content; */
 }
 
+.song p a {
+    color: #397380;
+    text-decoration: underline;
+}
+
 /* Each line */
 .chord-line,
 .lyric-line {
