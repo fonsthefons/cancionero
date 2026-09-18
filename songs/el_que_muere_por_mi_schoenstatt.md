@@ -84,13 +84,12 @@ Que se acerca a su hijo y me abraza feliz
          F         G                   C
 Que se acerca a su hijo y me abraza feliz
 
+F               G
 Y si ahora yo acepto esa cruz
+C               Am          F
 Es por esa persona ese Dios
+G               C
 Es por Cristo Jesús
-Desde entonces lo he visto caminar a mi lado
-A ese Dios que se humilla y muere por mi
-Es la barca en mi playa, el ruido del silencio
-Que se acerca a su hijo y me abraza feliz
 
         F            C          G       Am
 Desde entonces lo he visto caminar a mi lado

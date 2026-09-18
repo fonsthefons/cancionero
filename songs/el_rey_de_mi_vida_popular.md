@@ -3,8 +3,7 @@ fname: el_rey_de_mi_vida_popular
 title: El Rey de mi Vida
 autor: popular
 link: "https://open.spotify.com/track/6wW6BtRHIvhGorNwE5TTI0?si=74664460ba5347cf"
-capo: 0
-capo_notes: []
+capo: "0, 0-2, original 0"
 song_tags:
   adoracion: []
   alabanza:
@@ -13,62 +12,27 @@ song_tags:
     - comunion
 ---
 
-GSus    Cadd9  Em7/G  Cadd9
+Intro:
+G  C  Em  C
 
-GSus
-
-Quiero alabarte sin parar
-
-Cadd9
-
-Todos los días,
-
-GSus
-
-Que Tu presencia sea el anhelo
-
-Cadd9
-
-De mi vida
-
-Em7/G
-
-Yo quiero hacer Tu voluntad
-
-Cadd9
-
+          G                          C
+Quiero alabarte sin parar todos los días
+          G                          C
+Que tu presencia sea el anhelo de mi vida
+             G
+Yo quiero hacer tu voluntad
+          C
 Señor yo te quiero agradar
+           Em                        C
+Yo quiero darte siempre el primer lugar
+           Em                        C
+Yo quiero darte siempre el primer lugar
 
-Em7/G
+                 G                Em
+Si, tu eres el rey el rey de mi vida
+       Am             C
+Numero uno en mi corazón
+            Am                 D
+A ti yo te rindo todo lo que soy
 
-Y quiero darte
-
-Cadd9
-
-Siempre el primer lugar
-
-Em7/G
-
-Yo quiero darte
-
-Cadd9  CSus2A
-
-Siempre el primer lugar
-
-GSus
-
-Si Tu eres el Rey
-
-Em7/G
-
-El Rey de mi vida
-
-Cadd9         Em7/G
-
-el numero uno en mi corazon
-
-Am7 /G          D4/F#
-
-a Ti yo te rindo todo lo que soy
-
-(Em7/G) GSus
+(x2)

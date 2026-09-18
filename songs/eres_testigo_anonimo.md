@@ -3,8 +3,7 @@ fname: eres_testigo_anonimo
 title: Eres Testigo
 autor: anonimo
 link: ""
-capo: 0
-capo_notes: []
+capo: "0, 0-5"
 song_tags:
   misa: 
     - comunion
@@ -12,60 +11,60 @@ song_tags:
     - martir
 ---
 
-Dm        Gm
+Dm                   Gm
 Terminó, ya no queda nada
-C        F
+          C                 F
 Ya no hay nadie a quién buscar
-Gm       Dm
+        Gm                Dm
 Por ser fieles, se los llevaron
-Bbm A7 Dm
+      Bb A7 Dm
 Ya no volverán
 
-Dm        Gm
+Dm                   Gm
 Despojado, como del amado
-C        F
+          C                 F
 Sin alforja, has de caminar
-Gm       Dm
+        Gm                Dm
 Si te acusan, ya no tienes miedo
-Bbm A7 Dm
+      Bb A7 Dm
 No le negarás
 
-Gm C F
+        Gm   C           F
 Coje tu cruz, y eres testigo
-Gm A7 Dm
+          Gm    A7           Dm
 De lo más grande que han conocido
-Gm
+                Gm
 Y aunque hoy te maten
-C F Dm
+C         F  Dm
 Te quedes solo
-Gm A7 Dm
+         Gm     A7         Dm
 Tienes a Cristo, lo tienes todo
 
-Dm        Gm
+Dm                   Gm
 Esperar a que te señalen
-C        F
+          C                 F
 Por ser solo un Cristiano más
-Gm       Dm
+        Gm                Dm
 Que ya no vive sin su Maestro
-Bbm A7 Dm
+      Bb A7 Dm
 No hace falta más
 
-Dm        Gm
+Dm                   Gm
 Y aunque quieran callar tus labios
-C        F
+          C                 F
 Y te quiten la libertad
-Gm       Dm
+        Gm                Dm
 No tienes miedo, eres de Cristo
-Bbm A7 Dm
+      Bb A7 Dm
 No te dejará
 
-Gm C F
+        Gm   C           F
 Coje tu cruz, y eres testigo
-Gm A7 Dm
+          Gm    A7           Dm
 De lo más grande que han conocido
-Gm
+                Gm
 Y aunque hoy te maten
-C F Dm
+C         F  Dm
 Te quedes solo
-Gm A7 Dm
+         Gm     A7         Dm
 Tienes a Cristo, lo tienes todo
