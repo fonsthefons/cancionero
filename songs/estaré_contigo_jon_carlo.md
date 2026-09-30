@@ -3,59 +3,90 @@ fname: estaré_contigo_jon_carlo
 title: Estaré Contigo
 autor: Jon Carlo
 link: "https://open.spotify.com/track/6faN0qQaOXisMtlrtyknJ3?si=e0e3d940b7944a4c"
-capo: 0
-capo_notes: []
+capo: "0, 0-2, original 0"
 song_tags:
   adoracion: []
   misa: 
     - comunion
 ---
 
-Intro: G Cadd9 G Cadd9
+Intro: 
+G D Em D C D
 
-G          Cadd9          C               D
-Amado no sabes cuánto me alegra que estés aquí.
+G-D      Em                C
+Amado no sabes cuánto me alegra
+             D
+Que estés aquí.
+G-D         Em            C
+Deseaba sentirte poder tenerte
+                 D
+Y estar cerca de ti.
 
-G          Cadd9          C               D
-Deseaba sentirte poder tenerte y estar cerca de ti.
-
-Am          C           D    Am        C           D
-Conozco de dónde has venido, y el recorrido de tu camino,
-C                 D                  C          D
-tus sufrimientos y tus lágrimas han conmovido mi corazón.
+Am          C           D  
+Conozco de dónde has venido
+Am        C             D
+Y el recorrido de tu camino,
+C                        D            
+ Tus sufrimientos y tus lágrimas
+            C         D
+Han conmovido mi corazón
 
          G        D       Em
 A donde vayas me iré contigo,
-             C      Am     D
+             C       Am      D
 cuando te levantes allí estaré,
-             Bm                Em
+             Bm                   Em
 y cuando me busques tú me encontrarás,
-               C  D             G-Cadd9-G-D
-no te abandonaré,   puedes contar conmigo.
+               C  D                     G
+no te abandonaré,   puedes contar conmigo
+G D Em D C D
 
-F              G   F                  G
-Si conocieras tu valor, lo que significas para Mí.
+Am          C           D  
+Conozco de dónde has venido
+Am        C             D
+Y el recorrido de tu camino,
+C                        D            
+ Tus sufrimientos y tus lágrimas
+            C         D
+Han conmovido mi corazón
+
+         G        D       Em
+A donde vayas me iré contigo,
+             C       Am      D
+cuando te levantes allí estaré,
+             Bm                   Em
+y cuando me busques tú me encontrarás,
+               C D
+no te abandonaré
+
+
+F                   G 
+Si conocieras tu valor
+F                      G
+Lo que significas para Mí.
 F                          G
 El amor tan grande que te tengo,
-        C                  G           D
+      C                     G             D
 seguramente dejarías de buscarme fuera de Mí,
            C    D             G
 abre tus alas y vuela hacia a Mí.
 
          G        D       Em
 A donde vayas me iré contigo,
-             C      Am     D
+             C       Am      D
 cuando te levantes allí estaré,
-             Bm                Em
+             Bm                   Em
 y cuando me busques tú me encontrarás,
-               C                  D
+               C                       D
 no te abandonaré, eres importante para Mí.
 
          G        D       Em
 A donde vayas me iré contigo,
-             C      Am     D
+             C       Am      D
 cuando te levantes allí estaré,
-             Bm                Em
+            Bm                    Em
 y cuando me busques tú me encontrarás,
-               C  D             G-Cadd9-G-D
+               C  D                     G
 no te abandonaré,   puedes contar conmigo.
+
+D Em D C D

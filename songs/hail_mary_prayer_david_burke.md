@@ -3,8 +3,7 @@ fname: hail_mary_prayer_david_burke
 title: Hail Mary Prayer
 autor: David Burke
 link: "https://open.spotify.com/track/3VOvSGFO2KTKspnMWWcG9s?si=b87302ca65984157"
-capo: 0
-capo_notes: []
+capo: "0, 0-5, original 0"
 song_tags:
   misa: 
     - salida
@@ -14,34 +13,34 @@ song_tags:
 
 F G Am C F/A G F Csus4 C
 
-       F   C/E
+       F-C/E
 Hail Mary
-F            G  Am
+F        G-Am
 Full of grace
-       G F     C/E
+C-Em  Am   C/E
 The-e Lord is
-C       C/G  Gsus4 G
+F      C/E G
 wi-ith thee
 
-Em     F    G
+Em      F    G
 Blessed art thou
-Am   C
+      Am C
 Among Women
 
-        F/A       G       F
+        F/A G      F
 And blessed is the fruit
-Dm7     G      C
+Dm7          G  C
 of thy womb, Jesus
 
 C/E  G  F
 Holy Mary,
-C/E Am
+F      C/E-Am
 Mother of God
-        Dm C C/G Gsus4 G
+     Dm  C   C/G Gsus4 G
 Pray for us, sinners
-Em   F  G        Am   C
+Em   F-G        Am-C
 Now, and at the hour
-F/A     G    F
+F/A     G-F
 of our death
      Csus4  C
 Amen.
