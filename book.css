@@ -285,15 +285,15 @@ body.two-columns-global .song.force-two-columns .lyrics {
 .toc-sidebar {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100vh;
     width: 260px;
 
     background: white;
-    border-left: 1px solid #ccc;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid #ccc;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: transform 0.3s ease;
 
     overflow-y: auto;
@@ -328,7 +328,7 @@ body.two-columns-global .song.force-two-columns .lyrics {
 .toc-toggle {
     position: fixed;
     top: 100px;
-    right: 20px;
+    left: 20px;
 
     z-index: 9999;                   
 
@@ -359,13 +359,13 @@ body.two-columns-global .song.force-two-columns .lyrics {
     -webkit-backface-visibility: hidden;
 }
 
-.search-container-toc {
-    padding-left: 15px;
+.search-container-sidebar {
+    padding-left: 0px;
 }
 
 /* Move arrow when open */
 .toc-sidebar.open+.toc-toggle {
-    right: 270px;
+    left: 270px;
 }
 
 .print-dialog {

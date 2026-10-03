@@ -303,6 +303,12 @@ def format_lyrics(content):
             elif is_chord_line(line):
                 wrapped = CHORD_RE.sub(r'<span class="chord">\1</span>', escaped)
 
+                # A new chord line cannot wait behind another; emit the previous one.
+                if pending_chord:
+                    verse_lines.append(
+                        '<div class="chord-lyric-line-pair">' + pending_chord + "</div>"
+                    )
+
                 pending_chord = f'<span class="chord-line">{wrapped}</span>'
 
             else:
@@ -351,8 +357,18 @@ def write_all_songs_links(f, songs):
 
 
 # Mini Index of indexes
-def write_mini_toc_html(f, grouped):
+def write_mini_toc_html(f, grouped, location):
+    if location not in ("main", "sidebar"):
+        raise ValueError(f"location can only be 'main' or 'sidebar' but got {location}")
     f.write('<div class="mini-toc">\n')
+    f.write(
+        f"""
+            <div id="search-container-{location}" class="search-container-{location}">
+                <input id="search-box-{location}" type="search" placeholder="Search songs...">
+                <div id="search-results-{location}"></div>
+            </div>
+        """
+    )
     f.write("<h2>Contenido</h2>\n")
 
     # 🔥 All Songs link
@@ -418,16 +434,12 @@ def write_html_book(output_path, songs, grouped):
                 <div class="toc-content">
         """
         )
-        write_mini_toc_html(f, grouped)
+        write_mini_toc_html(f, grouped, "sidebar")
         f.write(
             """
                 </div>
-                <div id="search-container-toc" class="search-container-toc">
-                    <input id="search-box-toc" type="search" placeholder="Search songs...">
-                    <div id="search-results-toc"></div>
-                </div>
             </div>
-            <button id="toc-toggle" class="toc-toggle">➤</button>
+            <button id="toc-toggle" class="toc-toggle"><</button>
         """
         )
 
@@ -439,19 +451,11 @@ def write_html_book(output_path, songs, grouped):
         # =========================
         # SEARCH UI (now REAL HTML, not escaped)
         # =========================
-        f.write(
-            """
-            <div id="search-container-main">
-                <input id="search-box-main" type="search" placeholder="Search songs...">
-                <div id="search-results-main"></div>
-            </div>
-        """
-        )
 
         # =========================
         # MINI TOC (TOP NAV)
         # =========================
-        write_mini_toc_html(f, grouped)
+        write_mini_toc_html(f, grouped, "main")
         # f.write("<hr>\n")
 
         # =========================

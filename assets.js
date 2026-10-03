@@ -328,7 +328,7 @@ document.addEventListener(
     () => {
 
         const box =
-            document.getElementById("search-box-toc");
+            document.getElementById("search-box-sidebar");
 
 
         box.addEventListener(
@@ -338,7 +338,7 @@ document.addEventListener(
                 const results =
                     searchSongs(box.value);
 
-                showSearchResults(results, "toc");
+                showSearchResults(results, "sidebar");
             }
         );
     }
@@ -357,7 +357,7 @@ document.addEventListener("click", function (e) {
 
         sidebar.classList.toggle("open");
 
-        btn.textContent = sidebar.classList.contains("open") ? "◀" : "➤";
+        btn.textContent = sidebar.classList.contains("open") ? ">" : "<";
 
         return;
     }
@@ -372,7 +372,7 @@ document.addEventListener("click", function (e) {
 
         sidebar.classList.remove("open");
 
-        if (btn) btn.textContent = "➤";
+        if (btn) btn.textContent = "◀";
 
         return;
     }
