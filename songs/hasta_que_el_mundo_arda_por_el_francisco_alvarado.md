@@ -13,8 +13,10 @@ song_tags:
 ---
 
 Intro:
-Em F C G
-Em F C G
+Em F C C-G
+Em F C C-G
+Em F C C-G
+Em F C C-G
 
   Em-F C
 María, toma todo
@@ -35,7 +37,7 @@ día a día vivir su misión.
 
 Am           F          G        C-G
  Hazme una antorcha que arda por Cristo,
-Am                 F   C      G
+Am         F       C          G
  Incendiar el corazón, ser hogar
 E7                 Am-G      D
  como el sol que esparce tu luz
@@ -53,9 +55,13 @@ Quiero ser santo y si debo morir,
 G#       A#           C
  mi vida quiero entregar.
 
+
+Am F C C-G
+Am F C C-G
+
 Am           F          G        C-G
  Hazme una antorcha que arda por Cristo,
-Am                 F   C      G
+Am         F       C          G
  Incendiar el corazón, ser hogar
 E7                 Am-G      D
  como el sol que esparce tu luz

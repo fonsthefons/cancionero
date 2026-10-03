@@ -372,7 +372,7 @@ document.addEventListener("click", function (e) {
 
         sidebar.classList.remove("open");
 
-        if (btn) btn.textContent = "◀";
+        if (btn) btn.textContent = "<";
 
         return;
     }
