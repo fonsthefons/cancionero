@@ -3,85 +3,108 @@ fname: huracan_hakuna
 title: Huracán
 autor: Hakuna
 link: "https://open.spotify.com/track/1Gd6Hz1MSEiY8205ToJjsh?si=3df71dbc210747df"
-capo: 0
+capo: "4, 0-9, original 0" 
 capo_notes: []
 song_tags:
   adoracion: []
   misa:
     - comunion
 ---
+Intro:
+C G Am F
+C G Am F
 
-[Intro]
-G D Em C
-G D Em C
- 
- 
-[Verse]
-G                      D
-Me he hecho tantas preguntas
-Em             C
-intentando entender
-G                      D
-Me he lanzado a buscarte
-Em             C
+C                       G
+ Me he hecho tantas preguntas
+Am                F
+ intentando entender
+C                    G
+ Me he lanzado a buscarte
+       Am   F
 sin saberte ver 
-G                      D
-Me he asomado al abismo
-Em             C
-me he atrevido a saltar
-    G     D    Em
-y caer 
- 
-ESTRIBILLO
+C                   G
+ Me he asomado al abismo
+Am                    F
+ me he atrevido a saltar
+    C  G  Am Am
+y caer
+
+          C
+Y un huracán
 G
-Un huracán
-D
-romperá
-     Em              C
+ romperá
+   Am                 F
 el cielo desde mi garganta
-     G
+         C
 gritándote
-         D                    C
+          G                   F
 ¿dónde estás cuando me haces falta?
- 
-G               D
-Me han dado respuestas
-Em              C
-pero no se que hacer
-G               D
-He prometido seguirte
-Em           C
-Yo sin entender
-G                    D
-Y hay un eco en lo hondo
-Em                  C
-que me empuja hacia ti
-G                  D
-y aunque sea sin sentirte
-Em       C
+
+C G Am F
+C G Am F
+
+C                  G
+ Y me han dado respuestas
+Am                 F
+ pero no se que hacer
+C                 G
+ He prometido seguirte
+       Am    F
+Sin entender
+
+C                   G
+ Y hay un eco en lo hondo
+Am                   F
+ que me empuja hacia ti
+C                     G
+ y aunque sea sin sentirte
+   Am    F
 te buscaré
- 
-ESTRIBILLO
+
+          C
+Y un huracán
 G
-Un huracán
-D
-romperá
-     Em              C
+ romperá
+   Am                 F
 el cielo desde mi garganta
-     G
+         C
 gritándote
-         D                    C
+          G                   F
 ¿dónde estás cuando me haces falta?
- 
-G                   D
-Estoy aqui, soy el silencio
-Em                 C
-Estoy aquí, soy este viento
-G                       D       C
+(x2)
+
+         C           G
+Estoy aqui, en el silencio
+        Am           F
+Estoy aquí, en este viento
+        C              G      F
 Estoy aquí, soy este trozo de pan
-G                   D
-Estoy aqui, soy tu lamento
-Em                C
-Estoy aquí, soy este eco
-G                     D       C
+        C            G
+Estoy aqui, en tu lamento
+        Am          F
+Estoy aquí, en este eco
+         C             G       F
 Estoy aquí, soy este trozo de pan
+
+          C
+Y un huracán
+G
+ romperá
+   Am                 F
+el cielo desde mi garganta
+         C
+gritándote
+          G                   F
+¿dónde estás cuando me haces falta?
+(x4)
+
+          C
+Y tu huracán
+G
+ romperá
+   Am                 F
+el cielo desde mi garganta
+         C
+gritándome
+  G              F
+Cuanto me haces falta!
