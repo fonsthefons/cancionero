@@ -3,89 +3,90 @@ fname: la_samaritana_popular
 title: La Samaritana
 autor: popular
 link: "https://open.spotify.com/track/7D9WJZgYgMUCpoGtGXSWeW?si=432759b781664caf"
-capo: 0
-capo_notes: []
+capo: "3, 0-7, original 3"
 song_tags:
   adoracion: []
   misa: 
     - ofertorio
     - comunion
+  tema:
+    - cristo
 ---
-Am  Dm
+Am Am/G Dm G Am
 
-Am                 Dm
-Llegaste tan de pronto, misterio de amor,
-G               Am  Am/G
-tus ojos negros calaron hondo;
-F                        C      G
+Am              Am/G   Dm
+Llegaste tan de pronto, misterio de amor
+    G               Am        Am/G
+tus ojos negros calaron hondo
+       F            C           G
 y habitaron oscuros lados de mi cuerpo herido
-F              C      G
-y tu luz me asombró... tu luz.
+     F            C       G
+y tu luz me asombró... tu luz
 
-Am                 Dm
-"Dame de beber", Tú me dijiste,
-G               Am  Am/G
-al tiempo de mil latidos de mi corazón.
-F                        C      G
-"Si supieras el don de Dios y quién te lo pide,
-F              C      G
-tú vendrías a buscar mi agua".
+Am         Am/G Dm
+"Dame de beber", Tú me dijiste
+   G                           Am  Am/G
+al tiempo de mil latidos de mi corazón
+       F               C            G
+"Si supieras el don de Dios y quién te lo pide
+        F         C     G
+tú vendrías a buscar mi agua"
 
-F        G
+F                   G
 "Porque todo el que beba
-C        G/B  Am
+    C    G/B       Am
 del agua que Yo le dé
-F    Dm        G
-tendrá vida, no tendrá sed.
-F        G
+       F    Dm         G
+tendrá vida, no tendrá sed
+F                  G
 Porque todo el que beba
-C        G/B  Am
+      C      G/B   Am
 de la fuente de mi vida
-F     G        Am
-limpiará sus heridas, no tendrá sed".
+F               G               Am
+limpiará sus heridas, no tendrá sed"
 
-Am                 Dm
-El agua que Tú me das llena mi pozo vacío,
-G               Am  Am/G
-es agua de tu Espíritu en mi corazón,
-F                        C      G
+Dm G Am
+
+Am          Am/G     Dm
+El agua que Tú me das llena mi pozo vacío
+   G                         Am     Am/G
+es agua de tu Espíritu en mi corazón
+F               C            G
 colma todos mis cántaros hechos de barro
-F              C      G
-y tu viento de amor me envuelve.
+     F           C        G
+y tu viento de amor me envuelve
 
-Am                 Dm
-El agua que Tu me das lava lo manchado,
-G               Am  Am/G
-hace brotar del mal un bien,
-F                        C      G
-tu fuego quemó mis labios y me lancé a correr,
-F              C      G
-tu nombre gritaré, cantaré.
+Am          Am/G     Dm
+El agua que Tu me das lava lo manchado
+G                       Am  Am/G
+ hace brotar del mal un bien
+   F               C               G
+tu fuego quemó mis labios y me lancé a correr
+   F            C        G
+tu nombre gritaré, cantaré
 
-F        G
+F                   G
 "Porque todo el que beba
-C        G/B  Am
+    C    G/B       Am
 del agua que Yo le dé
-F    Dm        G
-tendrá vida, no tendrá sed.
-F        G
+       F    Dm         G
+tendrá vida, no tendrá sed
+F                  G
 Porque todo el que beba
-C        G/B  Am
+      C      G/B   Am
 de la fuente de mi vida
-F     G        Am
-limpiará sus heridas, no tendrá sed".
+F               G               Am
+limpiará sus heridas, no tendrá sed"
 
-[Chorus]
-
-F        G
+F                   G
 "Porque todo el que beba
-C        G/B  Am
+    C    G/B       Am
 del agua que Yo le dé
-F    Dm        G
-tendrá vida, no tendrá sed.
-F        G
+       F    Dm         G
+tendrá vida, no tendrá sed
+F                  G
 Porque todo el que beba
-C        G/B  Am
+      C      G/B   Am
 de la fuente de mi vida
-F     G        C
-limpiará sus heridas, no tendrá sed".
+F               G               Am
+limpiará sus heridas, no tendrá sed"

@@ -3,53 +3,49 @@ fname: maravillas_schoenstatt
 title: Maravillas
 autor: schoenstatt
 link: "https://open.spotify.com/track/7FE6hZmegD9prtjy0vhb1e?si=a96e92b00b374154"
-capo: 4
-
-capo_notes: []
+capo: "4, 1-7, original 2"
 song_tags:
   adoracion: []
   misa: 
     - ofertorio
     - comunion
 ---
+Intro:
+A C#m D E
+F#m C#m D E
 
-A        C#m
+     A             C#m
 Maravillas hizo en mí
-D        E
+   D              E
 Mi alma canta de gozo
-
-F#m     C#m
+        F#m          C#m
 Pues al ver mi pequeñez
-D        E
+   D              E
 Se detuvieron sus ojos
-
-F#m        C#m
+            F#m         C#m
 Y Él que es santo y poderoso
-D        Bm
+      D            Bm
 Hoy aguarda por mi sí
-
-A        C#m
+   A             C#m
 Mi alma canta de gozo
-D  E     A
+     D     E        A
 Maravillas hizo en mí
 
-
-A        C#m
+     A             C#m
 Maravillas hizo en mí
-D        E
+    D             E
 Del alma brota mi canto
-
-F#m     C#m
+      F#m        C#m
 El Señor me ha amado
-D        E
+    D                    E
 Más que a los lirios del campo
 
-F#m   C#m
+       F#m      C#m
 Por el Espíritu Santo
-D        Bm
+      D          Bm
 Él habita hoy en mí
 
-A        C#m
+   A             C#m
 No cese nunca mi canto
-D  E     A
+     D     E        A
 Maravillas hizo en mí
