@@ -3,48 +3,77 @@ fname: mi_amado_hakuna
 title: Mi amado
 autor: Hakuna
 link: "https://open.spotify.com/track/1nfTVyVDsqJwL0WzP0eWix?si=8d890dd879cb46cc"
-capo: 0
-capo_notes: []
+capo: "3"
 song_tags:
   adoracion: []
   misa:
     - comunion
 ---
-E Am F 
+Intro:
+C
 
-Ya toda me entregué y di
-Y de tal suerte he trocado
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
+C   Em/B           Am    C/G
+Ya, toda me entregué y di,
+     F          G      C
+y de tal suerte he trocado.
+         F
+Que mi Amado es para mí
+     G
+y yo soy para mi Amado.
 
-Cuando el dulce cazador
-Me tiró y dejó herida
-En los brazos del amor
-Mi alma quedó rendida
-Y cobrando nueva vida
-De tal manera he trocado
+C         Em/B       Am C/G
+Cuando el dulce Cazador
+      F      G    C   G
+me tiró y dejó herida,
+C      Em/B         Am C/G
+en los brazos del amor
+   F        G     C   G
+mi alma quedó rendida.
+       F          G
+Y, cobrando nueva vida,
+          C   Em/B     Am G
+de tal manera he trocado.
 
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
+         F
+Que mi Amado es para mí
+     G
+y yo soy para mi Amado.
+         Dm
+Que mi Amado es para mí
+     G                G7
+y yo soy para mi Amado.
 
+C Em/B Am F G C
+
+C      Em/B      Am    C/G
 Me hirió con una flecha
-Enherbolada de amor
-Y mi alma quedó hecha
-Una con Su Criador
+        F   G    C   G
+enherbolada de amor,
+C    Em/B       Am   C/G
+y mi alma quedó hecha
+F   G           C   G
+una con su Criador.
+          F            G
+Ya yo no quiero otro amor,
+          C       Em/B       Am G
+pues a mi Dios me he entregado.
 
-Ya no quiero otro amor
-Pues a Mi Dios me he entregado
+         F
+Que mi Amado es para mí
+     G
+y yo soy para mi Amado.
+         Dm
+Que mi Amado es para mí
+     G                G7
+y yo soy para mi Amado.
 
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
+F G C F C / F G C
 
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
-
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
-
-Que Mi Amado es para mí
-Y Yo soy para Mi Amado
+         F
+Que mi Amado es para mí
+     G
+y yo soy para mi Amado.
+         Dm
+Que mi Amado es para mí
+     G                G7
+y yo soy para mi Amado.
