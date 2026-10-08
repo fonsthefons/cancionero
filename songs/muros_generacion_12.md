@@ -3,7 +3,7 @@ fname: muros_generacion_12
 title: Muros
 autor: Generación 12
 link: "https://open.spotify.com/track/1X20WCNMKKSh81MuqrcxGb?si=01b170aa51fa4255"
-capo: Capo 3
+capo: "3"
 song_tags:
   adoracion: []
   alabanza:
@@ -14,39 +14,61 @@ song_tags:
     - entrada
     - comunion
 ---
-Capo 3 G D Em C
+Intro:
+G D Em C
 
-x3
-Espíritu Ven
-Los muros caerán
-Espíritu Ven
-El cielo vendrá
+G         D
+ Espíritu Ven
+Em             C
+ Los muros caerán
+G         D
+ Espíritu Ven
+Em             C
+ El cielo vendrá
+(x3)
 
-Mi Padre
-Todo el cielo cantará
+G
+ Mi Padre
+D                    Em
+ Todo el cielo cantará
 Te adoro
-Ven inunda este lugar
-
+C                   G
+ Ven inunda este lugar
 Puedes oirlo
-Es el sonido celestial
-Que está inundando este lugar
+D                    Em
+ Es el sonido celestial
+C                           G
+ Que está inundando este lugar
 
-x3
-Espíritu Ven
-Los muros caerán
-Espíritu Ven
-El cielo vendrá
+G         D
+ Espíritu Ven (ven, ven, ven)
+Em             C
+ Los muros caerán (los muros caeran)
+G         D
+ Espíritu Ven (ven, ven, ven)
+Em             C
+ El cielo vendrá (el cielo vendrá)
+(x3)
 
-Mi Cristo
-Te venimos a exaltar
+G
+ Mi Cristo
+D                  Em
+ Te venimos a exaltar
 Tu Gloria
-Hoy señor nos va a tocar
+C                      G
+ Hoy señor nos va a tocar
 Tu fuego
-Queremos ver Tu reino, Dios
-Queremos ver Tu reino, Dios
+D                       Em
+ Queremos ver Tu reino, Dios
+C                       G
+ Queremos ver Tu reino, Dios
 
-x3
-Espíritu Ven
-Los muros caerán
-Espíritu Ven
-El cielo vendrá
+G         D
+ Espíritu Ven
+Em             C
+ Los muros caerán
+G         D
+ Espíritu Ven
+Em             C
+ El cielo vendrá
+(x3)

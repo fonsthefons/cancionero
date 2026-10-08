@@ -13,18 +13,21 @@ song_tags:
     - comunion
 ---
 
-Am     Dm
+Intro:
+Am Dm G C F Dm E Am
+
+Am      Dm
 Nada te turbe,
-G        C
+G          C
 Nada te espante
-F           Dm
+F            Dm
 Quien a Dios tiene
 E       Am
 Nada le falta.
 
         Dm
 Nada te turbe,
-G        C
-Nada teespante
-F    Dm  E Am
+G         C
+Nada te espante
+F    Dm   E   Am
 Solo Dios basta
