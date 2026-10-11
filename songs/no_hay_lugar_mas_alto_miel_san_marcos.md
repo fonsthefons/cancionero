@@ -14,21 +14,21 @@ song_tags:
 
 A   D   A   D
 
-    A              E
+      A                 E
 A tus pies arde mi corazón 
-    F#m                D
+      F#m                 D
 A tus pies entrego lo que soy
-    A           E
+       A               E
 Ese lugar de mi seguridad
-    F#m            D
+      F#m                 D
 Donde nadie me puede señalar
 
-    D                         E
+         D                           E
 Me perdonaste, me acercaste a tu presencia
-   F#m                      E
+F#m                                E
 Me levantaste, hoy me postro a adorarte
 
-        A      D          E
+                 A          D          E
 No hay lugar más alto, más grande
              F#m                       A   E
 Que estar a tus pies, que estar a tus pies
