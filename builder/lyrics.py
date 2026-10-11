@@ -3,9 +3,15 @@
 A line is a chord line when every word on it is a chord (or a separator such
 as `|`, `-`, `(`, `)`). Each chord line is paired with the lyric line below it
 so the two never get split across columns or pages.
+
+Chords are placed by hand with spaces so each one sits over an exact letter.
+Every character must therefore stay exactly one column wide: lines are kept
+verbatim (rendered with `white-space: pre` in a monospace font), and the only
+changes are ones that keep columns identical (see `clean_line`).
 """
 
 import re
+import unicodedata
 from html import escape
 
 # Standard chord symbols: Em, B7, Cmaj7, D/F#, G#m, Bb, Asus4, ...
@@ -19,6 +25,27 @@ CHORD_RE = re.compile(
 SEPARATOR_RE = re.compile(r"[-|()]+")
 VERSE_BREAK_RE = re.compile(r"\n\s*\n")
 TAB_WIDTH = 2
+
+
+def clean_line(raw):
+    """Normalize a line without moving any character to another column.
+
+    - NFC joins letter + combining accent ("e" + "´") into one character
+      ("é"), which is what the editor showed as a single column anyway.
+    - Non-breaking spaces become plain spaces; tabs become TAB_WIDTH spaces.
+    """
+    line = unicodedata.normalize("NFC", raw).replace("\xa0", " ")
+    return line.expandtabs(TAB_WIDTH).rstrip()
+
+
+def line_columns(line):
+    """Number of on-screen columns a cleaned line takes."""
+    return sum(1 for ch in line if not unicodedata.combining(ch))
+
+
+def lyrics_columns(body):
+    """Columns of the widest line, used to size the text to fit the screen."""
+    return max((line_columns(clean_line(raw)) for raw in body.split("\n")), default=0)
 
 
 def is_chord_line(line):
@@ -52,7 +79,7 @@ def verse_html(verse):
     pending_chords = None  # chord line waiting for its lyric line
 
     for raw in verse.split("\n"):
-        line = raw.replace("\xa0", " ").expandtabs(TAB_WIDTH).rstrip()
+        line = clean_line(raw)
         if not line.strip():
             continue
         if is_chord_line(line):

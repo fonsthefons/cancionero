@@ -43,5 +43,43 @@
 ### Blocked
 - Arc browser ignores `--headless`, so it could not be used for tests; used Playwright instead.
 
-### Not done (not committed)
-- Nothing is committed. Review with `git status` / `git diff`, then commit.
+### Phase 3: commit and merge
+- Committed on branch `refactor/maintainable-build` (c89ad2f), opened
+  https://github.com/fonsthefons/cancionero/pull/1 and merged it into `main` (4dedfda).
+- Local `main` fast-forwarded; feature branch deleted locally and on GitHub.
+- `.claude/settings.json` (local Claude Code permissions) was left uncommitted on purpose.
+
+## 2026-10-11 — Phone / iPad / laptop experience
+
+### Audit (scratch/mobile_audit.py, line_lengths.py, alignment_risks.py)
+- Phone rendered the page 575px wide on a 390px screen (`min-width: fit-content`
+  on body), causing zoomed-out text and sideways wobble.
+- First song ~13,000px down; floating `<` button covered content; per-song buttons
+  overflowed; search input 13px (iOS zooms on focus); sticky hover states on touch.
+- Widest lyric line per song: median 40 chars, max 63.
+- Alignment risks: 57 combining accents (now NFC-joined, same columns);
+  `viva_cristo_rey_jaire.md` uses tabs (kept at width 2 as before; review by hand).
+
+### Changes
+- Lyrics size themselves per song so the widest line fits the screen
+  (`--chars` from the build + CSS container units), capped at 15px; A−/A+ scale it.
+  Pinch-zoom always allowed. Lines never wrap; if made bigger than the screen,
+  the song scrolls sideways inside its box, never the page.
+- Top bar (menu, title, search) replaces the floating button; menu drawer holds
+  the contents and settings (text size, chords, columns, theme, keep screen on, print).
+- Index sections and subsections are collapsible, open by default; links into a
+  folded section unfold it.
+- Transposition keeps every chord on its column, absorbing longer/shorter chord
+  names in the following spaces (also after `(`/`)` separators).
+- Settings remembered per device (localStorage, guarded). Dark theme (auto/light/dark).
+- New files: `web/js/drawer.js`, `index.js`, `wake-lock.js`; removed `sidebar.js`.
+
+### Verification
+- `scratch/ui_test.py` (Playwright, Chromium + WebKit, phone 390px / iPad 820px /
+  laptop 1440px): all 8,778 chords on their exact pixel column in 1 and 2 columns
+  and at 40% / 250% text; every song fits; page never scrolls sideways; 96,558
+  transposed chord positions checked: shifts only where chords are one space
+  apart or glued (`C#m-Bm`); back to 0 restores every line; all UI features pass;
+  no JS errors.
+- `scratch/compare.py`: every chord/lyric line still identical to the original build.
+- Tools: `venv/bin/python -m playwright install webkit` (into `scratch/browsers/`).

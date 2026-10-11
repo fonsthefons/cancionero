@@ -8,7 +8,7 @@ import re
 from html import escape
 from pathlib import Path
 
-from .lyrics import lyrics_html
+from .lyrics import lyrics_columns, lyrics_html
 
 PLACEHOLDER_RE = re.compile(r"{{\s*(\w+)\s*}}")
 
@@ -41,9 +41,21 @@ def song_list(songs):
     return '<ul class="song-list">\n' + "\n".join(map(song_link, songs)) + "\n</ul>"
 
 
+def collapsible(anchor, heading_tag, title, body, css_class):
+    """A section that can be folded away; open by default."""
+    return (
+        f'<details class="{css_class}" id="{anchor}" open>'
+        f"<summary><{heading_tag}>{escape(title)}</{heading_tag}></summary>\n"
+        f"{body}\n</details>"
+    )
+
+
 def nav_html(groups):
-    """Compact table of contents: tags and subtags (used in sidebar and top)."""
-    items = ['<li><a class="nav-tag" href="#all-songs">All Songs</a></li>']
+    """Compact table of contents (tags and subtags) for the menu drawer."""
+    items = [
+        '<li><a class="nav-tag" href="#index">Contenido</a></li>',
+        '<li><a class="nav-tag" href="#all-songs">All Songs</a></li>',
+    ]
     for group in groups:
         subtags = "".join(
             f'<li><a class="nav-subtag" href="#{tag_anchor(group.tag.id, sub_id)}">'
@@ -56,48 +68,48 @@ def nav_html(groups):
             + (f'<ul class="nav-subtags">{subtags}</ul>' if subtags else "")
             + "</li>"
         )
-    items.append('<li><a class="nav-tag" href="#settings">Settings</a></li>')
     return '<ul class="nav">\n' + "\n".join(items) + "\n</ul>"
 
 
 def tag_index_html(groups):
     """Full index: every tag/subtag with the songs it contains."""
-    parts = []
+    sections = []
     for group in groups:
-        parts.append(
-            f'<section class="tag-index" id="{tag_anchor(group.tag.id)}">'
-            f"<h2>{escape(group.tag.label)}</h2>"
-        )
-        if group.songs:
-            parts.append(song_list(group.songs))
+        parts = [song_list(group.songs)] if group.songs else []
         for sub_id, label, songs in group.subgroups:
             parts.append(
-                f'<h3 id="{tag_anchor(group.tag.id, sub_id)}">{escape(label)}</h3>'
+                collapsible(
+                    tag_anchor(group.tag.id, sub_id), "h3", label, song_list(songs), "subtag-index"
+                )
             )
-            parts.append(song_list(songs))
-        parts.append("</section>")
-    return "\n".join(parts)
+        sections.append(
+            collapsible(
+                tag_anchor(group.tag.id), "h2", group.tag.label, "\n".join(parts), "tag-index"
+            )
+        )
+    return "\n".join(sections)
 
 
 def song_meta_html(song):
     items = []
     if song.autor:
-        items.append(f"<p><em>Autor: {escape(song.autor)}</em></p>")
+        items.append(f'<span class="meta-item">Autor: {escape(song.autor)}</span>')
     if song.capo:
-        items.append(f"<p><em>Capo: {escape(song.capo)}</em></p>")
+        items.append(f'<span class="meta-item">Capo: {escape(song.capo)}</span>')
     if song.link:
         items.append(
-            f'<p><a href="{escape(song.link)}" target="_blank" rel="noopener">Link</a></p>'
+            f'<a class="meta-item" href="{escape(song.link)}" target="_blank" rel="noopener">Link</a>'
         )
-    return "".join(items)
+    return f'<p class="song-meta">{"".join(items)}</p>' if items else ""
 
 
 def song_html(song, controls):
+    # --chars (widest line) lets CSS size the lyrics so every line fits the screen.
     return (
-        f'<article class="song" id="{song.anchor}">\n'
+        f'<article class="song" id="{song.anchor}" style="--chars: {lyrics_columns(song.body)}">\n'
         f"<h3>{escape(song_label(song))}</h3>\n"
-        f"{controls}\n"
         f"{song_meta_html(song)}\n"
+        f"{controls}\n"
         f"{lyrics_html(song.body)}\n"
         "</article>"
     )
@@ -124,7 +136,7 @@ def render_book(songs, groups, web_dir):
             ),
             "nav": nav_html(groups),
             "tag_index": tag_index_html(groups),
-            "all_songs_list": song_list(songs),
+            "all_songs": collapsible("all-songs", "h2", "All Songs", song_list(songs), "tag-index"),
             "songs": "\n".join(song_html(song, controls) for song in songs),
         },
     )

@@ -52,6 +52,24 @@ G              C
 First line of lyrics
 ```
 
+Your spacing is kept exactly: the book uses a monospace font and never wraps
+lines, so a chord is always shown over the same letter as in the `.md` file,
+at any text size or zoom. Prefer spaces over tabs (a tab's width depends on the
+editor). Accents typed as two characters (letter + accent mark) are joined
+into one, which keeps them one column wide as the editor shows them.
+
+## Using the book
+
+- **☰ menu**: contents, plus settings: text size (A− / A+), chords and
+  columns for the whole book, light/dark theme, keep the screen on, print.
+  Settings are remembered on each device.
+- **Per song**: show/hide chords, transpose (tap the number to reset), 1 or 2 columns.
+- **Text size**: each song is sized so its longest line fits the screen.
+  A− / A+ scale that up or down; pinch-zoom always works too.
+- **Transposing** keeps every chord on its letter. Only when two chords are a
+  single space apart (e.g. `D Em` → `D# Fm`) does the second one shift by the
+  one column it needs.
+
 ## Tags
 
 Tags and subtags are defined in **`tags.yaml`**. That file is the only place to
@@ -84,8 +102,11 @@ web/       ─┘
 | `builder/render.py` | Builds the HTML fragments and fills `web/template.html` |
 | `web/template.html` | Page layout, with `{{ placeholders }}` filled by the build |
 | `web/song-controls.html` | Buttons shown above each song |
-| `web/styles.css` | All styles (theme colours are variables at the top) |
-| `web/js/*.js` | Browser features, one file each; inlined as separate scripts |
+| `web/styles.css` | All styles (theme colours and sizes are variables at the top) |
+| `web/js/core.js` | Shared helpers: `onAction`, `songSetting`, `prefs` (saved settings) |
+| `web/js/display.js` | Chords, columns, text size, theme |
+| `web/js/transpose.js` | Transposition that keeps chords in their columns |
+| `web/js/search.js`, `drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
 
 ### Adding a browser feature
 
@@ -100,7 +121,12 @@ web/       ─┘
 3. Rebuild. Every file in `web/js/` is included automatically (`core.js` first).
 
 For a show/hide or on/off option that works per song *and* for the whole book,
-use `songSetting(name, [default, alternative])` from `core.js`, as
-`web/js/display.js` does for chords and columns. It stores the value in
-`data-<name>` on `<body>` (whole book) and on `.song` (one-song override), and
-CSS styles both.
+use `songSetting(name, [default, alternative], onGlobalChange)` from `core.js`,
+as `web/js/display.js` does for chords and columns. It stores the value in
+`data-<name>` on `<body>` (whole book) and on `.song` (one-song override), CSS
+styles both, and the book-wide value is remembered on the device. For any other
+remembered value use `prefs.get(key, fallback)` / `prefs.set(key, value)`.
+
+Never add CSS that changes how lyric lines lay out horizontally (wrapping,
+`letter-spacing`, proportional fonts, per-character styling that changes
+width): it would move chords off their letters.
