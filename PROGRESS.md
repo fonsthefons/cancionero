@@ -136,3 +136,19 @@
 - Tests: mouse drags (both engines), real touch drag via Chrome DevTools touch
   events, swipe on a title doesn't reorder, tap without move does nothing,
   keyboard, edge auto-scroll with a 20-song session; full suite passes.
+- Merged as PR #6 and deployed (live file verified identical).
+
+## 2026-10-11 — Printing: unfolded index, clickable PDF links
+
+- Interpreted "the menu should always be open" as the Contenido index (the ☰ drawer
+  is hidden on paper). `print.js`: on `beforeprint` every folded index section is
+  opened, `afterprint` restores the user's folds; CSS fallback via
+  `::details-content` in `@media print`; no ▼ markers on paper.
+- Links: index/All Songs entries become internal PDF links (Chrome), song *Link*s
+  stay web links. Found `cordero_de_dios_popular.md` with capo text in `link`
+  ("0, 0-5" -> became a broken file:// link); moved to `capo`. Build now rejects
+  links not starting with http(s)://.
+- `scratch/pdf_test.py` (Chromium printToPDF + pypdf): folded sections printed,
+  584/584 internal links resolve (first one lands on the song's page), 138 web
+  links, folds restored after printing. Full UI suite passes.
+- Not verifiable here: Safari/iOS's own PDF export (Playwright can't print WebKit).

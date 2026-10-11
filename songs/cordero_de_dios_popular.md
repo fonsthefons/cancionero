@@ -1,8 +1,7 @@
 ---
 title: Cordero de Dios
 autor: popular
-link: "0, 0-5"
-capo: 0
+capo: "0, 0-5"
 song_tags:
   misa: 
     - cordero

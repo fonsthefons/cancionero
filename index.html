@@ -742,6 +742,21 @@ body[data-columns="2"] .song:not([data-columns="1"]),
         --cols: 2 !important;
     }
 
+    /* Index always fully unfolded on paper (print.js also opens the sections;
+       this covers browsers that support ::details-content). No ▼ markers. */
+    .index details::details-content {
+        content-visibility: visible;
+        display: block;
+    }
+
+    .index summary {
+        list-style: none;
+    }
+
+    .index summary::-webkit-details-marker {
+        display: none;
+    }
+
     body[data-print-chords="hide"] .chord-line {
         display: none !important;
     }
@@ -2070,7 +2085,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </article>
 <article class="song" id="song-cordero_de_dios_popular" data-title="Cordero de Dios" style="--chars: 39">
 <h3>26. Cordero de Dios - popular</h3>
-<p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="0, 0-5" target="_blank" rel="noopener">Link</a></p>
+<p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0, 0-5</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
   <div class="stepper">
@@ -5367,7 +5382,8 @@ document.addEventListener("click", (event) => {
 });
 </script>
 <script>
-// Print dialog: choose columns and chords, then open the browser print.
+// Printing: a dialog to choose columns and chords, and a print layout where
+// the whole index is unfolded (so every link to a song is in the PDF).
 
 const printDialog = document.getElementById("print-dialog");
 
@@ -5382,6 +5398,20 @@ printDialog.addEventListener("close", () => {
     document.body.dataset.printColumns = form.columns.value;
     document.body.dataset.printChords = form.chords.value;
     window.print();
+});
+
+// However printing starts (button, Ctrl/Cmd+P, share sheet), unfold every
+// index section for the printout and put the user's folds back afterwards.
+let foldedForPrint = [];
+
+window.addEventListener("beforeprint", () => {
+    foldedForPrint = [...document.querySelectorAll(".index details:not([open])")];
+    foldedForPrint.forEach((section) => { section.open = true; });
+});
+
+window.addEventListener("afterprint", () => {
+    foldedForPrint.forEach((section) => { section.open = false; });
+    foldedForPrint = [];
 });
 </script>
 <script>

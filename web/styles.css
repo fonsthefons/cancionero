@@ -733,6 +733,21 @@ body[data-columns="2"] .song:not([data-columns="1"]),
         --cols: 2 !important;
     }
 
+    /* Index always fully unfolded on paper (print.js also opens the sections;
+       this covers browsers that support ::details-content). No ▼ markers. */
+    .index details::details-content {
+        content-visibility: visible;
+        display: block;
+    }
+
+    .index summary {
+        list-style: none;
+    }
+
+    .index summary::-webkit-details-marker {
+        display: none;
+    }
+
     body[data-print-chords="hide"] .chord-line {
         display: none !important;
     }
