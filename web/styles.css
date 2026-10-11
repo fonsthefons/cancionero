@@ -397,8 +397,44 @@ body.drawer-open {
     padding: 4px;
 }
 
-.session-list button:disabled {
-    opacity: 0.35;
+.session-list li {
+    position: relative;
+    background: var(--surface);
+    border-radius: 8px;
+}
+
+/* Drag handle: a drag that starts here reorders instead of scrolling the menu. */
+.session-handle {
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    cursor: grab;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--muted);
+}
+
+/* While sorting: neighbours glide aside; the dragged row lifts and follows. */
+.session-list.sorting li {
+    transition: transform 0.15s ease;
+}
+
+/* Positions are only correct again after the drop, so hide them meanwhile. */
+.session-list.sorting li::before {
+    visibility: hidden;
+}
+
+.session-list.sorting li.dragging {
+    transition: none;
+    z-index: 1;
+    box-shadow: 0 6px 18px var(--shadow);
+    outline: 1px solid var(--border);
+}
+
+.session-list.sorting,
+.session-list.sorting .session-handle {
+    cursor: grabbing;
 }
 
 /* Results show inline in the menu instead of floating. */

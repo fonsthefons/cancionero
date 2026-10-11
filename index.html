@@ -406,8 +406,44 @@ body.drawer-open {
     padding: 4px;
 }
 
-.session-list button:disabled {
-    opacity: 0.35;
+.session-list li {
+    position: relative;
+    background: var(--surface);
+    border-radius: 8px;
+}
+
+/* Drag handle: a drag that starts here reorders instead of scrolling the menu. */
+.session-handle {
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    cursor: grab;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--muted);
+}
+
+/* While sorting: neighbours glide aside; the dragged row lifts and follows. */
+.session-list.sorting li {
+    transition: transform 0.15s ease;
+}
+
+/* Positions are only correct again after the drop, so hide them meanwhile. */
+.session-list.sorting li::before {
+    visibility: hidden;
+}
+
+.session-list.sorting li.dragging {
+    transition: none;
+    z-index: 1;
+    box-shadow: 0 6px 18px var(--shadow);
+    outline: 1px solid var(--border);
+}
+
+.session-list.sorting,
+.session-list.sorting .session-handle {
+    cursor: grabbing;
 }
 
 /* Results show inline in the menu instead of floating. */
@@ -5435,9 +5471,134 @@ document.querySelectorAll(".search").forEach((box) => {
 });
 </script>
 <script>
+// Drag and drop to reorder the Sing Session, from the ⠿ handle on each row.
+//
+// Uses pointer events, so mouse, finger and pencil share one code path.
+// The handle has `touch-action: none` (styles.css): a drag that starts on it
+// moves the song, while swiping anywhere else still scrolls the menu.
+// The dragged row follows the pointer, the others slide aside to make room,
+// and the new order is saved on release. Dragging near the top or bottom of
+// the menu scrolls it. With a keyboard, ↑ / ↓ on a focused handle move the song.
+
+const SESSION_DRAG = {
+    edge: 56, // px from the menu's top/bottom edge where it starts scrolling
+    edgeSpeed: 10, // px per frame at the very edge
+};
+
+const sessionList = document.querySelector(".session-list");
+const sessionScroller = document.getElementById("drawer");
+let sessionDrag = null;
+
+function sessionDragLayout() {
+    const d = sessionDrag;
+    const scrolled = sessionScroller.scrollTop - d.startScroll;
+    const dy = d.pointerY - d.startY + scrolled;
+    const from = d.from;
+    const center = d.rects[from].top + d.rects[from].height / 2 + dy;
+
+    // Target slot: past the midpoint of a neighbour means taking its place.
+    let to = from;
+    for (let i = from + 1; i < d.items.length; i++) {
+        if (center > d.rects[i].top + d.rects[i].height / 2) to = i;
+    }
+    for (let i = from - 1; i >= 0; i--) {
+        if (center < d.rects[i].top + d.rects[i].height / 2) to = i;
+    }
+    d.to = to;
+
+    d.item.style.transform = `translateY(${dy}px)`;
+    d.items.forEach((item, i) => {
+        if (i === from) return;
+        let shift = 0;
+        if (from < i && i <= to) shift = -d.step;
+        if (to <= i && i < from) shift = d.step;
+        item.style.transform = shift ? `translateY(${shift}px)` : "";
+    });
+}
+
+// While dragging near the menu's edges, keep scrolling it.
+function sessionDragAutoScroll() {
+    if (!sessionDrag) return;
+    const box = sessionScroller.getBoundingClientRect();
+    const y = sessionDrag.pointerY;
+    let speed = 0;
+    if (y < box.top + SESSION_DRAG.edge) speed = -SESSION_DRAG.edgeSpeed * (1 - (y - box.top) / SESSION_DRAG.edge);
+    if (y > box.bottom - SESSION_DRAG.edge) speed = SESSION_DRAG.edgeSpeed * (1 - (box.bottom - y) / SESSION_DRAG.edge);
+    if (speed) {
+        sessionScroller.scrollTop += Math.max(-SESSION_DRAG.edgeSpeed, Math.min(SESSION_DRAG.edgeSpeed, speed));
+        sessionDragLayout();
+    }
+    sessionDrag.frame = requestAnimationFrame(sessionDragAutoScroll);
+}
+
+function endSessionDrag(commit) {
+    const d = sessionDrag;
+    if (!d) return;
+    sessionDrag = null;
+    cancelAnimationFrame(d.frame);
+    sessionList.classList.remove("sorting");
+    d.item.classList.remove("dragging");
+    d.items.forEach((item) => { item.style.transform = ""; });
+    if (commit && d.to !== d.from) moveInSession(d.item.dataset.song, d.to);
+}
+
+sessionList.addEventListener("pointerdown", (event) => {
+    const handle = event.target.closest(".session-handle");
+    if (!handle || sessionDrag || (event.pointerType === "mouse" && event.button !== 0)) return;
+    event.preventDefault();
+
+    const items = [...sessionList.children];
+    const item = handle.closest("li");
+    const from = items.indexOf(item);
+    const rects = items.map((el) => el.getBoundingClientRect());
+    // Distance a neighbour moves to make room: the dragged row plus the gap.
+    const gap = items.length > 1
+        ? (from < items.length - 1 ? rects[from + 1].top - rects[from].bottom : rects[from].top - rects[from - 1].bottom)
+        : 0;
+
+    sessionDrag = {
+        handle, item, items, rects, from, to: from,
+        step: rects[from].height + gap,
+        startY: event.clientY,
+        pointerY: event.clientY,
+        startScroll: sessionScroller.scrollTop,
+        pointerId: event.pointerId,
+    };
+    handle.setPointerCapture(event.pointerId);
+    sessionList.classList.add("sorting");
+    item.classList.add("dragging");
+    sessionDrag.frame = requestAnimationFrame(sessionDragAutoScroll);
+});
+
+sessionList.addEventListener("pointermove", (event) => {
+    if (!sessionDrag || event.pointerId !== sessionDrag.pointerId) return;
+    sessionDrag.pointerY = event.clientY;
+    sessionDragLayout();
+});
+
+sessionList.addEventListener("pointerup", (event) => {
+    if (sessionDrag?.pointerId === event.pointerId) endSessionDrag(true);
+});
+
+sessionList.addEventListener("pointercancel", (event) => {
+    if (sessionDrag?.pointerId === event.pointerId) endSessionDrag(false);
+});
+
+// Keyboard: ↑ / ↓ on a focused handle; focus follows the moved song.
+sessionList.addEventListener("keydown", (event) => {
+    const handle = event.target.closest(".session-handle");
+    if (!handle || !["ArrowUp", "ArrowDown"].includes(event.key)) return;
+    event.preventDefault();
+    const id = handle.dataset.song;
+    moveInSession(id, session.indexOf(id) + (event.key === "ArrowUp" ? -1 : 1));
+    sessionList.querySelector(`.session-handle[data-song="${id}"]`)?.focus();
+});
+</script>
+<script>
 // Sing Session: an ordered list of songs to practise or play, shown first in
 // the menu. Songs are added from the session's search box or with the
-// "+ Session" button on each song; reordered with ↑ ↓; removed with ✕.
+// "+ Session" button on each song; reordered by dragging the ⠿ handle
+// (session-drag.js); removed with ✕.
 // The list is remembered on this device.
 
 const SESSION_KEY = "session";
@@ -5455,26 +5616,27 @@ let session = (() => {
 
 const songTitle = (id) => document.getElementById(id).dataset.title;
 
-function sessionButton(action, id, label, text, disabled = false) {
-    const button = document.createElement("button");
-    Object.assign(button.dataset, { action, song: id });
-    button.setAttribute("aria-label", label);
-    button.textContent = text;
-    button.disabled = disabled;
-    return button;
-}
-
 function renderSession() {
     const list = document.querySelector(".session-list");
-    list.replaceChildren(...session.map((id, i) => {
+    list.replaceChildren(...session.map((id) => {
         const item = document.createElement("li");
+        item.dataset.song = id;
+
         const link = Object.assign(document.createElement("a"), { href: "#" + id, textContent: songTitle(id) });
-        item.append(
-            link,
-            sessionButton("session-up", id, "Move up", "↑", i === 0),
-            sessionButton("session-down", id, "Move down", "↓", i === session.length - 1),
-            sessionButton("session-remove", id, "Remove from session", "✕"),
-        );
+
+        const remove = Object.assign(document.createElement("button"), { textContent: "✕" });
+        Object.assign(remove.dataset, { action: "session-remove", song: id });
+        remove.setAttribute("aria-label", "Remove from session");
+
+        // Drag handle (see session-drag.js); arrow keys also move the song.
+        const handle = Object.assign(document.createElement("button"), {
+            className: "session-handle",
+            textContent: "⠿",
+        });
+        handle.dataset.song = id;
+        handle.setAttribute("aria-label", "Drag to reorder (or use the arrow keys)");
+
+        item.append(link, remove, handle);
         return item;
     }));
 
@@ -5503,19 +5665,17 @@ function removeFromSession(id) {
     setSession(session.filter((other) => other !== id));
 }
 
-function moveInSession(id, step) {
+// Move a song to position `to` (0-based) in the session.
+function moveInSession(id, to) {
     const from = session.indexOf(id);
-    const to = from + step;
-    if (from === -1 || to < 0 || to >= session.length) return;
-    const ids = [...session];
-    [ids[from], ids[to]] = [ids[to], ids[from]];
+    if (from === -1 || to < 0 || to >= session.length || to === from) return;
+    const ids = session.filter((other) => other !== id);
+    ids.splice(to, 0, id);
     setSession(ids);
 }
 
 onAction("session-add", (button) => addToSession(button.dataset.song));
 onAction("session-remove", (button) => removeFromSession(button.dataset.song));
-onAction("session-up", (button) => moveInSession(button.dataset.song, -1));
-onAction("session-down", (button) => moveInSession(button.dataset.song, +1));
 onAction("session-toggle", (button, song) => {
     if (session.includes(song.id)) removeFromSession(song.id);
     else addToSession(song.id);

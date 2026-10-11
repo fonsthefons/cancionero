@@ -122,3 +122,17 @@
   (session box adds songs and stays focused); top-bar search unchanged.
 - Build adds `data-title` to each song (plain title for the session list).
 - `scratch/ui_test.py`: 16 new session checks; full suite passes in Chromium and WebKit.
+- Merged as PR #5 and deployed (live file verified identical).
+
+## 2026-10-11 — Drag and drop in Sing Session
+
+- ↑ ↓ buttons replaced by a ⠿ handle on the right of each row
+  (`web/js/session-drag.js`): pointer events (mouse/finger/pencil), handle has
+  `touch-action: none` so only drags from it reorder and swipes elsewhere scroll the
+  menu; dragged row lifts and follows, others slide aside; saved on release;
+  pointercancel reverts; holding near the menu edge scrolls it; ↑/↓ keys on a
+  focused handle. Position numbers hidden while dragging.
+- `moveInSession(id, to)` now moves to a position.
+- Tests: mouse drags (both engines), real touch drag via Chrome DevTools touch
+  events, swipe on a title doesn't reorder, tap without move does nothing,
+  keyboard, edge auto-scroll with a 20-song session; full suite passes.
