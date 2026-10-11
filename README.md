@@ -65,7 +65,8 @@ into one, which keeps them one column wide as the editor shows them.
   Settings are remembered on each device.
 - **Sing Session** (first in the ☰ menu): a list of songs to practise or play.
   Add songs with its search box or the **+ Session** button on any song;
-  reorder with ↑ ↓, remove with ✕ (or tap **✓ In session** on the song), and
+  reorder by dragging the **⠿** handle (or ↑/↓ keys on a focused handle),
+  remove with ✕ (or tap **✓ In session** on the song), and
   *Clear session* empties it. Tap a song in the list to jump to it. Remembered
   on each device.
 - **Autoscroll** (top bar): ▶/⏸ starts and stops, − / + change the speed
@@ -118,6 +119,7 @@ web/       ─┘
 | `web/js/transpose.js` | Transposition that keeps chords in their columns |
 | `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
 | `web/js/session.js` | Sing Session (list in the menu, + Session buttons) |
+| `web/js/session-drag.js` | Drag-and-drop reordering of the session (pointer events) |
 | `web/js/search.js`, `drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
 
 ### Adding a browser feature

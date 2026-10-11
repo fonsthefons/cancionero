@@ -1,6 +1,7 @@
 // Sing Session: an ordered list of songs to practise or play, shown first in
 // the menu. Songs are added from the session's search box or with the
-// "+ Session" button on each song; reordered with ↑ ↓; removed with ✕.
+// "+ Session" button on each song; reordered by dragging the ⠿ handle
+// (session-drag.js); removed with ✕.
 // The list is remembered on this device.
 
 const SESSION_KEY = "session";
@@ -18,26 +19,27 @@ let session = (() => {
 
 const songTitle = (id) => document.getElementById(id).dataset.title;
 
-function sessionButton(action, id, label, text, disabled = false) {
-    const button = document.createElement("button");
-    Object.assign(button.dataset, { action, song: id });
-    button.setAttribute("aria-label", label);
-    button.textContent = text;
-    button.disabled = disabled;
-    return button;
-}
-
 function renderSession() {
     const list = document.querySelector(".session-list");
-    list.replaceChildren(...session.map((id, i) => {
+    list.replaceChildren(...session.map((id) => {
         const item = document.createElement("li");
+        item.dataset.song = id;
+
         const link = Object.assign(document.createElement("a"), { href: "#" + id, textContent: songTitle(id) });
-        item.append(
-            link,
-            sessionButton("session-up", id, "Move up", "↑", i === 0),
-            sessionButton("session-down", id, "Move down", "↓", i === session.length - 1),
-            sessionButton("session-remove", id, "Remove from session", "✕"),
-        );
+
+        const remove = Object.assign(document.createElement("button"), { textContent: "✕" });
+        Object.assign(remove.dataset, { action: "session-remove", song: id });
+        remove.setAttribute("aria-label", "Remove from session");
+
+        // Drag handle (see session-drag.js); arrow keys also move the song.
+        const handle = Object.assign(document.createElement("button"), {
+            className: "session-handle",
+            textContent: "⠿",
+        });
+        handle.dataset.song = id;
+        handle.setAttribute("aria-label", "Drag to reorder (or use the arrow keys)");
+
+        item.append(link, remove, handle);
         return item;
     }));
 
@@ -66,19 +68,17 @@ function removeFromSession(id) {
     setSession(session.filter((other) => other !== id));
 }
 
-function moveInSession(id, step) {
+// Move a song to position `to` (0-based) in the session.
+function moveInSession(id, to) {
     const from = session.indexOf(id);
-    const to = from + step;
-    if (from === -1 || to < 0 || to >= session.length) return;
-    const ids = [...session];
-    [ids[from], ids[to]] = [ids[to], ids[from]];
+    if (from === -1 || to < 0 || to >= session.length || to === from) return;
+    const ids = session.filter((other) => other !== id);
+    ids.splice(to, 0, id);
     setSession(ids);
 }
 
 onAction("session-add", (button) => addToSession(button.dataset.song));
 onAction("session-remove", (button) => removeFromSession(button.dataset.song));
-onAction("session-up", (button) => moveInSession(button.dataset.song, -1));
-onAction("session-down", (button) => moveInSession(button.dataset.song, +1));
 onAction("session-toggle", (button, song) => {
     if (session.includes(song.id)) removeFromSession(song.id);
     else addToSession(song.id);
