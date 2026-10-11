@@ -263,3 +263,20 @@
   Developer details kept under "How it works".
 - Verified the setup steps on a fresh clone in scratch/ (clone, venv, install, build,
   add_song.py --help): all work. `requirements.txt` got its missing final newline.
+
+## 2026-10-12 — Chords added to lyrics-only songs (PR, not merged: user reviews first)
+
+- User's rules: Checked.txt top list never touched; songs with chords left alone; TODO section
+  and half-done songs processed too; keep the user's lyrics exactly and only insert chord lines
+  above lines without chords that match the web lyrics word for word; uncertain -> untouched.
+- `scratch/fill_chords.py`: search -> read up to 5 versions -> pick the one matching most
+  chord-less lines -> move each chord to the same word/letter of the user's line. Key: from
+  the song's own chord lines (paired lines, else roots), else from chords named in a top
+  note ("Capo 2 F C Dm A#"); can't tell -> uncertain. Needs >= 60% of lines and >= 3.
+- Filled 7 (195 chord lines added, 0 lines changed, all recognised as chord lines):
+  no_tengo_miedo (F, from the note), salmo_23 (C), jesucristo_basta (C), pescador_de_hombres
+  (C), otra_vez, ven_ante_su_trono, el_dios_que_adoramos (their own keys).
+- Uncertain, untouched (12), listed in Checked.txt under claude-uncertain with the reason:
+  mostly no chord page online (niche songs), or too few matching lines.
+- libre_miel_san_marcos: every line already has chords, nothing added.
+- First pass put No tengo miedo in D although the note says F: fixed by reading note chords.

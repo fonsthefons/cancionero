@@ -28,10 +28,15 @@ Sigo aquí
 
 Em C G D
 Jesús a tus brazos regreso
+   G                         D
 Descanso en que estás en control
+ Em                    C
 Y aún cuando no lo comprendo
+    G             D
 Confío en tu corazón
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
 
 En tu presencia
@@ -43,11 +48,17 @@ Vuelve a mi
 Nunca me fui
 Sigo aquí
 
+   Em                C
 Jesús a tus brazos regreso
+   G                         D
 Descanso en que estás en control
+ Em                    C
 Y aún cuando no lo comprendo
+    G             D
 Confío en tu corazón
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
 
 
@@ -65,19 +76,34 @@ X4
 
 Em C G D
 Jesús a tus brazos regreso
+   G                         D
 Descanso en que estás en control
+ Em                    C
 Y aún cuando no lo comprendo
+    G             D
 Confío en tu corazón
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
+        Em   C   G   D
 Otra vez
 
+   Em                C
 Jesús a tus brazos regreso
+   G                         D
 Descanso en que estás en control
+ Em                    C
 Y aún cuando no lo comprendo
+    G             D
 Confío en tu corazón
+        Em   C   G   D
 Otra vez

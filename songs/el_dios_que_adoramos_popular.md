@@ -51,19 +51,29 @@ A E F#m A E
 Oh, Señor)
 
 El Dios que descendió desde su trono
+                       F#m
 Para llevar sobre sus hombros
+                         D
 Nuestra culpa y transgresión
 
+   A                   E
 Jesús, exaltado sobre todo
+                   F#m
 Nombre sobre todo nombre
+                   D
 Solo en él hay salvación
 
+            A
 Tú eres el Dios que adoramos
+         E
 Todopoderoso y soberano
 Grande en misericordia y poder para salvar
 
+            A
 Tú eres el Dios que adoramos
+                  E
 Quien derrotó la muerte y el pecado
+    F#m        D     F#m  E
 Glorioso redentor y rey, te adoramos
 
 D    E
@@ -72,10 +82,15 @@ A él sea la gloria y el poder
 Todo es de él y para él
 x4
 
+            A
 Tú eres el Dios que adoramos
+         E
 Todopoderoso y soberano
 Grande en misericordia y poder para salvar
 
+            A
 Tú eres el Dios que adoramos
+                  E
 Quien derrotó la muerte y el pecado
+    F#m        D     F#m  E
 Glorioso redentor y rey, te adoramos

@@ -19,16 +19,26 @@ Insaciables son
 Hasta que conocen
 A su salvador
 
+F                     Am   G
 Tal y como somos, nos amó
+F                        Am   G
 Hoy, nos acercamos sin temor
+C         G            Am
 Él es el agua que al beber
+      F              C
 Nunca más tendremos sed
+     G       Am
 Jesucristo basta
+     G       Am
 Jesucristo basta
 
+      G        Am
 Mi castigo recibió
+        F             C
 Y Su herencia me entregó
+     G       Am
 Jesucristo basta
+     G       Am
 Jesucristo basta
 
 Fuimos alcanzados
@@ -36,36 +46,57 @@ Por Su gran amor
 Con brazos abiertos
 Nos recibe hoy
 
+F                     Am   G
 Tal y como somos, nos amó
+F                        Am   G
 Hoy, nos acercamos sin temor
+C         G            Am
 Él es el agua que al beber
+      F              C
 Nunca más tendremos sed
+     G       Am
 Jesucristo basta
+     G       Am
 Jesucristo basta
 
+      G        Am
 Mi castigo recibió
+        F             C
 Y Su herencia me entregó
+     G       Am
 Jesucristo basta
+     G       Am
 Jesucristo basta
 
 Yeh, uoh
+     G       Am
 Jesucristo basta
 Uoh, uoh
 
+F                     Am   G
 Tal y como somos, nos amó
 Hoy, nos acercamos sin temor, sin temor
 Tal y como somos, nos amó, ooh
+F                        Am   G
 Hoy, nos acercamos sin temor
 Y él es el agua que al beber
+      F              C
 Nunca más tendremos sed
+     G       Am
 Jesucristo basta
+     G       Am
 Jesucristo basta
 
+      G        Am
 Mi castigo recibió
+        F             C
 Y Su herencia me entregó
+     G       Am
 Jesucristo basta
+     G       Am
 Jesucristo basta
 Yeh, uoh
+     G       Am
 Jesucristo basta
 Yeh (uoh)
 Ahora hay un futuro
