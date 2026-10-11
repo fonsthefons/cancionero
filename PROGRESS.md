@@ -232,3 +232,23 @@
   JS); downloads detect the page's charset (losacordes.com is Windows-1252).
 - Tests: 6 offline ranking checks (fake search answers) + 5 live option-3 checks in
   `scratch/add_song_test.py --network`; all 61 pass.
+
+## 2026-10-11 — add_song.py finds the Spotify link
+
+- `importer/spotify.py`: Spotify's API needs credentials, so DuckDuckGo is searched for
+  open.spotify.com track links ("<title> <artist> spotify", then site: query only if no
+  tracks). Search titles are cut off or stale (one track id showed as "Gull Catchers" and
+  as "Huracán"), so every track is checked on Spotify's embed page (real title + artists):
+  all title words must match and, unless the author is "popular", an artist word. Exact
+  title first; up to 3 offered. Links stored as https://open.spotify.com/track/<id>.
+- `add_song.py`: the Spotify question shows the tracks found; Enter = first, number, `-`
+  for none, or a pasted link. `--offline` skips the lookup (used by tests).
+- DuckDuckGo shows a "prove you're human" page after a burst of searches (hit while
+  evaluating 40 searches in a row; lifted within minutes). Now detected and reported as
+  "search busy, try again in a few minutes" instead of "nothing found".
+- Tests: 5 offline Spotify checks with fake answers + live run (Huracán link found);
+  all 67 checks pass. Measured against songs already linked: see below.
+- Measured on 20 songs that already have a Spotify link (one every 20 s, like real use):
+  the same track offered first for 10, among the 3 offered for 2, the same song by the
+  same artist (another release) for 3, nothing found for 5 (e.g. "10000 razones" is
+  "10,000 Reasons" on Spotify); never a wrong song.

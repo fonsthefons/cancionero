@@ -40,6 +40,9 @@ It then:
   style reads lower case as minor), keeping every chord over its letter;
 - shows the result, then asks for title, author, capo (read from the site
   when it has it), Spotify link and tags, warns if the song is already in the book;
+- looks the song up on Spotify and offers the tracks it finds (Enter takes the
+  first, a number picks another, `-` for none, or paste your own link). Each
+  one is checked with Spotify itself, so its title and artist really match;
 - writes `songs/<title>_<author>.md` and rebuilds `index.html`.
 
 Commit the new song together with `index.html`. Authors are written the way
@@ -154,6 +157,7 @@ web/       ─┘
 | `importer/sites/` | One reader per website (`ultimate_guitar.py`, `cifraclub.py`, `lacuerda.py`, `generic.py`); add a module and list it in `SITES` to support a new site |
 | `importer/clean.py`, `chords.py`, `fetch.py` | Text cleanup, Spanish chord names → letters (keeping columns), downloading |
 | `importer/search.py` | Finds chord pages for a title + artist (DuckDuckGo + Ultimate Guitar search) |
+| `importer/spotify.py` | Finds the song's Spotify track (web search, checked on Spotify's embed page) |
 | `author_aliases.yaml` | Author names as sites write them → as the book writes them |
 | `builder/songs.py` | Reads song files (frontmatter + lyrics) and validates fields |
 | `builder/tags.py` | Loads `tags.yaml`, validates song tags, groups songs by tag |

@@ -64,6 +64,9 @@ def duckduckgo(query):
             url = "https:" + url
         if url.startswith("http") and "duckduckgo.com" not in url:
             results.append(Result(url, html.unescape(re.sub(r"<[^>]+>", "", label)).strip()))
+    if not results and "anomaly" in page.lower():
+        # After many searches in a short time DuckDuckGo asks to prove we're human.
+        raise FetchError("the web search is busy (too many searches); try again in a few minutes")
     return results
 
 
@@ -113,7 +116,7 @@ def search(title, artist=""):
             found += source()
         except FetchError as e:
             errors.append(e)
-    if not found and len(errors) == 2:
+    if not found and errors:
         raise FetchError(f"the search didn't answer ({errors[0]})")
 
     title_words = plain_words(title)
