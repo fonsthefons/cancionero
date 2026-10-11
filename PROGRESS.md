@@ -172,3 +172,11 @@
   The code is back to the PR #8 state. Test kept in `scratch/zoom_test.py`.
 - Lesson: pinch-zoom behaviour must be judged on the real phone/iPad; headless tests
   do not reproduce iOS Safari's zoom.
+
+## 2026-10-11 — Spanish alphabetical order
+
+- `builder/songs.py`: `spanish_sort_key` ignores accents and case (é = e, ü = u) and keeps
+  ñ as its own letter after n. Previously accented letters sorted after z, so e.g. Déjate
+  came after Dulce locura. 16 songs renumbered (Déjate, Quédate Señor, Ven Espíritu...);
+  saved per-song changes and the session are keyed by file name, so unaffected.
+- `scratch/sort_check.py`: key unit checks + list of moved songs. Full UI and PDF suites pass.

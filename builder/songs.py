@@ -1,6 +1,7 @@
 """Loading and validating song files (YAML frontmatter + lyrics)."""
 
 import re
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -100,6 +101,14 @@ def load_song(path):
     )
 
 
+def spanish_sort_key(text):
+    """Sort key for Spanish alphabetical order: accents are ignored (é = e,
+    ü = u) and case too, but ñ is its own letter, right after n."""
+    text = unicodedata.normalize("NFC", text).casefold().replace("ñ", "n￿")
+    letters = unicodedata.normalize("NFD", text)
+    return "".join(c for c in letters if not unicodedata.combining(c))
+
+
 def load_songs(songs_dir, taxonomy):
     """Load every song, validate it, and number them alphabetically by title.
 
@@ -119,7 +128,7 @@ def load_songs(songs_dir, taxonomy):
     if errors:
         raise SongError("Invalid songs:\n" + "\n".join(errors))
 
-    songs.sort(key=lambda song: (song.title.casefold(), song.id))
+    songs.sort(key=lambda song: (spanish_sort_key(song.title), song.id))
     for number, song in enumerate(songs, start=1):
         song.number = number
     return songs
