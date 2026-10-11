@@ -192,3 +192,28 @@
 - `scratch/search_test.py`: old vs new on real queries ("padre abba" 0 -> 1, "senor,
   jesus" 0 -> 16, phrase across two lines 0 -> 1, "31" -> song 31 only), ranking,
   snippets, session box, and speed: slowest keystroke 10 ms with 6x slower CPU.
+
+## 2026-10-11 — add_song.py: import songs from a link or paste
+
+- `add_song.py` (interactive) + `importer/` package: link (Ultimate Guitar, Cifra Club,
+  LaCuerda, generic <pre> sites, or a saved page file) or pasted text -> cleanup ->
+  preview -> title/author/capo/Spotify/tags -> `songs/<title>_<author>.md` -> rebuild.
+- Cleanup (`importer/clean.py`): tabs -> spaces at 8-column browser stops, 1:1 fixes for
+  quotes/dashes/nbsp/sharps, invisible chars removed, NFC; section labels removed except
+  intro (`Intro:` + chords; if none, `Intro:` + first chord, as in the existing songs);
+  capo lines -> capo field; key/tuning/credit lines dropped; blank lines collapsed;
+  unusual characters and unrecognised chords reported.
+- Spanish chords (`importer/chords.py`): DO/Do/do + #/b + suffix + /bass -> letters;
+  lower case = minor only when mixed with ALL-CAPS majors ("DO mi"). Chords keep their
+  start column; a longer name (º -> dim) borrows following spaces. Doubtful pasted lines
+  ("La la la") are asked about.
+- Sites: UG embedded JSON ([ch] markup); Cifra Club <pre> with <b> chords, capo and artist
+  from embedded data; it blocks non-browsers (Akamai), so it is read with headless WebKit
+  (Playwright), which the script offers to install on first use; LaCuerda <pre> with <A>
+  chords (song page -> first .shtml version).
+- Author aliases remembered in `author_aliases.yaml` (seeded: Hakuna Group Music -> Hakuna).
+- `scratch/add_song_test.py [--network]`: 50 checks (chord conversion and columns, chars,
+  tabs, labels, capo, intro, paste detection, end-to-end runs on saved pages from all three
+  sites, duplicates, aliases, live downloads). All pass.
+- Choices: kept Spotify-only links (source page not stored); a removed label leaves a
+  verse break; doubtful chord lines default to "yes" when Enter is pressed.
