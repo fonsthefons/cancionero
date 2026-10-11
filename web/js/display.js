@@ -12,6 +12,15 @@ onAction("toggle-columns", (button, song) => columnsSetting.toggleSong(song));
 onAction("toggle-all-chords", () => chordsSetting.toggleGlobal());
 onAction("toggle-all-columns", () => columnsSetting.toggleGlobal());
 
+// Put every song back as written: transpose 0, no per-song chords/columns.
+onAction("reset-songs", () => {
+    document.querySelectorAll('.song[data-transpose]:not([data-transpose="0"])')
+        .forEach((song) => setTranspose(song, 0));
+    chordsSetting.clearSongs();
+    columnsSetting.clearSongs();
+    songState.clearAll();
+});
+
 // ---- Text size: multiplies the fit-to-screen lyrics size (see styles.css) ----
 
 const TEXT_SCALE = { min: 0.4, max: 3, step: 0.1 };

@@ -67,6 +67,7 @@ function setTranspose(song, shift) {
     song.dataset.transpose = shift;
     song.querySelectorAll(".chord-line").forEach((line) => transposeChordLine(line, shift));
     song.querySelector(".transpose-value").textContent = shift > 0 ? `+${shift}` : shift;
+    songState.set(song, "transpose", shift || null); // remembered on this device
 }
 
 // Steps through -11..+11; one more step wraps back to 0 (same key).
@@ -78,3 +79,9 @@ function stepTranspose(song, step) {
 onAction("transpose-up", (button, song) => stepTranspose(song, +1));
 onAction("transpose-down", (button, song) => stepTranspose(song, -1));
 onAction("transpose-reset", (button, song) => setTranspose(song, 0));
+
+// Restore the transpositions saved on this device.
+songState.each("transpose", (song, shift) => {
+    const valid = Number.isInteger(shift) && Math.abs(shift) < 12;
+    setTranspose(song, valid ? shift : 0);
+});

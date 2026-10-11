@@ -96,3 +96,16 @@
   the menu) and search results span the screen width.
 - `scratch/ui_test.py`: 10 new autoscroll checks + top-bar fit on phone/iPad/laptop;
   full suite passes in Chromium and WebKit.
+- Merged as PR #3 and deployed (live file verified identical).
+
+## 2026-10-11 — Remember per-song changes
+
+- `songState` in `web/js/core.js`: per-song transpose / chords / columns saved in
+  localStorage (`cancionero.songs`, keyed by song id = file name), only non-default
+  values; entries of songs that no longer exist are pruned on load.
+- Restored on load (`transpose.js`, `songSetting`). A book-wide chords/columns
+  toggle clears the saved per-song overrides of that kind.
+- Menu: *Song changes → Reset all*.
+- `scratch/ui_test.py`: 7 new persistence checks (Abba Padre +3 survives reload with
+  chords aligned, per-song chords/columns restored, global toggle clears, reset);
+  full suite passes in Chromium and WebKit.
