@@ -109,3 +109,16 @@
 - `scratch/ui_test.py`: 7 new persistence checks (Abba Padre +3 survives reload with
   chords aligned, per-song chords/columns restored, global toggle clears, reset);
   full suite passes in Chromium and WebKit.
+- Merged as PR #4 and deployed (live file verified identical).
+
+## 2026-10-11 — Sing Session
+
+- `web/js/session.js`: ordered list of song ids in localStorage (`cancionero.session`),
+  deduplicated, pruned of songs that no longer exist. Shown first in the menu
+  (`<details id="session" open>`): count, empty message, numbered list with
+  link + ↑ ↓ ✕, own search box, Clear session (with confirmation).
+- Every song gets a "+ Session" / "✓ In session" toggle button.
+- `search.js` generalized: `data-search="<action>"` makes results action buttons
+  (session box adds songs and stays focused); top-bar search unchanged.
+- Build adds `data-title` to each song (plain title for the session list).
+- `scratch/ui_test.py`: 16 new session checks; full suite passes in Chromium and WebKit.

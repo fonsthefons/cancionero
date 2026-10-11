@@ -35,6 +35,19 @@
     <strong>Menu</strong>
     <button class="icon-button" data-action="close-drawer" aria-label="Close menu">✕</button>
   </div>
+
+  <!-- Sing Session: a saved, ordered list of songs to play -->
+  <details class="session" id="session" open>
+    <summary><h2>Sing Session <span class="session-count"></span></h2></summary>
+    <p class="session-empty">Add songs to the session: search below, or tap “+ Session” on any song.</p>
+    <ol class="session-list"></ol>
+    <div class="search session-search" data-search="session-add">
+      <input type="search" placeholder="Add a song..." aria-label="Add a song to the session" autocomplete="off">
+      <div class="search-results" hidden></div>
+    </div>
+    <button class="session-clear" data-action="session-clear">Clear session</button>
+  </details>
+
   {{ nav }}
 
   <section class="settings" id="settings">
