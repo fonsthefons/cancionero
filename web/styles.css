@@ -168,12 +168,60 @@ button:active {
     white-space: nowrap;
 }
 
+/* Narrow screens: room for search + autoscroll; Contenido is in the menu. */
+@media (max-width: 560px) {
+    .topbar-title {
+        display: none;
+    }
+}
+
+.autoscroll {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.autoscroll button {
+    min-width: 40px;
+    padding: 6px 8px;
+    font-size: 1rem;
+}
+
+.autoscroll [aria-pressed="true"] {
+    background: var(--button-active);
+    border-color: var(--chord);
+}
+
+.autoscroll-speed {
+    min-width: 1.4em;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--muted);
+}
+
 .search {
     position: relative;
     flex: 1;
     min-width: 0;
     max-width: 480px;
     margin-left: auto;
+}
+
+/* The results list spans the screen width, not just the narrowed box. */
+@media (max-width: 560px) {
+    .search {
+        position: static;
+    }
+
+    .search-results {
+        left: var(--gutter);
+        right: var(--gutter);
+        top: calc(var(--topbar-height) - 2px);
+        width: auto;
+    }
 }
 
 .search input {

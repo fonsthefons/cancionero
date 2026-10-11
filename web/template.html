@@ -20,6 +20,12 @@
     <input type="search" placeholder="Search songs..." aria-label="Search songs" autocomplete="off">
     <div class="search-results" hidden></div>
   </div>
+  <div class="autoscroll" role="group" aria-label="Autoscroll">
+    <button data-action="toggle-autoscroll" aria-pressed="false" aria-label="Start autoscroll">▶</button>
+    <button data-action="autoscroll-slower" aria-label="Slower">−</button>
+    <span class="autoscroll-speed" aria-label="Autoscroll speed">3</span>
+    <button data-action="autoscroll-faster" aria-label="Faster">+</button>
+  </div>
 </header>
 
 <!-- Menu drawer: table of contents + settings -->
