@@ -76,7 +76,8 @@ into one, which keeps them one column wide as the editor shows them.
   These are remembered per song on each device (e.g. Abba Padre stays at +3);
   ☰ → *Song changes → Reset all* puts every song back as written.
 - **Text size**: each song is sized so its longest line fits the screen.
-  A− / A+ scale that up or down; pinch-zoom always works too.
+  A− / A+ scale that up or down; pinch-zoom always works too, and while
+  zoomed in the top bar and ☰ menu stay at the top of the screen at normal size.
 - **Printing / PDF** (☰ → Print, or the browser's print): the index is always
   printed fully unfolded, its entries are clickable links to the songs inside
   the PDF, and each song's *Link* stays a clickable web link. Every song starts
@@ -124,6 +125,7 @@ web/       ─┘
 | `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
 | `web/js/session.js` | Sing Session (list in the menu, + Session buttons) |
 | `web/js/session-drag.js` | Drag-and-drop reordering of the session (pointer events) |
+| `web/js/pinch-zoom.js` | Keeps the top bar and menu on screen at normal size while pinch-zoomed |
 | `web/js/search.js`, `drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
 
 ### Adding a browser feature

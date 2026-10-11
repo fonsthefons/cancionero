@@ -160,6 +160,9 @@ button:active {
     padding: 0 var(--gutter);
     background: var(--paper);
     border-bottom: 1px solid var(--border);
+    /* While pinch-zoomed: stay on screen at normal size (js/pinch-zoom.js). */
+    transform: var(--unzoom, none);
+    transform-origin: 0 0;
 }
 
 .topbar-title {
@@ -298,7 +301,8 @@ button:active {
     overscroll-behavior: contain; /* scrolling the menu never scrolls the page */
     background: var(--surface);
     box-shadow: 2px 0 16px var(--shadow);
-    transform: translateX(-105%);
+    transform: var(--unzoom, translate(0)) translateX(-105%);
+    transform-origin: 0 0;
     visibility: hidden;
     transition: transform 0.25s ease, visibility 0.25s;
 }
@@ -309,7 +313,7 @@ body.drawer-open .backdrop {
 }
 
 body.drawer-open .drawer {
-    transform: none;
+    transform: var(--unzoom, none);
     visibility: visible;
 }
 

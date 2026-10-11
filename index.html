@@ -169,6 +169,9 @@ button:active {
     padding: 0 var(--gutter);
     background: var(--paper);
     border-bottom: 1px solid var(--border);
+    /* While pinch-zoomed: stay on screen at normal size (js/pinch-zoom.js). */
+    transform: var(--unzoom, none);
+    transform-origin: 0 0;
 }
 
 .topbar-title {
@@ -307,7 +310,8 @@ button:active {
     overscroll-behavior: contain; /* scrolling the menu never scrolls the page */
     background: var(--surface);
     box-shadow: 2px 0 16px var(--shadow);
-    transform: translateX(-105%);
+    transform: var(--unzoom, translate(0)) translateX(-105%);
+    transform-origin: 0 0;
     visibility: hidden;
     transition: transform 0.25s ease, visibility 0.25s;
 }
@@ -318,7 +322,7 @@ body.drawer-open .backdrop {
 }
 
 body.drawer-open .drawer {
-    transform: none;
+    transform: var(--unzoom, none);
     visibility: visible;
 }
 
@@ -5390,6 +5394,44 @@ document.addEventListener("click", (event) => {
 });
 </script>
 <script>
+// Keep the top bar and the menu at normal size and on screen while pinch-zoomed.
+//
+// Pinch-zoom magnifies the whole page, and the browser keeps "fixed" and
+// "sticky" elements attached to the unzoomed page, so the top bar grew and
+// slid out of view. Here we follow the zoomed view (visualViewport) and set
+// --unzoom to a transform that moves the bar and menu to its top-left corner
+// and shrinks them back by the zoom factor; styles.css applies it.
+
+const PINCH_ZOOM = {
+    minScale: 1.01, // below this the page counts as not zoomed
+};
+
+let pinchZoomFrame = 0;
+
+function updatePinchZoom() {
+    pinchZoomFrame = 0;
+    const view = window.visualViewport;
+    const root = document.documentElement.style;
+    if (!view || view.scale < PINCH_ZOOM.minScale) {
+        root.removeProperty("--unzoom");
+        return;
+    }
+    root.setProperty("--unzoom",
+        `translate(${view.offsetLeft}px, ${view.offsetTop}px) scale(${1 / view.scale})`);
+}
+
+function schedulePinchZoom() {
+    if (!pinchZoomFrame) pinchZoomFrame = requestAnimationFrame(updatePinchZoom);
+}
+
+if (window.visualViewport) {
+    visualViewport.addEventListener("resize", schedulePinchZoom);
+    visualViewport.addEventListener("scroll", schedulePinchZoom);
+    window.addEventListener("scroll", schedulePinchZoom, { passive: true });
+    updatePinchZoom();
+}
+</script>
+<script>
 // Printing: a dialog to choose columns and chords, and a print layout where
 // the whole index is unfolded (so every link to a song is in the PDF).
 
@@ -5529,7 +5571,9 @@ let sessionDrag = null;
 
 function sessionDragLayout() {
     const d = sessionDrag;
-    const scrolled = sessionScroller.scrollTop - d.startScroll;
+    // Pointer and rects are in screen px; transforms and scrollTop are in the
+    // menu's own px, which differ by d.scale while pinch-zoomed (pinch-zoom.js).
+    const scrolled = (sessionScroller.scrollTop - d.startScroll) * d.scale;
     const dy = d.pointerY - d.startY + scrolled;
     const from = d.from;
     const center = d.rects[from].top + d.rects[from].height / 2 + dy;
@@ -5544,13 +5588,13 @@ function sessionDragLayout() {
     }
     d.to = to;
 
-    d.item.style.transform = `translateY(${dy}px)`;
+    d.item.style.transform = `translateY(${dy / d.scale}px)`;
     d.items.forEach((item, i) => {
         if (i === from) return;
         let shift = 0;
         if (from < i && i <= to) shift = -d.step;
         if (to <= i && i < from) shift = d.step;
-        item.style.transform = shift ? `translateY(${shift}px)` : "";
+        item.style.transform = shift ? `translateY(${shift / d.scale}px)` : "";
     });
 }
 
@@ -5600,6 +5644,7 @@ sessionList.addEventListener("pointerdown", (event) => {
         startY: event.clientY,
         pointerY: event.clientY,
         startScroll: sessionScroller.scrollTop,
+        scale: sessionScroller.getBoundingClientRect().width / sessionScroller.offsetWidth || 1,
         pointerId: event.pointerId,
     };
     handle.setPointerCapture(event.pointerId);
