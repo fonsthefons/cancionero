@@ -67,6 +67,8 @@ into one, which keeps them one column wide as the editor shows them.
   (1–10, remembered). Scrolling by hand or jumping to a song while it runs
   continues from there; it pauses while the menu is open and stops at the end.
 - **Per song**: show/hide chords, transpose (tap the number to reset), 1 or 2 columns.
+  These are remembered per song on each device (e.g. Abba Padre stays at +3);
+  ☰ → *Song changes → Reset all* puts every song back as written.
 - **Text size**: each song is sized so its longest line fits the screen.
   A− / A+ scale that up or down; pinch-zoom always works too.
 - **Transposing** keeps every chord on its letter. Only when two chords are a
@@ -106,7 +108,7 @@ web/       ─┘
 | `web/template.html` | Page layout, with `{{ placeholders }}` filled by the build |
 | `web/song-controls.html` | Buttons shown above each song |
 | `web/styles.css` | All styles (theme colours and sizes are variables at the top) |
-| `web/js/core.js` | Shared helpers: `onAction`, `songSetting`, `prefs` (saved settings) |
+| `web/js/core.js` | Shared helpers: `onAction`, `songSetting`, `prefs` (saved settings), `songState` (saved per-song changes) |
 | `web/js/display.js` | Chords, columns, text size, theme |
 | `web/js/transpose.js` | Transposition that keeps chords in their columns |
 | `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
@@ -129,7 +131,10 @@ use `songSetting(name, [default, alternative], onGlobalChange)` from `core.js`,
 as `web/js/display.js` does for chords and columns. It stores the value in
 `data-<name>` on `<body>` (whole book) and on `.song` (one-song override), CSS
 styles both, and the book-wide value is remembered on the device. For any other
-remembered value use `prefs.get(key, fallback)` / `prefs.set(key, value)`.
+remembered value use `prefs.get(key, fallback)` / `prefs.set(key, value)`, or
+`songState.get(song, key)` / `songState.set(song, key, value)` for a value that
+belongs to one song (`null` forgets it). Saved data is keyed by the song's file
+name, so renaming a song file forgets its saved changes.
 
 Never add CSS that changes how lyric lines lay out horizontally (wrapping,
 `letter-spacing`, proportional fonts, per-character styling that changes
