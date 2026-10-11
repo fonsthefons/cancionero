@@ -1,5 +1,4 @@
 ---
-fname: entrega_schoenstatt
 title: Entrega
 autor: Schoenstatt
 link: "https://open.spotify.com/track/5xqq57nrKEOdV2zU4mwjXr?si=4fb825aca6f24b21"

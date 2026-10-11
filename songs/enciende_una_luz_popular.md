@@ -1,10 +1,8 @@
 ---
-fname: enciende_una_luz_popular
 title: Enciende una luz
 autor: popular
 link: "https://open.spotify.com/track/5tNq5UDjzEbRfwsE5c6P5I?si=72eaf6757d56495d"
 capo: "0, original 0"
-capo_notes: []
 song_tags:
   misa: 
     - entrada

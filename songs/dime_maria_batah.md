@@ -1,10 +1,8 @@
 ---
-fname: dime_maria_batah
 title: Dime María
 autor: Batah
 link: "https://open.spotify.com/track/3XquETxUYUBj3w3uvAEzQH?si=da7f801ba0b84103"
 capo: "2, 0-4, original 5"
-capo_notes: []
 song_tags:
   misa:
     - comunion

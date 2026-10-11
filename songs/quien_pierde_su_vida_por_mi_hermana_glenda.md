@@ -1,10 +1,8 @@
 ---
-fname: quien_pierde_su_vida_por_mi_hermana_glenda
 title: Quien pierde su vida por mi
 autor: Hermana Glenda
 link: "https://open.spotify.com/track/1OS38h2656yRP9EvZBJvvi?si=4426f6f8705948be"
 capo: 0
-capo_notes: []
 song_tags:
   misa: 
     - ofertorio

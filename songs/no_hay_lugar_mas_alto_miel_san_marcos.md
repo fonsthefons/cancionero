@@ -1,11 +1,9 @@
 ---
-fname: no_hay_lugar_mas_alto_miel_san_marcos
 title: No hay lugar más alto
 autor: Miel San Marcos
 link: "https://open.spotify.com/track/0yzKJqFTXsbzWjUHaiOxD9?si=b915f0eff6ea429a"
 capo: 0
 
-capo_notes: []
 song_tags:
   adoracion: []
   misa: 

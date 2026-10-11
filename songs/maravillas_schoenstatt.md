@@ -1,5 +1,4 @@
 ---
-fname: maravillas_schoenstatt
 title: Maravillas
 autor: schoenstatt
 link: "https://open.spotify.com/track/7FE6hZmegD9prtjy0vhb1e?si=a96e92b00b374154"

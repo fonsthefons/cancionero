@@ -1,5 +1,4 @@
 ---
-fname: salmo_23_un_corazon
 title: Salmo 23
 autor: Un Corazón
 link: "https://open.spotify.com/track/1OSmBtcsjiGcUnhn2MlE4c?si=147455b0808745db"

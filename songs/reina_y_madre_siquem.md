@@ -1,6 +1,5 @@
 ---
 
-fname: reina_y_madre_siquem
 title: Reina y Madre
 autor: Siquem
 link: "https://open.spotify.com/track/7cNdAOMqjrSA7AEPR1M7hz?si=7b1e652a9db84d2d"

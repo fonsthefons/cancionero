@@ -1,5 +1,4 @@
 ---
-fname: soy_libre_hakuna
 title: Soy Libre
 autor: Hakuna
 link: "https://open.spotify.com/track/35sx4rk6TGum93jIZettPj?si=1ae6ff5e36834faa"

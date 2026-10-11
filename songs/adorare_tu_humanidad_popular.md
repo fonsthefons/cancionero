@@ -1,5 +1,4 @@
 ---
-fname: adorare_tu_humanidad_popular
 title: Adoraré Tu Humanidad
 autor: Popular
 link: "https://open.spotify.com/track/0rjoGdepKWXh6VyQjO2NBq?si=65c2a27d63964ee5"

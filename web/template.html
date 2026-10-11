@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<title>Cancionero</title>
+<style>
+{{ css }}
+</style>
+</head>
+<body data-chords="show" data-columns="1">
+
+<!-- Sliding sidebar with search + table of contents -->
+<aside id="sidebar" class="sidebar">
+  <div class="search">
+    <input type="search" placeholder="Search songs..." aria-label="Search songs">
+    <div class="search-results"></div>
+  </div>
+  {{ nav }}
+</aside>
+<button id="sidebar-toggle" class="sidebar-toggle" data-action="toggle-sidebar" aria-label="Contenido">&lt;</button>
+
+<h1>Cancionero</h1>
+
+<nav class="top-nav">
+  <div class="search">
+    <input type="search" placeholder="Search songs..." aria-label="Search songs">
+    <div class="search-results"></div>
+  </div>
+  <h2>Contenido</h2>
+  {{ nav }}
+</nav>
+
+<!-- Index of songs by tag -->
+{{ tag_index }}
+
+<section id="all-songs">
+  <h2>All Songs</h2>
+  {{ all_songs_list }}
+</section>
+
+<h1>All Songs</h1>
+<main class="songs">
+{{ songs }}
+</main>
+
+<section class="settings" id="settings">
+  <h1>Settings WIP (desktop only)</h1>
+  <button data-action="toggle-all-chords">Hide all chords</button>
+  <button data-action="toggle-all-columns">2 columns</button>
+  <button data-action="open-print">Print</button>
+</section>
+
+<dialog id="print-dialog" class="print-dialog">
+  <form method="dialog">
+    <h3>Print settings</h3>
+    <label>Columns:
+      <select name="columns">
+        <option value="1">1 column</option>
+        <option value="2">2 columns</option>
+      </select>
+    </label>
+    <label>Chords:
+      <select name="chords">
+        <option value="show">Show chords</option>
+        <option value="hide">Hide chords</option>
+      </select>
+    </label>
+    <div class="dialog-buttons">
+      <button value="cancel">Cancel</button>
+      <button value="print">Print PDF</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- Scripts from web/js/, core.js first -->
+{{ scripts }}
+</body>
+</html>

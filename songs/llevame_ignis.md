@@ -1,10 +1,8 @@
 ---
-fname: llevame_ignis
 title: Llévame
 autor: Ignis
 link: "https://open.spotify.com/track/3MrYIWphpurxRYtBZTYQ6I?si=863e060e306b408a"
 capo: 0
-capo_notes: []
 song_tags:
   adoracion: []
   misa:

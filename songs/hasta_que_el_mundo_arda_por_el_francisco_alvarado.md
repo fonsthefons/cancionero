@@ -1,10 +1,8 @@
 ---
-fname: hasta_que_el_mundo_arda_por_el_francisco_alvarado
 title: Hasta que el mundo arda por Él
 autor: Francisco Alvarado
 link: "https://open.spotify.com/track/0G4Jcuu0mOmfUfLj2DZRCL?si=96b0fe026ee24fcf"
 capo: "0, 0-7, original -5"
-capo_notes: []
 song_tags:
   misa: 
     - salida

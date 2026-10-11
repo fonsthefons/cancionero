@@ -1,5 +1,4 @@
 ---
-fname: el_que_muere_por_mi_schoenstatt
 title: El que muere por mí
 autor: Schoenstatt
 link: "https://open.spotify.com/track/5pCZXKutN09BqvqudMqxlT?si=b1d397eb1ffc4395"

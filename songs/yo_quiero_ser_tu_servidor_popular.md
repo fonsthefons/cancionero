@@ -1,10 +1,8 @@
 ---
-fname: yo_quiero_ser_tu_servidor_popular
 title: Yo Quiero ser tu Servidor
 autor: popular
 link: "https://open.spotify.com/track/17ciTNtUcQxJ5gRJuLtbNX?si=a0c8c30edc634d0d"
 capo: 0
-capo_notes: []
 song_tags:
   misa: 
     - ofertorio

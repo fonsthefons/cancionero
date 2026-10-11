@@ -1,10 +1,8 @@
 ---
-fname: zzz_test_song
 title: ZZZ Test Song
 autor: popular
 link: ""
 capo: 0
-capo_notes: []
 song_tags:
   misa: 
     - ofertorio

@@ -1,152 +1,106 @@
-# Hymn Book
+# Cancionero
 
-## SETUP from scratch
-### 0. Clone the repo
+A song book with chords, built into **one self-contained `index.html`** (no
+internet needed once the page is saved in the browser) and published with
+GitHub Pages from the repo root.
+
+## Setup
+
+```bash
 gh repo clone fonsthefons/cancionero
-
-### 1. Create venv named venv (name doesn't matter change it if necessary)
+cd cancionero
 python3 -m venv venv
+venv/bin/pip install -r requirements.txt
+```
 
-### 2. Activate
-source venv/bin/activate     # macOS/Linux
+## Adding a song
 
-### 3. Install PyYAML
-pip install -r requirements.txt
+1. Copy `song_template.md` to `songs/<title>_<author>.md`
+   (lowercase, `_` instead of spaces; e.g. `songs/sopla_senor_popular.md`).
+2. Fill in the frontmatter and paste the lyrics.
+3. Run `venv/bin/python build.py` and commit `index.html` together with the song.
 
-### 4. Run the build
-python build.py
+The build checks every song and stops with a list of every problem
+(unknown tag, typo in a field name, broken YAML...), so mistakes don't slip in silently.
 
-## Adding a new song
+### Frontmatter
 
-1. Create a new `.md` file in `songs/` (e.g. `songs/mi_cancion.md`).
-
-2. Add metadata at the top, then the lyrics below. If you include chords, use spaces (not tabs) to align them with the desired lyric
-
-```markdown
+```yaml
 ---
-title: "My Song Title"
-autor: "Composer Name"
-capo: "Capo 2"
-link: "https://example.com/song"
-song_tags:
+title: Sopla Señor          # required
+autor: popular              # optional, shown next to the title
+capo: "2"                   # optional, free text
+link: "https://..."         # optional, recording or sheet music
+song_tags:                  # optional, see "Tags" below
   misa:
-    - entrada
-    - ofertorio
-  alabanza:
-    - primer_ciclo
+    - comunion
   adoracion: []
-  tema:
-    - padre
-    - espiritu
 ---
+```
 
-Intro: G C D
+Songs are numbered automatically, alphabetically by title.
 
+### Lyrics and chords
+
+Write chords on their own line, above the lyric they belong to, aligned with
+**spaces** (tabs count as 2 spaces). A line counts as a chord line when every
+word on it is a chord (`G`, `Am`, `C#m7`, `Bb`, `Dsus4`, `D/F#`...) or a
+separator (`|`, `-`, `(`, `)`). A blank line starts a new verse.
+
+```
 G              C
 First line of lyrics
 ```
 
-**Frontmatter fields:**
+## Tags
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `title` | Yes | Display name of the song |
-| `autor` | No | Composer or autor name (shown below the title in the book) |
-| `capo` | No | Capo or key info, free text (shown below the title in the book) |
-| `link` | No | URL to sheet music, video, or reference (shown as a clickable link) |
-| `song_tags` | Yes | Categories and subcategories (see below) |
+Tags and subtags are defined in **`tags.yaml`**. That file is the only place to
+edit when adding, renaming or reordering them; the book follows its order.
 
-You do **not** need a `song_number` — numbers are assigned automatically at build time, sorted alphabetically by title.
+| Tag | Subtags |
+|-----|---------|
+| `misa` | `entrada`, `gloria`, `aleluya`, `ofertorio`, `santo`, `cordero`, `comunion`, `salida` |
+| `alabanza` | `primer_ciclo`, `segundo_ciclo`, `tercer_ciclo`, `cuarto_ciclo` |
+| `adoracion` | none: use `adoracion: []` |
+| `tema` | `padre`, `cristo`, `espiritu`, `santo`, `martir`, `virgen` |
 
-**`song_tags` format** — each key is a tag. Tags with subtags use a list; flat tags use an empty list `[]`:
+A song can have several tags and several subtags per tag. A tag with subtags
+needs at least one.
 
-```yaml
-song_tags:
-  misa:
-    - entrada      # pick from fixed misa subtags
-  alabanza:
-    - primer_ciclo      # pick from fixed alabanza subtags
-  adoracion: []         # flat tag — no subtags
-  tema:
-    - padre             # pick from fixed tema subtags
-    - espiritu
-```
-
-- A song can belong to **multiple tags** and **multiple subtags** under the same tag
-- Use `adoracion: []` for the adoracion flat tag
-- If a song is tagged `misa`, `alabanza`, or `tema`, it **must** include at least one subtag — omit the tag key entirely if the song doesn't belong to that category
-- `build.py` validates tags at build time and aborts on errors
-
-3. Write the lyrics exactly as you want them to appear. Line breaks and spacing (tabs for chords) are preserved in the HTML/PDF output.
-
-4. Rebuild the book:
-
-```bash
-python3 build.py          # generates output/index.html and root/index.html (necessary for github pages)
-```
-
-
-## Tags and subtags
-
-There are four top-level tags, all set in `song_tags`:
-
-### Misa, Alabanza, and Tema (fixed subtags)
-
-**Misa** — pick one or more:
-
-`entrada`, `gloria`, `aleluya`, `ofertorio`, `santo`, `comunion`, `salida`
-
-**Alabanza** — pick one or more:
-
-`primer_ciclo`, `segundo_ciclo`, `tercer_ciclo`, `cuarto_ciclo`
-
-**Tema** — pick one or more (topics that can apply to any song):
-
-`padre`, `cristo`, `espiritu`, `santo`, `martir`, `virgen`
-
-```yaml
-song_tags:
-  misa:
-    - entrada
-    - comunion
-  alabanza:
-    - primer_ciclo
-  tema:
-    - padre
-    - espiritu
-```
-
-> **Note:** `santo` under **Misa** is the mass part (Sanctus). `santo` under **Tema** is a topic tag — a song can have both.
-
-To add a new tema topic, add it to the `tema` list in `TAG_WITH_SUBTAGS` in `build.py` and add a matching section in `indexes/tema.md`.
-
-### Adoracion (flat tag, no subtags)
-
-```yaml
-song_tags:
-  adoracion: []
-```
-
-### Book output
-
-The built book lists sections in this order: Misa → Alabanza → Adoracion → Tema.
+## How it works
 
 ```
-# Tema
-
-- Padre
-  - 1. Abba Padre
-  - 3. Primero el cielo
-- Espiritu
-  - 2. Restaurame Espiritu
+songs/*.md ─┐
+tags.yaml  ─┼─► build.py ─► index.html   (single file, CSS + JS inlined)
+web/       ─┘
 ```
 
-### Tagging a song
+| Path | What it is |
+|------|------------|
+| `build.py` | Entry point: loads, validates, renders, writes `index.html` |
+| `builder/songs.py` | Reads song files (frontmatter + lyrics) and validates fields |
+| `builder/tags.py` | Loads `tags.yaml`, validates song tags, groups songs by tag |
+| `builder/lyrics.py` | Detects chord lines and turns lyrics into HTML |
+| `builder/render.py` | Builds the HTML fragments and fills `web/template.html` |
+| `web/template.html` | Page layout, with `{{ placeholders }}` filled by the build |
+| `web/song-controls.html` | Buttons shown above each song |
+| `web/styles.css` | All styles (theme colours are variables at the top) |
+| `web/js/*.js` | Browser features, one file each; inlined as separate scripts |
 
-1. Edit the song's `song_tags` in frontmatter using only the allowed values above.
-2. Rebuild: `python3 build.py`
-3. Check the matching note in `indexes/` (e.g. `indexes/misa.md`, `indexes/tema.md`).
+### Adding a browser feature
 
-To remove a song from a subtag or tag, delete that entry from frontmatter.
+1. Add a button with a `data-action` attribute (in `web/template.html` or
+   `web/song-controls.html`):
+   `<button data-action="my-feature">...</button>`
+2. Create `web/js/my-feature.js` and register a handler. It receives the button
+   and the song it belongs to (or `null`):
+   ```js
+   onAction("my-feature", (button, song) => { ... });
+   ```
+3. Rebuild. Every file in `web/js/` is included automatically (`core.js` first).
 
-New tags or subtags can only be added by editing `TAG_WITH_SUBTAGS` and `FLAT_TAGS` in `build.py`.
+For a show/hide or on/off option that works per song *and* for the whole book,
+use `songSetting(name, [default, alternative])` from `core.js`, as
+`web/js/display.js` does for chords and columns. It stores the value in
+`data-<name>` on `<body>` (whole book) and on `.song` (one-song override), and
+CSS styles both.

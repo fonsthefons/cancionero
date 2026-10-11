@@ -1,5 +1,4 @@
 ---
-fname: alza_la_mirada_vivafe
 title: Alza la mirada
 autor: VIVAFE
 link: "https://open.spotify.com/track/03QgYgZ0JZ5usst2UxT3oy?si=fdba726a02244734"

@@ -1,10 +1,8 @@
 ---
-fname: tuyas_son_luispo
 title: Tuyas son
 autor: Luispo
 link: "https://open.spotify.com/track/37JnxRgESJqLXqpFsvTp6p?si=b30ea803aaf34e3e"
 capo: 1
-capo_notes: []
 song_tags:
   adoracion: []
   misa:

@@ -1,0 +1,41 @@
+# Song categories. This file is the single source of truth for tags:
+# the build validates every song against it, and the book lists tags and
+# subtags in the order they appear here.
+#
+#   <tag_id>:
+#     label: Text shown in the book
+#     subtags:            # omit for a flat tag (songs use `<tag_id>: []`)
+#       <subtag_id>: Text shown in the book
+
+misa:
+  label: Misa
+  subtags:
+    entrada: Entrada
+    gloria: Gloria
+    aleluya: Aleluya
+    ofertorio: Ofertorio
+    santo: Santo
+    cordero: Cordero
+    comunion: Comunion
+    salida: Salida
+
+alabanza:
+  label: Alabanza
+  subtags:
+    primer_ciclo: Primer ciclo
+    segundo_ciclo: Segundo ciclo
+    tercer_ciclo: Tercer ciclo
+    cuarto_ciclo: Cuarto ciclo
+
+adoracion:
+  label: Adoracion
+
+tema:
+  label: Tema
+  subtags:
+    padre: Padre
+    cristo: Cristo
+    espiritu: Espiritu
+    santo: Santo
+    martir: Martir
+    virgen: Virgen

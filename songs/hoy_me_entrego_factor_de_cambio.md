@@ -1,5 +1,4 @@
 ---
-fname: hoy_me_entrego_factor_de_cambio
 title: Hoy Me Entrego
 autor: Factor de Cambio
 link: "https://open.spotify.com/track/75rJiou4bno0EKb3BIo0R7?si=e955e2385acc4a0b"

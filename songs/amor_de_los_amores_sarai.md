@@ -1,5 +1,4 @@
 ---
-fname: amor_de_los_amores_sarai
 title: Amor de los Amores
 autor: Sarai
 capo: "2, 0-2, original 7"

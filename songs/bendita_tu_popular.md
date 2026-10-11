@@ -1,6 +1,5 @@
 ---
 
-fname: bendita_tu_popular
 title: Bendita Tu
 autor: Popular
 link: ""

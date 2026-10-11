@@ -1,5 +1,4 @@
 ---
-fname: ven_ante_su_trono_elevation_worship
 title: Ven ante Su trono
 autor: Elevation Worship
 link: "https://open.spotify.com/track/00N19SVEo6XJFaerouyckn?si=8ba464502061439d"

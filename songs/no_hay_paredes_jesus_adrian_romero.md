@@ -1,11 +1,9 @@
 ---
-fname: no_hay_paredes_jesus_adrian_romero
 title: No hay paredes
 autor: Jesús Adrián Romero
 link: "https://open.spotify.com/track/4h0JpAep84WY6pZNonjCET?si=2e7cc6b240994119"
 capo: 0
 
-capo_notes: []
 song_tags:
   adoracion: []
   misa: 

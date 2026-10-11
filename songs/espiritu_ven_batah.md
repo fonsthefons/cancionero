@@ -1,5 +1,4 @@
 ---
-fname: espiritu_ven_batah
 title: Espíritu ven
 autor: Batah
 link: "https://open.spotify.com/track/5JEwE6o4TwtzroRg7qT84R?si=69d4642c14f74593"

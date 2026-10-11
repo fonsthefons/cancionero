@@ -1,6 +1,5 @@
 ---
 
-fname: himno_mision_pais_schoenstatt
 title: Himno Misión País
 autor: Schoenstatt
 link: "https://open.spotify.com/track/4JwlTzyh7CqyIX4y2IuPuk?si=82d9571070b04ec0"

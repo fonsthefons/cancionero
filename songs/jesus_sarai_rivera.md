@@ -1,5 +1,4 @@
 ---
-fname: jesus_sarai_rivera
 title: Jesus
 autor: Sarai Rivera
 link: "https://open.spotify.com/track/5blgde2k3YONRA1yBNohPs?si=e4143011219e4888"

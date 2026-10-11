@@ -1,10 +1,8 @@
 ---
-fname: saliendo_del_pretorio_jaire
 title: Saliendo del Pretorio
 autor: Jaire
 link: "https://open.spotify.com/track/7MvefvPSvGHDCVjg8ZQ0k6?si=a2c79c7553ee4b49"
 capo: 4
-capo_notes: []
 song_tags:
   adoracion: []
   misa: 

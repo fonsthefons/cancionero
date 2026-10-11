@@ -1,5 +1,4 @@
 ---
-fname: ven_espiritu_ven_teresa
 title: Ven Espiritu Ven
 autor: Teresa
 link: ""

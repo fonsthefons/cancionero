@@ -1,5 +1,4 @@
 ---
-fname: no_longer_slaves_bethel
 title: No Longer Slaves
 autor: Bethel
 link: "https://open.spotify.com/track/0C3YJ5aL7RpV4p49ynQWNt?si=55d9b43ea7894b8c"

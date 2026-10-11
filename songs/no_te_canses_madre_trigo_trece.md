@@ -1,10 +1,8 @@
 ---
-fname: no_te_canses_madre_trigo_trece
 title: No Te Canses, Madre
 autor: Trigo Trece
 link: "https://open.spotify.com/track/3zlgrYvYRLpToEc53bik6p?si=29ce34a8927448a9"
 capo: 2
-capo_notes: "0-5"
 song_tags:
   alabanza:
     - cuarto_ciclo

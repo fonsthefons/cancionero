@@ -1,10 +1,8 @@
 ---
-fname: dime_como_hacerlo_laraland
 title: Dime cómo hacerlo
 autor: Laraland
 link: "https://open.spotify.com/track/0hqipi7wOGMkkS2xzB1imb?si=d238ef611b91453d"
 capo: "0, 0-2, original 3 (low 3-5)"
-capo_notes: []
 song_tags:
   adoracion: []
   misa:

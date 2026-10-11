@@ -1,10 +1,8 @@
 ---
-fname: aleluya_taize
 title: Aleluya
 autor: Taizé
 link: ""
 capo: 2
-capo_notes: "max capo 5"
 song_tags:
     misa:
       - aleluya

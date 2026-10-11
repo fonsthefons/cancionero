@@ -1,10 +1,8 @@
 ---
-fname: aleluya_popular
 title: Aleluya
 autor: popular
 link: ""
 capo: 0
-capo_notes: []
 song_tags:
     misa:
       - aleluya

@@ -1,10 +1,8 @@
 ---
-fname: que_se_quiebre_mi_corazon_maria_olguin
 title: Que se quiebre mi corazón
 autor: María Olguín
 link: "https://open.spotify.com/track/0nJeFSspNSBI8NYlCQjtwL?si=cf7bc19f78d640cb"
 capo: 0
-capo_notes: []
 song_tags:
   adoracion: []
   misa:

@@ -1,5 +1,4 @@
 ---
-fname: la_medida_del_amor_hakuna
 title: La medida del amor
 autor: Hakuna
 link: "https://open.spotify.com/track/5hR5b7bf4mB41KnEpz8UXj?si=802fdd035cae4484"
