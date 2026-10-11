@@ -79,7 +79,8 @@ into one, which keeps them one column wide as the editor shows them.
   A− / A+ scale that up or down; pinch-zoom always works too.
 - **Printing / PDF** (☰ → Print, or the browser's print): the index is always
   printed fully unfolded, its entries are clickable links to the songs inside
-  the PDF, and each song's *Link* stays a clickable web link.
+  the PDF, and each song's *Link* stays a clickable web link. Every song starts
+  at the top of a new page (a long song continues onto the next pages).
 - **Transposing** keeps every chord on its letter. Only when two chords are a
   single space apart (e.g. `D Em` → `D# Fm`) does the second one shift by the
   one column it needs.

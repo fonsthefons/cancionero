@@ -152,3 +152,14 @@
   584/584 internal links resolve (first one lands on the song's page), 138 web
   links, folds restored after printing. Full UI suite passes.
 - Not verifiable here: Safari/iOS's own PDF export (Playwright can't print WebKit).
+- Merged as PR #7 and deployed (live file verified identical).
+
+## 2026-10-11 — Each song starts on a new printed page
+
+- Print CSS: `.song { break-before: page }` replaces `break-inside: avoid` (which,
+  for songs not fitting the remaining space, left titles at the bottom of a page);
+  title and meta line get `break-after: avoid`.
+- `scratch/pdf_test.py` now checks every song heading is the first line of its own
+  page, in order, with no page holding two song starts, for default print and for
+  2 columns + no chords. Confirmed it FAILS on the previous build (146/150 and
+  71/150) and passes now (150/150 both). Takes an optional path to a built page.
