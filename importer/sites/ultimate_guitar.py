@@ -6,6 +6,7 @@ import re
 
 from .common import Draft, SiteError
 
+NAME = "Ultimate Guitar"
 DOMAINS = ("ultimate-guitar.com",)
 
 

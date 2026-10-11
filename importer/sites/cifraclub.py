@@ -9,6 +9,7 @@ import re
 
 from .common import Draft, PreText, SiteError, strip_tags
 
+NAME = "Cifra Club"
 DOMAINS = ("cifraclub.com", "cifraclub.com.br")
 
 
