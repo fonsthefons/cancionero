@@ -38,7 +38,8 @@ song_tags:                  # optional, see "Tags" below
 ---
 ```
 
-Songs are numbered automatically, alphabetically by title.
+Songs are numbered automatically, alphabetically by title in Spanish order:
+accents and capitals are ignored (*Déjate* sorts as *dejate*), and ñ comes after n.
 
 ### Lyrics and chords
 
