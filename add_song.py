@@ -1,11 +1,12 @@
-"""Add a song to the book, from a web page or typed / pasted in.
+"""Add a song to the book, from a web page, typed / pasted in, or found by search.
 
     venv/bin/python add_song.py
 
 Asks for a link (Ultimate Guitar, Cifra Club, LaCuerda, or another site that
-shows the song as plain text) or for the song itself, cleans it up (see
-importer/clean.py), asks for title, author, capo, Spotify link and tags,
-writes songs/<title>_<author>.md and rebuilds index.html.
+shows the song as plain text), for the song itself, or for a title and artist
+to search for (importer/search.py). Cleans the song up (importer/clean.py),
+asks for title, author, capo, Spotify link and tags, writes
+songs/<title>_<author>.md and rebuilds index.html.
 """
 
 import argparse
@@ -22,6 +23,7 @@ from builder.songs import SongError, load_song, spanish_sort_key
 from builder.tags import Taxonomy
 from importer.clean import clean_song
 from importer.fetch import Blocked, FetchError, browser_available, fetch
+from importer.search import search
 from importer.sites import Follow, SiteError, saved_page_address, site_for
 
 ROOT = Path(__file__).parent
@@ -111,6 +113,60 @@ def offer_browser():
             print("The installation failed.")
             return False
     return browser_available()
+
+
+def preview(text, marked):
+    """Clean the song and show it. The cleaned song if it looks right, else None."""
+    cleaned = clean_song(text, marked=marked, ask=ask_chord_line)
+    print("\n" + "-" * 60 + "\n" + cleaned.body + "\n" + "-" * 60)
+    for note in cleaned.notes:
+        print(f"* {note}")
+    return cleaned if ask_yes("\nDoes the song look right?", default=True) else None
+
+
+def not_added():
+    print("Nothing added. Tip: paste the song (option 2) and fix it by hand, or fix the file after adding it.")
+    return 1
+
+
+def from_search(title, artist):
+    """Search, then read results until one looks right: (Draft, Cleaned) or None."""
+    print(f'Searching for "{title}"' + (f" by {artist}" if artist else "") + "...")
+    try:
+        results = search(title, artist)
+    except FetchError as e:
+        print(f"Couldn't search: {e}.")
+        return None
+    if not results:
+        print("No chord pages found. Try another spelling, or leave the artist out.")
+        return None
+    tried = set()
+    while True:
+        print("\nFound:")
+        for number, result in enumerate(results, start=1):
+            mark = "  (tried)" if number in tried else ""
+            label = result.label if len(result.label) <= 70 else result.label[:69] + "…"
+            print(f"  {number}  {result.site_name:16} {label}{mark}")
+        untried = [n for n in range(1, len(results) + 1) if n not in tried]
+        if not untried:
+            print("None of them worked.")
+            return None
+        answer = ask("Which one? (0 to paste the song instead)", str(untried[0]))
+        if answer == "0":
+            return None
+        if not answer.isdigit() or not 1 <= int(answer) <= len(results):
+            print(f"Please type a number between 0 and {len(results)}.")
+            continue
+        number = int(answer)
+        tried.add(number)
+        result = results[number - 1]
+        print(f"Reading {result.url}")
+        draft = from_link(result.url)
+        if draft is None:
+            continue
+        cleaned = preview(draft.text, draft.marked)
+        if cleaned is not None:
+            return draft, cleaned
 
 
 # ---------- details ----------
@@ -230,26 +286,34 @@ def main():
     print("Add a song to the book\n")
     print("  1) From a web page (Ultimate Guitar, Cifra Club, LaCuerda or another site)")
     print("  2) Type or paste it in")
-    choice = ask("Choose 1 or 2", "1")
+    print("  3) Search for it by title and artist")
+    choice = ask("Choose 1, 2 or 3", "1")
 
-    draft = None
-    if choice == "1":
+    searched_artist = ""
+    if choice == "3":
+        song_title = ask("Song title")
+        searched_artist = ask("Artist (Enter to skip)")
+        got = from_search(song_title, searched_artist) if song_title else None
+    elif choice == "1":
         link = ask("Link to the song (or a saved web page file)")
         draft = from_link(link) if link else None
-        if draft is None and not ask_yes("Paste the song instead?", default=True):
+        got = (draft, preview(draft.text, draft.marked)) if draft else None
+        if got and got[1] is None:
+            return not_added()
+    else:
+        got = None
+    if got is None:
+        if choice != "2" and not ask_yes("Paste the song instead?", default=True):
             return 1
-    text = draft.text if draft else read_pasted()
-    if not text.strip():
-        print("No song text, nothing added.")
-        return 1
-
-    cleaned = clean_song(text, marked=draft.marked if draft else False, ask=ask_chord_line)
-    print("\n" + "-" * 60 + "\n" + cleaned.body + "\n" + "-" * 60)
-    for note in cleaned.notes:
-        print(f"* {note}")
-    if not ask_yes("\nDoes the song look right?", default=True):
-        print("Nothing added. Tip: paste the song (option 2) and fix it by hand, or fix the file after adding it.")
-        return 1
+        text = read_pasted()
+        if not text.strip():
+            print("No song text, nothing added.")
+            return 1
+        cleaned = preview(text, marked=False)
+        if cleaned is None:
+            return not_added()
+        got = (None, cleaned)
+    draft, cleaned = got
 
     print()
     title = ask("Title", draft.title if draft else None)
@@ -261,7 +325,7 @@ def main():
 
     aliases = load_aliases()
     site_artist = (draft.artist or "").strip() if draft else ""
-    autor = ask("Author", alias_for(site_artist, aliases) if site_artist else "popular")
+    autor = ask("Author", alias_for(site_artist, aliases) if site_artist else searched_artist or "popular")
     if site_artist and autor and autor != alias_for(site_artist, aliases) and autor != site_artist:
         remember_alias(site_artist, autor)
     capo = ask("Capo (Enter for none)", (draft.capo if draft else None) or cleaned.capo)

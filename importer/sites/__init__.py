@@ -1,10 +1,12 @@
 """One reader per website. Each module has:
 
+    NAME = "Example"                # shown in search results
     DOMAINS = ("example.com",)      # matched against the end of the link's host
     def parse(page, url) -> Draft   # or a Follow(url) to read another page
 
 To support a new site, add a module here and list it in SITES. Pages from
 other sites go to `generic`, which takes the largest <pre> block.
+SITES is also the order of preference for search results (importer/search.py).
 """
 
 import re
@@ -13,7 +15,7 @@ from urllib.parse import urlparse
 from . import cifraclub, generic, lacuerda, ultimate_guitar
 from .common import Draft, Follow, SiteError
 
-SITES = [ultimate_guitar, cifraclub, lacuerda]
+SITES = [ultimate_guitar, lacuerda, cifraclub]
 
 __all__ = ["Draft", "Follow", "SiteError", "site_for", "saved_page_address", "SITES"]
 

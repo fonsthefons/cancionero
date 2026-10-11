@@ -8,6 +8,7 @@ from urllib.parse import urljoin
 
 from .common import Draft, Follow, PreText, SiteError, strip_tags
 
+NAME = "LaCuerda"
 DOMAINS = ("lacuerda.net",)
 
 

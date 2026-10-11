@@ -217,3 +217,18 @@
   sites, duplicates, aliases, live downloads). All pass.
 - Choices: kept Spotify-only links (source page not stored); a removed label leaves a
   verse break; doubtful chord lines default to "yes" when Enter is pressed.
+
+## 2026-10-11 — add_song.py option 3: search by title and artist
+
+- `importer/search.py`: DuckDuckGo plain-HTML search ("<title> <artist> acordes"; Google and
+  Bing only answer real browsers) + Ultimate Guitar's own search (Chords, artist match, most
+  voted first) as a second source. Drops results not mentioning the title/artist, merges the
+  same page under other addresses (UG tab ids, LaCuerda acordes./chords./.shtml, Cifra
+  .com/.com.br), max 3 per site, supported sites first in `SITES` order (now UG, LaCuerda,
+  Cifra Club: Cifra needs the browser engine, so last).
+- `add_song.py`: option 3 lists up to 8 results; Enter takes the first untried; a page that
+  can't be read, or a preview answered "no", goes back to the list (tried ones marked).
+- Generic reader now refuses pages without chords (akordes, bananacifras draw them with
+  JS); downloads detect the page's charset (losacordes.com is Windows-1252).
+- Tests: 6 offline ranking checks (fake search answers) + 5 live option-3 checks in
+  `scratch/add_song_test.py --network`; all 61 pass.

@@ -21,9 +21,17 @@ The easy way:
 venv/bin/python add_song.py
 ```
 
-It asks for a **link** to the song (Ultimate Guitar, Cifra Club, LaCuerda, or
-another site that shows the song as plain text; a page saved from the browser
-also works) or lets you **paste** it. It then:
+It offers three ways in:
+
+1. a **link** to the song (Ultimate Guitar, Cifra Club, LaCuerda, or another
+   site that shows the song as plain text; a page saved from the browser also works);
+2. **paste** the song;
+3. **search**: type the title and artist; it searches the web (DuckDuckGo) and
+   Ultimate Guitar and lists the best chord pages, supported sites first. Enter
+   takes the first; if a page can't be read, or you say the preview looks wrong,
+   pick the next one.
+
+It then:
 
 - tidies the text: spaces instead of tabs, no invisible or odd characters,
   section labels (`[Chorus]`, `Estribillo:`...) removed, `Intro:` at the top
@@ -145,6 +153,7 @@ web/       ─┘
 | `add_song.py` | Asks for a link or pasted song, writes the song file, rebuilds |
 | `importer/sites/` | One reader per website (`ultimate_guitar.py`, `cifraclub.py`, `lacuerda.py`, `generic.py`); add a module and list it in `SITES` to support a new site |
 | `importer/clean.py`, `chords.py`, `fetch.py` | Text cleanup, Spanish chord names → letters (keeping columns), downloading |
+| `importer/search.py` | Finds chord pages for a title + artist (DuckDuckGo + Ultimate Guitar search) |
 | `author_aliases.yaml` | Author names as sites write them → as the book writes them |
 | `builder/songs.py` | Reads song files (frontmatter + lyrics) and validates fields |
 | `builder/tags.py` | Loads `tags.yaml`, validates song tags, groups songs by tag |

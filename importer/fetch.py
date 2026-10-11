@@ -5,6 +5,7 @@ isn't a real browser; for those the page is opened in a headless Safari
 engine (WebKit, via Playwright), if it is installed. See `browser_available`.
 """
 
+import re
 import urllib.error
 import urllib.request
 
@@ -24,6 +25,21 @@ class Blocked(FetchError):
     """The site refuses plain downloads; a browser engine is needed."""
 
 
+def decode(data, charset=None):
+    """Page bytes to text: the server's charset, else the page's <meta charset>,
+    else UTF-8, falling back to Windows-1252 (older Spanish sites)."""
+    if not charset:
+        meta = re.search(rb"<meta[^>]+charset=[\"']?([\w-]+)", data[:4096], re.IGNORECASE)
+        charset = meta.group(1).decode("ascii") if meta else None
+    for encoding in (charset, "utf-8"):
+        if encoding:
+            try:
+                return data.decode(encoding)
+            except (UnicodeDecodeError, LookupError):
+                pass
+    return data.decode("cp1252", errors="replace")
+
+
 def download(url):
     request = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
@@ -32,8 +48,7 @@ def download(url):
     })
     try:
         with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
-            charset = response.headers.get_content_charset() or "utf-8"
-            return response.read().decode(charset, errors="replace")
+            return decode(response.read(), response.headers.get_content_charset())
     except urllib.error.HTTPError as e:
         if e.code in BLOCKED_CODES:
             raise Blocked(f"the site refused the download (error {e.code})") from e
