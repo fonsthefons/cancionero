@@ -163,3 +163,19 @@
   page, in order, with no page holding two song starts, for default print and for
   2 columns + no chords. Confirmed it FAILS on the previous build (146/150 and
   71/150) and passes now (150/150 both). Takes an optional path to a built page.
+
+## 2026-10-11 — Top bar stays put while pinch-zoomed
+
+- Pinch-zoom magnifies the page and the browser keeps sticky/fixed elements attached to
+  the unzoomed page, so the top bar grew and slid off screen. New `web/js/pinch-zoom.js`
+  follows `visualViewport` and sets `--unzoom` (translate to the zoomed view's corner +
+  scale 1/zoom); `styles.css` applies it to `.topbar` and `.drawer`. Not zoomed: no transform.
+- `session-drag.js`: converts between screen px and the (shrunk) menu's px so a dragged
+  row stays under the finger while zoomed.
+- `scratch/zoom_test.py` (Chromium mobile emulation, real pinch via CDP, phone + iPad):
+  bar at the view's top-left, full view width, normal height, follows scrolling; menu
+  fills the view; zoomed finger drag moves with the finger and reorders; back to normal
+  when unzoomed. Fails on the previous build (14 checks), passes now. Note: headless
+  Chromium maps synthetic touches without the zoom factor (`scratch/touch_probe.py`).
+- Not verifiable here: iOS Safari pinch (Playwright WebKit cannot pinch); during the
+  pinch gesture itself the bar may lag a moment before snapping into place.
