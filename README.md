@@ -1,73 +1,137 @@
 # Cancionero
 
-A song book with chords, built into **one self-contained `index.html`** (no
-internet needed once the page is saved in the browser) and published with
-GitHub Pages from the repo root.
+A song book with chords for guitar, as **one web page**: `index.html`.
+
+- Live at **https://fonsthefons.github.io/cancionero/** (works on phone, iPad and laptop).
+- The whole book is a single file with nothing to download separately, so once
+  the page is saved in the browser it works without internet.
+- Songs are plain text files in `songs/`. A small Python program turns them into
+  `index.html`, and GitHub Pages publishes that file whenever it changes.
+
+## Quick start
+
+| I want to... | Run |
+|---|---|
+| Set up my laptop (once) | see [Setup](#setup) |
+| Add a song (from a link, a search, or pasted) | `venv/bin/python add_song.py` |
+| Rebuild the book after editing a song by hand | `venv/bin/python build.py` |
+| See the result | open `index.html` in a browser (double-click it) |
+| Publish it to the website | `git add -A`, `git commit -m "Add <song>"`, `git push` |
+
+Run every command from inside the `cancionero` folder. On Windows, write
+`venv\Scripts\python` instead of `venv/bin/python`.
 
 ## Setup
 
+You need:
+
+- **Python 3.10 or newer.** Check with `python3 --version` (Windows: `py --version`).
+  If it's missing or older, install it from https://www.python.org/downloads/.
+- **Git.** Check with `git --version`. If it's missing, install it from
+  https://git-scm.com/downloads (on a Mac, running `git` offers to install it).
+- To publish: a GitHub account with write access to this repository.
+
+Then, in a terminal:
+
 ```bash
-gh repo clone fonsthefons/cancionero
+git clone https://github.com/fonsthefons/cancionero.git
 cd cancionero
 python3 -m venv venv
 venv/bin/pip install -r requirements.txt
+venv/bin/python build.py
 ```
+
+(On Windows, use `py -m venv venv` and `venv\Scripts\pip` / `venv\Scripts\python`.)
+
+The last command should print `Built index.html: ... songs`. You're ready.
+`venv/` is a private folder with this project's Python packages. It is not
+shared through Git, so every laptop creates its own with the commands above.
+
+## Publishing
+
+The website shows whatever `index.html` is on GitHub. After adding or editing songs:
+
+```bash
+git add -A
+git commit -m "Add Huracán"
+git push
+```
+
+About a minute later the site is updated. Reload the page on your phone to see
+it; if it still shows the old version, close the tab and open it again.
+Always commit the song files and `index.html` together.
 
 ## Adding a song
 
-The easy way:
+### With the script (recommended)
 
 ```bash
 venv/bin/python add_song.py
 ```
 
-It offers three ways in:
+It needs an internet connection and offers three ways in:
 
-1. a **link** to the song (Ultimate Guitar, Cifra Club, LaCuerda, or another
-   site that shows the song as plain text; a page saved from the browser also works);
-2. **paste** the song;
-3. **search**: type the title and artist; it searches the web (DuckDuckGo) and
-   Ultimate Guitar and lists the best chord pages, supported sites first. Enter
-   takes the first; if a page can't be read, or you say the preview looks wrong,
-   pick the next one.
+1. **Link**: paste the address of the song's page on Ultimate Guitar,
+   Cifra Club, LaCuerda, or another site that shows the song as plain text.
+   The path of a page saved from the browser also works.
+2. **Paste**: paste the song (chords above the lyrics), then type `END` on its own line.
+3. **Search**: type the title and the artist. It searches the web (DuckDuckGo)
+   and Ultimate Guitar and lists the best chord pages, your three sites first.
+   Enter takes the first; if a page can't be read, or you say the preview
+   looks wrong, the list comes back so you can try the next one.
 
 It then:
 
-- tidies the text: spaces instead of tabs, no invisible or odd characters,
-  section labels (`[Chorus]`, `Estribillo:`...) removed, `Intro:` at the top
-  (when the song has none, it adds one with the first chord: change it if needed);
-- turns Spanish chord names into letters (`LAm` → `Am`, `SOL` → `G`; "DO mi"
-  style reads lower case as minor), keeping every chord over its letter;
-- shows the result, then asks for title, author, capo (read from the site
-  when it has it), Spotify link and tags, warns if the song is already in the book;
-- looks the song up on Spotify and offers the tracks it finds (Enter takes the
-  first, a number picks another, `-` for none, or paste your own link). Each
-  one is checked with Spotify itself, so its title and artist really match;
-- writes `songs/<title>_<author>.md` and rebuilds `index.html`.
+- **tidies the song**: spaces instead of tabs, no invisible or odd characters,
+  section labels (`[Chorus]`, `Estribillo:`...) removed, `Intro:` with its chords
+  at the top (when the song has none, it adds one with the first chord: change
+  it if needed), capo read from the page when it has one;
+- **turns Spanish chord names into letters** (`LAm` → `Am`, `SOL` → `G`,
+  `Sib` → `Bb`; in the "DO mi" style, lower case means minor), keeping every
+  chord over its letter;
+- **shows you the result** and asks if it looks right;
+- **asks for the details**: title (it warns if the song is already in the
+  book), author, capo, Spotify link and tags (pick numbers from a list);
+- **finds the Spotify link**: it offers the matching tracks it finds, each one
+  checked with Spotify itself. Enter takes the first, a number picks another,
+  `-` means none, or paste your own link;
+- **writes** `songs/<title>_<author>.md` and **rebuilds** `index.html`.
 
-Commit the new song together with `index.html`. Authors are written the way
-you choose: if you change one (e.g. "Hakuna Group Music" → "Hakuna"), it is
-remembered in `author_aliases.yaml`. Cifra Club only opens in a real browser:
-the first time, the script offers to install a hidden one (about 100 MB).
+Then open `index.html` to check the song, and [publish](#publishing).
+If something needs fixing, edit the song file (see below) and run
+`venv/bin/python build.py` again.
 
-By hand:
+Good to know:
+
+- **Author names**: if you change an author's name (e.g. "Hakuna Group Music" →
+  "Hakuna"), the script remembers it in `author_aliases.yaml` and offers your
+  version next time.
+- **Cifra Club** only opens in a real browser. The first time you use it, the
+  script offers to install a hidden one (about 100 MB, once).
+- **Doubtful lines**: when pasting, a line like "La la la" could be lyrics or
+  chords, so the script asks. Enter means chords; type `n` when it's lyrics.
+- **"The web search is busy"**: after many searches in a short time the search
+  asks to prove you're human. Wait a few minutes, or use a link instead.
+- `venv/bin/python add_song.py --help` lists the options (`--no-build`, `--offline`).
+
+### By hand
 
 1. Copy `song_template.md` to `songs/<title>_<author>.md`
-   (lowercase, `_` instead of spaces; e.g. `songs/sopla_senor_popular.md`).
-2. Fill in the frontmatter and paste the lyrics.
-3. Run `venv/bin/python build.py` and commit `index.html` together with the song.
+   (lowercase, `_` instead of spaces, no accents; e.g. `songs/sopla_senor_popular.md`).
+2. Fill in the details at the top and paste the lyrics with chords.
+3. Run `venv/bin/python build.py`, check `index.html`, and [publish](#publishing).
 
 The build checks every song and stops with a list of every problem
-(unknown tag, typo in a field name, broken YAML...), so mistakes don't slip in silently.
+(unknown tag, typo in a field name, broken formatting...), so mistakes don't slip in silently.
 
-### Frontmatter
+### The details at the top of a song file
 
 ```yaml
 ---
 title: Sopla Señor          # required
 autor: popular              # optional, shown next to the title
 capo: "2"                   # optional, free text
-link: "https://..."         # optional, recording or sheet music (must start with http)
+link: "https://..."         # optional, Spotify or other recording (must start with http)
 song_tags:                  # optional, see "Tags" below
   misa:
     - comunion
@@ -81,20 +145,35 @@ accents and capitals are ignored (*Déjate* sorts as *dejate*), and ñ comes aft
 ### Lyrics and chords
 
 Write chords on their own line, above the lyric they belong to, aligned with
-**spaces** (tabs count as 2 spaces). A line counts as a chord line when every
-word on it is a chord (`G`, `Am`, `C#m7`, `Bb`, `Dsus4`, `D/F#`...) or a
-separator (`|`, `-`, `(`, `)`). A blank line starts a new verse.
+**spaces**. A line counts as a chord line when every word on it is a chord
+(`G`, `Am`, `C#m7`, `Bb`, `Dsus4`, `D/F#`...) or a separator (`|`, `-`, `(`, `)`).
+A blank line starts a new verse.
 
 ```
 G              C
 First line of lyrics
 ```
 
-Your spacing is kept exactly: the book uses a monospace font and never wraps
-lines, so a chord is always shown over the same letter as in the `.md` file,
-at any text size or zoom. Prefer spaces over tabs (a tab's width depends on the
-editor). Accents typed as two characters (letter + accent mark) are joined
-into one, which keeps them one column wide as the editor shows them.
+Your spacing is kept exactly: the book uses a fixed-width font and never wraps
+lines, so a chord is always shown over the same letter as in the file, at any
+text size or zoom. Prefer spaces over tabs, because a tab's width depends on
+the editor (the book counts a tab as 2 spaces).
+
+## Tags
+
+Tags and subtags are defined in **`tags.yaml`**. That file is the only place to
+edit when adding, renaming or reordering them; the book follows its order, and
+`add_song.py` lists them from there.
+
+| Tag | Subtags |
+|-----|---------|
+| `misa` | `entrada`, `gloria`, `aleluya`, `ofertorio`, `santo`, `cordero`, `comunion`, `salida` |
+| `alabanza` | `primer_ciclo`, `segundo_ciclo`, `tercer_ciclo`, `cuarto_ciclo` |
+| `adoracion` | none: use `adoracion: []` |
+| `tema` | `padre`, `cristo`, `espiritu`, `santo`, `martir`, `virgen` |
+
+A song can have several tags and several subtags per tag. A tag with subtags
+needs at least one. A song without tags only appears in *All Songs*.
 
 ## Using the book
 
@@ -127,22 +206,21 @@ into one, which keeps them one column wide as the editor shows them.
   single space apart (e.g. `D Em` → `D# Fm`) does the second one shift by the
   one column it needs.
 
-## Tags
+## Troubleshooting
 
-Tags and subtags are defined in **`tags.yaml`**. That file is the only place to
-edit when adding, renaming or reordering them; the book follows its order.
-
-| Tag | Subtags |
-|-----|---------|
-| `misa` | `entrada`, `gloria`, `aleluya`, `ofertorio`, `santo`, `cordero`, `comunion`, `salida` |
-| `alabanza` | `primer_ciclo`, `segundo_ciclo`, `tercer_ciclo`, `cuarto_ciclo` |
-| `adoracion` | none: use `adoracion: []` |
-| `tema` | `padre`, `cristo`, `espiritu`, `santo`, `martir`, `virgen` |
-
-A song can have several tags and several subtags per tag. A tag with subtags
-needs at least one.
+| Problem | What to do |
+|---|---|
+| `python3: command not found`, or a version below 3.10 | Install Python from https://www.python.org/downloads/, then redo the setup. |
+| `No such file or directory: venv/bin/python` | You're not in the `cancionero` folder (`cd cancionero`), or the setup wasn't run. |
+| `ModuleNotFoundError: No module named 'yaml'` | Run `venv/bin/pip install -r requirements.txt`. |
+| The build prints `Invalid songs:` | It lists each file and what's wrong (e.g. an unknown tag). Fix those files and build again. |
+| `git push` is refused | Run `git pull` first, then push again. If it says "permission denied", ask the owner for write access. |
+| The website still shows the old book | Wait a minute after pushing, then close and reopen the page. |
+| `add_song.py` can't read a page | Pick another search result, or open the page, copy the song and use option 2 (paste). |
 
 ## How it works
+
+This part is for changing the program itself; it isn't needed to add songs.
 
 ```
 songs/*.md ─┐
@@ -153,13 +231,13 @@ web/       ─┘
 | Path | What it is |
 |------|------------|
 | `build.py` | Entry point: loads, validates, renders, writes `index.html` |
-| `add_song.py` | Asks for a link or pasted song, writes the song file, rebuilds |
-| `importer/sites/` | One reader per website (`ultimate_guitar.py`, `cifraclub.py`, `lacuerda.py`, `generic.py`); add a module and list it in `SITES` to support a new site |
+| `add_song.py` | Asks for a link, a search or a pasted song, writes the song file, rebuilds |
+| `importer/sites/` | One reader per website (`ultimate_guitar.py`, `cifraclub.py`, `lacuerda.py`, `generic.py`); add a module and list it in `SITES` to support a new site (the list order is also the search preference) |
 | `importer/clean.py`, `chords.py`, `fetch.py` | Text cleanup, Spanish chord names → letters (keeping columns), downloading |
 | `importer/search.py` | Finds chord pages for a title + artist (DuckDuckGo + Ultimate Guitar search) |
 | `importer/spotify.py` | Finds the song's Spotify track (web search, checked on Spotify's embed page) |
 | `author_aliases.yaml` | Author names as sites write them → as the book writes them |
-| `builder/songs.py` | Reads song files (frontmatter + lyrics) and validates fields |
+| `builder/songs.py` | Reads song files (frontmatter + lyrics), validates fields, sorts in Spanish order |
 | `builder/tags.py` | Loads `tags.yaml`, validates song tags, groups songs by tag |
 | `builder/lyrics.py` | Detects chord lines and turns lyrics into HTML |
 | `builder/render.py` | Builds the HTML fragments and fills `web/template.html` |
@@ -170,9 +248,12 @@ web/       ─┘
 | `web/js/display.js` | Chords, columns, text size, theme |
 | `web/js/transpose.js` | Transposition that keeps chords in their columns |
 | `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
+| `web/js/search.js` | Song search (number, title, author, lyrics; ranked, with the matching line) |
 | `web/js/session.js` | Sing Session (list in the menu, + Session buttons) |
 | `web/js/session-drag.js` | Drag-and-drop reordering of the session (pointer events) |
-| `web/js/search.js`, `drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
+| `web/js/drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
+| `song_template.md` | Starting point for a song written by hand |
+| `PROGRESS.md` | Log of what was changed and why |
 
 ### Adding a browser feature
 
