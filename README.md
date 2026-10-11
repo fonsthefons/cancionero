@@ -63,6 +63,11 @@ into one, which keeps them one column wide as the editor shows them.
 - **☰ menu**: contents, plus settings: text size (A− / A+), chords and
   columns for the whole book, light/dark theme, keep the screen on, print.
   Settings are remembered on each device.
+- **Sing Session** (first in the ☰ menu): a list of songs to practise or play.
+  Add songs with its search box or the **+ Session** button on any song;
+  reorder with ↑ ↓, remove with ✕ (or tap **✓ In session** on the song), and
+  *Clear session* empties it. Tap a song in the list to jump to it. Remembered
+  on each device.
 - **Autoscroll** (top bar): ▶/⏸ starts and stops, − / + change the speed
   (1–10, remembered). Scrolling by hand or jumping to a song while it runs
   continues from there; it pauses while the menu is open and stops at the end.
@@ -112,6 +117,7 @@ web/       ─┘
 | `web/js/display.js` | Chords, columns, text size, theme |
 | `web/js/transpose.js` | Transposition that keeps chords in their columns |
 | `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
+| `web/js/session.js` | Sing Session (list in the menu, + Session buttons) |
 | `web/js/search.js`, `drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
 
 ### Adding a browser feature
@@ -125,6 +131,10 @@ web/       ─┘
    onAction("my-feature", (button, song) => { ... });
    ```
 3. Rebuild. Every file in `web/js/` is included automatically (`core.js` first).
+
+A `.search` box with `data-search="<action>"` turns its results into buttons
+that run that action with `data-song="<song id>"` (the Sing Session box uses
+`session-add`); without it, results jump to the song.
 
 For a show/hide or on/off option that works per song *and* for the whole book,
 use `songSetting(name, [default, alternative], onGlobalChange)` from `core.js`,

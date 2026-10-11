@@ -212,11 +212,11 @@ button:active {
 
 /* The results list spans the screen width, not just the narrowed box. */
 @media (max-width: 560px) {
-    .search {
+    .topbar .search {
         position: static;
     }
 
-    .search-results {
+    .topbar .search-results {
         left: var(--gutter);
         right: var(--gutter);
         top: calc(var(--topbar-height) - 2px);
@@ -254,8 +254,16 @@ button:active {
 
 .search-result {
     display: block;
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px 14px;
+    border: 0;
     border-bottom: 1px solid var(--border);
+    border-radius: 0;
+    background: none;
+    color: var(--ink);
+    font: inherit;
+    text-align: left;
 }
 
 .search-empty {
@@ -318,6 +326,97 @@ body.drawer-open {
     height: var(--topbar-height);
     background: var(--surface);
     font-family: var(--sans);
+}
+
+/* ---- Sing Session (first in the menu) ---- */
+
+.session {
+    padding-bottom: 12px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--border);
+}
+
+.session summary {
+    cursor: pointer;
+    list-style-position: inside;
+    padding: 6px 0;
+}
+
+.session summary h2 {
+    display: inline;
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.session-count {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.session-empty {
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    margin: 6px 0 10px;
+}
+
+.session-list {
+    margin: 4px 0 10px;
+    padding: 0;
+    list-style: none;
+    counter-reset: session;
+}
+
+.session-list li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 0;
+    counter-increment: session;
+}
+
+.session-list li::before {
+    content: counter(session) ".";
+    min-width: 1.6em;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.85rem;
+}
+
+.session-list a {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 0;
+    overflow-wrap: anywhere; /* long titles wrap instead of being cut */
+}
+
+.session-list button {
+    flex-shrink: 0;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 4px;
+}
+
+.session-list button:disabled {
+    opacity: 0.35;
+}
+
+/* Results show inline in the menu instead of floating. */
+.session-search .search-results {
+    position: static;
+    width: auto;
+    max-height: 45vh;
+    margin-top: 6px;
+    box-shadow: none;
+}
+
+.session-clear {
+    margin-top: 10px;
+}
+
+.session-clear[hidden],
+.session-empty[hidden] {
+    display: none;
 }
 
 .nav,
