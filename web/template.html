@@ -2,54 +2,78 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+<!-- No maximum-scale / user-scalable: pinch-zoom must always work. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Cancionero</title>
 <style>
 {{ css }}
 </style>
 </head>
-<body data-chords="show" data-columns="1">
+<body data-chords="show" data-columns="1" data-theme="auto">
 
-<!-- Sliding sidebar with search + table of contents -->
-<aside id="sidebar" class="sidebar">
+<!-- Top bar: always visible -->
+<header class="topbar">
+  <button class="icon-button" data-action="open-drawer" aria-label="Menu" aria-controls="drawer">☰</button>
+  <a class="topbar-title" href="#index">Cancionero</a>
   <div class="search">
-    <input type="search" placeholder="Search songs..." aria-label="Search songs">
-    <div class="search-results"></div>
+    <input type="search" placeholder="Search songs..." aria-label="Search songs" autocomplete="off">
+    <div class="search-results" hidden></div>
+  </div>
+</header>
+
+<!-- Menu drawer: table of contents + settings -->
+<div class="backdrop" data-action="close-drawer"></div>
+<aside id="drawer" class="drawer" aria-label="Menu">
+  <div class="drawer-header">
+    <strong>Menu</strong>
+    <button class="icon-button" data-action="close-drawer" aria-label="Close menu">✕</button>
   </div>
   {{ nav }}
+
+  <section class="settings" id="settings">
+    <h2>Settings</h2>
+    <div class="setting">
+      <span>Text size</span>
+      <div class="stepper">
+        <button data-action="text-smaller" aria-label="Smaller text">A−</button>
+        <button class="text-scale-value" data-action="text-reset" aria-label="Reset text size">100%</button>
+        <button data-action="text-bigger" aria-label="Bigger text">A+</button>
+      </div>
+    </div>
+    <div class="setting">
+      <span>Chords</span>
+      <button data-action="toggle-all-chords">Hide all chords</button>
+    </div>
+    <div class="setting">
+      <span>Columns</span>
+      <button data-action="toggle-all-columns">2 columns</button>
+    </div>
+    <div class="setting">
+      <span>Theme</span>
+      <button data-action="cycle-theme">Auto</button>
+    </div>
+    <div class="setting" data-requires="wake-lock" hidden>
+      <span>Keep screen on</span>
+      <button data-action="toggle-wake-lock" aria-pressed="false">Off</button>
+    </div>
+    <div class="setting">
+      <span>Print / PDF</span>
+      <button data-action="open-print">Print</button>
+    </div>
+  </section>
 </aside>
-<button id="sidebar-toggle" class="sidebar-toggle" data-action="toggle-sidebar" aria-label="Contenido">&lt;</button>
 
-<h1>Cancionero</h1>
-
-<nav class="top-nav">
-  <div class="search">
-    <input type="search" placeholder="Search songs..." aria-label="Search songs">
-    <div class="search-results"></div>
-  </div>
-  <h2>Contenido</h2>
-  {{ nav }}
-</nav>
-
-<!-- Index of songs by tag -->
-{{ tag_index }}
-
-<section id="all-songs">
-  <h2>All Songs</h2>
-  {{ all_songs_list }}
+<!-- Index of songs by tag; every section can be folded -->
+<section id="index" class="index">
+  <h1>Contenido</h1>
+  {{ tag_index }}
+  {{ all_songs }}
 </section>
 
-<h1>All Songs</h1>
 <main class="songs">
 {{ songs }}
 </main>
-
-<section class="settings" id="settings">
-  <h1>Settings WIP (desktop only)</h1>
-  <button data-action="toggle-all-chords">Hide all chords</button>
-  <button data-action="toggle-all-columns">2 columns</button>
-  <button data-action="open-print">Print</button>
-</section>
 
 <dialog id="print-dialog" class="print-dialog">
   <form method="dialog">

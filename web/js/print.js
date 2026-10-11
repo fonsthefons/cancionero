@@ -2,7 +2,10 @@
 
 const printDialog = document.getElementById("print-dialog");
 
-onAction("open-print", () => printDialog.showModal());
+onAction("open-print", () => {
+    setDrawerOpen(false);
+    printDialog.showModal();
+});
 
 printDialog.addEventListener("close", () => {
     if (printDialog.returnValue !== "print") return;
