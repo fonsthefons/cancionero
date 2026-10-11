@@ -83,3 +83,16 @@
   no JS errors.
 - `scratch/compare.py`: every chord/lyric line still identical to the original build.
 - Tools: `venv/bin/python -m playwright install webkit` (into `scratch/browsers/`).
+- Merged as PR #2 and deployed to https://fonsthefons.github.io/cancionero/ (live file
+  verified identical to the local build).
+
+## 2026-10-11 — Autoscroll
+
+- `web/js/autoscroll.js` + top-bar group: ▶/⏸, −, speed number, +. Speed 1–10
+  (6 px/s per step, default 3), remembered per device. Smooth requestAnimationFrame
+  scrolling with fractional positions; follows manual scrolls/jumps; pauses while the
+  menu is open; stops at the end of the page.
+- On screens ≤ 560px the "Cancionero" title is hidden to make room (Contenido is in
+  the menu) and search results span the screen width.
+- `scratch/ui_test.py`: 10 new autoscroll checks + top-bar fit on phone/iPad/laptop;
+  full suite passes in Chromium and WebKit.

@@ -63,6 +63,9 @@ into one, which keeps them one column wide as the editor shows them.
 - **☰ menu**: contents, plus settings: text size (A− / A+), chords and
   columns for the whole book, light/dark theme, keep the screen on, print.
   Settings are remembered on each device.
+- **Autoscroll** (top bar): ▶/⏸ starts and stops, − / + change the speed
+  (1–10, remembered). Scrolling by hand or jumping to a song while it runs
+  continues from there; it pauses while the menu is open and stops at the end.
 - **Per song**: show/hide chords, transpose (tap the number to reset), 1 or 2 columns.
 - **Text size**: each song is sized so its longest line fits the screen.
   A− / A+ scale that up or down; pinch-zoom always works too.
@@ -106,6 +109,7 @@ web/       ─┘
 | `web/js/core.js` | Shared helpers: `onAction`, `songSetting`, `prefs` (saved settings) |
 | `web/js/display.js` | Chords, columns, text size, theme |
 | `web/js/transpose.js` | Transposition that keeps chords in their columns |
+| `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
 | `web/js/search.js`, `drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
 
 ### Adding a browser feature
