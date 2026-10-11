@@ -727,10 +727,18 @@ body[data-columns="2"] .song:not([data-columns="1"]),
         padding: 0;
     }
 
+    /* Every song starts at the top of a new page; a long song simply
+       continues onto the following pages. */
     .song {
-        margin: 0 0 12mm;
+        margin: 0;
         padding: 0;
-        break-inside: avoid;
+        break-before: page;
+    }
+
+    /* Never leave a title (or its meta line) alone at the bottom of a page. */
+    .song h3,
+    .song-meta {
+        break-after: avoid;
     }
 
     /* The print dialog choices win over on-screen settings */
