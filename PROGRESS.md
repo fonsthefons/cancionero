@@ -252,3 +252,14 @@
   the same track offered first for 10, among the 3 offered for 2, the same song by the
   same artist (another release) for 3, nothing found for 5 (e.g. "10000 razones" is
   "10,000 Reasons" on Spotify); never a wrong song.
+
+## 2026-10-11 — README for newcomers
+
+- Rewrote the top of `README.md`: what the project is, a Quick start table (setup, add a
+  song, rebuild, preview, publish), Setup with prerequisites (Python 3.10+ (needed for
+  `X | None` annotations), Git, GitHub write access) and plain `git clone` instead of
+  `gh`, Windows paths, a Publishing section, the add_song.py walkthrough (all 3 options,
+  Spotify, aliases, Cifra Club browser, doubtful lines, busy search), Troubleshooting.
+  Developer details kept under "How it works".
+- Verified the setup steps on a fresh clone in scratch/ (clone, venv, install, build,
+  add_song.py --help): all work. `requirements.txt` got its missing final newline.
