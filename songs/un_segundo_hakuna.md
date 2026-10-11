@@ -1,10 +1,8 @@
 ---
-fname: un_segundo_hakuna
 title: Un Segundo
 autor: Hakuna
 link: "https://open.spotify.com/track/6WTdsYUlvy5HX6r8pj2f0r?si=ce68e22403f04743"
 capo: 0
-capo_notes: []
 song_tags:
   adoracion: []
   misa:

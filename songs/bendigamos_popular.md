@@ -1,5 +1,4 @@
 ---
-fname: bendigamos_popular
 title: Bendigamos
 autor: popular
 link: "https://open.spotify.com/track/3PuxJaqVeuKJazZLm3p4fv?si=b0628bf6a6e04110"

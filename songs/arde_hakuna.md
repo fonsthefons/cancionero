@@ -1,5 +1,4 @@
 ---
-fname: arde_hakuna
 title: Arde
 autor: Hakuna
 link: "https://open.spotify.com/track/0VxQq9ZDmkwllwhYZqucwB?si=e98fde2e5a1449f3"

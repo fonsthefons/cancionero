@@ -1,5 +1,4 @@
 ---
-fname: jesus_have_it_all_jeremy_riddle
 title: Jesus have it all
 autor: Jeremy Riddle
 link: "https://open.spotify.com/track/0wiYqRXy97hVdhy8xDVH9V?si=d0aa9e33a0014fef"

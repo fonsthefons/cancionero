@@ -1,5 +1,4 @@
 ---
-fname: id_y_anunciad_batah
 title: Id y anunciad
 autor: Batah
 link: "https://open.spotify.com/track/6gWeJfTauQUT1oqbQcMXf8?si=9d25c06579cd4549"

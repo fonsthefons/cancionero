@@ -1,5 +1,4 @@
 ---
-fname: here_i_am_lord_popular
 title: Here I am Lord
 autor: popular
 link: "https://open.spotify.com/track/4DD6ZtAFlF1XYo7WTML8tR?si=0f1e1b4af8ca4f88"

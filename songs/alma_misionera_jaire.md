@@ -1,5 +1,4 @@
 ---
-fname: alma_misionera_jaire
 title: Alma Misionera
 autor: Jaire
 link: "https://open.spotify.com/track/76WoWcaAKowjgSEgWCeVaM?si=c98e4521bfd24824"

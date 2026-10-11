@@ -1,10 +1,8 @@
 ---
-fname: ven_espiritu_divino_schoenstatt
 title: Ven Espíritu Divino
 autor: Schoenstatt
 link: "https://open.spotify.com/track/5EOuojJVIrVyHcMoMVjQQB?si=a76b2cec4b4d416e"
 capo: 0
-capo_notes: []
 song_tags:
   adoracion: []
   misa: 

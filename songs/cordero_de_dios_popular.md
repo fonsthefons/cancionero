@@ -1,10 +1,8 @@
 ---
-fname: cordero_de_dios_popular
 title: Cordero de Dios
 autor: popular
 link: "0, 0-5"
 capo: 0
-capo_notes: []
 song_tags:
   misa: 
     - cordero

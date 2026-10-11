@@ -1,5 +1,4 @@
 ---
-fname: eres_testigo_anonimo
 title: Eres Testigo
 autor: anonimo
 link: ""

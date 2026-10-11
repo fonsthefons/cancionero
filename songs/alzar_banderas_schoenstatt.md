@@ -1,5 +1,4 @@
 ---
-fname: alzar_banderas_schoenstatt
 title: Alzar Banderas
 autor: Schoenstatt
 link: "https://open.spotify.com/track/3HQV64JXWIB9IhsGqH42U6?si=00782cadb10c4896"

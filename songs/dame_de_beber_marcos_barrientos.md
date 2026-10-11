@@ -1,5 +1,4 @@
 ---
-fname: dame_de_beber_marcos_barrientos
 title: Dame de Beber
 autor: Marcos Barrientos
 link: "https://open.spotify.com/track/0EN7bQ4CwdbWHRdelmC6I6?si=d06d49473867466e"

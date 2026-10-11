@@ -1,5 +1,4 @@
 ---
-fname: el_rey_de_mi_vida_popular
 title: El Rey de mi Vida
 autor: popular
 link: "https://open.spotify.com/track/6wW6BtRHIvhGorNwE5TTI0?si=74664460ba5347cf"

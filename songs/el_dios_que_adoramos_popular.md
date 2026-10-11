@@ -1,5 +1,4 @@
 ---
-fname: el_dios_que_adoramos_popular
 title: El Dios que adoramos
 autor: popular
 link: "https://open.spotify.com/track/5hD2l9T4gX5N1c7G0ABZV8?si=c2c59de24fc9460a"

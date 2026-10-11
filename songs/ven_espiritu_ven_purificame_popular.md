@@ -1,6 +1,5 @@
 ---
 
-fname: ven_espiritu_ven_purificame_popular
 title: Ven Espíritu Ven (Purifícame)
 autor: popular
 link: ""

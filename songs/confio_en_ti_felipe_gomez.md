@@ -1,5 +1,4 @@
 ---
-fname: confio_en_ti_felipe_gomez
 title: Confío en Ti
 autor: Felipe Gomez
 link: "https://open.spotify.com/track/6ODiSmpQBjQbGvLrNLwSQj?si=52a2e6e2bf344d1e"

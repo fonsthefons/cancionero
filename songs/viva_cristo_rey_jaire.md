@@ -1,5 +1,4 @@
 ---
-fname: viva_cristo_rey_jaire
 title: Viva Cristo Rey
 autor: Jaire
 link: "https://open.spotify.com/track/4p4FTS0SfIIca9nuixNEjv?si=8e3785ceec274316"

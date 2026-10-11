@@ -1,5 +1,4 @@
 ---
-fname: hermoso_nombre_hillsong
 title: Hermoso Nombre
 autor: Hillsong
 link: "https://open.spotify.com/track/7HAxoYUvYynHfn4vQFJr6d?si=fdb6b971cfa748fe"

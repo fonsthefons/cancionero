@@ -1,10 +1,8 @@
 ---
-fname: cirineo_hakuna
 title: Cirineo
 autor: Hakuna
 link: "https://open.spotify.com/track/4ofyi2MTkppGdaHViln62J?si=bf79292de21d4b94"
 capo: "2, 0-4, original 4"
-capo_notes: ["to be checked/Fixed"]
 song_tags:
   misa: 
     - comunion

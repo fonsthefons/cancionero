@@ -1,5 +1,4 @@
 ---
-fname: ruah_popular
 title: RUAH
 autor: popular
 link: ""

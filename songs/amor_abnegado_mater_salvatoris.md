@@ -1,5 +1,4 @@
 ---
-fname: amor_abnegado_mater_salvatoris
 title: Amor abnegado
 autor: Mater Salvatoris
 link: "https://open.spotify.com/track/63EtpshVyJrUUNFkFhOILn?si=86962b9b30ba48db"

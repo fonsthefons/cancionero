@@ -1,10 +1,8 @@
 ---
-fname: preparad_el_camino_al_senor_popular
 title: Preparad el camino al Señor
 autor: popular
 link: "https://open.spotify.com/track/5fsIs9aChU6Htidl3fP7Ah?si=d0243cdc0f57461f"
 capo: 0
-capo_notes: []
 song_tags:
   misa: 
     - entrada

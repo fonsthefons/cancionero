@@ -1,10 +1,8 @@
 ---
-fname: quedate_senor_fray_nacho
 title: Quédate Señor
 autor: Fray Nacho
 link: "https://open.spotify.com/track/6GrCddLDUnSz87QLLpyyb9?si=2edd9f70328044df"
 capo: 0
-capo_notes: ["to be checked"]
 song_tags:
   misa: 
     - comunion
