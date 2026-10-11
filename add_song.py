@@ -24,6 +24,7 @@ from builder.tags import Taxonomy
 from importer.clean import clean_song
 from importer.fetch import Blocked, FetchError, browser_available, fetch
 from importer.search import search
+from importer.spotify import find_tracks
 from importer.sites import Follow, SiteError, saved_page_address, site_for
 
 ROOT = Path(__file__).parent
@@ -188,6 +189,33 @@ def remember_alias(site_name, book_name):
     print(f'Remembered: "{site_name}" will be written "{book_name}" next time.')
 
 
+def ask_spotify(title, autor, offline=False):
+    """Look the song up on Spotify and offer what's found; the chosen link or ''."""
+    tracks = []
+    if not offline:
+        print("Looking for it on Spotify...")
+        try:
+            tracks = find_tracks(title, autor)
+        except FetchError as e:
+            print(f"Couldn't look it up: {e}.")
+    if not tracks:
+        if not offline:
+            print("Not found on Spotify; you can paste a link.")
+        link = ask("Spotify link (Enter for none)")
+    else:
+        print("Found on Spotify:")
+        for number, track in enumerate(tracks, start=1):
+            print(f"  {number}  {track.label}\n     {track.url}")
+        link = ask("Spotify link: a number, another link, or - for none", "1")
+        if link == "-":
+            return ""
+        if link.isdigit() and 1 <= int(link) <= len(tracks):
+            return tracks[int(link) - 1].url
+    while link and not re.match(r"https?://", link):
+        link = ask("The link must start with https:// (Enter for none)")
+    return link
+
+
 def ask_tags(taxonomy):
     choices = []
     for tag in taxonomy.tags.values():
@@ -278,6 +306,7 @@ def main():
     parser.add_argument("--songs-dir", type=Path, default=build.SONGS_DIR, help=argparse.SUPPRESS)
     parser.add_argument("--aliases-file", type=Path, default=ALIASES_FILE, help=argparse.SUPPRESS)
     parser.add_argument("--no-build", action="store_true", help="don't rebuild index.html afterwards")
+    parser.add_argument("--offline", action="store_true", help="don't look for a Spotify link")
     args = parser.parse_args()
     songs_dir = args.songs_dir
     ALIASES_FILE = args.aliases_file
@@ -329,9 +358,7 @@ def main():
     if site_artist and autor and autor != alias_for(site_artist, aliases) and autor != site_artist:
         remember_alias(site_artist, autor)
     capo = ask("Capo (Enter for none)", (draft.capo if draft else None) or cleaned.capo)
-    link = ask("Spotify link (Enter for none)")
-    while link and not re.match(r"https?://", link):
-        link = ask("The link must start with https:// (Enter for none)")
+    link = ask_spotify(title, autor, offline=args.offline)
     tags = ask_tags(taxonomy)
 
     path = free_path(songs_dir, slug(title) + "_" + slug(autor or "popular"))
