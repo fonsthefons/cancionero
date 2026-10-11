@@ -15,6 +15,32 @@ venv/bin/pip install -r requirements.txt
 
 ## Adding a song
 
+The easy way:
+
+```bash
+venv/bin/python add_song.py
+```
+
+It asks for a **link** to the song (Ultimate Guitar, Cifra Club, LaCuerda, or
+another site that shows the song as plain text; a page saved from the browser
+also works) or lets you **paste** it. It then:
+
+- tidies the text: spaces instead of tabs, no invisible or odd characters,
+  section labels (`[Chorus]`, `Estribillo:`...) removed, `Intro:` at the top
+  (when the song has none, it adds one with the first chord: change it if needed);
+- turns Spanish chord names into letters (`LAm` → `Am`, `SOL` → `G`; "DO mi"
+  style reads lower case as minor), keeping every chord over its letter;
+- shows the result, then asks for title, author, capo (read from the site
+  when it has it), Spotify link and tags, warns if the song is already in the book;
+- writes `songs/<title>_<author>.md` and rebuilds `index.html`.
+
+Commit the new song together with `index.html`. Authors are written the way
+you choose: if you change one (e.g. "Hakuna Group Music" → "Hakuna"), it is
+remembered in `author_aliases.yaml`. Cifra Club only opens in a real browser:
+the first time, the script offers to install a hidden one (about 100 MB).
+
+By hand:
+
 1. Copy `song_template.md` to `songs/<title>_<author>.md`
    (lowercase, `_` instead of spaces; e.g. `songs/sopla_senor_popular.md`).
 2. Fill in the frontmatter and paste the lyrics.
@@ -116,6 +142,10 @@ web/       ─┘
 | Path | What it is |
 |------|------------|
 | `build.py` | Entry point: loads, validates, renders, writes `index.html` |
+| `add_song.py` | Asks for a link or pasted song, writes the song file, rebuilds |
+| `importer/sites/` | One reader per website (`ultimate_guitar.py`, `cifraclub.py`, `lacuerda.py`, `generic.py`); add a module and list it in `SITES` to support a new site |
+| `importer/clean.py`, `chords.py`, `fetch.py` | Text cleanup, Spanish chord names → letters (keeping columns), downloading |
+| `author_aliases.yaml` | Author names as sites write them → as the book writes them |
 | `builder/songs.py` | Reads song files (frontmatter + lyrics) and validates fields |
 | `builder/tags.py` | Loads `tags.yaml`, validates song tags, groups songs by tag |
 | `builder/lyrics.py` | Detects chord lines and turns lyrics into HTML |
