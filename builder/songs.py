@@ -85,6 +85,10 @@ def load_song(path):
             f"(allowed: {', '.join(sorted(REQUIRED_FIELDS | OPTIONAL_FIELDS))})"
         )
 
+    link = optional_text(meta.get("link"))
+    if link and not re.match(r"https?://", link):
+        raise SongError(f'link must be a web address starting with http:// or https:// (got "{link}")')
+
     return Song(
         id=path.stem,
         title=str(meta["title"]).strip(),
@@ -92,7 +96,7 @@ def load_song(path):
         tags=parse_tags(meta.get("song_tags")),
         autor=optional_text(meta.get("autor")),
         capo=optional_text(meta.get("capo")),
-        link=optional_text(meta.get("link")),
+        link=link,
     )
 
 

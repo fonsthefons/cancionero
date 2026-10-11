@@ -30,7 +30,7 @@ The build checks every song and stops with a list of every problem
 title: Sopla Señor          # required
 autor: popular              # optional, shown next to the title
 capo: "2"                   # optional, free text
-link: "https://..."         # optional, recording or sheet music
+link: "https://..."         # optional, recording or sheet music (must start with http)
 song_tags:                  # optional, see "Tags" below
   misa:
     - comunion
@@ -77,6 +77,9 @@ into one, which keeps them one column wide as the editor shows them.
   ☰ → *Song changes → Reset all* puts every song back as written.
 - **Text size**: each song is sized so its longest line fits the screen.
   A− / A+ scale that up or down; pinch-zoom always works too.
+- **Printing / PDF** (☰ → Print, or the browser's print): the index is always
+  printed fully unfolded, its entries are clickable links to the songs inside
+  the PDF, and each song's *Link* stays a clickable web link.
 - **Transposing** keeps every chord on its letter. Only when two chords are a
   single space apart (e.g. `D Em` → `D# Fm`) does the second one shift by the
   one column it needs.
