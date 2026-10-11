@@ -266,6 +266,18 @@ button:active {
     text-align: left;
 }
 
+/* The lyric line a song was found by, under its title. */
+.search-snippet {
+    display: block;
+    margin-top: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.85em;
+    font-style: italic;
+    color: var(--muted);
+}
+
 .search-empty {
     padding: 12px 14px;
     color: var(--muted);

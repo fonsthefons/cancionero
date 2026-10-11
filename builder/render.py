@@ -105,8 +105,10 @@ def song_meta_html(song):
 
 def song_html(song, controls):
     # --chars (widest line) lets CSS size the lyrics so every line fits the screen.
+    # data-title / data-autor: plain values for the session list and search.
+    autor = f' data-autor="{escape(song.autor)}"' if song.autor else ""
     return (
-        f'<article class="song" id="{song.anchor}" data-title="{escape(song.title)}" '
+        f'<article class="song" id="{song.anchor}" data-title="{escape(song.title)}"{autor} '
         f'style="--chars: {lyrics_columns(song.body)}">\n'
         f"<h3>{escape(song_label(song))}</h3>\n"
         f"{song_meta_html(song)}\n"
