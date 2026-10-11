@@ -180,3 +180,15 @@
   came after Dulce locura. 16 songs renumbered (Déjate, Quédate Señor, Ven Espíritu...);
   saved per-song changes and the session are keyed by file name, so unaffected.
 - `scratch/sort_check.py`: key unit checks + list of moved songs. Full UI and PDF suites pass.
+
+## 2026-10-11 — Better search
+
+- `web/js/search.js`: searches lyric lines only (before, chord lines were glued to the
+  lyrics, so phrases across lines failed and chord names matched), plus title, author
+  (`data-autor`, added by `builder/render.py`) and song number. Accents, case and
+  punctuation ignored; every typed word must appear, in any order, prefixes OK. Ranked:
+  number, title start, title, author, exact phrase in lyrics, scattered words. Lyric
+  matches show the matching line (`.search-snippet`). No extra data in the file.
+- `scratch/search_test.py`: old vs new on real queries ("padre abba" 0 -> 1, "senor,
+  jesus" 0 -> 16, phrase across two lines 0 -> 1, "31" -> song 31 only), ranking,
+  snippets, session box, and speed: slowest keystroke 10 ms with 6x slower CPU.

@@ -64,6 +64,10 @@ into one, which keeps them one column wide as the editor shows them.
 - **☰ menu**: contents, plus settings: text size (A− / A+), chords and
   columns for the whole book, light/dark theme, keep the screen on, print.
   Settings are remembered on each device.
+- **Search** (top bar, and the Sing Session box): type a song number, or any
+  words from the title, author or lyrics, in any order and without accents
+  ("padre abba", "senor jesus"); the start of a word is enough. Title matches
+  come first, then authors, then lyrics, which show the line they were found in.
 - **Sing Session** (first in the ☰ menu): a list of songs to practise or play.
   Add songs with its search box or the **+ Session** button on any song;
   reorder by dragging the **⠿** handle (or ↑/↓ keys on a focused handle),
