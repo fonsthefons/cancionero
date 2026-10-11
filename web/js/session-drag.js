@@ -18,9 +18,7 @@ let sessionDrag = null;
 
 function sessionDragLayout() {
     const d = sessionDrag;
-    // Pointer and rects are in screen px; transforms and scrollTop are in the
-    // menu's own px, which differ by d.scale while pinch-zoomed (pinch-zoom.js).
-    const scrolled = (sessionScroller.scrollTop - d.startScroll) * d.scale;
+    const scrolled = sessionScroller.scrollTop - d.startScroll;
     const dy = d.pointerY - d.startY + scrolled;
     const from = d.from;
     const center = d.rects[from].top + d.rects[from].height / 2 + dy;
@@ -35,13 +33,13 @@ function sessionDragLayout() {
     }
     d.to = to;
 
-    d.item.style.transform = `translateY(${dy / d.scale}px)`;
+    d.item.style.transform = `translateY(${dy}px)`;
     d.items.forEach((item, i) => {
         if (i === from) return;
         let shift = 0;
         if (from < i && i <= to) shift = -d.step;
         if (to <= i && i < from) shift = d.step;
-        item.style.transform = shift ? `translateY(${shift / d.scale}px)` : "";
+        item.style.transform = shift ? `translateY(${shift}px)` : "";
     });
 }
 
@@ -91,7 +89,6 @@ sessionList.addEventListener("pointerdown", (event) => {
         startY: event.clientY,
         pointerY: event.clientY,
         startScroll: sessionScroller.scrollTop,
-        scale: sessionScroller.getBoundingClientRect().width / sessionScroller.offsetWidth || 1,
         pointerId: event.pointerId,
     };
     handle.setPointerCapture(event.pointerId);
