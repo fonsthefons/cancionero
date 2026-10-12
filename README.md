@@ -218,6 +218,9 @@ needs at least one. A song without tags only appears in *All Songs*.
 - **Chord names** (☰ → Settings): letters (C D E…) or Do Re Mi (Do Re Mi Fa
   Sol La Si: `Em` → `Mim`, `D/F#` → `Re/Fa#`). Works with transposing, and
   chords keep their columns the same way. Remembered on each device.
+- **Contents** (top of the page): the tags (Misa, Adoración…) and their
+  subtags start folded; tap one to open it. *All Songs* starts open. A link
+  from the ☰ menu opens the section it points to.
 - **☰ menu**: contents, plus settings: text size (A− / A+), chords and
   columns for the whole book, light/dark theme, keep the screen on, print.
   Settings are remembered on each device.

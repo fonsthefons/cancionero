@@ -338,3 +338,11 @@
 - Checks: `scratch/ui_test.py` now also checks Do Re Mi on every device (alignment, fit;
   10,512 chords renamed, 1,156 shifted only where chords are 1 space apart; back to letters
   restores every line; transposing and reload). `scratch/offline_test.py` checks the tip.
+
+## 2026-10-12 — Index tags folded by default
+
+- Tags and subtags in the Contents start folded (`builder/render.py`: `collapsible` is
+  folded unless `open_=True`); All Songs stays open (choice: it's the full list).
+- Printing already unfolds every section (`web/js/print.js`), so the PDF is unchanged.
+- Checks: `scratch/pdf_test.py` (all 22 sections folded, every section and all 620 index
+  links in the PDF, folds restored after printing); `scratch/ui_test.py` passes.

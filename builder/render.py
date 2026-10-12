@@ -41,10 +41,10 @@ def song_list(songs):
     return '<ul class="song-list">\n' + "\n".join(map(song_link, songs)) + "\n</ul>"
 
 
-def collapsible(anchor, heading_tag, title, body, css_class):
-    """A section that can be folded away; open by default."""
+def collapsible(anchor, heading_tag, title, body, css_class, open_=False):
+    """A section that can be folded away; folded by default (printing unfolds all)."""
     return (
-        f'<details class="{css_class}" id="{anchor}" open>'
+        f'<details class="{css_class}" id="{anchor}"{" open" if open_ else ""}>'
         f"<summary><{heading_tag}>{escape(title)}</{heading_tag}></summary>\n"
         f"{body}\n</details>"
     )
@@ -139,7 +139,9 @@ def render_book(songs, groups, web_dir):
             ),
             "nav": nav_html(groups),
             "tag_index": tag_index_html(groups),
-            "all_songs": collapsible("all-songs", "h2", "All Songs", song_list(songs), "tag-index"),
+            "all_songs": collapsible(
+                "all-songs", "h2", "All Songs", song_list(songs), "tag-index", open_=True
+            ),
             "songs": "\n".join(song_html(song, controls) for song in songs),
         },
     )
