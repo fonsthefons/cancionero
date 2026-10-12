@@ -14,6 +14,7 @@ A song book with chords for guitar, as **one web page**: `index.html`.
 |---|---|
 | Set up my laptop (once) | see [Setup](#setup) |
 | Add a song (from a link, a search, or pasted) | `venv/bin/python add_song.py` |
+| Add a list of songs | `venv/bin/python add_songs.py Want.txt --section Want --report Checked.txt` |
 | Rebuild the book after editing a song by hand | `venv/bin/python build.py` |
 | See the result | open `index.html` in a browser (double-click it) |
 | Publish it to the website | `git add -A`, `git commit -m "Add <song>"`, `git push` |
@@ -85,7 +86,9 @@ It then:
 - **tidies the song**: spaces instead of tabs, no invisible or odd characters,
   section labels (`[Chorus]`, `Estribillo:`...) removed, `Intro:` with its chords
   at the top (when the song has none, it adds one with the first chord: change
-  it if needed), capo read from the page when it has one;
+  it if needed), capo read from the page when it has one; from web pages it
+  also drops comments people leave (greetings, e-mails, "música y letra..."),
+  titles above the first chords and chord-less text after the song;
 - **turns Spanish chord names into letters** (`LAm` → `Am`, `SOL` → `G`,
   `Sib` → `Bb`; in the "DO mi" style, lower case means minor), keeping every
   chord over its letter;
@@ -113,6 +116,34 @@ Good to know:
 - **"The web search is busy"**: after many searches in a short time the search
   asks to prove you're human. Wait a few minutes, or use a link instead.
 - `venv/bin/python add_song.py --help` lists the options (`--no-build`, `--offline`).
+
+### Many songs at once
+
+Write the songs in a text file, one per line as `Title - Artist` (or just
+`Title`), then:
+
+```bash
+venv/bin/python add_songs.py Want.txt --section Want --report Checked.txt
+```
+
+It does the same as the search option of `add_song.py` for each song, but
+without questions: it picks the best chord page, cleans the song, finds a
+Spotify link (or a YouTube one if the song isn't on Spotify), writes the file
+with **no tags** (add them by hand) and rebuilds the book. When it isn't sure,
+it creates nothing and says why: the song is already in the book, no chord page
+with that title (and artist) was found, or, with no artist given, the pages
+found are by different artists. Then add the artist and try again.
+
+- `--section Want` reads only the lines under a `Want` heading, so other
+  sections (e.g. `NOT YET:`) can stay in the same file.
+- `--report Checked.txt` adds the results to that file, under `claude-added:`
+  and `claude-uncertain:` (with the reasons).
+- It pauses between songs so the web search doesn't get busy: about half a
+  minute per song.
+
+Check each new song in `index.html` before publishing: chord sites sometimes
+contain mistakes, and comments people leave on them are removed only when
+they look like comments.
 
 ### By hand
 
@@ -232,6 +263,9 @@ web/       ─┘
 |------|------------|
 | `build.py` | Entry point: loads, validates, renders, writes `index.html` |
 | `add_song.py` | Asks for a link, a search or a pasted song, writes the song file, rebuilds |
+| `add_songs.py` | Adds a list of songs without questions (search, choose, clean, link), rebuilds |
+| `importer/read.py` | Reads a song from a link (site reader, redirects, browser engine when blocked) |
+| `importer/youtube.py` | Finds a YouTube video for songs not on Spotify (checked with YouTube's oEmbed) |
 | `importer/sites/` | One reader per website (`ultimate_guitar.py`, `cifraclub.py`, `lacuerda.py`, `generic.py`); add a module and list it in `SITES` to support a new site (the list order is also the search preference) |
 | `importer/clean.py`, `chords.py`, `fetch.py` | Text cleanup, Spanish chord names → letters (keeping columns), downloading |
 | `importer/search.py` | Finds chord pages for a title + artist (DuckDuckGo + Ultimate Guitar search) |

@@ -71,8 +71,13 @@ def duckduckgo(query):
 
 
 def ultimate_guitar(title, artist):
-    page = download("https://www.ultimate-guitar.com/search.php?search_type=title&value="
-                    + urllib.parse.quote(title))
+    try:
+        page = download("https://www.ultimate-guitar.com/search.php?search_type=title&value="
+                        + urllib.parse.quote(title))
+    except FetchError as e:
+        if "404" in str(e):  # Ultimate Guitar answers "nothing found" with a 404
+            return []
+        raise
     store = re.search(r'class="js-store"\s+data-content="([^"]*)"', page)
     if not store:
         return []

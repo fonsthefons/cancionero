@@ -22,10 +22,11 @@ import build
 from builder.songs import SongError, load_song, spanish_sort_key
 from builder.tags import Taxonomy
 from importer.clean import clean_song
-from importer.fetch import Blocked, FetchError, browser_available, fetch
+from importer.fetch import Blocked, FetchError, browser_available
+from importer.read import read_song
 from importer.search import search
+from importer.sites import SiteError
 from importer.spotify import find_tracks
-from importer.sites import Follow, SiteError, saved_page_address, site_for
 
 ROOT = Path(__file__).parent
 ALIASES_FILE = ROOT / "author_aliases.yaml"
@@ -71,32 +72,18 @@ def ask_chord_line(line):
 # ---------- getting the song ----------
 
 def from_link(link):
-    """(Draft, link) from a link or a saved page, or None on failure."""
-    use_browser = False
-    for _ in range(3):  # a site may send us to the page that holds the song
+    """Draft from a link or a saved page, or None on failure."""
+    try:
         try:
-            path = Path(link).expanduser()
-            if path.is_file():  # a page saved from the browser
-                page = path.read_text(encoding="utf-8")
-                link = saved_page_address(page) or link
-            else:
-                page = fetch(link, use_browser)
-            draft = site_for(link).parse(page, link)
+            return read_song(link)
         except Blocked:
-            if use_browser or not offer_browser():
+            if not offer_browser():
                 print("Tip: open the page, copy the song, then choose option 2 and paste it.")
                 return None
-            use_browser = True
-            continue
-        except (FetchError, SiteError, OSError) as e:
-            print(f"Couldn't read the song: {e}.")
-            return None
-        if isinstance(draft, Follow):
-            link = draft.url
-            continue
-        return draft
-    print("Couldn't find the song on that page.")
-    return None
+            return read_song(link, use_browser=True)
+    except (FetchError, SiteError, OSError) as e:
+        print(f"Couldn't read the song: {e}.")
+        return None
 
 
 def offer_browser():
@@ -116,9 +103,9 @@ def offer_browser():
     return browser_available()
 
 
-def preview(text, marked):
+def preview(text, marked, from_web=True):
     """Clean the song and show it. The cleaned song if it looks right, else None."""
-    cleaned = clean_song(text, marked=marked, ask=ask_chord_line)
+    cleaned = clean_song(text, marked=marked, ask=ask_chord_line, from_web=from_web)
     print("\n" + "-" * 60 + "\n" + cleaned.body + "\n" + "-" * 60)
     for note in cleaned.notes:
         print(f"* {note}")
@@ -338,7 +325,7 @@ def main():
         if not text.strip():
             print("No song text, nothing added.")
             return 1
-        cleaned = preview(text, marked=False)
+        cleaned = preview(text, marked=False, from_web=False)
         if cleaned is None:
             return not_added()
         got = (None, cleaned)
