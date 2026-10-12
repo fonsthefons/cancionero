@@ -280,3 +280,27 @@
   mostly no chord page online (niche songs), or too few matching lines.
 - libre_miel_san_marcos: every line already has chords, nothing added.
 - First pass put No tengo miedo in D although the note says F: fixed by reading note chords.
+
+## 2026-10-12 — add_songs.py: add a list of songs without questions (PR, not merged)
+
+- `add_songs.py LIST --section NAME --report FILE`: one song per line ("Title - Artist");
+  per song: duplicate check -> search -> read up to 4 versions whose title has every typed
+  word (and the artist, when given) and that have >= 4 chord lines over lyrics -> clean ->
+  Spotify link, else YouTube (`importer/youtube.py`, checked with YouTube oEmbed) -> file
+  with no tags. Uncertain (nothing created): already in the book, no matching page, or no
+  artist given and pages by different artists. Results under claude-added / -uncertain.
+- Title: the site's accents with the typed capitals ("Dios está aqui" -> "Dios está aquí").
+  Author: remembered alias > book's spelling of the typed artist > site artist (not
+  compilations like "Misc Praise Songs") > typed > popular.
+- `importer/read.py`: shared non-interactive reader (redirects, browser when blocked);
+  add_song.py uses it.
+- Cleanup for web pages: contributor chatter dropped (greetings, e-mails, "música y letra",
+  "dudas y comentarios"...), plus text before the first chord line and chord-less blocks after
+  the last one (counted in the notes). Not for pasted text. UG search 404 = no results.
+- First run stopped after 6 songs because of those problems; fixed and re-run from scratch.
+- Want.txt run (Want section, 25 songs): 10 added (no tags; 9 Spotify links, 1 YouTube),
+  15 uncertain: 2 already in the book (Yo quiero ser tu servidor; Ruah, maybe another song),
+  7 no artist and pages by different artists, 6 no chord page found. All in Checked.txt.
+- Further fixes found while reviewing: guitar tablature lines dropped; pages with blank lines
+  inside verses joined; typed artist capitalised or spelled as an author already in the book
+  (Trigo -> Trigo Trece); "popular" not searched as an artist. The 10 songs were regenerated.

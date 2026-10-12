@@ -12,6 +12,8 @@ The result:
   "Intro:" with its chords on the next line; when a song has no intro, one is
   added with the song's first chord;
 - capo lines turned into the capo field; key / tuning lines dropped;
+- contributors' comments dropped (greetings, e-mails, "música y letra"...), as
+  is text before the first chord line and chord-less blocks after the last one;
 - at most one blank line in a row.
 Anything worth a look is reported in `notes`.
 """
@@ -58,6 +60,13 @@ META_RE = re.compile(
     r"\s*(?:tono|tonalidad|key|tom|afinaci[oó]n|afina[cç][aã]o|tuning|ritmo|tempo|bpm)\s*:.*", re.IGNORECASE
 )
 CREDIT_RE = re.compile(r"\s*\(@[\w.]+\)\s*")
+# Contributors' comments on chord sites: greetings, e-mails, credits.
+CHATTER_RE = re.compile(
+    r"@|https?://|www\.|\bsaludos\b|\bcorreo\b|\bcomentarios?\b|\bespero q(?:ue)? les\b|\btabbed\b|\btranscri"
+    r"|\bayudando a subir\b|\bdudas\b|\bcualquier correcci|\bm[uú]s?\w*\s+y\s+letra\b|\bletra\s+y\s+m[uú]sica\b"
+    r"|\bchords? by\b|\bacordes por\b",
+    re.IGNORECASE,
+)
 # Letters (any accents), digits, spaces and the punctuation songs use.
 USUAL_CHAR_RE = re.compile(r"[\w\s.,;:!?¡¿'\"()\[\]{}\-/#&*+=…·%]")
 
@@ -67,6 +76,7 @@ class Cleaned:
     body: str
     capo: str | None = None
     notes: list[str] = field(default_factory=list)
+    chatter: int = 0  # comment lines dropped (greetings, e-mails, credits)
 
 
 @dataclass
@@ -172,6 +182,9 @@ def strip_labels(lines, cleaned):
         if not line.is_chord_line and text.strip():
             if CREDIT_RE.fullmatch(text) or META_RE.fullmatch(text):
                 continue
+            if CHATTER_RE.search(text):
+                cleaned.chatter += 1
+                continue
             capo = CAPO_RE.fullmatch(text)
             if capo:
                 if capo.group(1) and int(capo.group(1)) > 0:
@@ -226,6 +239,53 @@ def add_intro(lines, notes):
     return lines[:first] + [Line("Intro:"), Line(chord, [(0, len(chord), chord)]), Line("")] + lines[first:]
 
 
+TAB_TOKEN_RE = re.compile(r"[eBGDAEbgda]?[|:]?[-\d|hpbrx/\\~()]+")
+
+
+def is_tablature(text):
+    """Guitar tab lines like 'e-2----   e-3--  B-3--' (the book can't show those)."""
+    tokens = text.split()
+    return bool(tokens) and "--" in text and all(TAB_TOKEN_RE.fullmatch(t) for t in tokens)
+
+
+def drop_tablature(lines, cleaned):
+    kept = [line for line in lines if line.is_chord_line or not is_tablature(line.text)]
+    if len(kept) < len(lines):
+        cleaned.notes.append(f"Removed {len(lines) - len(kept)} lines of guitar tablature")
+    return kept
+
+
+def undouble_spacing(lines, cleaned):
+    """Some pages put blank lines inside verses. When at least 4 (and a quarter
+    of all) blank lines sit between two lyric lines, drop those: verse breaks
+    before a chord line stay."""
+    blanks = [i for i, line in enumerate(lines) if not line.text.strip()]
+    inner = [i for i in blanks if 0 < i < len(lines) - 1 and lines[i - 1].text.strip()
+             and not lines[i - 1].is_chord_line and lines[i + 1].text.strip() and not lines[i + 1].is_chord_line
+             and lines[i - 1].text != "Intro:"]
+    if len(inner) < 4 or len(inner) < 0.25 * len(blanks):
+        return lines
+    cleaned.notes.append(f"Joined {len(inner)} lines the page had split with blank lines")
+    drop = set(inner)
+    return [line for i, line in enumerate(lines) if i not in drop]
+
+
+def trim_outside_song(lines, cleaned):
+    """Drop what sits before the first chord line (titles, comments; the intro
+    label stays) and chord-less blocks after the last block with chords."""
+    chord_rows = [i for i, line in enumerate(lines) if line.is_chord_line]
+    if not chord_rows:
+        return lines
+    first, last = chord_rows[0], chord_rows[-1]
+    head = [line for line in lines[:first] if line.text == "Intro:"]
+    end = last + 1
+    while end < len(lines) and lines[end].text.strip():  # the rest of the last block
+        end += 1
+    dropped = sum(1 for line in lines[:first] + lines[end:] if line.text.strip() and line.text != "Intro:")
+    cleaned.chatter += dropped
+    return head + lines[first:end]
+
+
 def tidy_blank_lines(lines):
     out = []
     for line in lines:
@@ -248,12 +308,21 @@ def unusual_chars(lines):
     return [f"'{ch}' (U+{ord(ch):04X}, line {number})" for ch, number in found.items()]
 
 
-def clean_song(text, marked=False, ask=lambda line: True):
-    """Clean a song's text. `ask(line)` decides doubtful chord lines (pasted text)."""
+def clean_song(text, marked=False, ask=lambda line: True, from_web=True):
+    """Clean a song's text. `ask(line)` decides doubtful chord lines (pasted text).
+    `from_web`: drop what sits before the first chords and after the last ones
+    (comments on chord sites); off for text the user pasted."""
     cleaned = Cleaned(body="")
     lines = read_lines(text, marked, ask)
     lines = strip_labels(lines, cleaned)
     convert_chords(lines, cleaned.notes)
+    lines = drop_tablature(lines, cleaned)
+    if from_web:
+        lines = trim_outside_song(lines, cleaned)
+        lines = undouble_spacing(tidy_blank_lines(lines), cleaned)
+    if cleaned.chatter:
+        cleaned.notes.append(f"Removed {cleaned.chatter} lines that aren't part of the song "
+                             "(comments, greetings, credits, text before the first chords or after the last ones)")
     lines = tidy_blank_lines(lines)
     lines = add_intro(lines, cleaned.notes)
     lines = tidy_blank_lines(lines)
