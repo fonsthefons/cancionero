@@ -70,6 +70,10 @@
       <button data-action="toggle-all-chords">Hide all chords</button>
     </div>
     <div class="setting">
+      <span>Chord names</span>
+      <button data-action="toggle-notation">Do Re Mi</button>
+    </div>
+    <div class="setting">
       <span>Columns</span>
       <button data-action="toggle-all-columns">2 columns</button>
     </div>
@@ -102,6 +106,14 @@
 <main class="songs">
 {{ songs }}
 </main>
+
+<!-- First visit on the hosted site only (see web/js/offline.js) -->
+<aside class="install-tip" role="note" hidden>
+  <p><strong>Para acceso offline:</strong> añádelo a la pantalla de inicio.</p>
+  <p>iPhone/iPad (Safari): Compartir → Añadir a pantalla de inicio</p>
+  <p>Android (Chrome): menú ⋮ → Añadir a pantalla de inicio</p>
+  <button class="icon-button" data-action="close-install-tip" aria-label="Cerrar">✕</button>
+</aside>
 
 <dialog id="print-dialog" class="print-dialog">
   <form method="dialog">

@@ -704,6 +704,43 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 }
 
 /* ============================= */
+/* INSTALL TIP (first visit)     */
+/* ============================= */
+
+.install-tip {
+    position: fixed;
+    left: var(--gutter);
+    right: var(--gutter);
+    bottom: calc(var(--gutter) + env(safe-area-inset-bottom, 0px));
+    z-index: 150; /* above the songs and top bar, below the menu */
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 10px 44px 10px 14px;
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 4px 16px var(--shadow);
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.install-tip[hidden] {
+    display: none;
+}
+
+.install-tip p {
+    margin: 0;
+}
+
+.install-tip .icon-button {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+/* ============================= */
 /* PRINT                         */
 /* ============================= */
 
@@ -717,6 +754,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     .backdrop,
     .drawer,
     .controls,
+    .install-tip,
     .print-dialog {
         display: none !important;
     }

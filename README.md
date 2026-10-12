@@ -214,7 +214,10 @@ needs at least one. A song without tags only appears in *All Songs*.
   from then on it opens without internet too (airplane mode, no signal).
   With internet it always shows the newest book and saves it for next time.
   (A home-screen app has its own storage: a copy in Safari's Reading List
-  isn't used by it.)
+  isn't used by it.) The first visit in a browser shows a short tip about this.
+- **Chord names** (☰ → Settings): letters (C D E…) or Do Re Mi (Do Re Mi Fa
+  Sol La Si: `Em` → `Mim`, `D/F#` → `Re/Fa#`). Works with transposing, and
+  chords keep their columns the same way. Remembered on each device.
 - **☰ menu**: contents, plus settings: text size (A− / A+), chords and
   columns for the whole book, light/dark theme, keep the screen on, print.
   Settings are remembered on each device.
@@ -288,13 +291,13 @@ web/       ─┘
 | `web/styles.css` | All styles (theme colours and sizes are variables at the top) |
 | `web/js/core.js` | Shared helpers: `onAction`, `songSetting`, `prefs` (saved settings), `songState` (saved per-song changes) |
 | `web/js/display.js` | Chords, columns, text size, theme |
-| `web/js/transpose.js` | Transposition that keeps chords in their columns |
+| `web/js/transpose.js` | Transposition and Do Re Mi chord names, keeping chords in their columns |
 | `web/js/autoscroll.js` | Autoscroll (speed settings at the top of the file) |
 | `web/js/search.js` | Song search (number, title, author, lyrics; ranked, with the matching line) |
 | `web/js/session.js` | Sing Session (list in the menu, + Session buttons) |
 | `web/js/session-drag.js` | Drag-and-drop reordering of the session (pointer events) |
 | `web/js/drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
-| `web/js/offline.js`, `sw.js` | Offline home-screen app: `offline.js` registers the service worker `sw.js` (hosted site only), which saves the book and shows the saved copy when there's no internet (or after 4 s of slow network). Not inlined: `sw.js` must be its own file at the root |
+| `web/js/offline.js`, `sw.js` | Offline home-screen app: `offline.js` shows the first-visit tip and registers the service worker `sw.js` (hosted site only), which saves the book and shows the saved copy when there's no internet (or after 4 s of slow network). Not inlined: `sw.js` must be its own file at the root |
 | `manifest.webmanifest`, `icon-180.png`, `icon-512.png` | Home-screen name, icon and full-screen mode |
 | `song_template.md` | Starting point for a song written by hand |
 | `PROGRESS.md` | Log of what was changed and why |

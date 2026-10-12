@@ -1,13 +1,25 @@
-// Transpose the chords of one song up or down by semitones.
+// Transpose the chords of one song up or down by semitones, and show chord
+// names as letters (C D E) or as Do Re Mi (book-wide setting).
 //
 // Chords are aligned by hand to exact letters, so transposing must never move
-// a chord to another column. When a chord name gets longer (C -> C#) or
-// shorter (C# -> D), the spaces after it shrink or grow to compensate, so
+// a chord to another column. When a chord name gets longer (C -> C#, C -> Do)
+// or shorter (C# -> D), the spaces after it shrink or grow to compensate, so
 // every following chord still starts at its original column.
 
 const NOTES_SHARP = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 const NOTES_FLAT = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 const NOTE_RE = /[A-G][#b]?/g; // chord suffixes (m, maj7, sus4...) are lowercase
+const SOLFEGE = { C: "Do", D: "Re", E: "Mi", F: "Fa", G: "Sol", A: "La", B: "Si" };
+const NOTATIONS = { letters: "Do Re Mi", solfege: "C D E" }; // button shows the other one
+
+let notation = prefs.get("notation", "letters");
+if (!(notation in NOTATIONS)) notation = "letters";
+
+// Am7 -> Lam7, D/F# -> Re/Fa#, Bb -> Sib
+function nameChord(chord) {
+    if (notation !== "solfege") return chord;
+    return chord.replace(NOTE_RE, (note) => SOLFEGE[note[0]] + note.slice(1));
+}
 
 function transposeNote(note, shift) {
     const scale = note.includes("b") ? NOTES_FLAT : NOTES_SHARP;
@@ -53,7 +65,7 @@ function transposeChordLine(line, shift) {
     nodes.forEach((node, i) => {
         if (node.nodeType === Node.ELEMENT_NODE) {
             node.dataset.original ??= node.textContent;
-            const chord = transposeChord(node.dataset.original, shift);
+            const chord = nameChord(transposeChord(node.dataset.original, shift));
             drift += chord.length - node.dataset.original.length;
             node.textContent = chord;
             return;
@@ -63,12 +75,35 @@ function transposeChordLine(line, shift) {
     });
 }
 
+// Redraw a song's chords with its transposition and the current notation.
+// Longer names can make a chord line wider than the build measured, so the
+// song's --chars (see styles.css) grows to keep every line on screen.
+function redrawChords(song) {
+    const shift = Number(song.dataset.transpose || 0);
+    song.dataset.chars ??= song.style.getPropertyValue("--chars").trim();
+    let widest = Number(song.dataset.chars);
+    song.querySelectorAll(".chord-line").forEach((line) => {
+        transposeChordLine(line, shift);
+        widest = Math.max(widest, line.textContent.length);
+    });
+    song.style.setProperty("--chars", widest);
+}
+
 function setTranspose(song, shift) {
     song.dataset.transpose = shift;
-    song.querySelectorAll(".chord-line").forEach((line) => transposeChordLine(line, shift));
+    redrawChords(song);
     song.querySelector(".transpose-value").textContent = shift > 0 ? `+${shift}` : shift;
     songState.set(song, "transpose", shift || null); // remembered on this device
 }
+
+function setNotation(value) {
+    notation = value;
+    prefs.set("notation", value);
+    setActionLabel("toggle-notation", NOTATIONS[value]);
+    document.querySelectorAll(".song").forEach(redrawChords);
+}
+
+onAction("toggle-notation", () => setNotation(notation === "solfege" ? "letters" : "solfege"));
 
 // Steps through -11..+11; one more step wraps back to 0 (same key).
 function stepTranspose(song, step) {
@@ -80,8 +115,10 @@ onAction("transpose-up", (button, song) => stepTranspose(song, +1));
 onAction("transpose-down", (button, song) => stepTranspose(song, -1));
 onAction("transpose-reset", (button, song) => setTranspose(song, 0));
 
-// Restore the transpositions saved on this device.
+// Restore the transpositions and chord names saved on this device.
 songState.each("transpose", (song, shift) => {
     const valid = Number.isInteger(shift) && Math.abs(shift) < 12;
     setTranspose(song, valid ? shift : 0);
 });
+if (notation === "solfege") setNotation(notation);
+else setActionLabel("toggle-notation", NOTATIONS[notation]);
