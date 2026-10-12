@@ -321,3 +321,20 @@
   opens offline, any address of the book, newest book shown and saved when back online,
   file:// unaffected, no JS errors. Full `scratch/ui_test.py` passes. Real iPhone still to
   be tried by the user.
+- 2026-10-12: PRs #17, #18 and #19 merged after the owner's review (their edits committed
+  as "songs: review of the filled and new songs").
+
+## 2026-10-12 — Do Re Mi chord names; first-visit home-screen tip
+
+- ☰ → Settings → *Chord names*: letters or Do Re Mi (`web/js/transpose.js`: `nameChord`,
+  `setNotation`; remembered as `notation`). Renaming goes through the same column-keeping
+  code as transposing; `redrawChords` also widens the song's `--chars` when a chord line
+  grows, so every song still fits the screen. Chords inside lyric lines (e.g. "Intro: G D")
+  are not renamed, the same as with transposing.
+- First visit on the hosted site: a small tip at the bottom, "Para acceso offline", with
+  one line for iPhone/iPad and one for Android (`web/js/offline.js`, `web/template.html`,
+  `web/styles.css`). Shown once per browser; not inside the home-screen app, not when
+  opened as a file, not printed.
+- Checks: `scratch/ui_test.py` now also checks Do Re Mi on every device (alignment, fit;
+  10,512 chords renamed, 1,156 shifted only where chords are 1 space apart; back to letters
+  restores every line; transposing and reload). `scratch/offline_test.py` checks the tip.
