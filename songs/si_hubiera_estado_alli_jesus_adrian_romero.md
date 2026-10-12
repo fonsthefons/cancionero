@@ -1,0 +1,64 @@
+---
+title: Si hubiera estado allí
+autor: Adrián
+link: "https://open.spotify.com/track/3MaPyYoUyB2qibqEkHTWW1?si=aa16dfe3eb074ce2"
+capo: 0
+song_tags:
+  adoracion: []
+  misa:
+    - comunion
+  tema:
+   - cristo
+---
+Intro:
+G
+
+                    G                  Em
+Si hubiera estado allí entre la multitud
+                  C      Am          D
+Que tu muerte pidió, que te crucifico
+                   G                  Em
+Lo tengo que admitir, hubiera yo también,
+                  C
+clavado en esa cruz
+    Am           D                       Em    D7
+Tus manos mi Jesús, si hubiera estado allí
+
+                  G                       Em
+Pensándolo más bien también yo estaba allí
+                       C    Am             D
+Yo fui el que te escupió, y tu costado hirió
+     D7          G
+Pensándolo más bien,
+                  Em                 C
+yo fui el que corono de espinas y dolor
+   Am              D                        Em    D7
+Tu frente buen señor, también yo estaba allí
+
+                     G                      Em
+Si hubiera estado allí al pie de aquella cruz
+              C     Am             D
+Oyéndote clamar, al padre en soledad
+                   G                      Em
+Lo tengo que admitir, te hubiera yo también
+               C    Am           D
+Dejado así morir, mirándote sufrir
+
+      D7          G                       Em
+Pensándolo más bien también yo estaba allí
+                       C    Am             D
+Yo fui el que te escupió, y tu costado hirió
+    D7           G                     Em                  C
+Pensándolo más bien, yo fui el que corono de espinas y dolor
+   Am             D
+Tu frente buen señor
+    D7           G                        Em
+Pensándolo más bien, también yo estaba allí
+                     C     Am           D
+Yo fui el que te golpeo, y de ti se burlo
+    D7           G                       Em
+Pensándolo más bien yo fui el que te azoto
+                   C      Am          D
+Yo fui quien lancero tu espalda mi señor
+      D7               G
+//También yo estaba allí//

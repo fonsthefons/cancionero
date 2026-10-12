@@ -2,13 +2,15 @@
 title: Como un niño
 autor: Schoenstatt
 link: "https://open.spotify.com/track/49vGn38MqPRpMPd0suUcgh"
+capo: "0"
+song_tags:
+  misa: 
+    - comunion
 ---
 
 Intro:
 D        C9    G    Am    C     B7    Em    D4
 
-Intro:
-D - C9 - G
 
 D             C9      G
 Como el rio de vida que brota del corazon de un volcan

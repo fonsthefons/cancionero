@@ -2,7 +2,7 @@
 title: No tengo miedo
 autor: popular
 link: "https://open.spotify.com/track/03TmLp5BaIumxM3I6SR0kt?si=0372952e6c7b4854"
-capo: Capo 2
+capo: "2"
 song_tags:
   alabanza:
     - tercer_ciclo
@@ -11,7 +11,8 @@ song_tags:
     - entrada
     - salida
 ---
-Capo 2 F C Dm A#
+Intro:
+F C Dm A#
 
 F             C          Dm    A#
 Cristo, tu cruz es respuesta real

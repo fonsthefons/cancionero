@@ -2,7 +2,7 @@
 title: El Dios que adoramos
 autor: popular
 link: "https://open.spotify.com/track/5hD2l9T4gX5N1c7G0ABZV8?si=c2c59de24fc9460a"
-capo: (original capo 4 D A Bm D A)
+capo: "2, 0-4"
 song_tags:
   alabanza:
     - segundo_ciclo
@@ -10,9 +10,8 @@ song_tags:
     - entrada
     - comunion
 ---
-(original capo 4 D A Bm D A)
-Preferred: Capo 2: A E F#m A E
-
+Intro:
+A
 
 A        E
 El Dios que hizo los cielos y la tierra

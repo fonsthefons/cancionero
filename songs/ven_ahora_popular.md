@@ -11,38 +11,50 @@ song_tags:
   tema:
     - espiritu
 ---
-Am C G E
+Intro:
+Am G F E
 
-Ven ahora, Santo Espíritu,
-ven y toma tu lugar.
+      Am            G
+Ven ahora, Santo Espíritu
+      F          E
+ven y toma tu lugar
 X2
 
-Somos Sión, Tú eres Rey,
-ven y úngenos Señor,
-ven ahora, ven a mí.
+      Am
+Somos Sión, Tú eres Rey
+      G
+ven y úngenos Señor
+    F            E
+ven ahora, ven a mí
 X2
 
-Ven ahora, Santo Espíritu,
-ven y toma tu lugar.
+      Am            G
+Ven ahora, Santo Espíritu
+      F          E
+ven y toma tu lugar
 X2
 
-Somos Sión, Tú eres Rey,
-ven y úngenos Señor,
-ven ahora, ven a mí.
+      Am
+Somos Sión, Tú eres Rey
+      G
+ven y úngenos Señor
+    F            E
+ven ahora, ven a mí
 X2
 
-Am                                   
+Am
 Ven y descansate
-C                                        G
+C                   G
 Ven y descansate en Dios
       E
 En Dios
+X2
 
-F                        C                      
+   F       C
 Y deja que Dios sea Dios
- G                Am
+G        Am
 Deja que Dios sea Dios
-F    G         Am            
+F  G      Am            
 Tu solo alábale
- F    G         Am
+F  G      Am
 Tu solo alábale

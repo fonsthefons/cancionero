@@ -36,3 +36,57 @@ Y tenerme siempre junto a ti
 Siempre juntos
   C  D D7
 Tú y yo Señor
+
+G         D         C D
+Yo quiero ser tu servidor
+G         D         C
+Yo quiero ser tu servidor
+  Bm           Am            G
+Esclavo que no sabe lo que hacer
+         D
+Sin su Señor
+
+G         D         C D
+Yo quiero ser tu servidor
+G         D           C
+Vivir tan solo de tu amor
+   Bm         C  Am
+Sentir la sed de almas
+                    D
+Que me infunde tu calor
+
+G       D  Em           Bm
+Quieres contar con mi labor
+  C           D           G D
+Pudiéndolo tú todo y nada yo
+G      D   Em     Bm      C
+Mira Señor mi corazón y enciende en él
+             D
+El fuego que nace en tu presencia
+
+G              Bm
+Pero tú me has querido asociar
+C     D    G G7
+Por amor a tu labor
+  C      D        G
+Y tenerme siempre junto a ti
+    E             Am     D
+Siempre juntos tú y yo Señor
+
+G         D         C D
+Yo quiero ser tu servidor
+G         D         C
+Yo quiero ser tu servidor
+  Bm           Am            G
+Esclavo que no sabe lo que hacer
+         D
+Sin su Señor
+
+G         D         C D
+Yo quiero ser tu servidor
+G         D           C
+Vivir tan solo de tu amor
+   Bm         C  Am
+Sentir la sed de almas
+                    D
+Que me infunde tu calor

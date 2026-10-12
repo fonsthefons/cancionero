@@ -3,6 +3,11 @@ title: Noche
 autor: Hakuna
 capo: "2"
 link: "https://open.spotify.com/track/1IGDQ9ypgfDJgATIgl9exP"
+capo: "0"
+song_tags:
+  adoracion: []
+  misa: 
+    - comunion
 ---
 
 Intro:

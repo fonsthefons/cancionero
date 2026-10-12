@@ -1,7 +1,12 @@
 ---
 title: Me basta con saber que estás aquí
-autor: Gonzalo Mazarrasa
-link: "https://www.youtube.com/watch?v=KXBJFV4bFfI"
+autor: Salve
+link: "https://open.spotify.com/track/0FaGDtYkKBIXhv4jN5bXL2?si=04cce09595b84027"
+capo: "0"
+song_tags:
+  adoracion: []
+  misa: 
+    - comunion
 ---
 
 Intro:

@@ -8,42 +8,67 @@ song_tags:
   misa:
     - comunion
 ---
-C F G
+Intro:
+G C D
 
-Am F C G
-Am F C G
-Am F C G
+    G               C                 D 
+Los lirios del campo  y las aves del cielo 
+G               C                     D 
+no se preocupan,  porque están en mis manos. 
+  Em              C         G            D 
+Tened confianza en mí, aqui estoy junto a vosotros. 
 
-Los lirios del campo
-Y las aves del cielo
-No se preocupan
-Porque están en mis manos
-Tené confianza en mí
-Acá estoy junto a vos
+ G            C              D 
+Ama lo que eres  y tus circunstancias, 
+  G           C                     D 
+estoy contigo,  con tu cruz en mi espalda. 
+Em              C            G                D 
+Todo terminará bien, yo hago nuevas todas las cosas. 
 
-Amá lo que sos y tus circunstancias
-Estoy con vos, con tu cruz en mi espalda
-Todo terminará bien
-Yo hago nuevas todas las cosas
 
-Yo vengo a traerte vida
-Vida en abundancia, en abundancia
-Yo soy el camino, la verdad y la vida
-Vida en abundancia, en abundancia
+   Em   C            G    D 
+Yo ven--go  a traerte Vi--da, 
+            Em   C 
+Vida en abundan--cia, 
+       D 
+en abundancia. 
 
-No hice al hombre para que esté solo
-Caminen juntos, como hermanos
-Sopórtense mutuamente
-Ámense unos a otros
+           Em   C 
+Yo soy el Cami--no, 
+              G    D 
+la Verdad y la Vi--da, 
+            Em   C 
+Vida en abundan--cia, 
+       D 
+en abundancia. 
 
-La felicidad de la vida eterna
-Empieza conmigo en la tierra
-Sentite vivo
-La fiesta del reino comienza acá
 
-Yo vengo a traerte vida
-Vida en abundancia, en abundancia
-Yo soy el camino, la verdad y la vida
-Vida en abundancia, en abundancia
-Yo vengo a traerte vida
-Vida en abundancia, en abundancia
+   G             C               D 
+No hice al hombre  para que esté solo. 
+  G           C         D 
+Caminad juntos  como hermanos, 
+  Em            C         G          D 
+sopórtense mutuamente, ámense unos a otros. 
+
+   G        C             D 
+La felicidad  de la Vida Eterna 
+  G    C                D 
+empieza  conmigo en la tierra. 
+   Em   C         G                  D 
+Siéntete vivo, la fiesta del Reino comienza ya.
+
+   Em   C            G    D 
+Yo ven--go  a traerte Vi--da, 
+            Em   C 
+Vida en abundan--cia, 
+       D 
+en abundancia. 
+
+           Em   C 
+Yo soy el Cami--no, 
+              G    D 
+la Verdad y la Vi--da, 
+            Em   C 
+Vida en abundan--cia, 
+       D 
+en abundancia. 

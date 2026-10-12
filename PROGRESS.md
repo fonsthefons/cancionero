@@ -304,3 +304,20 @@
 - Further fixes found while reviewing: guitar tablature lines dropped; pages with blank lines
   inside verses joined; typed artist capitalised or spelled as an author already in the book
   (Trigo -> Trigo Trece); "popular" not searched as an artist. The 10 songs were regenerated.
+
+## 2026-10-12 — Home-screen app opens offline (PR, not merged)
+
+- Problem: on iPhone the Reading List copy works offline, but the home-screen app doesn't
+  (it has its own storage and always loaded the page from the internet).
+- `sw.js` (service worker, repo root): saves the book, manifest and icons; page requests get
+  the newest book from the internet (and save it), or the saved copy when offline or after
+  4 s of slow network. `web/js/offline.js` registers it only on http(s), so opening
+  `index.html` as a file is unchanged and still makes no network requests.
+- `manifest.webmanifest`, `icon-180.png`, `icon-512.png` (two notes on the accent colour,
+  drawn with `scratch/make_icons.py`), links in `web/template.html`: name, icon, full screen.
+- Choice: stacked on the add-songs branch so the built `index.html` doesn't conflict.
+- Checks: `scratch/offline_test.py` (Chromium airplane mode; Chromium and WebKit with the
+  server switched off, since Playwright's WebKit can't go offline with a service worker):
+  opens offline, any address of the book, newest book shown and saved when back online,
+  file:// unaffected, no JS errors. Full `scratch/ui_test.py` passes. Real iPhone still to
+  be tried by the user.
