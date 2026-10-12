@@ -73,3 +73,26 @@ el_dios_que_adoramos_popular
 libre_miel_san_marcos
 llevame_ignis
 mis_heridas_te_han_curado_batah
+
+claude-checked:
+no_tengo_miedo_popular  (chords added to 43 of 46 lines, in F as in your note; from lacuerda.net)
+salmo_23_un_corazon  (37 of 45 lines, in C; from ultimate-guitar.com)
+jesucristo_basta_un_corazon_un_corazon  (31 of 49 lines, in C like your intro; from ultimate-guitar.com)
+pescador_de_hombres_popular  (26 of 27 lines, in C like your first chord line; from ultimate-guitar.com)
+otra_vez_un_corazon  (26 of 43 lines, in your key; from lacuerda.net)
+ven_ante_su_trono_elevation_worship  (17 of 22 lines, in your key; from ultimate-guitar.com)
+el_dios_que_adoramos_popular  (15 lines, in your key A; from lacuerda.net)
+
+claude-uncertain:
+salve_reina_servus_mariae  (the web versions found are other songs: no line matches)
+tu_voluntad_servus_mariae  (no chord page found online)
+vida_en_abundancia_schoenstatt  (no chord page found online)
+virgen_madre_de_nuestro_dios_popular  (no chord page found online)
+santo_manchego_popular  (no chord page found online)
+que_se_quiebre_mi_corazon_maria_olguin  (no chord page found online)
+llevame_ignis  (no chord page found online, only Chordify)
+si_hubiera_estado_alli_adrian  (only 16 of 43 lines match the web lyrics)
+para_que_entre_el_rey_popular  (only 9 of 25 lines match the web lyrics)
+toma_senor_mi_libertad_popular  (only 3 of 7 lines match the web lyrics)
+ven_ahora_popular  (the web version's key can't be matched to your chords)
+mis_heridas_te_han_curado_batah  (its one line without chords doesn't match the web lyrics)
