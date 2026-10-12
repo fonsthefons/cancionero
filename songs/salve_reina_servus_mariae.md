@@ -11,37 +11,67 @@ song_tags:
     - cristo
     - virgen
 ---
+
 C F G C G Em
 
+C                     G/B       Am
 Encontré en un Padre que acoge
-El misterio de mi misión
+Em          G
+el misterio de mi misión.
+C          G/B          Am
 Una cruz atraviesa mi alma,
-Esa cruz que cargó con amor
+Em                         G
+esa cruz que cargó con amor.
 
-Sí, Padre, hoy vengo a decirte sí
-Es Jesús el que me llama por mi nombre,
-Es Jesús el que me ama y conoce
 
+Dm                 G              C    F-C/E
+Sí, Padre, hoy vengo a decirte sí,
+Dm             C/E    F                  G
+es Jesús el que me llama por mi nombre,
+Em                    F
+es Jesús quien me ama y conoce.
+
+Dm          Dm/C       G/B   G
 Sígueme, te invito a cambiar
-Este mundo en familia
-Abriremos camino
+Em   F
+este mundo en familia.
+C/E         Dm    G
+Abriremos camino...
 
+
+Em              F
 Madre, yo soy de Cristo,
-Congregante hasta el fin
+C   E       Am
+congregante hasta el fin.
+Dm   E          Am   Am/sol
 Madre, por Ti y por ellos,
-Vale la pena vivir
+Dm  F     G
+vale la pena vivir.
 
+Em              F
 Voy a entregarte mis fuerzas,
-Para que te amen a Ti,
-Una cruz negra enterrada
-Salve Reina, los que van a morir
+C  E         Am
+para que te amen a Ti,
+Dm  E           Am   G
+una cruz negra enterrada.
+C
+¡Salve Reina, los que van a morir!
 
+Em              F
 Madre, yo soy de Cristo,
-Congregante hasta el fin
+C   E       Am
+congregante hasta el fin.
+Dm   E          Am   Am/sol
 Madre, por Ti y por ellos,
-Vale la pena vivir
+Dm  F     G
+vale la pena vivir.
 
+Em              F
 Voy a entregarte mis fuerzas,
-Para que te amen a Ti,
-Una cruz negra enterrada
-Salve Reina, los que van a morir
+C  E         Am
+para que te amen a Ti,
+Dm  E           Am   G
+una cruz negra enterrada.
+C
+¡Salve Reina, los que van a morir!
+

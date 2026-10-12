@@ -1,7 +1,14 @@
 ---
 title: Granito de mostaza
 autor: popular
-link: "https://open.spotify.com/track/11YvtBICmteB4pIY3pxIJl"
+link: "https://open.spotify.com/track/0awvSWzbrLKkCvXPZI4cD5?si=6e5da99d35d047c3"
+capo: "0"
+song_tags:
+  alabanza:
+    - segundo_ciclo
+  misa: 
+    - entrada
+    - comunion
 ---
 
 Intro:

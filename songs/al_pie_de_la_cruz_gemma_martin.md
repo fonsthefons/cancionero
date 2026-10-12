@@ -2,6 +2,13 @@
 title: Al pie de la cruz
 autor: Gemma Martin
 link: "https://open.spotify.com/track/6G3BelQwIdQVpkf33lcscP"
+capo: "0"
+song_tags:
+  adoracion: []
+  misa: 
+    - comunion
+  tema:
+    - cristo
 ---
 
 Intro:

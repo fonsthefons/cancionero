@@ -2,6 +2,11 @@
 title: Cara a cara
 autor: Marcos Vidal
 link: "https://open.spotify.com/track/3AbYh5nP4NdvWUahFCU1Ys"
+capo: "0"
+song_tags:
+  adoracion: []
+  misa: 
+    - comunion
 ---
 
 Intro:

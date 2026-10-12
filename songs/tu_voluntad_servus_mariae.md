@@ -9,6 +9,9 @@ song_tags:
   misa: 
     - comunion
 ---
+Intro:
+G D Em D
+
 Libre soy pues libre me hiciste,
 Y libre te he escogido hoy
 Libre te doy cada don que me diste,

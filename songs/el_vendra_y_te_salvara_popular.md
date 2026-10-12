@@ -1,11 +1,16 @@
 ---
 title: El vendrá y te salvará
-autor: Seminario Pontificio Mayor de Santiago
+autor: Popular
 link: "https://open.spotify.com/track/52W4y4VTbi9RdPDuhjfJSl"
+capo: "0"
+song_tags:
+  adoracion: []
+  misa: 
+    - comunion
 ---
 
 Intro:
-       G   A  Bm  G   A  G   A  D
+G   A  Bm  G   A  G   A  D
 
 D      A           Bm    G
 Dile a quien sufre en su soledad:

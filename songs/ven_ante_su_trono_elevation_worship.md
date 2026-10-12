@@ -2,7 +2,7 @@
 title: Ven ante Su trono
 autor: Elevation Worship
 link: "https://open.spotify.com/track/00N19SVEo6XJFaerouyckn?si=8ba464502061439d"
-capo: Really Capo 3 C F
+capo: "0, 0-2"
 song_tags:
   alabanza:
     - primer_ciclo
@@ -10,8 +10,8 @@ song_tags:
   misa: 
     - entrada
 ---
-Really Capo 3 C F
-But no Capo G C (up to capo 2)
+Intro:
+G
 
 G      C
 Si abatido y dolido estás

@@ -2,7 +2,7 @@
 title: Jesucristo basta
 autor: Un Corazon
 link: "https://open.spotify.com/track/6XgnLNskskRPjdfa3CyKGA?si=034d9b81f67a4ef8"
-capo: 0
+capo: "0"
 song_tags:
   adoracion: []
   alabanza:
@@ -12,6 +12,8 @@ song_tags:
   tema:
     - cristo
 ---
+Intro:
+F
 
 F C Am C
 Nuestros corazones

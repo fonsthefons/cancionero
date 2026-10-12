@@ -12,40 +12,31 @@ song_tags:
   tema:
     - cristo
 ---
+Intro
 Am F C G Am
 
+Am
 Para que entre el rey
+F                 C
 Jesus rey de gloria
+C               G               Am
 Yo abro mi corazón, abro mi corazón
 x4
 
+Am
 ¿Quién es el Rey de gloria?
+F
 ¿Quién es el Rey de gloria?
+   C
 Es Jesús, Jesús
+G
 Él es el rey, Él es el rey
 x4
+
+Am
 Para que entre el rey
+F                 C
 Jesus rey de gloria
+C               G               Am
 Yo abro mi corazón, abro mi corazón
 x4
-
-
-Yo abro mi corazón
-yo abro mi corazón
-Yo abro mi corazón
-abro mi corazón
-
-Y entra el rey de gloria
-Y entra el rey de gloria
-Y entra el rey de gloria
-Tú eres el rey de gloria
-Tú eres el rey de gloria
-Jesús, Jesús
-
-Reina en majestad entre nosotros
-Tú eres el rey de gloria
-tú eres el rey de gloria
-Jesús, Jesús
-x4
-
-Reina en majestad

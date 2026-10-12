@@ -3,6 +3,11 @@ title: En ti perfecto
 autor: Trigo Trece
 capo: "2"
 link: "https://open.spotify.com/track/4VLVg99o0Atqw7HpZwTlHC"
+capo: "0"
+song_tags:
+  adoracion: []
+  misa: 
+    - comunion
 ---
 
 Intro:

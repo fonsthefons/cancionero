@@ -1,5 +1,4 @@
 ---
-
 title: Santo Manchego
 autor: popular
 link: ""
@@ -11,24 +10,32 @@ song_tags:
   misa: 
     - santo
 ---
+Intro:
+Em D C D
 
 Em D C D
-Chicos: Saaaanto
-Chicas: Saaaanto
-Chicos: Saaaanto
-Chicas: Saaaanto
+Saaaanto
+Saaaanto
+Saaaanto
+Saaaanto
 
-STOP
-Chicos: El cielo y la tierra están llenos de tu Gloria
+El cielo y la tierra
+están llenos de tu Gloria
 
-Chicas: Saaaanto
-Chicos: Saaaanto
-Chicas: Saaaanto
-Chicos: Saaaanto
+Saaaanto
+Saaaanto
+Saaaanto
+Saaaanto
 
-STOP
-Chicas: Bendito el que viene en el nombre del señor
 
-Chicos: Hosanna Hosanna Hosanna en las alturas
-Chicas: Hosanna Hosanna Hosanna en las alturas
-Todos: Hosanna Hosanna Hosanna en las alturas
+Bendito el que viene
+En el nombre del señor
+
+Hosanna Hosanna Hosanna
+Hosanna en las alturas
+
+Hosanna Hosanna Hosanna
+Hosanna en las alturas
+
+Hosanna Hosanna Hosanna
+Hosanna en las alturas

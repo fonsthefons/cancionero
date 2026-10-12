@@ -2,7 +2,7 @@
 title: Otra Vez
 autor: Un Corazón
 link: "https://open.spotify.com/track/1Z2LOOXfH3lFEAGDX7haCA?si=afcfb5bee9f0444f"
-capo: Original (capo 2 F#m D, D A E)
+capo: "0, Original 2"
 song_tags:
   adoracion: []
   alabanza:
@@ -12,8 +12,8 @@ song_tags:
   tema:
     - cristo
 ---
-Original (capo 2 F#m D, D A E)
-Capo 0 Em G - Em C G D
+Intro:
+Em G - Em C G D
 
 Em G
 No te merezco
@@ -62,7 +62,6 @@ Otra vez
 Otra vez
 
 
-[Bridge]
 
 G      Em
 Toma las piezas de mi corazón

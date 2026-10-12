@@ -14,12 +14,20 @@ F  G  C
 verse
 C G Am
 F G C
+C       G           Am
 Toma Señor mi libertad
-Mi memoria entendimiento, y mi voluntad
+      F            G              C  C7
+Mi memoria entendimiento, y voluntad
+F          G    C-Em-Am          F
 Todo mi haber y poseer Tú me lo diste
+  Dm           G
 A ti Señor, lo torno
 
+C       G        Am
 Todo es tuyo dispon de mi
+   F     G     C  C7
 Segun tu voluntad
+F         G    C-Em-Am
 Dame tu amor y gracia
+            F-G C
 Que esto me basta
