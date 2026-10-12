@@ -5,6 +5,7 @@ A song book with chords for guitar, as **one web page**: `index.html`.
 - Live at **https://fonsthefons.github.io/cancionero/** (works on phone, iPad and laptop).
 - The whole book is a single file with nothing to download separately, so once
   the page is saved in the browser it works without internet.
+- Added to the home screen, it opens offline too (see *Using the book*).
 - Songs are plain text files in `songs/`. A small Python program turns them into
   `index.html`, and GitHub Pages publishes that file whenever it changes.
 
@@ -208,6 +209,12 @@ needs at least one. A song without tags only appears in *All Songs*.
 
 ## Using the book
 
+- **On the home screen, offline**: in Safari, Share → *Add to Home Screen*
+  (Android Chrome: ⋮ → *Add to home screen*). Open it once with internet;
+  from then on it opens without internet too (airplane mode, no signal).
+  With internet it always shows the newest book and saves it for next time.
+  (A home-screen app has its own storage: a copy in Safari's Reading List
+  isn't used by it.)
 - **☰ menu**: contents, plus settings: text size (A− / A+), chords and
   columns for the whole book, light/dark theme, keep the screen on, print.
   Settings are remembered on each device.
@@ -247,6 +254,7 @@ needs at least one. A song without tags only appears in *All Songs*.
 | The build prints `Invalid songs:` | It lists each file and what's wrong (e.g. an unknown tag). Fix those files and build again. |
 | `git push` is refused | Run `git pull` first, then push again. If it says "permission denied", ask the owner for write access. |
 | The website still shows the old book | Wait a minute after pushing, then close and reopen the page. |
+| The home-screen app says there's no internet | Open it once while online (it saves the book then). If it was added before offline support existed, open it online once, close it fully and reopen. |
 | `add_song.py` can't read a page | Pick another search result, or open the page, copy the song and use option 2 (paste). |
 
 ## How it works
@@ -286,6 +294,8 @@ web/       ─┘
 | `web/js/session.js` | Sing Session (list in the menu, + Session buttons) |
 | `web/js/session-drag.js` | Drag-and-drop reordering of the session (pointer events) |
 | `web/js/drawer.js`, `index.js`, `print.js`, `wake-lock.js` | One feature each |
+| `web/js/offline.js`, `sw.js` | Offline home-screen app: `offline.js` registers the service worker `sw.js` (hosted site only), which saves the book and shows the saved copy when there's no internet (or after 4 s of slow network). Not inlined: `sw.js` must be its own file at the root |
+| `manifest.webmanifest`, `icon-180.png`, `icon-512.png` | Home-screen name, icon and full-screen mode |
 | `song_template.md` | Starting point for a song written by hand |
 | `PROGRESS.md` | Log of what was changed and why |
 

@@ -6,6 +6,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>Cancionero</title>
+<!-- Home-screen app (hosted site only; see sw.js). Opened as a file these are simply unused. -->
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<meta name="apple-mobile-web-app-title" content="Cancionero">
+<meta name="theme-color" content="#397380">
 <style>
 /* ============================= */
 /* THEME                         */
@@ -5685,6 +5690,16 @@ document.addEventListener("click", (event) => {
     const link = event.target.closest('a[href^="#"]');
     if (link) revealTarget(decodeURIComponent(link.hash.slice(1)));
 });
+</script>
+<script>
+// Offline home-screen app: on the hosted site, register sw.js so the book is
+// saved and opens without internet. Skipped when index.html is opened as a file.
+
+if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("sw.js").catch(() => {});
+    });
+}
 </script>
 <script>
 // Printing: a dialog to choose columns and chords, and a print layout where
