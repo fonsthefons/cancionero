@@ -177,14 +177,24 @@ button:active {
 }
 
 .topbar-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-weight: bold;
     font-size: 1.15rem;
     white-space: nowrap;
 }
 
-/* Narrow screens: room for search + autoscroll; Contenido is in the menu. */
+/* book.yaml logo: any SVG, 22px high, its own width */
+.logo-mark {
+    width: auto;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* Narrow screens: room for search + autoscroll; only the logo stays. */
 @media (max-width: 560px) {
-    .topbar-title {
+    .topbar-title span {
         display: none;
     }
 }
@@ -549,6 +559,28 @@ body.drawer-open {
     margin: 20px 0 8px;
 }
 
+/* Logo and name from the songbook cover, above the contents */
+.cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 0 8px;
+}
+
+.cover .logo {
+    width: 88px;
+    height: auto;
+}
+
+.cover-title {
+    margin: 14px 0 0;
+    font-family: var(--sans);
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1.25;
+    text-align: center;
+}
+
 .tag-index,
 .subtag-index {
     margin-bottom: 8px;
@@ -665,6 +697,12 @@ body.drawer-open {
     color: var(--chord);
 }
 
+/* Choruses (lines between `**` lines in the song file). Bold monospace keeps
+   the same character width, so chords stay on their letters. */
+.lyric-line.bold {
+    font-weight: bold;
+}
+
 .verse {
     margin-bottom: 1.1em;
 }
@@ -710,6 +748,19 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     margin: 0.75rem 0;
 }
 
+.install-tip {
+    max-width: min(26rem, calc(100vw - 32px));
+}
+
+.install-tip h3 {
+    margin-top: 0;
+}
+
+.install-tip p {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+}
+
 .dialog-buttons {
     display: flex;
     gap: 8px;
@@ -718,10 +769,11 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 }
 
 /* ============================= */
-/* INSTALL TIP (first visit)     */
+/* INSTALL TIP AS A BANNER       */
+/* (book.yaml install_tip: banner) */
 /* ============================= */
 
-.install-tip {
+.install-banner {
     position: fixed;
     left: var(--gutter);
     right: var(--gutter);
@@ -740,15 +792,15 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     line-height: 1.4;
 }
 
-.install-tip[hidden] {
+.install-banner[hidden] {
     display: none;
 }
 
-.install-tip p {
+.install-banner p {
     margin: 0;
 }
 
-.install-tip .icon-button {
+.install-banner .icon-button {
     position: absolute;
     top: 4px;
     right: 4px;
@@ -768,7 +820,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     .backdrop,
     .drawer,
     .controls,
-    .install-tip,
+    .install-banner,
     .print-dialog {
         display: none !important;
     }
@@ -831,12 +883,14 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 
 </style>
 </head>
-<body data-chords="show" data-columns="1" data-theme="auto">
+<body data-chords="show" data-columns="1" data-theme="auto" data-notation="letters">
 
 <!-- Top bar: always visible -->
 <header class="topbar">
   <button class="icon-button" data-action="open-drawer" aria-label="Menu" aria-controls="drawer">☰</button>
-  <a class="topbar-title" href="#index">Cancionero</a>
+  <a class="topbar-title" href="#index" aria-label="Cancionero: contenido">
+    <span>Cancionero</span>
+  </a>
   <div class="search">
     <input type="search" placeholder="Search songs..." aria-label="Search songs" autocomplete="off">
     <div class="search-results" hidden></div>
@@ -894,7 +948,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     </div>
     <div class="setting">
       <span>Chord names</span>
-      <button data-action="toggle-notation">Do Re Mi</button>
+      <button data-action="cycle-notation">C D E</button>
     </div>
     <div class="setting">
       <span>Columns</span>
@@ -2032,7 +2086,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">Intro: G C G D</div></div>
+<div class="verse"><div class="lyric-line chord-inline">Intro: <span class="chord">G</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">D</span></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">G</span>             <span class="chord">C</span></div><div class="lyric-line">Arranca de mi pecho</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>               <span class="chord">D</span></div><div class="lyric-line">El corazón de piedra</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>             <span class="chord">C</span></div><div class="lyric-line">Arranca de mi pecho</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>              <span class="chord">D</span></div><div class="lyric-line">El corazón de piedra</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">   <span class="chord">Em</span>          <span class="chord">C</span></div><div class="lyric-line">Y pon en su lugar</div></div><div class="line-pair"><div class="chord-line">    <span class="chord">G</span>          <span class="chord">D</span></div><div class="lyric-line">Un corazón de carne</div></div><div class="line-pair"><div class="chord-line">    <span class="chord">Em</span>          <span class="chord">C</span></div><div class="lyric-line">Que te sepa adorar</div></div><div class="line-pair"><div class="chord-line">    <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Que sea para alabarte</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">   <span class="chord">Em</span></div><div class="lyric-line">Arranca de mi pecho</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">C</span></div><div class="lyric-line">El corazón de piedra</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">G</span></div><div class="lyric-line">Arranca de mi pecho</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">D</span></div><div class="lyric-line">El corazón de piedra</div></div><div class="lyric-line">X4</div></div>
@@ -2801,11 +2855,11 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">Intro:</div><div class="lyric-line">C  D  G  Em  x2</div></div>
+<div class="verse"><div class="lyric-line">Intro:</div><div class="line-pair"><div class="chord-line"><span class="chord">C</span>  <span class="chord">D</span>  <span class="chord">G</span>  <span class="chord">Em</span>  x2</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"> <span class="chord">C</span>                   <span class="chord">D</span>               <span class="chord">G</span>             <span class="chord">Em</span></div><div class="lyric-line">Cuantas veces le he preguntado la razón de mi existir</div></div><div class="line-pair"><div class="chord-line"> <span class="chord">C</span>            <span class="chord">D</span>                  <span class="chord">G</span>          <span class="chord">C</span></div><div class="lyric-line">Cuantas veces he dudado de por qué me hizo así</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">G</span>           <span class="chord">D</span></div><div class="lyric-line">Tan desnudo, tan herido</div></div><div class="line-pair"><div class="chord-line">     <span class="chord">G</span>           <span class="chord">C</span></div><div class="lyric-line">Incapaz de dar amor</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">D</span>         <span class="chord">G</span>             <span class="chord">D</span>     <span class="chord">C</span></div><div class="lyric-line">Hoy te pido de rodillas un por qué Señor</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">     <span class="chord">Em</span>     <span class="chord">C</span>           <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Pues yo te hice asi perfecto, de verdad</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">Em</span>       <span class="chord">C</span>           <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Pensé cada uno de tus gestos para amar</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">Em</span>             <span class="chord">C</span></div><div class="lyric-line">Pues en ti están mis huellas</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">G</span>              <span class="chord">D</span></div><div class="lyric-line">Para que otros puedan ver</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">C</span>                  <span class="chord">G</span></div><div class="lyric-line">A través de alguien precioso</div></div><div class="line-pair"><div class="chord-line">     <span class="chord">D</span>            <span class="chord">C</span></div><div class="lyric-line">Maravillas que creé</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">     <span class="chord">Em</span>     <span class="chord">C</span>           <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Pues yo te hice asi perfecto, de verdad</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">Em</span>       <span class="chord">C</span>           <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Pensé cada uno de tus gestos para amar</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">Em</span>             <span class="chord">C</span></div><div class="lyric-line">Pues en ti están mis huellas</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">G</span>              <span class="chord">D</span></div><div class="lyric-line">Para que otros puedan ver</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">C</span>                  <span class="chord">G</span></div><div class="lyric-line">A través de alguien precioso</div></div><div class="line-pair"><div class="chord-line">     <span class="chord">D</span>            <span class="chord">C</span></div><div class="lyric-line">Maravillas que creé</div></div></div>
-<div class="verse"><div class="lyric-line">Em C G D x4</div><div class="lyric-line">Ooh ooh</div></div>
+<div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">Em</span> <span class="chord">C</span> <span class="chord">G</span> <span class="chord">D</span> x4</div><div class="lyric-line">Ooh ooh</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">     <span class="chord">Em</span>     <span class="chord">C</span>           <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Pues yo te hice asi perfecto, de verdad</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">Em</span>       <span class="chord">C</span>           <span class="chord">G</span>            <span class="chord">D</span></div><div class="lyric-line">Pensé cada uno de tus gestos para amar</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">Em</span>             <span class="chord">C</span></div><div class="lyric-line">Pues en ti están mis huellas</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">G</span>              <span class="chord">D</span></div><div class="lyric-line">Para que otros puedan ver</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">C</span>                  <span class="chord">G</span></div><div class="lyric-line">A través de alguien precioso</div></div><div class="line-pair"><div class="chord-line">     <span class="chord">D</span>            <span class="chord">C</span></div><div class="lyric-line">Maravillas que creé</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">N.<span class="chord">C</span>.</div><div class="lyric-line">Pues yo te hice asi perfecto, de verdad</div></div><div class="lyric-line">Pensé cada uno de tus gestos para amar</div><div class="line-pair"><div class="chord-line">        <span class="chord">Em</span>             <span class="chord">C</span></div><div class="lyric-line">Pues en ti están mis huellas</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">G</span>              <span class="chord">D</span></div><div class="lyric-line">Para que otros puedan ver</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">C</span>                  <span class="chord">G</span></div><div class="lyric-line">A través de alguien precioso</div></div><div class="line-pair"><div class="chord-line">     <span class="chord">D</span>            <span class="chord">C</span></div><div class="lyric-line">Maravillas que creé</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">      <span class="chord">D</span>           <span class="chord">C</span></div><div class="lyric-line">Que tú eres mi reflejo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">D</span>                    <span class="chord">C</span></div><div class="lyric-line"> aquí tienes tu por qué</div></div></div>
@@ -3872,7 +3926,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">INTRO: C,G,Am,F,Dm,G</div></div>
+<div class="verse"><div class="lyric-line chord-inline">INTRO: <span class="chord">C</span>,<span class="chord">G</span>,<span class="chord">Am</span>,<span class="chord">F</span>,<span class="chord">Dm</span>,<span class="chord">G</span></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">C</span>               <span class="chord">G/B</span>         <span class="chord">Am</span></div><div class="lyric-line"> Cuanto he esperado este momento,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>              <span class="chord">Dm</span>            <span class="chord">G</span></div><div class="lyric-line"> Cuanto he esperado que estuvieras asi,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C</span>               <span class="chord">G</span>              <span class="chord">Am</span></div><div class="lyric-line"> Cuanto he esperado que me hablaras,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>              <span class="chord">Dm</span>          <span class="chord">G</span></div><div class="lyric-line"> Cuanto he esperado que vinieras a mi.</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">C</span>      <span class="chord">G</span>                  <span class="chord">Am</span></div><div class="lyric-line"> Yo se bien lo que has vivido,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>       <span class="chord">Dm</span>                 <span class="chord">G</span></div><div class="lyric-line"> Se tambien porque has llorado,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C</span>      <span class="chord">G</span>                   <span class="chord">Am</span></div><div class="lyric-line"> Yo se bien lo que has sufrido,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>           <span class="chord">Dm</span>            <span class="chord">G</span></div><div class="lyric-line"> Pues de tu lado no me he ido.</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">              <span class="chord">C</span>  <span class="chord">G</span>      <span class="chord">Am</span></div><div class="lyric-line">Pues nadie te ama como yo,</div></div><div class="line-pair"><div class="chord-line">              <span class="chord">F</span>  <span class="chord">Dm</span>      <span class="chord">G</span></div><div class="lyric-line">pues nadie te ama, como yo,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">C</span>            <span class="chord">G</span>             <span class="chord">Am</span></div><div class="lyric-line">mira la cruz, esa es mi mas grande prueba,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>         <span class="chord">Dm</span>       <span class="chord">G</span></div><div class="lyric-line"> nadie te ama como yo.</div></div><div class="line-pair"><div class="chord-line">              <span class="chord">C</span>  <span class="chord">G</span>      <span class="chord">Am</span></div><div class="lyric-line">Pues nadie te ama como yo,</div></div><div class="line-pair"><div class="chord-line">              <span class="chord">F</span>  <span class="chord">Dm</span>      <span class="chord">G</span></div><div class="lyric-line">pues nadie te ama, como yo,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">C</span>             <span class="chord">G</span>                <span class="chord">Am</span></div><div class="lyric-line">mira la cruz, fue por ti fue porque te amo,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>         <span class="chord">Dm</span>       <span class="chord">G</span></div><div class="lyric-line"> nadie te ama como yo.</div></div></div>
@@ -3920,7 +3974,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">INTRO: G C Em C    x2</div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero llevarte a todo lugar conmigo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero que entre la gente seas conocido</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">Am</span>                             <span class="chord">D</span></div><div class="lyric-line">Yo de ti no me avergüenzo eres mi Dios</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero llevar tu voz por todo camino</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Y de tu amor hablar con desconocidos</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Bm</span></div><div class="lyric-line">Al lugar donde trabajo</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Am</span>                              <span class="chord">D</span></div><div class="lyric-line">A la escuela y donde viajo te quiero llevar</div></div></div>
+<div class="verse"><div class="lyric-line chord-inline">INTRO: <span class="chord">G</span> <span class="chord">C</span> <span class="chord">Em</span> <span class="chord">C</span>    x2</div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero llevarte a todo lugar conmigo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero que entre la gente seas conocido</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">Am</span>                             <span class="chord">D</span></div><div class="lyric-line">Yo de ti no me avergüenzo eres mi Dios</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero llevar tu voz por todo camino</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Y de tu amor hablar con desconocidos</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Bm</span></div><div class="lyric-line">Al lugar donde trabajo</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Am</span>                              <span class="chord">D</span></div><div class="lyric-line">A la escuela y donde viajo te quiero llevar</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">           <span class="chord">C</span></div><div class="lyric-line">Fuera del templo y la religión</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Em</span></div><div class="lyric-line">Por todo pueblo y toda región</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Am</span></div><div class="lyric-line">Entre las gentes que vagan hoy</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">D</span></div><div class="lyric-line">Sin rumbo fijo sin dirección</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">C</span></div><div class="lyric-line">Entre las plazas de mi ciudad</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Em</span></div><div class="lyric-line">En donde hay tanta necesidad</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Am</span></div><div class="lyric-line">Por todas partes te llevare</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">D</span>                              <span class="chord">C</span> <span class="chord">G</span> <span class="chord">Em</span> <span class="chord">C</span></div><div class="lyric-line">Pues no hay paredes que te puedan esconder</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero que en todas partes estés conmigo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">En mis conversaciones con mis amigos</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">Am</span>                             <span class="chord">D</span></div><div class="lyric-line">Quero que Tú seas el centro de atención</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Quiero que seas el punto de referencia</div></div><div class="line-pair"><div class="chord-line"><span class="chord">G</span>                              <span class="chord">C</span></div><div class="lyric-line">Y caminar consciente de tu presencia</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Bm</span></div><div class="lyric-line">Al hacer un comentario</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Am</span>                              <span class="chord">D</span></div><div class="lyric-line">En mis pláticas a diario Tú debes estar</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">           <span class="chord">C</span></div><div class="lyric-line">Fuera del templo y la religión</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Em</span></div><div class="lyric-line">Por todo pueblo y toda región</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Am</span></div><div class="lyric-line">Entre las gentes que vagan hoy</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">D</span></div><div class="lyric-line">Sin rumbo fijo sin dirección</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">C</span></div><div class="lyric-line">Entre las plazas de mi ciudad</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Em</span></div><div class="lyric-line">En donde hay tanta necesidad</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">Am</span></div><div class="lyric-line">Por todas partes te llevare</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">D</span>                              <span class="chord">C</span> <span class="chord">G</span> <span class="chord">Em</span> <span class="chord">C</span></div><div class="lyric-line">Pues no hay paredes que te puedan esconder</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">C</span> <span class="chord">G</span> <span class="chord">Em</span> <span class="chord">C</span></div></div></div>
@@ -4355,7 +4409,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">INTRO: Bm A  G  X2</div><div class="line-pair"><div class="chord-line"><span class="chord">Bm</span></div><div class="lyric-line">Quien si no tú</div></div><div class="line-pair"><div class="chord-line">                             <span class="chord">G</span></div><div class="lyric-line">que calmaste hasta los mares</div></div><div class="line-pair"><div class="chord-line">                                <span class="chord">Em</span>                <span class="chord">F#</span></div><div class="lyric-line">podrá calmar de mi alma la tempestad</div></div></div>
+<div class="verse"><div class="lyric-line chord-inline">INTRO: <span class="chord">Bm</span> <span class="chord">A</span>  <span class="chord">G</span>  X2</div><div class="line-pair"><div class="chord-line"><span class="chord">Bm</span></div><div class="lyric-line">Quien si no tú</div></div><div class="line-pair"><div class="chord-line">                             <span class="chord">G</span></div><div class="lyric-line">que calmaste hasta los mares</div></div><div class="line-pair"><div class="chord-line">                                <span class="chord">Em</span>                <span class="chord">F#</span></div><div class="lyric-line">podrá calmar de mi alma la tempestad</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">Bm</span></div><div class="lyric-line">Quien si no tú</div></div><div class="line-pair"><div class="chord-line">                        <span class="chord">G</span></div><div class="lyric-line">que llenaste soledades</div></div><div class="line-pair"><div class="chord-line">                          <span class="chord">Em</span></div><div class="lyric-line">podrá dar a mi esperanza</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">F#</span></div><div class="lyric-line">un nuevo hogar</div></div><div class="line-pair"><div class="chord-line">                     <span class="chord">G</span></div><div class="lyric-line">Quien si no tú</div></div><div class="line-pair"><div class="chord-line">                           <span class="chord">A</span></div><div class="lyric-line">que después de tantos años</div></div><div class="line-pair"><div class="chord-line">                                    <span class="chord">F#</span></div><div class="lyric-line">que a pesar de mis rechazos</div></div><div class="line-pair"><div class="chord-line">                             <span class="chord">Bm</span></div><div class="lyric-line"> sigues dándome tu luz</div></div><div class="line-pair"><div class="chord-line">            <span class="chord">A</span>  <span class="chord">G</span></div><div class="lyric-line">Quien si no tú</div></div><div class="line-pair"><div class="chord-line">                                <span class="chord">A</span></div><div class="lyric-line">que a pesar de mis pecados</div></div><div class="line-pair"><div class="chord-line">                        <span class="chord">F#</span></div><div class="lyric-line">no te cruzaste de brazos</div></div><div class="line-pair"><div class="chord-line">                             <span class="chord">Bm</span></div><div class="lyric-line">y en tu abrazo descubrí</div></div></div>
 <div class="verse"><div class="lyric-line">PRECORO:</div><div class="line-pair"><div class="chord-line">                  <span class="chord">A</span>         <span class="chord">G</span>     <span class="chord">F#</span></div><div class="lyric-line">que me amaste desde siempre</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">Bm</span>       <span class="chord">A</span>          <span class="chord">G</span></div><div class="lyric-line">y para siempre</div></div></div>
 <div class="verse"><div class="lyric-line">CORO:</div><div class="line-pair"><div class="chord-line">                 <span class="chord">Bm</span>        <span class="chord">A</span>                 <span class="chord">G</span></div><div class="lyric-line">Quédate Señor y habita de nuevo en mi alma</div></div><div class="line-pair"><div class="chord-line">         <span class="chord">Em</span>             <span class="chord">G</span></div><div class="lyric-line">que sola quedó tras mi marcha</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Bm</span>                      <span class="chord">A</span></div><div class="lyric-line">herida por falta de amor</div></div><div class="line-pair"><div class="chord-line">              <span class="chord">Bm</span></div><div class="lyric-line">Quédate Señor</div></div><div class="line-pair"><div class="chord-line">    <span class="chord">A</span>                            <span class="chord">G</span></div><div class="lyric-line">inúndame con tu palabra</div></div><div class="line-pair"><div class="chord-line">     <span class="chord">Em</span>               <span class="chord">G</span></div><div class="lyric-line">seréname, ven, tráeme calma</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">Bm</span>                             <span class="chord">A</span></div><div class="lyric-line">que quiero entregarme a tu Amor</div></div><div class="line-pair"><div class="chord-line"><span class="chord">Bm</span>  <span class="chord">A</span>   <span class="chord">G</span></div><div class="lyric-line">Quédate Señor</div></div></div>
@@ -4495,7 +4549,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">F Am C G x2</div></div>
+<div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">F</span> <span class="chord">Am</span> <span class="chord">C</span> <span class="chord">G</span> x2</div></div></div>
 <div class="verse"><div class="lyric-line">[verse]</div><div class="line-pair"><div class="chord-line"><span class="chord">F</span></div><div class="lyric-line">Cántame con tu dulce voz</div></div><div class="line-pair"><div class="chord-line"><span class="chord">Am</span></div><div class="lyric-line">Hazme reír o hazme llorar</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C</span></div><div class="lyric-line">Inunda mi ser con tu</div></div><div class="line-pair"><div class="chord-line">              <span class="chord">G</span></div><div class="lyric-line">Poder y majestad</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">F</span></div><div class="lyric-line">Late en mi tu corazón</div></div><div class="line-pair"><div class="chord-line"><span class="chord">Am</span></div><div class="lyric-line">Brilla tu luz ardes en mi</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C</span>                            <span class="chord">G</span></div><div class="lyric-line">Necesito más, quiero más de ti</div></div></div>
 <div class="verse"><div class="lyric-line">[pre-chorus]</div><div class="line-pair"><div class="chord-line"><span class="chord">F</span>         <span class="chord">Am</span></div><div class="lyric-line">Lléname, lléname</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C</span>          <span class="chord">G</span></div><div class="lyric-line">Lléname, lléname</div></div><div class="lyric-line">X2 (x4)</div></div>
@@ -4766,7 +4820,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">Intro: E E7 A B7 C#m A B7 (x2)</div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor te lo pido,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line">quédate esta noche en mi alma</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span></div><div class="lyric-line">Pues solo tu amor y abrigo,</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line">me dará consuelo y calma.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor sopla fuerte,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line">envolveme con tu brisa</div></div></div>
+<div class="verse"><div class="lyric-line chord-inline">Intro: <span class="chord">E</span> <span class="chord">E7</span> <span class="chord">A</span> <span class="chord">B7</span> <span class="chord">C#m</span> <span class="chord">A</span> <span class="chord">B7</span> (x2)</div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor te lo pido,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line">quédate esta noche en mi alma</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span></div><div class="lyric-line">Pues solo tu amor y abrigo,</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line">me dará consuelo y calma.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor sopla fuerte,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line">envolveme con tu brisa</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span></div><div class="lyric-line">Y en tu Espíritu renovame,</div></div><div class="line-pair"><div class="chord-line">      <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line">hazme libre en tu sonrisa.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span></div><div class="lyric-line">A pesar de mis caídas,</div></div><div class="line-pair"><div class="chord-line">    <span class="chord">B7</span></div><div class="lyric-line"> hazme fiel a tus promesas.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span></div><div class="lyric-line">Sopla Señor en mi vida,</div></div><div class="line-pair"><div class="chord-line">         <span class="chord">B7</span></div><div class="lyric-line"> y arrancame esta tristeza.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>          <span class="chord">A</span>          <span class="chord">B7</span>          <span class="chord">C#m</span></div><div class="lyric-line">Sopla, sopla Señor tu grandeza, sopla</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                    <span class="chord">B7</span></div><div class="lyric-line">Hazme fiel en mi pobreza, sopla.</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor en mi oído,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line"> sopla fuerte arranca el miedo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span></div><div class="lyric-line">Pues sin Ti me hallo perdido,</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line"> sin tu luz me encuentro ciego.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor y hazte viento,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line"> y bautízame en tu nombre</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span></div><div class="lyric-line">Llámame a servir Maestro,</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line"> hazme fiel entre los hombres.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span></div><div class="lyric-line">Toma mi vida en tus manos,</div></div><div class="line-pair"><div class="chord-line"><span class="chord">B7</span></div><div class="lyric-line"> mis sueños mi amor, mi todo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                               <span class="chord">B7</span></div><div class="lyric-line">Mi cansancio, mis pecado y moldéame a tu modo.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>          <span class="chord">A</span>          <span class="chord">B7</span>          <span class="chord">C#m</span></div><div class="lyric-line">Sopla, y bautízame en tu brisa, sopla</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                    <span class="chord">B7</span></div><div class="lyric-line">Renovame en tu sonrisa, sopla.</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor tu caricia,</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line"> por sobre mis sentimientos</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span></div><div class="lyric-line">Que sea el Ángel de Tú Misa,</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line"> quien obre en todo momento.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>                   <span class="chord">E7</span></div><div class="lyric-line">Sopla Señor y hazte canto,</div></div><div class="line-pair"><div class="chord-line">         <span class="chord">A</span>              <span class="chord">B7</span></div><div class="lyric-line"> pon tu palabra en mis manos</div></div><div class="line-pair"><div class="chord-line"><span class="chord">C#m</span>                                 <span class="chord">A</span>             <span class="chord">B7</span></div><div class="lyric-line">En ellas tu providencia y bendice a mis hermanos.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                         <span class="chord">B7</span></div><div class="lyric-line">Quiero ser de tu árbol rama, fruto nuevo de tu cielo</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                         <span class="chord">B7</span></div><div class="lyric-line">Que madure en tu palabra, como un ave en pleno vuelo.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">E</span>          <span class="chord">A</span>          <span class="chord">B7</span>          <span class="chord">C#m</span></div><div class="lyric-line">Sopla, sopla Señor tu grandeza, sopla</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                    <span class="chord">B7</span></div><div class="lyric-line">Hazme fiel en mi pobreza, sopla.</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                    <span class="chord">B7</span></div><div class="lyric-line">y bautízame en tu brisa, sopla</div></div><div class="line-pair"><div class="chord-line"><span class="chord">A</span>                    <span class="chord">B7</span></div><div class="lyric-line">Renovame en tu sonrisa, sopla.</div></div></div>
@@ -4861,7 +4915,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">Intro: G D</div></div>
+<div class="verse"><div class="lyric-line chord-inline">Intro: <span class="chord">G</span> <span class="chord">D</span></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">          <span class="chord">G</span>       <span class="chord">A</span></div><div class="lyric-line">Todo tuyo soy María</div></div><div class="line-pair"><div class="chord-line">          <span class="chord">D</span>  <span class="chord">Bm</span></div><div class="lyric-line">Todo tuyo soy</div></div><div class="line-pair"><div class="chord-line">             <span class="chord">G</span></div><div class="lyric-line">Todo lo que tengo es tuyo</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">A</span>              <span class="chord">G</span> <span class="chord">D</span></div><div class="lyric-line">y todo lo mío te doy</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">                  <span class="chord">G</span>           <span class="chord">A</span>              <span class="chord">D</span>  <span class="chord">Bm</span></div><div class="lyric-line">Si amanece hoy en mi vida, es solo gracias a Ti</div></div><div class="line-pair"><div class="chord-line">            <span class="chord">G</span>          <span class="chord">A</span>               <span class="chord">G</span> <span class="chord">D</span></div><div class="lyric-line">Tu me diste la alegría cuando yo te la pedí</div></div><div class="line-pair"><div class="chord-line">              <span class="chord">G</span>         <span class="chord">A</span>                <span class="chord">D</span>  <span class="chord">Bm</span></div><div class="lyric-line">Cuando yo ya me perdía, Madre tú estabas allí,</div></div><div class="line-pair"><div class="chord-line">            <span class="chord">G</span>        <span class="chord">A</span>                 <span class="chord">G</span> <span class="chord">D</span></div><div class="lyric-line">y del suelo recogías lo que quedaba de mí.</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">          <span class="chord">G</span>     <span class="chord">A</span></div><div class="lyric-line">Todo tuyo soy María</div></div><div class="line-pair"><div class="chord-line">          <span class="chord">D</span>  <span class="chord">Bm</span></div><div class="lyric-line">Todo tuyo soy</div></div><div class="line-pair"><div class="chord-line">             <span class="chord">G</span></div><div class="lyric-line">Todo lo que tengo es tuyo</div></div><div class="line-pair"><div class="chord-line">  <span class="chord">A</span>              <span class="chord">G</span> <span class="chord">D</span></div><div class="lyric-line">y todo lo mío te doy</div></div><div class="lyric-line">(x2)</div></div>
@@ -5258,7 +5312,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   <button data-action="session-toggle" aria-pressed="false">+ Session</button>
 </div>
 <div class="lyrics">
-<div class="verse"><div class="lyric-line">G D C D (x2)</div></div>
+<div class="verse"><div class="line-pair"><div class="chord-line"><span class="chord">G</span> <span class="chord">D</span> <span class="chord">C</span> <span class="chord">D</span> (x2)</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">        <span class="chord">G</span></div><div class="lyric-line">un grito de guerra</div></div><div class="line-pair"><div class="chord-line">           <span class="chord">D</span>                    <span class="chord">C</span></div><div class="lyric-line">se escucha en la faz de la tierra</div></div><div class="line-pair"><div class="chord-line">            <span class="chord">D</span></div><div class="lyric-line">y en todo lugar</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">          <span class="chord">G</span></div><div class="lyric-line">los prestos guerreros</div></div><div class="line-pair"><div class="chord-line">        <span class="chord">D</span></div><div class="lyric-line">empuñan su espada</div></div><div class="line-pair"><div class="chord-line">             <span class="chord">C</span>            <span class="chord">D</span></div><div class="lyric-line">y se enlistan para pelear</div></div></div>
 <div class="verse"><div class="line-pair"><div class="chord-line">         <span class="chord">G</span>             <span class="chord">D</span>      <span class="chord">Em</span></div><div class="lyric-line">para eso han sido entrenados</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">C</span>                          <span class="chord">D</span></div><div class="lyric-line">defenderan la verdad</div></div><div class="line-pair"><div class="chord-line">   <span class="chord">G</span>              <span class="chord">D</span>           <span class="chord">Em</span></div><div class="lyric-line">y no les sera arrebatado</div></div><div class="line-pair"><div class="chord-line">       <span class="chord">C</span>                      <span class="chord">D</span></div><div class="lyric-line">el fuego que en su sangre esta</div></div></div>
@@ -5403,14 +5457,6 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </article>
 </main>
 
-<!-- First visit on the hosted site only (see web/js/offline.js) -->
-<aside class="install-tip" role="note" hidden>
-  <p><strong>Para acceso offline:</strong> añádelo a la pantalla de inicio.</p>
-  <p>iPhone/iPad (Safari): Compartir → Añadir a pantalla de inicio</p>
-  <p>Android (Chrome): menú ⋮ → Añadir a pantalla de inicio</p>
-  <button class="icon-button" data-action="close-install-tip" aria-label="Cerrar">✕</button>
-</aside>
-
 <dialog id="print-dialog" class="print-dialog">
   <form method="dialog">
     <h3>Print settings</h3>
@@ -5433,6 +5479,18 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   </form>
 </dialog>
 
+<!-- First visit on the hosted site only (see web/js/install-tip.js) -->
+<aside class="install-banner" role="note" hidden>
+  <p><strong>Para acceso offline:</strong> añádelo a la pantalla de inicio.</p>
+  <p>iPhone/iPad (Safari): Compartir → Añadir a pantalla de inicio</p>
+  <p>Android (Chrome): menú ⋮ → Añadir a pantalla de inicio</p>
+  <button class="icon-button" data-action="close-install-tip" aria-label="Cerrar">✕</button>
+</aside>
+
+<!-- This book's settings (book.yaml) for the scripts below -->
+<script>
+const BOOK = {"storagePrefix": "cancionero.", "notationSetting": true};
+</script>
 <!-- Scripts from web/js/, core.js first -->
 <script>
 // Core helpers shared by every feature script. Loaded first.
@@ -5462,17 +5520,20 @@ function setActionLabel(action, text) {
 
 // Preferences remembered on this device. Storage can be unavailable
 // (private mode, blocked site data), so every access is guarded.
+// The prefix (book.yaml storage_key) keeps this book's data apart from other
+// books on the same site (<user>.github.io hosts every book of that user).
+const STORAGE_PREFIX = BOOK.storagePrefix;
 const prefs = {
     get(key, fallback) {
         try {
-            return localStorage.getItem(`cancionero.${key}`) ?? fallback;
+            return localStorage.getItem(STORAGE_PREFIX + key) ?? fallback;
         } catch {
             return fallback;
         }
     },
     set(key, value) {
         try {
-            localStorage.setItem(`cancionero.${key}`, value);
+            localStorage.setItem(STORAGE_PREFIX + key, value);
         } catch {
             // Not remembered; the setting still applies for this visit.
         }
@@ -5767,27 +5828,39 @@ document.addEventListener("click", (event) => {
 });
 </script>
 <script>
+// First visit: how to add the book to the home screen (iPhone and Android) so
+// it works offline. Shown once per browser, only on the hosted site (offline
+// needs sw.js), and never inside the home-screen app itself.
+//
+// book.yaml `install_tip` picks the look: "popup" (a dialog, #install-tip),
+// "banner" (a note at the bottom, .install-banner) or "off" (neither is on the page).
+
+(() => {
+    const popup = document.getElementById("install-tip");
+    const banner = document.querySelector(".install-banner");
+    const installed = window.matchMedia("(display-mode: standalone)").matches
+        || navigator.standalone === true; // iOS home-screen app
+    if ((!popup?.showModal && !banner) || installed || !/^https?:$/.test(location.protocol)) return;
+    if (prefs.get("installTipSeen")) return;
+    prefs.set("installTipSeen", "1");
+    if (popup?.showModal) popup.showModal();
+    else banner.hidden = false;
+})();
+
+onAction("close-install-tip", () => {
+    const banner = document.querySelector(".install-banner");
+    if (banner) banner.hidden = true;
+});
+</script>
+<script>
 // Offline home-screen app: on the hosted site, register sw.js so the book is
 // saved and opens without internet. Skipped when index.html is opened as a file.
-//
-// The first visit also shows a small tip on adding the book to the home screen
-// (not inside the home-screen app itself, and not when opened as a file).
 
 if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("sw.js").catch(() => {});
     });
 }
-
-const installTip = document.querySelector(".install-tip");
-const runningAsApp = matchMedia("(display-mode: standalone)").matches
-    || navigator.standalone === true; // iOS
-if (/^https?:$/.test(location.protocol) && !runningAsApp && !prefs.get("installTipShown")) {
-    installTip.hidden = false;
-    prefs.set("installTipShown", "1"); // only the first time on this browser
-}
-
-onAction("close-install-tip", () => { installTip.hidden = true; });
 </script>
 <script>
 // Printing: a dialog to choose columns and chords, and a print layout where
@@ -6178,28 +6251,16 @@ onAction("session-clear", () => {
 renderSession();
 </script>
 <script>
-// Transpose the chords of one song up or down by semitones, and show chord
-// names as letters (C D E) or as Do Re Mi (book-wide setting).
+// Transpose the chords of one song up or down by semitones.
 //
 // Chords are aligned by hand to exact letters, so transposing must never move
-// a chord to another column. When a chord name gets longer (C -> C#, C -> Do)
-// or shorter (C# -> D), the spaces after it shrink or grow to compensate, so
+// a chord to another column. When a chord name gets longer (C -> C#) or
+// shorter (C# -> D), the spaces after it shrink or grow to compensate, so
 // every following chord still starts at its original column.
 
 const NOTES_SHARP = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
 const NOTES_FLAT = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"];
 const NOTE_RE = /[A-G][#b]?/g; // chord suffixes (m, maj7, sus4...) are lowercase
-const SOLFEGE = { C: "Do", D: "Re", E: "Mi", F: "Fa", G: "Sol", A: "La", B: "Si" };
-const NOTATIONS = { letters: "Do Re Mi", solfege: "C D E" }; // button shows the other one
-
-let notation = prefs.get("notation", "letters");
-if (!(notation in NOTATIONS)) notation = "letters";
-
-// Am7 -> Lam7, D/F# -> Re/Fa#, Bb -> Sib
-function nameChord(chord) {
-    if (notation !== "solfege") return chord;
-    return chord.replace(NOTE_RE, (note) => SOLFEGE[note[0]] + note.slice(1));
-}
 
 function transposeNote(note, shift) {
     const scale = note.includes("b") ? NOTES_FLAT : NOTES_SHARP;
@@ -6208,9 +6269,15 @@ function transposeNote(note, shift) {
     return scale[(((index + shift) % 12) + 12) % 12];
 }
 
-// Transposes the root and the bass note: D/F# +2 -> E/G#
+// Chord names: letters (C D E) or solfège (Do Re Mi), a book-wide setting.
+const NOTATIONS = { letters: "C D E", solfege: "Do Re Mi" };
+const SOLFEGE = { C: "Do", D: "Re", E: "Mi", F: "Fa", G: "Sol", A: "La", B: "Si" };
+
+// Transposes the root and the bass note: D/F# +2 -> E/G# (or Mi/Sol#)
 function transposeChord(chord, shift) {
-    return chord.replace(NOTE_RE, (note) => transposeNote(note, shift));
+    const name = chord.replace(NOTE_RE, (note) => transposeNote(note, shift));
+    if (document.body.dataset.notation !== "solfege") return name;
+    return name.replace(/[A-G]/g, (letter) => SOLFEGE[letter]); // Am7 -> Lam7
 }
 
 // Original text between chords (spaces and separators like "(", ")", "|"),
@@ -6245,7 +6312,7 @@ function transposeChordLine(line, shift) {
     nodes.forEach((node, i) => {
         if (node.nodeType === Node.ELEMENT_NODE) {
             node.dataset.original ??= node.textContent;
-            const chord = nameChord(transposeChord(node.dataset.original, shift));
+            const chord = transposeChord(node.dataset.original, shift);
             drift += chord.length - node.dataset.original.length;
             node.textContent = chord;
             return;
@@ -6255,14 +6322,17 @@ function transposeChordLine(line, shift) {
     });
 }
 
-// Redraw a song's chords with its transposition and the current notation.
-// Longer names can make a chord line wider than the build measured, so the
-// song's --chars (see styles.css) grows to keep every line on screen.
-function redrawChords(song) {
+// Widest line of each song as built (--chars, see render.py).
+const builtChars = new WeakMap();
+
+// Rewrite a song's chords for its transposition and the current notation.
+// Longer names (Sol#m vs G#m) can push a line past the widest one, so --chars
+// grows with it and the lyrics still fit the screen.
+function renderChords(song) {
     const shift = Number(song.dataset.transpose || 0);
-    song.dataset.chars ??= song.style.getPropertyValue("--chars").trim();
-    let widest = Number(song.dataset.chars);
-    song.querySelectorAll(".chord-line").forEach((line) => {
+    if (!builtChars.has(song)) builtChars.set(song, Number(song.style.getPropertyValue("--chars")));
+    let widest = builtChars.get(song);
+    song.querySelectorAll(".chord-line, .chord-inline").forEach((line) => {
         transposeChordLine(line, shift);
         widest = Math.max(widest, line.textContent.length);
     });
@@ -6271,19 +6341,10 @@ function redrawChords(song) {
 
 function setTranspose(song, shift) {
     song.dataset.transpose = shift;
-    redrawChords(song);
+    renderChords(song);
     song.querySelector(".transpose-value").textContent = shift > 0 ? `+${shift}` : shift;
     songState.set(song, "transpose", shift || null); // remembered on this device
 }
-
-function setNotation(value) {
-    notation = value;
-    prefs.set("notation", value);
-    setActionLabel("toggle-notation", NOTATIONS[value]);
-    document.querySelectorAll(".song").forEach(redrawChords);
-}
-
-onAction("toggle-notation", () => setNotation(notation === "solfege" ? "letters" : "solfege"));
 
 // Steps through -11..+11; one more step wraps back to 0 (same key).
 function stepTranspose(song, step) {
@@ -6295,13 +6356,26 @@ onAction("transpose-up", (button, song) => stepTranspose(song, +1));
 onAction("transpose-down", (button, song) => stepTranspose(song, -1));
 onAction("transpose-reset", (button, song) => setTranspose(song, 0));
 
-// Restore the transpositions and chord names saved on this device.
+// Restore the transpositions saved on this device.
 songState.each("transpose", (song, shift) => {
     const valid = Number.isInteger(shift) && Math.abs(shift) < 12;
     setTranspose(song, valid ? shift : 0);
 });
-if (notation === "solfege") setNotation(notation);
-else setActionLabel("toggle-notation", NOTATIONS[notation]);
+
+function setNotation(notation) {
+    if (!(notation in NOTATIONS)) notation = "letters";
+    const changed = notation !== (document.body.dataset.notation || "letters");
+    document.body.dataset.notation = notation;
+    prefs.set("notation", notation);
+    setActionLabel("cycle-notation", NOTATIONS[notation]);
+    if (changed) document.querySelectorAll(".song").forEach(renderChords);
+}
+
+onAction("cycle-notation", () => {
+    setNotation(document.body.dataset.notation === "solfege" ? "letters" : "solfege");
+});
+// Books without the setting (book.yaml notation_setting: false) always show letters.
+if (BOOK.notationSetting) setNotation(prefs.get("notation", "letters"));
 </script>
 <script>
 // "Keep screen on" while playing. Only shown where the browser supports it

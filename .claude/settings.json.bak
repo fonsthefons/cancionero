@@ -1,0 +1,14 @@
+{
+    "permissions": {
+      "allow": [
+        "Bash(ls:*)", "Bash(wc:*)", "Bash(grep:*)", "Bash(head:*)",
+        "Bash(tail:*)", "Bash(find:*)", "Bash(cat:*)", "Bash(sed -n:*)",
+        "Bash(python -m pytest:*)",
+        "Bash(python -m evaluation:*)",
+        "Bash(git status:*)", "Bash(git diff:*)", "Bash(git log:*)",
+        "Bash(source .venv/bin/activate)"
+      ]
+    }
+  }
+
+
