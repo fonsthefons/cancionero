@@ -12,54 +12,54 @@ song_tags:
 ---
 C  D  Em  Bm6-
 
-C            D
+      C                   D
 Mi orgullo me sacó del jardín
-Em            Bm6-
+         Em                   Bm6-
 Su humildad puso el jardín en mí
-C
+         C
 Y si vendiera todo lo que tengo
-D
+  D
 A cambio de su amor
-Em  Bm6-
+         Em  Bm6-
 Yo fallaría
 
-[Pre-Estribillo]
-C
+
+            C
 Porque su amor no se compra
-D        Em
+D                  Em
 Ni se merece, su amor es un regalo
-Bm
+   Bm
 De gracia se recibe
 X2
 
-[Estribillo]
-C            D
+
+C                   D
 Quiero conocer a Jesús
-Em            Bm6-
+   Em                  Bm6-
 Yo Quiero conocer a Jesús
 X4
 
-C  Em  G  Bm
+    C  Em      G    Bm
 Yeshua aaa  aaaa aaaa
-C  Em  G  D
+    C  Em      G    D
 Yeshua aaa  aaaa aaaa
 x3
 
-C            Em
+     C              Em
 Todo el poder, Y la gloria es
-G        Bm7
+      G               Bm7
 De mi Cristo, Por los siglos
 x4
 
-C  Em  G  Bm
+    C  Em      G    Bm
 Yeshua aaa  aaaa aaaa
-C  Em  G  D
+    C  Em      G    D
 Yeshua aaa  aaaa aaaa
 x3
 
-[Final]
-C   D  Em
+
+        C    C   D Em
 Nuestro Dios reinará
-G   G  D
+    G          D     G
 Por siempre tú reinarás
 x6
