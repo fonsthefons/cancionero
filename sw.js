@@ -8,7 +8,7 @@
 // in "-v" so that "cancionero-v" never matches "cancionero-hakuna-v1".
 // Written by the builder from book.yaml's storage_key.
 const CACHE_PREFIX = "cancionero-v";
-const CACHE = CACHE_PREFIX + "1";
+const CACHE = CACHE_PREFIX + "2";
 const PAGE = "./"; // the book; every page request is answered with it
 const FILES = [PAGE, "manifest.webmanifest", "icon-180.png", "icon-512.png"];
 const NETWORK_WAIT_MS = 4000; // slow signal: show the saved copy after this
