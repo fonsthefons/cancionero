@@ -6,7 +6,7 @@ link: "https://open.spotify.com/track/0fpW2x6Cd3cBgTGaU8TZKE"
 song_tags:
   misa:
     - entrada
-    - cordero
+    - comunion
   alabanza:
     - primer_ciclo
   adoracion: []
