@@ -593,9 +593,19 @@ body.drawer-open {
 }
 
 .index summary > h2,
-.index summary > h3 {
+.index summary > h3,
+.index summary > h4,
+.index summary > h5,
+.index summary > h6 {
     display: inline;
     margin: 0;
+}
+
+/* Liturgia de las Horas goes deeper than tags: keep its headings readable */
+.index summary > h4,
+.index summary > h5,
+.index summary > h6 {
+    font-size: 1rem;
 }
 
 .subtag-index {
@@ -720,7 +730,119 @@ body.drawer-open {
 }
 
 .verse {
+    margin-bottom: 2.2em;
+}
+
+/* Staff and guitar tab (melody.js): both SVGs scale to the song's width with
+   the same viewBox width, so each fret stays under its note. */
+.melody {
+    /* Drawing replaces its content: never the browser's scroll anchor, else a
+       jump to a song lands off when songs above are drawn. */
+    overflow-anchor: none;
+    max-width: 32rem;
     margin-bottom: 1.1em;
+    color: var(--ink);
+    break-inside: avoid;
+}
+
+/* Until drawn (near the screen), hold the usual staff + tab size (viewBox about
+   380 x 90 + 72), so drawing doesn't move what's on screen. */
+.melody:empty {
+    aspect-ratio: 380 / 162;
+}
+
+.melody svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.melody .abcjs-chord {
+    fill: var(--chord);
+    font-weight: bold;
+}
+
+.melody-tab line {
+    stroke: currentColor;
+    stroke-width: 0.6;
+}
+
+/* Each fret blanks the tab line behind it. */
+.melody-tab text {
+    font: bold 12px var(--sans);
+    fill: currentColor;
+    text-anchor: middle;
+    dominant-baseline: central;
+    paint-order: stroke;
+    stroke: var(--page);
+    stroke-width: 4px;
+}
+
+.melody-tab .melody-tab-label {
+    font-size: 9px;
+}
+
+/* Play / pause (melody.js), in the song's controls; a psalm shows it once it has
+   a fórmula. */
+.song:not(:has(.melody)) .melody-play {
+    display: none;
+}
+
+.melody .melody-playing {
+    fill: var(--chord);
+}
+
+/* Psalm fórmulas (formula.js): the chosen semitono above the psalm, set apart. */
+.formula-pick {
+    margin-bottom: 12px;
+}
+
+.psalm-formula:not(:empty) {
+    margin-bottom: 1.2em;
+    padding-bottom: 0.6em;
+    border-bottom: 1px solid var(--border);
+}
+
+.formula-dialog {
+    box-sizing: border-box;
+    width: min(26rem, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    padding: 16px;
+}
+
+.formula-dialog[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formula-dialog input {
+    font: inherit;
+    padding: 8px;
+}
+
+.formula-options {
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.formula-options h4 {
+    margin: 0.8em 0 0.3em;
+}
+
+.formula-options button {
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+    text-align: left;
+}
+
+.formula-options button[aria-pressed="true"] {
+    font-weight: bold;
+}
+
+.formula-options [hidden] {
+    display: none;
 }
 
 /* Never split a verse or a chord+lyric pair across columns/pages */
@@ -836,6 +958,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     .backdrop,
     .drawer,
     .controls,
+    .formula-pick,
     .install-banner,
     .print-dialog {
         display: none !important;
@@ -6029,35 +6152,35 @@ window.addEventListener("afterprint", () => {
 });
 </script>
 <script>
-// Keep what's on screen still while songs above it change height (Safari).
+// Keep what's on screen still while songs above it change height.
 //
 // Off-screen songs are skipped by the browser (content-visibility in
 // styles.css) and get their real height only when scrolled near, or when the
-// text size changes. Browsers' own scroll anchoring hides that, but Safari's
-// jumps a screen away, so there it is turned off and done here instead.
-// shortcut: engine check by navigator.vendor (every iPhone browser is WebKit);
-// drop this file once Safari's scroll anchoring handles skipped content.
+// text size changes. Browsers' own scroll anchoring should hide that, but
+// Safari's jumps a screen away, and Chromium's drifts about a screen on A+
+// among short songs with staffs (the liturgia fórmulas), so it is turned off
+// and done here instead.
 
-if (navigator.vendor.startsWith("Apple")) {
-    document.documentElement.style.overflowAnchor = "none";
-    const songHeights = new WeakMap();
+document.documentElement.style.overflowAnchor = "none";
+const songHeights = new WeakMap();
 
-    const songResizes = new ResizeObserver((entries) => {
-        let shift = 0;
-        for (const entry of entries) {
-            const height = entry.borderBoxSize[0].blockSize;
-            const old = songHeights.get(entry.target);
-            songHeights.set(entry.target, height);
-            if (old === undefined) continue;
-            // Songs that ended above the middle of the screen push the rest down.
-            const top = entry.target.getBoundingClientRect().top;
-            if (top < 0 && top + old < window.innerHeight / 2) shift += height - old;
-        }
-        if (shift) window.scrollBy(0, shift);
-    });
+const songResizes = new ResizeObserver((entries) => {
+    let shift = 0;
+    let moved = 0; // how far earlier songs of this batch moved this one (entries are in page order)
+    for (const entry of entries) {
+        const height = entry.borderBoxSize[0].blockSize;
+        const old = songHeights.get(entry.target);
+        songHeights.set(entry.target, height);
+        if (old === undefined) continue;
+        // Songs that ended above the middle of the screen (before resizing) push the rest down.
+        const top = entry.target.getBoundingClientRect().top - moved;
+        if (top < 0 && top + old < window.innerHeight / 2) shift += height - old;
+        moved += height - old;
+    }
+    if (shift) window.scrollBy(0, shift);
+});
 
-    document.querySelectorAll(".song").forEach((song) => songResizes.observe(song));
-}
+document.querySelectorAll(".song").forEach((song) => songResizes.observe(song));
 </script>
 <script>
 // Search songs by number, title, author or lyrics. Wires up every `.search` box:
@@ -6084,7 +6207,9 @@ function searchText(text) {
 const searchIndex = [...document.querySelectorAll(".song")].map((song) => {
     // Lyric lines only: chord lines would add noise ("am", "do"...). A lyric
     // under a chord line is its .line-pair's own text.
+    // A psalm's fórmula (formula.js) is a copy of another song: not the psalm's words.
     const lines = [...song.querySelectorAll(".lyric-line, .line-pair")]
+        .filter((line) => !line.closest(".psalm-formula"))
         .map((line) => (line.matches(".lyric-line")
             ? line.textContent
             : [...line.childNodes].filter((node) => node.nodeType === Node.TEXT_NODE).map((node) => node.data).join("")
@@ -6350,13 +6475,20 @@ let session = (() => {
 
 const songTitle = (id) => document.getElementById(id).dataset.title;
 
+// A psalm's chosen fórmula (formula.js): shown with it and kept in shared links.
+const sessionFormula = (id) => {
+    const formula = songState.all[id]?.formula;
+    return formula && document.getElementById(formula) ? formula : null;
+};
+const sessionLabel = (id) => songTitle(id) + (sessionFormula(id) ? ` · ${songTitle(sessionFormula(id))}` : "");
+
 function renderSession() {
     const list = document.querySelector(".session-list");
     list.replaceChildren(...session.map((id) => {
         const item = document.createElement("li");
         item.dataset.song = id;
 
-        const link = Object.assign(document.createElement("a"), { href: "#" + id, textContent: songTitle(id) });
+        const link = Object.assign(document.createElement("a"), { href: "#" + id, textContent: sessionLabel(id) });
 
         const remove = Object.assign(document.createElement("button"), { textContent: "✕" });
         Object.assign(remove.dataset, { action: "session-remove", song: id });
@@ -6419,10 +6551,11 @@ onAction("session-clear", () => {
 });
 
 // Share: a link with ?session=id1,id2 that replaces the opener's session
-// (only the session; their settings and song changes stay).
+// (only the session and the fórmulas of its psalms, id~fórmula; their other
+// settings and song changes stay).
 onAction("session-share", () => {
     const url = new URL(location.pathname, location.href);
-    url.searchParams.set("session", session.join(","));
+    url.searchParams.set("session", session.map((id) => (sessionFormula(id) ? `${id}~${sessionFormula(id)}` : id)).join(","));
     const text = `Someone shared a song session with you (${document.title})`;
     const copy = () => (navigator.clipboard?.writeText(`${text}\n${url.href}`) ?? Promise.reject())
         .then(() => alert("Link copied"), () => prompt("Copy this link:", url.href));
@@ -6435,7 +6568,12 @@ onAction("session-share", () => {
 
 const shared = new URLSearchParams(location.search).get("session");
 if (shared !== null) {
-    session = [...new Set(shared.split(","))].filter((id) => document.getElementById(id)?.classList.contains("song"));
+    const entries = shared.split(",").map((entry) => entry.split("~"));
+    entries.forEach(([id, formula]) => {
+        const psalm = document.getElementById(id);
+        if (formula && psalm?.querySelector(".formula-pick") && typeof setFormula === "function") setFormula(psalm, formula);
+    });
+    session = [...new Set(entries.map(([id]) => id))].filter((id) => document.getElementById(id)?.classList.contains("song"));
     prefs.set(SESSION_KEY, JSON.stringify(session));
     try {
         history.replaceState(null, "", location.pathname + (session.length ? "#" + session[0] : ""));
@@ -6598,6 +6736,8 @@ function renderChords(song) {
         widest = Math.max(widest, line.textContent.length);
     });
     song.style.setProperty("--chars", widest);
+    // melody.js is only in books with melodies, so name refreshMelody only when there is one.
+    song.querySelectorAll(".melody").forEach((melody) => refreshMelody(melody));
 }
 
 function setTranspose(song, shift) {
