@@ -1,7 +1,7 @@
 ---
 title: Cordero de Dios
 autor: Misión Pais
-capo: "4"
+capo: "6"
 song_tags:
   misa: 
     - cordero
