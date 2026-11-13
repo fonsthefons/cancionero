@@ -1,7 +1,7 @@
 ---
 title: Anima Christi
 autor: Marco Frisina
-capo: "0"
+capo: "0, 0-3, original 1"
 link: "https://open.spotify.com/track/4TBTjp370FcPhGWAQP3NwD"
 song_tags:
   misa:
@@ -12,67 +12,67 @@ song_tags:
 ---
 
 Intro:
-Bm
+Am
 
-Bm      G          A      Bm
+Am      F          G      Am
 Anima Christi, sanctifica me
-Em       Bm            F#
+Dm       Am            E
 Corpus Christi, salva me
-Bm        G        A     G
+Am        F        G     F
 Sanguis Christi, inebria me
-Bm   Em       Bm      F#  Bm
+Am   Dm       Am      E   Am
 Aqua lateris Christi, lava me
 
-Bm       G           A  Bm
+Am       F           G  Am
 Passio Christi, conforta me
-Em      Bm     G    F#
+Dm      Am     F    E
 O bone Jesu, exaudi me
-Bm     G       A G
+Am     F       G F
 Intra vulnera tu-ua
-      Em     F#    Bm
+      Dm     E     Am
 Absconde, absconde me
 
-Bm      G          A      Bm
+Am      F          G      Am
 Anima Christi, sanctifica me
-Em       Bm            F#
+Dm       Am            E
 Corpus Christi, salva me
-Bm        G        A     G
+Am        F        G     F
 Sanguis Christi, inebria me
-Bm   Em       Bm      F#  Bm
+Am   Dm       Am      E   Am
 Aqua lateris Christi, lava me
 
-Bm     G        A        Bm
+Am     F        G        Am
 Ne permittas a te me separari
-Em         Bm       G    F#
+Dm         Am       F    E
 Ab hoste maligno defende me
-Bm       G     A G
+Am       F     G F
 In hora mortis meae
-     Em   F#  Bm
+     Dm   E   Am
 Voca me, voca me
 
-Bm      G          A      Bm
+Am      F          G      Am
 Anima Christi, sanctifica me
-Em       Bm            F#
+Dm       Am            E
 Corpus Christi, salva me
-Bm        G        A     G
+Am        F        G     F
 Sanguis Christi, inebria me
-Bm   Em       Bm      F#  Bm
+Am   Dm       Am      E   Am
 Aqua lateris Christi, lava me
 
-Bm    G       A      Bm
+Am    F       G      Am
 Et jube me venire ad te
-Em             Bm     G    F#
+Dm             Am     F    E
 Ut cum Sanctis tuis laudem te
-Bm     G       A  G
+Am     F       G  F
 Per infinita saecula
-     Em    F# Bm
-Saeculorum, Amen.
 
-Bm      G          A      Bm
+     Dm    E  Am
+Saeculorum, Amen.
+Am      F          G      Am
 Anima Christi, sanctifica me
-Em       Bm            F#
+Dm       Am            E
 Corpus Christi, salva me
-Bm        G        A     G
+Am        F        G     F
 Sanguis Christi, inebria me
-Bm   Em       Bm      F#  Bm
+Am   Dm       Am      E   Am
 Aqua lateris Christi, lava me
