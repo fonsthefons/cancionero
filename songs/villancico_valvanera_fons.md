@@ -7,6 +7,11 @@ capo: "0"
 Intro:
 C
 
+C   E   Am
+uuu uuu uu
+Am   G   C
+uuu  uu  u
+
 C        E         Am
 Hoy ha nacido en Belén
 Am           G       C
@@ -16,6 +21,7 @@ C       E          Am
 Am      G         C
 pero yo soy un humilde pastor
 
+**
 Am    E         Am
 Se abrieron los cielos
 Am E         Am
@@ -33,6 +39,12 @@ C          G       Am
 venid, adoremos al niño
        F    G        C
 La estrella de Valvanera
+**
+
+C   E   Am
+uuu uuu uu
+Am   G   C
+uuu  uu  u
 
 C      E              Am
 Vamos corriendo al portal
@@ -43,6 +55,7 @@ Vemos la estrella brillar
 Am           G            C
 y abrimos la puerta de madera
 
+**
 Am    E         Am
 Se abrieron los cielos
 Am E         Am
@@ -60,6 +73,12 @@ C          G       Am
 Venid, adoremos al niño
        F    G        C
 La estrella de Valvanera
+**
+
+C   E   Am
+uuu uuu uu
+Am   G   C
+uuu  uu  u
 
 Am          G      C             F
 Allí hay un hombre un buey y una niña,
@@ -75,6 +94,7 @@ Envuelto en pañales, entre mula y buey
 Am            F       G            C
 ¿Qué sitio es este para todo un rey?
 
+**
 Am    E         Am
 Se abrieron los cielos
 Am E         Am
@@ -92,3 +112,4 @@ C          G       Am
 Venid, adoremos al niño
        F    G        C
 La estrella de Valvanera
+**
