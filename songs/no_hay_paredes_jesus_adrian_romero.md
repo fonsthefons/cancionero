@@ -10,7 +10,8 @@ song_tags:
     - comunion
 ---
 
-INTRO: G C Em C    x2
+INTRO: 
+G C Em C    x2
 G                              C 
 Quiero llevarte a todo lugar conmigo
 G                              C

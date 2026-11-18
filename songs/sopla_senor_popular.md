@@ -11,7 +11,8 @@ song_tags:
     - espiritu
 ---
 
-Intro: E E7 A B7 C#m A B7 (x2)
+Intro: 
+E E7 A B7 C#m A B7 (x2)
 E                   E7  
 Sopla Señor te lo pido, 
 A              B7

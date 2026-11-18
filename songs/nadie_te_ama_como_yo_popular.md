@@ -10,7 +10,8 @@ song_tags:
     - comunion
 ---
 
-INTRO: C,G,Am,F,Dm,G
+INTRO: 
+C,G,Am,F,Dm,G
 
 C               G/B         Am
  Cuanto he esperado este momento,

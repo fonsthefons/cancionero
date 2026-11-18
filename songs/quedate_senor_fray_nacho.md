@@ -10,7 +10,8 @@ song_tags:
     - cristo
 ---
 
-INTRO: Bm A  G  X2
+INTRO: 
+Bm A  G  X2
 Bm
 Quien si no tú
                              G 

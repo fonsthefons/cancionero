@@ -11,7 +11,8 @@ song_tags:
   tema:
     - virgen
 ---
-Intro: G D
+Intro: 
+G D
 
           G       A  
 Todo tuyo soy María

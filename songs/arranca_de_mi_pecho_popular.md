@@ -13,7 +13,8 @@ song_tags:
     - tercer_ciclo
 ---
 
-Intro: G C G D
+Intro: 
+G C G D
 
 G             C
 Arranca de mi pecho
