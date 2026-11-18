@@ -24,7 +24,7 @@ Em                         G
 esa cruz que cargó con amor.
 
 
-Dm                 G              C    F-C/E
+Dm                 G              C F-C/E
 Sí, Padre, hoy vengo a decirte sí,
 Dm             C/E    F                  G
 es Jesús el que me llama por mi nombre,

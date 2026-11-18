@@ -26,7 +26,7 @@ Me perdonaste, me acercaste a tu presencia
 F#m                                E
 Me levantaste, hoy me postro a adorarte
 
-                 A          D          E
+                 A          D     E
 No hay lugar más alto, más grande
              F#m                       A   E
 Que estar a tus pies, que estar a tus pies

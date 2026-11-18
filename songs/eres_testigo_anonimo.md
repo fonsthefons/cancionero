@@ -50,7 +50,7 @@ No hace falta más
 
 Dm                   Gm
 Y aunque quieran callar tus labios
-          C                 F
+          C             F
 Y te quiten la libertad
         Gm                Dm
 No tienes miedo, eres de Cristo

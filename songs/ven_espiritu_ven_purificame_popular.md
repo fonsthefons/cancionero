@@ -17,26 +17,26 @@ song_tags:
 ---
 C           G/B       Am
 Ven, Espíritu, Ven,
-       Em                 F
+       Em        F
 Y lléname, Señor
 Dm7              G
 Con tu preciosa unción
 C           G/B       Am
 Ven, Espíritu, Ven,
-       Em                 F
+       Em        F
 Y lléname, Señor
 Dm7              G
 Con tu preciosa unción
 
 C              G/B
 Purifícame y lávame,
-       Am                 Em               F
+       Am                 Em F
 Renuévame, restáurame, Señor
 Dm7        G
 Con tu poder
 C              G/B
 Purifícame y lávame,
-       Am                 Em               F
+       Am                 Em F
 Renuévame, restáurame, Señor
 G        C
 Te quiero conocer

@@ -1,21 +1,23 @@
 ---
 title: Granito de mostaza
 autor: popular
-link: "https://open.spotify.com/track/0awvSWzbrLKkCvXPZI4cD5?si=6e5da99d35d047c3"
 capo: "0"
+link: "https://open.spotify.com/track/0awvSWzbrLKkCvXPZI4cD5?si=6e5da99d35d047c3"
 song_tags:
-  alabanza:
-    - segundo_ciclo
-  misa: 
+  misa:
     - entrada
     - comunion
+  alabanza:
+    - segundo_ciclo
 ---
 
 Intro:
 Gm
 
-         Gm                     D
-Si tuvieras Fe como un granito de mostaza, (¿Quien Dice?)
+         Gm
+Si tuvieras Fe
+                 D
+como un granito de mostaza, (¿Quien Dice?)
               Gm      G7
 Esto dice el Señor, (Bis)
         Cm           Gm
@@ -30,8 +32,10 @@ Se Moveran (Uh Uh)
        Gm
 Se Moveran (Bis)
 
-         Gm                     D
-Si tuvieras Fe como un granito de mostaza, (¿Quien Dice?)
+         Gm
+Si tuvieras Fe
+                 D
+como un granito de mostaza, (¿Quien Dice?)
               Gm      G7
 Esto dice el Señor, (Bis)
         Cm           Gm

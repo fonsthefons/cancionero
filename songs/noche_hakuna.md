@@ -112,10 +112,10 @@ Por los que quieren saciar su sed de amar
 Kyrie Eleison Kyrie Eleison
       C#m           A
 Kyrie Eleison Kyrie Eleison
-      E             G#m
+      E       G#m
 Kyrie Eleison
 
         A
 Ten piedad, ten piedad
-        E                G#m   C#m
+        E              G#m C#m
 Ten piedad, ten piedad

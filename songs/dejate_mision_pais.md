@@ -72,7 +72,7 @@ Déjame que Yo te levante
 Señor no ves que quiero regresar
          G         C  C-G-Am
 Pero me pesa mi pasado
-    Am   Am7           Dm        F
+    Am   Am7           Dm    F
 Acaso pides lo que no sé dar
                          G
 El tiempo me ha secado el alma
@@ -81,7 +81,7 @@ El tiempo me ha secado el alma
 Tanto he besado el suelo ¿no lo ves?
          G                 C  C-G-Am
 Mis manos se han cerrado tanto
-    Am   Am7           Dm        F
+    Am   Am7           Dm    F
 No te preocupes te rescatare
                        G
 Mi vida cambio por la tuya

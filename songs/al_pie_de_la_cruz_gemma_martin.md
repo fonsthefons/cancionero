@@ -1,12 +1,12 @@
 ---
 title: Al pie de la cruz
 autor: Gemma Martin
-link: "https://open.spotify.com/track/6G3BelQwIdQVpkf33lcscP"
 capo: "0"
+link: "https://open.spotify.com/track/6G3BelQwIdQVpkf33lcscP"
 song_tags:
-  adoracion: []
-  misa: 
+  misa:
     - comunion
+  adoracion: []
   tema:
     - cristo
 ---
@@ -16,17 +16,27 @@ C
 
 Dm                           G
 Cierro los ojos, e imagino tu madero
-                C          Em           Am
-Y la sangre que derramas, sobre el polvo del camino
+                C
+Y la sangre que derramas,
+ Em           Am
+sobre el polvo del camino
 
-                   Dm                G
-Me pregunto qué ha ocurrido y por qué me he merecido
-                   C            Am
-Que tu corazón de niño, se desgarre por el mío
-                   Dm                G
-Me pregunto por qué a mí, por qué a mí me has escogido
-                     E            Am
-Por qué has querido entregarle a esta pobre tu cariño
+                   Dm
+Me pregunto qué ha ocurrido
+         G
+y por qué me he merecido
+                   C
+Que tu corazón de niño,
+        Am
+se desgarre por el mío
+                   Dm
+Me pregunto por qué a mí,
+           G
+por qué a mí me has escogido
+                     E
+Por qué has querido entregarle
+   Am
+a esta pobre tu cariño
 
 Dm                G
 Deja que tu sangre se derrame por las piedras
@@ -36,17 +46,25 @@ Am
 Desgarrándote la piel por mí
 Dm                G
 Y déjame empapar la piedra de mi corazón
-          C                     Am
-Para que lata junto al tuyo y así empiece a ser de carne
-Dm                G
-Deja que tu gloria me levante con la Cruz
-             C                      Am
-Que al elevarse me ha extasiado y me ha cegado con su luz
+          C
+Para que lata junto al tuyo
+    Am
+y así empiece a ser de carne
+Dm
+Deja que tu gloria
+G
+me levante con la Cruz
+             C
+Que al elevarse me ha extasiado
+    Am
+y me ha cegado con su luz
 
 Dm                G
 Y déjame quedarme contigo al pie de la Cruz
-C                                 Em        Am
-Para que mi último suspiro sea contigo mi Jesús
+C
+Para que mi último suspiro
+       Em        Am
+sea contigo mi Jesús
 
 Dm                G
 Y déjame, déjame quedarme aquí
@@ -55,5 +73,7 @@ Déjame, contigo aquí quedarme
 
 Dm                G
 Déjame quedarme contigo al pie de la Cruz
-C                            G              C
-Para que mi último suspiro, sea contigo mi Jesús
+C
+Para que mi último suspiro,
+ G              C
+sea contigo mi Jesús

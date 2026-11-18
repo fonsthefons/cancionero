@@ -40,7 +40,7 @@ solo una peticion
         G   F#sus   Em       A
 y si puede ser a solas mucho mejor
 
-      G       A           F#sus      Bm
+      G       A           F#sus Bm
 solo dejame mirarte cara a cara
       G            F#sus      Bm
 y perderme como un niño en tu mirada
@@ -77,7 +77,7 @@ o el color de mi corona
       A
 si la llego A ganar
 
-      G       A           F#sus     Bm
+      G       A           F#sus Bm
 solo dejame mirarte cara a cara
        Em7      F#sus          Bm
 aunque caiga derretido en tu mirada

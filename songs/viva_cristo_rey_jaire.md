@@ -33,9 +33,9 @@ y se enlistan para pelear
 
          G             D      Em
 para eso han sido entrenados
-   C                          D
+   C                 D
 defenderan la verdad
-   G              D           Em
+   G              D      Em
 y no les sera arrebatado
        C                      D
 el fuego que en su sangre esta

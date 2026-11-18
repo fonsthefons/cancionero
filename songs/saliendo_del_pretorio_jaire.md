@@ -16,7 +16,7 @@ Am               Dm                       G
 Saliendo del pretorio marcha una procesión,
                   C        Em                 Am
 con rumbo al Calvario sufriendo va un varón.
-                         Dm                         G 
+                         Dm              G
 la cruz sobre su espalda llagándole está
                 C  Em
 no puede caminar.
@@ -24,9 +24,9 @@ no puede caminar.
 
 Am        A7              Dm                        G
 !No¡, no puede dar un paso y cae sobre el camino,
-                   C          Em                  Am
+                   C          Em           Am
 recibe un latigazo sobre su cuerpo herido.
-                 Dm                            G 
+                 Dm                        G
 No puede avanzar se escucha solo un grito:
                   C  Em
 'levántate maldito'.
@@ -46,7 +46,7 @@ Am                 Dm                            G
 !Sed¡, sed tengo de un amigo, sed tengo de un amor,
                        C        Em    Am
 se tengo que un humano tenga compasion
-                        Dm                        G     Em
+                        Dm                   G Em
 Que acepte ésta sangre que derramando estoy,
           Am
 por su salvación.
@@ -54,9 +54,9 @@ por su salvación.
 
 Am        A7              Dm                        G
 !No¡, no puede dar un paso y cae sobre el camino,
-                   C          Em                  Am
+                   C          Em           Am
 recibe un latigazo sobre su cuerpo herido.
-                 Dm                            G 
+                 Dm                        G
 No puede avanzar se escucha solo un grito:
                   C  Em
 'levántate maldito'.

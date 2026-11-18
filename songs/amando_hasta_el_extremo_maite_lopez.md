@@ -1,27 +1,37 @@
 ---
 title: Amando hasta el extremo
 autor: Maite Lopez
-link: "https://open.spotify.com/track/06OZGcgtpHtSRanig92kvB?si=0c1bb3c9b529422c"
 capo: "2, 2-6, original 2"
+link: "https://open.spotify.com/track/06OZGcgtpHtSRanig92kvB?si=0c1bb3c9b529422c"
 song_tags:
-  adoracion: []
   misa:
     - ofertorio
     - comunion
+  adoracion: []
 ---
 
 Am C Am C Am (2-2-2-2-2)
 
-Am         C                    Am
-Déjame, Señor, mirarte bien por dentro,
-                  C                 F
-entrar en tu Corazón y dejarme seducir
-                      Dm                     G
-y que aumenten mis deseos de querer ser como Tú,
-                  Em                      Am
-conocerte internamente, amarte y seguirte más,
-            F           Fm                   Am
-apostar mi vida junto a ti, déjame verte, Señor,
+Am         C
+Déjame, Señor,
+                 Am
+mirarte bien por dentro,
+                  C
+entrar en tu Corazón
+               F
+y dejarme seducir
+                      Dm
+y que aumenten mis deseos
+                   G
+de querer ser como Tú,
+                  Em
+conocerte internamente,
+                  Am
+amarte y seguirte más,
+            F           Fm
+apostar mi vida junto a ti,
+                 Am
+déjame verte, Señor,
 
                     F
 Amando hasta el extremo
@@ -44,16 +54,26 @@ Y sin nada que pedir
        G         Am
 Y con tanto para dar
 
-Am                     C                      Am
-Yo, el Maestro y el Señor, ya no puedo amaros más,
-                           C                    F
-pues como el Padre me ha amado, así os he amado yo.
-                Dm                       G
-Dejé mi vida entera en este Vino y este Pan,
-                     Em                          Am
-este Pan que soy yo mismo que me parto y que me doy,
-               F           Fm                       Am
-Deseo que os améis de corazón, yo también os quiero ver
+Am                     C
+Yo, el Maestro y el Señor,
+                   Am
+ya no puedo amaros más,
+                           C
+pues como el Padre me ha amado,
+                F
+así os he amado yo.
+                Dm
+Dejé mi vida entera
+                     G
+en este Vino y este Pan,
+                     Em
+este Pan que soy yo mismo
+                       Am
+que me parto y que me doy,
+               F           Fm
+Deseo que os améis de corazón,
+                     Am
+yo también os quiero ver
 
                     F
 Amando hasta el extremo

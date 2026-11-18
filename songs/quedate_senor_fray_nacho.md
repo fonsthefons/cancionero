@@ -16,7 +16,7 @@ Bm
 Quien si no tú
                              G 
 que calmaste hasta los mares
-                                Em                F#
+                                Em   F#
 podrá calmar de mi alma la tempestad
 
 Bm
@@ -27,27 +27,27 @@ que llenaste soledades
 podrá dar a mi esperanza
         F#
 un nuevo hogar
-                     G 
+               G
 Quien si no tú
                            A 
 que después de tantos años
-                                    F#
+                            F#
 que a pesar de mis rechazos
-                             Bm
+                       Bm
  sigues dándome tu luz
             A  G 
 Quien si no tú
-                                A 
+                           A
 que a pesar de mis pecados
                         F#
 no te cruzaste de brazos
-                             Bm
+                        Bm
 y en tu abrazo descubrí
 
 PRECORO:
-                  A         G     F#
+                  A         G F#
 que me amaste desde siempre
-   Bm       A          G 
+   Bm       A  G
 y para siempre
 
 CORO:
@@ -55,15 +55,15 @@ CORO:
 Quédate Señor y habita de nuevo en mi alma
          Em             G
 que sola quedó tras mi marcha
-      Bm                      A 
+      Bm                 A
 herida por falta de amor
               Bm
 Quédate Señor
-    A                            G 
+    A                   G
 inúndame con tu palabra
      Em               G
 seréname, ven, tráeme calma
-      Bm                             A 
+      Bm                        A
 que quiero entregarme a tu Amor
 Bm  A   G 
 Quédate Señor
@@ -72,9 +72,9 @@ Bm  A   G
 ESTROFA II
 Bm
 Quién si no tú
-                              G 
+                          G
 que saciaste a multitudes
-                              Em                F#
+                              Em            F#
 podrá alimentar mi alma que hambrienta está
 
 Bm
@@ -91,23 +91,23 @@ quién si no tú
 Quien si no tu
                                 A 
 que a pesar de estar tan lejos
-                                     F#
+                             F#
 caminaste hasta mi encuentro
-                             Bm
+                       Bm
 para hacerme descubrir
  
             G 
 que solo tú
         A
 eras lo que yo anhelaba
-                           F# 
+                        F#
 y de nuevo intensamente 
         Bm
 en tu abrazo descubrí
 PRECORO:
-                  A         G     F#
+                  A         G F#
 que me amaste desde siempre
-   Bm       A          G 
+   Bm       A  G
 y para siempre
 
 CORO:
@@ -115,15 +115,15 @@ CORO:
 Quédate Señor y habita de nuevo en mi alma
          Em             G
 que sola quedó tras mi marcha
-      Bm                      A 
+      Bm                 A
 herida por falta de amor
               Bm
 Quédate Señor
-    A                            G 
+    A                   G
 inúndame con tu palabra
      Em               G
 seréname, ven, tráeme calma
-      Bm                             A 
+      Bm                        A
 que quiero entregarme a tu Amor
 Bm  A   G 
 Quédate Señor

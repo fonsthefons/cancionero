@@ -1,43 +1,68 @@
 ---
 title: Dona tu Vida
 autor: popular
-link: "https://open.spotify.com/track/3I1i06q4ut8Bs4faYaqGxQ?si=98aad8ba075e45f0"
 capo: "0, original 7 or Em"
+link: "https://open.spotify.com/track/3I1i06q4ut8Bs4faYaqGxQ?si=98aad8ba075e45f0"
 song_tags:
-  misa: 
+  misa:
     - ofertorio
     - comunion
 ---
+
 Am C G F G Am7
 
-Am                          C
-Una noche de sudores con la barca en el mar,
-             G                       F      G      Am
-Mientras el cielo aclara ya, mirabas tus redes vacías.
-            C                         G               C
-Pero hay alguien que te llama y otros mares te enseñará,
-      F           C          F     G   Am
-En el corazón del hombre sus redes echará.
+Am
+Una noche de sudores
+       C
+con la barca en el mar,
+             G
+Mientras el cielo aclara ya,
+        F      G      Am
+mirabas tus redes vacías.
+            C
+Pero hay alguien que te llama
+        G               C
+y otros mares te enseñará,
+      F           C
+En el corazón del hombre
+    F     G   Am
+sus redes echará.
 
-Am             C          G                F
-Dona toda tu vida como María al pie de la Cruz
-         C             G                    F
-Y serás siervo de cada hombre, siervo por amor,
+Am             C
+Dona toda tu vida
+        G                F
+como María al pie de la Cruz
+         C             G
+Y serás siervo de cada hombre,
+             F
+siervo por amor,
 C         F     G     Am  G
 Sacerdote de la humanidad
 
-Am                           C
-Caminabas en silencio, entre lágrimas esperabas
-          G                           F            Am
-Que la semilla antes sembrada, cayera sobre tierra fertil
-        C                       G          C
-Nace el gozo ya en ti viendo el trigo madurar
-      F           C          F        G   Am
-Y crecido bajo el sol, ya se puede almacenar
+Am
+Caminabas en silencio,
+      C
+entre lágrimas esperabas
+          G
+Que la semilla antes sembrada,
+       F            Am
+cayera sobre tierra fertil
+        C
+Nace el gozo ya en ti
+          G          C
+viendo el trigo madurar
+      F           C
+Y crecido bajo el sol,
+      F        G   Am
+ya se puede almacenar
 
-Am             C          G                F
-Dona toda tu vida como María al pie de la Cruz
-         C             G                    F
-Y serás siervo de cada hombre, siervo por amor,
+Am             C
+Dona toda tu vida
+        G                F
+como María al pie de la Cruz
+         C             G
+Y serás siervo de cada hombre,
+             F
+siervo por amor,
 C         F     G     Am
 Sacerdote de la humanidad

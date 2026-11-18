@@ -18,7 +18,7 @@ A                       G
 The great unknown where feet may fail
 Bm                  A/C#     D
 And there I find You in the mystery
-                     A                    G
+                     A               G
 In oceans deep   My faith will stand
  
  

@@ -1,17 +1,17 @@
 ---
-
 title: Madre
 autor: Hakuna
-link: "https://open.spotify.com/track/4LFnaNrPChE1u6CpwD0TLA?si=e4d84cb3fb2d452c"
 capo: "0, -2-0, original 0"
+link: "https://open.spotify.com/track/4LFnaNrPChE1u6CpwD0TLA?si=e4d84cb3fb2d452c"
 song_tags:
+  misa:
+    - salida
   alabanza:
     - cuarto_ciclo
-  misa: 
-    - salida
   tema:
     - virgen
 ---
+
 C-G-Am-G6-Fmaj7-G-C-G
 
 C                G                     Am-G

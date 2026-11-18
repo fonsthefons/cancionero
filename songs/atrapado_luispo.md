@@ -21,7 +21,7 @@ Quita de mi vida lo que sobra,
 limpia los rincones que no vi,
   C    B7           Em
 resucítame con la memoria
-C                 D            G            D
+C                 D            G    D
 de tu mirada cautivándome otra vez.
 
 G                  Em
@@ -41,7 +41,7 @@ Ven y mándame tu luz del cielo,
 cura las heridas que hay en mí.
   C            B7           Em
 riega, sana y lávame por dentro,
-        C          D            G           D
+        C          D            G    D
 con tu mirada cautivándome otra vez.
 
 G                  Em

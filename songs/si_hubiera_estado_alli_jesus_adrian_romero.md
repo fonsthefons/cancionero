@@ -21,7 +21,7 @@ Que tu muerte pidió, que te crucifico
 Lo tengo que admitir, hubiera yo también,
                   C
 clavado en esa cruz
-    Am           D                       Em    D7
+    Am           D                       Em D7
 Tus manos mi Jesús, si hubiera estado allí
 
                   G                       Em
@@ -32,7 +32,7 @@ Yo fui el que te escupió, y tu costado hirió
 Pensándolo más bien,
                   Em                 C
 yo fui el que corono de espinas y dolor
-   Am              D                        Em    D7
+   Am              D                        Em D7
 Tu frente buen señor, también yo estaba allí
 
                      G                      Em

@@ -82,7 +82,7 @@ En ti Jesús confío
 En ti Jesús
         E    A        E      F#m  D
 Pues tú Señor, sabes, puedes y me amas
-          E        A    A  D
+          E        A  A D
 Tu amor colma mi alma
     E     A
 Gracias por la vida

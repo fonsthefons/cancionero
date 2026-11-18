@@ -1,12 +1,12 @@
 ---
 title: Mis heridas te han curado
 autor: Batah
+capo: "0"
 link: "https://open.spotify.com/track/4bFO60QUr4hI5NcDVwChBI?si=57582e5f71cf40e5"
-capo: 0
 song_tags:
-  adoracion: []
   misa:
     - comunion
+  adoracion: []
   tema:
     - cristo
 ---

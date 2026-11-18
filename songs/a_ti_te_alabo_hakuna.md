@@ -1,13 +1,13 @@
 ---
 title: A ti te alabo
 autor: Hakuna
-link: "https://open.spotify.com/track/6XLPxmYdva9RIwEDYL2YHt?si=ca79a99d6157429d"
 capo: "3, 0-7, original 0"
+link: "https://open.spotify.com/track/6XLPxmYdva9RIwEDYL2YHt?si=ca79a99d6157429d"
 song_tags:
+  misa:
+    - entrada
   alabanza:
     - segundo_ciclo
-  misa: 
-    - entrada
 ---
 
          C
@@ -70,19 +70,26 @@ A Ti te alaban las montañas y los mares
 A Ti te alaaaaaaban
 
          C
-A Ti te alabo, aunque te escondas, aunque yo no pueda verte
+A Ti te alabo, aunque te escondas,
+aunque yo no pueda verte
          F
 A Ti te alabo, que me salvas de la muerte
                       G
-A Ti te alabo en el silencio de un amor que ya no siente
+A Ti te alabo en el silencio
+de un amor que ya no siente
                        Am
-A Ti te alabo, eres mi Dios, eres mi vida, eres mi fuerte
+A Ti te alabo, eres mi Dios,
+eres mi vida, eres mi fuerte
+
          C
-A Ti te alabo en lo sencillo, cotidiano, indiferente
+A Ti te alabo en lo sencillo,
+cotidiano, indiferente
          F
-A Ti te alabo con el vivo que que te busca ansiadamente
+A Ti te alabo con el vivo
+que que te busca ansiadamente
          G
-A Ti te alabo con el muerto que te espera nuevamente
+A Ti te alabo con el muerto
+que te espera nuevamente
          Am                          G
 A Ti te alabo, eres mi Dios, eres mi vida
 

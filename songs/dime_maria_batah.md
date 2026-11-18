@@ -1,8 +1,8 @@
 ---
 title: Dime María
 autor: Batah
-link: "https://open.spotify.com/track/3XquETxUYUBj3w3uvAEzQH?si=da7f801ba0b84103"
 capo: "2, 0-4, original 5"
+link: "https://open.spotify.com/track/3XquETxUYUBj3w3uvAEzQH?si=da7f801ba0b84103"
 song_tags:
   misa:
     - comunion
@@ -10,6 +10,7 @@ song_tags:
   tema:
     - virgen
 ---
+
 Intro
 C Am F C Dm G
 
@@ -17,8 +18,10 @@ C               (G/B)             Am
 ¿Qué le dices a José cuando se esfuerza,
        Dm          G               C
 por buscar refugio porque el niño llega?
-      Am              G          F             C
-¿Cómo miras hacia al cielo dando las gracias a Dios,
+      Am              G
+¿Cómo miras hacia al cielo
+      F             C
+dando las gracias a Dios,
      Dm                              G
 por poder llevar tan dentro al Redentor?
 
@@ -31,7 +34,7 @@ cómo escuchas sus latidos y su voz?
     Dm                            G (G7)
 que viene a salvar al mundo por Amor?
 
- F C G         Am    
+ F C G         Am
 María llena de gracia
 Dm G           C (C7)
      Madre que ama,
@@ -44,8 +47,10 @@ C                   (G/B)        Am
 ¿Qué le cantas a tu Hijo cuando duerme,
        Dm               G         C
 cuando se despierta y llora de repente?
-       Am               G           F            C
-¿Cómo calmas con tu abrazo, y secas lagrimas divinas,
+       Am               G
+¿Cómo calmas con tu abrazo,
+        F            C
+y secas lagrimas divinas,
       Dm                          G (G7)
 cuando resbalan y caen por sus mejillas?
 
@@ -60,7 +65,7 @@ se te escapa entre los dedos,
       Dm                     G (G7)
 y disfrutas cada risa, cada gesto?
 
- F C G         Am    
+ F C G         Am
 María llena de gracia
 Dm G           C (C7)
      Madre que ama,

@@ -89,8 +89,8 @@ x2
 No tengo miedo
 G
 No temeré
-D/F#                    Em
+D/F#                 Em
 El Dios del universo
-                D
+            D
 Es mi padre
 (x infinito)

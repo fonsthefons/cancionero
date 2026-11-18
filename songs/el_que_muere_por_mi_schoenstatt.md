@@ -33,7 +33,7 @@ Una madre lloró y su amigo calló
 Pero siendo una entrega de amor
               Am         G       F
 Su camino siguió y en algún otro lado
-    G             C     G
+    G             C G
 Una luz se encendió
 
        F         G                Am

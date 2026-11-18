@@ -56,7 +56,7 @@ Dm
 Ave María, Madre y Reina
 Gm
 Ave María, del mar estrella
-Bb        Dm
+Bb Dm
 X2
 
 Dm
@@ -99,5 +99,5 @@ Dm
 Ave María, Madre y Reina
 Gm
 Ave María, del mar estrella
-Bb        Dm
+Bb Dm
 x3

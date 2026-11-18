@@ -16,14 +16,14 @@ G         C
 Tu eres mi respirar
 G         C
 Tu eres mi respirar
-G      D       Em        C        D
+G      D       Em        C   D
 Dios tu presencia vive en mi
 
 G         C
 Tu eres mi pan Señor
 G         C
 Tu eres mi pan Señor
-G      D       Em        C        D
+G      D       Em        C    D
 Dios tus palabras son para mi
 
 G D Em D

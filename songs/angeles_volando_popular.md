@@ -33,7 +33,7 @@ C                                       G
 No sé si la Iglesia subió o si el Cielo bajó,
                                      F
 si sé que está lleno de ángeles de Dios,
-                 G          C        G
+                 G          C   G
 porque el mismo Dios está aquí.
 
 C G Am-F C-G

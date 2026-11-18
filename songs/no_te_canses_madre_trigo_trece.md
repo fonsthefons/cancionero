@@ -48,7 +48,7 @@ Em              C           G      D
 María vela mis pasos con paciencia,
 Em                 C               G      D
 entre todas mis espinas ella me encuentra.
-Em              C                G    D
+Em              C                G D
 Es tan fácil a tu lado mi torpeza
 Em                     C           D
 que pedirte lo que te pido no me cuesta:

@@ -18,12 +18,12 @@ No puedo hacer más que postrarme y adorar
 Cuando pienso en como he sido
        G                 Am
  y hasta donde me has traído
-                      F
+                 F
 Me asombro de Ti
 
 Am           G           F
 Y no me quiero conformar
-Am         F                     G
+Am         F            G
 He probado y quiero más
 
 C                           G
@@ -38,7 +38,7 @@ con mi vida quiero adorar
 Con todo lo que tengo y lo que soy
                           Am
 todo lo que he sido te lo doy
-              G             F
+              G         F
 Que mi vida sea para ti
          G    C
 como un perfume a tus pies
@@ -62,7 +62,7 @@ He probado y quiero más
 
 C                            G
 Yo quiero enamorarme más de Ti
-                                Am 
+                            Am
 enséñame a amarte y a vivir
                          G       F
 Conforme a tu Justicia y tu verdad
@@ -72,7 +72,7 @@ con mi vida quiero adorar
 Con todo lo que tengo y lo que soy
                             Am
 todo lo que he sido te lo doy
-              G             F
+              G         F
 Que mi vida sea para ti
          G    C
 como un perfume a tus pies
