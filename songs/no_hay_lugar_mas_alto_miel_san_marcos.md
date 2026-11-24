@@ -1,5 +1,6 @@
 ---
 title: No hay lugar más alto
+key: A
 autor: Miel San Marcos
 link: "https://open.spotify.com/track/0yzKJqFTXsbzWjUHaiOxD9?si=b915f0eff6ea429a"
 capo: 0

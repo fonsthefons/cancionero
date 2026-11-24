@@ -1,5 +1,6 @@
 ---
 title: Rey de Reyes
+key: C
 autor: Marcos Barrientos
 link: "https://open.spotify.com/track/41L7qAYXn62qmbZhkFXabi?si=a67c20679ab6479f"
 capo: 0

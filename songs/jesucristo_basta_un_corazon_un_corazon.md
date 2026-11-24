@@ -1,5 +1,6 @@
 ---
 title: Jesucristo basta
+key: Am
 autor: Un Corazon
 link: "https://open.spotify.com/track/6XgnLNskskRPjdfa3CyKGA?si=034d9b81f67a4ef8"
 capo: "0"

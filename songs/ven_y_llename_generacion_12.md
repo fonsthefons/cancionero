@@ -1,5 +1,6 @@
 ---
 title: Ven Y Lléname
+key: G
 autor: Generación 12
 link: "https://open.spotify.com/track/4Lp4it382mVKgfUDHsh04t?si=e324ea64b1c046c2"
 capo: 0

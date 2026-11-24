@@ -1,5 +1,6 @@
 ---
 title: La Samaritana
+key: Am
 autor: popular
 link: "https://open.spotify.com/track/7D9WJZgYgMUCpoGtGXSWeW?si=432759b781664caf"
 capo: "3, 0-7, original 3"

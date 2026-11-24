@@ -1,5 +1,6 @@
 ---
 title: Junto a ti María
+key: C
 autor: popular
 link: "https://open.spotify.com/track/2TmU2GR46pCN6WJ7VOKmHG?si=76bb7a5efbc444ad"
 capo: "4, 0-7, original, 2"

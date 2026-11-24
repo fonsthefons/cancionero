@@ -1,5 +1,6 @@
 ---
 title: Vida en abundancia
+key: G
 autor: schoenstatt
 link: "https://open.spotify.com/track/7oMgpX0X6TnxXdADuAz7Sc?si=337568872ea5469a"
 capo: 0

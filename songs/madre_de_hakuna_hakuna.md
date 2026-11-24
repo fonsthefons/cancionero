@@ -1,5 +1,6 @@
 ---
 title: Madre de Hakuna
+key: E
 autor: Hakuna
 link: "https://open.spotify.com/track/2JaPSQUUlyRUjEJmZolqMz?si=c2314d3086f34d36"
 capo: "2, 0-3, original 4"

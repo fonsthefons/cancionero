@@ -1,5 +1,6 @@
 ---
 title: Cordero de Dios
+key: G
 autor: Misión Pais
 capo: "6"
 song_tags:

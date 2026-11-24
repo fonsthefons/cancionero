@@ -1,5 +1,6 @@
 ---
 title: Cordero de Dios
+key: D
 autor: A. Taulé
 capo: "0"
 link: "https://open.spotify.com/track/5lcrHoX73zHvyX8MV6h3lB?si=d75e82bfb7ba47ff"

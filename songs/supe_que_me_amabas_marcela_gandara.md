@@ -1,5 +1,6 @@
 ---
 title: Supe que me Amabas
+key: G
 autor: Marcela Gándara
 link: "https://open.spotify.com/track/36e4Sr0dXiyzjVeBWv8cON?si=18b9fd4449cc48a9"
 capo: 0

@@ -1,5 +1,6 @@
 ---
 title: Cirineo
+key: G
 autor: Hakuna
 link: "https://open.spotify.com/track/4ofyi2MTkppGdaHViln62J?si=bf79292de21d4b94"
 capo: "2, 0-4, original 4"

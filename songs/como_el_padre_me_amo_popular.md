@@ -1,5 +1,6 @@
 ---
 title: Como el padre me amó
+key: C
 autor: popular
 link: "https://open.spotify.com/track/0bl4hRyiEnNE41cYGslzgW?si=172ce8cc7c384bb5"
 capo: "3, 0-7"

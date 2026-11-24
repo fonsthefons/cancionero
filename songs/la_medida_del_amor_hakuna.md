@@ -1,5 +1,6 @@
 ---
 title: La medida del amor
+key: D
 autor: Hakuna
 link: "https://open.spotify.com/track/5hR5b7bf4mB41KnEpz8UXj?si=802fdd035cae4484"
 capo: "-2, -5-0, original 0"

@@ -1,5 +1,6 @@
 ---
 title: Virgen Madre de Nuestro Dios
+key: C
 autor: popular
 link: "https://open.spotify.com/track/3T7V0jQP7MMJ7SxlZWwHNI?si=2ab08c2a99394ea1"
 capo: 0

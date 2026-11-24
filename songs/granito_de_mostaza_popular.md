@@ -1,5 +1,6 @@
 ---
 title: Granito de mostaza
+key: Gm
 autor: popular
 capo: "0"
 link: "https://open.spotify.com/track/0awvSWzbrLKkCvXPZI4cD5?si=6e5da99d35d047c3"

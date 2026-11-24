@@ -1,5 +1,6 @@
 ---
 title: Vuelvo Otra Vez
+key: C
 autor: tuyo
 link: "https://open.spotify.com/track/5QG7pw4RFN6CpL5915xUkP?si=1d4f8a3f097f4d5b"
 capo: 0

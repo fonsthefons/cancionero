@@ -1,5 +1,6 @@
 ---
 title: Primero el cielo
+key: G
 autor: Tuyo
 capo: "0"
 link: "https://open.spotify.com/track/0pNdZHNZHvNpZ8uPTHeYVr?si=73135e1ad34844fc"

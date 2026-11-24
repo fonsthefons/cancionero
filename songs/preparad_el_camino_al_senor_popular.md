@@ -1,5 +1,6 @@
 ---
 title: Preparad el camino al Señor
+key: E
 autor: popular
 link: "https://open.spotify.com/track/5fsIs9aChU6Htidl3fP7Ah?si=d0243cdc0f57461f"
 capo: 0

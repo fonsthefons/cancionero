@@ -1,5 +1,6 @@
 ---
 title: Los coros del universo
+key: Am
 autor: Hakuna
 link: "https://open.spotify.com/track/4Kd1BPlAVPxN1J5mIS696N?si=3f753f5c4ebc43b5"
 capo: "0, 0-7, original 0"

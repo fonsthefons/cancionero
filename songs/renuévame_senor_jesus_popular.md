@@ -1,5 +1,6 @@
 ---
 title: Renuévame Señor Jesús
+key: C
 autor: popular
 link: "https://open.spotify.com/track/0aTyTQYoly6pTflkIKMs48?si=bb2a9f1757334ef8"
 capo: 0

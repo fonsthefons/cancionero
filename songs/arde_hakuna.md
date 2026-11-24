@@ -1,5 +1,6 @@
 ---
 title: Arde
+key: F
 autor: Hakuna
 link: "https://open.spotify.com/track/0VxQq9ZDmkwllwhYZqucwB?si=e98fde2e5a1449f3"
 capo: "5, 0-5, original 5"

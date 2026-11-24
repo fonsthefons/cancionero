@@ -1,5 +1,6 @@
 ---
 title: El que muere por mí
+key: C
 autor: Schoenstatt
 link: "https://open.spotify.com/track/5pCZXKutN09BqvqudMqxlT?si=b1d397eb1ffc4395"
 capo: "3, original 2"

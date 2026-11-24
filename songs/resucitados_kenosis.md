@@ -1,5 +1,6 @@
 ---
 title: Resucitados
+key: Em
 autor: Kenosis
 link: "https://open.spotify.com/track/5Jj3dmNCGDJ6BvTReVcAuv?si=0fa31aad56bc43e3"
 capo: 7

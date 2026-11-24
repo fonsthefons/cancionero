@@ -1,5 +1,6 @@
 ---
 title: De la cabeza al corazón tuyo
+key: E
 autor: popular
 link: "https://open.spotify.com/track/48neVZAaX1HlnvF7xcpYTJ?si=dd8c207580954529"
 capo: "1, 0-2, original 1"

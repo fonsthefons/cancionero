@@ -1,5 +1,6 @@
 ---
 title: Huracán
+key: C
 autor: Hakuna
 link: "https://open.spotify.com/track/1Gd6Hz1MSEiY8205ToJjsh?si=3df71dbc210747df"
 capo: "4, 0-9, original 0" 

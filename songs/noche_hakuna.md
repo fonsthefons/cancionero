@@ -1,5 +1,6 @@
 ---
 title: Noche
+key: C#m
 autor: Hakuna
 capo: "2"
 link: "https://open.spotify.com/track/1IGDQ9ypgfDJgATIgl9exP"

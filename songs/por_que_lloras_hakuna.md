@@ -1,5 +1,6 @@
 ---
 title: Por qué lloras
+key: D
 autor: Hakuna
 link: "https://open.spotify.com/track/7xgNaNd0nhNYXzL51XkpEn"
 capo: "0"

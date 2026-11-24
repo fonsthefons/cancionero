@@ -1,5 +1,6 @@
 ---
 title: Restaurame Espiritu
+key: C
 autor: Xavier Rudd
 link: "https://open.spotify.com/track/70zZclGWOjOVv9VRJ7RCyq?si=2714be994dca411b"
 capo: "0"

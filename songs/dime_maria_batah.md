@@ -1,5 +1,6 @@
 ---
 title: Dime María
+key: C
 autor: Batah
 capo: "2, 0-4, original 5"
 link: "https://open.spotify.com/track/3XquETxUYUBj3w3uvAEzQH?si=da7f801ba0b84103"

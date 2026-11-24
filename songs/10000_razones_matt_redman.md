@@ -1,5 +1,6 @@
 ---
 title: 10000 razones
+key: G
 autor: Matt Redman
 link: "https://open.spotify.com/track/6VvsQVABAW4IQAAMvTVR2g?si=796723fd8a3f4a29"
 capo: "0, original 0"

@@ -1,5 +1,6 @@
 ---
 title: Alza la mirada
+key: Em
 autor: VIVAFE
 link: "https://open.spotify.com/track/03QgYgZ0JZ5usst2UxT3oy?si=fdba726a02244734"
 capo: "0-5, original 0"

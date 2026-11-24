@@ -1,5 +1,6 @@
 ---
 title: Viva Cristo Rey
+key: G
 autor: Jaire
 link: "https://open.spotify.com/track/4p4FTS0SfIIca9nuixNEjv?si=8e3785ceec274316"
 capo: 0

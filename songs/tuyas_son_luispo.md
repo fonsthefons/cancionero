@@ -1,5 +1,6 @@
 ---
 title: Tuyas son
+key: G
 autor: Luispo
 link: "https://open.spotify.com/track/37JnxRgESJqLXqpFsvTp6p?si=b30ea803aaf34e3e"
 capo: 1

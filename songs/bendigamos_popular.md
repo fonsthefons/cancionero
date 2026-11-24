@@ -1,5 +1,6 @@
 ---
 title: Bendigamos
+key: E
 autor: popular
 link: "https://open.spotify.com/track/3PuxJaqVeuKJazZLm3p4fv?si=b0628bf6a6e04110"
 capo: "0, 0-5"

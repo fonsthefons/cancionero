@@ -1,5 +1,6 @@
 ---
 title: Petrus
+key: G
 autor: OzoresP
 link: "https://open.spotify.com/track/7kIeSJGYp3BnFrpoxWT22B?si=ef87891e192c4d68"
 capo: 3

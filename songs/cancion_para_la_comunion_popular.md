@@ -1,5 +1,6 @@
 ---
 title: Canción para la comunión
+key: C
 autor: popular
 link: "https://open.spotify.com/track/2EPDHHtdQS1Iz9owtiXdbH?si=53707ffbb06d451f"
 capo: "2, 0-4, original -1"

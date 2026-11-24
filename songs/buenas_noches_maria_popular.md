@@ -1,6 +1,7 @@
 ---
 
 title: Buenas Noches María
+key: D
 autor: popular
 link: "https://www.youtube.com/watch?v=B0Di5EztMvE&list=RDB0Di5EztMvE&start_radio=1"
 capo: "3, 0-7"

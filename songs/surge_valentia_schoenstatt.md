@@ -1,5 +1,6 @@
 ---
 title: Surge Valentía
+key: Em
 autor: Schoenstatt
 link: "https://open.spotify.com/track/2HvAaldhVw9qcJD9Z0maad?si=79a575704fcd448a"
 capo: 1

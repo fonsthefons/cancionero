@@ -1,5 +1,6 @@
 ---
 title: Anima Christi
+key: Am
 autor: Marco Frisina
 capo: "0, 0-3, original 1"
 link: "https://open.spotify.com/track/4TBTjp370FcPhGWAQP3NwD"

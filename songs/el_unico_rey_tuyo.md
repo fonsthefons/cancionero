@@ -1,5 +1,6 @@
 ---
 title: El Unico Rey
+key: G
 autor: Tuyo
 link: "https://open.spotify.com/track/1KKzqz1pmM516c1xAK84pd?si=537e9e87b6964b43"
 capo: "0, 0-2, original 3, alt c0 in C"

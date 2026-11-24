@@ -1,5 +1,6 @@
 ---
 title: Amor abnegado
+key: A
 autor: Mater Salvatoris
 link: "https://open.spotify.com/track/63EtpshVyJrUUNFkFhOILn?si=86962b9b30ba48db"
 capo: "0, original 0"

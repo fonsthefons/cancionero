@@ -1,5 +1,6 @@
 ---
 title: Ven Espíritu Divino
+key: C
 autor: Schoenstatt
 link: "https://open.spotify.com/track/5EOuojJVIrVyHcMoMVjQQB?si=a76b2cec4b4d416e"
 capo: 0

@@ -1,5 +1,6 @@
 ---
 title: Déjate
+key: G
 autor: Misión País
 link: "https://open.spotify.com/track/1vq1e3Hs6iRVEzgyf9WbKD?si=ff8b0fd0722e4844"
 capo: "5, "

@@ -1,5 +1,6 @@
 ---
 title: Id y anunciad
+key: G
 autor: Batah
 link: "https://open.spotify.com/track/6gWeJfTauQUT1oqbQcMXf8?si=9d25c06579cd4549"
 capo: "8, -7-0, original 2"

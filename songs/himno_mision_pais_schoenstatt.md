@@ -1,6 +1,7 @@
 ---
 
 title: Himno Misión País
+key: A
 autor: Schoenstatt
 link: "https://open.spotify.com/track/4JwlTzyh7CqyIX4y2IuPuk?si=82d9571070b04ec0"
 capo: "3, 0-7, original 2"

@@ -1,5 +1,6 @@
 ---
 title: Aleluya Celta
+key: G
 autor: O'Carrol
 capo: "0, 0-4"
 link: "https://open.spotify.com/track/4uQKgGR5yprv3WtkO3x9qb?si=4d4ad82f67944f21"

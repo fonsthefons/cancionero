@@ -1,5 +1,6 @@
 ---
 title: Aleluya
+key: C
 autor: popular
 link: ""
 capo: 0

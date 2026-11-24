@@ -1,5 +1,6 @@
 ---
 title: Dime Rey
+key: G
 autor: Helena
 link: "https://open.spotify.com/track/6pu8hHaPnU9h86EXcehDxz?si=84c985e49cfd42a2"
 capo: "5, 0-7, original 0"

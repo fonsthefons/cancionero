@@ -1,5 +1,6 @@
 ---
 title: Hail Mary Prayer
+key: C
 autor: David Burke
 link: "https://open.spotify.com/track/3VOvSGFO2KTKspnMWWcG9s?si=b87302ca65984157"
 capo: "0, 0-5, original 0"

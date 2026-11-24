@@ -1,5 +1,6 @@
 ---
 title: Quédate Señor
+key: Bm
 autor: Fray Nacho
 link: "https://open.spotify.com/track/6GrCddLDUnSz87QLLpyyb9?si=2edd9f70328044df"
 capo: 0

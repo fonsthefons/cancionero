@@ -1,5 +1,6 @@
 ---
 title: Ave María
+key: Bm
 autor: Francisco Palazón
 capo: "0"
 link: "https://open.spotify.com/track/75oB5Kil1CQupqBsLTX7N9"

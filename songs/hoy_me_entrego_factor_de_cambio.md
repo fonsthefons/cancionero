@@ -1,5 +1,6 @@
 ---
 title: Hoy Me Entrego
+key: C
 autor: Factor de Cambio
 link: "https://open.spotify.com/track/75rJiou4bno0EKb3BIo0R7?si=e955e2385acc4a0b"
 capo: "4, 0-7, original 2"

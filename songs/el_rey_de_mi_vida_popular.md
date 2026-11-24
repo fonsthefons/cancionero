@@ -1,5 +1,6 @@
 ---
 title: El Rey de mi Vida
+key: G
 autor: popular
 link: "https://open.spotify.com/track/6wW6BtRHIvhGorNwE5TTI0?si=74664460ba5347cf"
 capo: "0, 0-2, original 0"

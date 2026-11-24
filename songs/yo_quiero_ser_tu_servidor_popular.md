@@ -1,5 +1,6 @@
 ---
 title: Yo Quiero ser tu Servidor
+key: G
 autor: popular
 link: "https://open.spotify.com/track/17ciTNtUcQxJ5gRJuLtbNX?si=a0c8c30edc634d0d"
 capo: 0

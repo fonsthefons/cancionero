@@ -1,5 +1,6 @@
 ---
 title: Es verdad
+key: C
 autor: Vali Olguin
 link: "https://open.spotify.com/track/45RY9mzY1SELeeVp9YoPQ1?si=71271937cc4f470d"
 capo: "4, 0-7, original 0"

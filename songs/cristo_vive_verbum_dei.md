@@ -1,5 +1,6 @@
 ---
 title: Cristo Vive
+key: A
 autor: Verbum Dei
 link: "https://open.spotify.com/track/2YMqbYD2G59IhYXMNLpYaP?si=a87453e85f144535"
 capo: "0, 0-2, original 0"

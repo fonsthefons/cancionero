@@ -1,5 +1,6 @@
 ---
 title: Yeshua
+key: G
 autor: Generacion 12
 link: "https://open.spotify.com/track/2txTXCdetbJcy8REtnZdRq?si=b36e14df2c0449fa"
 capo: 0 up to 3 (max 5)

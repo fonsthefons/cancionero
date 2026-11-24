@@ -1,5 +1,6 @@
 ---
 title: Eres Testigo
+key: Dm
 autor: anonimo
 link: ""
 capo: "0, 0-5"

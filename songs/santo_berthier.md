@@ -1,5 +1,6 @@
 ---
 title: Santo
+key: F
 autor: Berthier
 capo: "0, 0-2"
 link: "https://www.youtube.com/watch?v=EmT6y1-DTGw"

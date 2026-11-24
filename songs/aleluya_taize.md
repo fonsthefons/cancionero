@@ -1,5 +1,6 @@
 ---
 title: Aleluya
+key: D
 autor: Taizé
 link: ""
 capo: 2

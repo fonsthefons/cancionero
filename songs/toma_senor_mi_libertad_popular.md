@@ -1,5 +1,6 @@
 ---
 title: Toma Señor mi libertad
+key: C
 autor: popular
 link: "https://open.spotify.com/track/7veeY1drohTipgIFdAPrS0?si=b7844c191771466d"
 capo: 0

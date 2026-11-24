@@ -1,5 +1,6 @@
 ---
 title: Because He Lives
+key: Am
 autor: Matt Maher
 link: "https://open.spotify.com/track/1kQRahBqpKWMAhsoqfEETp?si=cc7effe715b54e16"
 capo: "0, original 1"

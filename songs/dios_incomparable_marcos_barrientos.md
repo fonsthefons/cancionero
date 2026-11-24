@@ -1,5 +1,6 @@
 ---
 title: Dios Incomparable
+key: G
 autor: Marcos Barrientos
 link: "https://open.spotify.com/track/4i6pgmkSpkhFuGnNgDcDIF?si=3588657bb5df4525"
 capo: "3, 0-4, original 4"

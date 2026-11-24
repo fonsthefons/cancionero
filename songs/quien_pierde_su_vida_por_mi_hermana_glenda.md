@@ -1,5 +1,6 @@
 ---
 title: Quien pierde su vida por mi
+key: D
 autor: Hermana Glenda
 link: "https://open.spotify.com/track/1OS38h2656yRP9EvZBJvvi?si=4426f6f8705948be"
 capo: 0

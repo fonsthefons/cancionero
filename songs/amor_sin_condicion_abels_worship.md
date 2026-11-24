@@ -1,5 +1,6 @@
 ---
 title: Amor sin condición
+key: Bm
 autor: Abels Worship
 link: "https://open.spotify.com/track/476YR336qlbI46CMTuPSh7?si=8151af8884eb4a7a"
 capo: "0, 0-2, original 3"

@@ -1,5 +1,6 @@
 ---
 title: Tu Voluntad
+key: G
 autor: Servus Mariae
 link: "https://open.spotify.com/track/1F98JW7eGb4EEBE9mZeQju?si=d7bb13e6668f4987"
 capo: 0

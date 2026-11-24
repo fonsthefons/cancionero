@@ -1,5 +1,6 @@
 ---
 title: La Fe de María
+key: Bm
 autor: popular
 link: "https://open.spotify.com/track/1pFIBmLqu8VFPaPlvKs2rs?si=e38f234e604d4696"
 capo: "3, 1-7, original 3"

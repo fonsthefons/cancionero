@@ -1,5 +1,6 @@
 ---
 title: Hasta que el mundo arda por Él
+key: C
 autor: Francisco Alvarado
 link: "https://open.spotify.com/track/0G4Jcuu0mOmfUfLj2DZRCL?si=96b0fe026ee24fcf"
 capo: "0, 0-7, original -5"
@@ -39,18 +40,18 @@ Am         F       C          G
  Incendiar el corazón, ser hogar
 E7                 Am-G      D
  como el sol que esparce tu luz
-Dm            C              A# A#-C
+Dm            C              Bb Bb-C
  hasta que el mundo arda por Él,
 Dm            C              F
  hasta que el mundo arda por Él.
 
-   G#           A#
+   Ab           Bb
 María, quiero soñar
-          Cm   A#   G#
+          Cm   Bb   Ab
 nuevos caminos comenzar
-           G7         Cm-A#   F
+           G7         Cm-Bb   F
 Quiero ser santo y si debo morir,
-G#       A#           C
+Ab       Bb           C
  mi vida quiero entregar.
 
 
@@ -63,7 +64,7 @@ Am         F       C          G
  Incendiar el corazón, ser hogar
 E7                 Am-G      D
  como el sol que esparce tu luz
-Dm            C              A# A#-C
+Dm            C              Bb Bb-C
  hasta que el mundo arda por Él,
 Dm            C              F
  hasta que el mundo arda por Él.

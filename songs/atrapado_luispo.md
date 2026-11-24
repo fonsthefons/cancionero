@@ -1,5 +1,6 @@
 ---
 title: Atrapado
+key: Em
 autor: Luispo
 capo: "2, 0-2, original 1"
 link: "https://open.spotify.com/track/11qWMjIbab64EcGhPcbIFV?si=b1421f6f787341ea"

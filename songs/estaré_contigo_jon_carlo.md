@@ -1,5 +1,6 @@
 ---
 title: Estaré Contigo
+key: G
 autor: Jon Carlo
 link: "https://open.spotify.com/track/6faN0qQaOXisMtlrtyknJ3?si=e0e3d940b7944a4c"
 capo: "0, 0-2, original 0"

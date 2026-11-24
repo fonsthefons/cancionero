@@ -1,5 +1,6 @@
 ---
 title: Hasta La Locura
+key: G
 autor: Pablo Martinez
 link: "https://open.spotify.com/track/4Q2DcuvLzZrw67zpmaaxR0?si=b558b8c71a5c4622"
 capo: "0 max, -2 better, 4 low, original 1"

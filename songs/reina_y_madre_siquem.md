@@ -1,6 +1,7 @@
 ---
 
 title: Reina y Madre
+key: Dm
 autor: Siquem
 link: "https://open.spotify.com/track/7cNdAOMqjrSA7AEPR1M7hz?si=7b1e652a9db84d2d"
 capo: 0

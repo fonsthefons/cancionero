@@ -1,6 +1,7 @@
 ---
 
 title: Ven Espíritu Ven (Purifícame)
+key: C
 autor: popular
 link: ""
 capo: 0

@@ -1,5 +1,6 @@
 ---
 title: La Bendicion
+key: G
 autor: Elevation Worship
 link: "https://open.spotify.com/track/5KNP7zONOFZqOL3ixeWMOQ?si=e55e53667f67439e"
 capo: "2, 0-4, original 3"

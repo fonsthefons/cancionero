@@ -1,5 +1,6 @@
 ---
 title: Cordero de Dios
+key: A
 autor: popular
 capo: "0, 0-5"
 song_tags:

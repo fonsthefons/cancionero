@@ -1,5 +1,6 @@
 ---
 title: Jesus
+key: G
 autor: Sarai Rivera
 link: "https://open.spotify.com/track/5blgde2k3YONRA1yBNohPs?si=e4143011219e4888"
 capo: "0, 0-4, original -2"

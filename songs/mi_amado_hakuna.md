@@ -1,5 +1,6 @@
 ---
 title: Mi amado
+key: C
 autor: Hakuna
 link: "https://open.spotify.com/track/1nfTVyVDsqJwL0WzP0eWix?si=8d890dd879cb46cc"
 capo: "3"

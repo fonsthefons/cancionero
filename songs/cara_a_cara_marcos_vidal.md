@@ -1,5 +1,6 @@
 ---
 title: Cara a cara
+key: D
 autor: Marcos Vidal
 link: "https://open.spotify.com/track/3AbYh5nP4NdvWUahFCU1Ys"
 capo: "0"

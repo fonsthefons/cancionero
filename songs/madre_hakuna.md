@@ -1,5 +1,6 @@
 ---
 title: Madre
+key: C
 autor: Hakuna
 capo: "0, -2-0, original 0"
 link: "https://open.spotify.com/track/4LFnaNrPChE1u6CpwD0TLA?si=e4d84cb3fb2d452c"
@@ -43,7 +44,7 @@ Am             Em          F            C
 Bajo el frío y el misterio de Belén
 Am           Em           F         C
  Sólo con su sangre volveremos a nacer
-       A#                      G
+       Bb                      G
 Con la sangre de Jesús de Nazaret
 
 D              F#m                       Bm-F#m

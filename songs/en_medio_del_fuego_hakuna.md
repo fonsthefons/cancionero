@@ -1,5 +1,6 @@
 ---
 title: En medio del fuego
+key: G#m
 autor: Hakuna
 link: "https://open.spotify.com/track/5Q5O60DtrxV1BRRXHSNhCq?si=2bae8bf8246a46d4"
 capo: "0, 0-7, orignal 0"

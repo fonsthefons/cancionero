@@ -1,5 +1,6 @@
 ---
 title: Santo Manchego
+key: Em
 autor: popular
 link: ""
 capo: 0

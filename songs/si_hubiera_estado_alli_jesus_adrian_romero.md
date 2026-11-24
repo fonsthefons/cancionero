@@ -1,5 +1,6 @@
 ---
 title: Si hubiera estado allí
+key: G
 autor: Adrián
 link: "https://open.spotify.com/track/3MaPyYoUyB2qibqEkHTWW1?si=aa16dfe3eb074ce2"
 capo: 0

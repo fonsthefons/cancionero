@@ -1,5 +1,6 @@
 ---
 title: A ti te alabo
+key: C
 autor: Hakuna
 capo: "3, 0-7, original 0"
 link: "https://open.spotify.com/track/6XLPxmYdva9RIwEDYL2YHt?si=ca79a99d6157429d"

@@ -1,5 +1,6 @@
 ---
 title: Colombia
+key: C
 autor: Hakuna
 link: "https://open.spotify.com/track/42Vlagn547PajedetRZIQZ?si=b351d7a2a4fc4ffd"
 capo: "3, 0-7, original 3"

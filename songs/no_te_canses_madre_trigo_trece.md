@@ -1,5 +1,6 @@
 ---
 title: No Te Canses, Madre
+key: G
 autor: Trigo Trece
 link: "https://open.spotify.com/track/3zlgrYvYRLpToEc53bik6p?si=29ce34a8927448a9"
 capo: 2

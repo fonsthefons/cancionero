@@ -1,5 +1,6 @@
 ---
 title: Oceans
+key: Bm
 autor: Hillsong
 link: "https://open.spotify.com/track/5SDcksP8En1l6RtTY1wzHc?si=5e21531e62154066"
 capo: 0

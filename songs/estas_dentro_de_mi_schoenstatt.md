@@ -1,5 +1,6 @@
 ---
 title: Estás dentro de mí
+key: A
 autor: Schoenstatt
 link: "https://open.spotify.com/track/7tdOaTyij6dIxnVr9CdJCN?si=7f0a7eb70ab3430f"
 capo: "2, 0-7, original 0"

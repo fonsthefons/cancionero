@@ -1,5 +1,6 @@
 ---
 title: Dame de Beber
+key: D
 autor: Marcos Barrientos
 link: "https://open.spotify.com/track/0EN7bQ4CwdbWHRdelmC6I6?si=d06d49473867466e"
 capo: "0, 0-2, original 0"

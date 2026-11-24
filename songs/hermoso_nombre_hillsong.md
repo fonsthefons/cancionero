@@ -1,5 +1,6 @@
 ---
 title: Hermoso Nombre
+key: D
 autor: Hillsong
 link: "https://open.spotify.com/track/7HAxoYUvYynHfn4vQFJr6d?si=fdb6b971cfa748fe"
 capo: "0, 0-5, orignal 0"

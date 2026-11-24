@@ -1,5 +1,6 @@
 ---
 title: Santo
+key: A
 autor: Jaime Olguín
 link: ""
 capo: 2

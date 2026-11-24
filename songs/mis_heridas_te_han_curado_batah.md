@@ -1,5 +1,6 @@
 ---
 title: Mis heridas te han curado
+key: G
 autor: Batah
 capo: "0"
 link: "https://open.spotify.com/track/4bFO60QUr4hI5NcDVwChBI?si=57582e5f71cf40e5"

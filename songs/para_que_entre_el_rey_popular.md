@@ -1,5 +1,6 @@
 ---
 title: Para que entre el rey
+key: Am
 autor: popular
 link: "https://open.spotify.com/track/6dAlF4oYH5dzfhTmzbHPtm?si=4def8e551b134cea"
 capo: 0

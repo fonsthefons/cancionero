@@ -1,5 +1,6 @@
 ---
 title: ZZZ Test Song
+key: E
 autor: popular
 link: ""
 capo: 0

@@ -1,5 +1,6 @@
 ---
 title: Perdón
+key: C
 autor: Helena
 link: "https://open.spotify.com/track/1qw4AwLR6pAlXiE1pK44IS?si=5cb85c0fb63042fe"
 capo: 0

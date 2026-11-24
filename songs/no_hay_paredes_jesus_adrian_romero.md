@@ -1,5 +1,6 @@
 ---
 title: No hay paredes
+key: G
 autor: Jesús Adrián Romero
 link: "https://open.spotify.com/track/4h0JpAep84WY6pZNonjCET?si=2e7cc6b240994119"
 capo: 0

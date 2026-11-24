@@ -1,5 +1,6 @@
 ---
 title: Tus Planes Son Perfectos
+key: A
 autor: Batah
 link: "https://open.spotify.com/track/3dg38AoQd9jPellNzklq2Y?si=b47b122d453d4fdd"
 capo: 0

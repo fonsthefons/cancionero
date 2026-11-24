@@ -1,5 +1,6 @@
 ---
 title: Se Mi Faro
+key: G
 autor: Batah
 link: "https://open.spotify.com/track/3vzJgxhjKr0a45Rh2gzEqy?si=d3a60514098942ad"
 capo: 0

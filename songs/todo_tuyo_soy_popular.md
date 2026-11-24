@@ -1,5 +1,6 @@
 ---
 title: Todo Tuyo Soy
+key: D
 autor: Popular
 link: "https://open.spotify.com/track/7fut1cKW0cpnizwKKyZp39?si=38134a3ece094bf2"
 capo: "3, 0-7, original 3"

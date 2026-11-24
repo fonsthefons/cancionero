@@ -1,5 +1,6 @@
 ---
 title: Himno de la Almudena
+key: C
 autor: Popular
 link: "https://open.spotify.com/track/5oOyEpyIn38uxK2EZ13hne?si=47307fae23e34f66"
 capo: "3, 0-7, original 1"

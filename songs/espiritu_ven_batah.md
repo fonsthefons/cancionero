@@ -1,5 +1,6 @@
 ---
 title: Espíritu ven
+key: G
 autor: Batah
 link: "https://open.spotify.com/track/5JEwE6o4TwtzroRg7qT84R?si=69d4642c14f74593"
 capo: "0, 0-2, original 0"

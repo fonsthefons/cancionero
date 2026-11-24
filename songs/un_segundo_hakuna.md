@@ -1,5 +1,6 @@
 ---
 title: Un Segundo
+key: G
 autor: Hakuna
 link: "https://open.spotify.com/track/6WTdsYUlvy5HX6r8pj2f0r?si=ce68e22403f04743"
 capo: 0

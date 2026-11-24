@@ -1,5 +1,6 @@
 ---
 title: Me basta con saber que estás aquí
+key: G
 autor: Salve
 link: "https://open.spotify.com/track/0FaGDtYkKBIXhv4jN5bXL2?si=04cce09595b84027"
 capo: "0"

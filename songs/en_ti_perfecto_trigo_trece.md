@@ -1,5 +1,6 @@
 ---
 title: En ti perfecto
+key: G
 autor: Trigo Trece
 capo: "0"
 link: "https://open.spotify.com/track/4VLVg99o0Atqw7HpZwTlHC"

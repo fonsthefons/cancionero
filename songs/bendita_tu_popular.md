@@ -1,6 +1,7 @@
 ---
 
 title: Bendita Tu
+key: G
 autor: Popular
 link: ""
 capo: "3, 0-7"

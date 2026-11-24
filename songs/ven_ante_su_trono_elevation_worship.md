@@ -1,5 +1,6 @@
 ---
 title: Ven ante Su trono
+key: G
 autor: Elevation Worship
 link: "https://open.spotify.com/track/00N19SVEo6XJFaerouyckn?si=8ba464502061439d"
 capo: "0, 0-2"

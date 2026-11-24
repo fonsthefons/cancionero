@@ -1,5 +1,6 @@
 ---
 title: Tu poder
+key: Em
 autor: popular
 capo: "5"
 song_tags:

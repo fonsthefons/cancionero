@@ -1,5 +1,6 @@
 ---
 title: Confío en Ti
+key: C
 autor: Felipe Gomez
 capo: "0, 0-1, original 3"
 link: "https://open.spotify.com/track/6ODiSmpQBjQbGvLrNLwSQj?si=52a2e6e2bf344d1e"

@@ -1,5 +1,6 @@
 ---
 title: Sopla Señor
+key: E
 autor: popular
 link: "https://open.spotify.com/track/7DXwh3ogyKUbQ62vEseObR?si=2e9b9c5bdf624780"
 capo: 0

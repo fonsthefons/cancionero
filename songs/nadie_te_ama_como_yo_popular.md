@@ -1,5 +1,6 @@
 ---
 title: Nadie te ama como yo
+key: C
 autor: popular
 link: "https://open.spotify.com/track/1vlMuCv1QKQrXc6AFqF6Hs?si=c5c2e4131f4d4f5d"
 capo: 0

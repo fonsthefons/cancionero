@@ -1,5 +1,6 @@
 ---
 title: Me Rindo a Ti
+key: C
 autor: Majo y Dan
 link: "https://open.spotify.com/track/1elgJB7cf8pf66fyIeQWzM?si=77ccca2141c94ff1"
 capo: "4, 0-7, original -3"

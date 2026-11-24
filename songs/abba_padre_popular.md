@@ -1,5 +1,6 @@
 ---
 title: Abba Padre
+key: Em
 autor: popular
 link: "https://open.spotify.com/track/7ItwdR7a8yBk2JzUwBFRCd?si=7d93757f203b4e69"
 capo: "0, max 5"

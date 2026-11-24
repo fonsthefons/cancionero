@@ -1,5 +1,6 @@
 ---
 title: Lord, I Need You
+key: G
 autor: Matt Maher
 link: "https://open.spotify.com/track/4EHWldZTas5KUyFtT0rQlY?si=694a47cb3f19451c"
 capo: "3, 0-4, original 3"

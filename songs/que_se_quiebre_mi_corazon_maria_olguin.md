@@ -1,5 +1,6 @@
 ---
 title: Que se quiebre mi corazón
+key: A
 autor: María Olguín
 link: "https://open.spotify.com/track/0nJeFSspNSBI8NYlCQjtwL?si=cf7bc19f78d640cb"
 capo: "6, 0-6"

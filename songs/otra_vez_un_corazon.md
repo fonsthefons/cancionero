@@ -1,5 +1,6 @@
 ---
 title: Otra Vez
+key: Em
 autor: Un Corazón
 link: "https://open.spotify.com/track/1Z2LOOXfH3lFEAGDX7haCA?si=afcfb5bee9f0444f"
 capo: "0, Original 2"

@@ -1,5 +1,6 @@
 ---
 title: Como un niño
+key: Em
 autor: Schoenstatt
 capo: "0"
 link: "https://open.spotify.com/track/49vGn38MqPRpMPd0suUcgh"

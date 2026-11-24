@@ -1,5 +1,6 @@
 ---
 title: Muros
+key: G
 autor: Generación 12
 link: "https://open.spotify.com/track/1X20WCNMKKSh81MuqrcxGb?si=01b170aa51fa4255"
 capo: "3"

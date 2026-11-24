@@ -1,5 +1,6 @@
 ---
 title: Amando hasta el extremo
+key: Am
 autor: Maite Lopez
 capo: "2, 2-6, original 2"
 link: "https://open.spotify.com/track/06OZGcgtpHtSRanig92kvB?si=0c1bb3c9b529422c"

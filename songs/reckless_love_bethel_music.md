@@ -1,5 +1,6 @@
 ---
 title: Reckless Love
+key: Bm
 autor: Bethel Music
 link: "https://open.spotify.com/track/3UwwW9Ymz3xob5SxHx4uLO?si=2322f9ebdaea41eb"
 capo: "0, 0-2"

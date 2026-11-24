@@ -1,5 +1,6 @@
 ---
 title: Renuévame
+key: Db
 autor: Trigo 13
 capo: "0"
 link: "https://open.spotify.com/track/5N2yNLWaD1894psb5ILoXn"

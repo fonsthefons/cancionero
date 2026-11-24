@@ -1,5 +1,6 @@
 ---
 title: Amor de los Amores
+key: Am
 autor: Sarai
 capo: "2, 0-2, original 7"
 link: "https://open.spotify.com/track/4ThlBUbvmZlSheQWu0suz9?si=91739e6f1ba345f5"

@@ -1,5 +1,6 @@
 ---
 title: Hago nuevas todas las cosas
+key: G
 autor: Agustín Torrealba
 capo: "2"
 song_tags:

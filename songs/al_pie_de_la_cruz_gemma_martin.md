@@ -1,5 +1,6 @@
 ---
 title: Al pie de la cruz
+key: C
 autor: Gemma Martin
 capo: "0"
 link: "https://open.spotify.com/track/6G3BelQwIdQVpkf33lcscP"

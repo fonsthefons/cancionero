@@ -1,5 +1,6 @@
 ---
 title: RUAH
+key: Em
 autor: popular
 link: ""
 capo: 0
