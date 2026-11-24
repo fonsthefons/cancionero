@@ -895,19 +895,6 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     margin: 0.75rem 0;
 }
 
-.install-tip {
-    max-width: min(26rem, calc(100vw - 32px));
-}
-
-.install-tip h3 {
-    margin-top: 0;
-}
-
-.install-tip p {
-    margin: 0.5rem 0;
-    line-height: 1.4;
-}
-
 .dialog-buttons {
     display: flex;
     gap: 8px;
@@ -916,41 +903,176 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 }
 
 /* ============================= */
-/* INSTALL TIP AS A BANNER       */
-/* (book.yaml install_tip: banner) */
+/* TUTORIAL TOUR (tutorial.js)   */
 /* ============================= */
 
-.install-banner {
+.tour {
+    --tour-red: #e53935; /* vivid in both themes */
     position: fixed;
-    left: var(--gutter);
-    right: var(--gutter);
-    bottom: calc(var(--gutter) + env(safe-area-inset-bottom, 0px));
-    z-index: 150; /* above the songs and top bar, below the menu */
-    max-width: 30rem;
-    margin: 0 auto;
-    padding: 10px 44px 10px 14px;
-    background: var(--surface);
-    color: var(--ink);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    box-shadow: 0 4px 16px var(--shadow);
+    inset: 0;
+    z-index: 300; /* above the menu */
     font-family: var(--sans);
-    font-size: 0.9rem;
-    line-height: 1.4;
 }
 
-.install-banner[hidden] {
+/* The box around the step's controls; its huge shadow dims everything else. */
+.tour-spot {
+    position: absolute;
+    border: 3px solid var(--tour-red);
+    border-radius: 8px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+.tour-chip {
+    position: absolute;
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: var(--tour-red);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.tour-chip[hidden] {
     display: none;
 }
 
-.install-banner p {
+.tour-chip::after {
+    content: "";
+    position: absolute;
+    left: var(--arrow-x);
+    margin-left: -6px;
+    border: 6px solid transparent;
+}
+
+.tour-chip[data-side="below"]::after {
+    bottom: 100%;
+    border-bottom-color: var(--tour-red);
+}
+
+.tour-chip[data-side="above"]::after {
+    top: 100%;
+    border-top-color: var(--tour-red);
+}
+
+.tour-card {
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    box-sizing: border-box;
+    max-width: 26rem;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+    margin: 0 auto;
+    padding: 14px 16px;
+    border: 3px solid var(--tour-red);
+    border-radius: 10px;
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 4px 16px var(--shadow);
+    font-size: 0.9rem;
+}
+
+.tour-card.top,
+.tour-card.beside {
+    top: 12px;
+    bottom: auto;
+}
+
+/* Wide screens with the menu open: right of the menu (320px wide there). */
+.tour-card.beside {
+    left: 344px;
+    right: auto;
+    width: 26rem;
     margin: 0;
 }
 
-.install-banner .icon-button {
-    position: absolute;
-    top: 4px;
-    right: 4px;
+.tour-card h3 {
+    margin: 0;
+    color: var(--tour-red);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.tour-card h4 {
+    margin: 0.2rem 0 0.4rem;
+    font-size: 1.05rem;
+}
+
+.tour-card p,
+.tour-card ul {
+    margin: 0 0 0.4rem;
+    line-height: 1.35;
+}
+
+.tour-card ul {
+    padding-left: 1.1rem;
+}
+
+.tour-card li + li {
+    margin-top: 0.2rem;
+}
+
+.tour-card [hidden] {
+    display: none;
+}
+
+/* The menu is long; hide its song list so Session and Settings fit on one screen. */
+body.tour-on .drawer .nav {
+    display: none;
+}
+
+@media print {
+    .tour {
+        display: none;
+    }
+}
+
+/* ============================= */
+/* SESSION SLIDES (slides.js)    */
+/* ============================= */
+
+/* Only ever shown on paper. slides.js measures in its own off-screen .slide,
+   so the slide look lives out here (not in @media print) to match the print. */
+.slides {
+    display: none;
+}
+
+.slide {
+    width: 11in;
+    height: 8.5in;
+    padding: 0.4in;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    background: white;
+    color: black;
+    font-family: system-ui, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+/* Auto margins centre the text like justify-content: center, but an overflow
+   stays measurable (it grows downwards instead of out of both ends). */
+.slide > :first-child {
+    margin-top: auto;
+}
+
+.slide > :last-child {
+    margin-bottom: auto;
+}
+
+.slide-verse + .slide-verse {
+    margin-top: 0.6em;
+}
+
+.slide-line.bold {
+    font-weight: 800;
 }
 
 /* ============================= */
@@ -958,6 +1080,18 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 /* ============================= */
 
 @media print {
+    body[data-slides] > :not(.slides) {
+        display: none !important;
+    }
+
+    .slides {
+        display: block;
+    }
+
+    .slide {
+        break-after: page;
+    }
+
     @page {
         size: A4;
         margin: 15mm;
@@ -968,7 +1102,6 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     .drawer,
     .controls,
     .formula-pick,
-    .install-banner,
     .print-dialog {
         display: none !important;
     }
@@ -1080,6 +1213,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     </div>
     <button class="session-clear" data-action="session-share">Share session</button>
     <button class="session-clear" data-action="print-session">Print session</button>
+    <button class="session-clear" data-action="session-slides">Create session PPT</button>
     <button class="session-clear" data-action="session-clear">Clear session</button>
   </details>
 
@@ -1129,6 +1263,10 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     <div class="setting">
       <span>Print / PDF</span>
       <button data-action="open-print">Print</button>
+    </div>
+    <div class="setting">
+      <span>Tutorial</span>
+      <button data-action="start-tutorial">Ver tutorial</button>
     </div>
   </section>
 </aside>
@@ -6790,17 +6928,9 @@ body[data-columns="2"] .song:not([data-columns="1"]),
   </form>
 </dialog>
 
-<!-- First visit on the hosted site only (see web/js/install-tip.js) -->
-<aside class="install-banner" role="note" hidden>
-  <p><strong>Para acceso offline:</strong> añádelo a la pantalla de inicio.</p>
-  <p>iPhone/iPad (Safari): Compartir → Añadir a pantalla de inicio</p>
-  <p>Android (Chrome): menú ⋮ → Añadir a pantalla de inicio</p>
-  <button class="icon-button" data-action="close-install-tip" aria-label="Cerrar">✕</button>
-</aside>
-
 <!-- This book's settings (book.yaml) for the scripts below -->
 <script>
-const BOOK = {"storagePrefix": "cancionero.", "notationSetting": true};
+const BOOK = {"storagePrefix": "cancionero.", "notationSetting": true, "installTip": true};
 </script>
 <!-- Scripts from web/js/, core.js first -->
 <script>
@@ -7175,31 +7305,6 @@ function revealTarget(id) {
 document.addEventListener("click", (event) => {
     const link = event.target.closest('a[href^="#"]');
     if (link) revealTarget(decodeURIComponent(link.hash.slice(1)));
-});
-</script>
-<script>
-// First visit: how to add the book to the home screen (iPhone and Android) so
-// it works offline. Shown once per browser, only on the hosted site (offline
-// needs sw.js), and never inside the home-screen app itself.
-//
-// book.yaml `install_tip` picks the look: "popup" (a dialog, #install-tip),
-// "banner" (a note at the bottom, .install-banner) or "off" (neither is on the page).
-
-(() => {
-    const popup = document.getElementById("install-tip");
-    const banner = document.querySelector(".install-banner");
-    const installed = window.matchMedia("(display-mode: standalone)").matches
-        || navigator.standalone === true; // iOS home-screen app
-    if ((!popup?.showModal && !banner) || installed || !/^https?:$/.test(location.protocol)) return;
-    if (prefs.get("installTipSeen")) return;
-    prefs.set("installTipSeen", "1");
-    if (popup?.showModal) popup.showModal();
-    else banner.hidden = false;
-})();
-
-onAction("close-install-tip", () => {
-    const banner = document.querySelector(".install-banner");
-    if (banner) banner.hidden = true;
 });
 </script>
 <script>
@@ -7706,6 +7811,150 @@ if (shared !== null) {
 renderSession();
 </script>
 <script>
+// Session slides: the session's lyrics (no chords) as big text on letter-landscape
+// pages, one slide per page, to save as a PDF and import into PowerPoint / Slides.
+
+const SLIDE_PAD = 0.4 * 96; // page margin in CSS px (1in = 96px)
+// 10 lines at line-height 1.2 fill the page: the smallest text a lyric slide may use.
+const SLIDE_MIN = ((8.5 - 0.8) * 96) / (10 * 1.2);
+const SLIDE_MAX = SLIDE_MIN * 2.5; // a short song must not turn into a few huge words
+
+// A song's lyrics, one array of {text, bold} per verse. Chord lines are dropped,
+// and so are the "Intro: G D" label lines (their chords are inside the line).
+function slideVerses(id) {
+    return [...document.getElementById(id).querySelectorAll(".lyrics > .verse")].map((verse) =>
+        [...verse.children].flatMap((el) => {
+            if (el.classList.contains("chord-inline") || el.querySelector(".chord-inline")) return [];
+            const text = el.classList.contains("line-pair")
+                ? [...el.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join("")
+                : el.classList.contains("lyric-line") ? el.textContent : "";
+            return text.trim() ? [{ text: text.trim(), bold: el.classList.contains("bold") }] : [];
+        })
+    ).filter((lines) => lines.length);
+}
+
+function slideElement(verses, extraClass = "") {
+    const slide = document.createElement("section");
+    slide.className = "slide " + extraClass;
+    slide.append(...verses.map((lines) => {
+        const verse = Object.assign(document.createElement("div"), { className: "slide-verse" });
+        verse.append(...lines.map(({ text, bold }) =>
+            Object.assign(document.createElement("div"), { className: bold ? "slide-line bold" : "slide-line", textContent: text })));
+        return verse;
+    }));
+    return slide;
+}
+
+// Does everything sit inside the page margins? (Checked on the children, not
+// with scrollWidth/scrollHeight of the slide, which ignore the padding.)
+function slideFits(slide) {
+    const page = slide.getBoundingClientRect();
+    return [...slide.children].every((verse) => verse.scrollWidth <= verse.clientWidth)
+        && slide.lastElementChild.getBoundingClientRect().bottom <= page.bottom - SLIDE_PAD + 0.5;
+}
+
+// Measure off screen in a real slide (same CSS, so the same line breaks as in print).
+function slideProbe(verses, extraClass) {
+    const probe = slideElement(verses, extraClass);
+    Object.assign(probe.style, { position: "fixed", left: "-10000px", top: "0" });
+    document.body.append(probe);
+    return probe;
+}
+
+// A page whose text would come out smaller than this is split: merely fitting at
+// SLIDE_MIN made a dense 8-line verse look tiny next to the other pages.
+const SLIDE_GOOD = SLIDE_MIN * 1.25;
+
+function slideSize(verses) {
+    const probe = slideProbe(verses);
+    const size = slideFit(probe);
+    probe.remove();
+    return size;
+}
+
+// Whole verses per page while the text stays at least SLIDE_GOOD; a verse that
+// is smaller on a page of its own is cut into the fewest even parts that reach it.
+function slidePages(verses) {
+    const pages = [];
+    let page = [];
+    for (const verse of verses) {
+        if (page.length && slideSize([...page, verse]) >= SLIDE_GOOD) { page.push(verse); continue; }
+        if (page.length) pages.push(page);
+        let parts;
+        for (let n = 1; n <= verse.length; n++) {
+            parts = Array.from({ length: n }, (_, i) =>
+                verse.slice(Math.round((i * verse.length) / n), Math.round(((i + 1) * verse.length) / n)));
+            if (parts.every((part) => slideSize([part]) >= SLIDE_GOOD)) break;
+        }
+        pages.push(...parts.slice(0, -1).map((part) => [part]));
+        page = [parts.at(-1)];
+    }
+    if (page.length) pages.push(page);
+    return pages;
+}
+
+// The largest text that fits, set on the slide: on one line per lyric line if
+// that is still at least SLIDE_GOOD, otherwise wrapped (a ~40-character line
+// can't pass ~62px on one line, so bigger text means wrapping it).
+function slideFit(slide) {
+    const largest = () => {
+        let low = 0, high = SLIDE_MAX;
+        for (let i = 0; i < 12; i++) {
+            const size = (low + high) / 2;
+            slide.style.fontSize = size + "px";
+            if (slideFits(slide)) low = size; else high = size;
+        }
+        return low;
+    };
+    slide.style.whiteSpace = "nowrap";
+    let size = largest();
+    if (size < SLIDE_GOOD) {
+        slide.style.whiteSpace = "normal";
+        size = largest();
+    }
+    slide.style.fontSize = size + "px";
+    return size;
+}
+
+function slideSized(verses, extraClass = "") {
+    const slide = slideProbe(verses, extraClass);
+    slideFit(slide);
+    Object.assign(slide.style, { position: "", left: "", top: "" });
+    return slide;
+}
+
+onAction("session-slides", () => {
+    setDrawerOpen(false);
+    const slides = document.createElement("div");
+    slides.className = "slides";
+    // A psalm's fórmula comes first, then the psalm's own verses.
+    for (const id of session) {
+        const formula = sessionFormula(id);
+        slides.append(slideSized([[{ text: songTitle(id), bold: true }]], "slide-title"));
+        for (const song of formula ? [formula, id] : [id]) {
+            slides.append(...slidePages(slideVerses(song)).map((page) => slideSized(page)));
+        }
+    }
+    document.body.append(slides);
+
+    // Letter landscape without margins, only while the slides are printed.
+    const pageStyle = Object.assign(document.createElement("style"), {
+        id: "slides-page",
+        textContent: "@page { size: letter landscape; margin: 0 }",
+    });
+    document.head.append(pageStyle);
+    document.body.dataset.slides = "";
+
+    // afterprint also fires for the browser's own print preview being closed.
+    window.addEventListener("afterprint", () => {
+        slides.remove();
+        pageStyle.remove();
+        delete document.body.dataset.slides;
+    }, { once: true });
+    window.print();
+});
+</script>
+<script>
 // Transpose the chords of one song up or down by semitones.
 //
 // Chords are aligned by hand to exact letters, so transposing must never move
@@ -7896,6 +8145,258 @@ onAction("cycle-notation", () => {
 });
 // Books without the setting (book.yaml notation_setting: false) always show letters.
 if (BOOK.notationSetting) setNotation(prefs.get("notation", "letters"));
+</script>
+<script>
+// First-visit tour (and Settings > "Ver tutorial"): dims the page, boxes the
+// controls of each step and labels them. Built on demand, removed when it ends.
+// Its last step also replaces the old "add to home screen" popup (book.yaml install_tip).
+//
+// labels: [selector, chip text]; a null text only widens the box, without a chip.
+// before() sets the page up for the step (and may return the element to search in);
+// after() undoes it when the step is left by Siguiente, Atrás or Saltar.
+
+const offlineTip = () => BOOK.installTip && /^https?:$/.test(location.protocol)
+    && !matchMedia("(display-mode: standalone)").matches && navigator.standalone !== true; // not in the home-screen app
+
+let sessionBeforeTour = null; // the real session while the tour shows example songs
+
+// Open the menu scrolled so `selector` is near its top, with room above for a label.
+function showInDrawer(selector) {
+    setDrawerOpen(true);
+    const drawer = document.getElementById("drawer");
+    const target = document.querySelector(selector).getBoundingClientRect().top;
+    drawer.scrollTop += target - drawer.getBoundingClientRect().top - 56;
+}
+
+const TOUR_STEPS = [
+    {
+        title: "Canciones",
+        text: "Toca una canción del índice para abrirla, o búscala.",
+        labels: [[".topbar .search input", "Buscar"], ["#index a", "Canciones"]],
+        before() {
+            setDrawerOpen(false);
+            scrollTo({ top: 0, behavior: "instant" }); // (no return: Chromium's scrollTo returns a Promise)
+        },
+    },
+    {
+        title: "En cada canción",
+        text: "Cada canción tiene sus propios controles.",
+        labels: [
+            ['[data-action="toggle-chords"]', "Ocultar acordes"],
+            ['.stepper:has([data-action="transpose-up"])', "Tono"],
+            ['[data-action="toggle-columns"]', "2 columnas"],
+            ['.stepper:has([data-action="song-text-bigger"])', "Tamaño"],
+            ['[data-action="session-toggle"]', "Añadir a sesión"],
+        ],
+        before() {
+            setDrawerOpen(false);
+            const song = document.querySelector(".song:has(.chord-line)");
+            const controls = song.querySelector(".controls");
+            controls.scrollIntoView({ block: "center", behavior: "instant" });
+            return controls;
+        },
+    },
+    {
+        title: "Sesión",
+        text: () => (sessionBeforeTour.length ? "" : "<p>Ejemplo con 2 canciones (se quitan al seguir).</p>")
+            + "<p>Tu lista de canciones para tocar, en el menú. Se guarda en este dispositivo.</p><ul>"
+            + "<li><b>⠿</b> arrastra para cambiar el orden; <b>✕</b> quita la canción.</li>"
+            + "<li><b>Add a song…</b> busca y añade canciones.</li>"
+            + "<li><b>Share session</b>: envía un enlace con la lista.</li>"
+            + "<li><b>Print session</b>: imprime o guarda en PDF solo estas canciones.</li>"
+            + "<li><b>Create session PPT</b>: diapositivas con la letra para proyectar.</li>"
+            + "<li><b>Clear session</b>: vacía la lista.</li></ul>",
+        labels: [
+            [".session-list li:first-child .session-handle", "Arrastrar"],
+            [".session-list li:first-child [data-action='session-remove']", "Quitar"],
+            ["#session summary", null],
+            ['[data-action="session-clear"]', null],
+        ],
+        before() {
+            sessionBeforeTour = session;
+            if (!session.length) {
+                // Shown, not saved: only `session` changes, never prefs.
+                session = [...document.querySelectorAll(".song")].slice(0, 2).map((song) => song.id);
+                renderSession();
+            }
+            document.getElementById("session").open = true;
+            setDrawerOpen(true);
+            document.getElementById("drawer").scrollTop = 0;
+        },
+        after() {
+            session = sessionBeforeTour;
+            renderSession();
+        },
+    },
+    {
+        title: "Barra superior",
+        text: "El menú, y el autoscroll con su velocidad.",
+        labels: [
+            ['[data-action="open-drawer"]', "Menú"],
+            ['[data-action="toggle-autoscroll"]', "Autoscroll"],
+            ['[data-action="autoscroll-faster"]', "Velocidad"],
+        ],
+        before() { setDrawerOpen(false); },
+    },
+    // Settings in two steps: on a phone all of them fill the screen, leaving no room for the card.
+    {
+        title: "Ajustes (1/2)",
+        text: () => "<p>Cambian <b>todo el libro</b>, no solo una canción:</p><ul>"
+            + "<li><b>Text size</b>: tamaño de la letra.</li>"
+            + "<li><b>Hide all chords</b>: oculta o muestra los acordes.</li>"
+            + (document.querySelector('[data-action="cycle-notation"]')
+                ? "<li><b>Chord names</b>: acordes como C D E o Do Re Mi.</li>" : "")
+            + "<li><b>2 columns</b>: las canciones a una o dos columnas.</li></ul>",
+        labels: [ // the chip at an odd index goes above (see placeTour)
+            ['.setting:has([data-action="toggle-all-columns"])', null],
+            ["#settings h2", "Ajustes de todo el libro"],
+        ],
+        before() { showInDrawer("#settings h2"); },
+    },
+    {
+        title: "Ajustes (2/2)",
+        text: () => "<ul><li><b>Reset all</b>: deshace los cambios de cada canción (tono, acordes, columnas).</li>"
+            + "<li><b>Theme</b>: claro, oscuro o automático.</li>"
+            + (document.querySelector('[data-requires="wake-lock"]:not([hidden])')
+                ? "<li><b>Keep screen on</b>: la pantalla no se apaga mientras tocas.</li>" : "")
+            + "<li><b>Print</b>: imprime o guarda en PDF todo el libro.</li></ul>",
+        labels: [
+            ['.setting:has([data-action="open-print"])', null],
+            ['.setting:has([data-action="reset-songs"])', "Más ajustes del libro"],
+        ],
+        before() { showInDrawer('.setting:has([data-action="reset-songs"])'); },
+    },
+    {
+        title: "¡Listo!",
+        text: () => "<p>Puedes volver a ver este tutorial abajo del todo en el menú.</p>"
+            + (offlineTip() ? "<p><b>Para acceso offline</b>, añade el libro a la pantalla de inicio:</p><ul>"
+                + "<li><b>iPhone</b> (Safari): Compartir → “Añadir a pantalla de inicio”</li>"
+                + "<li><b>Android</b> (Chrome): menú ⋮ → “Añadir a pantalla de inicio”</li></ul>" : ""),
+        labels: [['[data-action="start-tutorial"]', "Ver tutorial"]],
+        before() {
+            setDrawerOpen(true);
+            const drawer = document.getElementById("drawer");
+            drawer.scrollTop = drawer.scrollHeight;
+        },
+    },
+];
+
+let tour = null; // { el, spot, card, chips, n, root } while the tour is showing
+
+function startTutorial() {
+    if (tour) return;
+    document.body.classList.add("tour-on"); // shortens the menu so session and settings fit
+    const el = document.createElement("div");
+    el.className = "tour";
+    el.innerHTML = '<div class="tour-spot"></div><div class="tour-card"><h3></h3><h4></h4><div class="tour-text"></div>'
+        + '<div class="dialog-buttons"><button data-action="tour-skip">Saltar</button>'
+        + '<button data-action="tour-back">Atrás</button><button data-action="tour-next"></button></div></div>';
+    document.body.append(el);
+    tour = { el, spot: el.firstChild, card: el.lastChild, chips: [], n: -1 };
+    showTourStep(0);
+}
+
+function leaveTourStep() {
+    if (tour.n >= 0) TOUR_STEPS[tour.n].after?.();
+}
+
+function showTourStep(n) {
+    leaveTourStep();
+    const step = TOUR_STEPS[n];
+    tour.n = n;
+    tour.root = step.before?.() ?? document;
+    tour.chips.forEach((chip) => chip?.remove());
+    tour.chips = step.labels.map(([, text]) => {
+        if (!text) return null;
+        const chip = document.createElement("div");
+        chip.className = "tour-chip";
+        chip.textContent = text;
+        tour.el.append(chip);
+        return chip;
+    });
+    tour.card.querySelector("h3").textContent = `Tutorial · Paso ${n + 1}/${TOUR_STEPS.length}`;
+    tour.card.querySelector("h4").textContent = step.title;
+    const text = typeof step.text === "function" ? step.text() : `<p>${step.text}</p>`;
+    tour.card.querySelector(".tour-text").innerHTML = text; // our own fixed strings, never song data
+    tour.card.querySelector('[data-action="tour-back"]').hidden = n === 0;
+    const next = tour.card.querySelector('[data-action="tour-next"]');
+    next.textContent = n === TOUR_STEPS.length - 1 ? "Terminar" : "Siguiente";
+    next.focus();
+    placeTour();
+    setTimeout(placeTour, 350); // the menu is still sliding in, and songs may lay out late
+}
+
+const overlaps = (a, b) => a.left < b.right && b.left < a.right && a.top < b.bottom && b.top < a.bottom;
+
+function placeTour() {
+    if (!tour) return;
+    const vw = innerWidth, vh = innerHeight, gap = 12;
+    const targets = TOUR_STEPS[tour.n].labels
+        .map(([selector]) => tour.root.querySelector(selector)?.getBoundingClientRect())
+        .map((r) => (r?.width ? r : null)); // hidden controls (e.g. no session buttons) don't count
+    const union = targets.filter(Boolean).reduce((u, r) => ({
+        left: Math.min(u.left, r.left), top: Math.min(u.top, r.top),
+        right: Math.max(u.right, r.right), bottom: Math.max(u.bottom, r.bottom),
+    }), { left: vw, top: vh, right: 0, bottom: 0 });
+    const pad = 4;
+    Object.assign(tour.spot.style, {
+        left: `${union.left - pad}px`, top: `${union.top - pad}px`,
+        width: `${union.right - union.left + 2 * pad}px`, height: `${union.bottom - union.top + 2 * pad}px`,
+    });
+    // Wide screens with the menu open: the card goes beside the menu, not over it.
+    const drawer = document.getElementById("drawer").getBoundingClientRect();
+    const beside = document.body.classList.contains("drawer-open") && vw - drawer.right >= 440;
+    tour.card.classList.toggle("beside", beside);
+    tour.card.classList.toggle("top", !beside && (union.top + union.bottom) / 2 > vh / 2);
+    const placed = [tour.card.getBoundingClientRect()];
+    tour.chips.forEach((chip, i) => {
+        const r = targets[i];
+        if (!chip) return;
+        chip.hidden = !r;
+        if (!r) return;
+        const w = chip.offsetWidth, h = chip.offsetHeight;
+        const left = Math.min(Math.max(r.left + r.width / 2 - w / 2, 4), vw - w - 4);
+        const sides = i % 2 ? ["above", "below"] : ["below", "above"]; // neighbours alternate
+        const spot = (side) => {
+            const top = side === "below" ? r.bottom + gap : r.top - h - gap;
+            return { side, top, left, right: left + w, bottom: top + h };
+        };
+        const best = sides.map(spot).find((c) => c.top >= 4 && c.bottom <= vh - 4
+            && !placed.some((p) => overlaps(c, p))) ?? spot(sides[0]);
+        chip.dataset.side = best.side;
+        chip.style.left = `${left}px`;
+        chip.style.top = `${best.top}px`;
+        chip.style.setProperty("--arrow-x", `${Math.min(Math.max(r.left + r.width / 2 - left, 10), w - 10)}px`);
+        placed.push(best);
+    });
+}
+
+function closeTour() {
+    leaveTourStep();
+    tour.el.remove();
+    tour = null;
+    document.body.classList.remove("tour-on");
+    setDrawerOpen(false);
+    scrollTo({ top: 0, behavior: "instant" });
+}
+
+onAction("tour-next", () => (tour.n === TOUR_STEPS.length - 1 ? closeTour() : showTourStep(tour.n + 1)));
+onAction("tour-back", () => showTourStep(tour.n - 1));
+onAction("tour-skip", closeTour);
+onAction("start-tutorial", () => {
+    setDrawerOpen(false);
+    startTutorial();
+});
+addEventListener("resize", placeTour);
+addEventListener("scroll", placeTour);
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && tour) closeTour();
+});
+
+if (!prefs.get("tutorialSeen")) {
+    prefs.set("tutorialSeen", "1");
+    startTutorial();
+}
 </script>
 <script>
 // "Keep screen on" while playing. Only shown where the browser supports it
