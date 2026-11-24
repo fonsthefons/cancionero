@@ -954,66 +954,10 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 }
 
 /* ============================= */
-/* SESSION SLIDES (slides.js)    */
-/* ============================= */
-
-/* Only ever shown on paper. slides.js measures in its own off-screen .slide,
-   so the slide look lives out here (not in @media print) to match the print. */
-.slides {
-    display: none;
-}
-
-.slide {
-    width: 11in;
-    height: 8.5in;
-    padding: 0.4in;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    overflow: hidden;
-    background: white;
-    color: black;
-    font-family: system-ui, sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-/* Auto margins centre the text like justify-content: center, but an overflow
-   stays measurable (it grows downwards instead of out of both ends). */
-.slide > :first-child {
-    margin-top: auto;
-}
-
-.slide > :last-child {
-    margin-bottom: auto;
-}
-
-.slide-verse + .slide-verse {
-    margin-top: 0.6em;
-}
-
-.slide-line.bold {
-    font-weight: 800;
-}
-
-/* ============================= */
 /* PRINT                         */
 /* ============================= */
 
 @media print {
-    body[data-slides] > :not(.slides) {
-        display: none !important;
-    }
-
-    .slides {
-        display: block;
-    }
-
-    .slide {
-        break-after: page;
-    }
-
     @page {
         size: A4;
         margin: 15mm;
@@ -1136,7 +1080,6 @@ body[data-columns="2"] .song:not([data-columns="1"]),
     </div>
     <button class="session-clear" data-action="session-share">Share session</button>
     <button class="session-clear" data-action="print-session">Print session</button>
-    <button class="session-clear" data-action="session-slides">Create session PPT</button>
     <button class="session-clear" data-action="session-clear">Clear session</button>
   </details>
 
@@ -1212,24 +1155,24 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-enciendeme_hakuna">59. Enciéndeme - Hakuna</a></li>
 <li><a href="#song-espiritu_ven_batah">63. Espíritu ven - Batah</a></li>
 <li><a href="#song-granito_de_mostaza_popular">66. Granito de mostaza - popular</a></li>
-<li><a href="#song-hay_que_nacer_del_agua_popular">70. Hay que nacer del agua - Popular</a></li>
-<li><a href="#song-libre_miel_san_marcos">87. Libre - Miel San Marcos</a></li>
-<li><a href="#song-los_coros_del_universo_hakuna">90. Los coros del universo - Hakuna</a></li>
-<li><a href="#song-mar_adentro_navegar_schoenstatt">93. Mar Adentro (Navegar) - Schoenstatt</a></li>
-<li><a href="#song-muevete_en_mi_popular">99. Muevete en mi - popular</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-no_temas_jaime_olguin">108. No Temas - Jaime Olguín</a></li>
-<li><a href="#song-no_tengo_miedo_popular">109. No tengo miedo - popular</a></li>
-<li><a href="#song-preparad_el_camino_al_senor_popular">119. Preparad el camino al Señor - popular</a></li>
-<li><a href="#song-rey_de_reyes_marcos_barrientos">131. Rey de Reyes - Marcos Barrientos</a></li>
-<li><a href="#song-ruah_popular">132. RUAH - popular</a></li>
-<li><a href="#song-ven_mision_pais">153. Ven - mision_pais</a></li>
-<li><a href="#song-ven_ahora_popular">154. Ven Ahora - popular</a></li>
-<li><a href="#song-ven_ante_su_trono_elevation_worship">155. Ven ante Su trono - Elevation Worship</a></li>
-<li><a href="#song-ven_espiritu_secuencia">156. Ven Espíritu - popular</a></li>
-<li><a href="#song-ven_espiritu_ven_teresa">158. Ven Espiritu Ven - Teresa</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-hay_que_nacer_del_agua_popular">71. Hay que nacer del agua - Popular</a></li>
+<li><a href="#song-libre_miel_san_marcos">88. Libre - Miel San Marcos</a></li>
+<li><a href="#song-los_coros_del_universo_hakuna">91. Los coros del universo - Hakuna</a></li>
+<li><a href="#song-mar_adentro_navegar_schoenstatt">94. Mar Adentro (Navegar) - Schoenstatt</a></li>
+<li><a href="#song-muevete_en_mi_popular">100. Muevete en mi - popular</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-no_temas_jaime_olguin">109. No Temas - Jaime Olguín</a></li>
+<li><a href="#song-no_tengo_miedo_popular">110. No tengo miedo - popular</a></li>
+<li><a href="#song-preparad_el_camino_al_senor_popular">120. Preparad el camino al Señor - popular</a></li>
+<li><a href="#song-rey_de_reyes_marcos_barrientos">132. Rey de Reyes - Marcos Barrientos</a></li>
+<li><a href="#song-ruah_popular">133. RUAH - popular</a></li>
+<li><a href="#song-ven_mision_pais">154. Ven - mision_pais</a></li>
+<li><a href="#song-ven_ahora_popular">155. Ven Ahora - popular</a></li>
+<li><a href="#song-ven_ante_su_trono_elevation_worship">156. Ven ante Su trono - Elevation Worship</a></li>
+<li><a href="#song-ven_espiritu_secuencia">157. Ven Espíritu - popular</a></li>
+<li><a href="#song-ven_espiritu_ven_teresa">159. Ven Espiritu Ven - Teresa</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-misa-aleluya"><summary><h3>Aleluya</h3></summary>
@@ -1247,29 +1190,29 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-dios_incomparable_marcos_barrientos">47. Dios Incomparable - Marcos Barrientos</a></li>
 <li><a href="#song-dona_tu_vida_popular">49. Dona tu Vida - popular</a></li>
 <li><a href="#song-espiritu_ven_batah">63. Espíritu ven - Batah</a></li>
-<li><a href="#song-hoy_me_entrego_factor_de_cambio">75. Hoy Me Entrego - Factor de Cambio</a></li>
-<li><a href="#song-la_samaritana_popular">86. La Samaritana - popular</a></li>
-<li><a href="#song-maravillas_schoenstatt">94. Maravillas - schoenstatt</a></li>
-<li><a href="#song-muevete_en_mi_popular">99. Muevete en mi - popular</a></li>
-<li><a href="#song-nada_te_turbe_santa_teresa">101. Nada te turbe - Santa Teresa</a></li>
-<li><a href="#song-no_temas_jaime_olguin">108. No Temas - Jaime Olguín</a></li>
-<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">121. Que se quiebre mi corazón - María Olguín</a></li>
-<li><a href="#song-quien_pierde_su_vida_por_mi_hermana_glenda">123. Quien pierde su vida por mi - Hermana Glenda</a></li>
-<li><a href="#song-renuévame_senor_jesus_popular">128. Renuévame Señor Jesús - popular</a></li>
-<li><a href="#song-toma_senor_mi_libertad_popular">147. Toma Señor mi libertad - popular</a></li>
-<li><a href="#song-tu_eres_mi_respirar_popular">148. Tu eres mi respirar - popular</a></li>
-<li><a href="#song-tuyas_son_luispo">151. Tuyas son - Luispo</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
-<li><a href="#song-yo_quiero_ser_tu_servidor_popular">169. Yo Quiero ser tu Servidor - popular</a></li>
-<li><a href="#song-zzz_test_song">170. ZZZ Test Song - popular</a></li>
+<li><a href="#song-hoy_me_entrego_factor_de_cambio">76. Hoy Me Entrego - Factor de Cambio</a></li>
+<li><a href="#song-la_samaritana_popular">87. La Samaritana - popular</a></li>
+<li><a href="#song-maravillas_schoenstatt">95. Maravillas - schoenstatt</a></li>
+<li><a href="#song-muevete_en_mi_popular">100. Muevete en mi - popular</a></li>
+<li><a href="#song-nada_te_turbe_santa_teresa">102. Nada te turbe - Santa Teresa</a></li>
+<li><a href="#song-no_temas_jaime_olguin">109. No Temas - Jaime Olguín</a></li>
+<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">122. Que se quiebre mi corazón - María Olguín</a></li>
+<li><a href="#song-quien_pierde_su_vida_por_mi_hermana_glenda">124. Quien pierde su vida por mi - Hermana Glenda</a></li>
+<li><a href="#song-renuévame_senor_jesus_popular">129. Renuévame Señor Jesús - popular</a></li>
+<li><a href="#song-toma_senor_mi_libertad_popular">148. Toma Señor mi libertad - popular</a></li>
+<li><a href="#song-tu_eres_mi_respirar_popular">149. Tu eres mi respirar - popular</a></li>
+<li><a href="#song-tuyas_son_luispo">152. Tuyas son - Luispo</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-yo_quiero_ser_tu_servidor_popular">170. Yo Quiero ser tu Servidor - popular</a></li>
+<li><a href="#song-zzz_test_song">171. ZZZ Test Song - popular</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-misa-santo"><summary><h3>Santo</h3></summary>
 <ul class="song-list">
-<li><a href="#song-santo_berthier">136. Santo - Berthier</a></li>
-<li><a href="#song-santo_jaime_olguin">137. Santo - Jaime Olguín</a></li>
-<li><a href="#song-santo_manchego_popular">138. Santo Manchego - popular</a></li>
+<li><a href="#song-santo_berthier">137. Santo - Berthier</a></li>
+<li><a href="#song-santo_jaime_olguin">138. Santo - Jaime Olguín</a></li>
+<li><a href="#song-santo_manchego_popular">139. Santo Manchego - popular</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-misa-cordero"><summary><h3>Cordero</h3></summary>
@@ -1326,87 +1269,87 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-estaré_contigo_jon_carlo">64. Estaré Contigo - Jon Carlo</a></li>
 <li><a href="#song-estas_dentro_de_mi_schoenstatt">65. Estás dentro de mí - Schoenstatt</a></li>
 <li><a href="#song-granito_de_mostaza_popular">66. Granito de mostaza - popular</a></li>
-<li><a href="#song-hasta_la_locura_pablo_martinez">68. Hasta La Locura - Pablo Martinez</a></li>
-<li><a href="#song-hay_que_nacer_del_agua_popular">70. Hay que nacer del agua - Popular</a></li>
-<li><a href="#song-here_i_am_lord_popular">71. Here I am Lord - popular</a></li>
-<li><a href="#song-hermoso_nombre_hillsong">72. Hermoso Nombre - Hillsong</a></li>
-<li><a href="#song-hoy_me_entrego_factor_de_cambio">75. Hoy Me Entrego - Factor de Cambio</a></li>
-<li><a href="#song-huracan_hakuna">76. Huracán - Hakuna</a></li>
-<li><a href="#song-id_y_anunciad_batah">77. Id y anunciad - Batah</a></li>
-<li><a href="#song-inundame_athenas">78. Inúndame - Athenas</a></li>
-<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">79. Jesucristo basta - Un Corazon</a></li>
-<li><a href="#song-jesus_sarai_rivera">80. Jesus - Sarai Rivera</a></li>
-<li><a href="#song-jesus_have_it_all_jeremy_riddle">81. Jesus have it all - Jeremy Riddle</a></li>
-<li><a href="#song-la_bendicion_elevation_worship">83. La Bendicion - Elevation Worship</a></li>
-<li><a href="#song-la_medida_del_amor_hakuna">85. La medida del amor - Hakuna</a></li>
-<li><a href="#song-la_samaritana_popular">86. La Samaritana - popular</a></li>
-<li><a href="#song-libre_miel_san_marcos">87. Libre - Miel San Marcos</a></li>
-<li><a href="#song-llevame_ignis">88. Llévame - Ignis</a></li>
-<li><a href="#song-lord_i_need_you_matt_maher">89. Lord, I Need You - Matt Maher</a></li>
-<li><a href="#song-los_coros_del_universo_hakuna">90. Los coros del universo - Hakuna</a></li>
-<li><a href="#song-mar_adentro_navegar_schoenstatt">93. Mar Adentro (Navegar) - Schoenstatt</a></li>
-<li><a href="#song-maravillas_schoenstatt">94. Maravillas - schoenstatt</a></li>
-<li><a href="#song-me_basta_con_saber_que_estas_aqui_salve">95. Me basta con saber que estás aquí - Salve</a></li>
-<li><a href="#song-me_rindo_a_ti_majo_y_dan">96. Me Rindo a Ti - Majo y Dan</a></li>
-<li><a href="#song-mi_amado_hakuna">97. Mi amado - Hakuna</a></li>
-<li><a href="#song-mis_heridas_te_han_curado_batah">98. Mis heridas te han curado - Batah</a></li>
-<li><a href="#song-muevete_en_mi_popular">99. Muevete en mi - popular</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-nada_te_turbe_santa_teresa">101. Nada te turbe - Santa Teresa</a></li>
-<li><a href="#song-nadie_te_ama_como_yo_popular">102. Nadie te ama como yo - popular</a></li>
-<li><a href="#song-no_hay_lugar_mas_alto_miel_san_marcos">103. No hay lugar más alto - Miel San Marcos</a></li>
-<li><a href="#song-no_hay_paredes_jesus_adrian_romero">104. No hay paredes - Jesús Adrián Romero</a></li>
-<li><a href="#song-no_longer_slaves_bethel">105. No Longer Slaves - Bethel</a></li>
-<li><a href="#song-no_se_que_viste_en_mi_hakuna">106. No sé qué viste en mí - Hakuna</a></li>
-<li><a href="#song-no_temas_jaime_olguin">108. No Temas - Jaime Olguín</a></li>
-<li><a href="#song-noche_hakuna">110. Noche - Hakuna</a></li>
-<li><a href="#song-oceans_hillsong">111. Oceans - Hillsong</a></li>
-<li><a href="#song-otra_vez_un_corazon">112. Otra Vez - Un Corazón</a></li>
-<li><a href="#song-para_que_entre_el_rey_popular">113. Para que entre el rey - popular</a></li>
-<li><a href="#song-perdon_helena">114. Perdón - Helena</a></li>
-<li><a href="#song-perfume_a_tus_pies_popular">115. Perfume a tus Pies - popular</a></li>
-<li><a href="#song-pescador_de_hombres_popular">116. Pescador de hombres - popular</a></li>
-<li><a href="#song-petrus_ozoresp">117. Petrus - OzoresP</a></li>
-<li><a href="#song-por_que_lloras_hakuna">118. Por qué lloras - Hakuna</a></li>
-<li><a href="#song-primero_el_cielo_tuyo">120. Primero el cielo - Tuyo</a></li>
-<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">121. Que se quiebre mi corazón - María Olguín</a></li>
-<li><a href="#song-quedate_senor_fray_nacho">122. Quédate Señor - Fray Nacho</a></li>
-<li><a href="#song-quien_pierde_su_vida_por_mi_hermana_glenda">123. Quien pierde su vida por mi - Hermana Glenda</a></li>
-<li><a href="#song-reckless_love_bethel_music">125. Reckless Love - Bethel Music</a></li>
-<li><a href="#song-renuevame_trigo_13">127. Renuévame - Trigo 13</a></li>
-<li><a href="#song-renuévame_senor_jesus_popular">128. Renuévame Señor Jesús - popular</a></li>
-<li><a href="#song-restaurame_espritu_xavier_rudd">129. Restaurame Espiritu - Xavier Rudd</a></li>
-<li><a href="#song-resucitados_kenosis">130. Resucitados - Kenosis</a></li>
-<li><a href="#song-rey_de_reyes_marcos_barrientos">131. Rey de Reyes - Marcos Barrientos</a></li>
-<li><a href="#song-ruah_popular">132. RUAH - popular</a></li>
-<li><a href="#song-saliendo_del_pretorio_jaire">133. Saliendo del Pretorio - Jaire</a></li>
-<li><a href="#song-salmo_23_un_corazon">134. Salmo 23 - Un Corazón</a></li>
-<li><a href="#song-salve_reina_servus_mariae">135. Salve Reina - Servus Mariae</a></li>
-<li><a href="#song-se_mi_faro_batah">139. Se Mi Faro - Batah</a></li>
-<li><a href="#song-sencillamente_popular">140. Sencillamente - Hakuna</a></li>
-<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">141. Si hubiera estado allí - Adrián</a></li>
-<li><a href="#song-sopla_senor_popular">142. Sopla Señor - popular</a></li>
-<li><a href="#song-soy_libre_hakuna">143. Soy Libre - Hakuna</a></li>
-<li><a href="#song-supe_que_me_amabas_marcela_gandara">144. Supe que me Amabas - Marcela Gándara</a></li>
-<li><a href="#song-surge_valentia_schoenstatt">145. Surge Valentía - Schoenstatt</a></li>
-<li><a href="#song-toma_senor_mi_libertad_popular">147. Toma Señor mi libertad - popular</a></li>
-<li><a href="#song-tu_eres_mi_respirar_popular">148. Tu eres mi respirar - popular</a></li>
-<li><a href="#song-tu_voluntad_servus_mariae">149. Tu Voluntad - Servus Mariae</a></li>
-<li><a href="#song-tus_planes_son_perfetos_batah">150. Tus Planes Son Perfectos - Batah</a></li>
-<li><a href="#song-tuyas_son_luispo">151. Tuyas son - Luispo</a></li>
-<li><a href="#song-un_segundo_hakuna">152. Un Segundo - Hakuna</a></li>
-<li><a href="#song-ven_mision_pais">153. Ven - mision_pais</a></li>
-<li><a href="#song-ven_espiritu_secuencia">156. Ven Espíritu - popular</a></li>
-<li><a href="#song-ven_espiritu_divino_schoenstatt">157. Ven Espíritu Divino - Schoenstatt</a></li>
-<li><a href="#song-ven_espiritu_ven_teresa">158. Ven Espiritu Ven - Teresa</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
-<li><a href="#song-vengo_a_adorarte_popular">161. Vengo a Adorarte - popular</a></li>
-<li><a href="#song-vida_en_abundancia_schoenstatt">162. Vida en abundancia - schoenstatt</a></li>
-<li><a href="#song-vuelvo_otra_vez_tuyo">167. Vuelvo Otra Vez - tuyo</a></li>
-<li><a href="#song-yeshua_generacion_12">168. Yeshua - Generacion 12</a></li>
-<li><a href="#song-yo_quiero_ser_tu_servidor_popular">169. Yo Quiero ser tu Servidor - popular</a></li>
-<li><a href="#song-zzz_test_song">170. ZZZ Test Song - popular</a></li>
+<li><a href="#song-hasta_la_locura_pablo_martinez">69. Hasta La Locura - Pablo Martinez</a></li>
+<li><a href="#song-hay_que_nacer_del_agua_popular">71. Hay que nacer del agua - Popular</a></li>
+<li><a href="#song-here_i_am_lord_popular">72. Here I am Lord - popular</a></li>
+<li><a href="#song-hermoso_nombre_hillsong">73. Hermoso Nombre - Hillsong</a></li>
+<li><a href="#song-hoy_me_entrego_factor_de_cambio">76. Hoy Me Entrego - Factor de Cambio</a></li>
+<li><a href="#song-huracan_hakuna">77. Huracán - Hakuna</a></li>
+<li><a href="#song-id_y_anunciad_batah">78. Id y anunciad - Batah</a></li>
+<li><a href="#song-inundame_athenas">79. Inúndame - Athenas</a></li>
+<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">80. Jesucristo basta - Un Corazon</a></li>
+<li><a href="#song-jesus_sarai_rivera">81. Jesus - Sarai Rivera</a></li>
+<li><a href="#song-jesus_have_it_all_jeremy_riddle">82. Jesus have it all - Jeremy Riddle</a></li>
+<li><a href="#song-la_bendicion_elevation_worship">84. La Bendicion - Elevation Worship</a></li>
+<li><a href="#song-la_medida_del_amor_hakuna">86. La medida del amor - Hakuna</a></li>
+<li><a href="#song-la_samaritana_popular">87. La Samaritana - popular</a></li>
+<li><a href="#song-libre_miel_san_marcos">88. Libre - Miel San Marcos</a></li>
+<li><a href="#song-llevame_ignis">89. Llévame - Ignis</a></li>
+<li><a href="#song-lord_i_need_you_matt_maher">90. Lord, I Need You - Matt Maher</a></li>
+<li><a href="#song-los_coros_del_universo_hakuna">91. Los coros del universo - Hakuna</a></li>
+<li><a href="#song-mar_adentro_navegar_schoenstatt">94. Mar Adentro (Navegar) - Schoenstatt</a></li>
+<li><a href="#song-maravillas_schoenstatt">95. Maravillas - schoenstatt</a></li>
+<li><a href="#song-me_basta_con_saber_que_estas_aqui_salve">96. Me basta con saber que estás aquí - Salve</a></li>
+<li><a href="#song-me_rindo_a_ti_majo_y_dan">97. Me Rindo a Ti - Majo y Dan</a></li>
+<li><a href="#song-mi_amado_hakuna">98. Mi amado - Hakuna</a></li>
+<li><a href="#song-mis_heridas_te_han_curado_batah">99. Mis heridas te han curado - Batah</a></li>
+<li><a href="#song-muevete_en_mi_popular">100. Muevete en mi - popular</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-nada_te_turbe_santa_teresa">102. Nada te turbe - Santa Teresa</a></li>
+<li><a href="#song-nadie_te_ama_como_yo_popular">103. Nadie te ama como yo - popular</a></li>
+<li><a href="#song-no_hay_lugar_mas_alto_miel_san_marcos">104. No hay lugar más alto - Miel San Marcos</a></li>
+<li><a href="#song-no_hay_paredes_jesus_adrian_romero">105. No hay paredes - Jesús Adrián Romero</a></li>
+<li><a href="#song-no_longer_slaves_bethel">106. No Longer Slaves - Bethel</a></li>
+<li><a href="#song-no_se_que_viste_en_mi_hakuna">107. No sé qué viste en mí - Hakuna</a></li>
+<li><a href="#song-no_temas_jaime_olguin">109. No Temas - Jaime Olguín</a></li>
+<li><a href="#song-noche_hakuna">111. Noche - Hakuna</a></li>
+<li><a href="#song-oceans_hillsong">112. Oceans - Hillsong</a></li>
+<li><a href="#song-otra_vez_un_corazon">113. Otra Vez - Un Corazón</a></li>
+<li><a href="#song-para_que_entre_el_rey_popular">114. Para que entre el rey - popular</a></li>
+<li><a href="#song-perdon_helena">115. Perdón - Helena</a></li>
+<li><a href="#song-perfume_a_tus_pies_popular">116. Perfume a tus Pies - popular</a></li>
+<li><a href="#song-pescador_de_hombres_popular">117. Pescador de hombres - popular</a></li>
+<li><a href="#song-petrus_ozoresp">118. Petrus - OzoresP</a></li>
+<li><a href="#song-por_que_lloras_hakuna">119. Por qué lloras - Hakuna</a></li>
+<li><a href="#song-primero_el_cielo_tuyo">121. Primero el cielo - Tuyo</a></li>
+<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">122. Que se quiebre mi corazón - María Olguín</a></li>
+<li><a href="#song-quedate_senor_fray_nacho">123. Quédate Señor - Fray Nacho</a></li>
+<li><a href="#song-quien_pierde_su_vida_por_mi_hermana_glenda">124. Quien pierde su vida por mi - Hermana Glenda</a></li>
+<li><a href="#song-reckless_love_bethel_music">126. Reckless Love - Bethel Music</a></li>
+<li><a href="#song-renuevame_trigo_13">128. Renuévame - Trigo 13</a></li>
+<li><a href="#song-renuévame_senor_jesus_popular">129. Renuévame Señor Jesús - popular</a></li>
+<li><a href="#song-restaurame_espritu_xavier_rudd">130. Restaurame Espiritu - Xavier Rudd</a></li>
+<li><a href="#song-resucitados_kenosis">131. Resucitados - Kenosis</a></li>
+<li><a href="#song-rey_de_reyes_marcos_barrientos">132. Rey de Reyes - Marcos Barrientos</a></li>
+<li><a href="#song-ruah_popular">133. RUAH - popular</a></li>
+<li><a href="#song-saliendo_del_pretorio_jaire">134. Saliendo del Pretorio - Jaire</a></li>
+<li><a href="#song-salmo_23_un_corazon">135. Salmo 23 - Un Corazón</a></li>
+<li><a href="#song-salve_reina_servus_mariae">136. Salve Reina - Servus Mariae</a></li>
+<li><a href="#song-se_mi_faro_batah">140. Se Mi Faro - Batah</a></li>
+<li><a href="#song-sencillamente_popular">141. Sencillamente - Hakuna</a></li>
+<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">142. Si hubiera estado allí - Adrián</a></li>
+<li><a href="#song-sopla_senor_popular">143. Sopla Señor - popular</a></li>
+<li><a href="#song-soy_libre_hakuna">144. Soy Libre - Hakuna</a></li>
+<li><a href="#song-supe_que_me_amabas_marcela_gandara">145. Supe que me Amabas - Marcela Gándara</a></li>
+<li><a href="#song-surge_valentia_schoenstatt">146. Surge Valentía - Schoenstatt</a></li>
+<li><a href="#song-toma_senor_mi_libertad_popular">148. Toma Señor mi libertad - popular</a></li>
+<li><a href="#song-tu_eres_mi_respirar_popular">149. Tu eres mi respirar - popular</a></li>
+<li><a href="#song-tu_voluntad_servus_mariae">150. Tu Voluntad - Servus Mariae</a></li>
+<li><a href="#song-tus_planes_son_perfetos_batah">151. Tus Planes Son Perfectos - Batah</a></li>
+<li><a href="#song-tuyas_son_luispo">152. Tuyas son - Luispo</a></li>
+<li><a href="#song-un_segundo_hakuna">153. Un Segundo - Hakuna</a></li>
+<li><a href="#song-ven_mision_pais">154. Ven - mision_pais</a></li>
+<li><a href="#song-ven_espiritu_secuencia">157. Ven Espíritu - popular</a></li>
+<li><a href="#song-ven_espiritu_divino_schoenstatt">158. Ven Espíritu Divino - Schoenstatt</a></li>
+<li><a href="#song-ven_espiritu_ven_teresa">159. Ven Espiritu Ven - Teresa</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-vengo_a_adorarte_popular">162. Vengo a Adorarte - popular</a></li>
+<li><a href="#song-vida_en_abundancia_schoenstatt">163. Vida en abundancia - schoenstatt</a></li>
+<li><a href="#song-vuelvo_otra_vez_tuyo">168. Vuelvo Otra Vez - tuyo</a></li>
+<li><a href="#song-yeshua_generacion_12">169. Yeshua - Generacion 12</a></li>
+<li><a href="#song-yo_quiero_ser_tu_servidor_popular">170. Yo Quiero ser tu Servidor - popular</a></li>
+<li><a href="#song-zzz_test_song">171. ZZZ Test Song - popular</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-misa-salida"><summary><h3>Salida</h3></summary>
@@ -1422,26 +1365,26 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-cuerda_auxiliar_besmaya">38. Cuerda Auxiliar - Besmaya</a></li>
 <li><a href="#song-dime_maria_batah">45. Dime María - Batah</a></li>
 <li><a href="#song-dios_te_salve_popular">48. Dios te salve - popular</a></li>
-<li><a href="#song-hail_mary_prayer_david_burke">67. Hail Mary Prayer - David Burke</a></li>
-<li><a href="#song-hasta_que_el_mundo_arda_por_el_francisco_alvarado">69. Hasta que el mundo arda por Él - Francisco Alvarado</a></li>
-<li><a href="#song-himno_de_la_almudena_popular">73. Himno de la Almudena - Popular</a></li>
-<li><a href="#song-himno_mision_pais_schoenstatt">74. Himno Misión País - Schoenstatt</a></li>
-<li><a href="#song-id_y_anunciad_batah">77. Id y anunciad - Batah</a></li>
-<li><a href="#song-junto_a_ti_maria_popular">82. Junto a ti María - popular</a></li>
-<li><a href="#song-la_bendicion_elevation_worship">83. La Bendicion - Elevation Worship</a></li>
-<li><a href="#song-la_fe_de_maria_popular">84. La Fe de María - popular</a></li>
-<li><a href="#song-lord_i_need_you_matt_maher">89. Lord, I Need You - Matt Maher</a></li>
-<li><a href="#song-madre_hakuna">91. Madre - Hakuna</a></li>
-<li><a href="#song-madre_de_hakuna_hakuna">92. Madre de Hakuna - Hakuna</a></li>
-<li><a href="#song-no_te_canses_madre_trigo_trece">107. No Te Canses, Madre - Trigo Trece</a></li>
-<li><a href="#song-no_tengo_miedo_popular">109. No tengo miedo - popular</a></li>
-<li><a href="#song-quiero_caminar_contigo_maria_popular">124. Quiero Caminar Contigo María - popular</a></li>
-<li><a href="#song-reina_y_madre_siquem">126. Reina y Madre - Siquem</a></li>
-<li><a href="#song-salve_reina_servus_mariae">135. Salve Reina - Servus Mariae</a></li>
-<li><a href="#song-todo_tuyo_soy_popular">146. Todo Tuyo Soy - Popular</a></li>
-<li><a href="#song-virgen_madre_de_nuestro_dios_popular">164. Virgen Madre de Nuestro Dios - popular</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
-<li><a href="#song-volveras_a_maria_popular">166. Volverás a María - popular</a></li>
+<li><a href="#song-hail_mary_prayer_david_burke">68. Hail Mary Prayer - David Burke</a></li>
+<li><a href="#song-hasta_que_el_mundo_arda_por_el_francisco_alvarado">70. Hasta que el mundo arda por Él - Francisco Alvarado</a></li>
+<li><a href="#song-himno_de_la_almudena_popular">74. Himno de la Almudena - Popular</a></li>
+<li><a href="#song-himno_mision_pais_schoenstatt">75. Himno Misión País - Schoenstatt</a></li>
+<li><a href="#song-id_y_anunciad_batah">78. Id y anunciad - Batah</a></li>
+<li><a href="#song-junto_a_ti_maria_popular">83. Junto a ti María - popular</a></li>
+<li><a href="#song-la_bendicion_elevation_worship">84. La Bendicion - Elevation Worship</a></li>
+<li><a href="#song-la_fe_de_maria_popular">85. La Fe de María - popular</a></li>
+<li><a href="#song-lord_i_need_you_matt_maher">90. Lord, I Need You - Matt Maher</a></li>
+<li><a href="#song-madre_hakuna">92. Madre - Hakuna</a></li>
+<li><a href="#song-madre_de_hakuna_hakuna">93. Madre de Hakuna - Hakuna</a></li>
+<li><a href="#song-no_te_canses_madre_trigo_trece">108. No Te Canses, Madre - Trigo Trece</a></li>
+<li><a href="#song-no_tengo_miedo_popular">110. No tengo miedo - popular</a></li>
+<li><a href="#song-quiero_caminar_contigo_maria_popular">125. Quiero Caminar Contigo María - popular</a></li>
+<li><a href="#song-reina_y_madre_siquem">127. Reina y Madre - Siquem</a></li>
+<li><a href="#song-salve_reina_servus_mariae">136. Salve Reina - Servus Mariae</a></li>
+<li><a href="#song-todo_tuyo_soy_popular">147. Todo Tuyo Soy - Popular</a></li>
+<li><a href="#song-virgen_madre_de_nuestro_dios_popular">165. Virgen Madre de Nuestro Dios - popular</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-volveras_a_maria_popular">167. Volverás a María - popular</a></li>
 </ul>
 </details>
 </details>
@@ -1452,23 +1395,23 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-bendigamos_popular">23. Bendigamos - popular</a></li>
 <li><a href="#song-cuan_grande_es_dios_popular">37. Cuan Grande Es Dios - Popular</a></li>
 <li><a href="#song-espiritu_ven_batah">63. Espíritu ven - Batah</a></li>
-<li><a href="#song-hay_que_nacer_del_agua_popular">70. Hay que nacer del agua - Popular</a></li>
-<li><a href="#song-hoy_me_entrego_factor_de_cambio">75. Hoy Me Entrego - Factor de Cambio</a></li>
-<li><a href="#song-inundame_athenas">78. Inúndame - Athenas</a></li>
-<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">79. Jesucristo basta - Un Corazon</a></li>
-<li><a href="#song-libre_miel_san_marcos">87. Libre - Miel San Marcos</a></li>
-<li><a href="#song-muevete_en_mi_popular">99. Muevete en mi - popular</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-restaurame_espritu_xavier_rudd">129. Restaurame Espiritu - Xavier Rudd</a></li>
-<li><a href="#song-ruah_popular">132. RUAH - popular</a></li>
-<li><a href="#song-tu_eres_mi_respirar_popular">148. Tu eres mi respirar - popular</a></li>
-<li><a href="#song-ven_ahora_popular">154. Ven Ahora - popular</a></li>
-<li><a href="#song-ven_ante_su_trono_elevation_worship">155. Ven ante Su trono - Elevation Worship</a></li>
-<li><a href="#song-ven_espiritu_secuencia">156. Ven Espíritu - popular</a></li>
-<li><a href="#song-ven_espiritu_ven_teresa">158. Ven Espiritu Ven - Teresa</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
-<li><a href="#song-yeshua_generacion_12">168. Yeshua - Generacion 12</a></li>
+<li><a href="#song-hay_que_nacer_del_agua_popular">71. Hay que nacer del agua - Popular</a></li>
+<li><a href="#song-hoy_me_entrego_factor_de_cambio">76. Hoy Me Entrego - Factor de Cambio</a></li>
+<li><a href="#song-inundame_athenas">79. Inúndame - Athenas</a></li>
+<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">80. Jesucristo basta - Un Corazon</a></li>
+<li><a href="#song-libre_miel_san_marcos">88. Libre - Miel San Marcos</a></li>
+<li><a href="#song-muevete_en_mi_popular">100. Muevete en mi - popular</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-restaurame_espritu_xavier_rudd">130. Restaurame Espiritu - Xavier Rudd</a></li>
+<li><a href="#song-ruah_popular">133. RUAH - popular</a></li>
+<li><a href="#song-tu_eres_mi_respirar_popular">149. Tu eres mi respirar - popular</a></li>
+<li><a href="#song-ven_ahora_popular">155. Ven Ahora - popular</a></li>
+<li><a href="#song-ven_ante_su_trono_elevation_worship">156. Ven ante Su trono - Elevation Worship</a></li>
+<li><a href="#song-ven_espiritu_secuencia">157. Ven Espíritu - popular</a></li>
+<li><a href="#song-ven_espiritu_ven_teresa">159. Ven Espiritu Ven - Teresa</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-yeshua_generacion_12">169. Yeshua - Generacion 12</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-alabanza-segundo_ciclo"><summary><h3>Segundo ciclo</h3></summary>
@@ -1485,19 +1428,19 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-el_rey_de_mi_vida_popular">53. El Rey de mi Vida - popular</a></li>
 <li><a href="#song-el_unico_rey_tuyo">54. El Unico Rey - Tuyo</a></li>
 <li><a href="#song-granito_de_mostaza_popular">66. Granito de mostaza - popular</a></li>
-<li><a href="#song-hermoso_nombre_hillsong">72. Hermoso Nombre - Hillsong</a></li>
-<li><a href="#song-jesus_sarai_rivera">80. Jesus - Sarai Rivera</a></li>
-<li><a href="#song-libre_miel_san_marcos">87. Libre - Miel San Marcos</a></li>
-<li><a href="#song-los_coros_del_universo_hakuna">90. Los coros del universo - Hakuna</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-no_longer_slaves_bethel">105. No Longer Slaves - Bethel</a></li>
-<li><a href="#song-para_que_entre_el_rey_popular">113. Para que entre el rey - popular</a></li>
-<li><a href="#song-primero_el_cielo_tuyo">120. Primero el cielo - Tuyo</a></li>
-<li><a href="#song-reckless_love_bethel_music">125. Reckless Love - Bethel Music</a></li>
-<li><a href="#song-rey_de_reyes_marcos_barrientos">131. Rey de Reyes - Marcos Barrientos</a></li>
-<li><a href="#song-santo_manchego_popular">138. Santo Manchego - popular</a></li>
-<li><a href="#song-ven_ante_su_trono_elevation_worship">155. Ven ante Su trono - Elevation Worship</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-hermoso_nombre_hillsong">73. Hermoso Nombre - Hillsong</a></li>
+<li><a href="#song-jesus_sarai_rivera">81. Jesus - Sarai Rivera</a></li>
+<li><a href="#song-libre_miel_san_marcos">88. Libre - Miel San Marcos</a></li>
+<li><a href="#song-los_coros_del_universo_hakuna">91. Los coros del universo - Hakuna</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-no_longer_slaves_bethel">106. No Longer Slaves - Bethel</a></li>
+<li><a href="#song-para_que_entre_el_rey_popular">114. Para que entre el rey - popular</a></li>
+<li><a href="#song-primero_el_cielo_tuyo">121. Primero el cielo - Tuyo</a></li>
+<li><a href="#song-reckless_love_bethel_music">126. Reckless Love - Bethel Music</a></li>
+<li><a href="#song-rey_de_reyes_marcos_barrientos">132. Rey de Reyes - Marcos Barrientos</a></li>
+<li><a href="#song-santo_manchego_popular">139. Santo Manchego - popular</a></li>
+<li><a href="#song-ven_ante_su_trono_elevation_worship">156. Ven ante Su trono - Elevation Worship</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-alabanza-tercer_ciclo"><summary><h3>Tercer ciclo</h3></summary>
@@ -1514,28 +1457,28 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-dame_de_beber_marcos_barrientos">39. Dame de Beber - Marcos Barrientos</a></li>
 <li><a href="#song-deseable_abels_worship">43. Deseable - Abels Worship</a></li>
 <li><a href="#song-el_unico_rey_tuyo">54. El Unico Rey - Tuyo</a></li>
-<li><a href="#song-hermoso_nombre_hillsong">72. Hermoso Nombre - Hillsong</a></li>
-<li><a href="#song-hoy_me_entrego_factor_de_cambio">75. Hoy Me Entrego - Factor de Cambio</a></li>
-<li><a href="#song-jesus_sarai_rivera">80. Jesus - Sarai Rivera</a></li>
-<li><a href="#song-jesus_have_it_all_jeremy_riddle">81. Jesus have it all - Jeremy Riddle</a></li>
-<li><a href="#song-lord_i_need_you_matt_maher">89. Lord, I Need You - Matt Maher</a></li>
-<li><a href="#song-me_rindo_a_ti_majo_y_dan">96. Me Rindo a Ti - Majo y Dan</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-no_longer_slaves_bethel">105. No Longer Slaves - Bethel</a></li>
-<li><a href="#song-no_tengo_miedo_popular">109. No tengo miedo - popular</a></li>
-<li><a href="#song-otra_vez_un_corazon">112. Otra Vez - Un Corazón</a></li>
-<li><a href="#song-para_que_entre_el_rey_popular">113. Para que entre el rey - popular</a></li>
-<li><a href="#song-primero_el_cielo_tuyo">120. Primero el cielo - Tuyo</a></li>
-<li><a href="#song-reckless_love_bethel_music">125. Reckless Love - Bethel Music</a></li>
-<li><a href="#song-salmo_23_un_corazon">134. Salmo 23 - Un Corazón</a></li>
-<li><a href="#song-santo_manchego_popular">138. Santo Manchego - popular</a></li>
-<li><a href="#song-soy_libre_hakuna">143. Soy Libre - Hakuna</a></li>
-<li><a href="#song-tu_eres_mi_respirar_popular">148. Tu eres mi respirar - popular</a></li>
-<li><a href="#song-tu_voluntad_servus_mariae">149. Tu Voluntad - Servus Mariae</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
-<li><a href="#song-yeshua_generacion_12">168. Yeshua - Generacion 12</a></li>
+<li><a href="#song-hermoso_nombre_hillsong">73. Hermoso Nombre - Hillsong</a></li>
+<li><a href="#song-hoy_me_entrego_factor_de_cambio">76. Hoy Me Entrego - Factor de Cambio</a></li>
+<li><a href="#song-jesus_sarai_rivera">81. Jesus - Sarai Rivera</a></li>
+<li><a href="#song-jesus_have_it_all_jeremy_riddle">82. Jesus have it all - Jeremy Riddle</a></li>
+<li><a href="#song-lord_i_need_you_matt_maher">90. Lord, I Need You - Matt Maher</a></li>
+<li><a href="#song-me_rindo_a_ti_majo_y_dan">97. Me Rindo a Ti - Majo y Dan</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-no_longer_slaves_bethel">106. No Longer Slaves - Bethel</a></li>
+<li><a href="#song-no_tengo_miedo_popular">110. No tengo miedo - popular</a></li>
+<li><a href="#song-otra_vez_un_corazon">113. Otra Vez - Un Corazón</a></li>
+<li><a href="#song-para_que_entre_el_rey_popular">114. Para que entre el rey - popular</a></li>
+<li><a href="#song-primero_el_cielo_tuyo">121. Primero el cielo - Tuyo</a></li>
+<li><a href="#song-reckless_love_bethel_music">126. Reckless Love - Bethel Music</a></li>
+<li><a href="#song-salmo_23_un_corazon">135. Salmo 23 - Un Corazón</a></li>
+<li><a href="#song-santo_manchego_popular">139. Santo Manchego - popular</a></li>
+<li><a href="#song-soy_libre_hakuna">144. Soy Libre - Hakuna</a></li>
+<li><a href="#song-tu_eres_mi_respirar_popular">149. Tu eres mi respirar - popular</a></li>
+<li><a href="#song-tu_voluntad_servus_mariae">150. Tu Voluntad - Servus Mariae</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-yeshua_generacion_12">169. Yeshua - Generacion 12</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-alabanza-cuarto_ciclo"><summary><h3>Cuarto ciclo</h3></summary>
@@ -1544,21 +1487,21 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-bendita_tu_popular">24. Bendita Tu - Popular</a></li>
 <li><a href="#song-buenas_noches_maria_popular">25. Buenas Noches María - popular</a></li>
 <li><a href="#song-dios_te_salve_popular">48. Dios te salve - popular</a></li>
-<li><a href="#song-himno_de_la_almudena_popular">73. Himno de la Almudena - Popular</a></li>
-<li><a href="#song-himno_mision_pais_schoenstatt">74. Himno Misión País - Schoenstatt</a></li>
-<li><a href="#song-la_bendicion_elevation_worship">83. La Bendicion - Elevation Worship</a></li>
-<li><a href="#song-la_fe_de_maria_popular">84. La Fe de María - popular</a></li>
-<li><a href="#song-madre_hakuna">91. Madre - Hakuna</a></li>
-<li><a href="#song-madre_de_hakuna_hakuna">92. Madre de Hakuna - Hakuna</a></li>
-<li><a href="#song-no_te_canses_madre_trigo_trece">107. No Te Canses, Madre - Trigo Trece</a></li>
-<li><a href="#song-no_tengo_miedo_popular">109. No tengo miedo - popular</a></li>
-<li><a href="#song-quiero_caminar_contigo_maria_popular">124. Quiero Caminar Contigo María - popular</a></li>
-<li><a href="#song-reina_y_madre_siquem">126. Reina y Madre - Siquem</a></li>
-<li><a href="#song-salmo_23_un_corazon">134. Salmo 23 - Un Corazón</a></li>
-<li><a href="#song-todo_tuyo_soy_popular">146. Todo Tuyo Soy - Popular</a></li>
-<li><a href="#song-virgen_madre_de_nuestro_dios_popular">164. Virgen Madre de Nuestro Dios - popular</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
-<li><a href="#song-volveras_a_maria_popular">166. Volverás a María - popular</a></li>
+<li><a href="#song-himno_de_la_almudena_popular">74. Himno de la Almudena - Popular</a></li>
+<li><a href="#song-himno_mision_pais_schoenstatt">75. Himno Misión País - Schoenstatt</a></li>
+<li><a href="#song-la_bendicion_elevation_worship">84. La Bendicion - Elevation Worship</a></li>
+<li><a href="#song-la_fe_de_maria_popular">85. La Fe de María - popular</a></li>
+<li><a href="#song-madre_hakuna">92. Madre - Hakuna</a></li>
+<li><a href="#song-madre_de_hakuna_hakuna">93. Madre de Hakuna - Hakuna</a></li>
+<li><a href="#song-no_te_canses_madre_trigo_trece">108. No Te Canses, Madre - Trigo Trece</a></li>
+<li><a href="#song-no_tengo_miedo_popular">110. No tengo miedo - popular</a></li>
+<li><a href="#song-quiero_caminar_contigo_maria_popular">125. Quiero Caminar Contigo María - popular</a></li>
+<li><a href="#song-reina_y_madre_siquem">127. Reina y Madre - Siquem</a></li>
+<li><a href="#song-salmo_23_un_corazon">135. Salmo 23 - Un Corazón</a></li>
+<li><a href="#song-todo_tuyo_soy_popular">147. Todo Tuyo Soy - Popular</a></li>
+<li><a href="#song-virgen_madre_de_nuestro_dios_popular">165. Virgen Madre de Nuestro Dios - popular</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-volveras_a_maria_popular">167. Volverás a María - popular</a></li>
 </ul>
 </details>
 </details>
@@ -1598,60 +1541,61 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-es_verdad_vali_olguin">62. Es verdad - Vali Olguin</a></li>
 <li><a href="#song-espiritu_ven_batah">63. Espíritu ven - Batah</a></li>
 <li><a href="#song-estaré_contigo_jon_carlo">64. Estaré Contigo - Jon Carlo</a></li>
-<li><a href="#song-hasta_la_locura_pablo_martinez">68. Hasta La Locura - Pablo Martinez</a></li>
-<li><a href="#song-hermoso_nombre_hillsong">72. Hermoso Nombre - Hillsong</a></li>
-<li><a href="#song-hoy_me_entrego_factor_de_cambio">75. Hoy Me Entrego - Factor de Cambio</a></li>
-<li><a href="#song-huracan_hakuna">76. Huracán - Hakuna</a></li>
-<li><a href="#song-id_y_anunciad_batah">77. Id y anunciad - Batah</a></li>
-<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">79. Jesucristo basta - Un Corazon</a></li>
-<li><a href="#song-jesus_sarai_rivera">80. Jesus - Sarai Rivera</a></li>
-<li><a href="#song-jesus_have_it_all_jeremy_riddle">81. Jesus have it all - Jeremy Riddle</a></li>
-<li><a href="#song-la_bendicion_elevation_worship">83. La Bendicion - Elevation Worship</a></li>
-<li><a href="#song-la_medida_del_amor_hakuna">85. La medida del amor - Hakuna</a></li>
-<li><a href="#song-la_samaritana_popular">86. La Samaritana - popular</a></li>
-<li><a href="#song-llevame_ignis">88. Llévame - Ignis</a></li>
-<li><a href="#song-lord_i_need_you_matt_maher">89. Lord, I Need You - Matt Maher</a></li>
-<li><a href="#song-maravillas_schoenstatt">94. Maravillas - schoenstatt</a></li>
-<li><a href="#song-me_basta_con_saber_que_estas_aqui_salve">95. Me basta con saber que estás aquí - Salve</a></li>
-<li><a href="#song-mi_amado_hakuna">97. Mi amado - Hakuna</a></li>
-<li><a href="#song-mis_heridas_te_han_curado_batah">98. Mis heridas te han curado - Batah</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-nada_te_turbe_santa_teresa">101. Nada te turbe - Santa Teresa</a></li>
-<li><a href="#song-nadie_te_ama_como_yo_popular">102. Nadie te ama como yo - popular</a></li>
-<li><a href="#song-no_hay_lugar_mas_alto_miel_san_marcos">103. No hay lugar más alto - Miel San Marcos</a></li>
-<li><a href="#song-no_hay_paredes_jesus_adrian_romero">104. No hay paredes - Jesús Adrián Romero</a></li>
-<li><a href="#song-no_longer_slaves_bethel">105. No Longer Slaves - Bethel</a></li>
-<li><a href="#song-no_se_que_viste_en_mi_hakuna">106. No sé qué viste en mí - Hakuna</a></li>
-<li><a href="#song-noche_hakuna">110. Noche - Hakuna</a></li>
-<li><a href="#song-oceans_hillsong">111. Oceans - Hillsong</a></li>
-<li><a href="#song-otra_vez_un_corazon">112. Otra Vez - Un Corazón</a></li>
-<li><a href="#song-perdon_helena">114. Perdón - Helena</a></li>
-<li><a href="#song-perfume_a_tus_pies_popular">115. Perfume a tus Pies - popular</a></li>
-<li><a href="#song-por_que_lloras_hakuna">118. Por qué lloras - Hakuna</a></li>
-<li><a href="#song-primero_el_cielo_tuyo">120. Primero el cielo - Tuyo</a></li>
-<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">121. Que se quiebre mi corazón - María Olguín</a></li>
-<li><a href="#song-reckless_love_bethel_music">125. Reckless Love - Bethel Music</a></li>
-<li><a href="#song-renuevame_trigo_13">127. Renuévame - Trigo 13</a></li>
-<li><a href="#song-restaurame_espritu_xavier_rudd">129. Restaurame Espiritu - Xavier Rudd</a></li>
-<li><a href="#song-resucitados_kenosis">130. Resucitados - Kenosis</a></li>
-<li><a href="#song-saliendo_del_pretorio_jaire">133. Saliendo del Pretorio - Jaire</a></li>
-<li><a href="#song-salmo_23_un_corazon">134. Salmo 23 - Un Corazón</a></li>
-<li><a href="#song-se_mi_faro_batah">139. Se Mi Faro - Batah</a></li>
-<li><a href="#song-sencillamente_popular">140. Sencillamente - Hakuna</a></li>
-<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">141. Si hubiera estado allí - Adrián</a></li>
-<li><a href="#song-sopla_senor_popular">142. Sopla Señor - popular</a></li>
-<li><a href="#song-soy_libre_hakuna">143. Soy Libre - Hakuna</a></li>
-<li><a href="#song-supe_que_me_amabas_marcela_gandara">144. Supe que me Amabas - Marcela Gándara</a></li>
-<li><a href="#song-surge_valentia_schoenstatt">145. Surge Valentía - Schoenstatt</a></li>
-<li><a href="#song-tu_eres_mi_respirar_popular">148. Tu eres mi respirar - popular</a></li>
-<li><a href="#song-tus_planes_son_perfetos_batah">150. Tus Planes Son Perfectos - Batah</a></li>
-<li><a href="#song-tuyas_son_luispo">151. Tuyas son - Luispo</a></li>
-<li><a href="#song-un_segundo_hakuna">152. Un Segundo - Hakuna</a></li>
-<li><a href="#song-ven_espiritu_divino_schoenstatt">157. Ven Espíritu Divino - Schoenstatt</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
-<li><a href="#song-vengo_a_adorarte_popular">161. Vengo a Adorarte - popular</a></li>
-<li><a href="#song-vida_en_abundancia_schoenstatt">162. Vida en abundancia - schoenstatt</a></li>
-<li><a href="#song-vuelvo_otra_vez_tuyo">167. Vuelvo Otra Vez - tuyo</a></li>
+<li><a href="#song-hago_nuevas_todas_las_cosas_agustin_torrealba">67. Hago nuevas todas las cosas - Agustín Torrealba</a></li>
+<li><a href="#song-hasta_la_locura_pablo_martinez">69. Hasta La Locura - Pablo Martinez</a></li>
+<li><a href="#song-hermoso_nombre_hillsong">73. Hermoso Nombre - Hillsong</a></li>
+<li><a href="#song-hoy_me_entrego_factor_de_cambio">76. Hoy Me Entrego - Factor de Cambio</a></li>
+<li><a href="#song-huracan_hakuna">77. Huracán - Hakuna</a></li>
+<li><a href="#song-id_y_anunciad_batah">78. Id y anunciad - Batah</a></li>
+<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">80. Jesucristo basta - Un Corazon</a></li>
+<li><a href="#song-jesus_sarai_rivera">81. Jesus - Sarai Rivera</a></li>
+<li><a href="#song-jesus_have_it_all_jeremy_riddle">82. Jesus have it all - Jeremy Riddle</a></li>
+<li><a href="#song-la_bendicion_elevation_worship">84. La Bendicion - Elevation Worship</a></li>
+<li><a href="#song-la_medida_del_amor_hakuna">86. La medida del amor - Hakuna</a></li>
+<li><a href="#song-la_samaritana_popular">87. La Samaritana - popular</a></li>
+<li><a href="#song-llevame_ignis">89. Llévame - Ignis</a></li>
+<li><a href="#song-lord_i_need_you_matt_maher">90. Lord, I Need You - Matt Maher</a></li>
+<li><a href="#song-maravillas_schoenstatt">95. Maravillas - schoenstatt</a></li>
+<li><a href="#song-me_basta_con_saber_que_estas_aqui_salve">96. Me basta con saber que estás aquí - Salve</a></li>
+<li><a href="#song-mi_amado_hakuna">98. Mi amado - Hakuna</a></li>
+<li><a href="#song-mis_heridas_te_han_curado_batah">99. Mis heridas te han curado - Batah</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-nada_te_turbe_santa_teresa">102. Nada te turbe - Santa Teresa</a></li>
+<li><a href="#song-nadie_te_ama_como_yo_popular">103. Nadie te ama como yo - popular</a></li>
+<li><a href="#song-no_hay_lugar_mas_alto_miel_san_marcos">104. No hay lugar más alto - Miel San Marcos</a></li>
+<li><a href="#song-no_hay_paredes_jesus_adrian_romero">105. No hay paredes - Jesús Adrián Romero</a></li>
+<li><a href="#song-no_longer_slaves_bethel">106. No Longer Slaves - Bethel</a></li>
+<li><a href="#song-no_se_que_viste_en_mi_hakuna">107. No sé qué viste en mí - Hakuna</a></li>
+<li><a href="#song-noche_hakuna">111. Noche - Hakuna</a></li>
+<li><a href="#song-oceans_hillsong">112. Oceans - Hillsong</a></li>
+<li><a href="#song-otra_vez_un_corazon">113. Otra Vez - Un Corazón</a></li>
+<li><a href="#song-perdon_helena">115. Perdón - Helena</a></li>
+<li><a href="#song-perfume_a_tus_pies_popular">116. Perfume a tus Pies - popular</a></li>
+<li><a href="#song-por_que_lloras_hakuna">119. Por qué lloras - Hakuna</a></li>
+<li><a href="#song-primero_el_cielo_tuyo">121. Primero el cielo - Tuyo</a></li>
+<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">122. Que se quiebre mi corazón - María Olguín</a></li>
+<li><a href="#song-reckless_love_bethel_music">126. Reckless Love - Bethel Music</a></li>
+<li><a href="#song-renuevame_trigo_13">128. Renuévame - Trigo 13</a></li>
+<li><a href="#song-restaurame_espritu_xavier_rudd">130. Restaurame Espiritu - Xavier Rudd</a></li>
+<li><a href="#song-resucitados_kenosis">131. Resucitados - Kenosis</a></li>
+<li><a href="#song-saliendo_del_pretorio_jaire">134. Saliendo del Pretorio - Jaire</a></li>
+<li><a href="#song-salmo_23_un_corazon">135. Salmo 23 - Un Corazón</a></li>
+<li><a href="#song-se_mi_faro_batah">140. Se Mi Faro - Batah</a></li>
+<li><a href="#song-sencillamente_popular">141. Sencillamente - Hakuna</a></li>
+<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">142. Si hubiera estado allí - Adrián</a></li>
+<li><a href="#song-sopla_senor_popular">143. Sopla Señor - popular</a></li>
+<li><a href="#song-soy_libre_hakuna">144. Soy Libre - Hakuna</a></li>
+<li><a href="#song-supe_que_me_amabas_marcela_gandara">145. Supe que me Amabas - Marcela Gándara</a></li>
+<li><a href="#song-surge_valentia_schoenstatt">146. Surge Valentía - Schoenstatt</a></li>
+<li><a href="#song-tu_eres_mi_respirar_popular">149. Tu eres mi respirar - popular</a></li>
+<li><a href="#song-tus_planes_son_perfetos_batah">151. Tus Planes Son Perfectos - Batah</a></li>
+<li><a href="#song-tuyas_son_luispo">152. Tuyas son - Luispo</a></li>
+<li><a href="#song-un_segundo_hakuna">153. Un Segundo - Hakuna</a></li>
+<li><a href="#song-ven_espiritu_divino_schoenstatt">158. Ven Espíritu Divino - Schoenstatt</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-vengo_a_adorarte_popular">162. Vengo a Adorarte - popular</a></li>
+<li><a href="#song-vida_en_abundancia_schoenstatt">163. Vida en abundancia - schoenstatt</a></li>
+<li><a href="#song-vuelvo_otra_vez_tuyo">168. Vuelvo Otra Vez - tuyo</a></li>
 </ul>
 </details>
 <details class="tag-index" id="tag-tema"><summary><h2>Tema</h2></summary>
@@ -1661,8 +1605,8 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-atrapado_luispo">20. Atrapado - Luispo</a></li>
 <li><a href="#song-como_el_padre_me_amo_popular">30. Como el padre me amó - popular</a></li>
 <li><a href="#song-cuan_grande_es_dios_popular">37. Cuan Grande Es Dios - Popular</a></li>
-<li><a href="#song-primero_el_cielo_tuyo">120. Primero el cielo - Tuyo</a></li>
-<li><a href="#song-un_segundo_hakuna">152. Un Segundo - Hakuna</a></li>
+<li><a href="#song-primero_el_cielo_tuyo">121. Primero el cielo - Tuyo</a></li>
+<li><a href="#song-un_segundo_hakuna">153. Un Segundo - Hakuna</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-tema-cristo"><summary><h3>Cristo</h3></summary>
@@ -1679,39 +1623,39 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-cristo_vive_verbum_dei">36. Cristo Vive - Verbum Dei</a></li>
 <li><a href="#song-dime_rey_helena">46. Dime Rey - Helena</a></li>
 <li><a href="#song-dulce_locura_batah">50. Dulce locura - Batah</a></li>
-<li><a href="#song-hermoso_nombre_hillsong">72. Hermoso Nombre - Hillsong</a></li>
-<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">79. Jesucristo basta - Un Corazon</a></li>
-<li><a href="#song-jesus_sarai_rivera">80. Jesus - Sarai Rivera</a></li>
-<li><a href="#song-la_medida_del_amor_hakuna">85. La medida del amor - Hakuna</a></li>
-<li><a href="#song-la_samaritana_popular">86. La Samaritana - popular</a></li>
-<li><a href="#song-me_rindo_a_ti_majo_y_dan">96. Me Rindo a Ti - Majo y Dan</a></li>
-<li><a href="#song-mis_heridas_te_han_curado_batah">98. Mis heridas te han curado - Batah</a></li>
-<li><a href="#song-no_se_que_viste_en_mi_hakuna">106. No sé qué viste en mí - Hakuna</a></li>
-<li><a href="#song-otra_vez_un_corazon">112. Otra Vez - Un Corazón</a></li>
-<li><a href="#song-para_que_entre_el_rey_popular">113. Para que entre el rey - popular</a></li>
-<li><a href="#song-quedate_senor_fray_nacho">122. Quédate Señor - Fray Nacho</a></li>
-<li><a href="#song-reckless_love_bethel_music">125. Reckless Love - Bethel Music</a></li>
-<li><a href="#song-saliendo_del_pretorio_jaire">133. Saliendo del Pretorio - Jaire</a></li>
-<li><a href="#song-salve_reina_servus_mariae">135. Salve Reina - Servus Mariae</a></li>
-<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">141. Si hubiera estado allí - Adrián</a></li>
-<li><a href="#song-surge_valentia_schoenstatt">145. Surge Valentía - Schoenstatt</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-hermoso_nombre_hillsong">73. Hermoso Nombre - Hillsong</a></li>
+<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">80. Jesucristo basta - Un Corazon</a></li>
+<li><a href="#song-jesus_sarai_rivera">81. Jesus - Sarai Rivera</a></li>
+<li><a href="#song-la_medida_del_amor_hakuna">86. La medida del amor - Hakuna</a></li>
+<li><a href="#song-la_samaritana_popular">87. La Samaritana - popular</a></li>
+<li><a href="#song-me_rindo_a_ti_majo_y_dan">97. Me Rindo a Ti - Majo y Dan</a></li>
+<li><a href="#song-mis_heridas_te_han_curado_batah">99. Mis heridas te han curado - Batah</a></li>
+<li><a href="#song-no_se_que_viste_en_mi_hakuna">107. No sé qué viste en mí - Hakuna</a></li>
+<li><a href="#song-otra_vez_un_corazon">113. Otra Vez - Un Corazón</a></li>
+<li><a href="#song-para_que_entre_el_rey_popular">114. Para que entre el rey - popular</a></li>
+<li><a href="#song-quedate_senor_fray_nacho">123. Quédate Señor - Fray Nacho</a></li>
+<li><a href="#song-reckless_love_bethel_music">126. Reckless Love - Bethel Music</a></li>
+<li><a href="#song-saliendo_del_pretorio_jaire">134. Saliendo del Pretorio - Jaire</a></li>
+<li><a href="#song-salve_reina_servus_mariae">136. Salve Reina - Servus Mariae</a></li>
+<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">142. Si hubiera estado allí - Adrián</a></li>
+<li><a href="#song-surge_valentia_schoenstatt">146. Surge Valentía - Schoenstatt</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-tema-espiritu"><summary><h3>Espiritu</h3></summary>
 <ul class="song-list">
 <li><a href="#song-bendigamos_popular">23. Bendigamos - popular</a></li>
-<li><a href="#song-inundame_athenas">78. Inúndame - Athenas</a></li>
-<li><a href="#song-muevete_en_mi_popular">99. Muevete en mi - popular</a></li>
-<li><a href="#song-restaurame_espritu_xavier_rudd">129. Restaurame Espiritu - Xavier Rudd</a></li>
-<li><a href="#song-ruah_popular">132. RUAH - popular</a></li>
-<li><a href="#song-sopla_senor_popular">142. Sopla Señor - popular</a></li>
-<li><a href="#song-ven_mision_pais">153. Ven - mision_pais</a></li>
-<li><a href="#song-ven_ahora_popular">154. Ven Ahora - popular</a></li>
-<li><a href="#song-ven_espiritu_divino_schoenstatt">157. Ven Espíritu Divino - Schoenstatt</a></li>
-<li><a href="#song-ven_espiritu_ven_teresa">158. Ven Espiritu Ven - Teresa</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-inundame_athenas">79. Inúndame - Athenas</a></li>
+<li><a href="#song-muevete_en_mi_popular">100. Muevete en mi - popular</a></li>
+<li><a href="#song-restaurame_espritu_xavier_rudd">130. Restaurame Espiritu - Xavier Rudd</a></li>
+<li><a href="#song-ruah_popular">133. RUAH - popular</a></li>
+<li><a href="#song-sopla_senor_popular">143. Sopla Señor - popular</a></li>
+<li><a href="#song-ven_mision_pais">154. Ven - mision_pais</a></li>
+<li><a href="#song-ven_ahora_popular">155. Ven Ahora - popular</a></li>
+<li><a href="#song-ven_espiritu_divino_schoenstatt">158. Ven Espíritu Divino - Schoenstatt</a></li>
+<li><a href="#song-ven_espiritu_ven_teresa">159. Ven Espiritu Ven - Teresa</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
 </ul>
 </details>
 <details class="subtag-index" id="tag-tema-santo"><summary><h3>Santo</h3></summary>
@@ -1731,20 +1675,20 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-buenas_noches_maria_popular">25. Buenas Noches María - popular</a></li>
 <li><a href="#song-dime_maria_batah">45. Dime María - Batah</a></li>
 <li><a href="#song-dios_te_salve_popular">48. Dios te salve - popular</a></li>
-<li><a href="#song-hail_mary_prayer_david_burke">67. Hail Mary Prayer - David Burke</a></li>
-<li><a href="#song-hasta_que_el_mundo_arda_por_el_francisco_alvarado">69. Hasta que el mundo arda por Él - Francisco Alvarado</a></li>
-<li><a href="#song-himno_de_la_almudena_popular">73. Himno de la Almudena - Popular</a></li>
-<li><a href="#song-himno_mision_pais_schoenstatt">74. Himno Misión País - Schoenstatt</a></li>
-<li><a href="#song-junto_a_ti_maria_popular">82. Junto a ti María - popular</a></li>
-<li><a href="#song-la_fe_de_maria_popular">84. La Fe de María - popular</a></li>
-<li><a href="#song-madre_hakuna">91. Madre - Hakuna</a></li>
-<li><a href="#song-madre_de_hakuna_hakuna">92. Madre de Hakuna - Hakuna</a></li>
-<li><a href="#song-no_te_canses_madre_trigo_trece">107. No Te Canses, Madre - Trigo Trece</a></li>
-<li><a href="#song-quiero_caminar_contigo_maria_popular">124. Quiero Caminar Contigo María - popular</a></li>
-<li><a href="#song-reina_y_madre_siquem">126. Reina y Madre - Siquem</a></li>
-<li><a href="#song-salve_reina_servus_mariae">135. Salve Reina - Servus Mariae</a></li>
-<li><a href="#song-todo_tuyo_soy_popular">146. Todo Tuyo Soy - Popular</a></li>
-<li><a href="#song-volveras_a_maria_popular">166. Volverás a María - popular</a></li>
+<li><a href="#song-hail_mary_prayer_david_burke">68. Hail Mary Prayer - David Burke</a></li>
+<li><a href="#song-hasta_que_el_mundo_arda_por_el_francisco_alvarado">70. Hasta que el mundo arda por Él - Francisco Alvarado</a></li>
+<li><a href="#song-himno_de_la_almudena_popular">74. Himno de la Almudena - Popular</a></li>
+<li><a href="#song-himno_mision_pais_schoenstatt">75. Himno Misión País - Schoenstatt</a></li>
+<li><a href="#song-junto_a_ti_maria_popular">83. Junto a ti María - popular</a></li>
+<li><a href="#song-la_fe_de_maria_popular">85. La Fe de María - popular</a></li>
+<li><a href="#song-madre_hakuna">92. Madre - Hakuna</a></li>
+<li><a href="#song-madre_de_hakuna_hakuna">93. Madre de Hakuna - Hakuna</a></li>
+<li><a href="#song-no_te_canses_madre_trigo_trece">108. No Te Canses, Madre - Trigo Trece</a></li>
+<li><a href="#song-quiero_caminar_contigo_maria_popular">125. Quiero Caminar Contigo María - popular</a></li>
+<li><a href="#song-reina_y_madre_siquem">127. Reina y Madre - Siquem</a></li>
+<li><a href="#song-salve_reina_servus_mariae">136. Salve Reina - Servus Mariae</a></li>
+<li><a href="#song-todo_tuyo_soy_popular">147. Todo Tuyo Soy - Popular</a></li>
+<li><a href="#song-volveras_a_maria_popular">167. Volverás a María - popular</a></li>
 </ul>
 </details>
 </details>
@@ -1816,110 +1760,111 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <li><a href="#song-estaré_contigo_jon_carlo">64. Estaré Contigo - Jon Carlo</a></li>
 <li><a href="#song-estas_dentro_de_mi_schoenstatt">65. Estás dentro de mí - Schoenstatt</a></li>
 <li><a href="#song-granito_de_mostaza_popular">66. Granito de mostaza - popular</a></li>
-<li><a href="#song-hail_mary_prayer_david_burke">67. Hail Mary Prayer - David Burke</a></li>
-<li><a href="#song-hasta_la_locura_pablo_martinez">68. Hasta La Locura - Pablo Martinez</a></li>
-<li><a href="#song-hasta_que_el_mundo_arda_por_el_francisco_alvarado">69. Hasta que el mundo arda por Él - Francisco Alvarado</a></li>
-<li><a href="#song-hay_que_nacer_del_agua_popular">70. Hay que nacer del agua - Popular</a></li>
-<li><a href="#song-here_i_am_lord_popular">71. Here I am Lord - popular</a></li>
-<li><a href="#song-hermoso_nombre_hillsong">72. Hermoso Nombre - Hillsong</a></li>
-<li><a href="#song-himno_de_la_almudena_popular">73. Himno de la Almudena - Popular</a></li>
-<li><a href="#song-himno_mision_pais_schoenstatt">74. Himno Misión País - Schoenstatt</a></li>
-<li><a href="#song-hoy_me_entrego_factor_de_cambio">75. Hoy Me Entrego - Factor de Cambio</a></li>
-<li><a href="#song-huracan_hakuna">76. Huracán - Hakuna</a></li>
-<li><a href="#song-id_y_anunciad_batah">77. Id y anunciad - Batah</a></li>
-<li><a href="#song-inundame_athenas">78. Inúndame - Athenas</a></li>
-<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">79. Jesucristo basta - Un Corazon</a></li>
-<li><a href="#song-jesus_sarai_rivera">80. Jesus - Sarai Rivera</a></li>
-<li><a href="#song-jesus_have_it_all_jeremy_riddle">81. Jesus have it all - Jeremy Riddle</a></li>
-<li><a href="#song-junto_a_ti_maria_popular">82. Junto a ti María - popular</a></li>
-<li><a href="#song-la_bendicion_elevation_worship">83. La Bendicion - Elevation Worship</a></li>
-<li><a href="#song-la_fe_de_maria_popular">84. La Fe de María - popular</a></li>
-<li><a href="#song-la_medida_del_amor_hakuna">85. La medida del amor - Hakuna</a></li>
-<li><a href="#song-la_samaritana_popular">86. La Samaritana - popular</a></li>
-<li><a href="#song-libre_miel_san_marcos">87. Libre - Miel San Marcos</a></li>
-<li><a href="#song-llevame_ignis">88. Llévame - Ignis</a></li>
-<li><a href="#song-lord_i_need_you_matt_maher">89. Lord, I Need You - Matt Maher</a></li>
-<li><a href="#song-los_coros_del_universo_hakuna">90. Los coros del universo - Hakuna</a></li>
-<li><a href="#song-madre_hakuna">91. Madre - Hakuna</a></li>
-<li><a href="#song-madre_de_hakuna_hakuna">92. Madre de Hakuna - Hakuna</a></li>
-<li><a href="#song-mar_adentro_navegar_schoenstatt">93. Mar Adentro (Navegar) - Schoenstatt</a></li>
-<li><a href="#song-maravillas_schoenstatt">94. Maravillas - schoenstatt</a></li>
-<li><a href="#song-me_basta_con_saber_que_estas_aqui_salve">95. Me basta con saber que estás aquí - Salve</a></li>
-<li><a href="#song-me_rindo_a_ti_majo_y_dan">96. Me Rindo a Ti - Majo y Dan</a></li>
-<li><a href="#song-mi_amado_hakuna">97. Mi amado - Hakuna</a></li>
-<li><a href="#song-mis_heridas_te_han_curado_batah">98. Mis heridas te han curado - Batah</a></li>
-<li><a href="#song-muevete_en_mi_popular">99. Muevete en mi - popular</a></li>
-<li><a href="#song-muros_generacion_12">100. Muros - Generación 12</a></li>
-<li><a href="#song-nada_te_turbe_santa_teresa">101. Nada te turbe - Santa Teresa</a></li>
-<li><a href="#song-nadie_te_ama_como_yo_popular">102. Nadie te ama como yo - popular</a></li>
-<li><a href="#song-no_hay_lugar_mas_alto_miel_san_marcos">103. No hay lugar más alto - Miel San Marcos</a></li>
-<li><a href="#song-no_hay_paredes_jesus_adrian_romero">104. No hay paredes - Jesús Adrián Romero</a></li>
-<li><a href="#song-no_longer_slaves_bethel">105. No Longer Slaves - Bethel</a></li>
-<li><a href="#song-no_se_que_viste_en_mi_hakuna">106. No sé qué viste en mí - Hakuna</a></li>
-<li><a href="#song-no_te_canses_madre_trigo_trece">107. No Te Canses, Madre - Trigo Trece</a></li>
-<li><a href="#song-no_temas_jaime_olguin">108. No Temas - Jaime Olguín</a></li>
-<li><a href="#song-no_tengo_miedo_popular">109. No tengo miedo - popular</a></li>
-<li><a href="#song-noche_hakuna">110. Noche - Hakuna</a></li>
-<li><a href="#song-oceans_hillsong">111. Oceans - Hillsong</a></li>
-<li><a href="#song-otra_vez_un_corazon">112. Otra Vez - Un Corazón</a></li>
-<li><a href="#song-para_que_entre_el_rey_popular">113. Para que entre el rey - popular</a></li>
-<li><a href="#song-perdon_helena">114. Perdón - Helena</a></li>
-<li><a href="#song-perfume_a_tus_pies_popular">115. Perfume a tus Pies - popular</a></li>
-<li><a href="#song-pescador_de_hombres_popular">116. Pescador de hombres - popular</a></li>
-<li><a href="#song-petrus_ozoresp">117. Petrus - OzoresP</a></li>
-<li><a href="#song-por_que_lloras_hakuna">118. Por qué lloras - Hakuna</a></li>
-<li><a href="#song-preparad_el_camino_al_senor_popular">119. Preparad el camino al Señor - popular</a></li>
-<li><a href="#song-primero_el_cielo_tuyo">120. Primero el cielo - Tuyo</a></li>
-<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">121. Que se quiebre mi corazón - María Olguín</a></li>
-<li><a href="#song-quedate_senor_fray_nacho">122. Quédate Señor - Fray Nacho</a></li>
-<li><a href="#song-quien_pierde_su_vida_por_mi_hermana_glenda">123. Quien pierde su vida por mi - Hermana Glenda</a></li>
-<li><a href="#song-quiero_caminar_contigo_maria_popular">124. Quiero Caminar Contigo María - popular</a></li>
-<li><a href="#song-reckless_love_bethel_music">125. Reckless Love - Bethel Music</a></li>
-<li><a href="#song-reina_y_madre_siquem">126. Reina y Madre - Siquem</a></li>
-<li><a href="#song-renuevame_trigo_13">127. Renuévame - Trigo 13</a></li>
-<li><a href="#song-renuévame_senor_jesus_popular">128. Renuévame Señor Jesús - popular</a></li>
-<li><a href="#song-restaurame_espritu_xavier_rudd">129. Restaurame Espiritu - Xavier Rudd</a></li>
-<li><a href="#song-resucitados_kenosis">130. Resucitados - Kenosis</a></li>
-<li><a href="#song-rey_de_reyes_marcos_barrientos">131. Rey de Reyes - Marcos Barrientos</a></li>
-<li><a href="#song-ruah_popular">132. RUAH - popular</a></li>
-<li><a href="#song-saliendo_del_pretorio_jaire">133. Saliendo del Pretorio - Jaire</a></li>
-<li><a href="#song-salmo_23_un_corazon">134. Salmo 23 - Un Corazón</a></li>
-<li><a href="#song-salve_reina_servus_mariae">135. Salve Reina - Servus Mariae</a></li>
-<li><a href="#song-santo_berthier">136. Santo - Berthier</a></li>
-<li><a href="#song-santo_jaime_olguin">137. Santo - Jaime Olguín</a></li>
-<li><a href="#song-santo_manchego_popular">138. Santo Manchego - popular</a></li>
-<li><a href="#song-se_mi_faro_batah">139. Se Mi Faro - Batah</a></li>
-<li><a href="#song-sencillamente_popular">140. Sencillamente - Hakuna</a></li>
-<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">141. Si hubiera estado allí - Adrián</a></li>
-<li><a href="#song-sopla_senor_popular">142. Sopla Señor - popular</a></li>
-<li><a href="#song-soy_libre_hakuna">143. Soy Libre - Hakuna</a></li>
-<li><a href="#song-supe_que_me_amabas_marcela_gandara">144. Supe que me Amabas - Marcela Gándara</a></li>
-<li><a href="#song-surge_valentia_schoenstatt">145. Surge Valentía - Schoenstatt</a></li>
-<li><a href="#song-todo_tuyo_soy_popular">146. Todo Tuyo Soy - Popular</a></li>
-<li><a href="#song-toma_senor_mi_libertad_popular">147. Toma Señor mi libertad - popular</a></li>
-<li><a href="#song-tu_eres_mi_respirar_popular">148. Tu eres mi respirar - popular</a></li>
-<li><a href="#song-tu_voluntad_servus_mariae">149. Tu Voluntad - Servus Mariae</a></li>
-<li><a href="#song-tus_planes_son_perfetos_batah">150. Tus Planes Son Perfectos - Batah</a></li>
-<li><a href="#song-tuyas_son_luispo">151. Tuyas son - Luispo</a></li>
-<li><a href="#song-un_segundo_hakuna">152. Un Segundo - Hakuna</a></li>
-<li><a href="#song-ven_mision_pais">153. Ven - mision_pais</a></li>
-<li><a href="#song-ven_ahora_popular">154. Ven Ahora - popular</a></li>
-<li><a href="#song-ven_ante_su_trono_elevation_worship">155. Ven ante Su trono - Elevation Worship</a></li>
-<li><a href="#song-ven_espiritu_secuencia">156. Ven Espíritu - popular</a></li>
-<li><a href="#song-ven_espiritu_divino_schoenstatt">157. Ven Espíritu Divino - Schoenstatt</a></li>
-<li><a href="#song-ven_espiritu_ven_teresa">158. Ven Espiritu Ven - Teresa</a></li>
-<li><a href="#song-ven_espiritu_ven_purificame_popular">159. Ven Espíritu Ven (Purifícame) - popular</a></li>
-<li><a href="#song-ven_y_llename_generacion_12">160. Ven Y Lléname - Generación 12</a></li>
-<li><a href="#song-vengo_a_adorarte_popular">161. Vengo a Adorarte - popular</a></li>
-<li><a href="#song-vida_en_abundancia_schoenstatt">162. Vida en abundancia - schoenstatt</a></li>
-<li><a href="#song-villancico_valvanera_fons">163. Villancico Valvanera - Fons</a></li>
-<li><a href="#song-virgen_madre_de_nuestro_dios_popular">164. Virgen Madre de Nuestro Dios - popular</a></li>
-<li><a href="#song-viva_cristo_rey_jaire">165. Viva Cristo Rey - Jaire</a></li>
-<li><a href="#song-volveras_a_maria_popular">166. Volverás a María - popular</a></li>
-<li><a href="#song-vuelvo_otra_vez_tuyo">167. Vuelvo Otra Vez - tuyo</a></li>
-<li><a href="#song-yeshua_generacion_12">168. Yeshua - Generacion 12</a></li>
-<li><a href="#song-yo_quiero_ser_tu_servidor_popular">169. Yo Quiero ser tu Servidor - popular</a></li>
-<li><a href="#song-zzz_test_song">170. ZZZ Test Song - popular</a></li>
+<li><a href="#song-hago_nuevas_todas_las_cosas_agustin_torrealba">67. Hago nuevas todas las cosas - Agustín Torrealba</a></li>
+<li><a href="#song-hail_mary_prayer_david_burke">68. Hail Mary Prayer - David Burke</a></li>
+<li><a href="#song-hasta_la_locura_pablo_martinez">69. Hasta La Locura - Pablo Martinez</a></li>
+<li><a href="#song-hasta_que_el_mundo_arda_por_el_francisco_alvarado">70. Hasta que el mundo arda por Él - Francisco Alvarado</a></li>
+<li><a href="#song-hay_que_nacer_del_agua_popular">71. Hay que nacer del agua - Popular</a></li>
+<li><a href="#song-here_i_am_lord_popular">72. Here I am Lord - popular</a></li>
+<li><a href="#song-hermoso_nombre_hillsong">73. Hermoso Nombre - Hillsong</a></li>
+<li><a href="#song-himno_de_la_almudena_popular">74. Himno de la Almudena - Popular</a></li>
+<li><a href="#song-himno_mision_pais_schoenstatt">75. Himno Misión País - Schoenstatt</a></li>
+<li><a href="#song-hoy_me_entrego_factor_de_cambio">76. Hoy Me Entrego - Factor de Cambio</a></li>
+<li><a href="#song-huracan_hakuna">77. Huracán - Hakuna</a></li>
+<li><a href="#song-id_y_anunciad_batah">78. Id y anunciad - Batah</a></li>
+<li><a href="#song-inundame_athenas">79. Inúndame - Athenas</a></li>
+<li><a href="#song-jesucristo_basta_un_corazon_un_corazon">80. Jesucristo basta - Un Corazon</a></li>
+<li><a href="#song-jesus_sarai_rivera">81. Jesus - Sarai Rivera</a></li>
+<li><a href="#song-jesus_have_it_all_jeremy_riddle">82. Jesus have it all - Jeremy Riddle</a></li>
+<li><a href="#song-junto_a_ti_maria_popular">83. Junto a ti María - popular</a></li>
+<li><a href="#song-la_bendicion_elevation_worship">84. La Bendicion - Elevation Worship</a></li>
+<li><a href="#song-la_fe_de_maria_popular">85. La Fe de María - popular</a></li>
+<li><a href="#song-la_medida_del_amor_hakuna">86. La medida del amor - Hakuna</a></li>
+<li><a href="#song-la_samaritana_popular">87. La Samaritana - popular</a></li>
+<li><a href="#song-libre_miel_san_marcos">88. Libre - Miel San Marcos</a></li>
+<li><a href="#song-llevame_ignis">89. Llévame - Ignis</a></li>
+<li><a href="#song-lord_i_need_you_matt_maher">90. Lord, I Need You - Matt Maher</a></li>
+<li><a href="#song-los_coros_del_universo_hakuna">91. Los coros del universo - Hakuna</a></li>
+<li><a href="#song-madre_hakuna">92. Madre - Hakuna</a></li>
+<li><a href="#song-madre_de_hakuna_hakuna">93. Madre de Hakuna - Hakuna</a></li>
+<li><a href="#song-mar_adentro_navegar_schoenstatt">94. Mar Adentro (Navegar) - Schoenstatt</a></li>
+<li><a href="#song-maravillas_schoenstatt">95. Maravillas - schoenstatt</a></li>
+<li><a href="#song-me_basta_con_saber_que_estas_aqui_salve">96. Me basta con saber que estás aquí - Salve</a></li>
+<li><a href="#song-me_rindo_a_ti_majo_y_dan">97. Me Rindo a Ti - Majo y Dan</a></li>
+<li><a href="#song-mi_amado_hakuna">98. Mi amado - Hakuna</a></li>
+<li><a href="#song-mis_heridas_te_han_curado_batah">99. Mis heridas te han curado - Batah</a></li>
+<li><a href="#song-muevete_en_mi_popular">100. Muevete en mi - popular</a></li>
+<li><a href="#song-muros_generacion_12">101. Muros - Generación 12</a></li>
+<li><a href="#song-nada_te_turbe_santa_teresa">102. Nada te turbe - Santa Teresa</a></li>
+<li><a href="#song-nadie_te_ama_como_yo_popular">103. Nadie te ama como yo - popular</a></li>
+<li><a href="#song-no_hay_lugar_mas_alto_miel_san_marcos">104. No hay lugar más alto - Miel San Marcos</a></li>
+<li><a href="#song-no_hay_paredes_jesus_adrian_romero">105. No hay paredes - Jesús Adrián Romero</a></li>
+<li><a href="#song-no_longer_slaves_bethel">106. No Longer Slaves - Bethel</a></li>
+<li><a href="#song-no_se_que_viste_en_mi_hakuna">107. No sé qué viste en mí - Hakuna</a></li>
+<li><a href="#song-no_te_canses_madre_trigo_trece">108. No Te Canses, Madre - Trigo Trece</a></li>
+<li><a href="#song-no_temas_jaime_olguin">109. No Temas - Jaime Olguín</a></li>
+<li><a href="#song-no_tengo_miedo_popular">110. No tengo miedo - popular</a></li>
+<li><a href="#song-noche_hakuna">111. Noche - Hakuna</a></li>
+<li><a href="#song-oceans_hillsong">112. Oceans - Hillsong</a></li>
+<li><a href="#song-otra_vez_un_corazon">113. Otra Vez - Un Corazón</a></li>
+<li><a href="#song-para_que_entre_el_rey_popular">114. Para que entre el rey - popular</a></li>
+<li><a href="#song-perdon_helena">115. Perdón - Helena</a></li>
+<li><a href="#song-perfume_a_tus_pies_popular">116. Perfume a tus Pies - popular</a></li>
+<li><a href="#song-pescador_de_hombres_popular">117. Pescador de hombres - popular</a></li>
+<li><a href="#song-petrus_ozoresp">118. Petrus - OzoresP</a></li>
+<li><a href="#song-por_que_lloras_hakuna">119. Por qué lloras - Hakuna</a></li>
+<li><a href="#song-preparad_el_camino_al_senor_popular">120. Preparad el camino al Señor - popular</a></li>
+<li><a href="#song-primero_el_cielo_tuyo">121. Primero el cielo - Tuyo</a></li>
+<li><a href="#song-que_se_quiebre_mi_corazon_maria_olguin">122. Que se quiebre mi corazón - María Olguín</a></li>
+<li><a href="#song-quedate_senor_fray_nacho">123. Quédate Señor - Fray Nacho</a></li>
+<li><a href="#song-quien_pierde_su_vida_por_mi_hermana_glenda">124. Quien pierde su vida por mi - Hermana Glenda</a></li>
+<li><a href="#song-quiero_caminar_contigo_maria_popular">125. Quiero Caminar Contigo María - popular</a></li>
+<li><a href="#song-reckless_love_bethel_music">126. Reckless Love - Bethel Music</a></li>
+<li><a href="#song-reina_y_madre_siquem">127. Reina y Madre - Siquem</a></li>
+<li><a href="#song-renuevame_trigo_13">128. Renuévame - Trigo 13</a></li>
+<li><a href="#song-renuévame_senor_jesus_popular">129. Renuévame Señor Jesús - popular</a></li>
+<li><a href="#song-restaurame_espritu_xavier_rudd">130. Restaurame Espiritu - Xavier Rudd</a></li>
+<li><a href="#song-resucitados_kenosis">131. Resucitados - Kenosis</a></li>
+<li><a href="#song-rey_de_reyes_marcos_barrientos">132. Rey de Reyes - Marcos Barrientos</a></li>
+<li><a href="#song-ruah_popular">133. RUAH - popular</a></li>
+<li><a href="#song-saliendo_del_pretorio_jaire">134. Saliendo del Pretorio - Jaire</a></li>
+<li><a href="#song-salmo_23_un_corazon">135. Salmo 23 - Un Corazón</a></li>
+<li><a href="#song-salve_reina_servus_mariae">136. Salve Reina - Servus Mariae</a></li>
+<li><a href="#song-santo_berthier">137. Santo - Berthier</a></li>
+<li><a href="#song-santo_jaime_olguin">138. Santo - Jaime Olguín</a></li>
+<li><a href="#song-santo_manchego_popular">139. Santo Manchego - popular</a></li>
+<li><a href="#song-se_mi_faro_batah">140. Se Mi Faro - Batah</a></li>
+<li><a href="#song-sencillamente_popular">141. Sencillamente - Hakuna</a></li>
+<li><a href="#song-si_hubiera_estado_alli_jesus_adrian_romero">142. Si hubiera estado allí - Adrián</a></li>
+<li><a href="#song-sopla_senor_popular">143. Sopla Señor - popular</a></li>
+<li><a href="#song-soy_libre_hakuna">144. Soy Libre - Hakuna</a></li>
+<li><a href="#song-supe_que_me_amabas_marcela_gandara">145. Supe que me Amabas - Marcela Gándara</a></li>
+<li><a href="#song-surge_valentia_schoenstatt">146. Surge Valentía - Schoenstatt</a></li>
+<li><a href="#song-todo_tuyo_soy_popular">147. Todo Tuyo Soy - Popular</a></li>
+<li><a href="#song-toma_senor_mi_libertad_popular">148. Toma Señor mi libertad - popular</a></li>
+<li><a href="#song-tu_eres_mi_respirar_popular">149. Tu eres mi respirar - popular</a></li>
+<li><a href="#song-tu_voluntad_servus_mariae">150. Tu Voluntad - Servus Mariae</a></li>
+<li><a href="#song-tus_planes_son_perfetos_batah">151. Tus Planes Son Perfectos - Batah</a></li>
+<li><a href="#song-tuyas_son_luispo">152. Tuyas son - Luispo</a></li>
+<li><a href="#song-un_segundo_hakuna">153. Un Segundo - Hakuna</a></li>
+<li><a href="#song-ven_mision_pais">154. Ven - mision_pais</a></li>
+<li><a href="#song-ven_ahora_popular">155. Ven Ahora - popular</a></li>
+<li><a href="#song-ven_ante_su_trono_elevation_worship">156. Ven ante Su trono - Elevation Worship</a></li>
+<li><a href="#song-ven_espiritu_secuencia">157. Ven Espíritu - popular</a></li>
+<li><a href="#song-ven_espiritu_divino_schoenstatt">158. Ven Espíritu Divino - Schoenstatt</a></li>
+<li><a href="#song-ven_espiritu_ven_teresa">159. Ven Espiritu Ven - Teresa</a></li>
+<li><a href="#song-ven_espiritu_ven_purificame_popular">160. Ven Espíritu Ven (Purifícame) - popular</a></li>
+<li><a href="#song-ven_y_llename_generacion_12">161. Ven Y Lléname - Generación 12</a></li>
+<li><a href="#song-vengo_a_adorarte_popular">162. Vengo a Adorarte - popular</a></li>
+<li><a href="#song-vida_en_abundancia_schoenstatt">163. Vida en abundancia - schoenstatt</a></li>
+<li><a href="#song-villancico_valvanera_fons">164. Villancico Valvanera - Fons</a></li>
+<li><a href="#song-virgen_madre_de_nuestro_dios_popular">165. Virgen Madre de Nuestro Dios - popular</a></li>
+<li><a href="#song-viva_cristo_rey_jaire">166. Viva Cristo Rey - Jaire</a></li>
+<li><a href="#song-volveras_a_maria_popular">167. Volverás a María - popular</a></li>
+<li><a href="#song-vuelvo_otra_vez_tuyo">168. Vuelvo Otra Vez - tuyo</a></li>
+<li><a href="#song-yeshua_generacion_12">169. Yeshua - Generacion 12</a></li>
+<li><a href="#song-yo_quiero_ser_tu_servidor_popular">170. Yo Quiero ser tu Servidor - popular</a></li>
+<li><a href="#song-zzz_test_song">171. ZZZ Test Song - popular</a></li>
 </ul>
 </details>
 </section>
@@ -3772,8 +3717,38 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 <div class="verse"><div class="lyric-line">Se amaran (uh uh)</div><div class="line-pair"><div class="chord-line">      Gm</div>Se amaran (Bis)</div></div>
 </div>
 </article>
+<article class="song" id="song-hago_nuevas_todas_las_cosas_agustin_torrealba" data-title="Hago nuevas todas las cosas" data-autor="Agustín Torrealba" style="--chars: 45">
+<h3>67. Hago nuevas todas las cosas - Agustín Torrealba</h3>
+<p class="song-meta"><span class="meta-item">Autor: Agustín Torrealba</span><span class="meta-item">Capo: 2</span></p>
+<div class="controls">
+  <button data-action="toggle-chords">Chords</button>
+  <div class="stepper">
+    <button data-action="transpose-down" aria-label="Transpose down">−</button>
+    <button class="transpose-value" data-action="transpose-reset" aria-label="Reset transpose">0</button>
+    <button data-action="transpose-up" aria-label="Transpose up">+</button>
+  </div>
+  <button data-action="toggle-columns">Columns</button>
+  <div class="stepper">
+    <button data-action="song-text-smaller" aria-label="Smaller text">A−</button>
+    <button class="song-scale-value" data-action="song-text-reset" aria-label="Reset text size">100%</button>
+    <button data-action="song-text-bigger" aria-label="Bigger text">A+</button>
+  </div>
+  <button data-action="session-toggle" aria-pressed="false">+ Session</button>
+</div>
+<div class="lyrics">
+<div class="verse"><div class="lyric-line chord-inline">Intro: // <span class="chord">G</span> <span class="chord">Cadd9/G</span> <span class="chord">C4</span>* <span class="chord">G</span> <span class="chord">D/F#</span> //</div></div>
+<div class="verse"><div class="line-pair"><div class="chord-line">G                      D/F#      Em7</div>Vengo a secar esa lágrima de tus ojos,</div><div class="line-pair"><div class="chord-line">    Cadd9         G      D/F#</div>a quitar la muerte y el dolor,</div><div class="line-pair"><div class="chord-line">G                          D/F#   Em7</div>a saciar tu sed con la fuente de vida,</div><div class="line-pair"><div class="chord-line">    Cadd9          G      D/F#</div>a acabar con el duelo y el clamor.</div></div>
+<div class="verse"><div class="line-pair bold"><div class="chord-line">Am    G/B   Cadd9</div>Mira y escucha</div><div class="line-pair bold"><div class="chord-line">    D#dim   Em      F#dim  Em</div>que hago nuevas todas las cosas.</div><div class="line-pair bold"><div class="chord-line">Am    G/B   Cadd9</div>Mira y escribe,</div><div class="line-pair bold"><div class="chord-line">D/F#     G         D/F#  Em</div>estas palabras te darán calma,</div><div class="line-pair bold"><div class="chord-line">     C                   D4<span class="sep">*</span></div>pues yo soy el principio y el fin.</div></div>
+<div class="verse"><div class="lyric-line chord-inline">Intro: // <span class="chord">G</span> <span class="chord">Cadd9/G</span> <span class="chord">C4</span>* <span class="chord">G</span> <span class="chord">D/F#</span> //</div></div>
+<div class="verse"><div class="line-pair"><div class="chord-line">G                          D/F#     Em7</div>He visto el cielo y la tierra nacer de nuevo,</div><div class="line-pair"><div class="chord-line">    Cadd9          G       D/F#</div>vi que el mar ya no existía más,</div><div class="line-pair"><div class="chord-line">G                         D/F#      Em7</div>vi a la santa ciudad descender del cielo</div><div class="line-pair"><div class="chord-line">    Cadd9           G        D/F#</div>y una voz que venía a proclamar:</div></div>
+<div class="verse"><div class="line-pair bold"><div class="chord-line">Am    G/B   Cadd9</div>Mira y escucha</div><div class="line-pair bold"><div class="chord-line">    D#dim   Em      F#dim  Em</div>que hago nuevas todas las cosas.</div><div class="line-pair bold"><div class="chord-line">Am    G/B   Cadd9</div>Mira y escribe,</div><div class="line-pair bold"><div class="chord-line">D/F#     G         D/F#  Em</div>estas palabras te darán calma,</div><div class="line-pair bold"><div class="chord-line">     C                   D4<span class="sep">*</span></div>pues yo soy el principio y el fin.</div></div>
+<div class="verse"><div class="chord-line">C  D</div></div>
+<div class="verse"><div class="line-pair bold"><div class="chord-line">    D#dim   Em      F#dim  Em</div>Que hago nuevas todas las cosas.</div><div class="line-pair bold"><div class="chord-line">Am    G/B   Cadd9</div>Mira y escribe,</div><div class="line-pair bold"><div class="chord-line">D/F#     G         D/F#  Em</div>estas palabras te darán calma,</div><div class="line-pair bold"><div class="chord-line">     C                   D4<span class="sep">*</span>      G</div>pues yo soy el principio y el fin.</div></div>
+<div class="verse"><div class="lyric-line">C4*: x3405x   D4*: x5403x</div></div>
+</div>
+</article>
 <article class="song" id="song-hail_mary_prayer_david_burke" data-title="Hail Mary Prayer" data-autor="David Burke" style="--chars: 24">
-<h3>67. Hail Mary Prayer - David Burke</h3>
+<h3>68. Hail Mary Prayer - David Burke</h3>
 <p class="song-meta"><span class="meta-item">Autor: David Burke</span><span class="meta-item">Capo: 0, 0-5, original 0</span><a class="meta-item" href="https://open.spotify.com/track/3VOvSGFO2KTKspnMWWcG9s?si=b87302ca65984157" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3799,7 +3774,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-hasta_la_locura_pablo_martinez" data-title="Hasta La Locura" data-autor="Pablo Martinez" style="--chars: 37">
-<h3>68. Hasta La Locura - Pablo Martinez</h3>
+<h3>69. Hasta La Locura - Pablo Martinez</h3>
 <p class="song-meta"><span class="meta-item">Autor: Pablo Martinez</span><span class="meta-item">Capo: 0 max, -2 better, 4 low, original 1</span><a class="meta-item" href="https://open.spotify.com/track/4Q2DcuvLzZrw67zpmaaxR0?si=b558b8c71a5c4622" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3826,7 +3801,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-hasta_que_el_mundo_arda_por_el_francisco_alvarado" data-title="Hasta que el mundo arda por Él" data-autor="Francisco Alvarado" style="--chars: 40">
-<h3>69. Hasta que el mundo arda por Él - Francisco Alvarado</h3>
+<h3>70. Hasta que el mundo arda por Él - Francisco Alvarado</h3>
 <p class="song-meta"><span class="meta-item">Autor: Francisco Alvarado</span><span class="meta-item">Capo: 0, 0-7, original -5</span><a class="meta-item" href="https://open.spotify.com/track/0G4Jcuu0mOmfUfLj2DZRCL?si=96b0fe026ee24fcf" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3853,7 +3828,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-hay_que_nacer_del_agua_popular" data-title="Hay que nacer del agua" data-autor="Popular" style="--chars: 47">
-<h3>70. Hay que nacer del agua - Popular</h3>
+<h3>71. Hay que nacer del agua - Popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: Popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1VVVfWIcMD9T3nS3mx3nmv?si=2ec3304b77274723" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3876,7 +3851,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-here_i_am_lord_popular" data-title="Here I am Lord" data-autor="popular" style="--chars: 37">
-<h3>71. Here I am Lord - popular</h3>
+<h3>72. Here I am Lord - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0, 0-4, original 0</span><a class="meta-item" href="https://open.spotify.com/track/4DD6ZtAFlF1XYo7WTML8tR?si=0f1e1b4af8ca4f88" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3904,7 +3879,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-hermoso_nombre_hillsong" data-title="Hermoso Nombre" data-autor="Hillsong" style="--chars: 40">
-<h3>72. Hermoso Nombre - Hillsong</h3>
+<h3>73. Hermoso Nombre - Hillsong</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hillsong</span><span class="meta-item">Capo: 0, 0-5, orignal 0</span><a class="meta-item" href="https://open.spotify.com/track/7HAxoYUvYynHfn4vQFJr6d?si=fdb6b971cfa748fe" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3934,7 +3909,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-himno_de_la_almudena_popular" data-title="Himno de la Almudena" data-autor="Popular" style="--chars: 36">
-<h3>73. Himno de la Almudena - Popular</h3>
+<h3>74. Himno de la Almudena - Popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: Popular</span><span class="meta-item">Capo: 3, 0-7, original 1</span><a class="meta-item" href="https://open.spotify.com/track/5oOyEpyIn38uxK2EZ13hne?si=47307fae23e34f66" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3961,7 +3936,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-himno_mision_pais_schoenstatt" data-title="Himno Misión País" data-autor="Schoenstatt" style="--chars: 35">
-<h3>74. Himno Misión País - Schoenstatt</h3>
+<h3>75. Himno Misión País - Schoenstatt</h3>
 <p class="song-meta"><span class="meta-item">Autor: Schoenstatt</span><span class="meta-item">Capo: 3, 0-7, original 2</span><a class="meta-item" href="https://open.spotify.com/track/4JwlTzyh7CqyIX4y2IuPuk?si=82d9571070b04ec0" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -3995,7 +3970,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-hoy_me_entrego_factor_de_cambio" data-title="Hoy Me Entrego" data-autor="Factor de Cambio" style="--chars: 31">
-<h3>75. Hoy Me Entrego - Factor de Cambio</h3>
+<h3>76. Hoy Me Entrego - Factor de Cambio</h3>
 <p class="song-meta"><span class="meta-item">Autor: Factor de Cambio</span><span class="meta-item">Capo: 4, 0-7, original 2</span><a class="meta-item" href="https://open.spotify.com/track/75rJiou4bno0EKb3BIo0R7?si=e955e2385acc4a0b" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4027,7 +4002,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-huracan_hakuna" data-title="Huracán" data-autor="Hakuna" style="--chars: 35">
-<h3>76. Huracán - Hakuna</h3>
+<h3>77. Huracán - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 4, 0-9, original 0</span><a class="meta-item" href="https://open.spotify.com/track/1Gd6Hz1MSEiY8205ToJjsh?si=3df71dbc210747df" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4058,7 +4033,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-id_y_anunciad_batah" data-title="Id y anunciad" data-autor="Batah" style="--chars: 41">
-<h3>77. Id y anunciad - Batah</h3>
+<h3>78. Id y anunciad - Batah</h3>
 <p class="song-meta"><span class="meta-item">Autor: Batah</span><span class="meta-item">Capo: 8, -7-0, original 2</span><a class="meta-item" href="https://open.spotify.com/track/6gWeJfTauQUT1oqbQcMXf8?si=9d25c06579cd4549" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4087,7 +4062,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-inundame_athenas" data-title="Inúndame" data-autor="Athenas" style="--chars: 25">
-<h3>78. Inúndame - Athenas</h3>
+<h3>79. Inúndame - Athenas</h3>
 <p class="song-meta"><span class="meta-item">Autor: Athenas</span><span class="meta-item">Capo: 3, 0-7, original 0</span><a class="meta-item" href="https://open.spotify.com/track/6OLWTt7jiGW8EKkcIqFiiH?si=69b00fb4f85f497d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4115,7 +4090,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-jesucristo_basta_un_corazon_un_corazon" data-title="Jesucristo basta" data-autor="Un Corazon" style="--chars: 39">
-<h3>79. Jesucristo basta - Un Corazon</h3>
+<h3>80. Jesucristo basta - Un Corazon</h3>
 <p class="song-meta"><span class="meta-item">Autor: Un Corazon</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/6XgnLNskskRPjdfa3CyKGA?si=034d9b81f67a4ef8" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4146,7 +4121,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-jesus_sarai_rivera" data-title="Jesus" data-autor="Sarai Rivera" style="--chars: 39">
-<h3>80. Jesus - Sarai Rivera</h3>
+<h3>81. Jesus - Sarai Rivera</h3>
 <p class="song-meta"><span class="meta-item">Autor: Sarai Rivera</span><span class="meta-item">Capo: 0, 0-4, original -2</span><a class="meta-item" href="https://open.spotify.com/track/5blgde2k3YONRA1yBNohPs?si=e4143011219e4888" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4178,7 +4153,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-jesus_have_it_all_jeremy_riddle" data-title="Jesus have it all" data-autor="Jeremy Riddle" style="--chars: 46">
-<h3>81. Jesus have it all - Jeremy Riddle</h3>
+<h3>82. Jesus have it all - Jeremy Riddle</h3>
 <p class="song-meta"><span class="meta-item">Autor: Jeremy Riddle</span><span class="meta-item">Capo: 0, original 3</span><a class="meta-item" href="https://open.spotify.com/track/0wiYqRXy97hVdhy8xDVH9V?si=d0aa9e33a0014fef" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4214,7 +4189,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-junto_a_ti_maria_popular" data-title="Junto a ti María" data-autor="popular" style="--chars: 22">
-<h3>82. Junto a ti María - popular</h3>
+<h3>83. Junto a ti María - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 4, 0-7, original, 2</span><a class="meta-item" href="https://open.spotify.com/track/2TmU2GR46pCN6WJ7VOKmHG?si=76bb7a5efbc444ad" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4242,7 +4217,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-la_bendicion_elevation_worship" data-title="La Bendicion" data-autor="Elevation Worship" style="--chars: 26">
-<h3>83. La Bendicion - Elevation Worship</h3>
+<h3>84. La Bendicion - Elevation Worship</h3>
 <p class="song-meta"><span class="meta-item">Autor: Elevation Worship</span><span class="meta-item">Capo: 2, 0-4, original 3</span><a class="meta-item" href="https://open.spotify.com/track/5KNP7zONOFZqOL3ixeWMOQ?si=e55e53667f67439e" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4278,7 +4253,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-la_fe_de_maria_popular" data-title="La Fe de María" data-autor="popular" style="--chars: 41">
-<h3>84. La Fe de María - popular</h3>
+<h3>85. La Fe de María - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 3, 1-7, original 3</span><a class="meta-item" href="https://open.spotify.com/track/1pFIBmLqu8VFPaPlvKs2rs?si=e38f234e604d4696" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4308,7 +4283,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-la_medida_del_amor_hakuna" data-title="La medida del amor" data-autor="Hakuna" style="--chars: 41">
-<h3>85. La medida del amor - Hakuna</h3>
+<h3>86. La medida del amor - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: -2, -5-0, original 0</span><a class="meta-item" href="https://open.spotify.com/track/5hR5b7bf4mB41KnEpz8UXj?si=802fdd035cae4484" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4337,7 +4312,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-la_samaritana_popular" data-title="La Samaritana" data-autor="popular" style="--chars: 46">
-<h3>86. La Samaritana - popular</h3>
+<h3>87. La Samaritana - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 3, 0-7, original 3</span><a class="meta-item" href="https://open.spotify.com/track/7D9WJZgYgMUCpoGtGXSWeW?si=432759b781664caf" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4367,7 +4342,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-libre_miel_san_marcos" data-title="Libre" data-autor="Miel San Marcos" style="--chars: 35">
-<h3>87. Libre - Miel San Marcos</h3>
+<h3>88. Libre - Miel San Marcos</h3>
 <p class="song-meta"><span class="meta-item">Autor: Miel San Marcos</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/6c3QDOm29A9xC8VFiFJMB1?si=f16a1d736d884444" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4398,7 +4373,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-llevame_ignis" data-title="Llévame" data-autor="Ignis" style="--chars: 28">
-<h3>88. Llévame - Ignis</h3>
+<h3>89. Llévame - Ignis</h3>
 <p class="song-meta"><span class="meta-item">Autor: Ignis</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/3MrYIWphpurxRYtBZTYQ6I?si=863e060e306b408a" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4423,7 +4398,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-lord_i_need_you_matt_maher" data-title="Lord, I Need You" data-autor="Matt Maher" style="--chars: 40">
-<h3>89. Lord, I Need You - Matt Maher</h3>
+<h3>90. Lord, I Need You - Matt Maher</h3>
 <p class="song-meta"><span class="meta-item">Autor: Matt Maher</span><span class="meta-item">Capo: 3, 0-4, original 3</span><a class="meta-item" href="https://open.spotify.com/track/4EHWldZTas5KUyFtT0rQlY?si=694a47cb3f19451c" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4452,7 +4427,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-los_coros_del_universo_hakuna" data-title="Los coros del universo" data-autor="Hakuna" style="--chars: 32">
-<h3>90. Los coros del universo - Hakuna</h3>
+<h3>91. Los coros del universo - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0, 0-7, original 0</span><a class="meta-item" href="https://open.spotify.com/track/4Kd1BPlAVPxN1J5mIS696N?si=3f753f5c4ebc43b5" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4489,7 +4464,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-madre_hakuna" data-title="Madre" data-autor="Hakuna" style="--chars: 51">
-<h3>91. Madre - Hakuna</h3>
+<h3>92. Madre - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0, -2-0, original 0</span><a class="meta-item" href="https://open.spotify.com/track/4LFnaNrPChE1u6CpwD0TLA?si=e4d84cb3fb2d452c" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4521,7 +4496,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-madre_de_hakuna_hakuna" data-title="Madre de Hakuna" data-autor="Hakuna" style="--chars: 49">
-<h3>92. Madre de Hakuna - Hakuna</h3>
+<h3>93. Madre de Hakuna - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 2, 0-3, original 4</span><a class="meta-item" href="https://open.spotify.com/track/2JaPSQUUlyRUjEJmZolqMz?si=c2314d3086f34d36" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4547,7 +4522,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-mar_adentro_navegar_schoenstatt" data-title="Mar Adentro (Navegar)" data-autor="Schoenstatt" style="--chars: 47">
-<h3>93. Mar Adentro (Navegar) - Schoenstatt</h3>
+<h3>94. Mar Adentro (Navegar) - Schoenstatt</h3>
 <p class="song-meta"><span class="meta-item">Autor: Schoenstatt</span><span class="meta-item">Capo: 4, 0-9, original 4</span><a class="meta-item" href="https://open.spotify.com/track/1YQRbjTdrdjXWP05Wpj6jD?si=b8738be47cb34503" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4574,7 +4549,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-maravillas_schoenstatt" data-title="Maravillas" data-autor="schoenstatt" style="--chars: 30">
-<h3>94. Maravillas - schoenstatt</h3>
+<h3>95. Maravillas - schoenstatt</h3>
 <p class="song-meta"><span class="meta-item">Autor: schoenstatt</span><span class="meta-item">Capo: 4, 1-7, original 2</span><a class="meta-item" href="https://open.spotify.com/track/7FE6hZmegD9prtjy0vhb1e?si=a96e92b00b374154" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4600,7 +4575,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-me_basta_con_saber_que_estas_aqui_salve" data-title="Me basta con saber que estás aquí" data-autor="Salve" style="--chars: 47">
-<h3>95. Me basta con saber que estás aquí - Salve</h3>
+<h3>96. Me basta con saber que estás aquí - Salve</h3>
 <p class="song-meta"><span class="meta-item">Autor: Salve</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/0FaGDtYkKBIXhv4jN5bXL2?si=04cce09595b84027" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4633,7 +4608,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-me_rindo_a_ti_majo_y_dan" data-title="Me Rindo a Ti" data-autor="Majo y Dan" style="--chars: 28">
-<h3>96. Me Rindo a Ti - Majo y Dan</h3>
+<h3>97. Me Rindo a Ti - Majo y Dan</h3>
 <p class="song-meta"><span class="meta-item">Autor: Majo y Dan</span><span class="meta-item">Capo: 4, 0-7, original -3</span><a class="meta-item" href="https://open.spotify.com/track/1elgJB7cf8pf66fyIeQWzM?si=77ccca2141c94ff1" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4664,7 +4639,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-mi_amado_hakuna" data-title="Mi amado" data-autor="Hakuna" style="--chars: 33">
-<h3>97. Mi amado - Hakuna</h3>
+<h3>98. Mi amado - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 3</span><a class="meta-item" href="https://open.spotify.com/track/1nfTVyVDsqJwL0WzP0eWix?si=8d890dd879cb46cc" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4694,7 +4669,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-mis_heridas_te_han_curado_batah" data-title="Mis heridas te han curado" data-autor="Batah" style="--chars: 60">
-<h3>98. Mis heridas te han curado - Batah</h3>
+<h3>99. Mis heridas te han curado - Batah</h3>
 <p class="song-meta"><span class="meta-item">Autor: Batah</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/4bFO60QUr4hI5NcDVwChBI?si=57582e5f71cf40e5" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4718,7 +4693,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-muevete_en_mi_popular" data-title="Muevete en mi" data-autor="popular" style="--chars: 42">
-<h3>99. Muevete en mi - popular</h3>
+<h3>100. Muevete en mi - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/0Xz0GaUJixnfQTk8Knuw8v?si=7480ac8750fa48db" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4742,7 +4717,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-muros_generacion_12" data-title="Muros" data-autor="Generación 12" style="--chars: 36">
-<h3>100. Muros - Generación 12</h3>
+<h3>101. Muros - Generación 12</h3>
 <p class="song-meta"><span class="meta-item">Autor: Generación 12</span><span class="meta-item">Capo: 3</span><a class="meta-item" href="https://open.spotify.com/track/1X20WCNMKKSh81MuqrcxGb?si=01b170aa51fa4255" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4769,7 +4744,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-nada_te_turbe_santa_teresa" data-title="Nada te turbe" data-autor="Santa Teresa" style="--chars: 19">
-<h3>101. Nada te turbe - Santa Teresa</h3>
+<h3>102. Nada te turbe - Santa Teresa</h3>
 <p class="song-meta"><span class="meta-item">Autor: Santa Teresa</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/281RJANb5cPMJe7fH0Vku3?si=2eddfa7a980f4273" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4793,7 +4768,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-nadie_te_ama_como_yo_popular" data-title="Nadie te ama como yo" data-autor="popular" style="--chars: 43">
-<h3>102. Nadie te ama como yo - popular</h3>
+<h3>103. Nadie te ama como yo - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1vlMuCv1QKQrXc6AFqF6Hs?si=c5c2e4131f4d4f5d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4821,7 +4796,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_hay_lugar_mas_alto_miel_san_marcos" data-title="No hay lugar más alto" data-autor="Miel San Marcos" style="--chars: 47">
-<h3>103. No hay lugar más alto - Miel San Marcos</h3>
+<h3>104. No hay lugar más alto - Miel San Marcos</h3>
 <p class="song-meta"><span class="meta-item">Autor: Miel San Marcos</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/0yzKJqFTXsbzWjUHaiOxD9?si=b915f0eff6ea429a" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4851,7 +4826,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_hay_paredes_jesus_adrian_romero" data-title="No hay paredes" data-autor="Jesús Adrián Romero" style="--chars: 50">
-<h3>104. No hay paredes - Jesús Adrián Romero</h3>
+<h3>105. No hay paredes - Jesús Adrián Romero</h3>
 <p class="song-meta"><span class="meta-item">Autor: Jesús Adrián Romero</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/4h0JpAep84WY6pZNonjCET?si=2e7cc6b240994119" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4880,7 +4855,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_longer_slaves_bethel" data-title="No Longer Slaves" data-autor="Bethel" style="--chars: 39">
-<h3>105. No Longer Slaves - Bethel</h3>
+<h3>106. No Longer Slaves - Bethel</h3>
 <p class="song-meta"><span class="meta-item">Autor: Bethel</span><span class="meta-item">Capo: Capo 5</span><a class="meta-item" href="https://open.spotify.com/track/0C3YJ5aL7RpV4p49ynQWNt?si=55d9b43ea7894b8c" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4915,7 +4890,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_se_que_viste_en_mi_hakuna" data-title="No sé qué viste en mí" data-autor="Hakuna" style="--chars: 61">
-<h3>106. No sé qué viste en mí - Hakuna</h3>
+<h3>107. No sé qué viste en mí - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/3RXhBTRteM9nS1Engqaude?si=36464a3ad5074a1e" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4945,7 +4920,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_te_canses_madre_trigo_trece" data-title="No Te Canses, Madre" data-autor="Trigo Trece" style="--chars: 43">
-<h3>107. No Te Canses, Madre - Trigo Trece</h3>
+<h3>108. No Te Canses, Madre - Trigo Trece</h3>
 <p class="song-meta"><span class="meta-item">Autor: Trigo Trece</span><span class="meta-item">Capo: 2</span><a class="meta-item" href="https://open.spotify.com/track/3zlgrYvYRLpToEc53bik6p?si=29ce34a8927448a9" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4973,7 +4948,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_temas_jaime_olguin" data-title="No Temas" data-autor="Jaime Olguín" style="--chars: 34">
-<h3>108. No Temas - Jaime Olguín</h3>
+<h3>109. No Temas - Jaime Olguín</h3>
 <p class="song-meta"><span class="meta-item">Autor: Jaime Olguín</span><span class="meta-item">Capo: 2</span><a class="meta-item" href="https://open.spotify.com/track/3GhRKiLRLQ9RnjZ5y6oAjg?si=b54ae5a5291e4dcb" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -4997,7 +4972,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-no_tengo_miedo_popular" data-title="No tengo miedo" data-autor="popular" style="--chars: 50">
-<h3>109. No tengo miedo - popular</h3>
+<h3>110. No tengo miedo - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 2</span><a class="meta-item" href="https://open.spotify.com/track/03TmLp5BaIumxM3I6SR0kt?si=0372952e6c7b4854" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5028,7 +5003,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-noche_hakuna" data-title="Noche" data-autor="Hakuna" style="--chars: 51">
-<h3>110. Noche - Hakuna</h3>
+<h3>111. Noche - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1IGDQ9ypgfDJgATIgl9exP" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5057,7 +5032,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-oceans_hillsong" data-title="Oceans" data-autor="Hillsong" style="--chars: 52">
-<h3>111. Oceans - Hillsong</h3>
+<h3>112. Oceans - Hillsong</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hillsong</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5SDcksP8En1l6RtTY1wzHc?si=5e21531e62154066" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5097,7 +5072,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-otra_vez_un_corazon" data-title="Otra Vez" data-autor="Un Corazón" style="--chars: 39">
-<h3>112. Otra Vez - Un Corazón</h3>
+<h3>113. Otra Vez - Un Corazón</h3>
 <p class="song-meta"><span class="meta-item">Autor: Un Corazón</span><span class="meta-item">Capo: 0, Original 2</span><a class="meta-item" href="https://open.spotify.com/track/1Z2LOOXfH3lFEAGDX7haCA?si=afcfb5bee9f0444f" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5127,7 +5102,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-para_que_entre_el_rey_popular" data-title="Para que entre el rey" data-autor="popular" style="--chars: 35">
-<h3>113. Para que entre el rey - popular</h3>
+<h3>114. Para que entre el rey - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/6dAlF4oYH5dzfhTmzbHPtm?si=4def8e551b134cea" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5152,7 +5127,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-perdon_helena" data-title="Perdón" data-autor="Helena" style="--chars: 51">
-<h3>114. Perdón - Helena</h3>
+<h3>115. Perdón - Helena</h3>
 <p class="song-meta"><span class="meta-item">Autor: Helena</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1qw4AwLR6pAlXiE1pK44IS?si=5cb85c0fb63042fe" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5179,7 +5154,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-perfume_a_tus_pies_popular" data-title="Perfume a tus Pies" data-autor="popular" style="--chars: 41">
-<h3>115. Perfume a tus Pies - popular</h3>
+<h3>116. Perfume a tus Pies - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5cS1TaKqN5z5brcTnG2Ory?si=1148070897a64923" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5206,7 +5181,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-pescador_de_hombres_popular" data-title="Pescador de hombres" data-autor="popular" style="--chars: 40">
-<h3>116. Pescador de hombres - popular</h3>
+<h3>117. Pescador de hombres - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/2SoN9wak6Plqwb0DcQIKMh?si=0b45227126754178" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5236,7 +5211,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-petrus_ozoresp" data-title="Petrus" data-autor="OzoresP" style="--chars: 44">
-<h3>117. Petrus - OzoresP</h3>
+<h3>118. Petrus - OzoresP</h3>
 <p class="song-meta"><span class="meta-item">Autor: OzoresP</span><span class="meta-item">Capo: 3</span><a class="meta-item" href="https://open.spotify.com/track/7kIeSJGYp3BnFrpoxWT22B?si=ef87891e192c4d68" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5264,7 +5239,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-por_que_lloras_hakuna" data-title="Por qué lloras" data-autor="Hakuna" style="--chars: 43">
-<h3>118. Por qué lloras - Hakuna</h3>
+<h3>119. Por qué lloras - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/7xgNaNd0nhNYXzL51XkpEn" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5295,7 +5270,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-preparad_el_camino_al_senor_popular" data-title="Preparad el camino al Señor" data-autor="popular" style="--chars: 33">
-<h3>119. Preparad el camino al Señor - popular</h3>
+<h3>120. Preparad el camino al Señor - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5fsIs9aChU6Htidl3fP7Ah?si=d0243cdc0f57461f" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5322,7 +5297,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-primero_el_cielo_tuyo" data-title="Primero el cielo" data-autor="Tuyo" style="--chars: 35">
-<h3>120. Primero el cielo - Tuyo</h3>
+<h3>121. Primero el cielo - Tuyo</h3>
 <p class="song-meta"><span class="meta-item">Autor: Tuyo</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/0pNdZHNZHvNpZ8uPTHeYVr?si=73135e1ad34844fc" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5352,7 +5327,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-que_se_quiebre_mi_corazon_maria_olguin" data-title="Que se quiebre mi corazón" data-autor="María Olguín" style="--chars: 32">
-<h3>121. Que se quiebre mi corazón - María Olguín</h3>
+<h3>122. Que se quiebre mi corazón - María Olguín</h3>
 <p class="song-meta"><span class="meta-item">Autor: María Olguín</span><span class="meta-item">Capo: 6, 0-6</span><a class="meta-item" href="https://open.spotify.com/track/0nJeFSspNSBI8NYlCQjtwL?si=cf7bc19f78d640cb" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5376,7 +5351,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-quedate_senor_fray_nacho" data-title="Quédate Señor" data-autor="Fray Nacho" style="--chars: 46">
-<h3>122. Quédate Señor - Fray Nacho</h3>
+<h3>123. Quédate Señor - Fray Nacho</h3>
 <p class="song-meta"><span class="meta-item">Autor: Fray Nacho</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/6GrCddLDUnSz87QLLpyyb9?si=2edd9f70328044df" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5408,7 +5383,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-quien_pierde_su_vida_por_mi_hermana_glenda" data-title="Quien pierde su vida por mi" data-autor="Hermana Glenda" style="--chars: 44">
-<h3>123. Quien pierde su vida por mi - Hermana Glenda</h3>
+<h3>124. Quien pierde su vida por mi - Hermana Glenda</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hermana Glenda</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1OS38h2656yRP9EvZBJvvi?si=4426f6f8705948be" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5435,7 +5410,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-quiero_caminar_contigo_maria_popular" data-title="Quiero Caminar Contigo María" data-autor="popular" style="--chars: 37">
-<h3>124. Quiero Caminar Contigo María - popular</h3>
+<h3>125. Quiero Caminar Contigo María - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1isN9cnGC34Cq699RN9PjN?si=04d5d00549784b27" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5463,7 +5438,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-reckless_love_bethel_music" data-title="Reckless Love" data-autor="Bethel Music" style="--chars: 55">
-<h3>125. Reckless Love - Bethel Music</h3>
+<h3>126. Reckless Love - Bethel Music</h3>
 <p class="song-meta"><span class="meta-item">Autor: Bethel Music</span><span class="meta-item">Capo: 0, 0-2</span><a class="meta-item" href="https://open.spotify.com/track/3UwwW9Ymz3xob5SxHx4uLO?si=2322f9ebdaea41eb" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5489,7 +5464,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-reina_y_madre_siquem" data-title="Reina y Madre" data-autor="Siquem" style="--chars: 35">
-<h3>126. Reina y Madre - Siquem</h3>
+<h3>127. Reina y Madre - Siquem</h3>
 <p class="song-meta"><span class="meta-item">Autor: Siquem</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/7cNdAOMqjrSA7AEPR1M7hz?si=7b1e652a9db84d2d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5521,7 +5496,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-renuevame_trigo_13" data-title="Renuévame" data-autor="Trigo 13" style="--chars: 34">
-<h3>127. Renuévame - Trigo 13</h3>
+<h3>128. Renuévame - Trigo 13</h3>
 <p class="song-meta"><span class="meta-item">Autor: Trigo 13</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5N2yNLWaD1894psb5ILoXn" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5550,7 +5525,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-renuévame_senor_jesus_popular" data-title="Renuévame Señor Jesús" data-autor="popular" style="--chars: 47">
-<h3>128. Renuévame Señor Jesús - popular</h3>
+<h3>129. Renuévame Señor Jesús - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/0aTyTQYoly6pTflkIKMs48?si=bb2a9f1757334ef8" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5575,7 +5550,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-restaurame_espritu_xavier_rudd" data-title="Restaurame Espiritu" data-autor="Xavier Rudd" style="--chars: 30">
-<h3>129. Restaurame Espiritu - Xavier Rudd</h3>
+<h3>130. Restaurame Espiritu - Xavier Rudd</h3>
 <p class="song-meta"><span class="meta-item">Autor: Xavier Rudd</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/70zZclGWOjOVv9VRJ7RCyq?si=2714be994dca411b" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5601,7 +5576,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-resucitados_kenosis" data-title="Resucitados" data-autor="Kenosis" style="--chars: 26">
-<h3>130. Resucitados - Kenosis</h3>
+<h3>131. Resucitados - Kenosis</h3>
 <p class="song-meta"><span class="meta-item">Autor: Kenosis</span><span class="meta-item">Capo: 7</span><a class="meta-item" href="https://open.spotify.com/track/5Jj3dmNCGDJ6BvTReVcAuv?si=0fa31aad56bc43e3" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5631,7 +5606,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-rey_de_reyes_marcos_barrientos" data-title="Rey de Reyes" data-autor="Marcos Barrientos" style="--chars: 44">
-<h3>131. Rey de Reyes - Marcos Barrientos</h3>
+<h3>132. Rey de Reyes - Marcos Barrientos</h3>
 <p class="song-meta"><span class="meta-item">Autor: Marcos Barrientos</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/41L7qAYXn62qmbZhkFXabi?si=a67c20679ab6479f" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5657,7 +5632,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ruah_popular" data-title="RUAH" data-autor="popular" style="--chars: 31">
-<h3>132. RUAH - popular</h3>
+<h3>133. RUAH - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5681,7 +5656,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-saliendo_del_pretorio_jaire" data-title="Saliendo del Pretorio" data-autor="Jaire" style="--chars: 53">
-<h3>133. Saliendo del Pretorio - Jaire</h3>
+<h3>134. Saliendo del Pretorio - Jaire</h3>
 <p class="song-meta"><span class="meta-item">Autor: Jaire</span><span class="meta-item">Capo: 4</span><a class="meta-item" href="https://open.spotify.com/track/7MvefvPSvGHDCVjg8ZQ0k6?si=a2c79c7553ee4b49" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5708,7 +5683,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-salmo_23_un_corazon" data-title="Salmo 23" data-autor="Un Corazón" style="--chars: 35">
-<h3>134. Salmo 23 - Un Corazón</h3>
+<h3>135. Salmo 23 - Un Corazón</h3>
 <p class="song-meta"><span class="meta-item">Autor: Un Corazón</span><span class="meta-item">Capo: 0, 0-4</span><a class="meta-item" href="https://open.spotify.com/track/1OSmBtcsjiGcUnhn2MlE4c?si=147455b0808745db" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5741,7 +5716,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-salve_reina_servus_mariae" data-title="Salve Reina" data-autor="Servus Mariae" style="--chars: 42">
-<h3>135. Salve Reina - Servus Mariae</h3>
+<h3>136. Salve Reina - Servus Mariae</h3>
 <p class="song-meta"><span class="meta-item">Autor: Servus Mariae</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/4JR0yLJatU0v5e0RU2MVPh?si=1a37a8cfbc5a4a4b" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5770,7 +5745,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-santo_berthier" data-title="Santo" data-autor="Berthier" style="--chars: 32">
-<h3>136. Santo - Berthier</h3>
+<h3>137. Santo - Berthier</h3>
 <p class="song-meta"><span class="meta-item">Autor: Berthier</span><span class="meta-item">Capo: 0, 0-2</span><a class="meta-item" href="https://www.youtube.com/watch?v=EmT6y1-DTGw" target="_blank" rel="noopener">YouTube link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5797,7 +5772,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-santo_jaime_olguin" data-title="Santo" data-autor="Jaime Olguín" style="--chars: 34">
-<h3>137. Santo - Jaime Olguín</h3>
+<h3>138. Santo - Jaime Olguín</h3>
 <p class="song-meta"><span class="meta-item">Autor: Jaime Olguín</span><span class="meta-item">Capo: 2</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5819,7 +5794,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-santo_manchego_popular" data-title="Santo Manchego" data-autor="popular" style="--chars: 25">
-<h3>138. Santo Manchego - popular</h3>
+<h3>139. Santo Manchego - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5848,7 +5823,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-se_mi_faro_batah" data-title="Se Mi Faro" data-autor="Batah" style="--chars: 40">
-<h3>139. Se Mi Faro - Batah</h3>
+<h3>140. Se Mi Faro - Batah</h3>
 <p class="song-meta"><span class="meta-item">Autor: Batah</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/3vzJgxhjKr0a45Rh2gzEqy?si=d3a60514098942ad" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5877,7 +5852,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-sencillamente_popular" data-title="Sencillamente" data-autor="Hakuna" style="--chars: 43">
-<h3>140. Sencillamente - Hakuna</h3>
+<h3>141. Sencillamente - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1t7i3ZQgjhU341Il43ijW8?si=6a56c83749c1484d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5907,7 +5882,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-si_hubiera_estado_alli_jesus_adrian_romero" data-title="Si hubiera estado allí" data-autor="Adrián" style="--chars: 60">
-<h3>141. Si hubiera estado allí - Adrián</h3>
+<h3>142. Si hubiera estado allí - Adrián</h3>
 <p class="song-meta"><span class="meta-item">Autor: Adrián</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/3MaPyYoUyB2qibqEkHTWW1?si=aa16dfe3eb074ce2" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5933,7 +5908,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-sopla_senor_popular" data-title="Sopla Señor" data-autor="popular" style="--chars: 53">
-<h3>142. Sopla Señor - popular</h3>
+<h3>143. Sopla Señor - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/7DXwh3ogyKUbQ62vEseObR?si=2e9b9c5bdf624780" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5959,7 +5934,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-soy_libre_hakuna" data-title="Soy Libre" data-autor="Hakuna" style="--chars: 29">
-<h3>143. Soy Libre - Hakuna</h3>
+<h3>144. Soy Libre - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/35sx4rk6TGum93jIZettPj?si=1ae6ff5e36834faa" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -5990,7 +5965,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-supe_que_me_amabas_marcela_gandara" data-title="Supe que me Amabas" data-autor="Marcela Gándara" style="--chars: 42">
-<h3>144. Supe que me Amabas - Marcela Gándara</h3>
+<h3>145. Supe que me Amabas - Marcela Gándara</h3>
 <p class="song-meta"><span class="meta-item">Autor: Marcela Gándara</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/36e4Sr0dXiyzjVeBWv8cON?si=18b9fd4449cc48a9" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6015,7 +5990,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-surge_valentia_schoenstatt" data-title="Surge Valentía" data-autor="Schoenstatt" style="--chars: 44">
-<h3>145. Surge Valentía - Schoenstatt</h3>
+<h3>146. Surge Valentía - Schoenstatt</h3>
 <p class="song-meta"><span class="meta-item">Autor: Schoenstatt</span><span class="meta-item">Capo: 1</span><a class="meta-item" href="https://open.spotify.com/track/2HvAaldhVw9qcJD9Z0maad?si=79a575704fcd448a" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6048,7 +6023,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-todo_tuyo_soy_popular" data-title="Todo Tuyo Soy" data-autor="Popular" style="--chars: 50">
-<h3>146. Todo Tuyo Soy - Popular</h3>
+<h3>147. Todo Tuyo Soy - Popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: Popular</span><span class="meta-item">Capo: 3, 0-7, original 3</span><a class="meta-item" href="https://open.spotify.com/track/7fut1cKW0cpnizwKKyZp39?si=38134a3ece094bf2" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6076,7 +6051,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-toma_senor_mi_libertad_popular" data-title="Toma Señor mi libertad" data-autor="popular" style="--chars: 39">
-<h3>147. Toma Señor mi libertad - popular</h3>
+<h3>148. Toma Señor mi libertad - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/7veeY1drohTipgIFdAPrS0?si=b7844c191771466d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6100,7 +6075,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-tu_eres_mi_respirar_popular" data-title="Tu eres mi respirar" data-autor="popular" style="--chars: 31">
-<h3>148. Tu eres mi respirar - popular</h3>
+<h3>149. Tu eres mi respirar - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/7oQZ8IF4QF9vjrPD9u0p34?si=c0ea2df122f34523" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6124,7 +6099,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-tu_voluntad_servus_mariae" data-title="Tu Voluntad" data-autor="Servus Mariae" style="--chars: 41">
-<h3>149. Tu Voluntad - Servus Mariae</h3>
+<h3>150. Tu Voluntad - Servus Mariae</h3>
 <p class="song-meta"><span class="meta-item">Autor: Servus Mariae</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/1F98JW7eGb4EEBE9mZeQju?si=d7bb13e6668f4987" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6153,7 +6128,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-tus_planes_son_perfetos_batah" data-title="Tus Planes Son Perfectos" data-autor="Batah" style="--chars: 43">
-<h3>150. Tus Planes Son Perfectos - Batah</h3>
+<h3>151. Tus Planes Son Perfectos - Batah</h3>
 <p class="song-meta"><span class="meta-item">Autor: Batah</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/3dg38AoQd9jPellNzklq2Y?si=b47b122d453d4fdd" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6181,7 +6156,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-tuyas_son_luispo" data-title="Tuyas son" data-autor="Luispo" style="--chars: 39">
-<h3>151. Tuyas son - Luispo</h3>
+<h3>152. Tuyas son - Luispo</h3>
 <p class="song-meta"><span class="meta-item">Autor: Luispo</span><span class="meta-item">Capo: 1</span><a class="meta-item" href="https://open.spotify.com/track/37JnxRgESJqLXqpFsvTp6p?si=b30ea803aaf34e3e" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6205,7 +6180,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-un_segundo_hakuna" data-title="Un Segundo" data-autor="Hakuna" style="--chars: 56">
-<h3>152. Un Segundo - Hakuna</h3>
+<h3>153. Un Segundo - Hakuna</h3>
 <p class="song-meta"><span class="meta-item">Autor: Hakuna</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/6WTdsYUlvy5HX6r8pj2f0r?si=ce68e22403f04743" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6235,7 +6210,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_mision_pais" data-title="Ven" data-autor="mision_pais" style="--chars: 41">
-<h3>153. Ven - mision_pais</h3>
+<h3>154. Ven - mision_pais</h3>
 <p class="song-meta"><span class="meta-item">Autor: mision_pais</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/2xFpNxFnp9LhOJ4Pc1LRK5?si=21ec0fc3cbf64c26" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6262,7 +6237,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_ahora_popular" data-title="Ven Ahora" data-autor="popular" style="--chars: 25">
-<h3>154. Ven Ahora - popular</h3>
+<h3>155. Ven Ahora - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/0XJksh3xea4iKJ6fdNo2Na?si=a6fe6f0ac18346c9" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6290,7 +6265,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_ante_su_trono_elevation_worship" data-title="Ven ante Su trono" data-autor="Elevation Worship" style="--chars: 31">
-<h3>155. Ven ante Su trono - Elevation Worship</h3>
+<h3>156. Ven ante Su trono - Elevation Worship</h3>
 <p class="song-meta"><span class="meta-item">Autor: Elevation Worship</span><span class="meta-item">Capo: 0, 0-2</span><a class="meta-item" href="https://open.spotify.com/track/00N19SVEo6XJFaerouyckn?si=8ba464502061439d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6320,7 +6295,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_espiritu_secuencia" data-title="Ven Espíritu" data-autor="popular" style="--chars: 32">
-<h3>156. Ven Espíritu - popular</h3>
+<h3>157. Ven Espíritu - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6350,7 +6325,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_espiritu_divino_schoenstatt" data-title="Ven Espíritu Divino" data-autor="Schoenstatt" style="--chars: 62">
-<h3>157. Ven Espíritu Divino - Schoenstatt</h3>
+<h3>158. Ven Espíritu Divino - Schoenstatt</h3>
 <p class="song-meta"><span class="meta-item">Autor: Schoenstatt</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5EOuojJVIrVyHcMoMVjQQB?si=a76b2cec4b4d416e" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6374,7 +6349,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_espiritu_ven_teresa" data-title="Ven Espiritu Ven" data-autor="Teresa" style="--chars: 32">
-<h3>158. Ven Espiritu Ven - Teresa</h3>
+<h3>159. Ven Espiritu Ven - Teresa</h3>
 <p class="song-meta"><span class="meta-item">Autor: Teresa</span><span class="meta-item">Capo: 1</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6397,7 +6372,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_espiritu_ven_purificame_popular" data-title="Ven Espíritu Ven (Purifícame)" data-autor="popular" style="--chars: 30">
-<h3>159. Ven Espíritu Ven (Purifícame) - popular</h3>
+<h3>160. Ven Espíritu Ven (Purifícame) - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6420,7 +6395,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-ven_y_llename_generacion_12" data-title="Ven Y Lléname" data-autor="Generación 12" style="--chars: 33">
-<h3>160. Ven Y Lléname - Generación 12</h3>
+<h3>161. Ven Y Lléname - Generación 12</h3>
 <p class="song-meta"><span class="meta-item">Autor: Generación 12</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/4Lp4it382mVKgfUDHsh04t?si=e324ea64b1c046c2" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6450,7 +6425,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-vengo_a_adorarte_popular" data-title="Vengo a Adorarte" data-autor="popular" style="--chars: 36">
-<h3>161. Vengo a Adorarte - popular</h3>
+<h3>162. Vengo a Adorarte - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5O3twBxBiRZdA4ydrVEapK?si=500409aa0ea049d7" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6479,7 +6454,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-vida_en_abundancia_schoenstatt" data-title="Vida en abundancia" data-autor="schoenstatt" style="--chars: 52">
-<h3>162. Vida en abundancia - schoenstatt</h3>
+<h3>163. Vida en abundancia - schoenstatt</h3>
 <p class="song-meta"><span class="meta-item">Autor: schoenstatt</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/7oMgpX0X6TnxXdADuAz7Sc?si=337568872ea5469a" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6509,7 +6484,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-villancico_valvanera_fons" data-title="Villancico Valvanera" data-autor="Fons" style="--chars: 38">
-<h3>163. Villancico Valvanera - Fons</h3>
+<h3>164. Villancico Valvanera - Fons</h3>
 <p class="song-meta"><span class="meta-item">Autor: Fons</span><span class="meta-item">Capo: 0</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6544,7 +6519,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-virgen_madre_de_nuestro_dios_popular" data-title="Virgen Madre de Nuestro Dios" data-autor="popular" style="--chars: 29">
-<h3>164. Virgen Madre de Nuestro Dios - popular</h3>
+<h3>165. Virgen Madre de Nuestro Dios - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/3T7V0jQP7MMJ7SxlZWwHNI?si=2ab08c2a99394ea1" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6570,7 +6545,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-viva_cristo_rey_jaire" data-title="Viva Cristo Rey" data-autor="Jaire" style="--chars: 46">
-<h3>165. Viva Cristo Rey - Jaire</h3>
+<h3>166. Viva Cristo Rey - Jaire</h3>
 <p class="song-meta"><span class="meta-item">Autor: Jaire</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/4p4FTS0SfIIca9nuixNEjv?si=8e3785ceec274316" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6608,7 +6583,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-volveras_a_maria_popular" data-title="Volverás a María" data-autor="popular" style="--chars: 50">
-<h3>166. Volverás a María - popular</h3>
+<h3>167. Volverás a María - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://www.youtube.com/watch?v=EM0pwqQOXSk&amp;list=RDEM0pwqQOXSk&amp;start_radio=1" target="_blank" rel="noopener">YouTube link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6635,7 +6610,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-vuelvo_otra_vez_tuyo" data-title="Vuelvo Otra Vez" data-autor="tuyo" style="--chars: 41">
-<h3>167. Vuelvo Otra Vez - tuyo</h3>
+<h3>168. Vuelvo Otra Vez - tuyo</h3>
 <p class="song-meta"><span class="meta-item">Autor: tuyo</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/5QG7pw4RFN6CpL5915xUkP?si=1d4f8a3f097f4d5b" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6672,7 +6647,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-yeshua_generacion_12" data-title="Yeshua" data-autor="Generacion 12" style="--chars: 34">
-<h3>168. Yeshua - Generacion 12</h3>
+<h3>169. Yeshua - Generacion 12</h3>
 <p class="song-meta"><span class="meta-item">Autor: Generacion 12</span><span class="meta-item">Capo: 0 up to 3 (max 5)</span><a class="meta-item" href="https://open.spotify.com/track/2txTXCdetbJcy8REtnZdRq?si=b36e14df2c0449fa" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6701,7 +6676,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-yo_quiero_ser_tu_servidor_popular" data-title="Yo Quiero ser tu Servidor" data-autor="popular" style="--chars: 32">
-<h3>169. Yo Quiero ser tu Servidor - popular</h3>
+<h3>170. Yo Quiero ser tu Servidor - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span><a class="meta-item" href="https://open.spotify.com/track/17ciTNtUcQxJ5gRJuLtbNX?si=a0c8c30edc634d0d" target="_blank" rel="noopener">Spotify link</a></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -6733,7 +6708,7 @@ body[data-columns="2"] .song:not([data-columns="1"]),
 </div>
 </article>
 <article class="song" id="song-zzz_test_song" data-title="ZZZ Test Song" data-autor="popular" style="--chars: 18">
-<h3>170. ZZZ Test Song - popular</h3>
+<h3>171. ZZZ Test Song - popular</h3>
 <p class="song-meta"><span class="meta-item">Autor: popular</span><span class="meta-item">Capo: 0</span></p>
 <div class="controls">
   <button data-action="toggle-chords">Chords</button>
@@ -7696,150 +7671,6 @@ if (shared !== null) {
 }
 
 renderSession();
-</script>
-<script>
-// Session slides: the session's lyrics (no chords) as big text on letter-landscape
-// pages, one slide per page, to save as a PDF and import into PowerPoint / Slides.
-
-const SLIDE_PAD = 0.4 * 96; // page margin in CSS px (1in = 96px)
-// 10 lines at line-height 1.2 fill the page: the smallest text a lyric slide may use.
-const SLIDE_MIN = ((8.5 - 0.8) * 96) / (10 * 1.2);
-const SLIDE_MAX = SLIDE_MIN * 2.5; // a short song must not turn into a few huge words
-
-// A song's lyrics, one array of {text, bold} per verse. Chord lines are dropped,
-// and so are the "Intro: G D" label lines (their chords are inside the line).
-function slideVerses(id) {
-    return [...document.getElementById(id).querySelectorAll(".lyrics > .verse")].map((verse) =>
-        [...verse.children].flatMap((el) => {
-            if (el.classList.contains("chord-inline") || el.querySelector(".chord-inline")) return [];
-            const text = el.classList.contains("line-pair")
-                ? [...el.childNodes].filter((n) => n.nodeType === Node.TEXT_NODE).map((n) => n.textContent).join("")
-                : el.classList.contains("lyric-line") ? el.textContent : "";
-            return text.trim() ? [{ text: text.trim(), bold: el.classList.contains("bold") }] : [];
-        })
-    ).filter((lines) => lines.length);
-}
-
-function slideElement(verses, extraClass = "") {
-    const slide = document.createElement("section");
-    slide.className = "slide " + extraClass;
-    slide.append(...verses.map((lines) => {
-        const verse = Object.assign(document.createElement("div"), { className: "slide-verse" });
-        verse.append(...lines.map(({ text, bold }) =>
-            Object.assign(document.createElement("div"), { className: bold ? "slide-line bold" : "slide-line", textContent: text })));
-        return verse;
-    }));
-    return slide;
-}
-
-// Does everything sit inside the page margins? (Checked on the children, not
-// with scrollWidth/scrollHeight of the slide, which ignore the padding.)
-function slideFits(slide) {
-    const page = slide.getBoundingClientRect();
-    return [...slide.children].every((verse) => verse.scrollWidth <= verse.clientWidth)
-        && slide.lastElementChild.getBoundingClientRect().bottom <= page.bottom - SLIDE_PAD + 0.5;
-}
-
-// Measure off screen in a real slide (same CSS, so the same line breaks as in print).
-function slideProbe(verses, extraClass) {
-    const probe = slideElement(verses, extraClass);
-    Object.assign(probe.style, { position: "fixed", left: "-10000px", top: "0" });
-    document.body.append(probe);
-    return probe;
-}
-
-// A page whose text would come out smaller than this is split: merely fitting at
-// SLIDE_MIN made a dense 8-line verse look tiny next to the other pages.
-const SLIDE_GOOD = SLIDE_MIN * 1.25;
-
-function slideSize(verses) {
-    const probe = slideProbe(verses);
-    const size = slideFit(probe);
-    probe.remove();
-    return size;
-}
-
-// Whole verses per page while the text stays at least SLIDE_GOOD; a verse that
-// is smaller on a page of its own is cut into the fewest even parts that reach it.
-function slidePages(verses) {
-    const pages = [];
-    let page = [];
-    for (const verse of verses) {
-        if (page.length && slideSize([...page, verse]) >= SLIDE_GOOD) { page.push(verse); continue; }
-        if (page.length) pages.push(page);
-        let parts;
-        for (let n = 1; n <= verse.length; n++) {
-            parts = Array.from({ length: n }, (_, i) =>
-                verse.slice(Math.round((i * verse.length) / n), Math.round(((i + 1) * verse.length) / n)));
-            if (parts.every((part) => slideSize([part]) >= SLIDE_GOOD)) break;
-        }
-        pages.push(...parts.slice(0, -1).map((part) => [part]));
-        page = [parts.at(-1)];
-    }
-    if (page.length) pages.push(page);
-    return pages;
-}
-
-// The largest text that fits, set on the slide: on one line per lyric line if
-// that is still at least SLIDE_GOOD, otherwise wrapped (a ~40-character line
-// can't pass ~62px on one line, so bigger text means wrapping it).
-function slideFit(slide) {
-    const largest = () => {
-        let low = 0, high = SLIDE_MAX;
-        for (let i = 0; i < 12; i++) {
-            const size = (low + high) / 2;
-            slide.style.fontSize = size + "px";
-            if (slideFits(slide)) low = size; else high = size;
-        }
-        return low;
-    };
-    slide.style.whiteSpace = "nowrap";
-    let size = largest();
-    if (size < SLIDE_GOOD) {
-        slide.style.whiteSpace = "normal";
-        size = largest();
-    }
-    slide.style.fontSize = size + "px";
-    return size;
-}
-
-function slideSized(verses, extraClass = "") {
-    const slide = slideProbe(verses, extraClass);
-    slideFit(slide);
-    Object.assign(slide.style, { position: "", left: "", top: "" });
-    return slide;
-}
-
-onAction("session-slides", () => {
-    setDrawerOpen(false);
-    const slides = document.createElement("div");
-    slides.className = "slides";
-    // A psalm's fórmula comes first, then the psalm's own verses.
-    for (const id of session) {
-        const formula = sessionFormula(id);
-        slides.append(slideSized([[{ text: songTitle(id), bold: true }]], "slide-title"));
-        for (const song of formula ? [formula, id] : [id]) {
-            slides.append(...slidePages(slideVerses(song)).map((page) => slideSized(page)));
-        }
-    }
-    document.body.append(slides);
-
-    // Letter landscape without margins, only while the slides are printed.
-    const pageStyle = Object.assign(document.createElement("style"), {
-        id: "slides-page",
-        textContent: "@page { size: letter landscape; margin: 0 }",
-    });
-    document.head.append(pageStyle);
-    document.body.dataset.slides = "";
-
-    // afterprint also fires for the browser's own print preview being closed.
-    window.addEventListener("afterprint", () => {
-        slides.remove();
-        pageStyle.remove();
-        delete document.body.dataset.slides;
-    }, { once: true });
-    window.print();
-});
 </script>
 <script>
 // Transpose the chords of one song up or down by semitones.
