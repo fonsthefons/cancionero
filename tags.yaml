@@ -6,6 +6,8 @@
 #     label: Text shown in the book
 #     subtags:            # omit for a flat tag (songs use `<tag_id>: []`)
 #       <subtag_id>: Text shown in the book
+#     pill: Short text for the song's tag pill ("" hides it; default: the label).
+#     A subtag takes it as   <subtag_id>: {label: Tercer ciclo, pill: III}
 
 misa:
   label: Misa
@@ -22,10 +24,10 @@ misa:
 alabanza:
   label: Alabanza
   subtags:
-    primer_ciclo: Primer ciclo
-    segundo_ciclo: Segundo ciclo
-    tercer_ciclo: Tercer ciclo
-    cuarto_ciclo: Cuarto ciclo
+    primer_ciclo: {label: Primer ciclo, pill: I}
+    segundo_ciclo: {label: Segundo ciclo, pill: II}
+    tercer_ciclo: {label: Tercer ciclo, pill: III}
+    cuarto_ciclo: {label: Cuarto ciclo, pill: IV}
 
 adoracion:
   label: Adoracion
